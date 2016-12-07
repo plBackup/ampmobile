@@ -1,0 +1,102 @@
+[
+    {
+        "values": [
+            {
+                "rlabel": 2016.0, 
+                "rid": "rent_update_col0_row0"
+            }, 
+            {
+                "rlabel": 2017.0, 
+                "rid": "rent_update_col1_row0"
+            }, 
+            {
+                "rlabel": 2018.0, 
+                "rid": "rent_update_col2_row0"
+            }, 
+            {
+                "rlabel": 2019.0, 
+                "rid": "rent_update_col3_row0"
+            }, 
+            {
+                "rlabel": 2020.0, 
+                "rid": "rent_update_col4_row0"
+            }
+        ], 
+        "name": "\u5f00\u4e1a\u5e74\u4efd"
+    }, 
+    {
+        "values": [
+            {
+                "rid": "rent_update_col0_row1", 
+                "value": 0.048
+            }, 
+            {
+                "rid": "rent_update_col1_row1", 
+                "value": 0.0496
+            }, 
+            {
+                "rid": "rent_update_col2_row1", 
+                "value": 0.0502
+            }, 
+            {
+                "rid": "rent_update_col3_row1", 
+                "value": 0.0497
+            }, 
+            {
+                "rid": "rent_update_col4_row1", 
+                "value": 0.0507
+            }
+        ], 
+        "name": "\u4e3b\u529b\u5e97"
+    }, 
+    {
+        "values": [
+            {
+                "rid": "rent_update_col0_row2", 
+                "value": 0.048
+            }, 
+            {
+                "rid": "rent_update_col1_row2", 
+                "value": 0.0496
+            }, 
+            {
+                "rid": "rent_update_col2_row2", 
+                "value": 0.0502
+            }, 
+            {
+                "rid": "rent_update_col3_row2", 
+                "value": 0.0497
+            }, 
+            {
+                "rid": "rent_update_col4_row2", 
+                "value": 0.0507
+            }
+        ], 
+        "name": "\u6b21\u4e3b\u529b\u5e97"
+    }, 
+    {
+        "values": [
+            {
+                "rid": "rent_update_col0_row3", 
+                "value": 0.0198
+            }, 
+            {
+                "rid": "rent_update_col1_row3", 
+                "value": 0.0499
+            }, 
+            {
+                "rid": "rent_update_col2_row3", 
+                "value": 0.151
+            }, 
+            {
+                "rid": "rent_update_col3_row3", 
+                "value": 0.0499
+            }, 
+            {
+                "rid": "rent_update_col4_row3", 
+                "value": ""
+            }
+        ], 
+        "name": "\u4e2d\u5c0f\u5e97\u94fa"
+    }
+]

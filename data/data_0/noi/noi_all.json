@@ -1,0 +1,1327 @@
+{
+  "noi":[
+    {
+      "values": [
+        {
+          "name": "\u5f53\u6708\u5b9e\u9645",
+          "value": 220.52
+        },
+        {
+          "name": "\u5168\u5e74\u9884\u6d4b",
+          "value": 2386.91
+        },
+        {
+          "name": "\u603b\u6210\u672c",
+          "value": 32860.00
+        },
+        {
+          "name": "\u9884\u6d4b\u5e74\u56de\u62a5\u7387\uff08\u6309\u6210\u672c\uff09",
+          "value": 0.0726
+        },
+        {
+          "name": "\u4f30\u503c",
+          "value": 34000.00
+        },
+        {
+          "name": "\u4f30\u503c\u65e5\u671f",
+          "value": "2015-12-31"
+        },
+        {
+          "name": "\u9884\u6d4b\u5e74\u56de\u62a5\u7387\uff08\u6309\u4f30\u503c",
+          "value": 0.0702
+        },
+        {
+          "name": "\u672c\u91d1",
+          "value": 17000.00
+        },
+        {
+          "name": "\u5230\u671f\u65e5",
+          "value": "2025-12-31"
+        },
+        {
+          "name": "\u5e74\u8d37\u6b3e\u5229\u606f",
+          "value": 935.00
+        },
+        {
+          "name": "\u5f53\u524d\u6743\u76ca",
+          "value": 17000.00
+        },
+        {
+          "name": "\u9884\u6d4b\u7a0e\u524d\u73b0\u91d1\u6d41 ",
+          "value": 1451.91
+        },
+        {
+          "name": "\u9884\u6d4b\u6536\u76ca\u7387\uff08\u6309ROE\uff09",
+          "value": 0.0854
+        },
+        {
+          "name": "complete-rate",
+          "value": ""
+        }
+      ],
+      "name": "noi"
+    }
+  ],
+  "income":[
+    {
+      "values": [
+        {
+          "rid": "income_col0_row0",
+          "value": "\u79df\u91d1\u6536"
+        },
+        {
+          "rid": "income_col1_row0",
+          "value": 358.41
+        },
+        {
+          "rid": "income_col2_row0",
+          "value": 298.72
+        },
+        {
+          "rid": "income_col3_row0",
+          "value": 59.6899999999999
+        },
+        {
+          "rid": "income_col4_row0",
+          "value": 0.199819228709159
+        },
+        {
+          "rid": "income_col5_row0",
+          "value": 2774.0934
+        },
+        {
+          "rid": "income_col6_row0",
+          "value": 2389.56
+        },
+        {
+          "rid": "income_col7_row0",
+          "value": 384.533399999999
+        },
+        {
+          "rid": "income_col8_row0",
+          "value": 0.160922261838999
+        },
+        {
+          "rid": "income_col9_row0",
+          "value": 3968.9734
+        },
+        {
+          "rid": "income_col10_row0",
+          "value": 3584.44
+        },
+        {
+          "rid": "income_col11_row0",
+          "value": 384.533399999998
+        },
+        {
+          "rid": "income_col12_row0",
+          "value": 0.107278514914463
+        }
+      ],
+      "name": "\u79df\u91d1\u6536"
+    },
+    {
+      "values": [
+        {
+          "rid": "income_col0_row1",
+          "value": "\u7269\u4e1a\u7ba1\u7406\u8d39"
+        },
+        {
+          "rid": "income_col1_row1",
+          "value": 136.983
+        },
+        {
+          "rid": "income_col2_row1",
+          "value": 125.31
+        },
+        {
+          "rid": "income_col3_row1",
+          "value": 11.673
+        },
+        {
+          "rid": "income_col4_row1",
+          "value": 0.0931529806080919
+        },
+        {
+          "rid": "income_col5_row1",
+          "value": 1060.24842
+        },
+        {
+          "rid": "income_col6_row1",
+          "value": 1002.48
+        },
+        {
+          "rid": "income_col7_row1",
+          "value": 57.7684200000003
+        },
+        {
+          "rid": "income_col8_row1",
+          "value": 0.0576255087383293
+        },
+        {
+          "rid": "income_col9_row1",
+          "value": 1561.48842
+        },
+        {
+          "rid": "income_col10_row1",
+          "value": 1503.72
+        },
+        {
+          "rid": "income_col11_row1",
+          "value": 57.7684200000006
+        },
+        {
+          "rid": "income_col12_row1",
+          "value": 0.038417005825553
+        }
+      ],
+      "name": "\u7269\u4e1a\u7ba1\u7406\u8d39"
+    },
+    {
+      "values": [
+        {
+          "rid": "income_col0_row2",
+          "value": "\u5176\u4ed6\u6536\u5165"
+        },
+        {
+          "rid": "income_col1_row2",
+          "value": 26.246
+        },
+        {
+          "rid": "income_col2_row2",
+          "value": 26.02
+        },
+        {
+          "rid": "income_col3_row2",
+          "value": 0.226000000000003
+        },
+        {
+          "rid": "income_col4_row2",
+          "value": 0.00868562644119918
+        },
+        {
+          "rid": "income_col5_row2",
+          "value": 203.14404
+        },
+        {
+          "rid": "income_col6_row2",
+          "value": 208.16
+        },
+        {
+          "rid": "income_col7_row2",
+          "value": -5.01596000000001
+        },
+        {
+          "rid": "income_col8_row2",
+          "value": -0.0240966564181399
+        },
+        {
+          "rid": "income_col9_row2",
+          "value": 307.22404
+        },
+        {
+          "rid": "income_col10_row2",
+          "value": 312.24
+        },
+        {
+          "rid": "income_col11_row2",
+          "value": -5.01596000000001
+        },
+        {
+          "rid": "income_col12_row2",
+          "value": -0.0160644376120933
+        }
+      ],
+      "name": "\u5176\u4ed6\u6536\u5165"
+    },
+    {
+      "values": [
+        {
+          "rid": "income_col0_row3",
+          "value": "\u5408\u8ba1"
+        },
+        {
+          "rid": "income_col1_row3",
+          "value": 521.639
+        },
+        {
+          "rid": "income_col2_row3",
+          "value": 450.05
+        },
+        {
+          "rid": "income_col3_row3",
+          "value": 71.589
+        },
+        {
+          "rid": "income_col4_row3",
+          "value": 0.159068992334185
+        },
+        {
+          "rid": "income_col5_row3",
+          "value": 4037.48586
+        },
+        {
+          "rid": "income_col6_row3",
+          "value": 3600.2
+        },
+        {
+          "rid": "income_col7_row3",
+          "value": 437.28586
+        },
+        {
+          "rid": "income_col8_row3",
+          "value": 0.121461546580746
+        },
+        {
+          "rid": "income_col9_row3",
+          "value": 5837.68586
+        },
+        {
+          "rid": "income_col10_row3",
+          "value": 5400.4
+        },
+        {
+          "rid": "income_col11_row3",
+          "value": 437.28586
+        },
+        {
+          "rid": "income_col12_row3",
+          "value": 0.0809728649729649
+        }
+      ],
+      "name": "\u5408\u8ba1"
+    }
+  ],
+  "fee":[
+    {
+      "values": [
+        {
+          "rid": "chart_col0_row0",
+          "value": "\u589e\u503c\u7a0e "
+        },
+        {
+          "rid": "chart_col1_row0",
+          "value": 31.29834
+        },
+        {
+          "rid": "chart_col2_row0",
+          "value": 27.003
+        },
+        {
+          "rid": "chart_col3_row0",
+          "value": 4.29534
+        },
+        {
+          "rid": "chart_col4_row0",
+          "value": 0.159068992334185
+        },
+        {
+          "rid": "chart_col5_row0",
+          "value": 242.2491516
+        },
+        {
+          "rid": "chart_col6_row0",
+          "value": 216.012
+        },
+        {
+          "rid": "chart_col7_row0",
+          "value": 26.2371516
+        },
+        {
+          "rid": "chart_col8_row0",
+          "value": 0.121461546580746
+        },
+        {
+          "rid": "chart_col9_row0",
+          "value": 350.2611516
+        },
+        {
+          "rid": "chart_col10_row0",
+          "value": 324.024
+        },
+        {
+          "rid": "chart_col11_row0",
+          "value": 26.2371516000001
+        },
+        {
+          "rid": "chart_col12_row0",
+          "value": 0.0809728649729653
+        }
+      ],
+      "name": "\u589e\u503c\u7a0e "
+    },
+    {
+      "values": [
+        {
+          "rid": "chart_col0_row1",
+          "value": "\u623f\u4ea7\u7a0e "
+        },
+        {
+          "rid": "chart_col1_row1",
+          "value": 43.0092
+        },
+        {
+          "rid": "chart_col2_row1",
+          "value": 35.8464
+        },
+        {
+          "rid": "chart_col3_row1",
+          "value": 7.16279999999999
+        },
+        {
+          "rid": "chart_col4_row1",
+          "value": 0.199819228709159
+        },
+        {
+          "rid": "chart_col5_row1",
+          "value": 332.891208
+        },
+        {
+          "rid": "chart_col6_row1",
+          "value": 286.7472
+        },
+        {
+          "rid": "chart_col7_row1",
+          "value": 46.1440079999999
+        },
+        {
+          "rid": "chart_col8_row1",
+          "value": 0.160922261838999
+        },
+        {
+          "rid": "chart_col9_row1",
+          "value": 476.276808
+        },
+        {
+          "rid": "chart_col10_row1",
+          "value": 430.1328
+        },
+        {
+          "rid": "chart_col11_row1",
+          "value": 46.1440079999999
+        },
+        {
+          "rid": "chart_col12_row1",
+          "value": 0.107278514914463
+        }
+      ],
+      "name": "\u623f\u4ea7\u7a0e "
+    },
+    {
+      "values": [
+        {
+          "rid": "chart_col0_row2",
+          "value": "\u5730\u79df "
+        },
+        {
+          "rid": "chart_col1_row2",
+          "value": 6.09297
+        },
+        {
+          "rid": "chart_col2_row2",
+          "value": 5.9744
+        },
+        {
+          "rid": "chart_col3_row2",
+          "value": 0.118569999999999
+        },
+        {
+          "rid": "chart_col4_row2",
+          "value": 0.0198463444027851
+        },
+        {
+          "rid": "chart_col5_row2",
+          "value": 47.1595878
+        },
+        {
+          "rid": "chart_col6_row2",
+          "value": 47.7912
+        },
+        {
+          "rid": "chart_col7_row2",
+          "value": -0.631612200000006
+        },
+        {
+          "rid": "chart_col8_row2",
+          "value": -0.0132160774368504
+        },
+        {
+          "rid": "chart_col9_row2",
+          "value": 71.0571878
+        },
+        {
+          "rid": "chart_col10_row2",
+          "value": 71.6888
+        },
+        {
+          "rid": "chart_col11_row2",
+          "value": -0.631612200000006
+        },
+        {
+          "rid": "chart_col12_row2",
+          "value": -0.00881047248663677
+        }
+      ],
+      "name": "\u5730\u79df "
+    },
+    {
+      "values": [
+        {
+          "rid": "chart_col0_row3",
+          "value": "\u516c\u7528\u4e8b\u4e1a\u8d39\uff08\u80fd\u8017\uff09"
+        },
+        {
+          "rid": "chart_col1_row3",
+          "value": 74.99
+        },
+        {
+          "rid": "chart_col2_row3",
+          "value": 69.28
+        },
+        {
+          "rid": "chart_col3_row3",
+          "value": 5.70999999999999
+        },
+        {
+          "rid": "chart_col4_row3",
+          "value": 0.0824191685912239
+        },
+        {
+          "rid": "chart_col5_row3",
+          "value": 580.4226
+        },
+        {
+          "rid": "chart_col6_row3",
+          "value": 554.24
+        },
+        {
+          "rid": "chart_col7_row3",
+          "value": 26.1826
+        },
+        {
+          "rid": "chart_col8_row3",
+          "value": 0.0472405456120092
+        },
+        {
+          "rid": "chart_col9_row3",
+          "value": 857.5426
+        },
+        {
+          "rid": "chart_col10_row3",
+          "value": 831.36
+        },
+        {
+          "rid": "chart_col11_row3",
+          "value": 26.1826000000001
+        },
+        {
+          "rid": "chart_col12_row3",
+          "value": 0.0314936970746729
+        }
+      ],
+      "name": "\u516c\u7528\u4e8b\u4e1a\u8d39\uff08\u80fd\u8017\uff09"
+    },
+    {
+      "values": [
+        {
+          "rid": "chart_col0_row4",
+          "value": "\u7ef4\u62a4/\u7ef4\u4fdd"
+        },
+        {
+          "rid": "chart_col1_row4",
+          "value": 25.01
+        },
+        {
+          "rid": "chart_col2_row4",
+          "value": 25.03
+        },
+        {
+          "rid": "chart_col3_row4",
+          "value": -0.0199999999999996
+        },
+        {
+          "rid": "chart_col4_row4",
+          "value": -0.00079904115061924
+        },
+        {
+          "rid": "chart_col5_row4",
+          "value": 193.5774
+        },
+        {
+          "rid": "chart_col6_row4",
+          "value": 200.24
+        },
+        {
+          "rid": "chart_col7_row4",
+          "value": -6.6626
+        },
+        {
+          "rid": "chart_col8_row4",
+          "value": -0.0332730723132241
+        },
+        {
+          "rid": "chart_col9_row4",
+          "value": 293.6974
+        },
+        {
+          "rid": "chart_col10_row4",
+          "value": 300.36
+        },
+        {
+          "rid": "chart_col11_row4",
+          "value": -6.6626
+        },
+        {
+          "rid": "chart_col12_row4",
+          "value": -0.0221820482088161
+        }
+      ],
+      "name": "\u7ef4\u62a4/\u7ef4\u4fdd"
+    },
+    {
+      "values": [
+        {
+          "rid": "chart_col0_row5",
+          "value": "\u603b\u90e8\u7ba1\u7406\u8d39 "
+        },
+        {
+          "rid": "chart_col1_row5",
+          "value": 2.24
+        },
+        {
+          "rid": "chart_col2_row5",
+          "value": 1.98
+        },
+        {
+          "rid": "chart_col3_row5",
+          "value": 0.26
+        },
+        {
+          "rid": "chart_col4_row5",
+          "value": 0.131313131313131
+        },
+        {
+          "rid": "chart_col5_row5",
+          "value": 17.3376
+        },
+        {
+          "rid": "chart_col6_row5",
+          "value": 15.84
+        },
+        {
+          "rid": "chart_col7_row5",
+          "value": 1.4976
+        },
+        {
+          "rid": "chart_col8_row5",
+          "value": 0.0945454545454546
+        },
+        {
+          "rid": "chart_col9_row5",
+          "value": 25.2576
+        },
+        {
+          "rid": "chart_col10_row5",
+          "value": 23.76
+        },
+        {
+          "rid": "chart_col11_row5",
+          "value": 1.4976
+        },
+        {
+          "rid": "chart_col12_row5",
+          "value": 0.0630303030303031
+        }
+      ],
+      "name": "\u603b\u90e8\u7ba1\u7406\u8d39 "
+    },
+    {
+      "values": [
+        {
+          "rid": "chart_col0_row6",
+          "value": "\u8425\u9500\u8d39\u7528"
+        },
+        {
+          "rid": "chart_col1_row6",
+          "value": 46.574
+        },
+        {
+          "rid": "chart_col2_row6",
+          "value": 43.54
+        },
+        {
+          "rid": "chart_col3_row6",
+          "value": 3.03400000000001
+        },
+        {
+          "rid": "chart_col4_row6",
+          "value": 0.0696830500689023
+        },
+        {
+          "rid": "chart_col5_row6",
+          "value": 360.48276
+        },
+        {
+          "rid": "chart_col6_row6",
+          "value": 348.32
+        },
+        {
+          "rid": "chart_col7_row6",
+          "value": 12.16276
+        },
+        {
+          "rid": "chart_col8_row6",
+          "value": 0.0349183509416628
+        },
+        {
+          "rid": "chart_col9_row6",
+          "value": 534.64276
+        },
+        {
+          "rid": "chart_col10_row6",
+          "value": 522.48
+        },
+        {
+          "rid": "chart_col11_row6",
+          "value": 12.1627599999999
+        },
+        {
+          "rid": "chart_col12_row6",
+          "value": 0.0232789006277751
+        }
+      ],
+      "name": "\u8425\u9500\u8d39\u7528"
+    },
+    {
+      "values": [
+        {
+          "rid": "chart_col0_row7",
+          "value": "\u5de5\u8d44\u53ca\u76f8\u5173\u8d39\u7528"
+        },
+        {
+          "rid": "chart_col1_row7",
+          "value": 62.88
+        },
+        {
+          "rid": "chart_col2_row7",
+          "value": 62.88
+        },
+        {
+          "rid": "chart_col3_row7",
+          "value": ""
+        },
+        {
+          "rid": "chart_col4_row7",
+          "value": ""
+        },
+        {
+          "rid": "chart_col5_row7",
+          "value": 486.6912
+        },
+        {
+          "rid": "chart_col6_row7",
+          "value": 503.04
+        },
+        {
+          "rid": "chart_col7_row7",
+          "value": -16.3488
+        },
+        {
+          "rid": "chart_col8_row7",
+          "value": -0.0325
+        },
+        {
+          "rid": "chart_col9_row7",
+          "value": 738.2112
+        },
+        {
+          "rid": "chart_col10_row7",
+          "value": 754.56
+        },
+        {
+          "rid": "chart_col11_row7",
+          "value": -16.3488
+        },
+        {
+          "rid": "chart_col12_row7",
+          "value": -0.0216666666666666
+        }
+      ],
+      "name": "\u5de5\u8d44\u53ca\u76f8\u5173\u8d39\u7528"
+    },
+    {
+      "values": [
+        {
+          "rid": "chart_col0_row8",
+          "value": "\u7ba1\u7406\u8d39\u7528"
+        },
+        {
+          "rid": "chart_col1_row8",
+          "value": 1.49
+        },
+        {
+          "rid": "chart_col2_row8",
+          "value": 1.36
+        },
+        {
+          "rid": "chart_col3_row8",
+          "value": 0.13
+        },
+        {
+          "rid": "chart_col4_row8",
+          "value": 0.0955882352941176
+        },
+        {
+          "rid": "chart_col5_row8",
+          "value": 11.5326
+        },
+        {
+          "rid": "chart_col6_row8",
+          "value": 10.88
+        },
+        {
+          "rid": "chart_col7_row8",
+          "value": 0.652600000000001
+        },
+        {
+          "rid": "chart_col8_row8",
+          "value": 0.059981617647059
+        },
+        {
+          "rid": "chart_col9_row8",
+          "value": 16.9726
+        },
+        {
+          "rid": "chart_col10_row8",
+          "value": 16.32
+        },
+        {
+          "rid": "chart_col11_row8",
+          "value": 0.652600000000003
+        },
+        {
+          "rid": "chart_col12_row8",
+          "value": 0.0399877450980394
+        }
+      ],
+      "name": "\u7ba1\u7406\u8d39\u7528"
+    },
+    {
+      "values": [
+        {
+          "rid": "chart_col0_row9",
+          "value": "\u8ba1\u63d0/\u6838\u9500"
+        },
+        {
+          "rid": "chart_col1_row9",
+          "value": 2.54
+        },
+        {
+          "rid": "chart_col2_row9",
+          "value": 2.5
+        },
+        {
+          "rid": "chart_col3_row9",
+          "value": 0.04
+        },
+        {
+          "rid": "chart_col4_row9",
+          "value": 0.016
+        },
+        {
+          "rid": "chart_col5_row9",
+          "value": 19.6596
+        },
+        {
+          "rid": "chart_col6_row9",
+          "value": 20.0
+        },
+        {
+          "rid": "chart_col7_row9",
+          "value": -0.340400000000002
+        },
+        {
+          "rid": "chart_col8_row9",
+          "value": -0.0170200000000001
+        },
+        {
+          "rid": "chart_col9_row9",
+          "value": 29.6596
+        },
+        {
+          "rid": "chart_col10_row9",
+          "value": 30.0
+        },
+        {
+          "rid": "chart_col11_row9",
+          "value": -0.340400000000002
+        },
+        {
+          "rid": "chart_col12_row9",
+          "value": -0.0113466666666667
+        }
+      ],
+      "name": "\u8ba1\u63d0/\u6838\u9500"
+    },
+    {
+      "values": [
+        {
+          "rid": "chart_col0_row10",
+          "value": "\u6298\u65e7 "
+        },
+        {
+          "rid": "chart_col1_row10",
+          "value": 1.49
+        },
+        {
+          "rid": "chart_col2_row10",
+          "value": 1.42
+        },
+        {
+          "rid": "chart_col3_row10",
+          "value": 0.0700000000000001
+        },
+        {
+          "rid": "chart_col4_row10",
+          "value": 0.0492957746478874
+        },
+        {
+          "rid": "chart_col5_row10",
+          "value": 11.5326
+        },
+        {
+          "rid": "chart_col6_row10",
+          "value": 11.37
+        },
+        {
+          "rid": "chart_col7_row10",
+          "value": 0.162600000000001
+        },
+        {
+          "rid": "chart_col8_row10",
+          "value": 0.0143007915567283
+        },
+        {
+          "rid": "chart_col9_row10",
+          "value": 17.2226
+        },
+        {
+          "rid": "chart_col10_row10",
+          "value": 17.06
+        },
+        {
+          "rid": "chart_col11_row10",
+          "value": 0.162600000000001
+        },
+        {
+          "rid": "chart_col12_row10",
+          "value": 0.0095310668229778
+        }
+      ],
+      "name": "\u6298\u65e7 "
+    },
+    {
+      "values": [
+        {
+          "rid": "chart_col0_row11",
+          "value": "\u5176\u4ed6"
+        },
+        {
+          "rid": "chart_col1_row11",
+          "value": 3.5
+        },
+        {
+          "rid": "chart_col2_row11",
+          "value": 3.22
+        },
+        {
+          "rid": "chart_col3_row11",
+          "value": 0.28
+        },
+        {
+          "rid": "chart_col4_row11",
+          "value": 0.0869565217391304
+        },
+        {
+          "rid": "chart_col5_row11",
+          "value": 27.09
+        },
+        {
+          "rid": "chart_col6_row11",
+          "value": 25.76
+        },
+        {
+          "rid": "chart_col7_row11",
+          "value": 1.33
+        },
+        {
+          "rid": "chart_col8_row11",
+          "value": 0.0516304347826088
+        },
+        {
+          "rid": "chart_col9_row11",
+          "value": 39.97
+        },
+        {
+          "rid": "chart_col10_row11",
+          "value": 38.64
+        },
+        {
+          "rid": "chart_col11_row11",
+          "value": 1.33000000000001
+        },
+        {
+          "rid": "chart_col12_row11",
+          "value": 0.0344202898550726
+        }
+      ],
+      "name": "\u5176\u4ed6"
+    },
+    {
+      "values": [
+        {
+          "rid": "chart_col0_row12",
+          "value": "\u8d39\u7528\u603b\u8ba1"
+        },
+        {
+          "rid": "chart_col1_row12",
+          "value": 301.11451
+        },
+        {
+          "rid": "chart_col2_row12",
+          "value": 280.0338
+        },
+        {
+          "rid": "chart_col3_row12",
+          "value": 21.08071
+        },
+        {
+          "rid": "chart_col4_row12",
+          "value": 0.075279162729642
+        },
+        {
+          "rid": "chart_col5_row12",
+          "value": 2330.6263074
+        },
+        {
+          "rid": "chart_col6_row12",
+          "value": 2240.2404
+        },
+        {
+          "rid": "chart_col7_row12",
+          "value": 90.3859073999997
+        },
+        {
+          "rid": "chart_col8_row12",
+          "value": 0.0403465214715348
+        },
+        {
+          "rid": "chart_col9_row12",
+          "value": 3450.7715074
+        },
+        {
+          "rid": "chart_col10_row12",
+          "value": 3360.3856
+        },
+        {
+          "rid": "chart_col11_row12",
+          "value": 90.3859073999997
+        },
+        {
+          "rid": "chart_col12_row12",
+          "value": 0.0268974808724331
+        }
+      ],
+      "name": "\u8d39\u7528\u603b\u8ba1"
+    },
+    {
+      "values": [
+        {
+          "rid": "chart_col0_row13",
+          "value": "\u51c0\u8425\u8fd0\u6536\u5165\uff08NOI\uff09"
+        },
+        {
+          "rid": "chart_col1_row13",
+          "value": 220.52449
+        },
+        {
+          "rid": "chart_col2_row13",
+          "value": 170.0162
+        },
+        {
+          "rid": "chart_col3_row13",
+          "value": 50.50829
+        },
+        {
+          "rid": "chart_col4_row13",
+          "value": 0.0837898296045431
+        },
+        {
+          "rid": "chart_col5_row13",
+          "value": 1706.8595526
+        },
+        {
+          "rid": "chart_col6_row13",
+          "value": 1359.9596
+        },
+        {
+          "rid": "chart_col7_row13",
+          "value": 346.899952600001
+        },
+        {
+          "rid": "chart_col8_row13",
+          "value": 0.0811150251092108
+        },
+        {
+          "rid": "chart_col9_row13",
+          "value": 2386.9143526
+        },
+        {
+          "rid": "chart_col10_row13",
+          "value": 2040.0144
+        },
+        {
+          "rid": "chart_col11_row13",
+          "value": 346.8999526
+        },
+        {
+          "rid": "chart_col12_row13",
+          "value": 0.0540753841005318
+        }
+      ],
+      "name": "\u51c0\u8425\u8fd0\u6536\u5165\uff08NOI\uff09"
+    },
+    {
+      "values": [
+        {
+          "rid": "chart_col0_row14",
+          "value": "\u5229\u6da6\u7387"
+        },
+        {
+          "rid": "chart_col1_row14",
+          "value": 0.73236088822156
+        },
+        {
+          "rid": "chart_col2_row14",
+          "value": 0.607127425332228
+        },
+        {
+          "rid": "chart_col3_row14",
+          "value": ""
+        },
+        {
+          "rid": "chart_col4_row14",
+          "value": ""
+        },
+        {
+          "rid": "chart_col5_row14",
+          "value": 0.732360888221561
+        },
+        {
+          "rid": "chart_col6_row14",
+          "value": 0.60705967091746
+        },
+        {
+          "rid": "chart_col7_row14",
+          "value": ""
+        },
+        {
+          "rid": "chart_col8_row14",
+          "value": ""
+        },
+        {
+          "rid": "chart_col9_row14",
+          "value": 0.691704549977124
+        },
+        {
+          "rid": "chart_col10_row14",
+          "value": 0.607077473489947
+        },
+        {
+          "rid": "chart_col11_row14",
+          "value": ""
+        },
+        {
+          "rid": "chart_col12_row14",
+          "value": ""
+        }
+      ],
+      "name": "\u5229\u6da6\u7387"
+    }
+  ],
+  "arrearage":[
+    {
+      "values": [
+        {
+          "rid": "arrearage_col0_row0",
+          "value": "\u79df\u91d1"
+        },
+        {
+          "rid": "arrearage_col1_row0",
+          "value": 42.7
+        },
+        {
+          "rid": "arrearage_col2_row0",
+          "value": 13.1
+        },
+        {
+          "rid": "arrearage_col3_row0",
+          "value": 4.0
+        },
+        {
+          "rid": "arrearage_col4_row0",
+          "value": 19.8
+        },
+        {
+          "rid": "arrearage_col5_row0",
+          "value": 5.8
+        }
+      ],
+      "name": "\u79df\u91d1"
+    },
+    {
+      "values": [
+        {
+          "rid": "arrearage_col0_row1",
+          "value": "\u7269\u4e1a\u7ba1\u7406\u8d39"
+        },
+        {
+          "rid": "arrearage_col1_row1",
+          "value": 59.2
+        },
+        {
+          "rid": "arrearage_col2_row1",
+          "value": 37.4
+        },
+        {
+          "rid": "arrearage_col3_row1",
+          "value": 17.2
+        },
+        {
+          "rid": "arrearage_col4_row1",
+          "value": 3.2
+        },
+        {
+          "rid": "arrearage_col5_row1",
+          "value": 1.4
+        }
+      ],
+      "name": "\u7269\u4e1a\u7ba1\u7406\u8d39"
+    },
+    {
+      "values": [
+        {
+          "rid": "arrearage_col0_row2",
+          "value": "\u5176\u4ed6\u6536\u5165"
+        },
+        {
+          "rid": "arrearage_col1_row2",
+          "value": 0.0
+        },
+        {
+          "rid": "arrearage_col2_row2",
+          "value": 0.0
+        },
+        {
+          "rid": "arrearage_col3_row2",
+          "value": 0.0
+        },
+        {
+          "rid": "arrearage_col4_row2",
+          "value": 0.0
+        },
+        {
+          "rid": "arrearage_col5_row2",
+          "value": 0.0
+        }
+      ],
+      "name": "\u5176\u4ed6\u6536\u5165"
+    },
+    {
+      "values": [
+        {
+          "rid": "arrearage_col0_row3",
+          "value": "\u5408\u8ba1"
+        },
+        {
+          "rid": "arrearage_col1_row3",
+          "value": 101.9
+        },
+        {
+          "rid": "arrearage_col2_row3",
+          "value": 50.5
+        },
+        {
+          "rid": "arrearage_col3_row3",
+          "value": 21.2
+        },
+        {
+          "rid": "arrearage_col4_row3",
+          "value": 23.0
+        },
+        {
+          "rid": "arrearage_col5_row3",
+          "value": 7.2
+        }
+      ],
+      "name": "\u5408\u8ba1"
+    }
+  ],
+  "chart":[
+    {
+      "values": [
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021"
+      ],
+      "name": "year"
+    },
+    {
+      "values": [
+        4568.9,
+        5323.4,
+        5689.7,
+        6784.5,
+        8657.2,
+        9922.4
+      ],
+      "name": "\u65b9\u6848\u4e00"
+    },
+    {
+      "values": [
+        6618.92,
+        7359.41,
+        7865.80,
+        8993.02,
+        9486.32,
+        11029.11
+      ],
+      "name": "\u65b9\u6848\u4e8c"
+    },
+    {
+      "values": [
+        6987.78,
+        7892.78,
+        8067.68,
+        8862.5,
+        9242.4,
+        10378.98
+      ],
+      "name": "\u65b9\u6848\u4e09"
+    },
+    {
+      "values": [
+        3456.0,
+        4656.0,
+        "",
+        "",
+        "",
+        ""
+      ],
+      "name": "\u5b9e\u9645"
+    }
+  ]
+}

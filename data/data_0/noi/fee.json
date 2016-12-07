@@ -1,0 +1,1028 @@
+[
+    {
+        "values": [
+            {
+                "rid": "fee_col0_row0", 
+                "value": "\u589e\u503c\u7a0e "
+            }, 
+            {
+                "rid": "fee_col1_row0", 
+                "value": 56.06
+            }, 
+            {
+                "rid": "fee_col2_row0", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col3_row0", 
+                "value": 56.06
+            }, 
+            {
+                "rid": "fee_col4_row0", 
+                "value": 7
+            }, 
+            {
+                "rid": "fee_col5_row0", 
+                "value": 74.39
+            }, 
+            {
+                "rid": "fee_col6_row0", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col7_row0", 
+                "value": 74.39
+            }, 
+            {
+                "rid": "fee_col8_row0", 
+                "value": 7
+            }, 
+            {
+                "rid": "fee_col9_row0", 
+                "value": 150.0
+            }, 
+            {
+                "rid": "fee_col10_row0", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col11_row0", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col12_row0", 
+                "value": ""
+            }
+        ], 
+        "name": "\u589e\u503c\u7a0e "
+    }, 
+    {
+        "values": [
+            {
+                "rid": "fee_col0_row1", 
+                "value": "\u623f\u4ea7\u7a0e "
+            }, 
+            {
+                "rid": "fee_col1_row1", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "fee_col2_row1", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col3_row1", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "fee_col4_row1", 
+                "value": 7
+            }, 
+            {
+                "rid": "fee_col5_row1", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "fee_col6_row1", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col7_row1", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "fee_col8_row1", 
+                "value": 7
+            }, 
+            {
+                "rid": "fee_col9_row1", 
+                "value": 107.76
+            }, 
+            {
+                "rid": "fee_col10_row1", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col11_row1", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col12_row1", 
+                "value": ""
+            }
+        ], 
+        "name": "\u623f\u4ea7\u7a0e "
+    }, 
+    {
+        "values": [
+            {
+                "rid": "fee_col0_row2", 
+                "value": "\u5730\u79df "
+            }, 
+            {
+                "rid": "fee_col1_row2", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "fee_col2_row2", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col3_row2", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "fee_col4_row2", 
+                "value": 7
+            }, 
+            {
+                "rid": "fee_col5_row2", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "fee_col6_row2", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col7_row2", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "fee_col8_row2", 
+                "value": 7
+            }, 
+            {
+                "rid": "fee_col9_row2", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col10_row2", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col11_row2", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col12_row2", 
+                "value": ""
+            }
+        ], 
+        "name": "\u5730\u79df "
+    }, 
+    {
+        "values": [
+            {
+                "rid": "fee_col0_row3", 
+                "value": "\u80fd\u8017\u8d39\u7528"
+            }, 
+            {
+                "rid": "fee_col1_row3", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "fee_col2_row3", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col3_row3", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "fee_col4_row3", 
+                "value": 7
+            }, 
+            {
+                "rid": "fee_col5_row3", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "fee_col6_row3", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col7_row3", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "fee_col8_row3", 
+                "value": 7
+            }, 
+            {
+                "rid": "fee_col9_row3", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col10_row3", 
+                "value": 106.09
+            }, 
+            {
+                "rid": "fee_col11_row3", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col12_row3", 
+                "value": ""
+            }
+        ], 
+        "name": "\u80fd\u8017\u8d39\u7528"
+    }, 
+    {
+        "values": [
+            {
+                "rid": "fee_col0_row4", 
+                "value": "\u6c34\u8d39"
+            }, 
+            {
+                "rid": "fee_col1_row4", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "fee_col2_row4", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col3_row4", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "fee_col4_row4", 
+                "value": 7
+            }, 
+            {
+                "rid": "fee_col5_row4", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "fee_col6_row4", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col7_row4", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "fee_col8_row4", 
+                "value": 7
+            }, 
+            {
+                "rid": "fee_col9_row4", 
+                "value": 10.0
+            }, 
+            {
+                "rid": "fee_col10_row4", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col11_row4", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col12_row4", 
+                "value": ""
+            }
+        ], 
+        "name": "\u6c34\u8d39"
+    }, 
+    {
+        "values": [
+            {
+                "rid": "fee_col0_row5", 
+                "value": "\u7535\u8d39"
+            }, 
+            {
+                "rid": "fee_col1_row5", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "fee_col2_row5", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col3_row5", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "fee_col4_row5", 
+                "value": 7
+            }, 
+            {
+                "rid": "fee_col5_row5", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "fee_col6_row5", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col7_row5", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "fee_col8_row5", 
+                "value": 7
+            }, 
+            {
+                "rid": "fee_col9_row5", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "fee_col10_row5", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col11_row5", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col12_row5", 
+                "value": ""
+            }
+        ], 
+        "name": "\u7535\u8d39"
+    }, 
+    {
+        "values": [
+            {
+                "rid": "fee_col0_row6", 
+                "value": "\u7164\u8d39"
+            }, 
+            {
+                "rid": "fee_col1_row6", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "fee_col2_row6", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col3_row6", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "fee_col4_row6", 
+                "value": 7
+            }, 
+            {
+                "rid": "fee_col5_row6", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "fee_col6_row6", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col7_row6", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "fee_col8_row6", 
+                "value": 7
+            }, 
+            {
+                "rid": "fee_col9_row6", 
+                "value": 10.0
+            }, 
+            {
+                "rid": "fee_col10_row6", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col11_row6", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col12_row6", 
+                "value": ""
+            }
+        ], 
+        "name": "\u7164\u8d39"
+    }, 
+    {
+        "values": [
+            {
+                "rid": "fee_col0_row7", 
+                "value": "\u7ef4\u62a4/\u7ef4\u4fdd"
+            }, 
+            {
+                "rid": "fee_col1_row7", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "fee_col2_row7", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col3_row7", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "fee_col4_row7", 
+                "value": 7
+            }, 
+            {
+                "rid": "fee_col5_row7", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "fee_col6_row7", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col7_row7", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "fee_col8_row7", 
+                "value": 7
+            }, 
+            {
+                "rid": "fee_col9_row7", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col10_row7", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col11_row7", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col12_row7", 
+                "value": ""
+            }
+        ], 
+        "name": "\u7ef4\u62a4/\u7ef4\u4fdd"
+    }, 
+    {
+        "values": [
+            {
+                "rid": "fee_col0_row8", 
+                "value": "\u603b\u90e8\u7ba1\u7406\u8d39 "
+            }, 
+            {
+                "rid": "fee_col1_row8", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "fee_col2_row8", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col3_row8", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "fee_col4_row8", 
+                "value": 7
+            }, 
+            {
+                "rid": "fee_col5_row8", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "fee_col6_row8", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col7_row8", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "fee_col8_row8", 
+                "value": 7
+            }, 
+            {
+                "rid": "fee_col9_row8", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col10_row8", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col11_row8", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col12_row8", 
+                "value": ""
+            }
+        ], 
+        "name": "\u603b\u90e8\u7ba1\u7406\u8d39 "
+    }, 
+    {
+        "values": [
+            {
+                "rid": "fee_col0_row9", 
+                "value": "\u8425\u9500\u8d39\u7528"
+            }, 
+            {
+                "rid": "fee_col1_row9", 
+                "value": 41.49
+            }, 
+            {
+                "rid": "fee_col2_row9", 
+                "value": 110.83
+            }, 
+            {
+                "rid": "fee_col3_row9", 
+                "value": -69.34
+            }, 
+            {
+                "rid": "fee_col4_row9", 
+                "value": -0.625642876477488
+            }, 
+            {
+                "rid": "fee_col5_row9", 
+                "value": 96.05
+            }, 
+            {
+                "rid": "fee_col6_row9", 
+                "value": 110.83
+            }, 
+            {
+                "rid": "fee_col7_row9", 
+                "value": -14.78
+            }, 
+            {
+                "rid": "fee_col8_row9", 
+                "value": -0.133357394207345
+            }, 
+            {
+                "rid": "fee_col9_row9", 
+                "value": 250.0
+            }, 
+            {
+                "rid": "fee_col10_row9", 
+                "value": 224.6
+            }, 
+            {
+                "rid": "fee_col11_row9", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col12_row9", 
+                "value": ""
+            }
+        ], 
+        "name": "\u8425\u9500\u8d39\u7528"
+    }, 
+    {
+        "values": [
+            {
+                "rid": "fee_col0_row10", 
+                "value": "\u5de5\u8d44\u53ca\u76f8\u5173\u8d39\u7528"
+            }, 
+            {
+                "rid": "fee_col1_row10", 
+                "value": 113.43
+            }, 
+            {
+                "rid": "fee_col2_row10", 
+                "value": 143.38
+            }, 
+            {
+                "rid": "fee_col3_row10", 
+                "value": -29.95
+            }, 
+            {
+                "rid": "fee_col4_row10", 
+                "value": -0.208885479146324
+            }, 
+            {
+                "rid": "fee_col5_row10", 
+                "value": 193.94
+            }, 
+            {
+                "rid": "fee_col6_row10", 
+                "value": 223.88
+            }, 
+            {
+                "rid": "fee_col7_row10", 
+                "value": -29.94
+            }, 
+            {
+                "rid": "fee_col8_row10", 
+                "value": -0.133732356619618
+            }, 
+            {
+                "rid": "fee_col9_row10", 
+                "value": 500.0
+            }, 
+            {
+                "rid": "fee_col10_row10", 
+                "value": 441.92
+            }, 
+            {
+                "rid": "fee_col11_row10", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col12_row10", 
+                "value": ""
+            }
+        ], 
+        "name": "\u5de5\u8d44\u53ca\u76f8\u5173\u8d39\u7528"
+    }, 
+    {
+        "values": [
+            {
+                "rid": "fee_col0_row11", 
+                "value": "\u7ba1\u7406\u8d39\u7528"
+            }, 
+            {
+                "rid": "fee_col1_row11", 
+                "value": 3.68
+            }, 
+            {
+                "rid": "fee_col2_row11", 
+                "value": 10.61
+            }, 
+            {
+                "rid": "fee_col3_row11", 
+                "value": -6.93
+            }, 
+            {
+                "rid": "fee_col4_row11", 
+                "value": -0.65315739868049
+            }, 
+            {
+                "rid": "fee_col5_row11", 
+                "value": 3.68
+            }, 
+            {
+                "rid": "fee_col6_row11", 
+                "value": 10.61
+            }, 
+            {
+                "rid": "fee_col7_row11", 
+                "value": -6.93
+            }, 
+            {
+                "rid": "fee_col8_row11", 
+                "value": -0.65315739868049
+            }, 
+            {
+                "rid": "fee_col9_row11", 
+                "value": 18.0
+            }, 
+            {
+                "rid": "fee_col10_row11", 
+                "value": 23.38
+            }, 
+            {
+                "rid": "fee_col11_row11", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col12_row11", 
+                "value": ""
+            }
+        ], 
+        "name": "\u7ba1\u7406\u8d39\u7528"
+    }, 
+    {
+        "values": [
+            {
+                "rid": "fee_col0_row12", 
+                "value": "\u8ba1\u63d0/\u6838\u9500"
+            }, 
+            {
+                "rid": "fee_col1_row12", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col2_row12", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col3_row12", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "fee_col4_row12", 
+                "value": 7
+            }, 
+            {
+                "rid": "fee_col5_row12", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col6_row12", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col7_row12", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "fee_col8_row12", 
+                "value": 7
+            }, 
+            {
+                "rid": "fee_col9_row12", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col10_row12", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col11_row12", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col12_row12", 
+                "value": ""
+            }
+        ], 
+        "name": "\u8ba1\u63d0/\u6838\u9500"
+    }, 
+    {
+        "values": [
+            {
+                "rid": "fee_col0_row13", 
+                "value": "\u6298\u65e7 "
+            }, 
+            {
+                "rid": "fee_col1_row13", 
+                "value": 1.667591
+            }, 
+            {
+                "rid": "fee_col2_row13", 
+                "value": 2.06
+            }, 
+            {
+                "rid": "fee_col3_row13", 
+                "value": -0.392409
+            }, 
+            {
+                "rid": "fee_col4_row13", 
+                "value": -0.190489805825243
+            }, 
+            {
+                "rid": "fee_col5_row13", 
+                "value": 1.67
+            }, 
+            {
+                "rid": "fee_col6_row13", 
+                "value": 2.06
+            }, 
+            {
+                "rid": "fee_col7_row13", 
+                "value": -0.39
+            }, 
+            {
+                "rid": "fee_col8_row13", 
+                "value": -0.189320388349515
+            }, 
+            {
+                "rid": "fee_col9_row13", 
+                "value": 5.5
+            }, 
+            {
+                "rid": "fee_col10_row13", 
+                "value": 6.18
+            }, 
+            {
+                "rid": "fee_col11_row13", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col12_row13", 
+                "value": ""
+            }
+        ], 
+        "name": "\u6298\u65e7 "
+    }, 
+    {
+        "values": [
+            {
+                "rid": "fee_col0_row14", 
+                "value": "\u5176\u4ed6"
+            }, 
+            {
+                "rid": "fee_col1_row14", 
+                "value": 5.746
+            }, 
+            {
+                "rid": "fee_col2_row14", 
+                "value": 2.32
+            }, 
+            {
+                "rid": "fee_col3_row14", 
+                "value": 3.426
+            }, 
+            {
+                "rid": "fee_col4_row14", 
+                "value": 1.47672413793103
+            }, 
+            {
+                "rid": "fee_col5_row14", 
+                "value": 9.739
+            }, 
+            {
+                "rid": "fee_col6_row14", 
+                "value": 5.47
+            }, 
+            {
+                "rid": "fee_col7_row14", 
+                "value": 4.269
+            }, 
+            {
+                "rid": "fee_col8_row14", 
+                "value": 0.780438756855576
+            }, 
+            {
+                "rid": "fee_col9_row14", 
+                "value": 18.0
+            }, 
+            {
+                "rid": "fee_col10_row14", 
+                "value": 10.21
+            }, 
+            {
+                "rid": "fee_col11_row14", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col12_row14", 
+                "value": ""
+            }
+        ], 
+        "name": "\u5176\u4ed6"
+    }, 
+    {
+        "values": [
+            {
+                "rid": "fee_col0_row15", 
+                "value": "\u8d39\u7528\u603b\u8ba1"
+            }, 
+            {
+                "rid": "fee_col1_row15", 
+                "value": 222.073591
+            }, 
+            {
+                "rid": "fee_col2_row15", 
+                "value": 269.2
+            }, 
+            {
+                "rid": "fee_col3_row15", 
+                "value": -47.126409
+            }, 
+            {
+                "rid": "fee_col4_row15", 
+                "value": -0.175060954680535
+            }, 
+            {
+                "rid": "fee_col5_row15", 
+                "value": 379.469
+            }, 
+            {
+                "rid": "fee_col6_row15", 
+                "value": 352.85
+            }, 
+            {
+                "rid": "fee_col7_row15", 
+                "value": 26.619
+            }, 
+            {
+                "rid": "fee_col8_row15", 
+                "value": 0.075439988663738
+            }, 
+            {
+                "rid": "fee_col9_row15", 
+                "value": 1069.26
+            }, 
+            {
+                "rid": "fee_col10_row15", 
+                "value": 812.38
+            }, 
+            {
+                "rid": "fee_col11_row15", 
+                "value": ""
+            }, 
+            {
+                "rid": "fee_col12_row15", 
+                "value": ""
+            }
+        ], 
+        "name": "\u8d39\u7528\u603b\u8ba1"
+    }, 
+    {
+        "values": [
+            {
+                "rid": "fee_col0_row16", 
+                "value": "NOI"
+            }, 
+            {
+                "rid": "fee_col1_row16", 
+                "value": 23
+            }, 
+            {
+                "rid": "fee_col2_row16", 
+                "value": 23
+            }, 
+            {
+                "rid": "fee_col3_row16", 
+                "value": 23
+            }, 
+            {
+                "rid": "fee_col4_row16", 
+                "value": 23
+            }, 
+            {
+                "rid": "fee_col5_row16", 
+                "value": 23
+            }, 
+            {
+                "rid": "fee_col6_row16", 
+                "value": 23
+            }, 
+            {
+                "rid": "fee_col7_row16", 
+                "value": 23
+            }, 
+            {
+                "rid": "fee_col8_row16", 
+                "value": 23
+            }, 
+            {
+                "rid": "fee_col9_row16", 
+                "value": 23
+            }, 
+            {
+                "rid": "fee_col10_row16", 
+                "value": 23
+            }, 
+            {
+                "rid": "fee_col11_row16", 
+                "value": 23
+            }, 
+            {
+                "rid": "fee_col12_row16", 
+                "value": 23
+            }
+        ], 
+        "name": "NOI"
+    }, 
+    {
+        "values": [
+            {
+                "rid": "fee_col0_row17", 
+                "value": "\u5229\u6da6\u7387"
+            }, 
+            {
+                "rid": "fee_col1_row17", 
+                "value": 23
+            }, 
+            {
+                "rid": "fee_col2_row17", 
+                "value": 23
+            }, 
+            {
+                "rid": "fee_col3_row17", 
+                "value": 23
+            }, 
+            {
+                "rid": "fee_col4_row17", 
+                "value": 23
+            }, 
+            {
+                "rid": "fee_col5_row17", 
+                "value": 23
+            }, 
+            {
+                "rid": "fee_col6_row17", 
+                "value": 23
+            }, 
+            {
+                "rid": "fee_col7_row17", 
+                "value": 23
+            }, 
+            {
+                "rid": "fee_col8_row17", 
+                "value": 23
+            }, 
+            {
+                "rid": "fee_col9_row17", 
+                "value": 23
+            }, 
+            {
+                "rid": "fee_col10_row17", 
+                "value": 23
+            }, 
+            {
+                "rid": "fee_col11_row17", 
+                "value": 23
+            }, 
+            {
+                "rid": "fee_col12_row17", 
+                "value": 23
+            }
+        ], 
+        "name": "\u5229\u6da6\u7387"
+    }
+]

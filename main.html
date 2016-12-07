@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>悦商AMP</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="yes" />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Only required for desktop -->
+    <link rel="stylesheet" href="./static/dist/css/mobile-angular-ui-hover.css" />
+    <!-- Always required -->
+    <link rel="stylesheet" href="./static/dist/css/mobile-angular-ui-base.css" />
+    <!-- Only required for desktop -->
+    <link rel="stylesheet" href="./static/dist/css/mobile-angular-ui-desktop.css" />
+
+    <link href="./static/dist/css/swiper.min.css" rel="stylesheet">
+    <link href="./static/dist/css/animate.css" rel="stylesheet">
+
+    <link href="./static/css/amp_main_m.css" rel="stylesheet">
+    <link href="./static/css/views/datatools.css" rel="stylesheet">
+
+    <script src="./static/dist/js/jquery-1.11.3.min.js"></script>
+    <script src="./static/dist/js/angular.min.js"></script>
+    <script src="./static/dist/js/angular-animate.min.js"></script>
+    <!--<script src="../static/dist/js/angular-route.js"></script>-->
+    <!--&lt;!&ndash;<script src="../static/dist/js/angular-route.js"></script>
+    <script src="../static/dist/js/angular-ui-router.js"></script>-->
+    <script src="./static/dist/js/angular-ui-router.min.js"></script>
+    <script src="./static/dist/js/mobile-angular-ui.min.js"></script>
+    <script src="./static/dist/js/mobile-angular-ui.gestures.min.js"></script>
+
+    <script src="./static/dist/js/swiper.jquery.min.js"></script>
+    <script src="./static/dist/js/jquery.pin.js"></script>
+    <script src="./static/dist/js/iscroll.js"></script>
+    <script src="./static/dist/js/echarts.common.min.js"></script>
+
+    <script src="./static/dist/js/echarts.common.min.js"></script>
+
+    <script src="./static/js/amp_menu.js"></script>
+    <script src="./static/js/amp_main_m.js"></script>
+
+
+    <script src="./static/js/views/noi_analyse/noi_controller.js"></script>
+    <script src="./static/js/views/noi_analyse/noi_services.js"></script>
+    <script src="./static/js/views/noi_analyse/noi_filters.js"></script>
+    <script src="./static/js/views/noi_analyse/noi_directives.js"></script>
+</head>
+<body ng-app="amp" ng-controller="MainController as mCtrl">
+
+<div class="app ampApp">
+    <div class="navbar navbar-app navbar-absolute-top" ng-if="mCtrl.headerShow">
+        <!--nav top-->
+        <div ui-view="header">
+        </div>
+    </div><!-- nav top-->
+    <div class="navbar navbar-app navbar-absolute-bottom" ng-if="mCtrl.bottomShow">
+        <!--nav bottom-->
+        <div class="btn-group justified">
+            <a ng-repeat="menuItem in mCtrl.menu" class="btn btn-navbar" ui-sref="{{menuItem.links}}" ui-sref-active="active">
+                 <span class="ampMenu-wrapper">
+                    <i class="amp-menu" ng-class="menuItem.icon"></i>{{menuItem.name}}
+                </span>
+            </a>
+        </div>
+    </div><!--nav bottom-->
+
+    <!-- App body -->
+    <div class='app-body'>
+        <div ng-show="loading" class="app-content-loading">
+            <i class="fa fa-spinner fa-spin loading-spinner"></i>
+        </div>
+        <div class='app-content'>
+
+            <div class="scrollable">
+                <div class="scrollable-content">
+                    <div ui-view="content"  class="animated" ng-class="{'view-back': state.back, 'view-to-home': state.toHome, 'view-exit': state.exit, 'fadeOut': state.exit,'fadeIn': state.enter, 'view-enter': state.enter, 'view-loading': state.loading}"></div>
+                </div>
+            </div>
+        </div>
+    </div><!--app body-->
+</div><!--app -->
+
+<!-- Sidebars -->
+<div class="sidebar sidebar-left">
+    <div ui-view="sidebarLeft">
+        sidbarLeft
+    </div>
+</div>
+
+<div class="sidebar sidebar-right">
+    <div ui-view="sidebarRight">
+        sidbarRight
+    </div>
+</div>
+<!-- Modals and Overlays -->
+<div ui-yield-to="modals"></div>
+</body>
+</html>

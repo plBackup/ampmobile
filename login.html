@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>悦商AMP</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- 导入CSS -->
+    <link href="./static/css/login/login.css" rel="stylesheet">
+</head>
+<body>
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status"><i class="fa fa-spinner fa-spin"></i></div>
+</div>
+
+    <div class="main">
+        <!--<div class="header">
+            <span class="ys-logo"></span>
+        </div>-->
+        <div class="login-wrapper">
+            <h3><em class="ys-icon ys-icon-amp"></em></h3>
+            <div class="form-wrapper">
+                <form name="veriform" id="veriform" action="main.html" method="post">
+                    <div class="input-group user-wrapper">
+                        <input id="phone" name="phone" type="tel" placeholder="手机号" autocomplete="off"/>
+                    </div>
+                    <div class="input-group input-group-veri clearfix">
+                        <input id="verification" name="verification" type="text" placeholder="验证码" autocomplete="off"/>
+                        <a href="#" id="btn-veri" class="ys-btn">获取验证码</a>
+                    </div>
+
+                    <div class="input-group">
+                        <a href="#" id="btn-login" class="amp-btn ys-btn">登录</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<script src="./static/dist/js/jquery-1.11.3.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#preloader').delay(350).fadeOut(function(){
+            //start
+        });
+        var timeCount;
+        var time=30;
+        var verify={
+            getVeriCodeInit:function(){
+                $("#btn-veri").on("click",function(e){
+                    e.preventDefault();
+                    if(typeof timeCount ==="undefined"){
+                        var phone=verify.phone_verfiy();
+                        console.log(phone);
+                        if(phone){
+                             //ajax getcode
+                            $.get("getcode.html?phone="+phone,function(result){
+                                var obj = eval(result)
+                                if (obj.success == "0"){
+                                     alert (obj.code)
+                                }
+                               
+                                
+                            });
+
+                            time=30;
+                            timeCount=setInterval(function(){
+                                if(time==1){
+                                    clearInterval(timeCount);
+                                    timeCount=undefined;
+                                    $("#btn-veri").text("获取验证码");
+                                    time=30;
+                                }else{
+                                    time-=1;
+                                    $("#btn-veri").text(time.toString()+"秒后重新发送");
+                                }
+                            },1000);
+                        }else{
+                            alert("请输入有效的手机号码");
+                        }
+                    }
+                });
+            },
+            code_verify:function(){
+                var phone=verify.phone_verfiy();
+                var code=$("#verification").val();
+                console.log(code);
+                //验证 phone+code
+                if(!phone){
+                    alert("请输入有效的手机号码");
+                    return false;
+                }
+                if(code=="" || typeof code==="undefined"){
+                    console.log(code);
+                    alert("请先获取验证码");
+                    return false;
+                }
+                //ajax double 验证 phone+code
+                 $.get("logon.html?phone="+phone + "&verification="+code,function(result){
+                    var obj = eval(result)
+                    if (obj.success == "1"){
+                        window.location.href = "/main/main.html"
+                      }else{
+                        alert (obj.code)
+                        isSuccess = false
+                       }
+                     });
+                    return isSuccess;
+            },
+
+                
+            phone_verfiy:function(){
+                var phone=$("#phone").val();
+                if(phone==""){
+                    // alert("请输入电话号码");
+                    return false;
+                }else{
+                    if(!/^(13[0-9]|14[0-9]|15[0-9]|17[0-9]|18[0-9])\d{8}$/i.test(phone)){
+                        //     alert('请输入有效的电话号码');
+                        return false;
+                    }
+                    return phone;
+                }
+            },
+            login:function(url){
+                // window.location.href=url
+                //$("form#veriform").submit();
+                window.location.href=url
+            },
+            init:function(){
+                this.getVeriCodeInit();
+                $("#btn-login").on("click",function(){
+                    var verified=verify.code_verify();
+                    console.log(verified);
+                    if(verified){
+                        verify.login("/main/main.html");
+                    }else{
+                        return false;
+                    }
+                });
+            }
+        };
+        verify.init();
+    });
+</script>
+</body>
+</html>
