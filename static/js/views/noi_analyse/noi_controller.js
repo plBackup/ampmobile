@@ -12,6 +12,9 @@ var noi = angular.module('noi', [
 noi.controller('noiController', ['$rootScope', '$scope',"noiAllData",
     function($rootScope, $scope,noiAllData) {
         var self=this;
+        $rootScope.showHeader();
+        $rootScope.showBottom();
+
         self.allData=noiAllData;
 
         self.noiData=noiAllData.noi[0].values;

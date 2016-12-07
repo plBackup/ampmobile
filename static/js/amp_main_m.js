@@ -17,9 +17,15 @@ ampApp.run(function($transform) {
 
 ampApp.config(function($stateProvider,$urlRouterProvider) {
     // An array of state definitions
-    function _timeDefer(){
+    function _timeDefer($q,$timeout){
+        var defer = $q.defer();
+        $timeout(function(){
+            defer.resolve();
 
-    }
+        }, 300);
+        return defer.promise;
+    };
+
     var states = [
         {
             name: 'projectlist',
@@ -44,16 +50,31 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
                 projectsData: function(projectService) {
                     return projectService.getAllData();
                 },
-                data: ['$q','$timeout', function($q,$timeout){
-                    var defer = $q.defer();
-                    $timeout(function(){
-                        defer.resolve();
-
-                    }, 300);
-                    return defer.promise;
-                }]
+                data: ['$q','$timeout', _timeDefer]
             }
         }, //state
+        {
+            name: 'projectupdate',
+            url: '/projectupdate',
+            views:{
+                'header': {
+                    templateUrl: './views/projects/project_create_header.html'
+                },
+                'content': {
+                    templateUrl: './views/projects/project_create.html',
+                },
+                "sidebarLeft":{
+                    templateUrl:"./views/blank.html"
+                },
+                "sidebarRight":{
+                    templateUrl:"./views/blank.html"
+                }
+            },
+            resolve: {
+                data: ['$q','$timeout', _timeDefer]
+            }
+        }, //state
+
         {
             name: 'noi',
             url: '/noi',
@@ -77,14 +98,7 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
                 noiAllData: function(noiService) {
                     return noiService.getAllData();
                 },
-                data: ['$q','$timeout', function($q,$timeout){
-                    var defer = $q.defer();
-                    $timeout(function(){
-                        defer.resolve();
-
-                    }, 300);
-                    return defer.promise;
-                }]
+                data: ['$q','$timeout', _timeDefer]
             }
         }, //state
 
@@ -106,14 +120,7 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
                 }
             },
             resolve: {
-                data: ['$q','$timeout', function($q,$timeout){
-                    var defer = $q.defer();
-                    $timeout(function(){
-                        defer.resolve();
-
-                    }, 300);
-                    return defer.promise;
-                }]
+                data: ['$q','$timeout', _timeDefer]
             }
         } //state
 
@@ -135,14 +142,7 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
             }
         },
         resolve: {
-            data: ['$q','$timeout', function($q,$timeout){
-                var defer = $q.defer();
-                $timeout(function(){
-                    defer.resolve();
-
-                }, 300);
-                return defer.promise;
-            }]
+            data: ['$q','$timeout', _timeDefer]
         }
     });
 
@@ -225,4 +225,8 @@ ampApp.controller('MainController', function($rootScope, $scope,$location,$timeo
         function(event){
             $scope.state.loading=false;
         });
+});
+
+ampApp.run(function($http) {
+    $http.get('./data/projectList.json', { cache: true });
 });

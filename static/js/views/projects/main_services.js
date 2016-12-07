@@ -4,7 +4,7 @@
 angular.module('main').service('ProjectService', function($http) {
     var service = {
         getAllProject: function() {
-            return $http.get('../data/projectList.json', { cache: true }).then(function(res) {
+            return $http.get('./data/projectList.json', { cache: true }).then(function(res) {
                 return res.data['projects'];
             });
         },

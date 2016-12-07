@@ -7,19 +7,29 @@ var projects = angular.module('projects', [
 ]);
 
 
-projects.controller("pjListController",["$rootScope","$scope","projectsData",function($rootScope,$scope,projectsData){
+projects.controller("pjListController",["$rootScope","$scope","$location","projectsData",function($rootScope,$scope,$location,projectsData){
     var self=this;
     if(!$rootScope.projects){
         $rootScope.projects=projectsData;
     }
+    self.id=12;
+    console.log(projectsData);
     $rootScope.showHeader();
     $rootScope.hideBottom();
 
     self.projects=$rootScope.projects;
+
+    self.projectUpdate=function(){
+        console.log("project update----------------");
+        $location.path("projectupdate");
+    };
+    self.projectCreate=function(){
+        console.log("project create----------------");
+        $location.path("projectCreate");
+    }
+
 }]);
-projects.controller("testCtrl",function($rootScope,$scope){
-    $scope.name="txt";
-});
+
 
 projects.controller("pjCreateController",["$rootScope","$scope","$location",function($rootScope,$scope,$location){
     //$scope.project=project;
@@ -52,7 +62,6 @@ projects.controller("pjCreateController",["$rootScope","$scope","$location",func
         },
         "position":""
     };
-
     self.form_menu={
         proportionType:["套内面积","建筑面积"],
     };
@@ -129,6 +138,3 @@ projects.controller("pjUpdateController",["$rootScope","$scope","$location","pid
     $(".ys-tips").tooltip();
 }]);
 
-projects.run(function($http) {
-    $http.get('../data/projectList.json', { cache: true });
-});
