@@ -19,8 +19,19 @@
     <link href="./static/dist/css/swiper.min.css" rel="stylesheet">
     <link href="./static/dist/css/animate.css" rel="stylesheet">
 
+    <style>
+        ul{list-style-type: none;padding:0;}
+        em{font-style: normal;}
+    </style>
+
     <link href="./static/css/amp_main_m.css" rel="stylesheet">
     <link href="./static/css/views/datatools.css" rel="stylesheet">
+
+
+    <!-- 模拟测算 -->
+    <link rel="stylesheet" href="./static/css/views/investment_analysis/simulation_calculation_list.css" />
+    <link rel="stylesheet" href="./static/css/views/investment_analysis/simulation_calculation_list_header.css" />
+
 
     <script src="./static/dist/js/jquery-1.11.3.min.js"></script>
     <script src="./static/dist/js/angular.min.js"></script>
@@ -43,10 +54,18 @@
     <script src="./static/js/amp_main_m.js"></script>
 
 
+    <script src="./static/js/views/projects/project_controller.js"></script>
+    <script src="./static/js/views/projects/project_service.js"></script>
+
     <script src="./static/js/views/noi_analyse/noi_controller.js"></script>
     <script src="./static/js/views/noi_analyse/noi_services.js"></script>
     <script src="./static/js/views/noi_analyse/noi_filters.js"></script>
     <script src="./static/js/views/noi_analyse/noi_directives.js"></script>
+
+
+    <!-- 模拟测算 -->
+    <script src="static/js/views/investment_analysis/controller/simulation_calculation_list_controller.js"></script>
+
 </head>
 <body ng-app="amp" ng-controller="MainController as mCtrl">
 

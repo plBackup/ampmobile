@@ -5,6 +5,7 @@ var ampApp = angular.module('amp', [
     'ui.router',
     'mobile-angular-ui',
     'mobile-angular-ui.gestures',
+    "projects",
     'noi'
 ]);
 
@@ -16,13 +17,49 @@ ampApp.run(function($transform) {
 
 ampApp.config(function($stateProvider,$urlRouterProvider) {
     // An array of state definitions
+    function _timeDefer(){
+
+    }
     var states = [
+        {
+            name: 'projectlist',
+            url: '/projectlist',
+            views:{
+                'header': {
+                    templateUrl: './views/projects/project_list_header.html'
+                },
+                'content': {
+                    templateUrl: './views/projects/project_list.html',
+                    controller:"pjListController",
+                    controllerAs:"pCtrl"
+                },
+                "sidebarLeft":{
+                    templateUrl:"./views/blank.html"
+                },
+                "sidebarRight":{
+                    templateUrl:"./views/blank.html"
+                }
+            },
+            resolve: {
+                projectsData: function(projectService) {
+                    return projectService.getAllData();
+                },
+                data: ['$q','$timeout', function($q,$timeout){
+                    var defer = $q.defer();
+                    $timeout(function(){
+                        defer.resolve();
+
+                    }, 300);
+                    return defer.promise;
+                }]
+            }
+        }, //state
         {
             name: 'noi',
             url: '/noi',
             views:{
                 'header': {
-                    templateUrl: './views/noi_analyse/noi_header.html',
+                    templateUrl: './views/noi_analyse/noi_header.html'
                 },
                 'content': {
                     templateUrl: './views/noi_analyse/noi.html',
@@ -56,10 +93,10 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
             url: '/rpgset',
             views:{
                 'header': {
-                    templateUrl: './views/datatool/rpg_set_header.html',
+                    templateUrl: './views/datatool/rpg_set_header.html'
                 },
                 'content': {
-                    templateUrl: './views/datatool/datatool_rpg_set_index.html',
+                    templateUrl: './views/datatool/datatool_rpg_set_index.html'
                 },
                 "sidebarLeft":{
                     templateUrl:"./views/blank.html"
@@ -78,20 +115,50 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
                     return defer.promise;
                 }]
             }
-        }, //state
+        } //state
 
     ];
+
+
+    /* ---------------------------------------- 模拟测算 ---------------------------------------- */
+    // 模拟测算 方案列表页
+    $stateProvider.state({
+        name:"simulation_calculation_list",
+        url: "/simulation_calculation_list",
+        views:{
+            "header":{
+                templateUrl:"./views/investment_analysis/simulation_calculation_list_header.html"
+            },
+            "content": {
+                templateUrl: "./views/investment_analysis/simulation_calculation_list.html",
+                controller:"simulation-calculation-list-controller"
+            }
+        },
+        resolve: {
+            data: ['$q','$timeout', function($q,$timeout){
+                var defer = $q.defer();
+                $timeout(function(){
+                    defer.resolve();
+
+                }, 300);
+                return defer.promise;
+            }]
+        }
+    });
+
+
+
 
     // Loop over the state definitions and register them
     states.forEach(function(state) {
         $stateProvider.state(state);
     });
 
-    $urlRouterProvider.when('', '/noi');
+    $urlRouterProvider.when('', '/projectlist');
     //$urlRouterProvider.when('/rpgindex', '/rpgindex/1');
     $urlRouterProvider.otherwise(
         function($injector, $location) {
-            $location.path('/noi');
+            $location.path('/projectlist');
         });
 
 });
