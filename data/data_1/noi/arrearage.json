@@ -1,0 +1,118 @@
+[
+    {
+        "values": [
+            {
+                "rid": "arrearage_col0_row0", 
+                "value": "\u79df\u91d1"
+            }, 
+            {
+                "rid": "arrearage_col1_row0", 
+                "value": 42.7
+            }, 
+            {
+                "rid": "arrearage_col2_row0", 
+                "value": 13.1
+            }, 
+            {
+                "rid": "arrearage_col3_row0", 
+                "value": 4.0
+            }, 
+            {
+                "rid": "arrearage_col4_row0", 
+                "value": 19.8
+            }, 
+            {
+                "rid": "arrearage_col5_row0", 
+                "value": 5.8
+            }
+        ], 
+        "name": "\u79df\u91d1"
+    }, 
+    {
+        "values": [
+            {
+                "rid": "arrearage_col0_row1", 
+                "value": "\u7269\u4e1a\u7ba1\u7406\u8d39"
+            }, 
+            {
+                "rid": "arrearage_col1_row1", 
+                "value": 59.2
+            }, 
+            {
+                "rid": "arrearage_col2_row1", 
+                "value": 37.4
+            }, 
+            {
+                "rid": "arrearage_col3_row1", 
+                "value": 17.2
+            }, 
+            {
+                "rid": "arrearage_col4_row1", 
+                "value": 3.2
+            }, 
+            {
+                "rid": "arrearage_col5_row1", 
+                "value": 1.4
+            }
+        ], 
+        "name": "\u7269\u4e1a\u7ba1\u7406\u8d39"
+    }, 
+    {
+        "values": [
+            {
+                "rid": "arrearage_col0_row2", 
+                "value": "\u5176\u4ed6\u6536\u5165"
+            }, 
+            {
+                "rid": "arrearage_col1_row2", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "arrearage_col2_row2", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "arrearage_col3_row2", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "arrearage_col4_row2", 
+                "value": 0.0
+            }, 
+            {
+                "rid": "arrearage_col5_row2", 
+                "value": 0.0
+            }
+        ], 
+        "name": "\u5176\u4ed6\u6536\u5165"
+    }, 
+    {
+        "values": [
+            {
+                "rid": "arrearage_col0_row3", 
+                "value": "\u5408\u8ba1"
+            }, 
+            {
+                "rid": "arrearage_col1_row3", 
+                "value": 101.9
+            }, 
+            {
+                "rid": "arrearage_col2_row3", 
+                "value": 50.5
+            }, 
+            {
+                "rid": "arrearage_col3_row3", 
+                "value": 21.2
+            }, 
+            {
+                "rid": "arrearage_col4_row3", 
+                "value": 23.0
+            }, 
+            {
+                "rid": "arrearage_col5_row3", 
+                "value": 7.2
+            }
+        ], 
+        "name": "\u5408\u8ba1"
+    }
+]

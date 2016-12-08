@@ -1,0 +1,59 @@
+[
+    {
+        "values": [
+            {
+                "name": "\u5f53\u6708\u5b9e\u9645", 
+                "value": 188.64
+            }, 
+            {
+                "name": "\u5168\u5e74\u9884\u6d4b", 
+                "value": 557.13
+            }, 
+            {
+                "name": "\u603b\u6210\u672c", 
+                "value": 110400.0
+            }, 
+            {
+                "name": "\u9884\u6d4b\u5e74\u56de\u62a5\u7387\uff08\u6309\u6210\u672c\uff09", 
+                "value": 0.01
+            }, 
+            {
+                "name": "\u4f30\u503c", 
+                "value": 45569.0
+            }, 
+            {
+                "name": "\u4f30\u503c\u65e5\u671f", 
+                "value": 42414.0
+            }, 
+            {
+                "name": "\u9884\u6d4b\u5e74\u56de\u62a5\u7387\uff08\u6309\u4f30\u503c", 
+                "value": 0.012
+            }, 
+            {
+                "name": "\u672c\u91d1", 
+                "value": 33120.0
+            }, 
+            {
+                "name": "\u5230\u671f\u65e5", 
+                "value": 45170.0
+            }, 
+            {
+                "name": "\u5e74\u8d37\u6b3e\u5229\u606f", 
+                "value": 1987.2
+            }, 
+            {
+                "name": "\u5f53\u524d\u6743\u76ca", 
+                "value": 12449.0
+            }, 
+            {
+                "name": "\u9884\u6d4b\u7a0e\u524d\u73b0\u91d1\u6d41 ", 
+                "value": 60.33
+            }, 
+            {
+                "name": "\u9884\u6d4b\u6536\u76ca\u7387\uff08\u6309ROE\uff09", 
+                "value": 0.0008
+            }
+        ], 
+        "name": "noi"
+    }
+]

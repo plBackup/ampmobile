@@ -1,0 +1,90 @@
+html,body{margin:0;padding:0;width:100%;height:100%;background-color:#f3f3f3;overflow: auto;}
+body{position: relative;background-image: url(../../images/login_bg_m.jpg);background-size:cover;background-repeat: no-repeat;background-position: center center;}
+*{box-sizing:border-box;font-family: 'PingFang SC', 'Helvetica Neue',"STHeitiSC-Light","Microsoft YaHei",sans-serif;
+/*    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;*/}
+
+.no-select{ -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select:none; }
+a,button,.btn{ -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select:none;}
+/* s-d */
+#preloader { position: fixed; /*display:none;*/ top: 0; left: 0; width: 100%; height: 100%; background-color: #e4e7ea; z-index: 10000; }
+#status { width: 30px; height: 30px; position: absolute; left: 50%; top: 50%; margin: -15px 0 0 -15px; font-size: 32px; }
+
+.pull-left{float:left;}
+.pull-right{float:right;}
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+.main{position: relative;margin:0 auto;width:100%;height:100%;overflow: hidden;}
+.main>.header{height:100px;width:100%;position: relative;}
+.main>.header span.ys-logo{display: block;position:absolute;left:60px;top:50%;margin-top:-20px;width:98px;height:38px;background-image: url(../../images/amp_logo_lg_beta@2x.png);background-position:-50px -100px;background-repeat:no-repeat;}
+
+.ys-icon{background-repeat: no-repeat;}
+
+.login-wrapper{position: absolute;top:130px;left:50%;margin-left:-40%;padding:0px;width:80%;background:none;border-radius: 3px;box-shadow: none;}
+.login-wrapper h3{position:relative;margin:0;margin-bottom:45px;height:42px;line-height:20px;color:#e74f4e;text-align: left;font-size: 18px;font-weight: normal;}
+.login-wrapper h3>em.ys-icon-amp{display:block;position:absolute;top:0;left:50%;margin-left:-77px;width:153.5px;height:41px;
+    background-size:contain;background-repeat: no-repeat;background-image:url(../../images/amp_logo_lg_beta@2x.png);background-position:center center;}
+.login-wrapper .form-wrapper{padding:0;}
+.login-wrapper .form-wrapper .input-group{position:relative;margin-bottom:26px;}
+.login-wrapper .form-wrapper .input-group:before{position: absolute;top:50%;margin-top:-9px;left:8px;display: block;content:" ";width:16px;height:16px;
+    background-size:contain;background-repeat: no-repeat;background-position:center center;}
+.login-wrapper .form-wrapper .user-wrapper:before{
+    background-image: url(../../images/icon_user@2x.png);}
+.login-wrapper .form-wrapper .password-wrapper:before,
+.login-wrapper .form-wrapper .input-group-veri:before{background-image: url(../../images/icon_password.png);}
+.login-wrapper .form-wrapper .password-wrapper,
+.login-wrapper .form-wrapper .input-group-veri{margin-bottom:40px;}
+.login-wrapper .form-wrapper .input-group:nth-last-child(1){margin-bottom: 0;}
+.login-wrapper .form-wrapper input{padding-left:42px;padding-right:10px;width:100%;height:32px;border:0;-webkit-apperance:none;border-radius:0;border:0;border-bottom:solid 1px #fff; background:none;color:#fff;outline:0;font-size: 15px;}
+
+.login-wrapper .form-wrapper .login-addon{padding-left:3px;padding-right:3px;}
+.login-wrapper .login-addon div{height:20px;line-height: 20px;color:#fff;}
+.login-wrapper .login-addon a{color:#fff;text-decoration: none;font-size: 15px;}
+.login-wrapper .login-addon a:focus,.login-wrapper .login-addon a:active{color:rgba(0,200,120,0.9);}
+.login-wrapper .login-addon .input-addon{position:relative;width:60%;height:20px;overflow: hidden;margin-bottom:0;font-size: 15px;color:#fff;text-align: right;}
+.login-wrapper .login-addon .input-addon>input{position: absolute;left:-2000px;opacity: 0;}
+.login-wrapper .form-wrapper .input-addon>label#cookie{display: inline-block;position: relative;height:20px;padding-left:22px;text-align: right;}
+.login-wrapper .input-addon>label#cookie:before{position: absolute;left:0;top:50%;margin-top:-8px;display: block;width:16px;height:16px;background-image:url(../../images/icon.png);background-position: -471px -136px;background-repeat: no-repeat;content:" ";}
+
+.login-wrapper .login-addon .input-addon>input:checked + label#cookie:before{background-position: -505px -136px;}
+.login-wrapper .form-wrapper a.ys-btn{display: block;height:44px;width:100%;background-color:rgba(0,200,120,0.9);text-decoration: none;color:#fff;border-radius:3px;text-align: center;line-height: 44px;font-size: 15px;position:relative; z-index:99;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    transition: background-color 0.3s;}
+
+.login-wrapper .form-wrapper a.ys-btn:hover,.login-wrapper .form-wrapper a.ys-btn:focus,.login-wrapper .form-wrapper a.ys-btn:active{background-color: rgba(0, 191, 112, 0.9);color:#fff;text-decoration: none;}
+.input-group-veri{/*padding-right:150px;*/position: relative;}
+.login-wrapper .form-wrapper .input-group-veri  a.ys-btn{position: absolute;height:24px;line-height:24px;width:80px;top:2px;right:0;font-weight:normal;font-size:12px;}
+
+
+/* btn effect */
+
+a.amp-btn:before { content: ""; position: absolute; z-index: -1; top: 0; left: 0; right: 0; bottom: 0; background: #33d393;border-radius:3px;
+    -webkit-transform: scale(0); transform: scale(0); -webkit-transition-property: transform; transition-property: transform;
+    -webkit-transition-duration: 0.3s; transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;  transition-timing-function: ease-out;
+}
+a.amp-btn:hover:before/*, .amp-btn:focus:before, .amp-btn:active:before */{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+*{-webkit-appearance: none;}
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: rgba(250, 255, 189,0);
+    background-image: none;
+    color: rgb(0, 0, 0);
+}
+::-moz-placeholder { color: #c2cdd7; }
+::-webkit-input-placeholder { color:#c2cdd7; }
+:-ms-input-placeholder { color:#c2cdd7; }

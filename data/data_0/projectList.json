@@ -1,0 +1,30 @@
+{
+  "projects":[{
+    "name":"模拟项目001",
+    "proportion":"62,000.00",
+    "proportionType":"建筑面积",
+    "openRate":"89.12%",
+    "income":2774.09,
+    "opendate":"2013-9-30",
+    "irr":"7.26%",
+    "complete":"74.76%",
+    "noi":{
+        "monthly":220.52,
+        "yearly":"2,386.91"
+    },
+    "asset":{
+      "value":"34,000.00",
+      "rate":"7.02%"
+    },
+    "pm":{
+      "name":"王总",
+      "title":"营运负责人",
+      "figure":"male.png",
+      "teamNum":12,
+      "contact":"email",
+      "resume":"/"
+    },
+    "position":"上海"
+  }
+  ]
+}

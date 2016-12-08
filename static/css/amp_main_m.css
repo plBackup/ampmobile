@@ -1,0 +1,42 @@
+/*reset*/
+.ampApp{background-color:#fff;}
+.ampApp .navbar-app{background-color:#1a202c;border-color:#1a202c;color:#fff;}
+.ampApp .navbar-absolute-top{height:44px;min-height: 44px;}
+.ampApp .navbar-absolute-bottom{height:48px;min-height: 48px;}
+.ampApp .navbar-brand{padding:12px 15px;height:44px;color:#fff;font-weight:normal;}
+.ampApp .navbar-app .btn-navbar, .navbar-app .btn{line-height: 44px;color:#fff;}
+
+.sidebar-right,.sidebar-left{background-color:#fff;}
+/*.ampApp .navbar-absolute-bottom .btn-navbar, .navbar-app .btn{line-height: 44px;}*/
+.ampApp .navbar-app .btn-navbar:hover, .ampApp .navbar-app .btn:hover{color:#fff;}
+
+/*main*/
+.ampApp span.ampMenu-wrapper{position:relative;display:block;height:44px;padding-top:30px;line-height: 14px;text-align: center;font-size: 12px;color:#727e8e;}
+.ampApp span.ampMenu-wrapper i.amp-menu{display: block;top:3px;left:50%;margin-left:-11.5px;position: absolute;width:23px;height:23px;background-position: center center;background-repeat:no-repeat;background-size:contain;}
+.btn.active>span.ampMenu-wrapper{color:#59b46f;}
+i.amp-menu-noi{background-image:url(../images/menu_noi@2x.png);}
+.btn.active>span.ampMenu-wrapper>i.amp-menu-noi{background-image:url(../images/menu_noi_active@2x.png);}
+
+i.amp-menu-invest{background-image:url(../images/menu_invest@2x.png);}
+.btn.active>span.ampMenu-wrapper>i.amp-menu-invest{background-image:url(../images/menu_invest_active@2x.png);}
+
+i.amp-menu-manage{background-image:url(../images/menu_manage@2x.png);}
+.btn.active>span.ampMenu-wrapper>i.amp-menu-manage{background-image:url(../images/menu_manage_active@2x.png);}
+
+i.amp-menu-ctrl{background-image:url(../images/menu_ctrl@2x.png);}
+.btn.active>span.ampMenu-wrapper>i.amp-menu-ctrl{background-image:url(../images/menu_ctrl_active@2x.png);}
+
+i.amp-menu-data{background-image:url(../images/menu_data@2x.png);}
+.btn.active>span.ampMenu-wrapper>i.amp-menu-data{background-image:url(../images/menu_data_active@2x.png);}
+
+/*navOpt-icon*/
+.ampApp .navOpt-icon{position:relative;display: inline-block;width:22px;height:44px;}
+.ampApp .navOpt-icon:before{position:absolute;display: block;top:50%;margin-top:-11px;left:50%;margin-left:-11px;
+    width:22px;height:22px;content:" ";background-repeat: no-repeat;background-position: center center;background-size:contain;content:" ";}
+
+.navOpt-icon-filter:before{background-image:url(../images/icon_filter@2x.png);}
+
+.ampApp .amp-icon{}
+.ampApp .navbar-app .amp-logo{display: inline-block;position: relative;top:-2px;  width:100.5px; height:26px;
+    background-image:url(../images/amp_logo_m_beta@2x.png);background-repeat: no-repeat;background-position: center center;background-size:contain; }
+

@@ -1,0 +1,81 @@
+<div ui-content-for="ampHeader">
+        <div class="navbar-brand navbar-brand-center">
+            Test2
+        </div>
+
+        <div class="btn-group pull-right" ui-yield-to="navbarAction">
+            <div ui-toggle="uiSidebarRight" class="btn sidebar-right-toggle">
+                <i class="navOpt-icon navOpt-icon-filter"></i>
+            </div>
+        </div>
+</div>
+<div ui-content-for="pageHeader">
+    <div class="scrollable-header page-header" >
+        rpg header
+    </div>
+</div>
+
+
+<div class="amp-content-panel" id="rgp-set-index">
+    <div class="amp-content-header clearfix">
+        <!-- Breadcrumb / Summary info-->
+        <ul class="header-nav-sub clearfix">
+            <li><a ui-sref="rpgindex" ui-sref-active="active" href="#/rpgindex" id="tri-0-1-0" class="header-subnav-item" >铺位信息</a></li>
+            <li><a ui-sref="rpgset" ui-sref-active="active" href="#/rpgset" id="tri-0-1-1" class="header-subnav-item">租金包设定</a></li>
+        </ul>
+    </div><!--amp-content-header-->
+    <div class="amp-block">
+        <span class="amp-tipsnote" style="position: relative;float:left; top:5px;background-color:transparent;margin-left:-3px;margin-bottom:35px;"><em class="ys-amp-icon ys-icon-tips ys-icon-tips-hover" style="left:5px;margin-top:-11px;"></em>体验版数据为模拟数据，请勿引用。可提供数据整合服务</span>
+
+        <div class="amp-table-wrapper" id="rpg-set-info">
+
+
+            <table class="table table-right-bordered amp-table" >
+                <thead>
+                <tr>
+                    <th>建筑面积(m&sup2)</th>
+                    <th>总租金(万)</th>
+                    <th>平均租金(元/m&sup2/月)</th>
+                    <th>开业时间</th>
+                    <th>套内面积(m&sup2)</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="tr-info-main">
+                    <td>
+                        <h3>{{sCtrl.setData[0].value | number:2}}</h3>
+                    </td>
+                    <td>
+                        <h3>{{sCtrl.setData[1].value | number:2}}</h3>
+                    </td>
+                    <td>
+                       <h3>{{sCtrl.setData[2].value | number:2}}</h3>
+                    </td>
+                    <td>
+                        <h3>{{sCtrl.setData[3].value}}</h3>
+                    </td>
+                    <td>
+                       <h3>{{sCtrl.setData[4].value | number:2}}</h3>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div><!--end ys-finacial-income-table-->
+    </div><!--ys-block-->
+    <div class="amp-block-pd">
+          <div class="btn-wrapper">
+            <a href="amp_main_solo.html?projectid={{curProject}}" class="btn btn-default amp-btn" target="_blank">推算</a>
+        </div>
+
+    </div>
+</div><!-- contentpanel -->
+<!--
+<script src="../static/js/views/datatools/rpg_index.js"></script>
+<script>
+    jQuery(document).ready(function(){
+        rpgIndex_table.init();
+        amp_main.leftPanel_update();
+    });
+</script>
+-->
+

@@ -1,0 +1,3392 @@
+[
+    {
+        "shopIndex": "310",
+        "indoorArea": 163.13,
+        "form": "餐饮",
+        "floor": "MALL~3",
+        "rentStandard": [
+            96.74,
+            125.77,
+            138.34,
+            152.18,
+            167.4,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 223,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "313",
+        "indoorArea": 136.12,
+        "form": "餐饮",
+        "floor": "MALL~3",
+        "rentStandard": [
+            103.19,
+            134.15,
+            147.57,
+            162.32,
+            178.56,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 193,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "316",
+        "indoorArea": 92.72,
+        "form": "餐饮",
+        "floor": "MALL~3",
+        "rentStandard": [
+            128.99,
+            167.69,
+            184.46,
+            202.91,
+            223.2,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 137,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "318",
+        "indoorArea": 101.26,
+        "form": "餐饮",
+        "floor": "MALL~3",
+        "rentStandard": [
+            128.99,
+            167.69,
+            184.46,
+            202.91,
+            223.2,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 144,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "320",
+        "indoorArea": 101.02,
+        "form": "餐饮",
+        "floor": "MALL~3",
+        "rentStandard": [
+            128.99,
+            167.69,
+            184.46,
+            202.91,
+            223.2,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 144,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "323",
+        "indoorArea": 98.58,
+        "form": "餐饮",
+        "floor": "MALL~3",
+        "rentStandard": [
+            103.19,
+            134.15,
+            147.57,
+            162.32,
+            178.56,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 140,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "305-1",
+        "indoorArea": 131.14,
+        "form": "餐饮",
+        "floor": "MALL~3",
+        "rentStandard": [
+            128.99,
+            167.69,
+            184.46,
+            202.91,
+            223.2,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 181,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "311-1",
+        "indoorArea": 226.84,
+        "form": "餐饮",
+        "floor": "MALL~3",
+        "rentStandard": [
+            96.74,
+            125.77,
+            138.34,
+            152.18,
+            167.4,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 310.08,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "311-2",
+        "indoorArea": 158.69,
+        "form": "餐饮",
+        "floor": "MALL~3",
+        "rentStandard": [
+            116.09,
+            150.92,
+            166.01,
+            182.61,
+            200.88,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 216.92,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "电梯井道",
+        "indoorArea": 47,
+        "form": "超市",
+        "floor": "MALL~3",
+        "rentStandard": [
+            14.92,
+            14.92,
+            14.92,
+            14.92,
+            14.92,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 60.86,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "四楼空调位",
+        "indoorArea": 140.59,
+        "form": "超市",
+        "floor": "MALL~4",
+        "rentStandard": [
+            14.92,
+            14.92,
+            14.92,
+            14.92,
+            14.92,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 182.05,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "218",
+        "indoorArea": 93.35,
+        "form": "",
+        "floor": "MALL~2",
+        "rentStandard": [
+            154.79,
+            170.27,
+            221.35,
+            243.49,
+            267.84,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 137,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "223",
+        "indoorArea": 98.82,
+        "form": "配套",
+        "floor": "MALL~2",
+        "rentStandard": [
+            171.99,
+            189.19,
+            245.95,
+            270.54,
+            297.59,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 137,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "224",
+        "indoorArea": 101.02,
+        "form": "",
+        "floor": "MALL~2",
+        "rentStandard": [
+            171.99,
+            189.19,
+            245.95,
+            270.54,
+            297.59,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 137,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "226",
+        "indoorArea": 94.19,
+        "form": "配套",
+        "floor": "MALL~2",
+        "rentStandard": [
+            170.27,
+            187.3,
+            243.49,
+            267.84,
+            294.62,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 140,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "205-1",
+        "indoorArea": 276.23,
+        "form": "餐饮",
+        "floor": "MALL~2",
+        "rentStandard": [
+            137.59,
+            178.87,
+            196.76,
+            216.43,
+            238.08,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 403,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "205-2",
+        "indoorArea": 25.5,
+        "form": "",
+        "floor": "MALL~2",
+        "rentStandard": [
+            223.59,
+            245.95,
+            319.73,
+            351.7,
+            386.87,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 30,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "208-2",
+        "indoorArea": 80.51,
+        "form": "",
+        "floor": "MALL~2",
+        "rentStandard": [
+            171.99,
+            189.19,
+            245.95,
+            270.54,
+            297.59,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 109,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "211-2",
+        "indoorArea": 254.07,
+        "form": "",
+        "floor": "MALL~2",
+        "rentStandard": [
+            137.59,
+            151.35,
+            196.76,
+            216.43,
+            238.08,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 351,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "303",
+        "indoorArea": 133.56,
+        "form": "餐饮",
+        "floor": "MALL~3",
+        "rentStandard": [
+            90.29,
+            117.38,
+            129.12,
+            142.03,
+            156.24,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 189,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "306",
+        "indoorArea": 130.06,
+        "form": "餐饮",
+        "floor": "MALL~3",
+        "rentStandard": [
+            90.29,
+            117.38,
+            129.12,
+            142.03,
+            156.24,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 191,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "307",
+        "indoorArea": 116.44,
+        "form": "餐饮",
+        "floor": "MALL~3",
+        "rentStandard": [
+            90.29,
+            117.38,
+            129.12,
+            142.03,
+            156.24,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 171,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "308",
+        "indoorArea": 160,
+        "form": "餐饮",
+        "floor": "MALL~3",
+        "rentStandard": [
+            103.19,
+            134.15,
+            147.57,
+            162.32,
+            178.56,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 227,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "215",
+        "indoorArea": 159.01,
+        "form": "",
+        "floor": "MALL~2",
+        "rentStandard": [
+            154.79,
+            170.27,
+            221.35,
+            243.49,
+            267.84,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 232,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "214",
+        "indoorArea": 300.74,
+        "form": "儿童",
+        "floor": "MALL~2",
+        "rentStandard": [
+            128.99,
+            141.89,
+            184.46,
+            202.91,
+            223.2,
+            290,
+            313,
+            338
+        ],
+        "floorArea": 426,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            45,
+            45,
+            45
+        ]
+    },
+    {
+        "shopIndex": "216",
+        "indoorArea": 103.7,
+        "form": "",
+        "floor": "MALL~2",
+        "rentStandard": [
+            171.99,
+            189.19,
+            245.95,
+            270.54,
+            297.59,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 147,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "219",
+        "indoorArea": 67.45,
+        "form": "",
+        "floor": "MALL~2",
+        "rentStandard": [
+            154.79,
+            170.27,
+            221.35,
+            243.49,
+            267.84,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 99,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "221",
+        "indoorArea": 98.82,
+        "form": "",
+        "floor": "MALL~2",
+        "rentStandard": [
+            171.99,
+            189.19,
+            245.95,
+            270.54,
+            297.59,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 137,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "225",
+        "indoorArea": 66.61,
+        "form": "配套",
+        "floor": "MALL~2",
+        "rentStandard": [
+            170.27,
+            187.3,
+            243.49,
+            267.84,
+            294.62,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 99,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "228",
+        "indoorArea": 101.02,
+        "form": "配套",
+        "floor": "MALL~2",
+        "rentStandard": [
+            189.19,
+            208.11,
+            270.54,
+            297.59,
+            327.35,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 139,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "229",
+        "indoorArea": 10446.48,
+        "form": "超市",
+        "floor": "MALL~2",
+        "rentStandard": [
+            14.92,
+            14.92,
+            14.92,
+            14.92,
+            14.92,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 13527.09,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "211-1",
+        "indoorArea": 127.39,
+        "form": "",
+        "floor": "MALL~2",
+        "rentStandard": [
+            171.99,
+            189.19,
+            245.95,
+            270.54,
+            297.59,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 176,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "301",
+        "indoorArea": 158.92,
+        "form": "餐饮",
+        "floor": "MALL~3",
+        "rentStandard": [
+            90.29,
+            117.38,
+            129.12,
+            142.03,
+            156.24,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 233,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "304",
+        "indoorArea": 133.56,
+        "form": "餐饮",
+        "floor": "MALL~3",
+        "rentStandard": [
+            90.29,
+            117.38,
+            129.12,
+            142.03,
+            156.24,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 189,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "309",
+        "indoorArea": 120.53,
+        "form": "餐饮",
+        "floor": "MALL~3",
+        "rentStandard": [
+            103.19,
+            134.15,
+            147.57,
+            162.32,
+            178.56,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 171,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "312",
+        "indoorArea": 136.12,
+        "form": "餐饮",
+        "floor": "MALL~3",
+        "rentStandard": [
+            103.19,
+            134.15,
+            147.57,
+            162.32,
+            178.56,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 193,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "314",
+        "indoorArea": 306.24,
+        "form": "餐饮",
+        "floor": "MALL~3",
+        "rentStandard": [
+            96.74,
+            125.77,
+            138.34,
+            152.18,
+            167.4,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 426,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "319",
+        "indoorArea": 98.82,
+        "form": "餐饮",
+        "floor": "MALL~3",
+        "rentStandard": [
+            128.99,
+            167.69,
+            184.46,
+            202.91,
+            223.2,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 144,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "321",
+        "indoorArea": 64.42,
+        "form": "餐饮",
+        "floor": "MALL~3",
+        "rentStandard": [
+            103.19,
+            134.15,
+            147.57,
+            162.32,
+            178.56,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 99,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "325",
+        "indoorArea": 4440.68,
+        "form": "影院",
+        "floor": "MALL~3",
+        "rentStandard": [
+            28.15,
+            31.9,
+            31.9,
+            31.9,
+            31.9,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 4670.02,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "326",
+        "indoorArea": 3562.39,
+        "form": "儿童",
+        "floor": "MALL~3",
+        "rentStandard": [
+            27.5,
+            33.67,
+            36.26,
+            38.85,
+            41.44,
+            41.44,
+            "",
+            ""
+        ],
+        "floorArea": 5197.56,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            11,
+            11,
+            11,
+            11,
+            11,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "315-1",
+        "indoorArea": 57.12,
+        "form": "配套",
+        "floor": "MALL~3",
+        "rentStandard": [
+            154.79,
+            170.27,
+            221.35,
+            243.49,
+            267.84,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 100,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "324-2",
+        "indoorArea": 1607.49,
+        "form": "",
+        "floor": "MALL~3",
+        "rentStandard": [
+            27.5,
+            33.67,
+            36.26,
+            38.85,
+            41.44,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 2081.53,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "146",
+        "indoorArea": 91.74,
+        "form": "",
+        "floor": "MALL~1",
+        "rentStandard": [
+            214.99,
+            236.49,
+            307.43,
+            338.18,
+            371.99,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 130,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "220",
+        "indoorArea": 101.02,
+        "form": "",
+        "floor": "MALL~2",
+        "rentStandard": [
+            171.99,
+            189.19,
+            245.95,
+            270.54,
+            297.59,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 148,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "315-2",
+        "indoorArea": 93.46,
+        "form": "餐饮",
+        "floor": "MALL~3",
+        "rentStandard": [
+            96.74,
+            125.77,
+            138.34,
+            152.18,
+            167.4,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 130,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "143",
+        "indoorArea": 97.34,
+        "form": "",
+        "floor": "MALL~1",
+        "rentStandard": [
+            214.99,
+            236.49,
+            307.43,
+            338.18,
+            371.99,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 135,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "147",
+        "indoorArea": 98.58,
+        "form": "",
+        "floor": "MALL~1",
+        "rentStandard": [
+            214.99,
+            236.49,
+            307.43,
+            338.18,
+            371.99,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 139,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "148",
+        "indoorArea": 10305.01,
+        "form": "超市",
+        "floor": "MALL~1",
+        "rentStandard": [
+            14.92,
+            14.92,
+            14.92,
+            14.92,
+            14.92,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 13343.9,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "204",
+        "indoorArea": 132.19,
+        "form": "",
+        "floor": "MALL~2",
+        "rentStandard": [
+            189.19,
+            208.11,
+            270.54,
+            297.59,
+            327.35,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 189,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "302",
+        "indoorArea": 301.04,
+        "form": "餐饮",
+        "floor": "MALL~3",
+        "rentStandard": [
+            90.29,
+            117.38,
+            129.12,
+            142.03,
+            156.24,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 426,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "322",
+        "indoorArea": 92.72,
+        "form": "餐饮",
+        "floor": "MALL~3",
+        "rentStandard": [
+            103.19,
+            134.15,
+            147.57,
+            162.32,
+            178.56,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 140,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "324-1",
+        "indoorArea": 2017.66,
+        "form": "儿童",
+        "floor": "MALL~3",
+        "rentStandard": [
+            27,
+            36,
+            39,
+            41,
+            41,
+            44,
+            "",
+            ""
+        ],
+        "floorArea": 2612.65,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            9,
+            ""
+        ]
+    },
+    {
+        "shopIndex": "118",
+        "indoorArea": 62.35,
+        "form": "配套",
+        "floor": "MALL~1",
+        "rentStandard": [
+            257.99,
+            283.78,
+            368.92,
+            405.81,
+            446.39,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 89,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "136",
+        "indoorArea": 69.32,
+        "form": "餐饮",
+        "floor": "MALL~1",
+        "rentStandard": [
+            128.99,
+            167.69,
+            184.46,
+            202.91,
+            223.2,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 96,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            23,
+            23,
+            23,
+            23,
+            23,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "101",
+        "indoorArea": 95.15,
+        "form": "配套",
+        "floor": "MALL~1",
+        "rentStandard": [
+            214.99,
+            236.49,
+            307.43,
+            338.18,
+            371.99,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 133,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            23,
+            23,
+            23,
+            23,
+            23,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "102",
+        "indoorArea": 99.56,
+        "form": "配套",
+        "floor": "MALL~1",
+        "rentStandard": [
+            214.99,
+            236.49,
+            307.43,
+            338.18,
+            371.99,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 160,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            23,
+            23,
+            23,
+            23,
+            23,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "103",
+        "indoorArea": 107.59,
+        "form": "餐饮",
+        "floor": "MALL~1",
+        "rentStandard": [
+            161.24,
+            209.61,
+            230.57,
+            253.63,
+            278.99,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 103.71,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "105",
+        "indoorArea": 67.07,
+        "form": "餐饮",
+        "floor": "MALL~1",
+        "rentStandard": [
+            161.24,
+            209.61,
+            230.57,
+            253.63,
+            278.99,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 64.64,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "109",
+        "indoorArea": 73.51,
+        "form": "",
+        "floor": "MALL~1",
+        "rentStandard": [
+            214.99,
+            236.49,
+            307.43,
+            338.18,
+            371.99,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 107,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "111",
+        "indoorArea": 42.74,
+        "form": "餐饮",
+        "floor": "MALL~1",
+        "rentStandard": [
+            214.99,
+            279.48,
+            307.43,
+            338.18,
+            371.99,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 57,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "114",
+        "indoorArea": 75.43,
+        "form": "配套",
+        "floor": "MALL~1",
+        "rentStandard": [
+            214.99,
+            236.49,
+            307.43,
+            338.18,
+            371.99,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 107,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "115",
+        "indoorArea": 64.69,
+        "form": "配套",
+        "floor": "MALL~1",
+        "rentStandard": [
+            214.99,
+            236.49,
+            307.43,
+            338.18,
+            371.99,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 94,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "117",
+        "indoorArea": 67.62,
+        "form": "配套",
+        "floor": "MALL~1",
+        "rentStandard": [
+            171.99,
+            189.19,
+            245.95,
+            270.54,
+            297.59,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 96.26,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "120",
+        "indoorArea": 76.97,
+        "form": "配套",
+        "floor": "MALL~1",
+        "rentStandard": [
+            171.99,
+            189.19,
+            245.95,
+            270.54,
+            297.59,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 109.57,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "121",
+        "indoorArea": 41.73,
+        "form": "配套",
+        "floor": "MALL~1",
+        "rentStandard": [
+            171.99,
+            189.19,
+            245.95,
+            270.54,
+            297.59,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 59.4,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "123",
+        "indoorArea": 39.9,
+        "form": "餐饮",
+        "floor": "MALL~1",
+        "rentStandard": [
+            279.48,
+            363.33,
+            399.66,
+            439.63,
+            483.59,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 54,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "124",
+        "indoorArea": 61.85,
+        "form": "",
+        "floor": "MALL~1",
+        "rentStandard": [
+            214.99,
+            236.49,
+            307.43,
+            338.18,
+            371.99,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 96,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "126",
+        "indoorArea": 67.15,
+        "form": "",
+        "floor": "MALL~1",
+        "rentStandard": [
+            214.99,
+            236.49,
+            307.43,
+            338.18,
+            371.99,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 96,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "128",
+        "indoorArea": 69.62,
+        "form": "",
+        "floor": "MALL~1",
+        "rentStandard": [
+            214.99,
+            236.49,
+            307.43,
+            338.18,
+            371.99,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 96,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "107",
+        "indoorArea": 65.96,
+        "form": "",
+        "floor": "MALL~1",
+        "rentStandard": [
+            214.99,
+            236.49,
+            307.43,
+            338.18,
+            371.99,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 96,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "129",
+        "indoorArea": 69.62,
+        "form": "服装",
+        "floor": "MALL~1",
+        "rentStandard": [
+            214.99,
+            236.49,
+            307.43,
+            338.18,
+            371.99,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 96,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            23,
+            23,
+            23,
+            23,
+            23,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "132",
+        "indoorArea": 94.91,
+        "form": "",
+        "floor": "MALL~1",
+        "rentStandard": [
+            214.99,
+            236.49,
+            307.43,
+            338.18,
+            371.99,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 135,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "134",
+        "indoorArea": 71.12,
+        "form": "餐饮",
+        "floor": "MALL~1",
+        "rentStandard": [
+            128.99,
+            167.69,
+            184.46,
+            202.91,
+            223.2,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 96,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            23,
+            23,
+            23,
+            23,
+            23,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "138",
+        "indoorArea": 103.46,
+        "form": "服装",
+        "floor": "MALL~1",
+        "rentStandard": [
+            214.99,
+            236.49,
+            307.43,
+            338.18,
+            371.99,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 150,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "140",
+        "indoorArea": 103.11,
+        "form": "",
+        "floor": "MALL~1",
+        "rentStandard": [
+            214.99,
+            236.49,
+            307.43,
+            338.18,
+            371.99,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 143,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "142",
+        "indoorArea": 97.34,
+        "form": "",
+        "floor": "MALL~1",
+        "rentStandard": [
+            214.99,
+            236.49,
+            307.43,
+            338.18,
+            371.99,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 135,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "144",
+        "indoorArea": 103.11,
+        "form": "",
+        "floor": "MALL~1",
+        "rentStandard": [
+            214.99,
+            236.49,
+            307.43,
+            338.18,
+            371.99,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 143,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "145",
+        "indoorArea": 64.42,
+        "form": "",
+        "floor": "MALL~1",
+        "rentStandard": [
+            257.99,
+            283.78,
+            368.92,
+            405.81,
+            446.39,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 99,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "地下停车位",
+        "indoorArea": 1218.22,
+        "form": "超市",
+        "floor": "MALL~-1",
+        "rentStandard": [
+            14.92,
+            14.92,
+            14.92,
+            14.92,
+            14.92,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 1577.47,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "201",
+        "indoorArea": 157.53,
+        "form": "餐饮",
+        "floor": "MALL~2",
+        "rentStandard": [
+            170.27,
+            221.35,
+            243.49,
+            267.84,
+            294.62,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 233,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "203",
+        "indoorArea": 132.04,
+        "form": "餐饮",
+        "floor": "MALL~2",
+        "rentStandard": [
+            161.24,
+            209.61,
+            230.57,
+            253.63,
+            278.99,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 128,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "206",
+        "indoorArea": 134.13,
+        "form": "",
+        "floor": "MALL~2",
+        "rentStandard": [
+            171.99,
+            189.19,
+            245.95,
+            270.54,
+            297.59,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 189,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "135",
+        "indoorArea": 69.32,
+        "form": "餐饮",
+        "floor": "MALL~1",
+        "rentStandard": [
+            128.99,
+            167.69,
+            184.46,
+            202.91,
+            223.2,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 96,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            23,
+            23,
+            23,
+            23,
+            23,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "125",
+        "indoorArea": 72.2,
+        "form": "",
+        "floor": "MALL~1",
+        "rentStandard": [
+            214.99,
+            236.49,
+            307.43,
+            338.18,
+            371.99,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 107,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "127",
+        "indoorArea": 67.15,
+        "form": "",
+        "floor": "MALL~1",
+        "rentStandard": [
+            214.99,
+            236.49,
+            307.43,
+            338.18,
+            371.99,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 96,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "130",
+        "indoorArea": 111.68,
+        "form": "餐饮",
+        "floor": "MALL~1",
+        "rentStandard": [
+            214.99,
+            279.48,
+            307.43,
+            338.18,
+            371.99,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 154,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            23,
+            23,
+            23,
+            23,
+            23,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "133",
+        "indoorArea": 42.87,
+        "form": "餐饮",
+        "floor": "MALL~1",
+        "rentStandard": [
+            139.74,
+            181.66,
+            199.83,
+            219.81,
+            241.8,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 64,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            23,
+            23,
+            23,
+            23,
+            23,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "137",
+        "indoorArea": 62.95,
+        "form": "餐饮",
+        "floor": "MALL~1",
+        "rentStandard": [
+            103.19,
+            134.15,
+            147.57,
+            162.32,
+            178.56,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 96,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "139",
+        "indoorArea": 64.42,
+        "form": "配套",
+        "floor": "MALL~1",
+        "rentStandard": [
+            232.19,
+            255.41,
+            332.03,
+            365.23,
+            401.75,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 99,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "217",
+        "indoorArea": 96.38,
+        "form": "",
+        "floor": "MALL~2",
+        "rentStandard": [
+            171.99,
+            189.19,
+            245.95,
+            270.54,
+            297.59,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 137,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "222",
+        "indoorArea": 98.58,
+        "form": "",
+        "floor": "MALL~2",
+        "rentStandard": [
+            171.99,
+            189.19,
+            245.95,
+            270.54,
+            297.59,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 137,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "227",
+        "indoorArea": 99.06,
+        "form": "配套",
+        "floor": "MALL~2",
+        "rentStandard": [
+            189.19,
+            208.11,
+            270.54,
+            297.59,
+            327.35,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 139,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "208-1",
+        "indoorArea": 87.15,
+        "form": "",
+        "floor": "MALL~2",
+        "rentStandard": [
+            171.99,
+            189.19,
+            245.95,
+            270.54,
+            297.59,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 118,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "317",
+        "indoorArea": 64.42,
+        "form": "配套",
+        "floor": "MALL~3",
+        "rentStandard": [
+            154.79,
+            170.27,
+            221.35,
+            243.49,
+            267.84,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 99,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "305-2",
+        "indoorArea": 182.49,
+        "form": "餐饮",
+        "floor": "MALL~3",
+        "rentStandard": [
+            90.29,
+            117.38,
+            129.12,
+            142.03,
+            156.24,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 268,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "122",
+        "indoorArea": 43.67,
+        "form": "配套",
+        "floor": "MALL~1",
+        "rentStandard": [
+            171.99,
+            189.19,
+            245.95,
+            270.54,
+            297.59,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 62.16,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "110",
+        "indoorArea": 41.65,
+        "form": "餐饮",
+        "floor": "MALL~1",
+        "rentStandard": [
+            279.48,
+            363.33,
+            399.66,
+            439.63,
+            483.59,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 57,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "112",
+        "indoorArea": 50.98,
+        "form": "餐饮",
+        "floor": "MALL~1",
+        "rentStandard": [
+            214.99,
+            279.48,
+            307.43,
+            338.18,
+            371.99,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 68,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "116",
+        "indoorArea": 61.25,
+        "form": "配套",
+        "floor": "MALL~1",
+        "rentStandard": [
+            214.99,
+            236.49,
+            307.43,
+            338.18,
+            371.99,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 89,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "119",
+        "indoorArea": 69.06,
+        "form": "配套",
+        "floor": "MALL~1",
+        "rentStandard": [
+            171.99,
+            189.19,
+            245.95,
+            270.54,
+            297.59,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 98.31,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "106",
+        "indoorArea": 65.96,
+        "form": "",
+        "floor": "MALL~1",
+        "rentStandard": [
+            214.99,
+            236.49,
+            307.43,
+            338.18,
+            371.99,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 96,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "104",
+        "indoorArea": 67.07,
+        "form": "餐饮",
+        "floor": "MALL~1",
+        "rentStandard": [
+            161.24,
+            209.61,
+            230.57,
+            253.63,
+            278.99,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 64.65,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "108",
+        "indoorArea": 65.96,
+        "form": "",
+        "floor": "MALL~1",
+        "rentStandard": [
+            214.99,
+            236.49,
+            307.43,
+            338.18,
+            371.99,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 96,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "113",
+        "indoorArea": 67.67,
+        "form": "配套",
+        "floor": "MALL~1",
+        "rentStandard": [
+            214.99,
+            236.49,
+            307.43,
+            338.18,
+            371.99,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 96,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "131",
+        "indoorArea": 99.77,
+        "form": "服装",
+        "floor": "MALL~1",
+        "rentStandard": [
+            214.99,
+            236.49,
+            307.43,
+            338.18,
+            371.99,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 144,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            23,
+            23,
+            23,
+            23,
+            23,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "141",
+        "indoorArea": 97.34,
+        "form": "",
+        "floor": "MALL~1",
+        "rentStandard": [
+            214.99,
+            236.49,
+            307.43,
+            338.18,
+            371.99,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 135,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "202",
+        "indoorArea": 297.47,
+        "form": "",
+        "floor": "MALL~2",
+        "rentStandard": [
+            151.35,
+            166.49,
+            216.43,
+            238.08,
+            261.88,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 426,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "207",
+        "indoorArea": 116.2,
+        "form": "",
+        "floor": "MALL~2",
+        "rentStandard": [
+            171.99,
+            189.19,
+            245.95,
+            270.54,
+            297.59,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 171,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "210",
+        "indoorArea": 162.12,
+        "form": "配套",
+        "floor": "MALL~2",
+        "rentStandard": [
+            154.79,
+            170.27,
+            221.35,
+            243.49,
+            267.84,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 233,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "209",
+        "indoorArea": 118.98,
+        "form": "配套",
+        "floor": "MALL~2",
+        "rentStandard": [
+            171.99,
+            189.19,
+            245.95,
+            270.54,
+            297.59,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 171,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "212",
+        "indoorArea": 134.13,
+        "form": "",
+        "floor": "MALL~2",
+        "rentStandard": [
+            171.99,
+            189.19,
+            245.95,
+            270.54,
+            297.59,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 193,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "shopIndex": "213",
+        "indoorArea": 134.46,
+        "form": "",
+        "floor": "MALL~2",
+        "rentStandard": [
+            171.99,
+            189.19,
+            245.95,
+            270.54,
+            297.59,
+            "",
+            "",
+            ""
+        ],
+        "floorArea": 193,
+        "property": "自持",
+        "position": "",
+        "chargeType": "购物中心",
+        "wyStandard": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            "",
+            "",
+            ""
+        ]
+    }
+]

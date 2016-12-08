@@ -1,0 +1,74 @@
+
+
+#simulation-calculation-list{}
+
+
+/* ======================================== amp-case-item ======================================== */
+#simulation-calculation-list .amp-case-item{border-bottom:10px solid #eceef3;}
+#simulation-calculation-list .amp-case-item:after{content:"";display:block;height:0;clear:both;visibility:hidden}
+/* ---------------------------------------- amp-case-title ---------------------------------------- */
+#simulation-calculation-list .amp-case-title{
+    position:relative;
+    height:48px;
+    line-height: 48px;
+    font-size:18px;
+    color:#5ab46d;
+    border-left:4px solid #5ab46d;
+    font-style: normal;
+    padding-left:10px;
+}
+#simulation-calculation-list .amp-case-title em{
+
+}
+
+#simulation-calculation-list .amp-case-title a{
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    font-size:14px;
+    height:100%;
+    padding:0 15px;
+    color:#5ab46d;
+}
+/* ---------------------------------------- amp-case-info-list ---------------------------------------- */
+#simulation-calculation-list .amp-case-info-list{padding-left:15px;}
+
+#simulation-calculation-list .amp-case-info-list li{
+    position:relative;
+    width:50%;
+    height:70px;
+    float:left;
+    padding:14px 0 14px 10px;
+    border-top:1px solid #ebebeb;
+}
+
+#simulation-calculation-list .amp-case-info-list li:after{
+    content:"";
+    position:absolute;
+    right:0;
+    top:0;
+    bottom:0;
+    width:1px;
+    height:50px;
+    background-color:#ebebeb;
+    margin:auto;
+}
+
+#simulation-calculation-list .amp-case-info-list li>em{
+    display:block;
+    height:20px;
+    line-height: 20px;
+    font-size:12px;
+    color:#9cb0c1;
+}
+#simulation-calculation-list .amp-case-info-list li>div{
+    display:block;
+    height:22px;
+    line-height: 22px;
+    font-size:16px;
+}
+#simulation-calculation-list .amp-case-info-list li>div>em{
+    font-size:12px;
+    color:#9cb0c1;
+}

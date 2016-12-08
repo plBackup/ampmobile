@@ -1,0 +1,4754 @@
+[
+    {
+        "shopIndex": " \u5546\u94fa\u7f16\u53f7", 
+        "indoorArea": "\u5957\u5185\u9762\u79ef\u33a1(\u4ea7\u6743)", 
+        "form": "\u4e1a\u6001", 
+        "floor": "\u697c\u5c42", 
+        "rentStandard": "\u79df\u91d1\u6807\u51c6", 
+        "floorArea": "\u5efa\u7b51\u9762\u79ef\u33a1(\u4ea7\u6743)", 
+        "property": "\u4ea7\u6743\u6027\u8d28"
+    }, 
+    {
+        "shopIndex": "B1-1", 
+        "indoorArea": 126.4, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "",
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-10", 
+        "indoorArea": 42.0, 
+        "form": "", 
+        "floor": " ", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-101", 
+        "indoorArea": 43.7, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-103", 
+        "indoorArea": 33.7, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-105", 
+        "indoorArea": 34.8, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-107", 
+        "indoorArea": 51.8, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-109", 
+        "indoorArea": 52.2, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-11/13-R", 
+        "indoorArea": 134.1, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-12", 
+        "indoorArea": 43.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-14", 
+        "indoorArea": 39.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-15/17", 
+        "indoorArea": 129.3, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-16", 
+        "indoorArea": 56.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-164", 
+        "indoorArea": 26.6, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-165", 
+        "indoorArea": 26.6, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-166", 
+        "indoorArea": 23.4, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-167", 
+        "indoorArea": 23.4, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-168", 
+        "indoorArea": 44.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-169", 
+        "indoorArea": 31.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-170", 
+        "indoorArea": 39.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-171-174", 
+        "indoorArea": 23.29, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-175-178", 
+        "indoorArea": 23.57, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-179-182", 
+        "indoorArea": 63.23, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-18", 
+        "indoorArea": 45.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-183", 
+        "indoorArea": 28.8, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-184", 
+        "indoorArea": 30.5, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-185", 
+        "indoorArea": 7.91, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-186-188", 
+        "indoorArea": 53.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-189-191", 
+        "indoorArea": 53.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-19", 
+        "indoorArea": 222.5, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-192", 
+        "indoorArea": 11.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-193", 
+        "indoorArea": 33.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-194", 
+        "indoorArea": 22.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-195", 
+        "indoorArea": 24.8, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-196", 
+        "indoorArea": 30.77, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-197", 
+        "indoorArea": 29.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-198", 
+        "indoorArea": 30.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-199-200/205/204/69-73", 
+        "indoorArea": 292.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-201", 
+        "indoorArea": 31.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-202", 
+        "indoorArea": 31.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-203", 
+        "indoorArea": 32.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-206", 
+        "indoorArea": 33.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-207", 
+        "indoorArea": 34.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-208", 
+        "indoorArea": 35.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-209", 
+        "indoorArea": 45.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-21", 
+        "indoorArea": 42.8, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-210", 
+        "indoorArea": 38.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-211", 
+        "indoorArea": 32.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-212", 
+        "indoorArea": 27.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-213", 
+        "indoorArea": 32.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-214", 
+        "indoorArea": 28.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-215", 
+        "indoorArea": 40.8, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-216", 
+        "indoorArea": 29.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-217", 
+        "indoorArea": 41.8, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-218", 
+        "indoorArea": 8.6, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-219", 
+        "indoorArea": 18.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-22", 
+        "indoorArea": 45.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-220", 
+        "indoorArea": 10.3, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-221", 
+        "indoorArea": 18.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-222", 
+        "indoorArea": 20.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-223", 
+        "indoorArea": 15.9, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-224", 
+        "indoorArea": 20.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-225", 
+        "indoorArea": 20.2, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-226", 
+        "indoorArea": 13.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-227", 
+        "indoorArea": 20.2, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-228", 
+        "indoorArea": 20.2, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-229", 
+        "indoorArea": 13.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-23", 
+        "indoorArea": 35.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-230", 
+        "indoorArea": 13.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-231", 
+        "indoorArea": 8.8, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-24", 
+        "indoorArea": 34.7, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-25", 
+        "indoorArea": 48.6, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-26", 
+        "indoorArea": 45.6, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-27", 
+        "indoorArea": 20.1, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-28", 
+        "indoorArea": 31.8, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-29", 
+        "indoorArea": 45.6, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-3/5-R", 
+        "indoorArea": 134.1, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-30", 
+        "indoorArea": 18.9, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-31", 
+        "indoorArea": 45.6, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-32", 
+        "indoorArea": 28.8, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-33", 
+        "indoorArea": 45.6, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-34", 
+        "indoorArea": 39.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-35", 
+        "indoorArea": 49.2, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-36", 
+        "indoorArea": 43.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-37", 
+        "indoorArea": 33.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-38", 
+        "indoorArea": 43.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-39", 
+        "indoorArea": 42.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-4", 
+        "indoorArea": 49.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-40", 
+        "indoorArea": 43.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-41", 
+        "indoorArea": 33.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-42", 
+        "indoorArea": 34.5, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-43", 
+        "indoorArea": 43.2, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-44", 
+        "indoorArea": 30.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-45", 
+        "indoorArea": 42.81, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-46", 
+        "indoorArea": 42.1, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-47", 
+        "indoorArea": 43.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-48", 
+        "indoorArea": 49.8, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-49", 
+        "indoorArea": 29.1, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-50", 
+        "indoorArea": 20.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-51", 
+        "indoorArea": 29.1, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-52", 
+        "indoorArea": 27.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-53", 
+        "indoorArea": 47.5, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-54", 
+        "indoorArea": 21.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-55", 
+        "indoorArea": 49.2, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-56", 
+        "indoorArea": 33.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-57", 
+        "indoorArea": 46.8, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-58", 
+        "indoorArea": 52.3, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-59", 
+        "indoorArea": 49.3, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-6", 
+        "indoorArea": 45.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-60", 
+        "indoorArea": 42.6, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-61", 
+        "indoorArea": 61.7, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-62", 
+        "indoorArea": 44.1, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-63", 
+        "indoorArea": 44.1, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-64", 
+        "indoorArea": 50.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-65", 
+        "indoorArea": 23.5, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-66", 
+        "indoorArea": 32.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-67", 
+        "indoorArea": 33.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-68", 
+        "indoorArea": 43.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-7/9-R", 
+        "indoorArea": 134.1, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-74", 
+        "indoorArea": 33.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-75", 
+        "indoorArea": 50.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-76", 
+        "indoorArea": 47.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-77", 
+        "indoorArea": 33.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-78a", 
+        "indoorArea": 14.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-78b", 
+        "indoorArea": 22.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-79", 
+        "indoorArea": 49.8, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-8", 
+        "indoorArea": 42.0, 
+        "form": "", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-80", 
+        "indoorArea": 46.8, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-81", 
+        "indoorArea": 44.52, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-82", 
+        "indoorArea": 46.6, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-83", 
+        "indoorArea": 36.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-84", 
+        "indoorArea": 45.5, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-85", 
+        "indoorArea": 26.4, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-86", 
+        "indoorArea": 44.5, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-87", 
+        "indoorArea": 43.4, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-88", 
+        "indoorArea": 23.3, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-89", 
+        "indoorArea": 42.4, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-90", 
+        "indoorArea": 24.2, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-91", 
+        "indoorArea": 24.6, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-92", 
+        "indoorArea": 30.9, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-93", 
+        "indoorArea": 29.7, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-94/96/98/100/102/104/106/108/110-113/115-163", 
+        "indoorArea": 2234.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-95", 
+        "indoorArea": 24.9, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-97", 
+        "indoorArea": 27.7, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "B1-99", 
+        "indoorArea": 41.7, 
+        "form": "\u670d\u88c5", 
+        "floor": "B1~-1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "H2a-1F-001/002", 
+        "indoorArea": 244.06, 
+        "form": "\u670d\u88c5", 
+        "floor": "H~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "H2b-1F-001/002", 
+        "indoorArea": 190.06, 
+        "form": "\u670d\u88c5", 
+        "floor": "H~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "H2c-1F-001/002/005", 
+        "indoorArea": 296.01, 
+        "form": "\u670d\u88c5", 
+        "floor": "H~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "H2c-1F-003", 
+        "indoorArea": 83.83, 
+        "form": "\u670d\u88c5", 
+        "floor": "H~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "H2c-1F-006/007/009", 
+        "indoorArea": 313.6, 
+        "form": "\u670d\u88c5", 
+        "floor": "H~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "H2c-1F-008", 
+        "indoorArea": 61.55, 
+        "form": "\u670d\u88c5", 
+        "floor": "H~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "H2d-1F-001/002", 
+        "indoorArea": 282.43, 
+        "form": "\u670d\u88c5", 
+        "floor": "H~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "H3a-1F-001/002", 
+        "indoorArea": 182.27, 
+        "form": "\u670d\u88c5", 
+        "floor": "H~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "H3b-1F-001", 
+        "indoorArea": 164.09, 
+        "form": "\u670d\u88c5", 
+        "floor": "H~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "H3d-1F-001/005", 
+        "indoorArea": 275.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "H~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "H3d-1F-002/003", 
+        "indoorArea": 197.47, 
+        "form": "\u670d\u88c5", 
+        "floor": "H~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "H3e-1F-001", 
+        "indoorArea": 164.09, 
+        "form": "\u670d\u88c5", 
+        "floor": "H~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "H4-1F-001/002/003", 
+        "indoorArea": 579.12, 
+        "form": "\u670d\u88c5", 
+        "floor": "H~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "H4a-1F-001/002/003", 
+        "indoorArea": 415.79, 
+        "form": "\u670d\u88c5", 
+        "floor": "H~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "H2a-2F-001/002", 
+        "indoorArea": 214.3, 
+        "form": "\u670d\u88c5", 
+        "floor": "H~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "H2b-2F-001/002", 
+        "indoorArea": 200.03, 
+        "form": "\u670d\u88c5", 
+        "floor": "H~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "H2c-2F-001/002/003", 
+        "indoorArea": 356.24, 
+        "form": "\u670d\u88c5", 
+        "floor": "H~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "H2c-2F-005/007", 
+        "indoorArea": 168.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "H~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "H2c-2F-006", 
+        "indoorArea": 154.96, 
+        "form": "\u670d\u88c5", 
+        "floor": "H~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "H2d-2F-001/002", 
+        "indoorArea": 233.24, 
+        "form": "\u670d\u88c5", 
+        "floor": "H~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "H3a-2F-001/002", 
+        "indoorArea": 178.89, 
+        "form": "\u670d\u88c5", 
+        "floor": "H~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "H3b-2F-001", 
+        "indoorArea": 179.84, 
+        "form": "\u670d\u88c5", 
+        "floor": "H~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "H3d-2F-001/002/003", 
+        "indoorArea": 436.8, 
+        "form": "\u670d\u88c5", 
+        "floor": "H~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "H3e-2F-001", 
+        "indoorArea": 121.59, 
+        "form": "\u670d\u88c5", 
+        "floor": "H~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "H4-2F-001/002/003", 
+        "indoorArea": 610.05, 
+        "form": "\u670d\u88c5", 
+        "floor": "H~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "H4a-2F-001/002", 
+        "indoorArea": 425.16, 
+        "form": "\u670d\u88c5", 
+        "floor": "H~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "H2c-3F-001", 
+        "indoorArea": 270.46, 
+        "form": "\u670d\u88c5", 
+        "floor": "H~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "H2c-3F-002", 
+        "indoorArea": 198.09, 
+        "form": "\u670d\u88c5", 
+        "floor": "H~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "H3d-3F-001", 
+        "indoorArea": 219.93, 
+        "form": "\u670d\u88c5", 
+        "floor": "H~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "H4-3F-001", 
+        "indoorArea": 495.7, 
+        "form": "\u670d\u88c5", 
+        "floor": "H~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "H4a-3F-001", 
+        "indoorArea": 343.85, 
+        "form": "\u670d\u88c5", 
+        "floor": "H~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-1F-001", 
+        "indoorArea": 131.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "S1~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-1F-002", 
+        "indoorArea": 117.7, 
+        "form": "\u670d\u88c5", 
+        "floor": "S1~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-1F-003/004", 
+        "indoorArea": 228.3, 
+        "form": "\u670d\u88c5", 
+        "floor": "S1~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-1F-005", 
+        "indoorArea": 117.3, 
+        "form": "\u670d\u88c5", 
+        "floor": "S1~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-1F-006", 
+        "indoorArea": 108.9, 
+        "form": "\u670d\u88c5", 
+        "floor": "S1~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-1F-007", 
+        "indoorArea": 114.8, 
+        "form": "\u670d\u88c5", 
+        "floor": "S1~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-1F-008", 
+        "indoorArea": 30.2, 
+        "form": "\u670d\u88c5", 
+        "floor": "S1~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-1F-009", 
+        "indoorArea": 46.0, 
+        "form": "", 
+        "floor": "S1~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-1F-010/011/012c", 
+        "indoorArea": 1154.0, 
+        "form": "", 
+        "floor": "S1~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-1F-012b/019c", 
+        "indoorArea": 733.2, 
+        "form": "", 
+        "floor": "S1~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-1F-013", 
+        "indoorArea": 24.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "S1~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-1F-015", 
+        "indoorArea": 47.68, 
+        "form": "\u670d\u88c5", 
+        "floor": "S1~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-1F-016", 
+        "indoorArea": 29.21, 
+        "form": "\u670d\u88c5", 
+        "floor": "S1~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-1F-017", 
+        "indoorArea": 96.16, 
+        "form": "\u670d\u88c5", 
+        "floor": "S1~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-1F-018", 
+        "indoorArea": 16.31, 
+        "form": "\u670d\u88c5", 
+        "floor": "S1~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-1F-019a/020b", 
+        "indoorArea": 220.85, 
+        "form": "\u670d\u88c5", 
+        "floor": "S1~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-1F-019b", 
+        "indoorArea": 66.5, 
+        "form": "\u670d\u88c5", 
+        "floor": "S1~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-1F-020a", 
+        "indoorArea": 133.8, 
+        "form": "\u670d\u88c5", 
+        "floor": "S1~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-1F-020c", 
+        "indoorArea": 47.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "S1~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-1F-021", 
+        "indoorArea": 224.89, 
+        "form": "\u670d\u88c5", 
+        "floor": "S1~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-2F-001", 
+        "indoorArea": 216.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "S1~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-2F-002/003/005/009/010/011", 
+        "indoorArea": 1909.02, 
+        "form": "", 
+        "floor": "S1~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-2F-006/007", 
+        "indoorArea": 151.46, 
+        "form": "\u670d\u88c5", 
+        "floor": "S1~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-2F-008", 
+        "indoorArea": 22.65, 
+        "form": "", 
+        "floor": "S1~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-2F-012", 
+        "indoorArea": 24.84, 
+        "form": "\u670d\u88c5", 
+        "floor": "S1~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-2F-013", 
+        "indoorArea": 46.6, 
+        "form": "", 
+        "floor": "S1~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-2F-015", 
+        "indoorArea": 121.18, 
+        "form": "\u670d\u88c5", 
+        "floor": "S1~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-2F-016", 
+        "indoorArea": 297.7, 
+        "form": "\u670d\u88c5", 
+        "floor": "S1~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-2F-017", 
+        "indoorArea": 206.79, 
+        "form": "\u670d\u88c5", 
+        "floor": "S1~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-2F-018", 
+        "indoorArea": 224.89, 
+        "form": "\u670d\u88c5", 
+        "floor": "S1~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-3F-001/003/005/006a-1/006b-2", 
+        "indoorArea": 1976.93, 
+        "form": "", 
+        "floor": "S1~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-3F-002", 
+        "indoorArea": 22.65, 
+        "form": "", 
+        "floor": "S1~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-3F-006b-1/006a-2", 
+        "indoorArea": 1032.0, 
+        "form": "", 
+        "floor": "S1~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-3F-007", 
+        "indoorArea": 24.45, 
+        "form": "\u670d\u88c5", 
+        "floor": "S1~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-3F-008", 
+        "indoorArea": 47.68, 
+        "form": "", 
+        "floor": "S1~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-4F-002", 
+        "indoorArea": 22.65, 
+        "form": "", 
+        "floor": "S1~4", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-4F-003", 
+        "indoorArea": 73.25, 
+        "form": "", 
+        "floor": "S1~4", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-4F-005a", 
+        "indoorArea": 89.19, 
+        "form": "", 
+        "floor": "S1~4", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-4F-006", 
+        "indoorArea": 3280.0, 
+        "form": "", 
+        "floor": "S1~4", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-4F-007", 
+        "indoorArea": 24.45, 
+        "form": "", 
+        "floor": "S1~4", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-4F-008", 
+        "indoorArea": 47.68, 
+        "form": "\u670d\u88c5", 
+        "floor": "S1~4", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-4F-001", 
+        "indoorArea": 76.22, 
+        "form": "", 
+        "floor": "S1~5", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S1-4F-005b", 
+        "indoorArea": 25.53, 
+        "form": "", 
+        "floor": "S1~5", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S2-1F-001b-1", 
+        "indoorArea": 61.7, 
+        "form": "", 
+        "floor": "S2~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S2-1F-002a", 
+        "indoorArea": 135.15, 
+        "form": "", 
+        "floor": "S2~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S2-1F-002b", 
+        "indoorArea": 127.68, 
+        "form": "", 
+        "floor": "S2~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S2-1F-003", 
+        "indoorArea": 224.74, 
+        "form": "", 
+        "floor": "S2~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S2-1F-006a", 
+        "indoorArea": 54.45, 
+        "form": "\u670d\u88c5", 
+        "floor": "S2~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S2-1F-006b-1", 
+        "indoorArea": 30.21, 
+        "form": "\u670d\u88c5", 
+        "floor": "S2~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S2-1F-006b-2", 
+        "indoorArea": 55.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "S2~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S2-1F-007a-1", 
+        "indoorArea": 36.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "S2~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S2-1F-007a-2", 
+        "indoorArea": 49.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "S2~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S2-1F-007b", 
+        "indoorArea": 92.25, 
+        "form": "\u670d\u88c5", 
+        "floor": "S2~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S2-1F-008/001a/001c/002c/007a-3/001b-2+S2-2F-006/001a/001b-2/002a-2/002b-2", 
+        "indoorArea": 2100.0, 
+        "form": "", 
+        "floor": "S2~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S2-1F-009", 
+        "indoorArea": 75.19, 
+        "form": "\u670d\u88c5", 
+        "floor": "S2~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S2-1F-010", 
+        "indoorArea": 34.13, 
+        "form": "", 
+        "floor": "S2~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S2-2F-001b-1", 
+        "indoorArea": 107.08, 
+        "form": "", 
+        "floor": "S2~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S2-2F-002a-1", 
+        "indoorArea": 103.31, 
+        "form": "", 
+        "floor": "S2~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S2-2F-002b-1", 
+        "indoorArea": 95.75, 
+        "form": "", 
+        "floor": "S2~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S2-2F-003", 
+        "indoorArea": 131.97, 
+        "form": "", 
+        "floor": "S2~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S2-2F-005", 
+        "indoorArea": 326.1, 
+        "form": "\u670d\u88c5", 
+        "floor": "S2~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S2-3F-001a", 
+        "indoorArea": 110.64, 
+        "form": "", 
+        "floor": "S2~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S2-3F-001b", 
+        "indoorArea": 110.76, 
+        "form": "", 
+        "floor": "S2~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S2-3F-001c", 
+        "indoorArea": 106.94, 
+        "form": "", 
+        "floor": "S2~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S2-3F-001d", 
+        "indoorArea": 1141.2, 
+        "form": "", 
+        "floor": "S2~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S2-3F-002-1", 
+        "indoorArea": 59.0, 
+        "form": "", 
+        "floor": "S2~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S2-3F-002-2", 
+        "indoorArea": 40.11, 
+        "form": "", 
+        "floor": "S2~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S2-3F-003-1", 
+        "indoorArea": 47.0, 
+        "form": "", 
+        "floor": "S2~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S2-3F-003-2", 
+        "indoorArea": 39.6, 
+        "form": "", 
+        "floor": "S2~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S2-3F-005", 
+        "indoorArea": 133.4, 
+        "form": "", 
+        "floor": "S2~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S2-4F-001a", 
+        "indoorArea": 111.8, 
+        "form": "\u670d\u88c5", 
+        "floor": "S2~4", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S2-4F-001b-1", 
+        "indoorArea": 623.53, 
+        "form": "\u670d\u88c5", 
+        "floor": "S2~4", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S2-4F-002a/001b-2", 
+        "indoorArea": 308.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "S2~4", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S2-4F-002b", 
+        "indoorArea": 364.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "S2~4", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S2-4F-003", 
+        "indoorArea": 132.63, 
+        "form": "\u670d\u88c5", 
+        "floor": "S2~4", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S3-1F-001a", 
+        "indoorArea": 71.57, 
+        "form": "", 
+        "floor": "S3~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S3-1F-001b", 
+        "indoorArea": 68.85, 
+        "form": "", 
+        "floor": "S3~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S3-1F-001c", 
+        "indoorArea": 70.28, 
+        "form": "", 
+        "floor": "S3~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S3-1F-001d", 
+        "indoorArea": 95.87, 
+        "form": "\u670d\u88c5", 
+        "floor": "S3~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S3-1F-001e", 
+        "indoorArea": 92.5, 
+        "form": "\u670d\u88c5", 
+        "floor": "S3~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S3-1F-001f", 
+        "indoorArea": 60.82, 
+        "form": "\u670d\u88c5", 
+        "floor": "S3~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S3-1F-001g", 
+        "indoorArea": 92.52, 
+        "form": "\u670d\u88c5", 
+        "floor": "S3~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S3-1F-001h", 
+        "indoorArea": 41.0, 
+        "form": "", 
+        "floor": "S3~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S3-1F-002", 
+        "indoorArea": 23.8, 
+        "form": "\u670d\u88c5", 
+        "floor": "S3~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S3-1F-003a/003b", 
+        "indoorArea": 558.6, 
+        "form": "", 
+        "floor": "S3~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S3-1F-005", 
+        "indoorArea": 72.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "S3~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S3-2F-001a", 
+        "indoorArea": 91.49, 
+        "form": "\u670d\u88c5", 
+        "floor": "S3~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S3-2F-001b", 
+        "indoorArea": 97.15, 
+        "form": "\u670d\u88c5", 
+        "floor": "S3~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S3-2F-001c/002-1/002c", 
+        "indoorArea": 251.87, 
+        "form": "", 
+        "floor": "S3~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S3-2F-002/005a", 
+        "indoorArea": 215.9, 
+        "form": "\u670d\u88c5", 
+        "floor": "S3~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S3-2F-003", 
+        "indoorArea": 16.2, 
+        "form": "", 
+        "floor": "S3~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S3-2F-005", 
+        "indoorArea": 584.5, 
+        "form": "", 
+        "floor": "S3~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S3-3F-001a/001b", 
+        "indoorArea": 470.96, 
+        "form": "", 
+        "floor": "S3~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S3-3F-002", 
+        "indoorArea": 16.2, 
+        "form": "\u670d\u88c5", 
+        "floor": "S3~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S3-3F-003a", 
+        "indoorArea": 339.62, 
+        "form": "", 
+        "floor": "S3~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S3-3F-003b", 
+        "indoorArea": 66.56, 
+        "form": "", 
+        "floor": "S3~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S3-4F-001a", 
+        "indoorArea": 280.54, 
+        "form": "\u670d\u88c5", 
+        "floor": "S3~4", 
+        "rentStandard": "", 
+        "floorArea": 364.34, 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S3-4F-001b", 
+        "indoorArea": 196.43, 
+        "form": "\u670d\u88c5", 
+        "floor": "S3~4", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S3-4F-002", 
+        "indoorArea": 16.2, 
+        "form": "\u670d\u88c5", 
+        "floor": "S3~4", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S3-4F-003", 
+        "indoorArea": 265.44, 
+        "form": "\u670d\u88c5", 
+        "floor": "S3~4", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4a-1F-001a", 
+        "indoorArea": 108.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "S4a~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4a-1F-001c", 
+        "indoorArea": 104.25, 
+        "form": "\u670d\u88c5", 
+        "floor": "S4a~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4a-1F-002", 
+        "indoorArea": 119.98, 
+        "form": "\u670d\u88c5", 
+        "floor": "S4a~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4a-1F-003a", 
+        "indoorArea": 77.1, 
+        "form": "\u670d\u88c5", 
+        "floor": "S4a~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4a-1F-005", 
+        "indoorArea": 40.52, 
+        "form": "", 
+        "floor": "S4a~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4a-1F-006", 
+        "indoorArea": 52.44, 
+        "form": "", 
+        "floor": "S4a~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4a-1F-007", 
+        "indoorArea": 111.58, 
+        "form": "", 
+        "floor": "S4a~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4a-1F-008", 
+        "indoorArea": 150.21, 
+        "form": "", 
+        "floor": "S4a~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4a-1F-009/001b", 
+        "indoorArea": 186.37, 
+        "form": "", 
+        "floor": "S4a~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4a-1F-010", 
+        "indoorArea": 30.51, 
+        "form": "", 
+        "floor": "S4a~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "s4a-1F-003b", 
+        "indoorArea": 200.49, 
+        "form": "\u670d\u88c5", 
+        "floor": "S4a~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4a-2F-001a", 
+        "indoorArea": 108.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "S4a~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4a-2F-001b", 
+        "indoorArea": 102.37, 
+        "form": "\u670d\u88c5", 
+        "floor": "S4a~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4a-2F-002a/002b", 
+        "indoorArea": 224.03, 
+        "form": "\u670d\u88c5", 
+        "floor": "S4a~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4a-2F-002c", 
+        "indoorArea": 51.8, 
+        "form": "\u670d\u88c5", 
+        "floor": "S4a~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4a-2F-003", 
+        "indoorArea": 366.93, 
+        "form": "\u670d\u88c5", 
+        "floor": "S4a~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4a-2F-005", 
+        "indoorArea": 14.97, 
+        "form": "\u670d\u88c5", 
+        "floor": "S4a~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4a-2F-006-1", 
+        "indoorArea": 42.4, 
+        "form": "", 
+        "floor": "S4a~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4a-2F-006-2/007b-2", 
+        "indoorArea": 183.56, 
+        "form": "", 
+        "floor": "S4a~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4a-2F-007a/007b-1", 
+        "indoorArea": 183.0, 
+        "form": "", 
+        "floor": "S4a~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4a-3F-001", 
+        "indoorArea": 38.53, 
+        "form": "", 
+        "floor": "S4a~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4a-3F-002-1", 
+        "indoorArea": 210.92, 
+        "form": "", 
+        "floor": "S4a~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4a-3F-002-2", 
+        "indoorArea": 236.05, 
+        "form": "", 
+        "floor": "S4a~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4a-3F-003", 
+        "indoorArea": 320.95, 
+        "form": "", 
+        "floor": "S4a~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4a-3F-005a", 
+        "indoorArea": 410.94, 
+        "form": "", 
+        "floor": "S4a~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4a-3F-005b", 
+        "indoorArea": 14.96, 
+        "form": "\u670d\u88c5", 
+        "floor": "S4a~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4a-4F-001a", 
+        "indoorArea": 493.01, 
+        "form": "\u670d\u88c5", 
+        "floor": "S4a~4", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4a-4F-001b/002", 
+        "indoorArea": 342.8, 
+        "form": "\u670d\u88c5", 
+        "floor": "S4a~4", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4a-4F-001c", 
+        "indoorArea": 42.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "S4a~4", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4a-4F-003", 
+        "indoorArea": 16.69, 
+        "form": "\u670d\u88c5", 
+        "floor": "S4a~4", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4a-4F-005", 
+        "indoorArea": 210.23, 
+        "form": "\u670d\u88c5", 
+        "floor": "S4a~4", 
+        "rentStandard": "", 
+        "floorArea": 273.03, 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4b-1F-001", 
+        "indoorArea": 240.79, 
+        "form": "\u670d\u88c5", 
+        "floor": "S4b~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4b-1F-002-1", 
+        "indoorArea": 60.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "S4b~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4b-1F-002-2/008b", 
+        "indoorArea": 315.97, 
+        "form": "\u670d\u88c5", 
+        "floor": "S4b~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4b-1F-003", 
+        "indoorArea": 260.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "S4b~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4b-1F-005", 
+        "indoorArea": 292.79, 
+        "form": "\u670d\u88c5", 
+        "floor": "S4b~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4b-1F-006", 
+        "indoorArea": 177.82, 
+        "form": "", 
+        "floor": "S4b~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4b-1F-007a", 
+        "indoorArea": 147.98, 
+        "form": "", 
+        "floor": "S4b~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4b-1F-007b-1", 
+        "indoorArea": 67.11, 
+        "form": "", 
+        "floor": "S4b~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4b-1F-007b-2", 
+        "indoorArea": 62.47, 
+        "form": "", 
+        "floor": "S4b~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4b-1F-007c", 
+        "indoorArea": 112.94, 
+        "form": "", 
+        "floor": "S4b~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4b-1F-008a", 
+        "indoorArea": 38.23, 
+        "form": "", 
+        "floor": "S4b~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4b-1F-008c", 
+        "indoorArea": 83.86, 
+        "form": "", 
+        "floor": "S4b~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4b-1F-008d", 
+        "indoorArea": 111.06, 
+        "form": "", 
+        "floor": "S4b~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4b-2F-001", 
+        "indoorArea": 239.3, 
+        "form": "\u670d\u88c5", 
+        "floor": "S4b~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4b-2F-002", 
+        "indoorArea": 224.08, 
+        "form": "\u670d\u88c5", 
+        "floor": "S4b~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4b-2F-003/005", 
+        "indoorArea": 556.94, 
+        "form": "\u670d\u88c5", 
+        "floor": "S4b~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4b-2F-006", 
+        "indoorArea": 159.62, 
+        "form": "", 
+        "floor": "S4b~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4b-2F-007", 
+        "indoorArea": 358.4, 
+        "form": "", 
+        "floor": "S4b~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4b-2F-008", 
+        "indoorArea": 285.23, 
+        "form": "", 
+        "floor": "S4b~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4b-3F-001/006", 
+        "indoorArea": 1419.4, 
+        "form": "", 
+        "floor": "S4b~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4b-3F-002a", 
+        "indoorArea": 85.74, 
+        "form": "", 
+        "floor": "S4b~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4b-3F-002b", 
+        "indoorArea": 110.62, 
+        "form": "", 
+        "floor": "S4b~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4b-3F-003", 
+        "indoorArea": 145.61, 
+        "form": "", 
+        "floor": "S4b~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4b-3F-005", 
+        "indoorArea": 113.87, 
+        "form": "", 
+        "floor": "S4b~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4b-4F-001a", 
+        "indoorArea": 705.2, 
+        "form": "\u670d\u88c5", 
+        "floor": "S4b~4", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4b-4F-001b/002a/002b-1", 
+        "indoorArea": 560.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "S4b~4", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S4b-4F-002b-2", 
+        "indoorArea": 414.97, 
+        "form": "\u670d\u88c5", 
+        "floor": "S4b~4", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S5-1F-001/002", 
+        "indoorArea": 550.48, 
+        "form": "", 
+        "floor": "S5~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S5-1F-003", 
+        "indoorArea": 371.05, 
+        "form": "", 
+        "floor": "S5~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S5-1F-005", 
+        "indoorArea": 36.12, 
+        "form": "", 
+        "floor": "S5~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S5-2F-001a", 
+        "indoorArea": 581.72, 
+        "form": "", 
+        "floor": "S5~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S5-2F-003", 
+        "indoorArea": 25.31, 
+        "form": "", 
+        "floor": "S5~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S5-2F-004", 
+        "indoorArea": 234.34, 
+        "form": "", 
+        "floor": "S5~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S5-3F-001/002/006", 
+        "indoorArea": 2089.1, 
+        "form": "", 
+        "floor": "S5~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S5-3F-003", 
+        "indoorArea": 234.33, 
+        "form": "", 
+        "floor": "S5~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S5-3F-005", 
+        "indoorArea": 25.37, 
+        "form": "", 
+        "floor": "S5~3", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S5-4F-001", 
+        "indoorArea": 608.12, 
+        "form": "\u670d\u88c5", 
+        "floor": "S5~4", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S5-4F-002", 
+        "indoorArea": 25.37, 
+        "form": "\u670d\u88c5", 
+        "floor": "S5~4", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "S5-4F-003", 
+        "indoorArea": 234.97, 
+        "form": "\u670d\u88c5", 
+        "floor": "S5~4", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "T1-100", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T1~1", 
+        "rentStandard": "", 
+        "floorArea": 47.58, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T1-58", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T1~1", 
+        "rentStandard": "", 
+        "floorArea": 47.58, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T1-60", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T1~1", 
+        "rentStandard": "", 
+        "floorArea": 43.91, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T1-62", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T1~1", 
+        "rentStandard": "", 
+        "floorArea": 44.69, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T1-64", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T1~1", 
+        "rentStandard": "", 
+        "floorArea": 44.3, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T1-66", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T1~1", 
+        "rentStandard": "", 
+        "floorArea": 67.27, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T1-68", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T1~1", 
+        "rentStandard": "", 
+        "floorArea": 64.38, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T1-70", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T1~1", 
+        "rentStandard": "", 
+        "floorArea": 49.31, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T1-72", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T1~1", 
+        "rentStandard": "", 
+        "floorArea": 125.99, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T1-74", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T1~1", 
+        "rentStandard": "", 
+        "floorArea": 116.2, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T1-76", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T1~1", 
+        "rentStandard": "", 
+        "floorArea": 84.46, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T1-78", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T1~1", 
+        "rentStandard": "", 
+        "floorArea": 143.99, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T1-80", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T1~1", 
+        "rentStandard": "", 
+        "floorArea": 81.4, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T1-82", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T1~1", 
+        "rentStandard": "", 
+        "floorArea": 47.58, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T1-84", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T1~1", 
+        "rentStandard": "", 
+        "floorArea": 44.3, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T1-86", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T1~1", 
+        "rentStandard": "", 
+        "floorArea": 55.24, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T1-88", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T1~1", 
+        "rentStandard": "", 
+        "floorArea": 56.34, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T1-90", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T1~1", 
+        "rentStandard": "", 
+        "floorArea": 97.47, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T1-92", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T1~1", 
+        "rentStandard": "", 
+        "floorArea": 113.64, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T1-94", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T1~1", 
+        "rentStandard": "", 
+        "floorArea": 56.33, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T1-96", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T1~1", 
+        "rentStandard": "", 
+        "floorArea": 55.24, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T1-98", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T1~1", 
+        "rentStandard": "", 
+        "floorArea": 44.3, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T10-1F-30", 
+        "indoorArea": 121.66, 
+        "form": "\u670d\u88c5", 
+        "floor": "T10~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "T10-1F-3193-1F", 
+        "indoorArea": 176.08, 
+        "form": "", 
+        "floor": "T10~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "T10-1F-3193-2F", 
+        "indoorArea": 176.08, 
+        "form": "", 
+        "floor": "T10~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "T10-1F-3197-1F/3195-1F", 
+        "indoorArea": 312.55, 
+        "form": "", 
+        "floor": "T10~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "T10-1F-3197-2F/3195-2F", 
+        "indoorArea": 312.55, 
+        "form": "", 
+        "floor": "T10~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "T10-1F-38", 
+        "indoorArea": 239.39, 
+        "form": "\u670d\u88c5", 
+        "floor": "T10~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "T10-1F-46", 
+        "indoorArea": 239.81, 
+        "form": "\u670d\u88c5", 
+        "floor": "T10~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "T2-18", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T2~1", 
+        "rentStandard": "", 
+        "floorArea": 56.08, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T2-20", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T2~1", 
+        "rentStandard": "", 
+        "floorArea": 52.21, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T2-22", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T2~1", 
+        "rentStandard": "", 
+        "floorArea": 52.21, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T2-24", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T2~1", 
+        "rentStandard": "", 
+        "floorArea": 52.21, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T2-26", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T2~1", 
+        "rentStandard": "", 
+        "floorArea": 61.88, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T2-28", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T2~1", 
+        "rentStandard": "", 
+        "floorArea": 61.36, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T2-30", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T2~1", 
+        "rentStandard": "", 
+        "floorArea": 58.34, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T2-32", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T2~1", 
+        "rentStandard": "", 
+        "floorArea": 59.56, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T2-34", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T2~1", 
+        "rentStandard": "", 
+        "floorArea": 20.93, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T2-36", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T2~1", 
+        "rentStandard": "", 
+        "floorArea": 54.69, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T2-38", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T2~1", 
+        "rentStandard": "", 
+        "floorArea": 58.34, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T2-40", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T2~1", 
+        "rentStandard": "", 
+        "floorArea": 65.63, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T2-42", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T2~1", 
+        "rentStandard": "", 
+        "floorArea": 67.07, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T2-437", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T2~1", 
+        "rentStandard": "", 
+        "floorArea": 50.39, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T2-439", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T2~1", 
+        "rentStandard": "", 
+        "floorArea": 47.42, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T2-44", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T2~1", 
+        "rentStandard": "", 
+        "floorArea": 61.88, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T2-46", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T2~1", 
+        "rentStandard": "", 
+        "floorArea": 52.21, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T2-48", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T2~1", 
+        "rentStandard": "", 
+        "floorArea": 52.21, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T2-50", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T2~1", 
+        "rentStandard": "", 
+        "floorArea": 52.21, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T2-52", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T2~1", 
+        "rentStandard": "", 
+        "floorArea": 56.08, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T3-12", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T3~1", 
+        "rentStandard": "", 
+        "floorArea": 59.41, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T3-14", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T3~1", 
+        "rentStandard": "", 
+        "floorArea": 93.76, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T3-1F-10", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T3~1", 
+        "rentStandard": "", 
+        "floorArea": 20.88, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T3-4", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T3~1", 
+        "rentStandard": "", 
+        "floorArea": 65.48, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T3-401", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T3~1", 
+        "rentStandard": "", 
+        "floorArea": 69.45, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T3-403", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T3~1", 
+        "rentStandard": "", 
+        "floorArea": 61.73, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T3-405", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T3~1", 
+        "rentStandard": "", 
+        "floorArea": 52.08, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T3-407", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T3~1", 
+        "rentStandard": "", 
+        "floorArea": 52.08, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T3-409", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T3~1", 
+        "rentStandard": "", 
+        "floorArea": 52.08, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T3-411", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T3~1", 
+        "rentStandard": "", 
+        "floorArea": 55.94, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T3-417", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T3~1", 
+        "rentStandard": "", 
+        "floorArea": 55.94, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T3-419", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T3~1", 
+        "rentStandard": "", 
+        "floorArea": 52.08, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T3-421", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T3~1", 
+        "rentStandard": "", 
+        "floorArea": 52.08, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T3-423", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T3~1", 
+        "rentStandard": "", 
+        "floorArea": 52.08, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T3-425", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T3~1", 
+        "rentStandard": "", 
+        "floorArea": 61.73, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T3-427", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T3~1", 
+        "rentStandard": "", 
+        "floorArea": 63.0, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T3-429", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T3~1", 
+        "rentStandard": "", 
+        "floorArea": 54.04, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T3-6", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T3~1", 
+        "rentStandard": "", 
+        "floorArea": 58.2, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T3-8", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T3~1", 
+        "rentStandard": "", 
+        "floorArea": 48.36, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T3-2F", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T3~2", 
+        "rentStandard": "", 
+        "floorArea": 1364.88, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T4-11", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T4~1", 
+        "rentStandard": "", 
+        "floorArea": 86.52, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T4-1F-387", 
+        "indoorArea": 50.55, 
+        "form": "", 
+        "floor": "T4~1", 
+        "rentStandard": "", 
+        "floorArea": 56.17, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T4-1F-389", 
+        "indoorArea": 47.07, 
+        "form": "", 
+        "floor": "T4~1", 
+        "rentStandard": "", 
+        "floorArea": 52.3, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T4-3", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T4~1", 
+        "rentStandard": "", 
+        "floorArea": 65.74, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T4-373", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T4~1", 
+        "rentStandard": "", 
+        "floorArea": 54.26, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T4-375", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T4~1", 
+        "rentStandard": "", 
+        "floorArea": 113.9, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T4-379", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T4~1", 
+        "rentStandard": "", 
+        "floorArea": 56.17, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T4-381", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T4~1", 
+        "rentStandard": "", 
+        "floorArea": 56.17, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T4-391", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T4~1", 
+        "rentStandard": "", 
+        "floorArea": 52.3, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T4-393", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T4~1", 
+        "rentStandard": "", 
+        "floorArea": 52.3, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T4-395", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T4~1", 
+        "rentStandard": "", 
+        "floorArea": 61.98, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T4-397", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T4~1", 
+        "rentStandard": "", 
+        "floorArea": 69.73, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T4-5", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T4~1", 
+        "rentStandard": "", 
+        "floorArea": 58.44, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T4-7", 
+        "indoorArea": "", 
+        "form": "\u670d\u88c5", 
+        "floor": "T4~1", 
+        "rentStandard": "", 
+        "floorArea": 54.79, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T4-9", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T4~1", 
+        "rentStandard": "", 
+        "floorArea": 20.96, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T4-201", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T4~2", 
+        "rentStandard": "", 
+        "floorArea": 48.81, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T4-202", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T4~2", 
+        "rentStandard": "", 
+        "floorArea": 52.06, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T4-203", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T4~2", 
+        "rentStandard": "", 
+        "floorArea": 58.57, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T4-204", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T4~2", 
+        "rentStandard": "", 
+        "floorArea": 103.72, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T4-205", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T4~2", 
+        "rentStandard": "", 
+        "floorArea": 92.2, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T4-206", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T4~2", 
+        "rentStandard": "", 
+        "floorArea": 77.79, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T4-210", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T4~2", 
+        "rentStandard": "", 
+        "floorArea": 83.55, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T4-211", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T4~2", 
+        "rentStandard": "", 
+        "floorArea": 77.79, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T4-212", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T4~2", 
+        "rentStandard": "", 
+        "floorArea": 77.79, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T4-213", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T4~2", 
+        "rentStandard": "", 
+        "floorArea": 77.79, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T4-214", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T4~2", 
+        "rentStandard": "", 
+        "floorArea": 92.2, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T4-215", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T4~2", 
+        "rentStandard": "", 
+        "floorArea": 135.92, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T4-216", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T4~2", 
+        "rentStandard": "", 
+        "floorArea": 57.65, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T4-217", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T4~2", 
+        "rentStandard": "", 
+        "floorArea": 40.67, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T4-218", 
+        "indoorArea": "", 
+        "form": "", 
+        "floor": "T4~2", 
+        "rentStandard": "", 
+        "floorArea": 38.9, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T4-2F-207", 
+        "indoorArea": 70.01, 
+        "form": "", 
+        "floor": "T4~2", 
+        "rentStandard": "", 
+        "floorArea": 77.79, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T4-2F-208", 
+        "indoorArea": 70.01, 
+        "form": "", 
+        "floor": "T4~2", 
+        "rentStandard": "", 
+        "floorArea": 77.79, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T4-2F-209", 
+        "indoorArea": 75.2, 
+        "form": "", 
+        "floor": "T4~2", 
+        "rentStandard": "", 
+        "floorArea": 83.55, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T5-1F-001-1", 
+        "indoorArea": 306.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "T5~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "T5-1F-001-2", 
+        "indoorArea": 60.0, 
+        "form": "", 
+        "floor": "T5~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "T5-1F-001-3/002", 
+        "indoorArea": 143.43, 
+        "form": "\u670d\u88c5", 
+        "floor": "T5~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "T5-1F-003", 
+        "indoorArea": 115.21, 
+        "form": "\u670d\u88c5", 
+        "floor": "T5~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "T5-1F-005a/005b", 
+        "indoorArea": 351.89, 
+        "form": "\u670d\u88c5", 
+        "floor": "T5~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "T5-1F-006", 
+        "indoorArea": 26.62, 
+        "form": "\u670d\u88c5", 
+        "floor": "T5~1", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "T5-2F-001a-1/001b-1", 
+        "indoorArea": 351.08, 
+        "form": "", 
+        "floor": "T5~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "T5-2F-001c/001a-2/001b-2", 
+        "indoorArea": 152.6, 
+        "form": "\u670d\u88c5", 
+        "floor": "T5~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "T5-2F-002", 
+        "indoorArea": 513.89, 
+        "form": "\u670d\u88c5", 
+        "floor": "T5~2", 
+        "rentStandard": "", 
+        "floorArea": "", 
+        "property": "\u81ea\u6301"
+    }, 
+    {
+        "shopIndex": "T6-1F-1/2/3", 
+        "indoorArea": 170.28, 
+        "form": "", 
+        "floor": "T6~1", 
+        "rentStandard": "", 
+        "floorArea": 175.61, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T6-1F-295", 
+        "indoorArea": 54.78, 
+        "form": "", 
+        "floor": "T6~1", 
+        "rentStandard": "", 
+        "floorArea": 56.49, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T6-1F-297", 
+        "indoorArea": 49.41, 
+        "form": "", 
+        "floor": "T6~1", 
+        "rentStandard": "", 
+        "floorArea": 50.95, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T6-1F-299", 
+        "indoorArea": 55.74, 
+        "form": "", 
+        "floor": "T6~1", 
+        "rentStandard": "", 
+        "floorArea": 57.48, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T6-1F-301", 
+        "indoorArea": 80.9, 
+        "form": "", 
+        "floor": "T6~1", 
+        "rentStandard": "", 
+        "floorArea": 83.43, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T6-1F-303", 
+        "indoorArea": 49.41, 
+        "form": "", 
+        "floor": "T6~1", 
+        "rentStandard": "", 
+        "floorArea": 50.95, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T6-1F-305", 
+        "indoorArea": 49.41, 
+        "form": "", 
+        "floor": "T6~1", 
+        "rentStandard": "", 
+        "floorArea": 50.95, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T6-1F-307", 
+        "indoorArea": 49.41, 
+        "form": "", 
+        "floor": "T6~1", 
+        "rentStandard": "", 
+        "floorArea": 50.95, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T6-1F-309", 
+        "indoorArea": 52.99, 
+        "form": "", 
+        "floor": "T6~1", 
+        "rentStandard": "", 
+        "floorArea": 54.65, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T6-1F-311-10", 
+        "indoorArea": 76.36, 
+        "form": "", 
+        "floor": "T6~1", 
+        "rentStandard": "", 
+        "floorArea": 78.75, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T6-1F-311-11", 
+        "indoorArea": 52.43, 
+        "form": "", 
+        "floor": "T6~1", 
+        "rentStandard": "", 
+        "floorArea": 54.07, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T6-1F-311-12", 
+        "indoorArea": 46.57, 
+        "form": "", 
+        "floor": "T6~1", 
+        "rentStandard": "", 
+        "floorArea": 48.03, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T6-1F-311-13", 
+        "indoorArea": 51.64, 
+        "form": "", 
+        "floor": "T6~1", 
+        "rentStandard": "", 
+        "floorArea": 53.25, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T6-1F-311-9", 
+        "indoorArea": 46.57, 
+        "form": "", 
+        "floor": "T6~1", 
+        "rentStandard": "", 
+        "floorArea": 48.03, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T6-1F-315", 
+        "indoorArea": 52.99, 
+        "form": "", 
+        "floor": "T6~1", 
+        "rentStandard": "", 
+        "floorArea": 54.65, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T6-1F-317", 
+        "indoorArea": 49.41, 
+        "form": "", 
+        "floor": "T6~1", 
+        "rentStandard": "", 
+        "floorArea": 50.95, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T6-1F-319", 
+        "indoorArea": 49.41, 
+        "form": "\u670d\u88c5", 
+        "floor": "T6~1", 
+        "rentStandard": "", 
+        "floorArea": 50.95, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T6-323/321", 
+        "indoorArea": 122.25, 
+        "form": "", 
+        "floor": "T6~1", 
+        "rentStandard": "", 
+        "floorArea": 126.07, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T6-2F-201", 
+        "indoorArea": 83.99, 
+        "form": "\u670d\u88c5", 
+        "floor": "T6~2", 
+        "rentStandard": "", 
+        "floorArea": 86.61, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T6-2F-202", 
+        "indoorArea": 49.08, 
+        "form": "\u670d\u88c5", 
+        "floor": "T6~2", 
+        "rentStandard": "", 
+        "floorArea": 50.61, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T6-2F-203", 
+        "indoorArea": 49.09, 
+        "form": "\u670d\u88c5", 
+        "floor": "T6~2", 
+        "rentStandard": "", 
+        "floorArea": 50.62, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T6-2F-204", 
+        "indoorArea": 80.49, 
+        "form": "\u670d\u88c5", 
+        "floor": "T6~2", 
+        "rentStandard": "", 
+        "floorArea": 83.01, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T6-2F-205", 
+        "indoorArea": 86.43, 
+        "form": "\u670d\u88c5", 
+        "floor": "T6~2", 
+        "rentStandard": "", 
+        "floorArea": 89.13, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T6-2F-206", 
+        "indoorArea": 122.67, 
+        "form": "\u670d\u88c5", 
+        "floor": "T6~2", 
+        "rentStandard": "", 
+        "floorArea": 126.5, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T6-2F-207", 
+        "indoorArea": 87.18, 
+        "form": "\u670d\u88c5", 
+        "floor": "T6~2", 
+        "rentStandard": "", 
+        "floorArea": 89.9, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T6-2F-208", 
+        "indoorArea": 87.18, 
+        "form": "\u670d\u88c5", 
+        "floor": "T6~2", 
+        "rentStandard": "", 
+        "floorArea": 89.9, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T6-2F-209", 
+        "indoorArea": 87.18, 
+        "form": "\u670d\u88c5", 
+        "floor": "T6~2", 
+        "rentStandard": "", 
+        "floorArea": 89.9, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T6-2F-210", 
+        "indoorArea": 93.51, 
+        "form": "\u670d\u88c5", 
+        "floor": "T6~2", 
+        "rentStandard": "", 
+        "floorArea": 96.43, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T6-2F-211", 
+        "indoorArea": 93.51, 
+        "form": "\u670d\u88c5", 
+        "floor": "T6~2", 
+        "rentStandard": "", 
+        "floorArea": 96.43, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T6-2F-212", 
+        "indoorArea": 87.18, 
+        "form": "\u670d\u88c5", 
+        "floor": "T6~2", 
+        "rentStandard": "", 
+        "floorArea": 89.9, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T6-2F-213", 
+        "indoorArea": 87.18, 
+        "form": "\u670d\u88c5", 
+        "floor": "T6~2", 
+        "rentStandard": "", 
+        "floorArea": 89.9, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T6-2F-214", 
+        "indoorArea": 87.18, 
+        "form": "\u670d\u88c5", 
+        "floor": "T6~2", 
+        "rentStandard": "", 
+        "floorArea": 89.9, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T6-2F-215", 
+        "indoorArea": 149.18, 
+        "form": "\u670d\u88c5", 
+        "floor": "T6~2", 
+        "rentStandard": "", 
+        "floorArea": 153.84, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T7-1F-62", 
+        "indoorArea": 87.45, 
+        "form": "\u670d\u88c5", 
+        "floor": "T7~1", 
+        "rentStandard": "", 
+        "floorArea": 90.18, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T7-1F-64", 
+        "indoorArea": 51.3, 
+        "form": "\u670d\u88c5", 
+        "floor": "T7~1", 
+        "rentStandard": "", 
+        "floorArea": 52.9, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T7-1F-66", 
+        "indoorArea": 51.3, 
+        "form": "\u670d\u88c5", 
+        "floor": "T7~1", 
+        "rentStandard": "", 
+        "floorArea": 52.9, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T7-1F-68", 
+        "indoorArea": 51.3, 
+        "form": "\u670d\u88c5", 
+        "floor": "T7~1", 
+        "rentStandard": "", 
+        "floorArea": 52.9, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T7-1F-70", 
+        "indoorArea": 54.51, 
+        "form": "\u670d\u88c5", 
+        "floor": "T7~1", 
+        "rentStandard": "", 
+        "floorArea": 56.21, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T7-1F-72", 
+        "indoorArea": 54.51, 
+        "form": "\u670d\u88c5", 
+        "floor": "T7~1", 
+        "rentStandard": "", 
+        "floorArea": 56.21, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T7-1F-72-1/T7-2F-201/202/214/215", 
+        "indoorArea": 412.88, 
+        "form": "", 
+        "floor": "T7~1", 
+        "rentStandard": "", 
+        "floorArea": 425.79, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T7-1F-72-10", 
+        "indoorArea": 74.2, 
+        "form": "", 
+        "floor": "T7~1", 
+        "rentStandard": "", 
+        "floorArea": 76.52, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T7-1F-72-11", 
+        "indoorArea": 45.65, 
+        "form": "", 
+        "floor": "T7~1", 
+        "rentStandard": "", 
+        "floorArea": 47.08, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T7-1F-72-12", 
+        "indoorArea": 46.45, 
+        "form": "", 
+        "floor": "T7~1", 
+        "rentStandard": "", 
+        "floorArea": 47.9, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T7-1F-72-13", 
+        "indoorArea": 84.33, 
+        "form": "", 
+        "floor": "T7~1", 
+        "rentStandard": "", 
+        "floorArea": 86.96, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T7-1F-72-9", 
+        "indoorArea": 46.45, 
+        "form": "", 
+        "floor": "T7~1", 
+        "rentStandard": "", 
+        "floorArea": 47.9, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T7-1F-78", 
+        "indoorArea": 51.3, 
+        "form": "\u670d\u88c5", 
+        "floor": "T7~1", 
+        "rentStandard": "", 
+        "floorArea": 52.9, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T7-1F-80", 
+        "indoorArea": 49.27, 
+        "form": "\u670d\u88c5", 
+        "floor": "T7~1", 
+        "rentStandard": "", 
+        "floorArea": 50.81, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T7-1F-82", 
+        "indoorArea": 49.28, 
+        "form": "\u670d\u88c5", 
+        "floor": "T7~1", 
+        "rentStandard": "", 
+        "floorArea": 50.82, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T7-1F-84", 
+        "indoorArea": 66.14, 
+        "form": "\u670d\u88c5", 
+        "floor": "T7~1", 
+        "rentStandard": "", 
+        "floorArea": 68.21, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T7-1F-86", 
+        "indoorArea": 61.0, 
+        "form": "\u670d\u88c5", 
+        "floor": "T7~1", 
+        "rentStandard": "", 
+        "floorArea": 62.91, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T7-1F-88", 
+        "indoorArea": 80.49, 
+        "form": "", 
+        "floor": "T7~1", 
+        "rentStandard": "", 
+        "floorArea": 83.0, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T7-2F-203", 
+        "indoorArea": 87.87, 
+        "form": "\u670d\u88c5", 
+        "floor": "T7~2", 
+        "rentStandard": "", 
+        "floorArea": 90.62, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T7-2F-204", 
+        "indoorArea": 87.87, 
+        "form": "\u670d\u88c5", 
+        "floor": "T7~2", 
+        "rentStandard": "", 
+        "floorArea": 90.62, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T7-2F-205", 
+        "indoorArea": 94.25, 
+        "form": "\u670d\u88c5", 
+        "floor": "T7~2", 
+        "rentStandard": "", 
+        "floorArea": 97.2, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T7-2F-206", 
+        "indoorArea": 94.25, 
+        "form": "", 
+        "floor": "T7~2", 
+        "rentStandard": "", 
+        "floorArea": 97.2, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T7-2F-207", 
+        "indoorArea": 87.87, 
+        "form": "", 
+        "floor": "T7~2", 
+        "rentStandard": "", 
+        "floorArea": 90.62, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T7-2F-208", 
+        "indoorArea": 87.87, 
+        "form": "", 
+        "floor": "T7~2", 
+        "rentStandard": "", 
+        "floorArea": 90.62, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T7-2F-209", 
+        "indoorArea": 87.87, 
+        "form": "", 
+        "floor": "T7~2", 
+        "rentStandard": "", 
+        "floorArea": 90.62, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T7-2F-210", 
+        "indoorArea": 131.74, 
+        "form": "", 
+        "floor": "T7~2", 
+        "rentStandard": "", 
+        "floorArea": 135.86, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T7-2F-211", 
+        "indoorArea": 61.02, 
+        "form": "", 
+        "floor": "T7~2", 
+        "rentStandard": "", 
+        "floorArea": 62.93, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T7-2F-212", 
+        "indoorArea": 81.13, 
+        "form": "", 
+        "floor": "T7~2", 
+        "rentStandard": "", 
+        "floorArea": 83.67, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T7-2F-213", 
+        "indoorArea": 49.47, 
+        "form": "", 
+        "floor": "T7~2", 
+        "rentStandard": "", 
+        "floorArea": 51.02, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T9-1F-101", 
+        "indoorArea": 78.02, 
+        "form": "\u670d\u88c5", 
+        "floor": "T9~1", 
+        "rentStandard": "", 
+        "floorArea": 80.46, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T9-1F-102", 
+        "indoorArea": 70.35, 
+        "form": "\u670d\u88c5", 
+        "floor": "T9~1", 
+        "rentStandard": "", 
+        "floorArea": 72.55, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T9-1F-103", 
+        "indoorArea": 49.38, 
+        "form": "\u670d\u88c5", 
+        "floor": "T9~1", 
+        "rentStandard": "", 
+        "floorArea": 50.92, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T9-1F-104", 
+        "indoorArea": 52.96, 
+        "form": "\u670d\u88c5", 
+        "floor": "T9~1", 
+        "rentStandard": "", 
+        "floorArea": 54.61, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T9-1F-105", 
+        "indoorArea": 52.96, 
+        "form": "", 
+        "floor": "T9~1", 
+        "rentStandard": "", 
+        "floorArea": 54.61, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T9-1F-106", 
+        "indoorArea": 49.38, 
+        "form": "", 
+        "floor": "T9~1", 
+        "rentStandard": "", 
+        "floorArea": 50.92, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T9-1F-107", 
+        "indoorArea": 71.32, 
+        "form": "", 
+        "floor": "T9~1", 
+        "rentStandard": "", 
+        "floorArea": 73.55, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T9-1F-108", 
+        "indoorArea": 125.81, 
+        "form": "", 
+        "floor": "T9~1", 
+        "rentStandard": "", 
+        "floorArea": 129.74, 
+        "property": "\u9500\u552e"
+    }, 
+    {
+        "shopIndex": "T9-1F-109", 
+        "indoorArea": 117.24, 
+        "form": "", 
+        "floor": "T9~1", 
+        "rentStandard": "", 
+        "floorArea": 120.9, 
+        "property": "\u9500\u552e"
+    }
+]

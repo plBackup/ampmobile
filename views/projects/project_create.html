@@ -1,0 +1,20 @@
+<div class="btn-group">
+    <a ui-turn-on='myDropdown2' class='btn'>
+        <i class="fa fa-ellipsis-v"></i>
+    </a>
+    <ul
+            class="dropdown-menu"
+            ui-outer-click="Ui.turnOff('myDropdown2')"
+            ui-outer-click-if="Ui.active('myDropdown2')"
+            role="menu"
+            ui-show="myDropdown2"
+            ui-state="myDropdown2"
+            ui-turn-off="myDropdown2">
+
+        <li><a>Action</a></li>
+        <li><a>Another action</a></li>
+        <li><a>Something else here</a></li>
+        <li class="divider"></li>
+        <li><a>Separated link</a></li>
+    </ul>
+</div>

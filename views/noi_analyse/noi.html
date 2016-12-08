@@ -1,0 +1,446 @@
+<div ui-content-for="ampHeader">
+    <div class="navbar-brand navbar-brand-center">
+        Test
+    </div>
+
+    <div class="btn-group pull-right">
+        <div ui-toggle="uiSidebarRight" class="btn sidebar-right-toggle">
+            <i class="navOpt-icon navOpt-icon-filter"></i>
+        </div>
+    </div>
+</div>
+<div ui-content-for="pageHeader">
+    <div class="scrollable-header page-header" style="display: none">
+        noi header
+    </div>
+</div>
+
+<div class="amp-content-panel noi-view" id="noi">
+    <div class="amp-block">
+        <div class="amp-table-wrapper" id="noi-summary" style="padding-top:50px;">
+            <span id="noi-note"><em class="ys-amp-icon ys-icon-tips ys-icon-tips-hover" style="left:5px;margin-top:-11px;"></em>体验版数据为模拟数据，请勿引用。数据可与商业系统打通，欢迎使用<b style="font-weight:bold;">ADI</b>数据导入服务</span>
+            <table class="table table-right-bordered amp-table" >
+                <thead>
+                <tr>
+                    <th>净营运收入NOI(万元)</th>
+                    <th>总投资成本(万元)</th>
+                    <th>估值(万元)</th>
+                    <th>贷款(万元)</th>
+                    <th>资产权益年预测(万元)</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="tr-info-main">
+                    <td>
+                        <span>当月实际</span>
+                        <h3>{{noiCtrl.noiData[0].value | number:2}}</h3>
+                        <span>全年预测</span>
+                        <h5>{{noiCtrl.noiData[1].value | number:2}}</h5>
+                    </td>
+                    <td>
+                        <span>总成本</span>
+                        <h3>{{noiCtrl.noiData[2].value | number:2}}</h3>
+                        <span>预测年回报率(按成本)</span>
+                        <h5>{{noiCtrl.noiData[3].value | percentFormat}}</h5>
+                    </td>
+                    <td>
+                        <span>估值</span>
+                        <h3>{{noiCtrl.noiData[4].value | number:2}}</h3>
+                        <span>估值日期</span>
+                        <h5>{{noiCtrl.noiData[5].value}}</h5>
+                        <span>预测年回报率(按估值)</span>
+                        <h5>{{noiCtrl.noiData[6].value | percentFormat}}</h5>
+                    </td>
+                    <td>
+                        <span>本金</span>
+                        <h3>{{noiCtrl.noiData[7].value | number:2}}</h3>
+                        <span>到期日</span>
+                        <h5>{{noiCtrl.noiData[8].value}}</h5>
+                        <span>年贷款利息</span>
+                        <h5>{{noiCtrl.noiData[9].value | number:2}}</h5>
+                    </td>
+                    <td>
+                        <span>当前权益</span>
+                        <h3>{{noiCtrl.noiData[10].value | number:2}}</h3>
+                        <span>预测税前现金流</span>
+                        <h5>{{noiCtrl.noiData[11].value | number:2}}</h5>
+                        <span>预测收益率(按ROE)</span>
+                        <h5>{{noiCtrl.noiData[12].value | percentFormat}}</h5>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div><!--end ys-finacial-income-table-->
+
+        <div class="amp-table-wrapper-swiper" id="noi-main-table-wrapper">
+            <div class="ys-table-fixed-top" style="padding-left:160px;">
+                <div class="ys-table-static ys-table-static-left" style="width:160px;">
+                    <table class="table table-no-bordered amp-table table-hover table-header-fixed" style="width:100%;">
+                        <thead>
+                        <tr style="">
+                            <th class="fake-th"></th>
+                        </tr>
+                        <tr class="thead-tr-sub">
+                            <th class="fake-th"></th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+
+                <div class="swiper-container" style="width:100%;" id="noi-main-table-head">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <table class="table table-no-bordered amp-table table-hover table-header-fixed" style="width:1500px;" >
+                                <thead>
+                                <tr style="">
+                                    <th colspan="4" ><em><</em>2016-08(万元)</th>
+                                    <th colspan="4" >全年累计(万元)</th>
+                                    <th colspan="4" >全年(万元)</th>
+                                    <th>达成率</th>
+                                </tr>
+                                <tr class="thead-tr-sub" >
+                                    <th>实际</th>
+                                    <th>预算</th>
+                                    <th>差异额</th>
+                                    <th class="t-split">差异率</th>
+
+                                    <th>实际</th>
+                                    <th>预算</th>
+                                    <th>差异额</th>
+                                    <th class="t-split">差异率</th>
+
+                                    <th>预测</th>
+                                    <th>预算</th>
+                                    <th>差异额</th>
+                                    <th class="t-split">差异率</th>
+
+
+                                    <th></th>
+                                </tr>
+                                </thead>
+                            </table>
+                        </div><!--swiper-slide-->
+                    </div><!--swiper-wrapper-->
+                    <!-- Add Scroll Bar -->
+                    <!-- <div class="swiper-scrollbar"></div>-->
+                </div><!--swiper container-->
+            </div>
+            <div class="ys-table-main" style="padding-left:160px;">
+                <div class="ys-table-static ys-table-static-left" style="width:160px;">
+                    <table class="table table-no-bordered amp-table table-hover" style="width:100%;">
+                        <tbody>
+                        <tr class="tr-main">
+                            <th>收入<em class="ys-icon icon-menu-down"></em></th>
+                        </tr>
+                        <tr class="tr-sub">
+                            <th>租金</th>
+                        </tr>
+                        <tr class="tr-sub">
+                            <th>物业管理费</th>
+                        </tr>
+
+                        <!-- start -->
+                        <tr class="tr-sub">
+                            <th>其他收入</th>
+                        </tr>
+
+                        <tr class="tr-main tr-init-collapse">
+                            <th>费用<em class="ys-icon icon-menu-down"></em></th>
+                        </tr>
+                        <tr class="tr-sub">
+                            <th>增值税</th>
+                        </tr>
+
+                        <tr class="tr-sub">
+                            <th>房产税</th>
+                        </tr>
+
+                        <tr class="tr-sub">
+                            <th>地租</th>
+                        </tr>
+
+                       <!-- <tr class="tr-sub tr-sub-main">-->
+                        <tr class="tr-sub">
+                            <th>能耗费用<!--<em class="ys-icon icon-menu-down"></em>--></th>
+                        </tr>
+
+                      <!--  <tr class="tr-tri" ng-hide="true">
+                            <th>水费</th>
+                        </tr>
+                        <tr class="tr-tri" ng-hide="true">
+                            <th>电费</th>
+                        </tr>
+                        <tr class="tr-tri" ng-hide="true">
+                            <th>煤气费</th>
+                        </tr>-->
+
+                        <tr class="tr-sub">
+                            <th>维护/维保</th>
+                        </tr>
+
+                        <tr class="tr-sub">
+                            <th>总部管理费</th>
+                        </tr>
+
+                        <tr class="tr-sub">
+                            <th>营销费用</th>
+                        </tr>
+
+                        <tr class="tr-sub">
+                            <th>工资及相关费用</th>
+                        </tr>
+
+                        <tr class="tr-sub">
+                            <th>行政管理费用</th>
+                        </tr>
+
+                        <tr class="tr-sub">
+                            <th>计提/核销</th>
+                        </tr>
+
+                        <tr class="tr-sub">
+                            <th>折旧</th>
+                        </tr>
+
+                        <tr class="tr-sub">
+                            <th>其他</th>
+                        </tr>
+                        <!-- end -->
+                        </tbody>
+                        <tfoot>
+                        <tr class="tr-main">
+                            <th>NOI</th>
+                        </tr>
+                        <tr class="tr-sub">
+                            <th>利润率</th>
+                        </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <div class="swiper-container" style="width:100%;" id="noi-main-table">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <table class="table table-no-bordered amp-table table-hover"  style="width:1500px;">
+                                <tbody>
+                                <tr class="tr-main">
+                                    <td ng-repeat="tdData in noiCtrl.incomeData[3].values |skip:1"
+                                        ng-class="{'t-split':noiCtrl.isSplit($index)}">{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
+                                    <td>{{74.76|number:2}}%</td>
+                                </tr>
+                                <tr class="tr-sub">
+                                    <td ng-repeat="tdData in noiCtrl.incomeData[0].values|skip:1"
+                                        ng-class="{'t-split':noiCtrl.isSplit($index)}">{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="tr-sub">
+                                    <td ng-repeat="tdData in noiCtrl.incomeData[1].values|skip:1"
+                                        ng-class="{'t-split':noiCtrl.isSplit($index)}">{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
+                                    <td></td>
+                                </tr>
+
+                                <!-- start -->
+                                <tr class="tr-sub">
+                                    <td ng-repeat="tdData in noiCtrl.incomeData[2].values|skip:1"
+                                        ng-class="{'t-split':noiCtrl.isSplit($index)}">{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
+                                </tr>
+
+                                <tr class="tr-main">
+                                    <td ng-repeat="tdData in noiCtrl.feeData[12].values|skip:1"
+                                        ng-class="{'t-split':noiCtrl.isSplit($index)}">{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
+                                    <td>{{69.35}}%</td>
+
+                                </tr>
+                                <tr class="tr-sub">
+                                    <td ng-repeat="tdData in noiCtrl.feeData[0].values|skip:1"
+                                        ng-class="{'t-split':noiCtrl.isSplit($index)}">{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
+                                    <td></td>
+
+                                </tr>
+
+                                <tr class="tr-sub">
+                                    <td ng-repeat="tdData in noiCtrl.feeData[1].values|skip:1"
+                                        ng-class="{'t-split':noiCtrl.isSplit($index)}">{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
+                                    <td></td>
+
+                                </tr>
+
+                                <tr class="tr-sub">
+                                    <td ng-repeat="tdData in noiCtrl.feeData[2].values|skip:1"
+                                        ng-class="{'t-split':noiCtrl.isSplit($index)}">{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
+
+
+                                </tr>
+
+                                <!--<tr class="tr-sub tr-sub-main">-->
+                                <tr class="tr-sub">
+                                    <td ng-repeat="tdData in noiCtrl.feeData[3].values|skip:1"
+                                        ng-class="{'t-split':noiCtrl.isSplit($index)}">{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
+                                    <td></td>
+
+                                </tr>
+
+                     <!--           <tr class="tr-tri" ng-hide="true">
+                                    <td ng-repeat="tdData in noiCtrl.feeData[4].values|skip:1"
+                                        ng-class="{'t-split':noiCtrl.isSplit($index)}">{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
+
+                                </tr>
+                                <tr class="tr-tri" ng-hide="true">
+                                    <td ng-repeat="tdData in noiCtrl.feeData[5].values|skip:1"
+                                        ng-class="{'t-split':noiCtrl.isSplit($index)}">{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
+
+                                </tr>
+                                <tr class="tr-tri" ng-hide="true">
+                                    <td ng-repeat="tdData in noiCtrl.feeData[6].values|skip:1"
+                                        ng-class="{'t-split':noiCtrl.isSplit($index)}">{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
+                                    <td></td>
+
+                                </tr>
+-->
+
+                                <tr class="tr-sub">
+                                    <td ng-repeat="tdData in noiCtrl.feeData[4].values|skip:1"
+                                        ng-class="{'t-split':noiCtrl.isSplit($index)}">{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
+
+                                </tr>
+
+                                <tr class="tr-sub">
+                                    <td ng-repeat="tdData in noiCtrl.feeData[5].values|skip:1"
+                                        ng-class="{'t-split':noiCtrl.isSplit($index)}">{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr class="tr-sub">
+                                    <td ng-repeat="tdData in noiCtrl.feeData[6].values|skip:1"
+                                        ng-class="{'t-split':noiCtrl.isSplit($index)}">{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
+                                    <td></td>
+
+                                </tr>
+
+                                <tr class="tr-sub">
+                                    <td ng-repeat="tdData in noiCtrl.feeData[7].values|skip:1"
+                                        ng-class="{'t-split':noiCtrl.isSplit($index)}">{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr class="tr-sub">
+                                    <td ng-repeat="tdData in noiCtrl.feeData[8].values|skip:1"
+                                        ng-class="{'t-split':noiCtrl.isSplit($index)}">{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr class="tr-sub">
+                                    <td ng-repeat="tdData in noiCtrl.feeData[9].values|skip:1"
+                                        ng-class="{'t-split':noiCtrl.isSplit($index)}">{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr class="tr-sub">
+                                    <td ng-repeat="tdData in noiCtrl.feeData[10].values|skip:1"
+                                        ng-class="{'t-split':noiCtrl.isSplit($index)}">{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr class="tr-sub">
+                                    <td ng-repeat="tdData in noiCtrl.feeData[11].values|skip:1"
+                                        ng-class="{'t-split':noiCtrl.isSplit($index)}">{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
+                                    <td></td>
+                                </tr>
+                                <!-- end -->
+                                </tbody>
+                                <tfoot>
+                                <tr class="tr-main">
+                                    <td ng-repeat="tdData in noiCtrl.feeData[13].values|skip:1"
+                                        ng-class="{'t-split':noiCtrl.isSplit($index)}">{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
+
+                                </tr>
+                                <tr class="tr-sub">
+                                    <td ng-repeat="tdData in noiCtrl.feeData[14].values|skip:1"
+                                        ng-class="{'t-split':noiCtrl.isSplit($index)}">{{tdData.value|default:"-"|percentFormat}}</td>
+
+                                </tr>
+                                </tfoot>
+
+                            </table>
+                        </div><!--swiper-slide-->
+                    </div><!--swiper-wrapper-->
+                    <!-- Add Scroll Bar -->
+                    <div class="swiper-scrollbar"></div>
+                </div><!--swiper container-->
+
+
+            </div>
+        </div>
+
+        <div class="amp-table-wrapper" id="noi-arrearage">
+            <table class="table table-no-bordered table-hover amp-table">
+                <colgroup>
+                    <col width="17%">
+                    <col width="15%">
+                    <col width="17%">
+                    <col width="17%">
+                    <col width="17%">
+                    <col width="17%">
+                </colgroup>
+                <thead>
+                <tr >
+                    <th></th>
+                    <th>总额</th>
+                    <th>小于30天</th>
+                    <th>31-60天</th>
+                    <th>61-90天</th>
+                    <th>大于90天</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="tr-main">
+                    <th>欠费(万元)<em class="ys-icon icon-menu-down"></em></th>
+                    <td ng-repeat="tdData in noiCtrl.arrearageData[3].values.slice(1)">{{tdData.value|number:2}}</td>
+                </tr>
+                <tr class="tr-sub">
+                    <th>租金(万元)</th>
+                    <td ng-repeat="tdData in noiCtrl.arrearageData[0].values.slice(1)">{{tdData.value|number:2}}</td>
+                </tr>
+                <tr class="tr-sub">
+                    <th>物业管理费(万元)</th>
+                    <td ng-repeat="tdData in noiCtrl.arrearageData[1].values.slice(1)">{{tdData.value|number:2}}</td>
+                </tr>
+                <tr class="tr-sub">
+                    <th>其他收入(万元)</th>
+                    <td ng-repeat="tdData in noiCtrl.arrearageData[2].values.slice(1)">{{tdData.value|number:2}}</td>
+                </tr>
+                </tbody>
+
+
+            </table>
+        </div>
+    </div><!--ys-block-->
+    <div class="amp-block-pd clearfix">
+        <div class="amp-block-title">
+            <h3 class="col-xs-4">NOI实际与方案(一、二、三)对比</h3>
+        </div>
+        <div class="col-xs-12 chart-wrapper" id="noi-chart-wrapper" >
+            <em class="chart-axis-info chart-axis-y-info">万元</em>
+            <div id="noi-chart" style="height:310px;" line-chart
+                 chart-data="noiCtrl.chartData"></div>
+            <div class="chart-legend">
+
+                <span><em class="color-label" style="background-color:#60cd7a;"></em><i class="name">NOI实际</i></span>
+                <span><em class="color-label" style="background-color:#5dbaf7;"></em><i class="name">方案1</i></span>
+                <span><em class="color-label" style="background-color:#fd7170;"></em><i class="name">方案2</i></span>
+                <span><em class="color-label" style="background-color:#feb739;"></em><i class="name">方案3</i></span>
+            </div>
+        </div>
+    </div>
+
+
+</div><!-- amp-content-panel -->
+<!--
+<script src="../static/js/views/noi_analyse/noi.js"></script>
+<script>
+    jQuery(document).ready(function(){
+        noi.init();
+    });
+
+</script>
+-->
