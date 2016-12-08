@@ -1,20 +1,72 @@
-<div class="btn-group">
-    <a ui-turn-on='myDropdown2' class='btn'>
-        <i class="fa fa-ellipsis-v"></i>
-    </a>
-    <ul
-            class="dropdown-menu"
-            ui-outer-click="Ui.turnOff('myDropdown2')"
-            ui-outer-click-if="Ui.active('myDropdown2')"
-            role="menu"
-            ui-show="myDropdown2"
-            ui-state="myDropdown2"
-            ui-turn-off="myDropdown2">
+<div class="ys-content-panel container clearfix">
+    <form  name="projectForm" id="projectForm" novalidate>
+        <div class="ys-block amp-create-project clearfix" ng-switch on="ctrl.index">
+            <h3 ng-switch-when="0">建立您的第一个项目</h3>
+            <h3 ng-switch-when="update">修改项目信息</h3>
+            <h3 ng-switch-default>建立新项目</h3>
 
-        <li><a>Action</a></li>
-        <li><a>Another action</a></li>
-        <li><a>Something else here</a></li>
-        <li class="divider"></li>
-        <li><a>Separated link</a></li>
-    </ul>
-</div>
+            <div class="col-xs-6">
+                <div class="input-wrapper pull-right">
+                    <div class="input-group">
+                        <label>项目</label>
+                        <input ng-model="ctrl.project.name" type="text" placeholder="" value="" required>
+                    </div>
+
+                    <div class="input-group" id="open-date-wrapper">
+                        <label>开业时间</label>
+                        <input ng-model="ctrl.project.opendate" type="text" placeholder="" value="" class="datepicker" id="open-date" readonly>
+                    </div>
+
+                    <div class="input-group">
+                        <label>团队人数</label>
+                        <input ng-model="ctrl.project.pm.teamNum" type="number" placeholder="" value="">
+                    </div>
+                </div>
+            </div><!--col-xs-6-->
+            <div class="col-xs-6">
+                <div class="input-wrapper pull-left ">
+
+                    <div class="input-group input-select">
+                        <label>面积</label>
+                        <input ng-model="ctrl.project.proportionType" type="text" placeholder=" " value="" hidden>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" ui-turn-on='ptDropdown'>
+                                <em>{{ctrl.project.proportionType| default:"请选择"}}</em><span class="ys-icon ys-icon-dropdown"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu"
+                                ui-outer-click="Ui.turnOff('ptDropdown')"
+                                ui-outer-click-if="Ui.active('ptDropdown')"
+                                ui-show="ptDropdown"
+                                ui-state="ptDropdown"
+                                ui-turn-off="ptDropdown">
+                                <!-- <li role="presentation"><a role="menuitem" tabindex="-1" href="#">套内面积</a></li>
+                                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">建筑面积</a></li>-->
+                                <li ng-class="{'active':ctrl.isActive(menu,ctrl.project.proportionType)}" role="presentation" ng-repeat="menu in ctrl.form_menu.proportionType">
+                                    <a href="javascript:void(0)" role="menuitem" ng-click="ctrl.setModel('proportionType',menu)">{{menu}}</a></li>
+
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                    <div class="input-group">
+                        <label>负责人</label>
+                        <input ng-model="ctrl.project.pm.name" type="text" placeholder="" value="">
+                    </div>
+                    <div class="input-group">
+                        <label>位置</label>
+                        <input ng-model="ctrl.project.position" type="text" placeholder="" value="">
+                    </div>
+                </div>
+            </div><!--col-xs-6-->
+
+        </div>
+        <div class="amp-opt-block">
+            <button   ng-click="ctrl.saveCheck()"  type="submit" href="main.html" class="btn amp-btn amp-btn-lg amp-btn-save ys-tips"  id="btn-amp-create" data-toggle="tooltip" data-placement="top"  title="体验版数据为模拟数据，请勿引用">保存
+                <em class="ys-amp-icon ys-icon-tips"style="margin-top: -11px;left: 50%;margin-left:145px;"></em>
+            </button>
+            <!-- <em class="ys-amp-icon ys-icon-tips ys-tips" data-toggle="tooltip" data-placement="right" title="新建项目功能将于12月6日开通" style="margin-top: -11px;left: 50%;margin-left:145px;"></em>-->
+        </div>
+    </form>
+</div><!--end content-panel-->

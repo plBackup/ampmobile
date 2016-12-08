@@ -90,14 +90,11 @@ projects.controller("pjCreateController",["$rootScope","$scope","$location",func
     $scope.$on("$destroy", function() {
         $("#open-date-wrapper input").datetimepicker("remove");
     });
-    $(".ys-tips").tooltip();
 }]);
 projects.controller("pjUpdateController",["$rootScope","$scope","$location","pid",function($rootScope,$scope,$location,pid){
     //$scope.project=project;
     var self=this;
     self.pid=pid;
-    console.log(pid);
-    console.dir($rootScope.projects);
     self.curState=$rootScope.curState;//判断当前页是update 还是create
     self.index="update";
     self.project=$rootScope.projects[pid];
@@ -108,7 +105,7 @@ projects.controller("pjUpdateController",["$rootScope","$scope","$location","pid
 
 
     self.setModel=function(type,menu){
-        self.project[type]=menu;
+       self.project[type]=menu;
     };
 
     self.isActive=function(menu,model){
@@ -118,7 +115,7 @@ projects.controller("pjUpdateController",["$rootScope","$scope","$location","pid
     self.submit=function(){
         console.log("...........");
         //$rootScope.projects.push(self.project);
-        $location.path("/main");
+        $location.path("main");
     };
 
     self.saveCheck=function(){
