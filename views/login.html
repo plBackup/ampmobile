@@ -1,0 +1,23 @@
+<div class="main">
+    <!--<div class="header">
+        <span class="ys-logo"></span>
+    </div>-->
+    <div class="login-wrapper">
+        <h3><em class="ys-icon ys-icon-amp"></em></h3>
+        <div class="form-wrapper">
+            <form name="veriform" id="veriform" action="main.html" method="post" ng-submit="lCtrl.login()">
+                <div class="input-group user-wrapper">
+                    <input id="phone" name="phone" type="tel" placeholder="手机号" autocomplete="off" ng-model="lCtrl.phone"/>
+                </div>
+                <div class="input-group input-group-veri clearfix">
+                    <input id="verification" name="verification" type="text" placeholder="验证码" autocomplete="off" ng-model="lCtrl.veriCode"/>
+                    <a href="#" id="btn-veri" class="ys-btn" ng-disabled="">获取验证码</a>
+                </div>
+
+                <div class="input-group">
+                    <a href="#" id="btn-login" class="amp-btn ys-btn">登录</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
