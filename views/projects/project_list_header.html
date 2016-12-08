@@ -1,3 +1,24 @@
 <div class="navbar-brand navbar-brand-center">
     <em class="amp-icon amp-logo"></em>
+    <div class="btn-group pull-right">
+        <a ui-turn-on='myDropdown' class='btn'>
+            <i class="fa fa-ellipsis-v"></i>
+        </a>
+        <ul
+                class="dropdown-menu"
+                ui-outer-click="Ui.turnOff('myDropdown')"
+                ui-outer-click-if="Ui.active('myDropdown')"
+                role="menu"
+                ui-show="myDropdown"
+                ui-state="myDropdown"
+                ui-turn-off="myDropdown">
+
+            <li>Action</li>
+            <li>Another action</li>
+            <li>Something else here</li>
+            <li class="divider"></li>
+            <li>Separated link</li>
+        </ul>
+    </div>
+
 </div>

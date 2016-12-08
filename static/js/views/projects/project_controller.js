@@ -69,6 +69,7 @@ projects.controller("pjCreateController",["$rootScope","$scope","$location",func
 
     self.setModel=function(type,menu){
         self.project[type]=menu;
+        return false;
     };
 
     self.isActive=function(menu,model){
@@ -86,9 +87,9 @@ projects.controller("pjCreateController",["$rootScope","$scope","$location",func
             self.submit();
         }
     };
-    project_create.init();
+
     $scope.$on("$destroy", function() {
-        $("#open-date-wrapper input").datetimepicker("remove");
+        //$("#open-date-wrapper input").datetimepicker("remove");
     });
 }]);
 projects.controller("pjUpdateController",["$rootScope","$scope","$location","pid",function($rootScope,$scope,$location,pid){
@@ -129,7 +130,7 @@ projects.controller("pjUpdateController",["$rootScope","$scope","$location","pid
     //project_create.init();
 
     $scope.$on("$destroy", function() {
-        $("#open-date-wrapper input").datetimepicker("remove");
+       // $("#open-date-wrapper input").datetimepicker("remove");
     });
 }]);
 

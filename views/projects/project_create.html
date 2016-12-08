@@ -41,14 +41,51 @@
                                 ui-turn-off="ptDropdown">
                                 <!-- <li role="presentation"><a role="menuitem" tabindex="-1" href="#">套内面积</a></li>
                                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">建筑面积</a></li>-->
+                                <!--<li ng-class="{'active':ctrl.isActive(menu,ctrl.project.proportionType)}" role="presentation" ng-repeat="menu in ctrl.form_menu.proportionType">
+                                    <a role="menuitem" ng-click="ctrl.setModel('proportionType',menu)">{{menu}}</a></li>-->
                                 <li ng-class="{'active':ctrl.isActive(menu,ctrl.project.proportionType)}" role="presentation" ng-repeat="menu in ctrl.form_menu.proportionType">
-                                    <a href="javascript:void(0)" role="menuitem" ng-click="ctrl.setModel('proportionType',menu)">{{menu}}</a></li>
+                                    <a role="menuitem" ng-click="ctrl.setModel('proportionType',menu)">{{menu}}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <a ui-turn-on='myDropdown2' class='btn'>
+                            <i class="fa fa-ellipsis-v"></i>
+                        </a>
+                        <ul
+                                class="dropdown-menu"
+                                ui-outer-click="Ui.turnOff('myDropdown2')"
+                                ui-outer-click-if="Ui.active('myDropdown2')"
+                                role="menu"
+                                ui-show="myDropdown2"
+                                ui-state="myDropdown2"
+                                ui-turn-off="myDropdown2">
+
+                            <li><a>Action</a></li>
+                            <li><a>Another action</a></li>
+                            <li><a>Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a>Separated link</a></li>
+                        </ul>
+                    </div>
+                  <!--  <div class="input-group input-select">
+                        <label>面积</label>
+                        <input ng-model="ctrl.project.proportionType" type="text" placeholder=" " value="" hidden>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                <em>{{ctrl.project.proportionType| default:"请选择"}}</em><span class="ys-icon ys-icon-dropdown"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" >
+                                &lt;!&ndash; <li role="presentation"><a role="menuitem" tabindex="-1" href="#">套内面积</a></li>
+                                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">建筑面积</a></li>&ndash;&gt;
+                                <li ng-class="{'active':ctrl.isActive(menu,ctrl.project.proportionType)}" role="presentation" ng-repeat="menu in ctrl.form_menu.proportionType">
+                                    <a role="menuitem" ng-click="ctrl.setModel('proportionType',menu)">{{menu}}</a></li>
 
                             </ul>
                         </div>
 
 
-                    </div>
+                    </div>-->
 
                     <div class="input-group">
                         <label>负责人</label>

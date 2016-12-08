@@ -45,6 +45,7 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
                     templateUrl:"./views/blank.html"
                 }
             },
+            reloadOnSearch: false,
             resolve: {
                 projectsData: function(projectService) {
                     return projectService.getAllData();
@@ -71,7 +72,7 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
                     templateUrl:"./views/blank.html"
                 }
             },
-
+            reloadOnSearch: false,
             resolve: {
                 data: ['$q','$timeout', _timeDefer]
             }
@@ -95,7 +96,7 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
                     templateUrl:"./views/blank.html"
                 }
             },
-
+            reloadOnSearch: false,
             resolve: {
                 pid:["$stateParams",function($stateParams){
                     //这里的逻辑是把数据做在 list-> ui-view( create )里的方法
@@ -125,6 +126,7 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
                     templateUrl:"./views/blank.html"
                 }
             },
+            reloadOnSearch: false,
             resolve: {
                 noiAllData: function(noiService) {
                     return noiService.getAllData();
@@ -149,6 +151,7 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
                     templateUrl:"./views/blank.html"
                 }
             },
+            reloadOnSearch: false,
             resolve: {
                 data: ['$q','$timeout', _timeDefer]
             }
