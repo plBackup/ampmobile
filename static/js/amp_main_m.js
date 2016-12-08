@@ -60,7 +60,7 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
                     templateUrl: './views/projects/project_create_header.html'
                 },
                 'content': {
-                    templateUrl: '../main/create_project.html',
+                    templateUrl: './views/projects/project_create.html',
                     controller:"pjCreateController",
                     controllerAs: 'ctrl',
                 },
@@ -95,22 +95,20 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
                     templateUrl:"./views/blank.html"
                 }
             },
+
             resolve: {
-                resolve: {
-
-                    pid:["$stateParams",function($stateParams){
-                        //这里的逻辑是把数据做在 list-> ui-view( create )里的方法
-                        var pId=$stateParams.pid;
-                        return pId;
-                    }],
-                    data: ['$q','$timeout', _timeDefer]
-                },
-
+                pid:["$stateParams",function($stateParams){
+                    //这里的逻辑是把数据做在 list-> ui-view( create )里的方法
+                    var pId=$stateParams.pid;
+                    return pId;
+                }],
+                data: ['$q','$timeout', _timeDefer]
             }
-        }, //state
+        },//state,
+
         {
             name: 'noi',
-            url: '/noi',
+            url: '/noi/{pid}',
             views:{
                 'header': {
                     templateUrl: './views/noi_analyse/noi_header.html'

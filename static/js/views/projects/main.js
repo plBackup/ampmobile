@@ -318,11 +318,10 @@ mainApp.controller("pjCreateController",["$rootScope","$scope","$location",funct
             self.submit();
         }
     };
-    project_create.init();
     $scope.$on("$destroy", function() {
         $("#open-date-wrapper input").datetimepicker("remove");
     });
-    $(".ys-tips").tooltip();
+
 }]);
 mainApp.controller("pjUpdateController",["$rootScope","$scope","$location","pid",function($rootScope,$scope,$location,pid){
     //$scope.project=project;

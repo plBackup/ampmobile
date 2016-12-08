@@ -4,14 +4,14 @@
             <div class="amp-block">
                 <ul>
                     <li ng-repeat="project in listCtrl.projects" >
-                        <div class="amp-section amp-section-projectInfo" ng-click="listCtrl.test(project)">
+                        <div class="amp-section amp-section-projectInfo">
                             <div class="amp-section-header clearfix">
                                 <div class="col-xs-6">
                                     <h3>
                                         <em>{{project.name}}</em>
                                         <div class="amp-project-opt">
                                             <!--<span><a href="#/noi/{{project.pid}}">详情</a>|<a href="#/projectupdate/{{project.pid}}">修改</a></span>-->
-                                            <span><a ui-sref="noi({pid:project.pid})">详情</a>|<a ui-sref="projectupdate({pid:project.pid,})">修改</a></span>
+                                            <span><a ui-sref="noi({pid:project.pid})">详情</a>|<a ui-sref="projectupdate({pid:project.pid})">修改</a></span>
                                         </div>
                                     </h3>
                                 </div>

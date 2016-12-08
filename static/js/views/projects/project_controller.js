@@ -96,7 +96,9 @@ projects.controller("pjUpdateController",["$rootScope","$scope","$location","pid
     //$scope.project=project;
     var self=this;
     self.pid=pid;
-    self.curState=$rootScope.curState;
+    console.log(pid);
+    console.dir($rootScope.projects);
+    self.curState=$rootScope.curState;//判断当前页是update 还是create
     self.index="update";
     self.project=$rootScope.projects[pid];
 
@@ -127,12 +129,10 @@ projects.controller("pjUpdateController",["$rootScope","$scope","$location","pid
         }
     };
 
-    project_create.init();
+    //project_create.init();
 
     $scope.$on("$destroy", function() {
         $("#open-date-wrapper input").datetimepicker("remove");
     });
-
-    $(".ys-tips").tooltip();
 }]);
 
