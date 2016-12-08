@@ -1,17 +1,19 @@
 <div class="navbar-brand navbar-brand-center">
     建立您的项目
 </div>
+
 <div class="btn-group pull-right">
-    <a ui-turn-on='myDropdown' class='btn'>
+    <a ui-turn-on="myDropdown" class="btn">
         <i class="fa fa-ellipsis-v"></i>
     </a>
     <ul
+            ui-shared-state="myDropdown"
+
             class="dropdown-menu"
-            ui-outer-click="Ui.turnOff('myDropdown')"
-            ui-outer-click-if="Ui.active('myDropdown')"
+            ui-outer-click="Ui.turnOff('myDropdown' + idx)"
+            ui-outer-click-if="Ui.active('myDropdown' + idx)"
             role="menu"
             ui-show="myDropdown"
-            ui-state="myDropdown"
             ui-turn-off="myDropdown">
 
         <li><a>Action</a></li>
