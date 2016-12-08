@@ -60,7 +60,7 @@
 
     <script src="./static/js/views/noi_analyse/noi_controller.js"></script>
     <script src="./static/js/views/noi_analyse/noi_services.js"></script>
-    <script src="./static/js/views/noi_analyse/noi_filters.js"></script>d
+    <script src="./static/js/views/noi_analyse/noi_filters.js"></script>
     <script src="./static/js/views/noi_analyse/noi_directives.js"></script>
 
 
@@ -93,12 +93,12 @@
             <i class="fa fa-spinner fa-spin loading-spinner"></i>
         </div>
         <div class='app-content'>
+            <div ui-view="content"  class="animated" ng-class="{'view-back': state.back, 'view-to-home': state.toHome, 'view-exit': state.exit, 'fadeOut': state.exit,'fadeIn': state.enter, 'view-enter': state.enter, 'view-loading': state.loading}"></div>
 
-            <div class="scrollable">
+         <!--   <div class="scrollable">
                 <div class="scrollable-content">
-                    <div ui-view="content"  class="animated" ng-class="{'view-back': state.back, 'view-to-home': state.toHome, 'view-exit': state.exit, 'fadeOut': state.exit,'fadeIn': state.enter, 'view-enter': state.enter, 'view-loading': state.loading}"></div>
-                </div>
-            </div>
+                 </div>
+            </div>-->
         </div>
     </div><!--app body-->
 </div><!--app -->
