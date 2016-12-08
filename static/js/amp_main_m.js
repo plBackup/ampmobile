@@ -21,7 +21,6 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
         var defer = $q.defer();
         $timeout(function(){
             defer.resolve();
-
         }, 300);
         return defer.promise;
     };
@@ -54,14 +53,40 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
             }
         }, //state
         {
+            name: 'create',
+            url: '/create',
+            views:{
+                'header': {
+                    templateUrl: './views/projects/project_create_header.html'
+                },
+                'content': {
+                    templateUrl: '../main/create_project.html',
+                    controller:"pjCreateController",
+                    controllerAs: 'ctrl',
+                },
+                "sidebarLeft":{
+                    templateUrl:"./views/blank.html"
+                },
+                "sidebarRight":{
+                    templateUrl:"./views/blank.html"
+                }
+            },
+
+            resolve: {
+                data: ['$q','$timeout', _timeDefer]
+            }
+        },//state,
+        {
             name: 'projectupdate',
-            url: '/projectupdate',
+            url: '/projectupdate/{pid}',
             views:{
                 'header': {
                     templateUrl: './views/projects/project_create_header.html'
                 },
                 'content': {
                     templateUrl: './views/projects/project_create.html',
+                    controller:"pjUpdateController",
+                    controllerAs: 'ctrl',
                 },
                 "sidebarLeft":{
                     templateUrl:"./views/blank.html"
@@ -71,10 +96,18 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
                 }
             },
             resolve: {
-                data: ['$q','$timeout', _timeDefer]
+                resolve: {
+
+                    pid:["$stateParams",function($stateParams){
+                        //这里的逻辑是把数据做在 list-> ui-view( create )里的方法
+                        var pId=$stateParams.pid;
+                        return pId;
+                    }],
+                    data: ['$q','$timeout', _timeDefer]
+                },
+
             }
         }, //state
-
         {
             name: 'noi',
             url: '/noi',
@@ -101,7 +134,6 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
                 data: ['$q','$timeout', _timeDefer]
             }
         }, //state
-
         {
             name: 'rpgset',
             url: '/rpgset',

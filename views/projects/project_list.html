@@ -1,6 +1,6 @@
 <div class="scrollable projectListView">
     <div class="scrollable-content">
-        <div class="amp-content-panel project-list" id="project-list">
+        <div class="amp-content-panel project-list" id="project-list" ng-hide="listCtrl.projects.length==0">
             <div class="amp-block">
                 <ul>
                     <li ng-repeat="project in listCtrl.projects" >
@@ -10,7 +10,8 @@
                                     <h3>
                                         <em>{{project.name}}</em>
                                         <div class="amp-project-opt">
-                                            <span><a href="amp_main_ag.html?projectid={{$index}}#/noi">详情</a>|<a href="#/update/{{$index}}">修改</a></span>
+                                            <!--<span><a href="#/noi/{{project.pid}}">详情</a>|<a href="#/projectupdate/{{project.pid}}">修改</a></span>-->
+                                            <span><a ui-sref="noi({pid:project.pid})">详情</a>|<a ui-sref="projectupdate({pid:project.pid,})">修改</a></span>
                                         </div>
                                     </h3>
                                 </div>
@@ -61,12 +62,20 @@
 
                 </ul>
             </div><!--ys-block-->
+
+            <div class="ys-block amp-create-project" ng-if="listCtrl.projects.length==0">
+                <h3>还没有在AMP创建任何项目</h3>
+                <p>AMP为您提供专业的资产估值服务<br>
+                    是最有效的资产管理平台和数据增值系统<br></p>
+            </div>
         </div><!-- amp-content-panel -->
+
+
     </div><!--scrollable content-->
 
     <div class="scrollable-footer">
         <div class="foot-btn-wrapper">
-            <a class="btn amp-btn amp-footer-btn">
+            <a class="btn amp-btn amp-footer-btn" ui-sref="/create">
                 <em class="amp-icon amp-icon-addProject"></em>增加项目
             </a>
         </div><!--foot -btn wrapper-->
