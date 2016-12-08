@@ -1,9 +1,74 @@
-<div class="scrollable">
+<div class="scrollable projectListView">
     <div class="scrollable-content">
-        <div class="amp-content-panel noi-view" id="noi">
+        <div class="amp-content-panel project-list" id="project-list">
             <div class="amp-block">
+                <ul>
+                    <li ng-repeat="project in listCtrl.projects" >
+                        <div class="amp-section amp-section-projectInfo" ng-click="listCtrl.test(project)">
+                            <div class="amp-section-header clearfix">
+                                <div class="col-xs-6">
+                                    <h3>
+                                        <em>{{project.name}}</em>
+                                        <div class="amp-project-opt">
+                                            <span><a href="amp_main_ag.html?projectid={{$index}}#/noi">详情</a>|<a href="#/update/{{$index}}">修改</a></span>
+                                        </div>
+                                    </h3>
+                                </div>
+                                <div class="col-xs-6">
+                                    <em class="amp-figure" style="background-image:url(../static/images/{{project.pm.figure}});"></em>
+                                </div>
+                            </div><!--amp-section-header-->
+                            <div class="amp-section-content clearfix">
+                                <div class="col-xs-6 amp-project-info">
+                                    <label>面积</label>
+                                    <em>{{project.proportion|default:"-"}}</em>
+                                    <div class="amp-project-chart-wrapper">
+                                        <div id="project-{{project.pid}}-openrate-chart" pie-chart
+                                             chart-data="project.openRate"></div>
+                                        <span>
+                                            <label>开业率</label>
+                                            <em>{{project.openRate| default:"-" | percentFormat}}</em>
+                                        </span>
+                                    </div><!--amp-project-chart-wrapper-->
+                                </div><!--project info-->
 
+                                <div class="col-xs-6 amp-project-info">
+                                    <label>总收入</label>
+                                    <em>{{project.income|number:2}}</em>
+                                    <div class="amp-project-chart-wrapper">
+                                        <div id="project-{{project.pid}}-complete-chart" pie-chart
+                                             chart-data="project.complete"></div>
+                                        <span>
+                                            <label>完成率</label>
+                                            <em>{{project.complete| default:"-" | percentFormat}}</em>
+                                        </span>
+                                    </div><!--amp-project-chart-wrapper-->
+                                </div><!--project info-->
+
+                                <div class="col-xs-6 amp-project-info">
+                                    <label>平均租金(按GFA)</label>
+                                    <em>{{project.rentGFA|number:2}}</em>
+                                </div><!--project info-->
+
+                                <div class="col-xs-6 amp-project-info">
+                                    <label>平均租金(按GLA)</label>
+                                    <em>{{project.rentGLA|number:2}}</em>
+                                </div><!--project info-->
+                            </div><!--amp-section-content-->
+                        </div><!--amp-section-->
+                    </li><!--ng repeat-->
+
+
+                </ul>
             </div><!--ys-block-->
         </div><!-- amp-content-panel -->
     </div><!--scrollable content-->
+
+    <div class="scrollable-footer">
+        <div class="foot-btn-wrapper">
+            <a class="btn amp-btn amp-footer-btn">
+                <em class="amp-icon amp-icon-addProject"></em>增加项目
+            </a>
+        </div><!--foot -btn wrapper-->
+    </div><!--scrollable footer-->
 </div><!--scrollable-->

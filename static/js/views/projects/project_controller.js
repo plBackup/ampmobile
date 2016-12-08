@@ -6,14 +6,13 @@ var projects = angular.module('projects', [
     'ui.router',
 ]);
 
-
 projects.controller("pjListController",["$rootScope","$scope","$location","projectsData",function($rootScope,$scope,$location,projectsData){
     var self=this;
     if(!$rootScope.projects){
-        $rootScope.projects=projectsData;
+        $rootScope.projects=projectsData["projects"];
     }
     self.id=12;
-    console.log(projectsData);
+    console.log(projectsData["projects"]);
     $rootScope.showHeader();
     $rootScope.hideBottom();
 
@@ -26,10 +25,9 @@ projects.controller("pjListController",["$rootScope","$scope","$location","proje
     self.projectCreate=function(){
         console.log("project create----------------");
         $location.path("projectCreate");
-    }
+    };
 
 }]);
-
 
 projects.controller("pjCreateController",["$rootScope","$scope","$location",function($rootScope,$scope,$location){
     //$scope.project=project;

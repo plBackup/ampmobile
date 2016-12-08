@@ -37,7 +37,7 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
                 'content': {
                     templateUrl: './views/projects/project_list.html',
                     controller:"pjListController",
-                    controllerAs:"pCtrl"
+                    controllerAs:"listCtrl"
                 },
                 "sidebarLeft":{
                     templateUrl:"./views/blank.html"
