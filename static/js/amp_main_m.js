@@ -134,7 +134,7 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
                 data: ['$q','$timeout', _timeDefer]
             }
         }, //state
-        {
+       /* {
             name: 'rpgset',
             url: '/rpgset',
             views:{
@@ -155,8 +155,30 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
             resolve: {
                 data: ['$q','$timeout', _timeDefer]
             }
-        } //state
-
+        },//state
+*/
+        {
+            name: 'datatool',
+            url: '/datatool',
+            views:{
+                'header': {
+                    templateUrl: './views/datatool/datatool_index_header.html'
+                },
+                'content': {
+                    templateUrl: './views/datatool/datatool_index.html'
+                },
+                "sidebarLeft":{
+                    templateUrl:"./views/blank.html"
+                },
+                "sidebarRight":{
+                    templateUrl:"./views/blank.html"
+                }
+            },
+            reloadOnSearch: false,
+            resolve: {
+                data: ['$q','$timeout', _timeDefer]
+            }
+        }
     ];
 
 

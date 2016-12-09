@@ -42,7 +42,7 @@ var menu_list={
             name:"数据",
             index:"main-4",
             icon:"amp-menu-data",
-            links:"rpgset",
+            links:"datatool",
             target:"#page-frame",
             relocate:false,//点击一级目录直接跳转
         }

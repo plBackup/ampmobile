@@ -47,7 +47,8 @@
     </div><!--scrollable-header-->
 
     <div class="scrollable-content">
-        <div ui-view="datatool-view">
+        <div ui-view="datatool-content" class="animated"
+             ng-class="{'view-back': state.back, 'view-to-home': state.toHome, 'view-exit': state.exit, 'fadeOut': state.exit,'fadeIn': state.enter, 'view-enter': state.enter, 'view-loading': state.loading}">
 
         </div>
     </div><!--scrollable content-->
