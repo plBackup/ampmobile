@@ -1,0 +1,54 @@
+<div class="scrollable">
+    <div class="scrollable-header">
+        <div ui-state="activeTab" default="1">
+            <ul class="nav nav-tabs">
+                <li ui-class="{'active': activeTab == 1}">
+                    <a ui-set="{'activeTab': 1}" ui-sref="rpgindex" ui-sref-active="active">租金包</a>
+                </li>
+                <li ui-class="{'active': activeTab == 2}">
+                    <a ui-set="{'activeTab': 2}" ui-sref="datasim" ui-sref-active="active">沙盒模型</a>
+                </li>
+                <li ui-class="{'active': activeTab == 3}">
+                    <a ui-set="{'activeTab': 3}" ui-sref="irrplan" ui-sref-active="active">回报计划</a>
+                </li>
+            </ul>
+
+            <div ui-if="activeTab == 1">
+                <ul class="amp-tab-menu justified" role="menu">
+                  <!--  <li ng-repeat="menu in ctrl.amp_tab_menu.rpgSet">
+                        <a ui-sref="" ui-sref-active="" role="menuitem" ng-click="ctrl.setModel('proportionType',menu)">{{menu}}</a></li>-->
+                    <li role="menuitem">
+                        <a ui-sref="rpgindex" ui-sref-active="active">铺位信息</a>
+                    </li>
+                    <li role="menuitem">
+                        <a ui-sref="rpgset" ui-sref-active="active">租金包设定</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div ui-if="activeTab == 2">
+                <ul class="amp-tab-menu justified" role="menu">
+                          <li role="menuitem">
+                        <a ui-sref="datasim" ui-sref-active="active">推演模拟</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div ui-if="activeTab == 3">
+                <ul class="amp-tab-menu justified" role="menu">
+                    <li role="menuitem">
+                        <a ui-sref="irrplan" ui-sref-active="active">回报计划</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div><!--scrollable-header-->
+
+    <div class="scrollable-content">
+        <div ui-view="datatool-view">
+
+        </div>
+    </div><!--scrollable content-->
+</div><!--scrollable-->
