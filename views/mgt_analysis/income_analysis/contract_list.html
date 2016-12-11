@@ -1,0 +1,81 @@
+<div id="contract-list">
+
+    <div class="scrollable">
+         <div class="scrollable-content section" >
+            <ul class="contract-item-list">
+                <li class="contract-item" ng-repeat="item in records">
+                    <div class="contract-item-left">
+                        <div class="merchant-name" ng-bind="item.brandName"></div>
+                        <div class="contract-no" ng-bind="item.contractId"></div>
+                    </div>
+                    <div class="contract-item-middle">
+                        <div class="contract-start-time" ng-bind="item.contractStartTime"></div>
+                        <div class="contract-end-time" ng-bind="item.contractEndTime"></div>
+                    </div>
+                    <div class="contract-item-right">
+                        <div class="rent-type" ng-bind="item.rentType"></div>
+                        <div class="square" ng-bind="item.square|number|stringFormatDefault:'m²':'-'"></div>
+                    </div>
+                </li>
+            </ul><!-- contract-item-list -->
+
+         </div><!-- scrollable-content -->
+    </div><!-- scrollable -->
+
+    <div ui-content-for="amp-right-panel">
+        <div class="query-panel">
+            <div class="query-section date-selector-section">
+                <div class="query-section-title">时间</div>
+                <div class="query-section-content">
+                    <div class="calendar-left">
+                        <div class="amp-date-input ">
+                            <input type="text" readonly value="2016-08-01"/>
+                        </div><!-- amp-date-input -->
+                    </div><!-- calendar-left -->
+
+                    <span>-</span>
+
+                    <div class="calendar-right">
+                        <div class="amp-date-input">
+                            <input type="text" readonly value="2016-10-01"/>
+                        </div><!-- amp-date-input -->
+                    </div><!-- calendar-right -->
+
+                    <!--<input type="text" class="calendar-right"/>-->
+                </div><!-- query-section-content -->
+            </div><!--query-section -->
+
+
+
+            <div class="query-section rent-type-section">
+                <div class="query-section-title">租金方式</div>
+                <div class="query-section-content">
+                    <ul class="clearfix">
+                        <li><a class="active">全部</a></li>
+                        <li><a>固定</a></li>
+                        <li><a>提成</a></li>
+                        <li><a>两者取其高</a></li>
+                    </ul>
+                </div><!-- query-section-content -->
+            </div><!-- query-section -->
+
+            <div class="query-section contract-no-section">
+                <div class="query-section-title">合同编号</div>
+                <div class="query-section-content">
+                   <input type="text"/>
+                </div><!-- query-section-content -->
+            </div><!-- query-section -->
+
+
+            <div class="btn-group clearfix">
+                <a class="reset-btn" ui-turn-off="uiSidebarRight">重置</a>
+                <a class="query-btn">查询</a>
+            </div>
+        </div><!-- query-panel -->
+    </div><!-- amp-right-panel -->
+
+    <!--<div class="query-panel">-->
+        <!--<div class="query-panel-content"></div>&lt;!&ndash; query-panel-content &ndash;&gt;-->
+    <!--</div>&lt;!&ndash; query-panel &ndash;&gt;-->
+
+</div><!-- simulation-calculation-list -->

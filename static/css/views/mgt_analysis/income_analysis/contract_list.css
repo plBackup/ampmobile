@@ -1,0 +1,179 @@
+#contract-list{position:relative;}
+
+#contract-list .scrollable-content{padding:0;}
+
+/* ======================================== contract-item-list ======================================== */
+#contract-list .contract-item-list{
+    padding-left:15px;
+}
+
+/* ---------------------------------------- contract-item ---------------------------------------- */
+#contract-list .contract-item-list .contract-item{
+    position:relative;
+    height:74px;
+    border-bottom:1px solid #dae2e7;
+
+}
+
+#contract-list .contract-item-list .contract-item>div>div{
+    height:24px;
+    line-height: 24px;
+}
+
+/*contract-item-left*/
+#contract-list .contract-item .contract-item-left{
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    padding-top:12px;
+    width:115px;
+}
+
+#contract-list .contract-item .contract-item-left>div{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#contract-list .contract-item .contract-no{color:#65c0e7;}
+
+/*contract-item-middle*/
+#contract-list .contract-item .contract-item-middle{
+    width:100px;
+    margin-left:120px;
+    padding-top:12px;
+}
+
+#contract-list .contract-item .contract-item-middle .contract-start-time{
+    background:url(../../../../images/icon_ch_start@2x.png) no-repeat left center;
+    background-size:12px 12px;
+    padding-left:18px;
+}
+
+#contract-list .contract-item .contract-item-middle .contract-end-time{
+    background:url(../../../../images/icon_ch_end@2x.png) no-repeat left center;
+    background-size:12px 12px;
+    padding-left:18px;
+}
+
+/*contract-item-right*/
+#contract-list .contract-item .contract-item-right{
+    position:absolute;
+    right:0;
+    top:0;
+    bottom:0;
+    padding-top:12px;
+    padding-right:15px;
+    text-align: right;
+}
+
+/* ======================================== query-panel ======================================== */
+.amp-right-panel .query-panel{
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+}
+
+.amp-right-panel .query-panel .btn-group{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    height:48px;
+}
+
+.amp-right-panel .query-panel .btn-group>a{
+    display:block;
+    width:50%;
+    height:48px;
+    line-height: 48px;
+    float:left;
+    text-align: center;
+}
+
+.amp-right-panel .query-panel .btn-group>a.reset-btn{
+    background-color:#f2f5f7;
+    color:#333;
+}
+
+.amp-right-panel .query-panel .btn-group>a.query-btn{
+    background-color:#5ab46d;
+    color:#fff;
+}
+
+.amp-right-panel .query-panel .query-section{
+    padding:25px 15px 0 15px;
+}
+
+.amp-right-panel .query-panel .query-section .query-section-title{
+    height:24px;
+    line-height: 24px;
+    font-size:14px;
+}
+
+.amp-right-panel .query-panel .query-section .query-section-content{
+    padding-top:10px;
+}
+
+/*date-selector-section*/
+.amp-right-panel .query-panel .query-section.date-selector-section .query-section-content{
+    position:relative;
+    height:42px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.amp-right-panel .query-panel .query-section.date-selector-section .query-section-content .calendar-left{
+    position:absolute;
+    left:0;
+    top:10px;
+    width:50%;
+    padding-right:5px;
+}
+
+.amp-right-panel .query-panel .query-section.date-selector-section .query-section-content .calendar-right{
+    position:absolute;
+    right:0;
+    top:10px;
+    width:50%;
+    padding-left:5px;
+}
+
+/*rent-type-section*/
+.amp-right-panel .query-panel .query-section.rent-type-section .query-section-content{padding-top:0;}
+.amp-right-panel .query-panel .query-section.rent-type-section li{
+    width:50%;
+    float:left;
+    padding-top:10px;
+}
+
+.amp-right-panel .query-panel .query-section.rent-type-section li:nth-child(odd){padding-right:5px;}
+.amp-right-panel .query-panel .query-section.rent-type-section li:nth-child(even){padding-left:5px;}
+.amp-right-panel .query-panel .query-section.rent-type-section li a{
+    display:block;
+    width:100%;
+    height:32px;
+    line-height: 32px;
+    border-radius: 4px;
+    color:#333;
+    background-color:#f2f5f7;
+    text-align: center;
+}
+.amp-right-panel .query-panel .query-section.rent-type-section li a.active{
+    color:#fff;
+    background-color:#5ab46d;
+}
+/*contract-no-section*/
+.amp-right-panel .query-panel .query-section.contract-no-section input{
+    display:block;
+    width:100%;
+    height:32px;
+    background-color:#f2f5f7;
+    padding:0 10px;
+    border-radius: 4px;
+    border: none;
+    -webkit-appearance: none;
+}

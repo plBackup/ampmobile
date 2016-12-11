@@ -1,8 +1,9 @@
-ampApp.controller("simulation-calculation-list-controller",["$scope","$http","$rootScope",function($scope,$http,$rootScope){
+ampApp.controller("contract-list-controller",["$scope","$http","$rootScope",function($scope,$http,$rootScope){
     $scope.records = [];
 
     function initializeData(data){
         $scope.records = data;
+        console.log(data);
     }
     /* ======================================== 监听广播事件 ======================================== */
     $scope.$on("$destroy",function(){destroy();});
@@ -10,8 +11,8 @@ ampApp.controller("simulation-calculation-list-controller",["$scope","$http","$r
     /* ======================================== 初始化页面 ======================================== */
     var container = null;
     function initPageView(){
-        container = $("#simulation-calculation-list");
-        var windowHeight = $(window).height()-44-48;
+        container = $("#contract-list");
+        var windowHeight = $(window).height()-44-48-41-10-40;
         container.css("height",windowHeight+"px");
 
     }
@@ -27,7 +28,7 @@ ampApp.controller("simulation-calculation-list-controller",["$scope","$http","$r
     // 初始化
     function init(){
 
-        var url = "data/data_1/investment_analysis/simulation_calculation_main_data.json";
+        var url = "data/data_1/mgt_analysis/income_analysis/contract_main_data.json";
         $http.get(url).success(function(result){
             initializeData(result);
             initPageView();

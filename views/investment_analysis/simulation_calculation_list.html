@@ -1,47 +1,49 @@
 
 <div id="simulation-calculation-list">
 
-    <div class="amp-case-block">
-        <div class="amp-case-item-list clearfix">
+    <div class="scrollable">
+        <div class="scrollable-content section" >
+            <div class="amp-case-item-list clearfix">
 
-            <div class="amp-case-item" ng-repeat="item in records">
-                <div class="amp-case-title">
-                    <em>{{item.caseName}}</em>
-                    <a>删除</a>
-                </div><!-- amp-case-title -->
-                <ul class="amp-case-info-list clearfix">
-                    <li class="amp-case-info-item">
-                        <em>IRR</em>
-                        <div>{{item.irrPercent}}</div>
-                    </li>
-                    <li class="amp-case-info-item">
-                        <em>净现值</em>
-                        <div>{{item.netPresentValue|number:0}}<em>(万元)</em></div>
-                    </li>
+        <div class="amp-case-item" ng-repeat="item in records">
+            <div class="amp-case-title">
+                <em>{{item.caseName}}</em>
+                <a>删除</a>
+            </div><!-- amp-case-title -->
+            <ul class="amp-case-info-list clearfix">
+                <li class="amp-case-info-item">
+                    <em>IRR</em>
+                    <div>{{item.irrPercent}}</div>
+                </li>
+                <li class="amp-case-info-item">
+                    <em>净现值</em>
+                    <div>{{item.netPresentValue|number:0}}<em>(万元)</em></div>
+                </li>
 
-                    <li class="amp-case-info-item">
-                        <em>增值</em>
-                        <div>{{item.appreciation|number:0}}<em>(万元)</em></div>
-                    </li>
-                    <li class="amp-case-info-item">
-                        <em>收购价</em>
-                        <div>{{item.purchasingPrice|number:0}}<em>(万元)</em></div>
-                    </li>
-                    <li class="amp-case-info-item">
-                        <em>贷款</em>
-                        <div>{{item.loan|number:0}}<em>(万元)</em></div>
-                    </li>
-                    <li class="amp-case-info-item">
-                        <em>退出年数</em>
-                        <div>{{item.yearCount}}<em>(年)</em></div>
-                    </li>
-                </ul><!-- amp-case-info-list -->
-            </div><!-- amp-case-item -->
-
-
+                <li class="amp-case-info-item">
+                    <em>增值</em>
+                    <div>{{item.appreciation|number:0}}<em>(万元)</em></div>
+                </li>
+                <li class="amp-case-info-item">
+                    <em>收购价</em>
+                    <div>{{item.purchasingPrice|number:0}}<em>(万元)</em></div>
+                </li>
+                <li class="amp-case-info-item">
+                    <em>贷款</em>
+                    <div>{{item.loan|number:0}}<em>(万元)</em></div>
+                </li>
+                <li class="amp-case-info-item">
+                    <em>退出年数</em>
+                    <div>{{item.yearCount}}<em>(年)</em></div>
+                </li>
+            </ul><!-- amp-case-info-list -->
+        </div><!-- amp-case-item -->
 
 
-        </div><!-- amp-case-item-list -->
-    </div><!-- amp-case-block -->
+
+
+    </div><!-- amp-case-item-list -->
+         </div><!-- scrollable-content -->
+    </div><!-- scrollable -->
 
 </div><!-- simulation-calculation-list -->

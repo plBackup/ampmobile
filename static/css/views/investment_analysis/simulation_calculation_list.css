@@ -1,8 +1,7 @@
 
+#simulation-calculation-list{position:relative;}
 
-#simulation-calculation-list{}
-
-
+#simulation-calculation-list .scrollable-content{padding:0;}
 /* ======================================== amp-case-item ======================================== */
 #simulation-calculation-list .amp-case-item{border-bottom:10px solid #eceef3;}
 #simulation-calculation-list .amp-case-item:after{content:"";display:block;height:0;clear:both;visibility:hidden}

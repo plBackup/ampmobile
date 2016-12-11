@@ -6,7 +6,8 @@ var ampApp = angular.module('amp', [
     'mobile-angular-ui',
     'mobile-angular-ui.gestures',
     "projects",
-    'noi'
+    'noi',
+    "amp-common-filters"
 ]);
 
 //这里是gestures里的一个设置，待测试
@@ -63,7 +64,7 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
                 'content': {
                     templateUrl: './views/projects/project_create.html',
                     controller:"pjCreateController",
-                    controllerAs: 'ctrl',
+                    controllerAs: 'ctrl'
                 },
                 "sidebarLeft":{
                     templateUrl:"./views/blank.html"
@@ -87,7 +88,7 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
                 'content': {
                     templateUrl: './views/projects/project_create.html',
                     controller:"pjUpdateController",
-                    controllerAs: 'ctrl',
+                    controllerAs: 'ctrl'
                 },
                 "sidebarLeft":{
                     templateUrl:"./views/blank.html"
@@ -168,11 +169,24 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
                     templateUrl: './views/datatool/datatool_index.html'
                 },
                 "sidebarLeft":{
-                    templateUrl:"./views/blank.html"
+                    templateUrl:"./views/blank_left.html"
                 },
                 "sidebarRight":{
-                    templateUrl:"./views/blank.html"
+                    templateUrl:"./views/blank_right.html"
                 }
+            },
+            reloadOnSearch: false,
+            resolve: {
+                data: ['$q','$timeout', _timeDefer]
+            }
+        },
+        {
+            name: 'datatool.rpgindex',
+            url: '/rpgindex',
+            views:{
+                'datatool-content': {
+                    templateUrl: './views/datatool/datatool_rpg_set_index.html'
+                },
             },
             reloadOnSearch: false,
             resolve: {
@@ -201,6 +215,58 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
         }
     });
 
+    // 管理分析 - 首页
+    $stateProvider.state({
+        name:"mgt_analysis",
+        url: "/mgt_analysis",
+        views:{
+            "header":{
+                templateUrl:"./views/mgt_analysis/mgt_analysis_index_header.html",
+                controller:"mgt-analysis-index-header-controller"
+            },
+            "content": {
+                templateUrl: "./views/mgt_analysis/mgt_analysis_index.html"
+            }
+        },
+        resolve: {
+            data: ['$q','$timeout', _timeDefer]
+        }
+    });
+
+    // 管理分析 - 收入分析
+    $stateProvider.state({
+        name:"mgt_analysis.income_analysis",
+        url: "/income_analysis",
+        views:{
+            "mgt-analysis-view": {
+                templateUrl: "./views/mgt_analysis/income_analysis/income_analysis_index.html"
+            }
+        },
+        resolve: {
+            data: ['$q','$timeout', _timeDefer]
+        }
+    });
+
+    // 管理分析 - 收入分析 - 合同
+    $stateProvider.state({
+        name:"mgt_analysis.income_analysis.contract_list",
+        url: "/contract_list",
+        views:{
+            "income-analysis-view": {
+                controller:"contract-list-controller",
+                templateUrl: "./views/mgt_analysis/income_analysis/contract_list.html"
+            },
+            "sidebarLeft":{
+                templateUrl:"./views/blank.html"
+            },
+            "sidebarRight":{
+                templateUrl:"./views/blank.html"
+            }
+        },
+        resolve: {
+            data: ['$q','$timeout', _timeDefer]
+        }
+    });
 
 
 
