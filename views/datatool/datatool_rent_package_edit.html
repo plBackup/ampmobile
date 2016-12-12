@@ -1,0 +1,153 @@
+<div ui-content-for="dataToolNav">
+    <div class="navbar-brand navbar-brand-center">
+        铺位详情
+    </div>
+
+    <div class="btn-group pull-left">
+        <div class="btn " ui-sref="datatool.rpgindex">
+            <i class="navOpt-icon navOpt-icon-back"></i>
+        </div>
+    </div>
+
+    <div class="btn-group pull-right" ui-yield-to="navbarAction">
+        <div class="btn btn-save">
+            <em>保存</em>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="amp-content-panel" id="rent-package-edit">
+    <form name="shopInfoForm">
+    <div class="amp-block">
+            <ul class="rpg-set-info rpg-shop-edit" >
+                <li class="col-xs-6">
+                    <label>铺位号</label>
+                    <div class="input-wrapper">
+                        <input type="text" value="" ng-model="rCtrl.shopInfo.shopIndex" required/>
+                    </div>
+                </li>
+                <li class="col-xs-6">
+                    <label>楼层</label>
+                    <div class="input-wrapper">
+                        <input type="text" value="" ng-model="rCtrl.shopInfo.floor"/>
+                    </div>
+                </li>
+                <li class="col-xs-6">
+                    <label>位置</label>
+                    <div class="input-wrapper input-wrapper-select">
+
+                        <input type="text" value="" hidden ng-model="rCtrl.shopInfo.position"/>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                <em>{{rCtrl.shopInfo.position | default:"请选择"}}</em><span class="ys-icon ys-icon-dropdown"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                                <li ng-class="{'active':rCtrl.isActive(menu,rCtrl.shopInfo.position)}" role="presentation" ng-repeat="menu in rCtrl.form_menu.positions"><a role="menuitem" ng-click="rCtrl.setModel('position',menu)">{{menu}}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-xs-6">
+                    <label>物业类型</label>
+                    <div class="input-wrapper input-wrapper-select">
+
+                        <input type="text" value="" hidden/>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                <em>{{rCtrl.shopInfo.type | default:"请选择"}}</em><span class="ys-icon ys-icon-dropdown"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                                <li ng-class="{'active':rCtrl.isActive(menu,rCtrl.shopInfo.type)}" role="presentation" ng-repeat="menu in rCtrl.form_menu.type"><a role="menuitem" ng-click="rCtrl.setModel('type',menu)">{{menu}}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-xs-6">
+                    <label>建筑面积</label>
+                    <div class="input-wrapper">
+                        <input type="number" value="" ng-model="rCtrl.shopInfo.floorArea"/>
+                    </div>
+                </li>
+                <li class="col-xs-6">
+                    <label>套内面积</label>
+                    <div class="input-wrapper">
+                        <input type="number" value="" ng-model="rCtrl.shopInfo.indoorArea"/>
+                    </div>
+                </li>
+                <li class="col-xs-6">
+                    <label>产权性质</label>
+                    <div class="input-wrapper input-wrapper-select">
+                        <input type="text" value="" hidden/>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                <em>{{rCtrl.shopInfo.property | default:"请选择"}}</em><span class="ys-icon ys-icon-dropdown"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                                <li ng-class="{'active':rCtrl.isActive(menu,rCtrl.shopInfo.property)}" role="presentation" ng-repeat="menu in rCtrl.form_menu.property"><a role="menuitem" ng-click="rCtrl.setModel('property',menu)">{{menu}}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="col-xs-6">
+                    <td>
+                        <label>业态</label>
+                        <div class="input-wrapper input-wrapper-select">
+                            <input type="text" value="" hidden/>
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                    <em>{{rCtrl.shopInfo.form | default:"请选择"}}</em><span class="ys-icon ys-icon-dropdown"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                                    <li ng-class="{'active':rCtrl.isActive(menu,rCtrl.filters.form)}" role="presentation" ng-repeat="menu in rCtrl.form_menu.form"><a role="menuitem" ng-click="rCtrl.setModel('form',menu)">{{menu}}</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </li>
+            </ul>
+    </div>
+
+    <div class="amp-block">
+        <div class="amp-block-title" ng-click="rCtrl.viewDetail('arrearage')">
+            <h3 class="col-xs-12">租金标准<em class="em-unit">(元/m&sup2/月)</em></h3>
+        </div>
+        <ul class="rpg-set-info rpg-shop-edit" >
+            <li class="col-xs-6" ng-repeat="rs in rCtrl.shopInfo.rentStandard">
+                <label>第{{$index}}年</label>
+                <div class="input-wrapper">
+                    <input type="text" value="" ng-model="rs" required/>
+                </div>
+            </li>
+           <li class="col-xs-6">
+                <div class="td-opt">
+                    <button class="td-opt-add" ng-click="rCtrl.rentfee.addYear('rent');"><em class="ys-icon ys-icon-add"></em></button>
+                    <button class="td-opt-remove" ng-click="rCtrl.rentfee.removeYear('rent')"><em class="ys-icon ys-icon-remove"></em></button>
+                </div>
+           </li>
+        </ul>
+    </div>
+
+        <div class="amp-block">
+            <div class="amp-block-title" ng-click="rCtrl.viewDetail('arrearage')">
+                <h3 class="col-xs-12">物业管理费标准<em class="em-unit">(元/m&sup2/月)</em></h3>
+            </div>
+            <ul class="rpg-set-info rpg-shop-edit" >
+                <li class="col-xs-6" ng-repeat="wy in rCtrl.shopInfo.wyStandard">
+                    <label>第{{$index}}年</label>
+                    <div class="input-wrapper">
+                        <input type="text" value="" ng-model="wy" required/>
+                    </div>
+                </li>
+                <li class="col-xs-6">
+                    <div class="td-opt">
+                        <button class="td-opt-add" ng-click="rCtrl.rentfee.addYear('estate');"><em class="ys-icon ys-icon-add"></em></button>
+                        <button class="td-opt-remove" ng-click="rCtrl.rentfee.removeYear('estate')"><em class="ys-icon ys-icon-remove"></em></button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </form>
+</div>

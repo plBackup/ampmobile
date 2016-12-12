@@ -1,3 +1,19 @@
+<div ui-content-for="dataToolNav">
+    <div class="navbar-brand navbar-brand-center">
+        铺位信息
+    </div>
+    <div class="btn-group pull-left">
+        <div ui-toggle="uiSidebarLeft" class="btn sidebar-toggle">
+            <i class="navOpt-icon navOpt-icon-back"></i>
+        </div>
+    </div>
+    <div class="btn-group pull-right" ui-yield-to="navbarAction">
+        <div ui-toggle="uiSidebarRight" class="btn sidebar-right-toggle">
+            <i class="navOpt-icon navOpt-icon-filter"></i>
+        </div>
+    </div>
+</div>
+
 
 <div class="amp-content-panel" id="rent-package">
     <div class="amp-block">
@@ -48,6 +64,7 @@
                         <tbody>
                         <tr ng-click="dCtrl.shopEdit($index,shop)" ng-repeat="shop in dCtrl.indexData| take : dCtrl.paginator.currentOffset : dCtrl.pageLimit  track by $index" class="data-index data-index-{{$index}}">
                             <td><span title="{{shop.shopIndex}}">{{shop.shopIndex}}</span></td>
+                            <!--ui-sref="people.person({ personId: person.id })"-->
                         </tr>
                         </tbody>
                     </table>

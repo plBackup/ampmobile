@@ -8,6 +8,8 @@ angular.module('dataTool').service('dataIndexService', ["$rootScope","$http",fun
                 return res.data;
             });
         },
+
+
     };
     return service;
 
@@ -21,6 +23,26 @@ angular.module('dataTool').service('dataSetIndexService', ["$rootScope","$http",
                 return res.data;
             });
         },
+
+        getShopData:function(shopId){
+
+            if(typeof shopId=="undefined"){
+                var shopId=0;
+            }
+            var shopId=shopId;
+
+            function shopMatchesParam(data) {
+                return data.id === shopId;
+            }
+            if(typeof $rootScope.rpgShopSets !=="undefined" && $rootScope.rpgShopSets !== null){
+                return $rootScope.rpgShopSets[shopId];
+            }
+            return service.getSetData().then(function (data) {
+                //return data.find(shopMatchesParam)
+                return data.slice(1)[shopId];
+            });
+
+        }
     };
     return service;
 

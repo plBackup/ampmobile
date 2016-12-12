@@ -135,8 +135,8 @@ var amp_datePicker=(function($,amp_datePicker){
     })(jQuery,amp_datePicker||{});
 
 var dataTool=angular.module("dataTool",[]);
-dataTool.controller("dataIndexController",['$rootScope', '$scope',"dataIndexData","paginatorService","$timeout","$location","$filter",
-    function($rootScope, $scope,dataIndexData,paginatorService,$timeout,$location,$filter) {
+dataTool.controller("dataIndexController",['$rootScope', '$scope',"dataIndexData","paginatorService","$timeout","$location","$state","$filter",
+    function($rootScope, $scope,dataIndexData,paginatorService,$timeout,$location,$state,$filter) {
         var self=this;
         var shopData=dataIndexData.slice(1);
 
@@ -159,8 +159,11 @@ dataTool.controller("dataIndexController",['$rootScope', '$scope',"dataIndexData
         };
 
         self.shopEdit=function(index,shop){
-            //self.indexData[index].shopIndex+="###";
-            $rootScope.$broadcast("shopEdit",{shopData:shop,index:index})
+            console.log(index);
+            console.log(shop);
+            //self.indexData[index].shopIndex+="###";s
+            //$location.path("/datatool/shopedit/"+index);
+            $state.go('datatool.shopedit',{shopId: index});
         };
 
         self.shopUpdate=function(index,shop){
@@ -211,10 +214,10 @@ dataTool.controller("dataIndexController",['$rootScope', '$scope',"dataIndexData
 
     }]);
 
-dataTool.controller("dataRightController",['$rootScope', '$scope',
-    function($rootScope, $scope) {
+dataTool.controller("dataEditController",['$rootScope', '$scope','shopData',
+    function($rootScope, $scope,shopData) {
         var self=this;
-
+        console.log(shopData);
         self.form_menu={
             projects:["商业公司A","商业公司B","商业公司C","商业公司D"],
             floors:["B1","F1","F2","F3","F4","F5","F6"],
@@ -225,13 +228,12 @@ dataTool.controller("dataRightController",['$rootScope', '$scope',
         };
         self.index="add";
         self.shopInfo={};
-
+        console.log(shopData);
         $scope.$on("shopEdit",function(e,data){
             var editData=angular.copy(data);
             $("#rent-package-rpanel").find(".error").find("em.error-msg").remove().end().removeClass("error");
             $scope.shopInfoForm.$setPristine();
             $scope.shopInfoForm.$setUntouched();
-            amp_main.rightPanel_open();
             self.index=data.index;
             console.log("shop edit---------");
             console.log(editData.shopData);
@@ -315,9 +317,6 @@ dataTool.controller("dataRightController",['$rootScope', '$scope',
             _checkErrot($(e.target));
         });
 
-        amp_main.leftPanel_update();
-
-        $(".ys-tips").tooltip();
 
     }]);
 

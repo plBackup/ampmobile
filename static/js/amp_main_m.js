@@ -177,6 +177,27 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
             }
         },
         {
+            name: 'datatool.shopedit',
+            url: '/shopedit/{shopId}',
+            views:{
+                'datatool-content': {
+                    templateUrl: './views/datatool/datatool_rent_package_edit.html',
+                    controller:"dataEditController",
+                    controllerAs:"rCtrl"
+                },
+            },
+            reloadOnSearch: false,
+            resolve: {
+                shopData:function($stateParams){
+                    return {
+                        type:"edit",
+                        shopId:$stateParams.shopId
+                    };
+                },
+                data: ['$q','$timeout', _timeDefer]
+            }
+        },
+        {
             name: 'datatool.rpgset',
             url: '/rpgset',
             views:{
@@ -278,10 +299,10 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
 
     $urlRouterProvider.when('', '/projectlist');
     //$urlRouterProvider.when('/rpgindex', '/rpgindex/1');
-    $urlRouterProvider.otherwise(
+   /* $urlRouterProvider.otherwise(
         function($injector, $location) {
             $location.path('/projectlist');
-        });
+    });*/
 
 });
 
