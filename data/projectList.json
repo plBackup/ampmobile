@@ -7,9 +7,6 @@
     "income":435.88,
     "irr":"6.12%",
     "complete":"90.32%",
-    "rentGFA":135.00,
-    "rentGLA":128.00,
-    "pid":0,
     "noi":{
         "monthly":216.57,
         "yearly":"2,652.32"
@@ -36,9 +33,6 @@
       "income":639.51,
       "irr":"0.50%",
       "complete":"74.76%",
-      "rentGFA":135.00,
-      "rentGLA":128.00,
-      "pid":1,
       "noi":{
         "monthly":188.64,
         "yearly":"557.13"

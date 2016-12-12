@@ -7,6 +7,7 @@ var ampApp = angular.module('amp', [
     'mobile-angular-ui.gestures',
     "projects",
     'noi',
+    'dataTool',
     "amp-common-filters"
 ]);
 
@@ -162,11 +163,16 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
             url: '/rpgindex',
             views:{
                 'datatool-content': {
-                    templateUrl: './views/datatool/datatool_rpg_index.html'
+                    templateUrl: './views/datatool/datatool_rent_package.html',
+                    controller:"dataIndexController",
+                    controllerAs:"dCtrl"
                 },
             },
             reloadOnSearch: false,
             resolve: {
+                dataIndexData:function(dataIndexService){
+                    return dataIndexService.getIndexData();
+                },
                 data: ['$q','$timeout', _timeDefer]
             }
         },
@@ -175,11 +181,16 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
             url: '/rpgset',
             views:{
                 'datatool-content': {
-                    templateUrl: './views/datatool/datatool_rpg_set_index.html'
+                    templateUrl: './views/datatool/datatool_rpg_set_index.html',
+                    controller:'dataSetIndexController',
+                    controllerAs:"sCtrl"
                 },
             },
             reloadOnSearch: false,
             resolve: {
+                rpgSetData: function(dataSetIndexService) {
+                    return dataSetIndexService.getSetData();
+                },
                 data: ['$q','$timeout', _timeDefer]
             }
         }
@@ -276,7 +287,7 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
 
 ampApp.controller('MainController', function($rootScope, $scope,$location,$timeout) {
 
-    var curProject=window.location.search.slice(1).split("=")[1] ||0;
+    var curProject=0;
      console.log(curProject);
      $rootScope.curProject=curProject;
     $rootScope.projectName="商业公司A";

@@ -206,8 +206,8 @@
             </div>
             </div>
             <div class="amp-block">
-                <div class="amp-block-title">
-                    <h3 class="col-xs-12">欠费<em class="em-unit">(万元)</em></h3>
+                <div class="amp-block-title" ng-click="noiCtrl.viewDetail('arrearage')">
+                    <h3 class="col-xs-12">欠费<em class="em-unit">(万元)</em><i class="amp-icon amp-icon-arrow-right"></i></h3>
                 </div>
                 <div class="amp-table-wrapper" id="noi-arrearage">
                     <table class="table table-no-bordered table-hover amp-table">
@@ -381,8 +381,22 @@
                                         <tr class="tr-main">
                                             <th>利润率</th>
                                         </tr>
+                                        </tbody><!--ng if profits-->
 
-                                        </tbody><!--ng if noi-->
+                                        <tbody ng-if="noiCtrl.noiModal =='arrearage'">
+                                        <tr class="tr-main">
+                                            <th>欠费</th>
+                                        </tr>
+                                        <tr class="tr-sub">
+                                            <th>租金</th>
+                                        </tr>
+                                        <tr class="tr-sub">
+                                            <th>物业管理费</th>
+                                        </tr>
+                                        <tr class="tr-sub">
+                                            <th>其他</th>
+                                        </tr>
+                                        </tbody><!--ng if profits-->
                                     </table>
 
                                 </div>
@@ -524,6 +538,29 @@
                                                             {{tdData.value|default:"-"|percentFormat}}</td>
                                                     </tr>
                                                     </tbody> <!--ng if profits-->
+
+                                                    <tbody ng-if="noiCtrl.noiModal == 'arrearage'">
+                                                    <tr class="tr-main">
+                                                        <td ng-repeat="tdData in noiCtrl.arrearageData[3].values|take:(1+(noiCtrl.activeModalTab-1)*4):4">
+                                                            {{tdData.value|default:"-"|numberFormat}}</td>
+                                                    </tr>
+
+                                                    <tr class="tr-sub">
+                                                        <td ng-repeat="tdData in noiCtrl.arrearageData[0].values|take:(1+(noiCtrl.activeModalTab-1)*4):4">
+                                                            {{tdData.value|default:"-"|numberFormat}}</td>
+
+                                                    </tr>
+                                                    <tr class="tr-sub">
+                                                        <td ng-repeat="tdData in noiCtrl.arrearageData[1].values|take:(1+(noiCtrl.activeModalTab-1)*4):4">
+                                                            {{tdData.value|default:"-"|numberFormat}}</td>
+                                                    </tr>
+                                                    <!-- start -->
+                                                    <tr class="tr-sub">
+                                                        <td ng-repeat="tdData in noiCtrl.arrearageData[2].values|take:(1+(noiCtrl.activeModalTab-1)*4):4">
+                                                            {{tdData.value|default:"-"|numberFormat}}
+                                                        </td>
+                                                    </tr>
+                                                    </tbody> <!--ng if income-->
                                                 </table>
 
 

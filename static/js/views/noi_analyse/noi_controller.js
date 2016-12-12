@@ -87,7 +87,8 @@ noi.controller('noiController', ['$rootScope', '$scope',"$timeout","noiAllData",
                   break;
 
               case "arrearage":
-
+                  self.modalTitle="欠费";
+                  self.noiModal="arrearage";
                   break;
               default:
                   self.modalTitle="收入";
