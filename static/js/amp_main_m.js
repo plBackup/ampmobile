@@ -135,30 +135,7 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
                 data: ['$q','$timeout', _timeDefer]
             }
         }, //state
-       /* {
-            name: 'rpgset',
-            url: '/rpgset',
-            views:{
-                'header': {
-                    templateUrl: './views/datatool/rpg_set_header.html'
-                },
-                'content': {
-                    templateUrl: './views/datatool/datatool_rpg_set_index.html'
-                },
-                "sidebarLeft":{
-                    templateUrl:"./views/blank.html"
-                },
-                "sidebarRight":{
-                    templateUrl:"./views/blank.html"
-                }
-            },
-            reloadOnSearch: false,
-            resolve: {
-                data: ['$q','$timeout', _timeDefer]
-            }
-        },//state
-*/
-        {
+            {
             name: 'datatool',
             url: '/datatool',
             views:{
@@ -183,6 +160,19 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
         {
             name: 'datatool.rpgindex',
             url: '/rpgindex',
+            views:{
+                'datatool-content': {
+                    templateUrl: './views/datatool/datatool_rpg_index.html'
+                },
+            },
+            reloadOnSearch: false,
+            resolve: {
+                data: ['$q','$timeout', _timeDefer]
+            }
+        },
+        {
+            name: 'datatool.rpgset',
+            url: '/rpgset',
             views:{
                 'datatool-content': {
                     templateUrl: './views/datatool/datatool_rpg_set_index.html'

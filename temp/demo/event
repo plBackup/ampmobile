@@ -1,0 +1,24 @@
+mobile-angular-ui.state.initialized.ID
+event in SharedState
+Broadcasted on $rootScope when #initialize is called for a new state not referenced by any scope currently.
+
+Param	Type	Description
+currentValue	any
+The value with which this state has been initialized
+
+mobile-angular-ui.state.destroyed.ID
+event in SharedState
+Broadcasted on $rootScope when a state is destroyed.
+
+mobile-angular-ui.state.changed.ID
+event in SharedState
+Broadcasted on $rootScope the value of a state changes.
+
+/*====================*/
+$scope.$on('mobile-angular-ui.state.changed.uiSidebarLeft', function(e, newVal, oldVal) {
+  if (newVal === true) {
+    console.log('sidebar opened');
+  } else {
+    console.log('sidebar closed');
+  }
+});
