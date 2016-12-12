@@ -116,7 +116,7 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
                     templateUrl: './views/noi_analyse/noi_header.html'
                 },
                 'content': {
-                    templateUrl: './views/noi_analyse/noi.html',
+                    templateUrl: './views/noi_analyse/noi_index.html',
                     controller:"noiController",
                     controllerAs:"noiCtrl"
                 },

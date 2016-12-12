@@ -27,18 +27,46 @@ noi.controller('noiController', ['$rootScope', '$scope',"noiAllData",
             return (index+1)%4==0;
         }
 
+        self.viewDetail=function(dataType){
+          switch(dataType){
+              case "income":
+
+                  break;
+
+              case "fee":
+
+                  break;
+
+              case "noi":
+
+                  break;
+
+              case "profits":
+
+                  break;
+
+              case "arrearage":
+
+                  break;
+              default:
+                  return;
+          }
+        };
        /*swiper */
         var pin;
-        var noi_head_swiper,noi_main_swiper;
+        var noi_headerInfo_swiper,noi_head_swiper,noi_main_swiper;
         var swiper_init=function(){
+            noi_headerInfo_swiper=new Swiper('#noi-headerInfo-swiper', {
+                pagination: '.swiper-pagination',
+            });
+
             noi_head_swiper = new Swiper('#noi-main-table-head', {
                 //scrollbar: '.swiper-scrollbar',
                 direction: 'horizontal',
                 slidesPerView: 'auto',
                 //mousewheelControl: true,
                 freeMode: true,
-                scrollbarHide:true,
-                //watchSlidesProgress:true,
+
             });
 
 

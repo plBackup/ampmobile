@@ -1,0 +1,250 @@
+<div class="scrollable">
+    <div class="scrollable-header">
+        <div class="swiper-container" id="noi-headerInfo-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                        <h5>净营运收入NOI(万元)</h5>
+                        <div class="noi-swiper-content">
+                            <div class="col-xs-4">
+                                <span>当月实际</span>
+                                <h3>{{noiCtrl.noiData[0].value | number:2}}</h3>
+                            </div>
+
+                            <div class="col-xs-4">
+                                <span>全年预测</span>
+                                <h5>{{noiCtrl.noiData[1].value | number:2}}</h5>
+                            </div>
+                        </div>
+                </div><!--swiper-slide-->
+
+                <div class="swiper-slide">
+                    <h5>总投资成本(万元)</h5>
+                    <div class="noi-swiper-content">
+                        <div class="col-xs-4">
+                            <span>总成本</span>
+                            <h3>{{noiCtrl.noiData[2].value | number:2}}</h3>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <span>预测年回报率(按成本)</span>
+                            <h5>{{noiCtrl.noiData[3].value | percentFormat}}</h5>
+                        </div>
+                    </div>
+                </div><!--swiper-slide-->
+
+                <div class="swiper-slide">
+                    <h5>估值(万元)</h5>
+                    <div class="noi-swiper-content">
+                        <div class="col-xs-4">
+                            <span>估值</span>
+                            <h3>{{noiCtrl.noiData[4].value | number:2}}</h3>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <span>估值日期</span>
+                            <h5>{{noiCtrl.noiData[5].value}}</h5>
+                        </div>
+                        <div class="col-xs-4">
+                            <span>预测年回报率(按估值)</span>
+                            <h5>{{noiCtrl.noiData[6].value | percentFormat}}</h5>
+                        </div>
+                    </div>
+                </div><!--swiper-slide-->
+
+                <div class="swiper-slide">
+                    <h5>贷款(万元)</h5>
+                    <div class="noi-swiper-content">
+                        <div class="col-xs-4">
+                            <span>本金</span>
+                            <h3>{{noiCtrl.noiData[7].value | number:2}}</h3>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <span>到期日</span>
+                            <h5>{{noiCtrl.noiData[8].value}}</h5>
+                        </div>
+                        <div class="col-xs-4">
+                            <span>年贷款利息</span>
+                            <h5>{{noiCtrl.noiData[9].value | number:2}}</h5>
+                        </div>
+                    </div>
+                </div><!--swiper-slide-->
+
+                <div class="swiper-slide">
+                    <h5>资产权益年预测(万元)</h5>
+                    <div class="noi-swiper-content">
+                        <div class="col-xs-4">
+                            <span>当前权益</span>
+                            <h3>{{noiCtrl.noiData[10].value | number:2}}</h3>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <span>预测税前现金流</span>
+                            <h5>{{noiCtrl.noiData[11].value | number:2}}</h5>
+                        </div>
+                        <div class="col-xs-4">
+                            <span>预测收益率(按ROE)</span>
+                            <h5>{{noiCtrl.noiData[12].value | percentFormat}}</h5>
+                        </div>
+                    </div>
+                </div><!--swiper-slide-->
+
+            </div><!--swiper-wrapper-->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <div class="scrollable-content">
+        <div class="amp-content-panel noi-view" id="noi">
+            <div class="amp-block">
+                <div class="amp-tab-pages" id="amp-tab-noi">
+                    <ui-shared-state id="activeTab" default="1"></ui-shared-state>
+                    <ul class="nav nav-tabs">
+                        <li ui-class="{'active': activeTab == 1}">
+                            <a ui-set="{'activeTab': 1}"><em><</em>2016-08(万元)</a>
+                        </li>
+                        <li ui-class="{'active': activeTab == 2}">
+                            <a ui-set="{'activeTab': 2}">全年累计(万元)</a>
+                        </li>
+                        <li ui-class="{'active': activeTab == 3}">
+                            <a ui-set="{'activeTab': 3}">全年(万元)</a>
+                        </li>
+
+                        <li ui-class="{'active': activeTab == 4}">
+                            <a ui-set="{'activeTab': 4}">达成率</a>
+                        </li>
+                    </ul>
+
+                    <div class="amp-section">
+                        <div class="amp-section-title" ng-click="noiCtrl.viewDetail('income')">
+                            <h3 class="col-xs-12">收入<em class="em-unit">(万元)</em> <i class="amp-icon amp-icon-arrow-right"></i></h3>
+                        </div>
+                        <div class="amp-table-wrapper">
+                            <table class="table table-no-bordered table-hover amp-table">
+                                <thead>
+                                <tr >
+                                    <th>实际{{activeTab}}</th>
+                                    <th>预算</th>
+                                    <th>差异额</th>
+                                    <th>差异率</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="tr-main">
+                                    <td ng-repeat="tdData in noiCtrl.incomeData[3].values |take:(1+(activeTab-1)*4):4">{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div><!--amp section-->
+
+                    <div class="amp-section">
+                        <div class="amp-section-title" ng-click="noiCtrl.viewDetail('fee')">
+                            <h3 class="col-xs-12">费用<em class="em-unit">(万元)</em> <i class="amp-icon amp-icon-arrow-right"></i></h3>
+                        </div>
+                        <div class="amp-table-wrapper">
+                            <table class="table table-no-bordered table-hover amp-table">
+                                <thead>
+                                <tr >
+                                    <th>实际 </th>
+                                    <th>预算</th>
+                                    <th>差异额</th>
+                                    <th>差异率</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="tr-main">
+                                    <td ng-repeat="tdData in noiCtrl.feeData[12].values|take:(1+(activeTab-1)*4):4" >{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div><!--amp section-->
+
+                    <div class="amp-section">
+                        <div class="amp-section-title" ng-click="noiCtrl.viewDetail('noi')">
+                            <h3 class="col-xs-12">NOI<em class="em-unit">(万元)</em> <i class="amp-icon amp-icon-arrow-right"></i></h3>
+                        </div>
+                        <div class="amp-table-wrapper">
+                            <table class="table table-no-bordered table-hover amp-table">
+                                <thead>
+                                <tr >
+                                    <th>实际</th>
+                                    <th>预算</th>
+                                    <th>差异额</th>
+                                    <th>差异率</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="tr-main"  ng-click="noiCtrl.viewDetail('profits')">
+                                    <td ng-repeat="tdData in noiCtrl.feeData[13].values|take:(1+(activeTab-1)*4):4" >{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div><!--amp section-->
+
+                    <div class="amp-section">
+                        <div class="amp-section-title">
+                            <h3 class="col-xs-12">利润率<em class="em-unit">(万元)</em> <i class="amp-icon amp-icon-arrow-right"></i></h3>
+                        </div>
+                        <div class="amp-table-wrapper">
+                            <table class="table table-no-bordered table-hover amp-table">
+                                <thead>
+                                <tr >
+                                    <th>实际</th>
+                                    <th>预算</th>
+                                    <th>差异额</th>
+                                    <th>差异率</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="tr-main">
+                                    <td ng-repeat="tdData in noiCtrl.feeData[14].values|take:(1+(activeTab-1)*4):4" >{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div><!--amp section-->
+            </div>
+            </div>
+            <div class="amp-block">
+                <div class="amp-block-title">
+                    <h3 class="col-xs-12">欠费<em class="em-unit">(万元)</em></h3>
+                </div>
+                <div class="amp-table-wrapper" id="noi-arrearage" ng-click="noiCtrl.viewDetail('arrearage')">
+                    <table class="table table-no-bordered table-hover amp-table">
+                        <thead>
+                        <tr >
+                            <th>总额</th>
+                            <th>小于30天</th>
+                            <th>31-60天</th>
+                            <th>61-90天</th>
+                            <th>大于90天</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="tr-main">
+                            <td ng-repeat="tdData in noiCtrl.arrearageData[3].values.slice(1)">{{tdData.value|number:2}}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div><!--ys-block-->
+
+            <div class="amp-block">
+                <div class="amp-block-title">
+                    <h3 class="col-xs-12">NOI实际与方案(一、二、三)对比</h3>
+                </div>
+                <div class="col-xs-12 chart-wrapper" id="noi-chart-wrapper" >
+                    <em class="chart-axis-info chart-axis-y-info">万元</em>
+                    <div id="noi-chart" style="height:310px;" line-chart
+                         chart-data="noiCtrl.chartData"></div>
+                    <div class="chart-legend">
+
+                        <span><em class="color-label" style="background-color:#60cd7a;"></em><i class="name">NOI实际</i></span>
+                        <span><em class="color-label" style="background-color:#5dbaf7;"></em><i class="name">方案1</i></span>
+                        <span><em class="color-label" style="background-color:#fd7170;"></em><i class="name">方案2</i></span>
+                        <span><em class="color-label" style="background-color:#feb739;"></em><i class="name">方案3</i></span>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- amp-content-panel -->
+    </div><!--scrollable content-->
+</div><!--scrollable-->
