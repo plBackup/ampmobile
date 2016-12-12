@@ -266,7 +266,7 @@
                     <div class="amp-modal-block">
                         <div class="amp-tab-pages" id="amp-tab-modal">
                             <ui-shared-state id="activeModalTab" default="1"></ui-shared-state>
-                            <ul class="nav nav-tabs">
+                            <ul class="nav nav-tabs" ng-if="noiCtrl.noiModal != 'arrearage'">
                                 <li ui-class="{'active': activeModalTab == 1}" >
                                     <a ui-set="{'activeModalTab': 1}" ng-click="noiCtrl.setActiveModalTab(1)"><em><</em>2016-08(万元)</a>
                                 </li>
@@ -405,7 +405,7 @@
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                                 <table class="table table-no-bordered table-hover amp-table" style="width:450px" >
-                                                    <thead>
+                                                    <thead ng-if="noiCtrl.noiModal != 'arrearage'">
                                                     <tr >
                                                         <th><span>实际</span><em class="em-unit">(万元)</em></th>
                                                         <th><span>预算</span><em class="em-unit">(万元)</em></th>
@@ -413,6 +413,17 @@
                                                         <th><span>差异率</span><em class="em-unit">(％)</em></th>
                                                     </tr>
                                                     </thead>
+
+                                                    <thead ng-if="noiCtrl.noiModal == 'arrearage'">
+                                                    <tr >
+                                                        <th>总额<em class="em-unit">(万元)</em></th>
+                                                        <th>小于30天<em class="em-unit">(万元)</em></th>
+                                                        <th>31-60天<em class="em-unit">(万元)</em></th>
+                                                        <th>61-90天<em class="em-unit">(万元)</em></th>
+                                                        <th>大于90天<em class="em-unit">(万元)</em></th>
+                                                    </tr>
+                                                    </thead>
+
                                                     <tbody ng-if="noiCtrl.noiModal == 'income'">
                                                     <tr class="tr-main">
                                                         <td ng-repeat="tdData in noiCtrl.incomeData[3].values |take:(1+(noiCtrl.activeModalTab-1)*4):4">
