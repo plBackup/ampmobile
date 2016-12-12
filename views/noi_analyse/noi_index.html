@@ -100,45 +100,46 @@
                 <div class="amp-tab-pages" id="amp-tab-noi">
                     <ui-shared-state id="activeTab" default="1"></ui-shared-state>
                     <ul class="nav nav-tabs">
-                        <li ui-class="{'active': activeTab == 1}">
-                            <a ui-set="{'activeTab': 1}"><em><</em>2016-08(万元)</a>
+                        <li ui-class="{'active': activeTab == 1}" >
+                            <a ui-set="{'activeTab': 1}" ng-click="noiCtrl.setActiveTab(1)"><em><</em>2016-08(万元)</a>
                         </li>
                         <li ui-class="{'active': activeTab == 2}">
-                            <a ui-set="{'activeTab': 2}">全年累计(万元)</a>
+                            <a ui-set="{'activeTab': 2}" ng-click="noiCtrl.setActiveTab(2)">全年累计(万元)</a>
                         </li>
                         <li ui-class="{'active': activeTab == 3}">
-                            <a ui-set="{'activeTab': 3}">全年(万元)</a>
+                            <a ui-set="{'activeTab': 3}" ng-click="noiCtrl.setActiveTab(3)">全年(万元)</a>
                         </li>
 
                         <li ui-class="{'active': activeTab == 4}">
-                            <a ui-set="{'activeTab': 4}">达成率</a>
+                            <a ui-set="{'activeTab': 4}" ng-click="noiCtrl.setActiveTab(4)">达成率</a>
                         </li>
                     </ul>
 
                     <div class="amp-section">
-                        <div class="amp-section-title" ng-click="noiCtrl.viewDetail('income')">
+                        <div class="amp-section-title" ui-turn-on="subpageModal" ng-click="noiCtrl.viewDetail('income')">
                             <h3 class="col-xs-12">收入<em class="em-unit">(万元)</em> <i class="amp-icon amp-icon-arrow-right"></i></h3>
                         </div>
                         <div class="amp-table-wrapper">
                             <table class="table table-no-bordered table-hover amp-table">
                                 <thead>
-                                <tr >
-                                    <th>实际{{activeTab}}</th>
-                                    <th>预算</th>
-                                    <th>差异额</th>
-                                    <th>差异率</th>
-                                </tr>
+                                    <tr >
+                                        <th>实际{{activeTab}}</th>
+                                        <th>预算</th>
+                                        <th>差异额</th>
+                                        <th>差异率</th>
+                                    </tr>
                                 </thead>
                                 <tbody>
-                                <tr class="tr-main">
-                                    <td ng-repeat="tdData in noiCtrl.incomeData[3].values |take:(1+(activeTab-1)*4):4">{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
-                                </tr>
+                                    <tr class="tr-main">
+                                        <td ng-repeat="tdData in noiCtrl.incomeData[3].values |take:(1+(noiCtrl.activeTab-1)*4):4">{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
+                                    </tr>
+                                </tbody>
                             </table>
                         </div>
                     </div><!--amp section-->
 
                     <div class="amp-section">
-                        <div class="amp-section-title" ng-click="noiCtrl.viewDetail('fee')">
+                        <div class="amp-section-title" ui-turn-on="subpageModal" ng-click="noiCtrl.viewDetail('fee')">
                             <h3 class="col-xs-12">费用<em class="em-unit">(万元)</em> <i class="amp-icon amp-icon-arrow-right"></i></h3>
                         </div>
                         <div class="amp-table-wrapper">
@@ -153,14 +154,14 @@
                                 </thead>
                                 <tbody>
                                 <tr class="tr-main">
-                                    <td ng-repeat="tdData in noiCtrl.feeData[12].values|take:(1+(activeTab-1)*4):4" >{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
+                                    <td ng-repeat="tdData in noiCtrl.feeData[12].values|take:(1+(noiCtrl.activeTab-1)*4):4" >{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
                                 </tr>
                             </table>
                         </div>
                     </div><!--amp section-->
 
                     <div class="amp-section">
-                        <div class="amp-section-title" ng-click="noiCtrl.viewDetail('noi')">
+                        <div class="amp-section-title" ui-turn-on="subpageModal" ng-click="noiCtrl.viewDetail('noi')">
                             <h3 class="col-xs-12">NOI<em class="em-unit">(万元)</em> <i class="amp-icon amp-icon-arrow-right"></i></h3>
                         </div>
                         <div class="amp-table-wrapper">
@@ -174,15 +175,15 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr class="tr-main"  ng-click="noiCtrl.viewDetail('profits')">
-                                    <td ng-repeat="tdData in noiCtrl.feeData[13].values|take:(1+(activeTab-1)*4):4" >{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
+                                <tr class="tr-main">
+                                    <td ng-repeat="tdData in noiCtrl.feeData[13].values|take:(1+(noiCtrl.activeTab-1)*4):4" >{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
                                 </tr>
                             </table>
                         </div>
                     </div><!--amp section-->
 
                     <div class="amp-section">
-                        <div class="amp-section-title">
+                        <div class="amp-section-title" ui-turn-on="subpageModal" ng-click="noiCtrl.viewDetail('profits')">
                             <h3 class="col-xs-12">利润率<em class="em-unit">(万元)</em> <i class="amp-icon amp-icon-arrow-right"></i></h3>
                         </div>
                         <div class="amp-table-wrapper">
@@ -197,7 +198,7 @@
                                 </thead>
                                 <tbody>
                                 <tr class="tr-main">
-                                    <td ng-repeat="tdData in noiCtrl.feeData[14].values|take:(1+(activeTab-1)*4):4" >{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
+                                    <td ng-repeat="tdData in noiCtrl.feeData[14].values|take:(1+(noiCtrl.activeTab-1)*4):4" >{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
                                 </tr>
                             </table>
                         </div>
@@ -220,9 +221,10 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr class="tr-main">
-                            <td ng-repeat="tdData in noiCtrl.arrearageData[3].values.slice(1)">{{tdData.value|number:2}}</td>
-                        </tr>
+                            <tr class="tr-main">
+                                <td ng-repeat="tdData in noiCtrl.arrearageData[3].values.slice(1)">{{tdData.value|number:2}}</td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
             </div><!--ys-block-->
@@ -248,3 +250,131 @@
         </div><!-- amp-content-panel -->
     </div><!--scrollable content-->
 </div><!--scrollable-->
+
+
+<div ui-content-for="subpage">
+    <div class="modal modal-overlay" ui-if='subpageModal' ui-shared-state='subpageModal'>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close pull-left"
+                            ui-turn-off="subpageModal"><em class="amp-icon amp-icon-back"></em></button>
+                    <h4 class="modal-title">{{noiCtrl.modalTitle}}</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="amp-modal-block">
+                        <div class="amp-tab-pages" id="amp-tab-modal">
+                            <ui-shared-state id="activeModalTab" default="1"></ui-shared-state>
+                            <ul class="nav nav-tabs">
+                                <li ui-class="{'active': activeTab == 1}" >
+                                    <a ui-set="{'activeTab': 1}" ng-click="noiCtrl.setActiveModalTab(1)"><em><</em>2016-08(万元)</a>
+                                </li>
+                                <li ui-class="{'active': activeTab == 2}">
+                                    <a ui-set="{'activeTab': 2}" ng-click="noiCtrl.setActiveModalTab(2)">全年累计(万元)</a>
+                                </li>
+                                <li ui-class="{'active': activeTab == 3}">
+                                    <a ui-set="{'activeTab': 3}" ng-click="noiCtrl.setActiveModalTab(3)">全年(万元)</a>
+                                </li>
+
+                                <li ui-class="{'active': activeTab == 4}">
+                                    <a ui-set="{'activeTab': 4}" ng-click="noiCtrl.setActiveModalTab(4)">达成率</a>
+                                </li>
+                            </ul>
+
+                            <div class="amp-section">
+                                <div class="amp-section-title" ui-turn-on="subpageModal" ng-click="noiCtrl.viewDetail('income')">
+                                    <h3 class="col-xs-12">收入<em class="em-unit">(万元)</em> <i class="amp-icon amp-icon-arrow-right"></i></h3>
+                                </div>
+                                <div class="amp-table-wrapper">
+                                    <table class="table table-no-bordered table-hover amp-table">
+                                        <thead>
+                                        <tr >
+                                            <th><span>实际</span><em class="em-unit">(万元)</em></th>
+                                            <th><span>预算</span><em class="em-unit">(万元)</em></th>
+                                            <th><span>差异额</span><em class="em-unit">(万元)</em></th>
+                                            <th><span>差异率</span><em class="em-unit">(％)</em></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr class="tr-main">
+                                            <td ng-repeat="tdData in noiCtrl.incomeData[3].values |take:(1+(noiCtrl.activeTab-1)*4):4">{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div><!--amp section-->
+
+                            <div class="amp-section">
+                                <div class="amp-section-title" ui-turn-on="subpageModal" ng-click="noiCtrl.viewDetail('fee')">
+                                    <h3 class="col-xs-12">费用<em class="em-unit">(万元)</em> <i class="amp-icon amp-icon-arrow-right"></i></h3>
+                                </div>
+                                <div class="amp-table-wrapper">
+                                    <table class="table table-no-bordered table-hover amp-table">
+                                        <thead>
+                                        <tr >
+                                            <th>实际 </th>
+                                            <th>预算</th>
+                                            <th>差异额</th>
+                                            <th>差异率</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr class="tr-main">
+                                            <td ng-repeat="tdData in noiCtrl.feeData[12].values|take:(1+(noiCtrl.activeTab-1)*4):4" >{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div><!--amp section-->
+
+                            <div class="amp-section">
+                                <div class="amp-section-title" ui-turn-on="subpageModal" ng-click="noiCtrl.viewDetail('noi')">
+                                    <h3 class="col-xs-12">NOI<em class="em-unit">(万元)</em> <i class="amp-icon amp-icon-arrow-right"></i></h3>
+                                </div>
+                                <div class="amp-table-wrapper">
+                                    <table class="table table-no-bordered table-hover amp-table">
+                                        <thead>
+                                        <tr >
+                                            <th>实际</th>
+                                            <th>预算</th>
+                                            <th>差异额</th>
+                                            <th>差异率</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr class="tr-main">
+                                            <td ng-repeat="tdData in noiCtrl.feeData[13].values|take:(1+(noiCtrl.activeTab-1)*4):4" >{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div><!--amp section-->
+
+                            <div class="amp-section">
+                                <div class="amp-section-title" ui-turn-on="subpageModal" ng-click="noiCtrl.viewDetail('profits')">
+                                    <h3 class="col-xs-12">利润率<em class="em-unit">(万元)</em> <i class="amp-icon amp-icon-arrow-right"></i></h3>
+                                </div>
+                                <div class="amp-table-wrapper">
+                                    <table class="table table-no-bordered table-hover amp-table">
+                                        <thead>
+                                        <tr >
+                                            <th>实际</th>
+                                            <th>预算</th>
+                                            <th>差异额</th>
+                                            <th>差异率</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr class="tr-main">
+                                            <td ng-repeat="tdData in noiCtrl.feeData[14].values|take:(1+(noiCtrl.activeTab-1)*4):4" >{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div><!--amp section-->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

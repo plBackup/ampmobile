@@ -6,14 +6,22 @@
 
 /* Controllers */
 
-var noi = angular.module('noi', [
+var noi = angular.module('noi', ['mobile-angular-ui',
 ]);
 
-noi.controller('noiController', ['$rootScope', '$scope',"noiAllData",
-    function($rootScope, $scope,noiAllData) {
+noi.controller('noiController', ['$rootScope', '$scope',"noiAllData","SharedState",
+    function($rootScope, $scope,noiAllData,SharedState) {
         var self=this;
         $rootScope.showHeader();
         $rootScope.showBottom();
+
+        SharedState.initialize($scope, "activeTab", 2);
+        console.log("-------------");
+        console.log($scope.activeTab);
+        self.activeTab=1;
+        self.setActiveTab=function(n){
+            self.activeTab=n;
+        }
 
         self.allData=noiAllData;
 
@@ -25,15 +33,19 @@ noi.controller('noiController', ['$rootScope', '$scope',"noiAllData",
 
         self.isSplit=function(index){
             return (index+1)%4==0;
-        }
+        };
+
+        self.modalTitle=""
 
         self.viewDetail=function(dataType){
           switch(dataType){
               case "income":
+                  self.modalTitle="收入";
 
                   break;
 
               case "fee":
+                  self.modalTitle="费用";
 
                   break;
 
