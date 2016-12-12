@@ -9,22 +9,32 @@
 var noi = angular.module('noi', ['mobile-angular-ui',
 ]);
 
-noi.controller('noiController', ['$rootScope', '$scope',"noiAllData","SharedState",
-    function($rootScope, $scope,noiAllData,SharedState) {
+noi.controller('noiController', ['$rootScope', '$scope',"$timeout","noiAllData","SharedState",
+    function($rootScope, $scope,$timeout,noiAllData,SharedState) {
         var self=this;
         $rootScope.showHeader();
         $rootScope.showBottom();
 
-        SharedState.initialize($scope, "activeTab", 2);
+        SharedState.initialize($scope, "activeTab");
+        //SharedState.initialize($scope, "activeTab");
+
+        SharedState.setOne("activeTab",1);
+
         console.log("-------------");
         console.log($scope.activeTab);
         self.activeTab=1;
         self.setActiveTab=function(n){
             self.activeTab=n;
+        };
+
+        self.activeModalTab=1;
+        self.setActiveModalTab=function(n){
+            self.activeModalTab=n;
         }
 
-        self.allData=noiAllData;
+        self.noiModal="";
 
+        self.allData=noiAllData;
         self.noiData=noiAllData.noi[0].values;
         self.incomeData=noiAllData.income;
         self.feeData=noiAllData.fee;
@@ -38,51 +48,61 @@ noi.controller('noiController', ['$rootScope', '$scope',"noiAllData","SharedStat
         self.modalTitle=""
 
         self.viewDetail=function(dataType){
+
+            SharedState.turnOn("subpageModal");
+            $timeout(function(){
+                if(typeof noi_modal_swiper !=="undefined"){
+                    noi_modal_swiper.destroy(true,true);
+                }
+                noi_modal_swiper = new Swiper('#amp-tab-modal-swiper', {
+                    scrollbar: '.swiper-scrollbar',
+                    direction: 'horizontal',
+                    slidesPerView: 'auto',
+                    //mousewheelControl: true,
+                    freeMode: true,
+                    scrollbarHide:false,
+                    //watchSlidesProgress:true,
+                });
+            },200);
+
           switch(dataType){
               case "income":
                   self.modalTitle="收入";
-
+                  self.noiModal="income";
                   break;
 
               case "fee":
                   self.modalTitle="费用";
-
+                  self.noiModal="fee";
                   break;
 
               case "noi":
-
+                  self.modalTitle="NOI";
+                  self.noiModal="noi";
                   break;
 
               case "profits":
-
+                  self.modalTitle="利润率";
+                  self.noiModal="profits";
                   break;
 
               case "arrearage":
 
                   break;
               default:
+                  self.modalTitle="收入";
+                  self.noiModal="income";
                   return;
           }
         };
        /*swiper */
         var pin;
-        var noi_headerInfo_swiper,noi_head_swiper,noi_main_swiper;
+        var noi_headerInfo_swiper,noi_modal_swiper;
         var swiper_init=function(){
             noi_headerInfo_swiper=new Swiper('#noi-headerInfo-swiper', {
                 pagination: '.swiper-pagination',
             });
-
-            noi_head_swiper = new Swiper('#noi-main-table-head', {
-                //scrollbar: '.swiper-scrollbar',
-                direction: 'horizontal',
-                slidesPerView: 'auto',
-                //mousewheelControl: true,
-                freeMode: true,
-
-            });
-
-
-            noi_main_swiper = new Swiper('#noi-main-table', {
+            /*noi_modal_swiper = new Swiper('#amp-tab-modal-swiper', {
                 scrollbar: '.swiper-scrollbar',
                 direction: 'horizontal',
                 slidesPerView: 'auto',
@@ -90,37 +110,10 @@ noi.controller('noiController', ['$rootScope', '$scope',"noiAllData","SharedStat
                 freeMode: true,
                 scrollbarHide:false,
                 //watchSlidesProgress:true,
-            });
-            noi_head_swiper.params.control = noi_main_swiper;
-            noi_main_swiper.params.control = noi_head_swiper;
-
-            //这里把swiper实例加入全局的垃圾回收站
-            /*ampApp.collector.add_swiper(noi_head_swiper);
-            ampApp.collector.add_swiper(noi_main_swiper);*/
-
-            pin=$(".ys-table-fixed-top").pin({
-                containerSelector: "#noi-main-table-wrapper",
-                padding: {top: 44, bottom: 50}
-            });
+            });*/
         };
 
         var table_init=function(){
-            $(".ys-table-main").on("mouseenter","tr",function(e){
-                var index=$(this).index();
-                var parentTagName=$(this).parent().get(0).tagName;
-                $(this).closest(".ys-table-main").find(".amp-table >"+parentTagName).each(function(i,e){
-                    $(this).find("tr").eq(index).addClass("hover");
-                });
-            });
-
-            $(".ys-table-main").on("mouseleave","tr",function(e){
-                var index=$(this).index();
-                var parentTagName=$(this).parent().get(0).tagName;
-                $(this).closest(".ys-table-main").find(".amp-table >"+parentTagName).each(function(i,e){
-                    $(this).find("tr").eq(index).removeClass("hover");
-                });
-
-            });
 
             $(".ys-table-main").on("click","tbody>tr",function(e){
                 if($(this).hasClass("tr-main")){
@@ -166,16 +159,20 @@ noi.controller('noiController', ['$rootScope', '$scope',"noiAllData","SharedStat
             $(".tr-init-collapse").trigger("click");
         };
 
-        swiper_init();
-        table_init();
+        $timeout(function(){
+            swiper_init();
+            table_init();
+
+        },200);
 
 
 
         $scope.$on("$destroy", function() {
             //清除配置,不然swiper会重复请求
-
-            noi_head_swiper.destroy(true,true);
-            noi_main_swiper.destroy(true,true);
+            noi_headerInfo_swiper.destroy(true,true);
+            if(typeof noi_modal_swiper!=="undefined"){
+                noi_modal_swiper.destroy(true,true);
+            }
         });
 
         $scope.$on("noiMonthUpdate",function(e,data){
