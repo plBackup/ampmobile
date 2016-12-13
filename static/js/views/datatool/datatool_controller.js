@@ -140,7 +140,7 @@ dataTool.controller("dataIndexController",['$rootScope', '$scope',"dataIndexData
         var self=this;
         var shopData=dataIndexData.slice(1);
         $rootScope.indexData=shopData;
-        console.log($rootScope.indexData)
+        console.log($rootScope.indexData);
         self.indexData=$rootScope.indexData;
         self.recordsNum=self.indexData.length;
         self.pageLimit=10;
@@ -171,10 +171,11 @@ dataTool.controller("dataIndexController",['$rootScope', '$scope',"dataIndexData
             shopData[index]=shop;
         };
 
+        /* old code */
         $scope.$on("shopUpdate",function(e,data){
             self.shopUpdate(data.index,data.shop);
         });
-
+        /* old code */
         self.shopAdd=function(index,shop){
             if(index=="add"){
                 shopData.unshift(shop);
@@ -213,6 +214,87 @@ dataTool.controller("dataIndexController",['$rootScope', '$scope',"dataIndexData
 
 
     }]);
+
+dataTool.controller("rpgResultController",['$rootScope', '$scope',"dataIndexData","paginatorService","$timeout","$location","$state","$filter",
+    function($rootScope, $scope,dataIndexData,paginatorService,$timeout,$location,$state,$filter) {
+        var self=this;
+        var shopData=dataIndexData.slice(1);
+        $rootScope.indexData=shopData;
+        //console.log($rootScope.indexData);
+        self.indexData=$rootScope.indexData;
+        self.recordsNum=self.indexData.length;
+        self.pageLimit=10;
+        self.pageNum=Math.ceil(parseFloat(self.recordsNum)/self.pageLimit);
+
+        self.paginator=paginatorService(self.pageLimit,self.pageNum,self.indexData);
+
+        //pageTarget初始化与pageIndex一致
+        //这里演示时简化逻辑，没有http取数据操作，通过一次性取数据， 通过页面过滤器进行页面展示
+        self.loadPage=function(targetIndex){
+            if(targetIndex>=self.pageNum){
+                targetIndex=self.pageNum;
+            }else if(targetIndex<=1){
+                targetIndex=1;
+            }
+            self.paginator.setIndex(targetIndex);
+        };
+        self.selectShop=null;
+        self.rentDetail=function($index,shop){
+            self.selectShop=shop;
+            SharedState.turnOn("uiSidebarRight");
+
+        };
+        self.save=function(){
+            $state.go("datatool.rpgset");
+        };
+
+        self.setSelect=function(type){
+
+            console.log("---------------**")
+            console.log(self.shopInfo);
+            console.log(self.shopInfoCopy);
+            switch(type){
+                case 'position':
+                    self.selectType="position";
+                    self.selectTypeName="位置";
+                    break;
+                case 'type':
+                    self.selectType='type';
+                    self.selectTypeName="物业类型";
+                    break;
+                case 'form':
+                    self.selectType='form';
+                    self.selectTypeName="业态";
+                    break;
+                case 'property':
+                    self.selectType="property";
+                    self.selectTypeName="产权性质";
+                    break;
+                default:
+                    return
+            }
+            SharedState.turnOn("uiSidebarRight");
+        };
+
+
+        self.filters={};
+        $scope.$on("datatool_filter",function(e,data){
+            var curFilter={};
+            $.each(data.filters,function(k,v){
+                if(k!=="project" && v!==""){
+                    curFilter[k]=v;
+                }
+            });
+            self.indexData=$filter("filter")(shopData,curFilter);
+            //self.filters=curFilter;
+            self.recordsNum=self.indexData.length;
+            self.pageNum=Math.ceil(parseFloat(self.recordsNum)/self.pageLimit);
+            self.paginator=paginatorService(self.pageLimit,self.pageNum,self.indexData);
+        });
+
+
+    }]);
+
 
 dataTool.controller("dataEditController",['$rootScope', '$scope','$state','SharedState','shopData',
     function($rootScope, $scope,$state,SharedState,shopData) {

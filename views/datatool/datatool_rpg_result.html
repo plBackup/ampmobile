@@ -23,7 +23,7 @@
         <ul class="amp-rpg-list">
             <li class="amp-rpg-item" ng-repeat="shop in dCtrl.indexData| take : dCtrl.paginator.currentOffset : dCtrl.pageLimit  track by $index">
                 <div class="amp-panel">
-                    <div class="amp-panel-title" ng-click="dCtrl.shopEdit($index,shop)">
+                    <div class="amp-panel-title" ng-click="dCtrl.rentDetail($index,shop)">
                         <span title="{{shop.shopIndex}}">{{shop.shopIndex}}</span>
                         <i>租金<em class="amp-icon amp-icon-arrow-right"></em></i>
                     </div>
