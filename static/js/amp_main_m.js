@@ -274,11 +274,11 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
             }
         },
         {
-            name: 'datasim',
+            name: 'datatool.datasim',
             url: '/datasim',
             views:{
-                'content': {
-                    templateUrl: './views/datatools/datatool_sim.html',
+                'datatool-content': {
+                    templateUrl: './views/datatool/datatool_sim.html',
                     controller:"dataSimController",
                     controllerAs:"sCtrl"
                 },

@@ -1788,11 +1788,7 @@ dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simCh
         self.floor=null;
         self.floors=["B2","B1","1F","2F","3F","4F","5F"];
 
-        self.setFloor=function(floor){
-            $("#ys-svg").find("svg").remove();
-            add_svg(floor);
-            self.floor=floor;
-        };
+
 
         self.form_menu={
             form:["超市","影院","服装","餐饮","娱乐","配套","儿童","其他"],
@@ -1812,10 +1808,10 @@ dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simCh
 
         };
         self.clearShopInfo=function(){
-            $scope.$apply(function(){
-                self.shopInfo={}
-            });
+          /*  $scope.$apply(function(){
 
+            });*/
+            self.shopInfo={}
         };
 
         self.setModel=function(type,menu){
@@ -1874,8 +1870,8 @@ dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simCh
         });
 
 
-        amp_datePicker.daterangeSelector();
-        amp_datePicker.dateSelector();
+        //amp_datePicker.daterangeSelector();
+        //amp_datePicker.dateSelector();
         var iscroll_init=function(){
             var h=parseInt($(window).height());
 
@@ -1940,10 +1936,13 @@ dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simCh
         };
 
         var add_svg=function(floor){
-            if(floor=="b2"){
-                var file="floors.svg"
+
+            self.clearShopInfo();
+
+            if(floor=="B2"){
+                var file="svg.svg"
             }else{
-                file="svg.svg"
+                file="floors.svg"
             }
             $.get(file,function(data,status){
                 var importedSVGRootElement = document.importNode(data.documentElement,true);
@@ -1956,7 +1955,13 @@ dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simCh
         iscroll_init();
         add_svg(self.floor);
 
+        self.setFloor=function(floor){
+            $("#ys-svg").find("svg").remove();
 
+            console.log(floor);
+            add_svg(floor);
+            self.floor=floor;
+        };
 
 /*
         var s=Snap("#ys-svg");
@@ -1989,7 +1994,7 @@ dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simCh
         });*/
 
         $scope.$on("$destroy", function() {
-            amp_datePicker.destroy();
+           // amp_datePicker.destroy();
         });
     }]);
 

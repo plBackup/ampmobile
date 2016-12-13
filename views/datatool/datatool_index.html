@@ -7,7 +7,7 @@
                     <a ui-set="{'activeTab': 1}" ui-sref="datatool.rpgindex" ui-sref-active="active">租金包</a>
                 </li>
                 <li ui-class="{'active': activeTab == 2}">
-                    <a ui-set="{'activeTab': 2}" ui-sref="datatool.rpgresult" ui-sref-active="active">沙盒模型</a>
+                    <a ui-set="{'activeTab': 2}" ui-sref="datatool.datasim" ui-sref-active="active">沙盒模型</a>
                 </li>
                 <li ui-class="{'active': activeTab == 3}">
                     <a ui-set="{'activeTab': 3}" ui-sref="datatool.irrplan" ui-sref-active="active">回报计划</a>
@@ -30,7 +30,7 @@
             <div ui-if="activeTab == 2">
                 <ul class="amp-tab-menu justified" role="menu">
                     <li role="menuitem">
-                        <a ui-sref="datasim" ui-sref-active="active">推演模拟</a>
+                        <a ui-sref="datatool.datasim" ui-sref-active="active">推演模拟</a>
                     </li>
 
                 </ul>
@@ -39,7 +39,7 @@
             <div ui-if="activeTab == 3">
                 <ul class="amp-tab-menu justified" role="menu">
                     <li role="menuitem">
-                        <a ui-sref="irrplan" ui-sref-active="active">回报计划</a>
+                        <a ui-sref="idatatool.irrplan" ui-sref-active="active">回报计划</a>
                     </li>
                 </ul>
             </div>
