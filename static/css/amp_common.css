@@ -20,3 +20,6 @@ th{font-weight: normal;}
 
 .amp-text-align-right{text-align: right!important;}
 .amp-text-align-left{text-align: left!important;}
+
+.td-opt{}
+.td-opt>button{display: inline-block;width:32px;height:32px;background-color:#f3f3f3;border:0;}

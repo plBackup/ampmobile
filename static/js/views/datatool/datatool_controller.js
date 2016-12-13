@@ -261,8 +261,9 @@ dataTool.controller("dataEditController",['$rootScope', '$scope','$state','Share
         self.selectType=null;
         self.selectTypeName=null;
         self.shopInfoCopy=null;
+        self.shopInfoCopy=angular.copy(self.shopInfo);
         self.setSelect=function(type){
-            self.shopInfoCopy=angular.copy(self.shopInfo);
+
             console.log("---------------**")
             console.log(self.shopInfo);
             console.log(self.shopInfoCopy);
@@ -319,16 +320,62 @@ dataTool.controller("dataEditController",['$rootScope', '$scope','$state','Share
                 alert("请输入正确的数据");
                 return;
             }else{
-                $rootScope.indexData[shopData.shopId]=self.shopInfo;
-                console.log($rootScope.indexData);
-                $state.go("datatool.rpgindex");
+                if(self.index=="edit") {
+                    $rootScope.indexData[shopData.shopId]=self.shopInfo;
+                    console.log($rootScope.indexData);
+                    $state.go("datatool.rpgindex");
+                    console.log(self.shopInfo);
+                }else if(self.index="create"){
+                    //$http新增数据
+                    //$rootScope.indexData.push(self.shopInfo);
+                    console.log($rootScope.indexData);
+                    $state.go("datatool.rpgindex");
+                }
+
             }
         };
 
         self.next=function(){
 
         };
+       /* self.shopInfo={
+            rentStandard:[0],
+            wyStandard:[0]
+        }*/
+        self.addYear=function(type){
+            switch(type){
+                case "estate":
+                    self.shopInfo.wyStandard.push(0);
 
+                    break;
+                case "rent":
+                    self.shopInfo.rentStandard.push(0);
+                    break;
+                default:
+                    return;
+            }
+        };
+        self.removeYear=function(type){
+
+            switch(type){
+                case "estate":
+                    if(self.shopInfo.wyStandard.length>1){
+                        self.shopInfo.wyStandard.pop();
+                    }else{
+                        self.shopInfo.wyStandard[0]=0;
+                    }
+                    break;
+                case "rent":
+                    if(self.shopInfo.wyStandard.length>1){
+                        self.shopInfo.rentStandard.pop();
+                    }else{
+                        self.shopInfo.rentStandard[0]=0;
+                    }
+                    break;
+                default:
+                    return;
+            }
+        }
 
 
         /*dom */
