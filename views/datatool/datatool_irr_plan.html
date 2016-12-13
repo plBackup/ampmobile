@@ -1,0 +1,648 @@
+<div ui-content-for="dataToolNav">
+    <div class="navbar-brand navbar-brand-center">
+        回报测算
+    </div>
+    <div class="btn-group pull-left">
+        <div class="btn btn-opt" ng-click="pCtrl.back()">
+            <i class="navOpt-icon navOpt-icon-back"></i>
+        </div>
+    </div>
+
+    <div class="btn-group pull-left">
+        <div class="btn btn-opt" ng-click="pCtrl.save()">
+            保存
+        </div>
+    </div>
+</div>
+
+
+<div class="amp-content-panel" id="irr-plan">
+    <form name="irrForm" novalidate>
+        <div class="amp-block">
+            <div class="amp-table-wrapper-swiper" id="irr-plan-table-wrapper" style="height:2580px;">
+                <div class="ys-table-fixed-top" style="padding-left:375px;">
+                    <div class="ys-table-static ys-table-static-left" style="width:375px;">
+                        <table class="table table-no-bordered amp-table table-hover table-header-fixed amp-irr-finacial-table" style="">
+                            <colgroup>
+                                <col width="60%">
+                                <col width="40%>">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th>开业后顺延年NOI</th>
+                                <th class="text-right">备注</th>
+                            </tr>
+                            </thead>
+                        </table>
+                    </div>
+
+                    <div class="swiper-container" style="" id="irr-plan-table-head">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <table class="table table-no-bordered amp-table table-hover table-header-fixed amp-irr-finacial-table" style="width:1500px;" >
+                                    <thead>
+                                    <tr id="irr-year">
+                                        <th>第1年</th>
+                                        <th>第2年</th>
+                                        <th>第3年</th>
+                                        <th>第4年</th>
+                                        <th>第5年</th>
+
+                                        <th>第6年</th>
+                                        <th>第7年</th>
+                                        <th>第8年</th>
+                                        <th>第9年</th>
+                                        <th>第10年</th>
+                                    </tr>
+                                    </thead>
+                                </table>
+                            </div><!--swiper-slide-->
+                        </div><!--swiper-wrapper-->
+                    </div><!--swiper container-->
+                </div>
+                <div class="ys-table-main" style="padding-left:375px;">
+                    <div class="ys-table-static ys-table-static-left" style="width:375px;">
+                        <table class="table table-no-bordered amp-table table-hover amp-irr-finacial-table" style="">
+                            <colgroup>
+                                <col width="60%">
+                                <col width="40%>">
+                            </colgroup>
+                            <tbody>
+                            <tr class="tr-main" data-index="1">
+                                <th>{{pCtrl.irrData[1].values[0].value}}</th>
+                                <td>{{pCtrl.irrData[1].values[1].value}}</td>
+                            </tr>
+                            <tr class="tr-sub" data-index="2">
+                                <th>{{pCtrl.irrData[2].values[0].value}}</th>
+                                <td>{{pCtrl.irrData[2].values[1].value | number:2}}</td>
+                            </tr>
+                            <tr class="tr-sub" data-index="3">
+                                <th>{{pCtrl.irrData[3].values[0].value}}</th>
+                                <td>{{pCtrl.irrData[3].values[1].value | number:2}}</td>
+                            </tr>
+                            <tr class="tr-sub" data-index="4">
+                                <th>{{pCtrl.irrData[4].values[0].value}}</th>
+                                <td>{{pCtrl.irrData[4].values[1].value}}</td>
+                            </tr>
+                            <tr class="tr-sub tr-split-bottom tr-note" data-index="5">
+                                <th>{{pCtrl.irrData[5].values[0].value}}</th>
+                                <td>{{pCtrl.irrData[5].values[1].value}}</td>
+                            </tr>
+
+                            <tr class="tr-main tr-split-top" data-index="6">
+                                <th>{{pCtrl.irrData[6].values[0].value}}</th>
+                                <td>{{pCtrl.irrData[6].values[1].value}}</td>
+                            </tr>
+                            <tr class="tr-sub" data-index="7">
+                                <th>{{pCtrl.irrData[7].values[0].value}}</th>
+                                <td>{{pCtrl.irrData[7].values[1].value}}</td>
+                            </tr>
+                            <tr class="tr-sub" data-index="8">
+                                <th>{{pCtrl.irrData[8].values[0].value}}</th>
+                                <td>{{pCtrl.irrData[8].values[1].value}}</td>
+                            </tr>
+                            <tr class="tr-sub" data-index="9">
+                                <th>{{pCtrl.irrData[9].values[0].value}}</th>
+                                <td>{{pCtrl.irrData[9].values[1].value}}</td>
+                            </tr>
+                            <tr class="tr-sub" data-index="10">
+                                <th>{{pCtrl.irrData[10].values[0].value}}</th>
+                                <td>{{pCtrl.irrData[10].values[1].value}}</td>
+                            </tr>
+                            <tr class="tr-sub tr-split-bottom tr-note" data-index="11">
+                                <th>{{pCtrl.irrData[11].values[0].value}}</th>
+                                <td>{{pCtrl.irrData[11].values[1].value}}</td>
+                            </tr>
+
+                            <tr class="tr-main tr-split-top" data-index="12">
+                                <th>{{pCtrl.irrData[12].values[0].value}}</th>
+                                <td>{{pCtrl.irrData[12].values[1].value}}</td>
+                            </tr>
+                            <tr class="tr-sub tr-split-bottom tr-split-bottom tr-note" data-index="13">
+                                <th>{{pCtrl.irrData[13].values[0].value}}</th>
+                                <td>
+                                    <div class="td-input-wrapper num-input padding-r-15" >
+                                        <input type="text" placeholder="/" data-date="" value="" ng-model="pCtrl.irrData[13].values[1].value">
+                                        <span class="number-format">{{pCtrl.irrData[13].values[1].value*100| number:2}}<i class="unit-addon">%</i></span>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="tr-main tr-main-sum tr-split" data-index="14">
+                                <th>{{pCtrl.irrData[14].values[0].value}}</th>
+                                <td>{{pCtrl.irrData[14].values[1].value}}</td>
+                            </tr>
+
+                            <tr class="tr-main tr-split-top" data-index="15">
+                                <th>{{pCtrl.irrData[15].values[0].value}}</th>
+                                <td>{{pCtrl.irrData[15].values[1].value}}</td>
+                            </tr>
+                            <tr class="tr-sub" data-index="16">
+                                <th>{{pCtrl.irrData[16].values[0].value}}</th>
+                                <td>
+                                    <div class="td-input-wrapper num-input padding-r-15" >
+                                        <input type="text" placeholder="/" data-date="" value="" ng-model="pCtrl.irrData[16].values[1].value">
+                                        <span class="number-format">{{pCtrl.irrData[16].values[1].value*100| number:2}}<i class="unit-addon">%</i></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="tr-sub tr-split-bottom" data-index="17">
+                                <th>{{pCtrl.irrData[17].values[0].value}}</th>
+                                <td>
+                                    <div class="td-input-wrapper num-input padding-r-15" >
+                                        <input type="text" placeholder="/" data-date="" value="" ng-model="pCtrl.irrData[17].values[1].value">
+                                        <span class="number-format">{{pCtrl.irrData[17].values[1].value*100| number:2}}<i class="unit-addon">%</i></span>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="tr-main tr-split-top" data-index="18">
+                                <th>{{pCtrl.irrData[18].values[0].value}}</th>
+                                <td>{{pCtrl.irrData[18].values[1].value}}</td>
+                            </tr>
+                            <tr class="tr-sub" data-index="19">
+                                <th>{{pCtrl.irrData[19].values[0].value}}</th>
+                                <td>{{pCtrl.irrData[19].values[1].value}}</td>
+                            </tr>
+                            <tr class="tr-sub" data-index="20">
+                                <th>{{pCtrl.irrData[20].values[0].value}}</th>
+                                <td>{{pCtrl.irrData[20].values[1].value}}</td>
+                            </tr>
+                            <tr class="tr-sub" data-index="21">
+                                <th>{{pCtrl.irrData[21].values[0].value}}</th>
+                                <td>{{pCtrl.irrData[21].values[1].value}}</td>
+                            </tr>
+                            <tr class="tr-main tr-main-sum tr-split-bottom" data-index="22">
+                                <th>{{pCtrl.irrData[22].values[0].value}}</th>
+                                <td>{{pCtrl.irrData[22].values[1].value}}</td>
+                            </tr>
+
+                            <tr class="tr-main tr-split-top" data-index="23">
+                                <th>{{pCtrl.irrData[23].values[0].value}}</th>
+                                <td>{{pCtrl.irrData[23].values[1].value}}</td>
+                            </tr>
+
+                            <tr class="tr-sub tr-main-sum tr-split-bottom" data-index="24">
+                                <th>{{pCtrl.irrData[24].values[0].value}}</th>
+                                <td>{{pCtrl.irrData[24].values[1].value|number:2}}</td>
+                            </tr>
+
+                            <tr class="tr-main tr-split-top" data-index="25">
+                                <th>{{pCtrl.irrData[25].values[0].value}}</th>
+                                <td>{{pCtrl.irrData[25].values[1].value}}</td>
+                            </tr>
+                            <tr class="tr-sub tr-split-bottom" data-index="26">
+                                <th>{{pCtrl.irrData[26].values[0].value}}</th>
+                                <td>第{{pCtrl.irrData[26].values[1].value|numberFormat:2}}年</td>
+                            </tr>
+
+                            <tr class="tr-main tr-head" data-index="27">
+                                <th>{{pCtrl.irrData[27].values[0].value}}</th>
+                                <td>{{pCtrl.irrData[27].values[1].value}}</td>
+                            </tr>
+                            <tr class="tr-sub tr-split-top" data-index="28">
+                                <th><span>{{pCtrl.irrData[28].values[0].value}}</span></th>
+                                <td>{{pCtrl.irrData[28].values[1].value}}</td>
+                            </tr>
+                            <tr class="tr-sub" data-index="29">
+                                <th><span>{{pCtrl.irrData[29].values[0].value}}</span></th>
+                                <td>{{pCtrl.irrData[29].values[1].value}}</td>
+                            </tr>
+                            <tr class="tr-sub" data-index="30">
+                                <th><span>{{pCtrl.irrData[30].values[0].value}}</span></th>
+                                <td>{{pCtrl.irrData[30].values[1].value}}</td>
+                            </tr>
+                            <tr class="tr-sub" data-index="31">
+                                <th><span>{{pCtrl.irrData[31].values[0].value}}</span></th>
+
+                                <td>
+                                    <div class="td-input-wrapper num-input padding-r-15" >
+                                        <input type="text" placeholder="/" data-date="" value=""  ng-model="pCtrl.irrData[31].values[1].value">
+                                        <!--ng-model="pCtrl.irrData[31].values[1].value"-->
+                                        <span class="number-format">{{pCtrl.irrData[31].values[1].value}}</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="tr-sub" data-index="32">
+                                <th><span>{{pCtrl.irrData[32].values[0].value}}</span></th>
+                                <td>
+                                    <div class="td-input-wrapper num-input padding-r-15" >
+                                        <input type="text" placeholder="/" data-date="" value="" ng-model="pCtrl.irrData[32].values[1].value">
+                                        <span class="number-format">{{pCtrl.irrData[32].values[1].value*100| number:2}}<i class="unit-addon">%</i></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="tr-sub" data-index="33">
+                                <th><span>{{pCtrl.irrData[33].values[0].value}}</span></th>
+                                <td>
+                                    <div class="td-input-wrapper num-input padding-r-15" >
+                                        <input type="text" placeholder="/" data-date="" value="" ng-model="pCtrl.irrData[33].values[1].value">
+                                        <span class="number-format">{{pCtrl.irrData[33].values[1].value*100| number:2}}<i class="unit-addon">%</i></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="tr-sub" data-index="34">
+                                <th><span>{{pCtrl.irrData[34].values[0].value}}</span></th>
+                                <td>
+                                    <div class="td-input-wrapper num-input padding-r-15" >
+                                        <input type="text" placeholder="/" data-date="" value="" ng-model="pCtrl.irrData[34].values[1].value">
+                                        <span class="number-format">{{pCtrl.irrData[34].values[1].value | number:2}}<i>万元/m&sup2/GLA</i></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="tr-sub" data-index="35">
+                                <th><span>{{pCtrl.irrData[35].values[0].value}}</span></th>
+                                <td>{{pCtrl.irrData[35].values[1].value | number:2}}</td>
+                            </tr>
+                            <tr class="tr-sub" data-index="36">
+                                <th><span>{{pCtrl.irrData[36].values[0].value}}</span></th>
+                                <td>{{pCtrl.irrData[36].values[1].value*100|number:2}}<i class="unit-addon">%</i></td>
+
+                            </tr>
+                            <tr class="tr-sub" data-index="37">
+                                <th class="th-note">
+                                    <span>{{pCtrl.irrData[37].values[0].value}}</span>
+                                </th>
+                                <td>{{pCtrl.irrData[37].values[1].value *100| number:2}}<i class="unit-addon">%</i></td>
+                            </tr>
+                            <tr class="tr-sub" data-index="38">
+                                <th class="th-note">
+                                    <span>{{pCtrl.irrData[38].values[0].value}}</span>
+                                </th>
+                                <td>{{pCtrl.irrData[38].values[1].value | number:2}} </td>
+                            </tr>
+                            <tr class="tr-sub tr-split-bottom" data-index="39">
+                                <th class="th-note">
+                                    <span>{{pCtrl.irrData[39].values[0].value}}</span>
+                                </th>
+                                <td>{{pCtrl.irrData[39].values[1].value | number:2}}</td>
+                            </tr>
+                            <tr class="tr-main tr-head" data-index="40">
+                                <th>{{pCtrl.irrData[40].values[0].value}}</th>
+                                <td>{{pCtrl.irrData[40].values[1].value}}</td>
+                            </tr>
+                            <tr class="tr-sub tr-split-top" data-index="41">
+                                <th>
+                                    <span>{{pCtrl.irrData[41].values[0].value}}</span>
+                                </th>
+                                <td>
+                                    <div class="td-input-wrapper num-input padding-r-15" >
+                                        <input type="text" placeholder="/" data-date="" value="" ng-model="pCtrl.irrData[32].values[1].value">
+                                        <span class="number-format">{{pCtrl.irrData[32].values[1].value*100| number:2}}<i class="unit-addon">%</i></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="tr-sub" data-index="42">
+                                <th>
+                                    <span>{{pCtrl.irrData[42].values[0].value}}</span>
+                                </th>
+                                <td>
+                                    <div class="td-input-wrapper num-input padding-r-15" >
+                                        <input type="text" placeholder="/" data-date="" value="" ng-model="pCtrl.irrData[42].values[1].value">
+                                        <span class="number-format">{{pCtrl.irrData[42].values[1].value}}<i class="unit-addon">年</i></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="tr-sub" data-index="43">
+                                <th>
+                                    <span>{{pCtrl.irrData[43].values[0].value}}</span>
+                                </th>
+                                <td>
+                                    <div class="td-input-wrapper num-input padding-r-15" >
+                                        <input type="text" placeholder="/" data-date="" value="" ng-model="pCtrl.irrData[43].values[1].value">
+                                        <span class="number-format">{{pCtrl.irrData[43].values[1].value*100|number:2}}<i class="unit-addon">%</i></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="tr-sub tr-split-bottom"  data-index="44">
+                                <th>
+                                    <span>{{pCtrl.irrData[44].values[0].value}}</span>
+                                </th>
+                                <td>
+                                    <div class="td-input-wrapper num-input padding-r-15" >
+                                        <input type="text" placeholder="/" data-date="" value="" ng-model="pCtrl.irrData[44].values[1].value">
+                                        <span class="number-format">{{pCtrl.irrData[44].values[1].value*100|number:2}}<i class="unit-addon">%</i></span>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="tr-sub tr-split-top" data-index="45">
+                                <th>
+                                    <span>{{pCtrl.irrData[45].values[0].value}}</span>
+                                </th>
+                                <td>{{pCtrl.irrData[45].values[1].value|number:2}} </td>
+                            </tr>
+
+                            <tr class="tr-sub" data-index="46">
+                                <th>
+                                    <span>{{pCtrl.irrData[46].values[0].value}}</span>
+                                </th>
+                                <td>{{pCtrl.irrData[46].values[1].value}}</td>
+                            </tr>
+                            <tr class="tr-sub" data-index="47">
+                                <th>
+                                    <span>{{pCtrl.irrData[47].values[0].value}}</span>
+                                </th>
+                                <td>{{pCtrl.irrData[47].values[1].value}}</td>
+                            </tr>
+                            <tr class="tr-sub tr-split-bottom" data-index="48">
+                                <th>
+                                    <span>{{pCtrl.irrData[48].values[0].value}}</span>
+                                </th>
+                                <td>{{pCtrl.irrData[48].values[1].value|number:2}} </td>
+                            </tr>
+
+                            <tr class="tr-sub tr-split" data-index="49">
+                                <th class="">
+                                    <span>{{pCtrl.irrData[49].values[0].value}}</span>
+                                </th>
+                                <td>
+                                    <div class="td-input-wrapper num-input padding-r-15" >
+                                        <input type="text" placeholder="/" data-date="" value="" ng-model="pCtrl.irrData[49].values[1].value">
+                                        <span class="number-format">{{pCtrl.irrData[49].values[1].value *100|number:2}}<i class="unit-addon">%</i></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="tr-sub tr-split-top" data-index="50">
+                                <th class="th-note">
+                                    <span>{{pCtrl.irrData[50].values[0].value}}</span>
+                                </th>
+                                <td>{{pCtrl.irrData[50].values[1].value | number:2}}</td>
+                            </tr>
+                            <tr class="tr-sub" data-index="51">
+                                <th class="th-note">
+                                    <span>{{pCtrl.irrData[51].values[0].value}}</span>
+                                </th>
+                                <td>{{pCtrl.irrData[51].values[1].value *100|number:2}}<i class="unit-addon">%</i></td>
+                            </tr>
+                            <tr class="tr-sub" data-index="52">
+                                <th class="th-note">
+                                    <span>{{pCtrl.irrData[52].values[0].value}}</span>
+                                </th>
+                                <td>{{pCtrl.irrData[52].values[1].value *100|number:2}}<i class="unit-addon">%</i></td>
+                            </tr>
+                            <tr class="tr-sub"  data-index="53">
+                                <th class="th-note">
+                                    <span>{{pCtrl.irrData[53].values[0].value}}</span>
+                                </th>
+                                <td>{{pCtrl.irrData[53].values[1].value|number:2}}</td>
+                            </tr>
+                            <tr class="tr-sub"  data-index="54">
+                                <th class="th-note">
+                                    <span>{{pCtrl.irrData[54].values[0].value}}</span>
+                                </th>
+                                <td>{{pCtrl.irrData[54].values[1].value | number:2}}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="swiper-container" style="" id="irr-plan-main-table">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <table class="table table-no-bordered amp-table table-hover amp-irr-finacial-table"  style="width:1500px;">
+                                    <tbody>
+                                    <tr class="tr-main" data-index="1">
+                                        <td ng-repeat="pv in pCtrl.irrData[1].values | take:2 :pCtrl.quitYear">{{pv.value}}</td>
+                                    </tr>
+                                    <tr class="tr-sub" data-index="2">
+                                        <td ng-repeat="pv in pCtrl.irrData[2].values |take:2 :pCtrl.quitYear">{{pv.value| number:2}}</td>
+                                    </tr>
+                                    <tr class="tr-sub" data-index="3">
+                                        <td ng-repeat="pv in pCtrl.irrData[3].values | take:2 :pCtrl.quitYear ">{{pv.value| number:2}}</td>
+                                    </tr>
+
+                                    <tr class="tr-sub" data-index="4">
+                                        <td ng-repeat="pv in pCtrl.irrData[4].values | take:2 :pCtrl.quitYear ">
+                                            <div class="td-input-wrapper num-input padding-r-15" >
+                                                <input type="number" placeholder="/" data-date="" value="" ng-model="pv.value">
+                                                <span class="number-format">{{pv.value*100| number:2}}<i class="unit-addon">%</i></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="tr-sub tr-split-bottom tr-note" data-index="5">
+                                        <!--         <td ng-repeat="pv in pCtrl.irrData[5].values | take:2 :pCtrl.quitYear ">{{pCtrl.irrData[2].values[$index+2].value + (pCtrl.irrData[3].values[$index+2].value*(1-pCtrl.irrData[4].values[$index+2].value)) | number:2 }}</td>
+                                             -->
+                                        <td ng-repeat="pv in pCtrl.irrData[5].values | take:2 :pCtrl.quitYear ">{{pv.value| number:2}}</td>
+                                    </tr>
+
+                                    <tr class="tr-main tr-split-top" data-index="6">
+                                        <td ng-repeat="pv in pCtrl.irrData[6].values | take:2 :pCtrl.quitYear ">{{pv.value}}</td>
+
+                                    </tr>
+
+                                    <tr class="tr-sub" data-index="7">
+                                        <td ng-repeat="pv in pCtrl.irrData[7].values | take:2 :pCtrl.quitYear ">
+                                            <div class="td-input-wrapper num-input padding-r-15" >
+                                                <input type="text" placeholder="/" data-date="" value="" ng-model="pv.value">
+                                                <span class="number-format">{{pv.value| number:2}}</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr class="tr-sub" data-index="8">
+                                        <td ng-repeat="pv in pCtrl.irrData[8].values | take:2 :pCtrl.quitYear ">{{pv.value| number:2}}</td>
+                                    </tr>
+
+                                    <tr class="tr-sub" data-index="9">
+                                        <td ng-repeat="pv in pCtrl.irrData[4].values | take:2 :pCtrl.quitYear ">
+                                            <div class="td-input-wrapper num-input padding-r-15" >
+                                                <input type="text" placeholder="/" data-date="" value="" ng-model="pv.value">
+                                                <span class="number-format">{{pv.value*100| number:2}}<i class="unit-addon">%</i></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="tr-sub" data-index="10">
+                                        <td ng-repeat="pv in pCtrl.irrData[10].values | take:2 :pCtrl.quitYear ">
+                                            <!-- <span>{{}}</span>-->
+                                            <span class=""  ng-hide="$index==0">{{pv.value*100| number:2}}<i class="unit-addon">%</i></span>
+                                            <!-- <div class="td-input-wrapper num-input padding-r-15" >
+                                                 <input type="text" placeholder="/" data-date="" value="" ng-model="pv.value">
+                                                 <span class="number-format">{{pv.value*100| number:2}}<i class="unit-addon">%</i></span>
+                                             </div>-->
+                                        </td>
+                                    </tr>
+                                    <tr class="tr-sub tr-split-bottom tr-note" data-index="11">
+                                        <td ng-repeat="pv in pCtrl.irrData[11].values | take:2 :pCtrl.quitYear ">{{pv.value| number:2}}</td>
+                                    </tr>
+
+                                    <tr class="tr-main tr-split-top" data-index="12">
+                                        <td ng-repeat="pv in pCtrl.irrData[12].values | take:2 :pCtrl.quitYear ">{{pv.value}}</td>
+                                    </tr>
+                                    <tr class="tr-sub tr-split-bottom tr-note" data-index="13">
+                                        <td ng-repeat="pv in pCtrl.irrData[13].values | take:2 :pCtrl.quitYear ">{{pv.value| number:2}}</td>
+                                    </tr>
+
+                                    <tr class="tr-main tr-main-sum tr-split" data-index="14">
+                                        <td ng-repeat="pv in pCtrl.irrData[14].values | take:2 :pCtrl.quitYear ">{{pv.value| number:2}}</td>
+                                    </tr>
+
+                                    <tr class="tr-main tr-split-top" data-index="15">
+                                        <td ng-repeat="pv in pCtrl.irrData[15].values | take:2 :pCtrl.quitYear ">{{pv.value}}</td>
+                                    </tr>
+                                    <tr class="tr-sub" data-index="16">
+                                        <td ng-repeat="pv in pCtrl.irrData[16].values | take:2 :pCtrl.quitYear ">{{pv.value| number:2}}</td>
+
+                                    </tr>
+                                    <tr class="tr-sub tr-split-bottom" data-index="17">
+                                        <td ng-repeat="pv in pCtrl.irrData[17].values | take:2 :pCtrl.quitYear ">{{pv.value| number:2}}</td>
+                                    </tr>
+
+                                    <tr class="tr-main tr-split-top" data-index="18">
+                                        <td ng-repeat="pv in pCtrl.irrData[18].values | take:2 :pCtrl.quitYear ">{{pv.value}}</td>
+                                    </tr>
+                                    <tr class="tr-sub" data-index="19">
+                                        <td ng-repeat="pv in pCtrl.irrData[19].values | take:2 :pCtrl.quitYear ">
+                                            <div class="td-input-wrapper num-input padding-r-15"  ng-hide="$index==0">
+                                                <input type="text" placeholder="/" data-date="" value="" ng-model="pv.value">
+                                                <span class="number-format">{{pv.value*100| number:2}}<i class="unit-addon">%</i></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="tr-sub" data-index="20">
+                                        <td ng-repeat="pv in pCtrl.irrData[20].values | take:2 :pCtrl.quitYear ">{{pv.value| number:2}}</td>
+                                    </tr>
+                                    <tr class="tr-sub" data-index="21">
+                                        <td ng-repeat="pv in pCtrl.irrData[21].values | take:2 :pCtrl.quitYear ">{{pv.value*100| number:2}}<i class="unit-addon">%</i></td>
+                                    </tr>
+                                    <tr class="tr-main tr-main-sum tr-split-bottom" data-index="22">
+                                        <td ng-repeat="pv in pCtrl.irrData[22].values | take:2 :pCtrl.quitYear ">{{pv.value| number:2}}</td>
+                                    </tr>
+
+                                    <tr class="tr-main tr-split-top" data-index="23">
+                                        <th ng-repeat="pv in pCtrl.irrData[23].values | take:2 :pCtrl.quitYear ">第{{pv.value}}年</th>
+                                    </tr>
+                                    <tr class="tr-sub tr-main-sum tr-split-bottom tr-note" data-index="24">
+                                        <td ng-repeat="pv in pCtrl.irrData[24].values | take:2 :pCtrl.quitYear ">{{pv.value| number:2}}</td>
+                                    </tr>
+
+                                    <tr class="tr-main tr-split-top" data-index="25">
+                                        <td ng-repeat="pv in pCtrl.irrData[25].values | take:2 :pCtrl.quitYear ">{{pv.value*100| number:2}}<i class="unit-addon">%</i></td>
+                                    </tr>
+                                    <tr class="tr-sub tr-split-bottom" data-index="26">
+                                        <td ng-repeat="pv in pCtrl.irrData[26].values | take:2 :pCtrl.quitYear ">{{pv.value| number:2}}</td>
+                                    </tr>
+
+                                    <tr class="tr-main tr-head" data-index="27">
+                                        <td ng-repeat="pv in pCtrl.irrData[27].values | take:2 :pCtrl.quitYear ">{{pv.value}}</td>
+                                    </tr>
+                                    <tr class="tr-sub tr-split-top"  data-index="28">
+                                        <td ng-repeat="pv in pCtrl.irrData[28].values | take:2 :pCtrl.quitYear ">{{pv.value}}</td>
+
+                                    </tr>
+                                    <tr class="tr-sub" data-index="29">
+                                        <td ng-repeat="pv in pCtrl.irrData[29].values | take:2 :pCtrl.quitYear ">{{pv.value}}</td>
+
+                                    </tr>
+                                    <tr class="tr-sub" data-index="30">
+                                        <td ng-repeat="pv in pCtrl.irrData[30].values | take:2 :pCtrl.quitYear ">{{pv.value}}</td>
+                                    </tr>
+
+                                    <tr class="tr-sub" data-index="31">
+                                        <td ng-repeat="pv in pCtrl.irrData[31].values | take:2 :pCtrl.quitYear ">{{pv.value}}</td>
+                                    </tr>
+
+                                    <tr class="tr-sub" data-index="32">
+                                        <td ng-repeat="pv in pCtrl.irrData[32].values | take:2 :pCtrl.quitYear "><span ng-show="$index==(pCtrl.quitYear-1)">{{pv.value | number:2}}</span></td>
+                                    </tr>
+
+                                    <tr class="tr-sub" data-index="33">
+                                        <td ng-repeat="pv in pCtrl.irrData[33].values | take:2 :pCtrl.quitYear "><span ng-show="$index==(pCtrl.quitYear-1)">{{pv.value | number:2}}</span></td>
+                                    </tr>
+
+                                    <tr class="tr-sub" data-index="34">
+                                        <td ng-repeat="pv in pCtrl.irrData[34].values | take:2 :pCtrl.quitYear "><span ng-if="$index==(pCtrl.quitYear-1)">{{pv.value | number:2}}</span></td>
+
+                                    </tr>
+
+                                    <tr class="tr-sub" data-index="35">
+                                        <td ng-repeat="pv in pCtrl.irrData[35].values | take:2 :pCtrl.quitYear ">{{pv.value | number:2}}</td>
+
+                                    </tr>
+                                    <tr class="tr-sub" data-index="36">
+                                        <td ng-repeat="pv in pCtrl.irrData[36].values | take:2 :pCtrl.quitYear ">{{pv.value*100 | number:2}}<i class="unit-addon">%</i></td>
+                                    </tr>
+                                    <tr class="tr-sub" data-index="37">
+                                        <td ng-repeat="pv in pCtrl.irrData[37].values | take:2 :pCtrl.quitYear ">{{pv.value}}</td>
+                                    </tr>
+                                    <tr class="tr-sub" data-index="38">
+                                        <td ng-repeat="pv in pCtrl.irrData[38].values | take:2 :pCtrl.quitYear ">{{pv.value}}</td>
+                                    </tr>
+                                    <tr class="tr-sub tr-split-bottom" data-index="39">
+                                        <td ng-repeat="pv in pCtrl.irrData[39].values | take:2 :pCtrl.quitYear ">{{pv.value}}</td>
+                                    </tr>
+
+                                    <tr class="tr-main tr-head"  data-index="40">
+                                        <td ng-repeat="pv in pCtrl.irrData[40].values | take:2 :pCtrl.quitYear ">{{pv.value}}</td>
+                                    </tr>
+                                    <tr class="tr-sub tr-split-top"  data-index="41">
+                                        <td ng-repeat="pv in pCtrl.irrData[41].values | take:2 :pCtrl.quitYear ">{{pv.value | number:2}}</td>
+                                    </tr>
+                                    <tr class="tr-sub" data-index="42">
+                                        <td ng-repeat="pv in pCtrl.irrData[42].values | take:2 :pCtrl.quitYear ">{{pv.value}}</td>
+                                    </tr>
+                                    <tr class="tr-sub" data-index="43">
+                                        <td ng-repeat="pv in pCtrl.irrData[43].values | take:2 :pCtrl.quitYear "><span ng-show="$index==0">{{pv.value|number:2}}</span></td>
+                                    </tr>
+                                    <tr class="tr-sub tr-split-bottom" data-index="44">
+                                        <td ng-repeat="pv in pCtrl.irrData[44].values | take:2 :pCtrl.quitYear ">{{pv.value}}</td>
+                                    </tr>
+
+                                    <tr class="tr-sub tr-split-top" data-index="45">
+                                        <td ng-repeat="pv in pCtrl.irrData[45].values | take:2 :pCtrl.quitYear ">{{pv.value | number:2}}</td>
+                                    </tr>
+
+                                    <tr class="tr-sub" data-index="46">
+                                        <td ng-repeat="pv in pCtrl.irrData[46].values | take:2 :pCtrl.quitYear "><!--{{pv.value | number:2}}--></td>
+                                    </tr>
+                                    <tr class="tr-sub"  data-index="47">
+                                        <td ng-repeat="pv in pCtrl.irrData[47].values | take:2 :pCtrl.quitYear ">
+                                            <span ng-if="($index)==(pCtrl.quitYear-1)">{{pv.value | number:2}}</span>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="tr-sub tr-split-bottom"  data-index="48">
+                                        <td ng-repeat="pv in pCtrl.irrData[48].values | take:2 :pCtrl.quitYear ">
+                                            <span ng-hide="($index)==(pCtrl.quitYear-1)">{{pv.value | number:2}}</span>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="tr-sub tr-split" data-index="49">
+                                        <td ng-repeat="pv in pCtrl.irrData[49].values | take:2 :pCtrl.quitYear ">{{pv.value | number:2}}</td>
+                                    </tr>
+                                    <tr class="tr-sub tr-split-top" data-index="50">
+                                        <td ng-repeat="pv in pCtrl.irrData[50].values | take:2 :pCtrl.quitYear ">{{pv.value | number:2}}</td>
+                                    </tr>
+                                    <tr class="tr-sub" data-index="51">
+                                        <td ng-repeat="pv in pCtrl.irrData[51].values | take:2 :pCtrl.quitYear ">{{pv.value*100 | number:2}}<i class="unit-addon">%</i></td>
+                                    </tr>
+                                    <tr class="tr-sub" data-index="52">
+                                        <td ng-repeat="pv in pCtrl.irrData[52].values | take:2 :pCtrl.quitYear ">{{pv.value}}</td>
+                                    </tr>
+                                    <tr class="tr-sub" data-index="53">
+                                        <td ng-repeat="pv in pCtrl.irrData[53].values | take:2 :pCtrl.quitYear ">{{pv.value}}</td>
+                                    </tr>
+                                    <tr class="tr-sub" data-index="54">
+                                        <td ng-repeat="pv in pCtrl.irrData[53].values | take:2 :pCtrl.quitYear ">{{pv.value}}</td>
+                                    </tr>
+
+                                    </tbody>
+                                </table>
+                            </div><!--swiper-slide-->
+                        </div><!--swiper-wrapper-->
+                        <!-- Add Scroll Bar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div><!--swiper container-->
+
+                </div>
+            </div>
+        </div><!--ys-block-->
+        <div class="block bottom-block clearfix">
+            <div class="btn-wrapper pull-right">
+                <a href="javascript:void(0)" class="btn btn-default amp-btn amp-btn-reverse ys-tips" id="btn-count" ng-click="pCtrl.count()" ng-disabled="irrForm.$invalid">计算</a>
+            </div>
+        </div>
+    </form>
+</div><!-- contentpanel -->

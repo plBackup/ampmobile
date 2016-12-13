@@ -272,6 +272,24 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
                 },
                 data: ['$q','$timeout', _timeDefer]
             }
+        },
+        {
+            name: 'datatool.irrplan',
+            url: '/irrplan',
+            views:{
+                'datatool-content': {
+                    templateUrl: './views/datatool/datatool_irr_plan.html',
+                    controller:"irrPlanController",
+                    controllerAs:"pCtrl"
+                },
+            },
+            reloadOnSearch: false,
+            resolve: {
+                irrPlanData: function(irrPlanService) {
+                    return irrPlanService.getIrrData();
+                },
+                data: ['$q','$timeout', _timeDefer]
+            }
         }
     ];
 

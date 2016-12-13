@@ -90,7 +90,7 @@ angular.module('dataTool').service('irrPlanService', ["$rootScope","$http",funct
 
     var service = {
         getIrrData: function () {
-            return $http.get('../data/data_'+$rootScope.curProject+'/irrplan.json', {cache: true}).then(function (res) {
+            return $http.get('./data/data_'+$rootScope.curProject+'/irrplan.json', {cache: true}).then(function (res) {
                 return res.data;
             });
         },
