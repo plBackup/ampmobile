@@ -139,8 +139,9 @@ dataTool.controller("dataIndexController",['$rootScope', '$scope',"dataIndexData
     function($rootScope, $scope,dataIndexData,paginatorService,$timeout,$location,$state,$filter) {
         var self=this;
         var shopData=dataIndexData.slice(1);
-
-        self.indexData=shopData;
+        $rootScope.indexData=shopData;
+        console.log($rootScope.indexData)
+        self.indexData=$rootScope.indexData;
         self.recordsNum=self.indexData.length;
         self.pageLimit=10;
         self.pageNum=Math.ceil(parseFloat(self.recordsNum)/self.pageLimit);
@@ -216,6 +217,7 @@ dataTool.controller("dataIndexController",['$rootScope', '$scope',"dataIndexData
 dataTool.controller("dataEditController",['$rootScope', '$scope','shopData',
     function($rootScope, $scope,shopData) {
         var self=this;
+        console.log($rootScope.indexData);
         console.log(shopData);
         self.form_menu={
             projects:["商业公司A","商业公司B","商业公司C","商业公司D"],
@@ -228,6 +230,21 @@ dataTool.controller("dataEditController",['$rootScope', '$scope','shopData',
         self.index="add";
         self.shopInfo={};
         console.log(shopData);
+        if(typeof shopData!=="undefined" &&shopData!=null){
+            self.index=shopData.type; //edit create;
+            if(self.index=="edit") {
+                self.shopInfo = $rootScope.indexData[shopData.shopId];
+                console.log(self.shopInfo);
+            }else if(self.index="create"){
+                self.shopInfo={
+                    rentStandard:[0],
+                    wyStandard:[0]
+                }
+            }
+        }else{
+            $state.go("datatool.rpgindex");
+        }
+
         $scope.$on("shopEdit",function(e,data){
             var editData=angular.copy(data);
             $("#rent-package-rpanel").find(".error").find("em.error-msg").remove().end().removeClass("error");
@@ -244,42 +261,10 @@ dataTool.controller("dataEditController",['$rootScope', '$scope','shopData',
                 alert("请输入正确的数据");
                 return;
             }
-
-            if(typeof self.shopInfo.shopIndex==="undefined" || self.shopInfo.shopIndex==""){
-                return;
-            }
-            if(self.index=="add"){
-                $rootScope.$broadcast("shopAdd",{
-                    index:self.index,
-                    shop:self.shopInfo
-                });
-                //amp_main.rightPanel_close();
-                //self.shopInfo={};
-                self.index="new";
-            }else if(self.index=="new"){
-                $rootScope.$broadcast("shopUpdateAdd",{
-                    index:self.index,
-                    shop:self.shopInfo
-                });
-                //amp_main.rightPanel_close();
-                //self.shopInfo={};
-                self.index="new";
-            }else{
-
-                $rootScope.$broadcast("shopUpdate",{
-                    index:self.index,
-                    shop:self.shopInfo
-                });
-                amp_main.rightPanel_close();
-                self.shopInfo={};
-                self.index="add";
-            }
-
         };
 
         self.next=function(){
-            self.index="add";
-            self.shopInfo={};
+
         };
 
         self.setModel=function(type,menu){
@@ -291,11 +276,9 @@ dataTool.controller("dataEditController",['$rootScope', '$scope','shopData',
         };
 
         self.reset=function(){
-
             self.index="add";
             self.shopInfo={
             };
-
         };
 
         /*dom */

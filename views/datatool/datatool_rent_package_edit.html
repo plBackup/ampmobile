@@ -94,9 +94,9 @@
         <div class="amp-block-title" ng-click="rCtrl.viewDetail('arrearage')">
             <h3 class="col-xs-12">租金标准<em class="em-unit">(元/m&sup2/月)</em></h3>
         </div>
-        <ul class="rpg-set-info rpg-shop-edit" >
-            <li class="col-xs-6" ng-repeat="rs in rCtrl.shopInfo.rentStandard">
-                <label>第{{$index}}年</label>
+        <ul class="rpg-set-info rpg-shop-edit clearfix">
+            <li class="col-xs-6" ng-repeat="rs in rCtrl.shopInfo.rentStandard track by $index">
+                <label>第{{$index+1}}年</label>
                 <div class="input-wrapper">
                     <input type="text" value="" ng-model="rs" required/>
                 </div>
@@ -114,9 +114,9 @@
             <div class="amp-block-title" ng-click="rCtrl.viewDetail('arrearage')">
                 <h3 class="col-xs-12">物业管理费标准<em class="em-unit">(元/m&sup2/月)</em></h3>
             </div>
-            <ul class="rpg-set-info rpg-shop-edit" >
-                <li class="col-xs-6" ng-repeat="wy in rCtrl.shopInfo.wyStandard">
-                    <label>第{{$index}}年</label>
+            <ul class="rpg-set-info rpg-shop-edit clearfix">
+                <li class="col-xs-6" ng-repeat="wy in rCtrl.shopInfo.wyStandard track by $index">
+                    <label>第{{$index+1}}年</label>
                     <div class="input-wrapper">
                         <input type="text" value="" ng-model="wy" required/>
                     </div>
