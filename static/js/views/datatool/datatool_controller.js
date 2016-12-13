@@ -250,7 +250,7 @@ dataTool.controller("rpgResultController",['$rootScope', '$scope',"dataIndexData
 
         self.setSelect=function(type){
 
-            console.log("---------------**")
+            console.log("---------------**");
             console.log(self.shopInfo);
             console.log(self.shopInfoCopy);
             switch(type){
