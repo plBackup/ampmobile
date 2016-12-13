@@ -214,26 +214,27 @@ dataTool.controller("dataIndexController",['$rootScope', '$scope',"dataIndexData
 
     }]);
 
-dataTool.controller("dataEditController",['$rootScope', '$scope','shopData',
-    function($rootScope, $scope,shopData) {
+dataTool.controller("dataEditController",['$rootScope', '$scope','$state','SharedState','shopData',
+    function($rootScope, $scope,$state,SharedState,shopData) {
         var self=this;
-        console.log($rootScope.indexData);
-        console.log(shopData);
         self.form_menu={
             projects:["商业公司A","商业公司B","商业公司C","商业公司D"],
-            floors:["B1","F1","F2","F3","F4","F5","F6"],
-            positions:["主入口","主立面外墙","次入口","主通道","侧面面街","后街"],
+            floor:["B1","F1","F2","F3","F4","F5","F6"],
+            position:["主入口","主立面外墙","次入口","主通道","侧面面街","后街"],
             form:["超市","影院","服装","餐饮","娱乐","配套","儿童","其他"],
             property:["自持","销售","销售返租"],
             type:["MAll","商业街"]
         };
         self.index="add";
         self.shopInfo={};
-        console.log(shopData);
+
         if(typeof shopData!=="undefined" &&shopData!=null){
             self.index=shopData.type; //edit create;
             if(self.index=="edit") {
-                self.shopInfo = $rootScope.indexData[shopData.shopId];
+                if(typeof $rootScope.indexData=="undefined"){
+                    $state.go("datatool.rpgindex");
+                }
+                self.shopInfo = angular.copy($rootScope.indexData[shopData.shopId]);
                 console.log(self.shopInfo);
             }else if(self.index="create"){
                 self.shopInfo={
@@ -255,11 +256,72 @@ dataTool.controller("dataEditController",['$rootScope', '$scope','shopData',
             console.log(editData.shopData);
             self.shopInfo=editData.shopData;
         });
+        //rCtrl.setSelect('position')
+
+        self.selectType=null;
+        self.selectTypeName=null;
+        self.shopInfoCopy=null;
+        self.setSelect=function(type){
+            self.shopInfoCopy=angular.copy(self.shopInfo);
+            console.log("---------------**")
+            console.log(self.shopInfo);
+            console.log(self.shopInfoCopy);
+            switch(type){
+                case 'position':
+                    self.selectType="position";
+                    self.selectTypeName="位置";
+                    break;
+                case 'type':
+                    self.selectType='type';
+                    self.selectTypeName="物业类型";
+                    break;
+                case 'form':
+                    self.selectType='form';
+                    self.selectTypeName="业态";
+                    break;
+                case 'property':
+                    self.selectType="property";
+                    self.selectTypeName="产权性质";
+                    break;
+                default:
+                    return
+            }
+            SharedState.turnOn("uiSidebarRight");
+        };
+
+        self.setModel=function(type,menu){
+            console.log(self.shopInfoCopy);
+            console.log(type);
+            console.log(menu);
+            self.shopInfoCopy[type]=menu;
+        };
+
+        self.isActive=function(menu,model){
+            return menu==model;
+        };
+
+        self.reset=function(type){
+            self.shopInfoCopy[type]=angular.copy(self.shopInfo[type]);
+        };
+
+        self.saveSelect=function(disabled){
+            if(disabled){
+                alert("请输入有效数据");
+                return;
+            }
+            self.shopInfo =angular.copy(self.shopInfoCopy);
+            self.shopInfoCopy=null;
+            SharedState.turnOff("uiSidebarRight");
+        };
 
         self.save=function(){
             if($scope.shopInfoForm.$invalid){
                 alert("请输入正确的数据");
                 return;
+            }else{
+                $rootScope.indexData[shopData.shopId]=self.shopInfo;
+                console.log($rootScope.indexData);
+                $state.go("datatool.rpgindex");
             }
         };
 
@@ -267,19 +329,7 @@ dataTool.controller("dataEditController",['$rootScope', '$scope','shopData',
 
         };
 
-        self.setModel=function(type,menu){
-            self.shopInfo[type]=menu;
-        };
 
-        self.isActive=function(menu,model){
-            return menu==model;
-        };
-
-        self.reset=function(){
-            self.index="add";
-            self.shopInfo={
-            };
-        };
 
         /*dom */
         function _checkErrot($e){
@@ -810,8 +860,6 @@ dataTool.controller("irrPlanController",['$rootScope', '$scope',"irrPlanData","$
                 }
             );
         });
-
-
 
         irr_plan.init();
         self.count();
