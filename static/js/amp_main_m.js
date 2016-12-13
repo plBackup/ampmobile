@@ -177,6 +177,25 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
             }
         },
         {
+            name: 'datatool.rpgresult',
+            url: '/rpgresult',
+            views:{
+                'datatool-content': {
+                    templateUrl: './views/datatool/datatool_rpg_result.html',
+                    controller:"rpgResultController",
+                    controllerAs:"dCtrl"
+                },
+            },
+            reloadOnSearch: false,
+            resolve: {
+                dataIndexData:function(dataIndexService){
+                    return dataIndexService.getIndexData();
+                },
+                data: ['$q','$timeout', _timeDefer]
+            }
+        },
+
+        {
             name: 'datatool.shopedit',
             url: '/shopedit/{shopId}',
             views:{
