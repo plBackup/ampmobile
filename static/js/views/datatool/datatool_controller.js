@@ -146,6 +146,8 @@ var rpgSet_table=(function($,rpgSet_table){
             freeMode: true,
             scrollbarHide:true,
             watchSlidesProgress:true,
+            observer:true,//修改swiper自己或子元素时，自动初始化swiper
+            observeParents:true,//修改swiper的父元素时，自动初始化swiper
         });
         rpgSet_table_main_swiper = new Swiper('#rpg-set-main-table', {
             scrollbar: '.swiper-scrollbar',
@@ -153,7 +155,9 @@ var rpgSet_table=(function($,rpgSet_table){
             slidesPerView: 'auto',
             //mousewheelControl: true,
             freeMode: true,
-            scrollbarHide:false
+            scrollbarHide:false,
+            observer:true,//修改swiper自己或子元素时，自动初始化swiper
+            observeParents:true,//修改swiper的父元素时，自动初始化swiper
         });
         rpgSet_table_head_swiper.params.control = rpgSet_table_main_swiper;
         rpgSet_table_main_swiper.params.control = rpgSet_table_head_swiper;
@@ -170,6 +174,8 @@ var rpgSet_table=(function($,rpgSet_table){
             freeMode: true,
             scrollbarHide:false,
             watchSlidesProgress:true,
+            observer:true,//修改swiper自己或子元素时，自动初始化swiper
+            observeParents:true,//修改swiper的父元素时，自动初始化swiper
         });
 
         //这里把swiper实例加入全局的垃圾回收站
@@ -181,13 +187,15 @@ var rpgSet_table=(function($,rpgSet_table){
             slidesPerView: 'auto',
             //mousewheelControl: true,
             freeMode: true,
-            scrollbarHide:false
+            scrollbarHide:false,
+            observer:true,//修改swiper自己或子元素时，自动初始化swiper
+            observeParents:true,//修改swiper的父元素时，自动初始化swiper
         });
 
         //这里把swiper实例加入全局的垃圾回收站
         //ampApp.collector.add_swiper(swiper_rent_update_table);
 
-        pin=$(".ys-table-fixed-top").pin({
+        /*pin=$(".ys-table-fixed-top").pin({
             containerSelector: "#rpg-set-table-wrapper",
             padding: {top: 88, bottom: 50}
         });
@@ -210,7 +218,7 @@ var rpgSet_table=(function($,rpgSet_table){
                 },200);
             }
 
-        });
+        });*/
 
         rpgSet_table.swipers={
             rpgSet_table_head_swiper: rpgSet_table_head_swiper,
@@ -630,8 +638,8 @@ dataTool.controller("dataSetIndexController",['$rootScope', '$scope','$timeout',
 
     }]);
 
-dataTool.controller("dataSetController",['$rootScope', '$scope',"$location","rpgSetData",
-    function($rootScope, $scope,$location,rpgSetData) {
+dataTool.controller("dataSetController",['$rootScope', '$scope',"$location","$timeout","rpgSetData",
+    function($rootScope, $scope,$location,$timeout,rpgSetData) {
         var self=this;
         self.rpgSetData=rpgSetData[0];
         //self.setData=rpgSetData[0].values;
@@ -918,9 +926,10 @@ dataTool.controller("dataSetController",['$rootScope', '$scope',"$location","rpg
         });
 
         //dataSetView.init();
-        rpgSet_table.init();
+        $timeout(function(){
+            rpgSet_table.init();
+        },390);
 
-        $(".ys-tips").tooltip();
         $scope.$on("$destroy", function() {
             rpgSet_table.destroy();
         })

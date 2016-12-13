@@ -23,3 +23,10 @@ th{font-weight: normal;}
 
 .td-opt{}
 .td-opt>button{display: inline-block;width:32px;height:32px;background-color:#f3f3f3;border:0;}
+.amp-table-wrapper-swiper .swiper-slide {
+    font-size: 14px;
+    width: auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+}
