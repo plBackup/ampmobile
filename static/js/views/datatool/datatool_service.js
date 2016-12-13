@@ -102,7 +102,7 @@ angular.module('dataTool').service('dataSimChart', ["$rootScope","$http",functio
 
     var service = {
         getSimChartData: function () {
-            return $http.get('../data/data_'+$rootScope.curProject+'/datasim_chart.json', {cache: true}).then(function (res) {
+            return $http.get('./data/data_'+$rootScope.curProject+'/datasim_chart.json', {cache: true}).then(function (res) {
                 return res.data;
             });
         },

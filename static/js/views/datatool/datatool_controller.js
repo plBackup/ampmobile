@@ -1775,8 +1775,8 @@ dataTool.controller("dataFeeController",['$rootScope','$scope','$timeout','manag
 }]);
 
 
-dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simChartData","$location","$timeout",
-    function($rootScope, $scope,simData,simChartData,$location,$timeout) {
+dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simChartData","$location","$timeout","$state",
+    function($rootScope, $scope,simData,simChartData,$location,$timeout,$state) {
         var self=this;
         if(typeof simChartData==="undefined"){
             self.shops=[];
@@ -1785,6 +1785,14 @@ dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simCh
             self.shops=simData.slice(1);
             self.index=0;
         }
+        self.floor=null;
+        self.floors=["B2","B1","1F","2F","3F","4F","5F"];
+
+        self.setFloor=function(floor){
+            $("#ys-svg").find("svg").remove();
+            add_svg(floor);
+            self.floor=floor;
+        };
 
         self.form_menu={
             form:["超市","影院","服装","餐饮","娱乐","配套","儿童","其他"],
@@ -1830,7 +1838,7 @@ dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simCh
                  amp_main.loading_show();
                  $timeout(function(){
                      amp_main.loading_hide();
-                     $location.path("irrplan");
+                     $state.go("datatool.rpgresult")
                  },1000);
              }
          };
@@ -1870,11 +1878,6 @@ dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simCh
         amp_datePicker.dateSelector();
         var iscroll_init=function(){
             var h=parseInt($(window).height());
-
-            $(".col-xs-6").css({
-                "overflow-y":"hidden",
-                "height":(h-88-54)+"px"
-            });
 
             var datasim_floor_scroll = new IScroll('#datatool-sim-floor-table', {
                 mouseWheel: true,
@@ -1936,8 +1939,13 @@ dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simCh
 
         };
 
-        var add_svg=function(){
-            $.get("svg.svg",function(data,status){
+        var add_svg=function(floor){
+            if(floor=="b2"){
+                var file="floors.svg"
+            }else{
+                file="svg.svg"
+            }
+            $.get(file,function(data,status){
                 var importedSVGRootElement = document.importNode(data.documentElement,true);
                 $("#ys-svg").append(importedSVGRootElement);
                 svg_editor.refresh();
@@ -1946,7 +1954,7 @@ dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simCh
             });
         };
         iscroll_init();
-        add_svg();
+        add_svg(self.floor);
 
 
 
@@ -1983,8 +1991,6 @@ dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simCh
         $scope.$on("$destroy", function() {
             amp_datePicker.destroy();
         });
-        $(".ys-tips").tooltip();
-        amp_main.leftPanel_update();
     }]);
 
 

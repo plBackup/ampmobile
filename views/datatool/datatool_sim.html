@@ -1,0 +1,316 @@
+<div class="amp-content-panel" id="datatool-sim">
+
+    <div class="ys-block">
+
+        <div class="clearfix">
+            <div class="col-xs-12"  id="datatool-sim-floor-table">
+                <div  style="width:100%;">
+                            <div class="ys-mainpanel-inner">
+                                <!--svg here-->
+                                <svg version="1.1" id="ys-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="300px" viewBox="0 0 800 1180" preserveAspectRetio="xMidYMin meet">
+                                        <defs>
+                                            <style type="text/css">
+                                                .cur-select{
+                                                    stroke:black;strokeWidth: 5;fill:red;stroke-dasharray:12;fill-opacity:0.8;color:red;cursor:pointer;
+                                                }
+                                            </style>
+                                        </defs>
+                                </svg>
+                                <!--svg here-->
+                            </div>
+                    <!--  <div class="swiper-scrollbar"></div>-->
+                </div><!--swiper container-->
+                <div class="amp-svg-opt">
+                   <ul class="svg-floor-select">
+                       <li ng-repeat="floor in sCtrl.floors">
+                           <button class="btn btn-floor-select" ng-class="{'active':floor==sCtrl.floor}" ng-click="sCtrl.setFloor(floor)">
+                                {{floor}}
+                           </button>
+                       </li>
+                   </ul>
+                </div><!--amp-svg-opt-->
+            </div>
+            <div class="col-xs-6"  id="datatool-sim-main-table">
+                <form name="dataSimForm" novalidate>
+                <div class="" style="width:100%;">
+
+                            <div class="table-wrapper">
+                                <table class="table table-no-bordered amp-table">
+                                    <tbody>
+                                    <tr>
+                                        <th><span>铺位号</span></th>
+                                        <td>
+                                            <div class="td-input-wrapper padding-r-15 text-input" >
+                                                <input type="text" placeholder="" value="" ng-model="sCtrl.shopInfo.shopIndex">
+                                                <!--<span class="number-format"></span>%-->
+                                            </div>
+                                        </td>
+                                        <td><span>套内面积:{{sCtrl.shopInfo.indoorArea|number:2}}m&sup2</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th><span>业态</span></th>
+                                        <td>
+                                            <div class="td-input-wrapper padding-r-15 select-input" >
+                                                <input type="text" value="" hidden ng-model="sCtrl.shopInfo.form"/>
+                                                <div class="dropdown">
+                                                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                                        <em>{{sCtrl.shopInfo.form | default:"请选择"}}</em><span class="ys-icon ys-icon-dropdown"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                                                        <li ng-class="{'active':sCtrl.isActive(menu,sCtrl.shopInfo.form)}" role="presentation"
+                                                            ng-repeat="menu in sCtrl.form_menu.form"><a role="menuitem" ng-click="sCtrl.setModel('form',menu)">{{menu}}</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="table-wrapper">
+                                <table class="table table-no-bordered amp-table">
+                                    <thead>
+                                    <th><span></span></th>
+                                    <th><span>租金包(元/m&sup2)/月</span></th>
+                                    <th><span>物业管理费</span></th>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th><span>2016</span></th>
+                                        <td>
+                                            <div class="td-input-wrapper padding-r-15 num-input">
+                                                <input type="number" placeholder="" value="" ng-model="sCtrl.shopInfo.rentStandard[0]">
+                                                <span class="number-format">{{sCtrl.shopInfo.rentStandard[0]|number:2}}</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-input-wrapper padding-r-15 num-input">
+                                                <input type="number" placeholder="" value="" ng-model="sCtrl.shopInfo.wyStandard[0]">
+                                                <span class="number-format">{{sCtrl.shopInfo.wyStandard[0]|number:2}}</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><span>2017</span></th>
+                                        <td>
+                                            <div class="td-input-wrapper padding-r-15 num-input">
+                                                <input type="number" placeholder="" value="" ng-model="sCtrl.shopInfo.rentStandard[1]">
+                                                <span class="number-format">{{sCtrl.shopInfo.rentStandard[1]|number:2}}</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-input-wrapper padding-r-15 num-input">
+                                                <input type="number" placeholder="" value="" ng-model="sCtrl.shopInfo.wyStandard[1]">
+                                                <span class="number-format">{{sCtrl.shopInfo.wyStandard[1]|number:2}}</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><span>2018</span></th>
+                                        <td>
+                                            <div class="td-input-wrapper padding-r-15 num-input">
+                                                <input type="number" placeholder="" value="" ng-model="sCtrl.shopInfo.rentStandard[2]">
+                                                <span class="number-format">{{sCtrl.shopInfo.rentStandard[2]|number:2}}</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-input-wrapper padding-r-15 num-input">
+                                                <input type="number" placeholder="" value="" ng-model="sCtrl.shopInfo.wyStandard[2]">
+                                                <span class="number-format">{{sCtrl.shopInfo.wyStandard[2]|number:2}}</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><span>2019</span></th>
+                                        <td>
+                                            <div class="td-input-wrapper padding-r-15 num-input">
+                                                <input type="number" placeholder="" value="" ng-model="sCtrl.shopInfo.rentStandard[3]">
+                                                <span class="number-format">{{sCtrl.shopInfo.rentStandard[3]|number:2}}</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-input-wrapper padding-r-15 num-input">
+                                                <input type="number" placeholder="" value="" ng-model="sCtrl.shopInfo.wyStandard[3]">
+                                                <span class="number-format">{{sCtrl.shopInfo.wyStandard[3]|number:2}}</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><span>2020</span></th>
+                                        <td>
+                                            <div class="td-input-wrapper padding-r-15 num-input">
+                                                <input type="number" placeholder="" value="" ng-model="sCtrl.shopInfo.rentStandard[4]">
+                                                <span class="number-format">{{sCtrl.shopInfo.rentStandard[4]|number:2}}</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-input-wrapper padding-r-15 num-input">
+                                                <input type="number" placeholder="" value="" ng-model="sCtrl.shopInfo.wyStandard[4]">
+                                                <span class="number-format">{{sCtrl.shopInfo.wyStandard[4]|number:2}}</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="table-wrapper">
+                                <table class="table table-no-bordered amp-table">
+                                    <colgroup>
+                                        <col width="130px" />
+                                        <col />
+                                        <col width="130px" />
+                                        <col />
+                                    </colgroup>
+                                    <tbody>
+                                    <tr>
+                                        <th><span>商家</span></th>
+                                        <td colspan="2">
+                                            <div class="td-input-wrapper padding-r-15 text-input" style="">
+                                                <input type="text" placeholder="" value="" ng-model="sCtrl.shopInfo.shopName">
+                                                <!--<span class="number-format"></span>%-->
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="tr-date-range" id="daterange">
+                                        <th><span>合同开始</span></th>
+                                        <td>
+                                            <div class="td-input-wrapper padding-r-15 date-input" >
+                                                <input type="text" placeholder="" value="" id="date-range-filter-start" readonly ng-model="sCtrl.shopInfo.startDate" id="date-range-filter-start">
+                                                <!--<span class="number-format"></span>%-->
+                                            </div>
+                                        </td>
+                                        <th><span>结束时间</span></th>
+                                        <td>
+                                            <div class="td-input-wrapper padding-r-15 date-input" >
+                                                <input type="text" placeholder="" value="" id="date-range-filter-end" readonly ng-model="sCtrl.shopInfo.endDate" id="date-range-filter-end">
+                                                <!--<span class="number-format"></span>%-->
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><span>平均租金(元/m&sup2/月)</span></th>
+                                        <td>
+                                            <div class="td-input-wrapper padding-r-15 num-input" >
+                                                <input type="number" placeholder="" value="" ng-model="sCtrl.shopInfo.rentAvg">
+                                                <span class="number-format" >{{sCtrl.shopInfo.rentAvg|number:2}}</span>
+                                            </div>
+                                        </td>
+                                        <th><span>免租期(月)</span></th>
+                                        <td>
+                                            <div class="td-input-wrapper padding-r-15 num-input" >
+                                                <input type="number" placeholder="" value=""  ng-model="sCtrl.shopInfo.rentFree">
+                                                <span class="number-format" >{{sCtrl.shopInfo.rentAvg|number:0}}</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><span>租金总计(元)</span></th>
+                                        <td>
+                                            <div class="td-input-wrapper padding-r-15 num-input" >
+                                                <input type="number" placeholder="" value="" ng-model="sCtrl.shopInfo.rentCount">
+                                                <span class="number-format">{{sCtrl.shopInfo.rentCount|number:2}}</span>
+                                            </div>
+                                        </td>
+                                        <th><span>物管费总计(元)</span></th>
+                                        <td>
+                                            <div class="td-input-wrapper padding-r-15 num-input" >
+                                                <input type="number" placeholder="" value="" ng-model="sCtrl.shopInfo.manageCount">
+                                                <span class="number-format">{{sCtrl.shopInfo.manageCount|number:2}}</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><span>租金起记日期</span></th>
+                                        <td >
+                                            <div class="td-input-wrapper padding-r-15 date-input" id="datepicker">
+                                                <input type="text" placeholder="" value="" id="date-rent" readonly ng-model="sCtrl.shopInfo.rentDate">
+                                                <!--<span class="number-format"></span>%-->
+                                            </div>
+                                        </td>
+                                        <th><span>月销售额</span></th>
+                                        <td>
+                                            <div class="td-input-wrapper padding-r-15 num-input" >
+                                                <input type="number" placeholder="" value="" ng-model="sCtrl.shopInfo.sales">
+                                                <span class="number-format">{{sCtrl.shopInfo.sales|number:2}}</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><span>工程改造预算</span></th>
+                                        <td>
+                                            <div class="td-input-wrapper padding-r-15 num-input" >
+                                                <input type="number" placeholder="" value="" ng-model="sCtrl.shopInfo.budget">
+                                                <span class="number-format">{{sCtrl.shopInfo.budget|number:2}}</span>
+                                            </div>
+                                        </td>
+                                        <th><span>租金方式</span></th>
+                                        <td>
+                                            <div class="td-input-wrapper padding-r-15 select-input" >
+                                                <input type="text" value="" hidden ng-model="sCtrl.shopInfo.property"/>
+                                                <div class="dropdown">
+                                                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                                        <em>{{sCtrl.shopInfo.property | default:"请选择"}}</em><span class="ys-icon ys-icon-dropdown"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                                                        <li ng-class="{'active':sCtrl.isActive(menu,sCtrl.shopInfo.property)}" role="presentation" ng-repeat="menu in sCtrl.form_menu.property"><a role="menuitem" ng-click="sCtrl.setModel('property',menu)">{{menu}}</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th><span>付款时间</span></th>
+                                        <td>
+                                            <div class="td-input-wrapper padding-r-15 select-input" >
+                                                <input type="text" value="" hidden ng-model="sCtrl.shopInfo.payRange"/>
+                                                <div class="dropdown">
+                                                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                                        <em>{{sCtrl.shopInfo.payRange | default:"请选择"}}</em><span class="ys-icon ys-icon-dropdown"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                                                        <li ng-class="{'active':sCtrl.isActive(menu,sCtrl.shopInfo.payRange)}" role="presentation" ng-repeat="menu in sCtrl.form_menu.payRange"><a role="menuitem" ng-click="sCtrl.setModel('payRange',menu)">{{menu}}</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="chart-wrapper" id="chart-rpg-wrapper" style="padding-left:30px;padding-right:0;">
+                                <!--<em class="chart-axis-info chart-axis-y-info">万元</em>-->
+                                <!--<div id="chart-rpg" style="height:310px;"></div>-->
+                                <div id="chart-rpg" style="height:310px;"
+                                     sim-chart chart-data="sCtrl.chartData"></div>
+                                <div class="chart-legend">
+                                    <span><em class="color-label" style="background-color:#18b0e2;"></em><i class="name">应收</i></span>
+                                    <span><em class="color-label" style="background-color:#ea7444;"></em><i class="name">实收</i></span>
+                                    <span><em class="color-label" style="background-color:#1abd9d;"></em><i class="name">租金包</i></span>
+                                </div>
+                            </div>
+                            <div class="block bottom-block bottom-block-fixed clearfix">
+                                <!--<div class="clearfix">
+                                    <span class="amp-tipsnote" style="position: relative;float:right;background-color:transparent;margin-right:16px;"><em class="ys-amp-icon ys-icon-tips ys-icon-tips-hover" style="left:5px;margin-top:-11px;"></em>体验版数据为模拟数据，请勿引用，可提供数据整合服务</span>
+
+                                </div>-->
+                                 <div class="btn-wrapper pull-right">
+                                    <a  class="btn btn-default amp-btn ys-tips" id="btn-go" ng-click="sCtrl.checkReturn()" data-toggle="tooltip" data-placement="top"  title="我们将于12月15日开放使用" ng-disabled="dataSimForm.$invalid">查看回报</a>
+                                    <a  class="btn btn-default amp-btn amp-btn-reverse ys-tips" id="btn-dismiss" ng-click="sCtrl.dismiss()" data-toggle="tooltip" data-placement="top"  title="我们将于12月15日开放使用">解约</a>
+
+
+                                </div>
+                            </div>
+                    <!--<div class="swiper-scrollbar"></div>-->
+                </div><!--swiper container-->
+                </form>
+            </div>
+        </div>
+    </div><!--ys-block-->
+
+</div><!-- contentpanel -->

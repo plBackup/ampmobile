@@ -274,6 +274,26 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
             }
         },
         {
+            name: 'datasim',
+            url: '/datasim',
+            views:{
+                'content': {
+                    templateUrl: './views/datatools/datatool_sim.html',
+                    controller:"dataSimController",
+                    controllerAs:"sCtrl"
+                },
+            },
+            resolve: {
+                simData:function(dataIndexService){
+                    return dataIndexService.getIndexData();
+                },
+                simChartData:function(dataSimChart){
+                    return dataSimChart.getSimChartData();
+                },
+                data: ['$q','$timeout', _timeDefer]
+            }
+        }, //state
+        {
             name: 'datatool.irrplan',
             url: '/irrplan',
             views:{
