@@ -1,8 +1,13 @@
 ampApp.controller("mgt-analysis-index-header-controller",["$scope","$http","$rootScope",function($scope,$http,$rootScope){
 
 
+    var currentState = null;
+
     /* ======================================== 监听广播事件 ======================================== */
     $scope.$on("$destroy",function(){destroy();});
+
+    $scope.$on("$stateChangeSuccess",function(evt,toState,toParams,fromState,formParams){
+    });
 
     /* ======================================== 初始化页面 ======================================== */
     var container = null;
@@ -15,14 +20,14 @@ ampApp.controller("mgt-analysis-index-header-controller",["$scope","$http","$roo
         container.on("click","a.amp-add-btn",function(e){
             e.stopPropagation();
             e.preventDefault();
-            container.toggleClass("show-menu");
+
+            toggleMgtAnalysisMenuList();
         });
 
-        container.on("click",".menu-item-list a",function(e){
-            e.stopPropagation();
-            e.preventDefault();
-            container.removeClass("show-menu");
-        });
+
+
+
+
     }
 
     /* ======================================== common methods ======================================== */

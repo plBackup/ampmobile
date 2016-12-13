@@ -1,0 +1,152 @@
+#passenger-flow-main{position:relative}
+
+#passenger-flow-main .scrollable{top:51px;height:auto;}
+#passenger-flow-main .scrollable-content{padding:0;}
+
+
+#passenger-flow-main .passenger-flow-nav-bar{padding:0 50px;border-bottom:1px solid #dae2e7;}
+#passenger-flow-main .passenger-flow-nav-bar li{
+}
+#passenger-flow-main .passenger-flow-nav-bar li a{
+    display:block;
+    width:50px;
+    height:40px;
+    line-height:38px;
+    text-align: center;
+    color:#737f8c;
+    font-size:12px;
+    border-bottom:2px solid transparent;
+    margin:auto;
+}
+#passenger-flow-main .passenger-flow-nav-bar li a.active{
+    color:#5ab46d;
+    border-bottom:2px solid #5ab46d;
+}
+#passenger-flow-main .grey-bar{
+    height:10px;
+    background-color:#f2f5f7;
+}
+
+/* ======================================== passenger-flow-info ======================================== */
+#passenger-flow-main .passenger-flow-info{border-bottom:10px solid #f2f5f7;}
+#passenger-flow-main .passenger-flow-info .swiper-pagination-bullet-active{background-color:#58b56f;}
+#passenger-flow-main .info-segment-list{padding-bottom:40px;}
+#passenger-flow-main .info-segment-list .info-segment{
+    border-bottom:1px solid #dae2e7;
+}
+#passenger-flow-main .info-segment-list .info-segment:last-child{border-bottom:none;}
+
+#passenger-flow-main .info-segment .label-group{padding:15px;}
+#passenger-flow-main .info-segment .label-group em{display:block;height:20px;line-height: 20px;font-size:12px;color:#8592a3;}
+#passenger-flow-main .info-segment .label-group div{height:48px;line-height:48px;font-size:36px;color:#5ab46d;}
+
+#passenger-flow-main .info-segment .label-item-list{padding:27px 0;}
+#passenger-flow-main .info-segment .label-item-list li{
+    width:25%;
+    height:44px;
+    float:left;
+    border-right:1px solid #dae2e7;
+    padding-left:15px;
+}
+#passenger-flow-main .info-segment .label-item-list li:last-child{border-right:none;}
+
+#passenger-flow-main .info-segment .label-item-list li>em{
+    display:block;
+    height:16px;
+    line-height: 16px;
+    font-size:12px;
+    color:#8592a3;
+}
+
+#passenger-flow-main .info-segment .label-item-list li div{
+    display:block;
+    height:28px;
+    line-height: 28px;
+    font-size:12px;
+    color:#333;
+}
+#passenger-flow-main .info-segment .label-item-list li div>span{
+    font-size:18px;
+}
+
+#passenger-flow-main .info-segment .label-item-list .amp-arrow-up{
+    display:inline-block;
+    width:8px;
+    height:12px;
+    background:url(../../../../images/arrow_ins_up@2x.png) no-repeat;
+    background-size:contain;
+    margin-left:2px;
+}
+
+#passenger-flow-main .info-segment .label-item-list .amp-arrow-down{
+    display:inline-block;
+    width:8px;
+    height:12px;
+    background:url(../../../../images/arrow_ins_down@2x.png) no-repeat;
+    background-size:contain;
+    margin-left:2px;
+}
+
+/* ======================================== chart-group ======================================== */
+#passenger-flow-main .chart-group .chart-item{
+    width:50%;
+    float:left;
+    text-align: center;
+    padding-top:20px;
+}
+#passenger-flow-main .chart-item .chart-content{height:120px;}
+#passenger-flow-main .chart-item .chart-content>div.pie-text{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: block;
+    height:120px;
+    margin: auto;
+    line-height: 120px;
+    z-index: 9;
+    text-align: center;
+    font-size:18px;
+    cursor:pointer;
+}
+#passenger-flow-main .chart-item .chart-footer{padding-top:5px;}
+#passenger-flow-main .chart-item .chart-footer em{height:18px;line-height: 18px;font-size:12px;color: #8592a3;}
+#passenger-flow-main .chart-item .chart-footer div{height:20px;line-height: 20px;}
+
+/* ======================================== passenger-flow-bar-chart ======================================== */
+#passenger-flow-main .passenger-flow-bar-chart .swiper-slide{width: auto;}
+#passenger-flow-main .passenger-flow-bar-chart .chart-content{
+    width:800px;
+    height:200px;
+}
+#passenger-flow-main .passenger-flow-bar-chart .chart-legend{
+    width:190px;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin:auto;
+}
+#passenger-flow-main .passenger-flow-bar-chart .chart-legend li{
+    position:relative;
+    width:33.3333%;
+    height:28px;
+    line-height: 28px;
+    font-size:12px;
+    color: #8592a3;
+    float:left;
+    padding-left:15px;
+}
+#passenger-flow-main .passenger-flow-bar-chart .chart-legend li:before{
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    width:8px;
+    height:8px;
+    margin:auto;
+}
+#passenger-flow-main .passenger-flow-bar-chart .chart-legend li:nth-child(1):before{background-color:#5AB46E;}
+#passenger-flow-main .passenger-flow-bar-chart .chart-legend li:nth-child(2):before{background-color:#5CD3F5;}
+#passenger-flow-main .passenger-flow-bar-chart .chart-legend li:nth-child(3):before{background-color:#038BD9;}
+

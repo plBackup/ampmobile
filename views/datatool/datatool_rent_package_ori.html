@@ -1,0 +1,125 @@
+<div ui-content-for="dataToolNav">
+    <div class="navbar-brand navbar-brand-center">
+        铺位信息
+    </div>
+    <div class="btn-group pull-left">
+        <div ui-toggle="uiSidebarLeft" class="btn sidebar-toggle">
+            <i class="navOpt-icon navOpt-icon-back"></i>
+        </div>
+    </div>
+    <div class="btn-group pull-right" ui-yield-to="navbarAction">
+        <div ui-toggle="uiSidebarRight" class="btn sidebar-right-toggle">
+            <i class="navOpt-icon navOpt-icon-filter"></i>
+        </div>
+    </div>
+</div>
+
+
+<div class="amp-content-panel" id="rent-package">
+    <div class="amp-block">
+        <div class="amp-table-wrapper-swiper">
+            <div class="ys-table-fixed-top" style="padding-left:98px;">
+                <div class="ys-table-static ys-table-static-left" style="width:98px;">
+                    <table class="table table-no-bordered amp-table table-hover table-header-fixed" style="width:100%;">
+                        <thead>
+                        <tr>
+                            <th>铺位号</th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+
+                <div class="swiper-container" style="width:100%;">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <table class="table table-no-bordered amp-table">
+                                <colgroup>
+                                    <col width="18%">
+                                    <col width="18%">
+                                    <col width="16%">
+                                    <col width="16%">
+                                    <col width="16%">
+                                    <col width="16%">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th>楼层</th>
+                                    <th>建筑面积（m&sup2）</th>
+                                    <th>套内面积（m&sup2）</th>
+                                    <th>业态</th>
+                                    <th>产权性质</th>
+                                    <th class="text-right" style="text-align: right;">租金标准</th>
+                                </tr>
+                                </thead>
+                            </table>
+                        </div><!--swiper-slide-->
+                    </div><!--swiper-wrapper-->
+                    <!-- Add Scroll Bar -->
+                    <!-- <div class="swiper-scrollbar"></div>-->
+                </div><!--swiper container-->
+            </div>
+            <div class="ys-table-main" style="padding-left:98px;">
+                <div class="ys-table-static ys-table-static-left" style="width:98px;">
+                    <table class="table amp-table table-hover table-header-fixed">
+                        <tbody>
+                        <tr ng-click="dCtrl.shopEdit($index,shop)" ng-repeat="shop in dCtrl.indexData| take : dCtrl.paginator.currentOffset : dCtrl.pageLimit  track by $index" class="data-index data-index-{{$index}}">
+                            <td><span title="{{shop.shopIndex}}">{{shop.shopIndex}}</span></td>
+                            <!--ui-sref="people.person({ personId: person.id })"-->
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="swiper-container" style="width:100%;">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <table class="table amp-table table-hover table-header-fixed">
+                                <colgroup>
+                                    <col width="19%">
+                                    <col width="15%">
+                                    <col width="15%">
+                                    <col width="14%">
+                                    <col width="14%">
+                                    <col width="10%">
+                                    <col width="13%">
+                                </colgroup>
+                                <tbody>
+                                <tr ng-click="dCtrl.shopEdit($index,shop)" ng-repeat="shop in dCtrl.indexData| take : dCtrl.paginator.currentOffset : dCtrl.pageLimit  track by $index" class="data-index data-index-{{$index}}">
+                                    <td>{{shop.floor}}</td>
+                                    <td>{{shop.floorArea | number:2}}</td>
+                                    <td>{{shop.indoorArea | number:2}}</td>
+                                    <td>{{shop.form}}</td>
+                                    <td>{{shop.property}}</td>
+                                    <td class="text-right"><i>{{shop.rentStandard[0] | number:2}}</i>元/m&sup2/月</td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                        </div><!--swiper-slide-->
+                    </div><!--swiper-wrapper-->
+                    <!-- Add Scroll Bar -->
+                    <div class="swiper-scrollbar"></div>
+                </div><!--swiper container-->
+
+
+            </div>
+
+        </div>
+        <div class="amp-pagination clearfix">
+            <div class="btn-wrapper pull-right" >
+                <span style="margin-right:10px;"><em class="page-index-bottom">共<i>{{dCtrl.recordsNum}}</i>条记录，当前第<i>{{dCtrl.paginator.curPageIndex}}</i>/<i>{{dCtrl.pageNum}}</i>页</em></span>
+                <div class="btn-group" role="group" aria-label="">
+                    <button type="button" class="btn btn-default" id="btn-pre-bottom" ng-click="dCtrl.paginator.prev()"  ng-class="{'btn-disabled':!dCtrl.paginator.hasPrevious()}" ng-disabled="!dCtrl.paginator.hasPrevious()">&lt;</button>
+                    <button type="button" class="btn btn-default" id="btn-next-bottom" ng-click="dCtrl.paginator.next()" ng-class="{'btn-disabled':!dCtrl.paginator.hasNext() }" ng-disabled="!dCtrl.paginator.hasNext()" >&gt;</button>
+                    <input type="text" value="1" class="page-num-input" ng-model="dCtrl.paginator.pageTarget">
+                </div>
+
+                <button type="button" class="btn btn-default amp-btn" id="btn-go" ng-click="dCtrl.loadPage(dCtrl.paginator.pageTarget)">确定</button>
+            </div>
+            <!--<span class="amp-tipsnote" style="position: relative;float:right; top:5px;background-color:transparent;margin-right:36px;"><em class="ys-amp-icon ys-icon-tips ys-icon-tips-hover" style="left:5px;margin-top:-11px;"></em>体验版数据为模拟数据，请勿引用，可提供数据整合服务</span>-->
+        </div>
+    </div><!--ys-block-->
+</div><!-- contentpanel -->
+
+

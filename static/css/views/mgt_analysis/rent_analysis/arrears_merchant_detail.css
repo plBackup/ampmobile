@@ -1,0 +1,136 @@
+#arrears-merchant-detail{position:relative;}
+#arrears-merchant-detail .scrollable{top:41px;bottom:48px;height:auto;}
+#arrears-merchant-detail .scrollable-content{
+    padding:0;
+}
+
+
+/* ======================================== table-block ======================================== */
+#arrears-merchant-detail  .table-header{
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    width:100%;
+}
+#arrears-merchant-detail  .table-header li{
+    height:41px;
+    width:33.3333%;
+    line-height: 40px;
+    background-color:#f2f5f7;
+    border-bottom:1px solid #dae2e7;
+    color:#8592a3;
+    font-size:12px;
+    text-align: right;
+    float:left;
+    padding-right:20px;
+}
+
+/* ======================================== table-block ======================================== */
+#arrears-merchant-detail .table-block{padding-left:15px;}
+#arrears-merchant-detail .table-block table{
+    width:100%;
+}
+
+#arrears-merchant-detail .table-block table td{
+    height:45px;
+    font-size:12px;
+    border-bottom:1px solid #dae2e7;
+    text-align: right;
+    padding-right:20px;
+}
+#arrears-merchant-detail .table-block table td:first-child{
+    position:relative;
+    text-align: left;
+    padding-left:30px;
+    padding-right:0;
+    background:url(../../../../images/icon_check@2x.png) no-repeat left center;
+    background-size:14px 14px;
+}
+
+#arrears-merchant-detail .table-block table tr.checked td:first-child{
+    background-image:url(../../../../images/icon_checked@2x.png);
+}
+
+/* ======================================== receive-btn ======================================== */
+#arrears-merchant-detail .receive-btn{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background-color: #5ab46d;
+}
+
+
+/* ======================================== arrears-receive-panel ======================================== */
+#arrears-receive-panel{position:relative;height:100%;padding-top:20px;}
+
+/*merchant-name*/
+#arrears-receive-panel .merchant-name{
+    height:24px;
+    line-height: 24px;
+    padding:0 15px;
+}
+/*store-no*/
+#arrears-receive-panel .store-no{
+    height:20px;
+    line-height: 20px;
+    padding:0 15px;
+    font-size:12px;
+    color:#8592a3;
+}
+
+/*table-header*/
+#arrears-receive-panel .table-header{padding:15px 15px 0 15px;}
+#arrears-receive-panel .table-header li{
+    width:50%;
+    height:40px;
+    line-height:40px;
+    float: left;
+    border-bottom:1px solid #dae2e7;
+    background-color:#f2f5f7;
+    font-size:12px;
+    color:#8592a3;
+}
+#arrears-receive-panel .table-header li:first-child{text-align: left;padding-left:10px;}
+#arrears-receive-panel .table-header li:last-child{text-align: right;padding-right:10px;}
+
+/*table-content*/
+#arrears-receive-panel .scrollable{top:119px;bottom:48px;height: auto;padding:0;}
+#arrears-receive-panel .scrollable .scrollable-content{padding:0;}
+#arrears-receive-panel .table-row{padding:0 15px 0 15px;}
+#arrears-receive-panel .table-row li{
+    width:50%;
+    height:45px;
+    line-height:44px;
+    float: left;
+    border-bottom:1px solid #dae2e7;
+    font-size:12px;
+}
+#arrears-receive-panel .table-row li:first-child{text-align: left;padding-left:10px;}
+#arrears-receive-panel .table-row li:last-child{text-align: right;padding-right:10px;}
+#arrears-receive-panel .table-row:last-child li{font-weight: bold;font-style: italic;}
+#arrears-receive-panel .table-row:last-child li:last-child{color:#55bee8;}
+
+
+
+/*receive-confirm-btn*/
+#arrears-receive-panel .receive-confirm-btn{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background-color: #5ab46d;
+}

@@ -1,0 +1,83 @@
+#arrears-main{position:relative}
+
+#arrears-main .scrollable{top:41px;height:auto;}
+#arrears-main .scrollable-content{padding:0;background-color:#f2f5f7;}
+
+
+#arrears-main .page-navigation-bar{border-bottom:1px solid #dae2e7;}
+#arrears-main .page-navigation-bar li{
+    width:33.3333333%;
+    float:left;
+}
+#arrears-main .page-navigation-bar li a{
+    display:block;
+    width:50px;
+    height:40px;
+    line-height:38px;
+    text-align: center;
+    color:#737f8c;
+    font-size:12px;
+    border-bottom:2px solid transparent;
+    margin:auto;
+}
+#arrears-main .page-navigation-bar li a.active{
+    color:#5ab46d;
+    border-bottom:2px solid #5ab46d;
+}
+#arrears-main .grey-bar{
+    height:10px;
+    background-color:#f2f5f7;
+}
+
+
+
+/* ======================================== table-group ======================================== */
+#arrears-main .table-group{position:relative;padding-left:99px;}
+#arrears-main .table-group .table-left{position:absolute;left:0;top:0;width:99px;}
+#arrears-main .table-group .table-right{width:100%;overflow: auto;}
+
+#arrears-main .table-group th{
+    height:41px;
+    border-bottom:1px solid #dae2e7;
+    background-color:#f2f5f7;
+    font-size:12px;
+    color:#8592a3;
+    text-align: right;
+    padding:0 15px;
+    white-space: nowrap;
+}
+
+#arrears-main .table-group td{
+    height:50px;
+    text-align: right;
+    padding:0 15px;
+    font-size:12px;
+    white-space: nowrap;
+    background-color:#fff;
+}
+#arrears-main .table-group .table-left table{width:100%;}
+#arrears-main .table-group .table-left th,
+#arrears-main .table-group .table-left td{
+    text-align: left;
+    padding:0 0 0 15px;
+    border-right:1px solid #dae2e7;
+
+}
+#arrears-main .table-group .table-left tr:last-child td{font-weight: bold;font-style: italic;}
+#arrears-main .table-group .table-right tr:last-child td{font-weight: bold;font-style: italic;color:#53bde7;}
+
+
+
+/*arrears-detail-btn*/
+#arrears-main .arrears-detail-btn{
+    position:absolute;
+    bottom:15px;
+    left:15px;
+    right:15px;
+    height:44px;
+    line-height: 44px;
+    background-color:#5ab46d;
+    font-size:16px;
+    color:#fff;
+    text-align: center;
+}

@@ -37,32 +37,22 @@
                 <li class="col-xs-6">
                     <label>位置</label>
                     <div class="input-wrapper input-wrapper-select">
-
                         <input type="text" value="" hidden ng-model="rCtrl.shopInfo.position"/>
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
-                                <em>{{rCtrl.shopInfo.position | default:"请选择"}}</em><span class="ys-icon ys-icon-dropdown"></span>
-                            </button>
-                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-                                <li ng-class="{'active':rCtrl.isActive(menu,rCtrl.shopInfo.position)}" role="presentation" ng-repeat="menu in rCtrl.form_menu.positions"><a role="menuitem" ng-click="rCtrl.setModel('position',menu)">{{menu}}</a></li>
-                            </ul>
-                        </div>
+                        <button class="btn btn-select" type="button" ng-Click="rCtrl.setSelect('position')">
+                            <em>{{rCtrl.shopInfo.position | default:"请选择"}}</em>
+                        </button>
                     </div>
+                    <span class="ys-icon ys-icon-dropdown"></span>
                 </li>
                 <li class="col-xs-6">
                     <label>物业类型</label>
                     <div class="input-wrapper input-wrapper-select">
-
-                        <input type="text" value="" hidden/>
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
-                                <em>{{rCtrl.shopInfo.type | default:"请选择"}}</em><span class="ys-icon ys-icon-dropdown"></span>
-                            </button>
-                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-                                <li ng-class="{'active':rCtrl.isActive(menu,rCtrl.shopInfo.type)}" role="presentation" ng-repeat="menu in rCtrl.form_menu.type"><a role="menuitem" ng-click="rCtrl.setModel('type',menu)">{{menu}}</a></li>
-                            </ul>
-                        </div>
+                        <input type="text" value="" hidden ng-model="rCtrl.shopInfo.type"/>
+                        <button class="btn btn-select" type="button" ng-Click="rCtrl.setSelect('type')">
+                            <em>{{rCtrl.shopInfo.type | default:"请选择"}}</em>
+                        </button>
                     </div>
+                    <span class="ys-icon ys-icon-dropdown"></span>
                 </li>
                 <li class="col-xs-6">
                     <label>建筑面积</label>
@@ -79,33 +69,23 @@
                 <li class="col-xs-6">
                     <label>产权性质</label>
                     <div class="input-wrapper input-wrapper-select">
-                        <input type="text" value="" hidden/>
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
-                                <em>{{rCtrl.shopInfo.property | default:"请选择"}}</em><span class="ys-icon ys-icon-dropdown"></span>
-                            </button>
-                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-                                <li ng-class="{'active':rCtrl.isActive(menu,rCtrl.shopInfo.property)}" role="presentation" ng-repeat="menu in rCtrl.form_menu.property"><a role="menuitem" ng-click="rCtrl.setModel('property',menu)">{{menu}}</a></li>
-                            </ul>
-                        </div>
+                        <input type="text" value="" hidden ng-model="rCtrl.shopInfo.property"/>
+                        <button class="btn btn-select" type="button" ng-Click="rCtrl.setSelect('property')">
+                            <em>{{rCtrl.shopInfo.property | default:"请选择"}}</em>
+                        </button>
                     </div>
+                    <span class="ys-icon ys-icon-dropdown"></span>
                 </li>
 
                 <li class="col-xs-6">
-                    <td>
                         <label>业态</label>
                         <div class="input-wrapper input-wrapper-select">
-                            <input type="text" value="" hidden/>
-                            <div class="dropdown">
-                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
-                                    <em>{{rCtrl.shopInfo.form | default:"请选择"}}</em><span class="ys-icon ys-icon-dropdown"></span>
-                                </button>
-                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-                                    <li ng-class="{'active':rCtrl.isActive(menu,rCtrl.filters.form)}" role="presentation" ng-repeat="menu in rCtrl.form_menu.form"><a role="menuitem" ng-click="rCtrl.setModel('form',menu)">{{menu}}</a></li>
-                                </ul>
-                            </div>
+                            <input type="text" value="" hidden ng-model="rCtrl.shopInfo.form"/>
+                            <button class="btn btn-select" type="button" ng-Click="rCtrl.setSelect('form')">
+                                <em>{{rCtrl.shopInfo.form | default:"请选择"}}</em>
+                            </button>
                         </div>
-                    </td>
+                        <span class="ys-icon ys-icon-dropdown"></span>
                 </li>
             </ul>
     </div>

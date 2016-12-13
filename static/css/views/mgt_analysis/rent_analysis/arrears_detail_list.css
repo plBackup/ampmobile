@@ -1,0 +1,54 @@
+#arrears-detail-list{position:relative;}
+#arrears-detail-list .scrollable{top:42px;bottom:48px;height:auto;}
+#arrears-detail-list .scrollable-content{
+    padding:0;
+}
+#arrears-detail-list table{width:100%;}
+#arrears-detail-list .swiper-slide{width:auto;}
+/* ======================================== table-group-header ======================================== */
+#arrears-detail-list .table-group-header{position:relative;padding-left:145px;}
+#arrears-detail-list .table-group-header .table-group-left{position:absolute;top:0;left:0;width:145px;}
+
+#arrears-detail-list .table-group-header th{
+    height:41px;
+    border-bottom:1px solid #dae2e7;
+    background-color:#f2f5f7;
+    font-size:12px;
+    text-align: right;
+    color:#8592a3;
+}
+
+#arrears-detail-list .table-group-header .table-group-left th{padding-left:15px;text-align: left;border-right:1px solid #dae2e7;}
+#arrears-detail-list .table-group-header .table-group-right th{min-width:100px;padding-right:15px;}
+
+/* ======================================== table-group-content ======================================== */
+#arrears-detail-list .table-group-content{position:relative;padding-left:145px;}
+#arrears-detail-list .table-group-content .table-group-left{position:absolute;top:0;left:0;width:145px;padding-left:15px;}
+
+#arrears-detail-list .table-group-content td{
+    height:41px;
+    border-bottom:1px solid #dae2e7;
+    font-size:12px;
+    text-align: right;
+}
+
+#arrears-detail-list .table-group-content .table-group-left td{text-align: left;border-right:1px solid #dae2e7;}
+#arrears-detail-list .table-group-content .table-group-right td{min-width:100px;padding-right:15px;}
+
+
+/* ======================================== enrolment-btn ======================================== */
+#arrears-detail-list a.enrolment-btn{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+
+
+    display:block;
+    height:48px;
+    line-height: 48px;
+    text-align: center;
+    font-size:16px;
+    color:#fff;
+    background-color:#5ab46d;
+}

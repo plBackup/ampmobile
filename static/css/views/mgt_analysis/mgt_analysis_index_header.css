@@ -26,9 +26,10 @@
     background-size:22px 22px;
 }
 
-#mgt-analysis-index-header .menu-item-list {
+/*mgt-analysis-menu-list-wrapper*/
+#mgt-analysis-menu-list-wrapper .menu-item-list {
     position: absolute;
-    top: 100%;
+    top: 44px;
     right: 5px;
     display:none;
     width:120px;
@@ -38,11 +39,11 @@
     border-radius: 4px;
 }
 
-#mgt-analysis-index-header.show-menu .menu-item-list{
+#mgt-analysis-menu-list-wrapper .show-menu .menu-item-list{
     display:block;
 }
 
-#mgt-analysis-index-header .menu-item-list:after{
+#mgt-analysis-menu-list-wrapper  .menu-item-list:after{
     content:"";
     position:absolute;
     top:-5px;
@@ -53,12 +54,12 @@
 
 }
 
-#mgt-analysis-index-header .menu-item-list li{
+#mgt-analysis-menu-list-wrapper .menu-item-list li{
     border-bottom:1px solid #666;
 }
-#mgt-analysis-index-header .menu-item-list li:last-child{border-bottom:none;}
+#mgt-analysis-menu-list-wrapper .menu-item-list li:last-child{border-bottom:none;}
 
-#mgt-analysis-index-header .menu-item-list li a{
+#mgt-analysis-menu-list-wrapper .menu-item-list li a{
     display:block;
     height:44px;
     line-height: 44px;
@@ -70,6 +71,6 @@
     padding-left:32px;
 }
 
-#mgt-analysis-index-header .menu-item-list li a.enrolment-btn{background-image:url(../../../images/icon_input@2x.png);}
-#mgt-analysis-index-header .menu-item-list li a.statistic-btn{background-image:url(../../../images/icon_pie@2x.png);}
-#mgt-analysis-index-header .menu-item-list li a.filter-btn{background-image:url(../../../images/icon_filter@2x.png);}
+#mgt-analysis-menu-list-wrapper .menu-item-list li a.enrolment-btn{background-image:url(../../../images/icon_input@2x.png);}
+#mgt-analysis-menu-list-wrapper .menu-item-list li a.statistic-btn{background-image:url(../../../images/icon_pie@2x.png);}
+#mgt-analysis-menu-list-wrapper .menu-item-list li a.filter-btn{background-image:url(../../../images/icon_filter@2x.png);}

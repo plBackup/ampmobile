@@ -1,0 +1,54 @@
+#merchant-sale-type-list{position:relative;}
+#merchant-sale-type-list .scrollable{top:42px;bottom:48px;height:auto;}
+#merchant-sale-type-list .scrollable-content{
+    padding:0;
+}
+#merchant-sale-type-list table{width:100%;}
+#merchant-sale-type-list .swiper-slide{width:auto;min-width: 100%;}
+/* ======================================== table-group-header ======================================== */
+#merchant-sale-type-list .table-group-header{position:relative;padding-left:145px;}
+#merchant-sale-type-list .table-group-header .table-group-left{position:absolute;top:0;left:0;width:145px;}
+
+#merchant-sale-type-list .table-group-header th{
+    height:41px;
+    border-bottom:1px solid #dae2e7;
+    background-color:#f2f5f7;
+    font-size:12px;
+    text-align: right;
+    color:#8592a3;
+}
+
+#merchant-sale-type-list .table-group-header .table-group-left th{padding-left:15px;text-align: left;border-right:1px solid #dae2e7;}
+#merchant-sale-type-list .table-group-header .table-group-right th{min-width:100px;padding-right:15px;}
+
+/* ======================================== table-group-content ======================================== */
+#merchant-sale-type-list .table-group-content{position:relative;padding-left:145px;}
+#merchant-sale-type-list .table-group-content .table-group-left{position:absolute;top:0;left:0;width:145px;padding-left:15px;}
+
+#merchant-sale-type-list .table-group-content td{
+    height:41px;
+    border-bottom:1px solid #dae2e7;
+    font-size:12px;
+    text-align: right;
+}
+
+#merchant-sale-type-list .table-group-content .table-group-left td{text-align: left;border-right:1px solid #dae2e7;}
+#merchant-sale-type-list .table-group-content .table-group-right td{min-width:100px;padding-right:15px;}
+
+
+/* ======================================== enrolment-btn ======================================== */
+#merchant-sale-type-list a.enrolment-btn{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+
+
+    display:block;
+    height:48px;
+    line-height: 48px;
+    text-align: center;
+    font-size:16px;
+    color:#fff;
+    background-color:#5ab46d;
+}

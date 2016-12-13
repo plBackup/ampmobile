@@ -3,7 +3,6 @@ ampApp.controller("contract-list-controller",["$scope","$http","$rootScope",func
 
     function initializeData(data){
         $scope.records = data;
-        console.log(data);
     }
     /* ======================================== 监听广播事件 ======================================== */
     $scope.$on("$destroy",function(){destroy();});
@@ -19,6 +18,31 @@ ampApp.controller("contract-list-controller",["$scope","$http","$rootScope",func
 
     /* ======================================== 绑定事件 ======================================== */
     function bindPageEvents(){
+
+        var mgtAnalysisMenuListWrapper = $("#mgt-analysis-menu-list-wrapper");
+        $(mgtAnalysisMenuListWrapper).find(".menu-item-list a.enrolment-btn").on("click",function(e){
+            e.stopPropagation();
+            e.preventDefault();
+            hideMgtAnalysisMenuList();
+
+        });
+
+        $(mgtAnalysisMenuListWrapper).find(".menu-item-list a.statistic-btn").on("click",function(e){
+            e.stopPropagation();
+            e.preventDefault();
+            hideMgtAnalysisMenuList();
+
+            showMgtAnalysisPanel();
+
+        });
+
+        $(mgtAnalysisMenuListWrapper).find(".menu-item-list a.filter-btn").on("click",function(e){
+            e.stopPropagation();
+            e.preventDefault();
+            hideMgtAnalysisMenuList();
+        });
+
+
 
     }
 

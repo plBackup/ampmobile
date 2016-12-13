@@ -191,7 +191,6 @@ dataTool.controller("dataIndexController",['$rootScope', '$scope',"dataIndexData
 
         $scope.$on("shopUpdateAdd",function(e,data){
             self.shopAdd(data.index,data.shop);
-
         });
 
 

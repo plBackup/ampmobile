@@ -1,0 +1,104 @@
+#cost-main{position:relative}
+
+#cost-main .scrollable{top:51px;height:auto;}
+#cost-main .scrollable-content{padding:0;}
+
+
+#cost-main .page-navigation-bar{padding:0 50px;border-bottom:1px solid #dae2e7;}
+#cost-main .page-navigation-bar li{
+}
+#cost-main .page-navigation-bar li a{
+    display:block;
+    width:50px;
+    height:40px;
+    line-height:38px;
+    text-align: center;
+    color:#737f8c;
+    font-size:12px;
+    border-bottom:2px solid transparent;
+    margin:auto;
+}
+#cost-main .page-navigation-bar li a.active{
+    color:#5ab46d;
+    border-bottom:2px solid #5ab46d;
+}
+#cost-main .grey-bar{
+    height:10px;
+    background-color:#f2f5f7;
+}
+
+/* ======================================== cost-bar-chart ======================================== */
+#cost-main .cost-bar-chart{padding-top:20px;}
+#cost-main .cost-bar-chart .chart-content{
+    position:relative;
+    height:180px;
+}
+
+#cost-main .cost-bar-chart .chart-content:before{
+    content:"(万元)";
+    position:absolute;
+    left:5px;
+    top:-10px;
+    color:#8592a3;
+    font-size:12px;
+}
+
+#cost-main .cost-bar-chart .chart-legend{padding-left:15px;padding-top:20px;}
+#cost-main .cost-bar-chart .chart-legend li{
+    position:relative;
+    width:50%;
+    height:22px;
+    line-height: 22px;
+    float:left;
+    font-size:12px;
+    color:#8592a3;
+    padding-left:12px;
+}
+#cost-main .cost-bar-chart .chart-legend li:before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    width:8px;
+    height:8px;
+    margin:auto;
+}
+
+#cost-main .cost-bar-chart .chart-legend li:nth-child(1):before{background-color:#2bd9dd;}
+#cost-main .cost-bar-chart .chart-legend li:nth-child(2):before{background-color:#038bd8;}
+#cost-main .cost-bar-chart .chart-legend li:nth-child(3):before{background-color:#a5ee67;}
+#cost-main .cost-bar-chart .chart-legend li:nth-child(4):before{background-color:#00b2ef;}
+
+/* ======================================== table-group ======================================== */
+#cost-main .table-group{position:relative;padding-left:58px;margin-top:20px;}
+#cost-main .table-group .table-left{position:absolute;left:0;top:0;width:58px;}
+#cost-main .table-group .table-right{width:100%;overflow: auto;}
+
+#cost-main .table-group th{
+    height:41px;
+    border-bottom:1px solid #dae2e7;
+    background-color:#f2f5f7;
+    font-size:12px;
+    color:#8592a3;
+    text-align: right;
+    padding:0 15px;
+}
+
+#cost-main .table-group td{
+    height:71px;
+    border-bottom:1px solid #dae2e7;
+    text-align: right;
+    padding:0 15px;
+    font-size:12px;
+}
+#cost-main .table-group .table-left table{width:100%;}
+#cost-main .table-group .table-left th,
+#cost-main .table-group .table-left td{
+    text-align: center;
+    padding:0;
+    border-right:1px solid #dae2e7;
+}
+
+#cost-main .table-group .table-right td:last-child div{font-weight: bold;}
+#cost-main .table-group .table-right td em{display:block;color:#8592a3;}
