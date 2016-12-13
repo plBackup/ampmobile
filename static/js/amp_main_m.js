@@ -254,6 +254,24 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
                 },
                 data: ['$q','$timeout', _timeDefer]
             }
+        },
+        {
+            name: 'datatool.rpgpin',
+            url: '/rpgpin',
+            views:{
+                'datatool-content': {
+                    templateUrl: './views/datatool/rpg_set.html',
+                    controller:"dataSetController",
+                    controllerAs:"sCtrl"
+                },
+            },
+            reloadOnSearch: false,
+            resolve: {
+                rpgSetData:function(dataSetService){
+                    return dataSetService.getData();
+                },
+                data: ['$q','$timeout', _timeDefer]
+            }
         }
     ];
 

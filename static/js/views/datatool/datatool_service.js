@@ -48,6 +48,20 @@ angular.module('dataTool').service('dataSetIndexService', ["$rootScope","$http",
 
 }]);
 
+angular.module('dataTool').service('dataSetService', ["$rootScope","$http",function($rootScope,$http) {
+
+    var service = {
+        getData: function () {
+            return $http.get('./data/data_'+$rootScope.curProject+'/rent_setup.json', {cache: true}).then(function (res) {
+                return res.data;
+            });
+        },
+    };
+    return service;
+
+}]);
+
+
 angular.module('dataTool').service('dataSetResultService', ["$rootScope","$http",function($rootScope,$http) {
     var service = {
         getSetData: function () {
