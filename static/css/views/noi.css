@@ -34,7 +34,7 @@
 }
 
 /*amp-block*/
-.amp-block{border-bottom:solid 10px #edeef3;}
+#noiPage .amp-block{border-bottom:solid 10px #edeef3;}
 .amp-block .amp-block-title{height:48px;border-left:solid 4px #5ab46e;padding-left:11px;}
 .amp-block .amp-block-title h3{position:relative;margin:0;height:48px;padding:10px 0;border-bottom:solid 1px #f3f4f8;line-height:26px;font-size: 17px;color:#373c42; }
 .amp-block .amp-block-title em.em-unit{display: inline-block;margin-left:6px;color:#8592a3;font-size:13px;}

@@ -28,7 +28,11 @@ a,button,.btn{ -moz-user-select: none; -webkit-user-select: none; -ms-user-selec
 
 .ys-icon{background-repeat: no-repeat;}
 
-.login-wrapper{position: absolute;top:130px;left:50%;margin-left:-40%;padding:0px;width:80%;background:none;border-radius: 3px;box-shadow: none;}
+/*.login-wrapper{position: absolute;top:130px;left:50%;margin-left:-40%;padding:0px;width:80%;background:none;border-radius: 3px;box-shadow: none;}*/
+.login-wrapper{
+    position: relative;margin-top:60px;margin-left:10%;padding:0px;width:80%;background:none;border-radius: 3px;box-shadow: none;}
+
+
 .login-wrapper h3{position:relative;margin:0;margin-bottom:45px;height:42px;line-height:20px;color:#e74f4e;text-align: left;font-size: 18px;font-weight: normal;}
 .login-wrapper h3>em.ys-icon-amp{display:block;position:absolute;top:0;left:50%;margin-left:-77px;width:153.5px;height:41px;
     background-size:contain;background-repeat: no-repeat;background-image:url(../../images/amp_logo_lg_beta@2x.png);background-position:center center;}
