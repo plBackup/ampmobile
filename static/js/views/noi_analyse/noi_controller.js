@@ -8,12 +8,21 @@
 
 var noi = angular.module('noi', ['mobile-angular-ui',
 ]);
+noi.controller('noiHeadController', ['$rootScope', '$scope',"$timeout","$state","SharedState",
+    function($rootScope, $scope,$timeout,$state,SharedState){
+        var self=this;
+        self.goHome=function(){
+            $state.go("projectlist");
+        }
 
+    }]);
 noi.controller('noiController', ['$rootScope', '$scope',"$timeout","noiAllData","SharedState",
     function($rootScope, $scope,$timeout,noiAllData,SharedState) {
         var self=this;
+
         $rootScope.showHeader();
         $rootScope.showBottom();
+        $rootScope.pageId="noi";
 
         SharedState.initialize($scope, "activeTab");
         //SharedState.initialize($scope, "activeTab");
@@ -30,7 +39,7 @@ noi.controller('noiController', ['$rootScope', '$scope',"$timeout","noiAllData",
         self.activeModalTab=1;
         self.setActiveModalTab=function(n){
             self.activeModalTab=n;
-        }
+        };
 
         self.noiModal="";
 
@@ -45,7 +54,7 @@ noi.controller('noiController', ['$rootScope', '$scope',"$timeout","noiAllData",
             return (index+1)%4==0;
         };
 
-        self.modalTitle=""
+        self.modalTitle="";
 
         self.viewDetail=function(dataType){
 

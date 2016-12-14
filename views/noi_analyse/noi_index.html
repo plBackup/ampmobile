@@ -12,7 +12,7 @@
 
                             <div class="col-xs-4">
                                 <span>全年预测</span>
-                                <h5>{{noiCtrl.noiData[1].value | number:2}}</h5>
+                                <h3>{{noiCtrl.noiData[1].value | number:2}}</h3>
                             </div>
                         </div>
                 </div><!--swiper-slide-->
@@ -27,7 +27,7 @@
 
                         <div class="col-xs-4">
                             <span>预测年回报率(按成本)</span>
-                            <h5>{{noiCtrl.noiData[3].value | percentFormat}}</h5>
+                            <h3>{{noiCtrl.noiData[3].value | percentFormat}}</h3>
                         </div>
                     </div>
                 </div><!--swiper-slide-->
@@ -42,11 +42,11 @@
 
                         <div class="col-xs-4">
                             <span>估值日期</span>
-                            <h5>{{noiCtrl.noiData[5].value}}</h5>
+                            <h3>{{noiCtrl.noiData[5].value}}</h3>
                         </div>
                         <div class="col-xs-4">
                             <span>预测年回报率(按估值)</span>
-                            <h5>{{noiCtrl.noiData[6].value | percentFormat}}</h5>
+                            <h3>{{noiCtrl.noiData[6].value | percentFormat}}</h3>
                         </div>
                     </div>
                 </div><!--swiper-slide-->
@@ -61,11 +61,11 @@
 
                         <div class="col-xs-4">
                             <span>到期日</span>
-                            <h5>{{noiCtrl.noiData[8].value}}</h5>
+                            <h3>{{noiCtrl.noiData[8].value}}</h3>
                         </div>
                         <div class="col-xs-4">
                             <span>年贷款利息</span>
-                            <h5>{{noiCtrl.noiData[9].value | number:2}}</h5>
+                            <h3>{{noiCtrl.noiData[9].value | number:2}}</h3>
                         </div>
                     </div>
                 </div><!--swiper-slide-->
@@ -80,11 +80,11 @@
 
                         <div class="col-xs-4">
                             <span>预测税前现金流</span>
-                            <h5>{{noiCtrl.noiData[11].value | number:2}}</h5>
+                            <h3>{{noiCtrl.noiData[11].value | number:2}}</h3>
                         </div>
                         <div class="col-xs-4">
                             <span>预测收益率(按ROE)</span>
-                            <h5>{{noiCtrl.noiData[12].value | percentFormat}}</h5>
+                            <h3>{{noiCtrl.noiData[12].value | percentFormat}}</h3>
                         </div>
                     </div>
                 </div><!--swiper-slide-->
@@ -101,13 +101,13 @@
                     <ui-shared-state id="activeTab" default="1"></ui-shared-state>
                     <ul class="nav nav-tabs">
                         <li ui-class="{'active': activeTab == 1}" >
-                            <a ui-set="{'activeTab': 1}" ng-click="noiCtrl.setActiveTab(1)"><em><</em>2016-08(万元)</a>
+                            <a ui-set="{'activeTab': 1}" ng-click="noiCtrl.setActiveTab(1)"><em><</em>2016-08</a>
                         </li>
                         <li ui-class="{'active': activeTab == 2}">
-                            <a ui-set="{'activeTab': 2}" ng-click="noiCtrl.setActiveTab(2)">全年累计(万元)</a>
+                            <a ui-set="{'activeTab': 2}" ng-click="noiCtrl.setActiveTab(2)">全年累计</a>
                         </li>
                         <li ui-class="{'active': activeTab == 3}">
-                            <a ui-set="{'activeTab': 3}" ng-click="noiCtrl.setActiveTab(3)">全年(万元)</a>
+                            <a ui-set="{'activeTab': 3}" ng-click="noiCtrl.setActiveTab(3)">全年</a>
                         </li>
 
                         <li ui-class="{'active': activeTab == 4}">

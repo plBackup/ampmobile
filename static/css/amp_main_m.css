@@ -18,8 +18,6 @@ i.amp-menu-noi{background-image:url(../images/menu_noi@2x.png);}
 .btn.active>span.ampMenu-wrapper>i.amp-menu-noi{background-image:url(../images/menu_noi_active@2x.png);}
 
 i.amp-menu-invest{background-image:url(../images/menu_invest@2x.png);}
-.btn.active>span.ampMenu-wrapper>i.amp-menu-invest{background-image:url(../images/menu_invest_active@2x.png);}
-
 i.amp-menu-manage{background-image:url(../images/menu_manage@2x.png);}
 .btn.active>span.ampMenu-wrapper>i.amp-menu-manage{background-image:url(../images/menu_manage_active@2x.png);}
 
@@ -29,13 +27,15 @@ i.amp-menu-ctrl{background-image:url(../images/menu_ctrl@2x.png);}
 i.amp-menu-data{background-image:url(../images/menu_data@2x.png);}
 .btn.active>span.ampMenu-wrapper>i.amp-menu-data{background-image:url(../images/menu_data_active@2x.png);}
 
-
 /*navOpt-icon*/
 .ampApp .navOpt-icon{position:relative;display: inline-block;width:22px;height:44px;}
 .ampApp .navOpt-icon:before{position:absolute;display: block;top:50%;margin-top:-11px;left:50%;margin-left:-11px;
     width:22px;height:22px;content:" ";background-repeat: no-repeat;background-position: center center;background-size:contain;content:" ";}
 
 .navOpt-icon-filter:before{background-image:url(../images/icon_filter@2x.png);}
+/*回退按钮*/
+.navOpt-icon-back:before{background-image:url(../images/icon_logo_back@2x.png);}
+.navOpt-icon-home:before{background-image:url(../images/icon_projects@2x.png);}
 
 .ampApp .amp-icon{background-size:contain;background-position: center center;background-repeat: no-repeat;}
 .ampApp .navbar-app .amp-logo{display: inline-block;position: relative;top:-2px;  width:100.5px; height:26px;
@@ -44,9 +44,100 @@ i.amp-menu-data{background-image:url(../images/menu_data@2x.png);}
 #amp-create-project-note{color:#fff;text-align: center;margin-top:100px;}
 .datetimepicker.dropdown-menu{display:none;}
 
-/*回退按钮*/
-i.amp-icon-back{display:block;width:22px;height:22px;background-repeat:no-repeat;background-size:contain;background-position:center center;background-image:url(../images/icon_logo_back@2x.png);}
-.navbar-absolute-top i.amp-icon-back{position:absolute;top:50%;margin-top:-11px;left:15px;}
+
+
+
+
+.icon-menu-down{display:inline-block;position:relative;top:3.5px;width:22px;height:22px;
+    backgrond-image:url(../images/icon_chevron_down@2x.png);
+    -webkit-transition: transform 0.3s;
+    -moz-transition: transform 0.3s;
+    -ms-transition: transform 0.3s;
+    -o-transition: transform 0.3s;
+    transition: transform 0.3s;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);}
+.icon-menu-down:hover{backgrond-image:url(../images/icon_chevron_down_active@2x.png);
+}
+
+tr.tr-collapse .icon-menu-down {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+/**/
+.amp-block{padding:0;margin-bottom:25px;}
+.amp-block-pd{padding-left:28px;padding-right:28px;}
+.ys-amp .amp-block-title {
+    position: relative;
+    margin-bottom: 8px;
+    height: 44px;
+    line-height: 44px;
+    overflow: hidden;
+}
+
+
+
+/*noi-chart-wrapper*/
+.chart-wrapper{position: relative;padding-top:20px;padding-bottom:38px;}
+.chart-wrapper em.chart-axis-info{position: absolute;display: block;top:0;left:35px;font-size: 15px;}
+
+.chart-wrapper .chart-legend{text-align: center;padding:0px 35px;}
+.chart-wrapper .chart-legend>span{display: inline-block;height:30px;line-height: 30px;margin-right:15px;margin-left:15px;font-size: 14px;color:#8992a3;}
+.chart-wrapper em.color-label {
+    display: inline-block;
+    position: relative;
+    top:1px;
+    margin-right: 6px;
+    width: 12px;
+    height: 12px;
+    background-color: #e5e5e5;
+}
+
+
+/*reset datetime-picker*/
+.datetimepicker table tr td span.active:active, .datetimepicker table tr td span.active:hover:active, .datetimepicker table tr td span.active.disabled:active, .datetimepicker table tr td span.active.disabled:hover:active, .datetimepicker table tr td span.active.active, .datetimepicker table tr td span.active:hover.active, .datetimepicker table tr td span.active.disabled.active, .datetimepicker table tr td span.active.disabled:hover.active {
+    background-color: #5ab46e;
+}
+
+.datetimepicker table tr td span.active:hover, .datetimepicker table tr td span.active:hover:hover, .datetimepicker table tr td span.active.disabled:hover, .datetimepicker table tr td span.active.disabled:hover:hover, .datetimepicker table tr td span.active:active, .datetimepicker table tr td span.active:hover:active, .datetimepicker table tr td span.active.disabled:active, .datetimepicker table tr td span.active.disabled:hover:active, .datetimepicker table tr td span.active.active, .datetimepicker table tr td span.active:hover.active, .datetimepicker table tr td span.active.disabled.active, .datetimepicker table tr td span.active.disabled:hover.active, .datetimepicker table tr td span.active.disabled, .datetimepicker table tr td span.active:hover.disabled, .datetimepicker table tr td span.active.disabled.disabled, .datetimepicker table tr td span.active.disabled:hover.disabled, .datetimepicker table tr td span.active[disabled], .datetimepicker table tr td span.active:hover[disabled], .datetimepicker table tr td span.active.disabled[disabled], .datetimepicker table tr td span.active.disabled:hover[disabled] {
+    background-color: #5ab46e;
+}
+
+.datetimepicker table tr td span.active, .datetimepicker table tr td span.active:hover, .datetimepicker table tr td span.active.disabled, .datetimepicker table tr td span.active.disabled:hover {
+    background-color: #5ab46e;
+    background-image:none;
+    background-repeat: repeat-x;
+    filter:none;
+    background-color:#5ab46e;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+}
+
+.datetimepicker table tr td.active:active, .datetimepicker table tr td.active:hover:active, .datetimepicker table tr td.active.disabled:active, .datetimepicker table tr td.active.disabled:hover:active, .datetimepicker table tr td.active.active, .datetimepicker table tr td.active:hover.active, .datetimepicker table tr td.active.disabled.active, .datetimepicker table tr td.active.disabled:hover.active {
+    background-color: #5ab46e;
+}
+
+.datetimepicker table tr td.active:hover, .datetimepicker table tr td.active:hover:hover, .datetimepicker table tr td.active.disabled:hover, .datetimepicker table tr td.active.disabled:hover:hover, .datetimepicker table tr td.active:active, .datetimepicker table tr td.active:hover:active, .datetimepicker table tr td.active.disabled:active, .datetimepicker table tr td.active.disabled:hover:active, .datetimepicker table tr td.active.active, .datetimepicker table tr td.active:hover.active, .datetimepicker table tr td.active.disabled.active, .datetimepicker table tr td.active.disabled:hover.active, .datetimepicker table tr td.active.disabled, .datetimepicker table tr td.active:hover.disabled, .datetimepicker table tr td.active.disabled.disabled, .datetimepicker table tr td.active.disabled:hover.disabled, .datetimepicker table tr td.active[disabled], .datetimepicker table tr td.active:hover[disabled], .datetimepicker table tr td.active.disabled[disabled], .datetimepicker table tr td.active.disabled:hover[disabled] {
+    background-color: #5ab46e;
+}
+
+.datetimepicker table tr td.active, .datetimepicker table tr td.active:hover, .datetimepicker table tr td.active.disabled, .datetimepicker table tr td.active.disabled:hover {
+    background-color: #5ab46e;
+    background-image:none;
+    background-repeat: repeat-x;
+    filter:none;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+}
+
+
+
 
 
 

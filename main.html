@@ -32,6 +32,8 @@
     <link href="./static/css/common/amp_animation.css" rel="stylesheet">
 
     <link href="./static/css/views/projects.css" rel="stylesheet">
+    <link href="./static/css/views/noi.css" rel="stylesheet">
+
     <link href="./static/css/views/datatools.css" rel="stylesheet">
 
 
@@ -146,7 +148,7 @@
     <script src="static/js/views/mgt_analysis/business_analysis/controller/passenger_flow_enrolment_controller.js"></script>
 
 </head>
-<body ng-app="amp" ng-controller="MainController as mCtrl">
+<body ng-app="amp" ng-controller="MainController as mCtrl" id="{{pageId||'amp'}}">
 
 <div class="app ampApp">
     <div class="navbar navbar-app navbar-absolute-top" ng-if="mCtrl.headerShow">
