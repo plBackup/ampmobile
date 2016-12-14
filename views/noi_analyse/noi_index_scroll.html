@@ -553,26 +553,26 @@
 
                                                     <tbody ng-if="noiCtrl.noiModal == 'arrearage'">
                                                     <tr class="tr-main">
-                                                        <td ng-repeat="tdData in noiCtrl.arrearageData[3].values|take:(1+(noiCtrl.activeModalTab-1)*4):4">
+                                                        <td ng-repeat="tdData in noiCtrl.arrearageData[3].values|skip:1">
                                                             {{tdData.value|default:"-"|numberFormat}}</td>
                                                     </tr>
 
                                                     <tr class="tr-sub">
-                                                        <td ng-repeat="tdData in noiCtrl.arrearageData[0].values|take:(1+(noiCtrl.activeModalTab-1)*4):4">
+                                                        <td ng-repeat="tdData in noiCtrl.arrearageData[0].values|skip:1">
                                                             {{tdData.value|default:"-"|numberFormat}}</td>
 
                                                     </tr>
                                                     <tr class="tr-sub">
-                                                        <td ng-repeat="tdData in noiCtrl.arrearageData[1].values|take:(1+(noiCtrl.activeModalTab-1)*4):4">
+                                                        <td ng-repeat="tdData in noiCtrl.arrearageData[1].values|skip:1">
                                                             {{tdData.value|default:"-"|numberFormat}}</td>
                                                     </tr>
                                                     <!-- start -->
                                                     <tr class="tr-sub">
-                                                        <td ng-repeat="tdData in noiCtrl.arrearageData[2].values|take:(1+(noiCtrl.activeModalTab-1)*4):4">
+                                                        <td ng-repeat="tdData in noiCtrl.arrearageData[2].values|skip:1">
                                                             {{tdData.value|default:"-"|numberFormat}}
                                                         </td>
                                                     </tr>
-                                                    </tbody> <!--ng if income-->
+                                                    </tbody> <!--ng if arrearage-->
                                                 </table>
 
 
