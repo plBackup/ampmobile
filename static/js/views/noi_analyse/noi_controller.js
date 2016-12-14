@@ -71,6 +71,8 @@ noi.controller('noiController', ['$rootScope', '$scope',"$timeout","noiAllData",
                     freeMode: true,
                     scrollbarHide:false,
                     //watchSlidesProgress:true,
+                    observer:true,
+                    observeParents:true,
                 });
             },200);
 
@@ -120,6 +122,9 @@ noi.controller('noiController', ['$rootScope', '$scope',"$timeout","noiAllData",
                 freeMode: true,
                 scrollbarHide:false,
                 //watchSlidesProgress:true,
+                 watchSlidesProgress:true,
+                 observer:true,
+                 observeParents:true,
             });*/
         };
 
