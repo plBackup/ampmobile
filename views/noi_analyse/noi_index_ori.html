@@ -262,8 +262,8 @@
                     <h4 class="modal-title">{{noiCtrl.modalTitle}}</h4>
                 </div>
                 <div class="modal-body">
-                    <div class="scrollable amp-modal-block">
-                        <div class="scrollable-header">
+                    <div class="amp-modal-block">
+                        <div class="amp-tab-pages" id="amp-tab-modal">
                             <ui-shared-state id="activeModalTab" default="1"></ui-shared-state>
                             <ul class="nav nav-tabs" ng-if="noiCtrl.noiModal != 'arrearage'">
                                 <li ui-class="{'active': activeModalTab == 1}" >
@@ -281,31 +281,29 @@
                                 </li>
                             </ul>
 
-                        </div><!--scrollable header-->
-                        <div class="scrollable-content">
                             <div class="amp-section clearfix">
                                 <div class="col-xs-4">
                                     <table class="table  amp-table">
                                         <thead>
-                                        <tr style="">
-                                            <th class="fake-th"></th>
-                                        </tr>
+                                            <tr style="">
+                                                <th class="fake-th"></th>
+                                            </tr>
                                         </thead>
                                         <tbody ng-if="noiCtrl.noiModal == 'income'">
-                                        <tr class="tr-main">
-                                            <th>收入<em class="ys-icon icon-menu-down"></em></th>
-                                        </tr>
-                                        <tr class="tr-sub">
-                                            <th>租金</th>
-                                        </tr>
-                                        <tr class="tr-sub">
-                                            <th>物业管理费</th>
-                                        </tr>
+                                            <tr class="tr-main">
+                                                <th>收入<em class="ys-icon icon-menu-down"></em></th>
+                                            </tr>
+                                            <tr class="tr-sub">
+                                                <th>租金</th>
+                                            </tr>
+                                            <tr class="tr-sub">
+                                                <th>物业管理费</th>
+                                            </tr>
 
-                                        <!-- start -->
-                                        <tr class="tr-sub">
-                                            <th>其他收入</th>
-                                        </tr>
+                                            <!-- start -->
+                                            <tr class="tr-sub">
+                                                <th>其他收入</th>
+                                            </tr>
                                         </tbody><!--ng if income-->
 
                                         <tbody ng-if="noiCtrl.noiModal == 'fee'">
@@ -512,7 +510,7 @@
 
                                                     <tr class="tr-sub">
                                                         <td ng-repeat="tdData in noiCtrl.feeData[7].values|take:(1+(noiCtrl.activeModalTab-1)*4):4">
-                                                            {{tdData.value|default:"-"|numberFormat:$index:2}}</td>
+                                                           {{tdData.value|default:"-"|numberFormat:$index:2}}</td>
 
                                                     </tr>
 
@@ -583,14 +581,8 @@
 
                                 </div>
                             </div><!--amp section-->
-                        </div><!--scrollable content-->
-                    </div><!--scrollable-->
-                    <!--<div class="amp-modal-block">
-                        <div class="amp-tab-pages" id="amp-tab-modal">
-
-
                         </div>
-                    </div>-->
+                    </div>
                 </div>
 
             </div>

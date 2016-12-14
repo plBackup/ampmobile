@@ -18,7 +18,7 @@
 #noiPage .nav > li { position: relative; display: block; }
 #noiPage .nav-tabs > li { float: left; margin-bottom: -1px;width:25%;overflow:hidden;text-overflow: ellipsis;white-space: nowrap; }
 
-#noiPage .nav > li > a { position: relative; display: block; padding: 10px 15px;line-height: 24px;text-align: center;font-size: 13px;}
+#noiPage .nav > li > a { position: relative; display: block; padding: 10px 6px;line-height: 24px;text-align: center;font-size: 13px;}
 #noiPage .nav-tabs > li > a {
     margin-right: 2px;
     line-height: 22px;
@@ -75,13 +75,66 @@
 }
 .chart-wrapper i.name{font-style: normal;font-size: 13px;}
 
+/*#noi-subpage*/
+#noi-subpage{background-color:#edeef3;}
 
+#noi .modal-overlay{background-color: #edeef3;}
+#noi .modal-overlay .modal-content,#noi .modal-overlay .modal-dialog{margin:0;height:100%;}
+#noi  .modal-header{padding:0 40px;height:44px;background-color: #1a202c;overflow:hidden;}
+#noi  .modal-header button.close{display: block;height:44px;width:40px;position: absolute;z-index:199;top:0;left:0;}
+#noi .modal-title{height:44px;line-height: 44px;color:#fff;text-align: center;width:100%;}
 
+#noi .modal-body{padding:0;height:100%;}
+/*#noi- modal tabs*/
+#noi .modal-overlay .nav { margin-bottom: 0; padding-left: 0; list-style: none; }
+#noi .modal-overlay .nav-tabs { border-bottom: 10px solid #edeef3; background-color: #fff;}
+#noi .modal-overlay .nav > li { position: relative; display: block; }
+#noi .modal-overlay .nav-tabs > li { float: left; margin-bottom: 0;width:25%;overflow:hidden;text-overflow: ellipsis;white-space: nowrap; }
 
+#noi .modal-overlay .nav > li > a { position: relative; display: block; padding: 10px 6px;line-height: 24px;text-align: center;font-size: 13px;}
+#noi .modal-overlay .nav-tabs > li > a {
+    margin-right: 2px;
+    line-height: 22px;
+    border: 0;
+    color:#373c42;
+}
 
+#noi .modal-overlay .nav-tabs > li.active > a,#noi .modal-overlay .nav-tabs > li.active > a:focus {
+    color: #5ab46e;
+    background-color: #fff;
+}
+#noi .modal-overlay .amp-section{background-color: #fff;}
+#noi .modal-overlay .table{margin-bottom:0;}
+#noi .modal-overlay .col-xs-4,#noi .modal-overlay .col-xs-8{padding-left:0;padding-right:0;}
 
+#noi .modal-overlay .swiper-slide{width:auto;}
 
+#noi .modal-overlay table>thead>tr>th {
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 46px;
+    color: #8592a3;
+    font-size: 12px;
+    text-align: right;
+    vertical-align: middle;
+    border-bottom: 0;
+    font-weight: normal;
+    border-bottom: 1px solid #d9dde0;
+}
+#noi .modal-overlay .col-xs-4>table{width:100%;border-right:solid 1px #d9dde0;}
+#noi .modal-overlay table>thead>tr>th span,
+#noi .modal-overlay table>thead>tr>th em.em-unit{display: block;height:16px;line-height: 16px;margin:0;}
+#noi .modal-overlay table>thead>tr>th span{color:#373c42;font-size:13px;}
+#noi .modal-overlay table > tbody > tr > td{font-size:14px;color:#373c42;text-align: right;}
 
-
-
-
+#noi .modal-overlay .col-xs-4>table > tbody > tr > th {
+    padding-left:15px;
+    font-size: 14px;
+    color: #373c42;
+    text-align: left;
+}
+#noi .modal-overlay .col-xs-4>table > tbody > tr.tr-main > th,
+#noi .modal-overlay table > tbody > tr.tr-main>td{font-weight:bold;}
+/*modal里折叠按钮隐藏*/
+#noi .modal-overlay  table  .icon-menu-down{display: none;}

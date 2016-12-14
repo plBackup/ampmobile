@@ -58,23 +58,7 @@ noi.controller('noiController', ['$rootScope', '$scope',"$timeout","noiAllData",
 
         self.viewDetail=function(dataType){
 
-            SharedState.turnOn("subpageModal");
-            $timeout(function(){
-                if(typeof noi_modal_swiper !=="undefined"){
-                    noi_modal_swiper.destroy(true,true);
-                }
-                noi_modal_swiper = new Swiper('#amp-tab-modal-swiper', {
-                    scrollbar: '.swiper-scrollbar',
-                    direction: 'horizontal',
-                    slidesPerView: 'auto',
-                    //mousewheelControl: true,
-                    freeMode: true,
-                    scrollbarHide:false,
-                    //watchSlidesProgress:true,
-                    observer:true,
-                    observeParents:true,
-                });
-            },200);
+
 
           switch(dataType){
               case "income":
@@ -106,6 +90,26 @@ noi.controller('noiController', ['$rootScope', '$scope',"$timeout","noiAllData",
                   self.noiModal="income";
                   return;
           }
+
+            SharedState.turnOn("subpageModal");
+            $timeout(function(){
+                if(typeof noi_modal_swiper !=="undefined"){
+                    noi_modal_swiper.destroy(true,true);
+                }
+                noi_modal_swiper = new Swiper('#amp-tab-modal-swiper', {
+                    scrollbar: '.swiper-scrollbar',
+                    direction: 'horizontal',
+                    slidesPerView: 'auto',
+                    //mousewheelControl: true,
+                    freeMode: true,
+                    scrollbarHide:true,
+                    watchSlidesProgress:true,
+                    observer:true,
+                    observeParents:true,
+                });
+
+                noi_modal_swiper.update();
+            },300);
         };
        /*swiper */
         var pin;
