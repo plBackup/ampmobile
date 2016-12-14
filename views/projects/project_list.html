@@ -27,7 +27,7 @@
                                     <em>{{project.proportion|default:"-"}}</em>
                                     <div class="amp-project-chart-wrapper">
                                         <div id="project-{{project.pid}}-openrate-chart" pie-chart
-                                             chart-data="project.openRate" chart-name="listCtrl.oRate" style="width:100px;height:100px;"></div>
+                                             chart-data="project.openRate" chart-name="listCtrl.oRate" style="width:78px;height:78px;"></div>
                                         <span>
                                             <label>开业率</label>
                                             <em>{{project.openRate| default:"-" | percentFormat}}</em>
@@ -38,9 +38,9 @@
                                 <div class="col-xs-6 amp-project-info">
                                     <label>总收入</label>
                                     <em>{{project.income|number:2}}</em>
-                                    <div class="amp-project-chart-wrapper">
+                                    <div class="amp-project-chart-wrapper" style="right:10px;">
                                         <div id="project-{{project.pid}}-complete-chart" pie-chart
-                                             chart-data="project.complete" chart-name="listCtrl.cRate" style="width:100px;height:100px;"></div>
+                                             chart-data="project.complete" chart-name="listCtrl.cRate" style="width:78px;height:78px;"></div>
                                         <span>
                                             <label>完成率</label>
                                             <em>{{project.complete| default:"-" | percentFormat}}</em>
@@ -48,20 +48,76 @@
                                     </div><!--amp-project-chart-wrapper-->
                                 </div><!--project info-->
 
-                                <div class="col-xs-6 amp-project-info">
+                                <div class="col-xs-6 amp-project-info" style="height:54px;">
                                     <label>平均租金(按GFA)</label>
-                                    <em>{{project.rentGFA|number:2}}</em>
+                                    <em>{{project.rentGFA| default:"-"|number:2}}</em>
                                 </div><!--project info-->
 
-                                <div class="col-xs-6 amp-project-info">
+                                <div class="col-xs-6 amp-project-info" style="height:54px;">
                                     <label>平均租金(按GLA)</label>
-                                    <em>{{project.rentGLA|number:2}}</em>
+                                    <em>{{project.rentGLA| default:"-"|number:2}}</em>
                                 </div><!--project info-->
                             </div><!--amp-section-content-->
                         </div><!--amp-section-->
                     </li><!--ng repeat-->
 
 
+                    <li ng-repeat="project in listCtrl.projects" >
+                        <div class="amp-section amp-section-projectInfo">
+                            <div class="amp-section-header clearfix">
+                                <div class="col-xs-8">
+                                    <h3>
+                                        <em>{{project.name}}</em>
+                                        <div class="amp-project-opt">
+                                            <!--<span><a href="#/noi/{{project.pid}}">详情</a>|<a href="#/projectupdate/{{project.pid}}">修改</a></span>-->
+                                            <span><a ui-sref="noi({pid:project.pid})">详情</a>|<a ui-sref="projectupdate({pid:project.pid})">修改</a></span>
+                                        </div>
+                                    </h3>
+                                </div>
+                                <div class="col-xs-4">
+                                    <!--<em class="amp-figure" style="background-image:url(static/images/{{project.pm.figure}});"></em>-->
+                                    <em class="amp-figure"></em>
+                                </div>
+                            </div><!--amp-section-header-->
+                            <div class="amp-section-content clearfix">
+                                <div class="col-xs-6 amp-project-info">
+                                    <label>面积</label>
+                                    <em>{{project.proportion|default:"-"}}</em>
+                                    <div class="amp-project-chart-wrapper">
+                                        <div id="project-{{project.pid}}-openrate-chart" pie-chart
+                                             chart-data="project.openRate" chart-name="listCtrl.oRate" style="width:78px;height:78px;"></div>
+                                        <span>
+                                            <label>开业率</label>
+                                            <em>{{project.openRate| default:"-" | percentFormat}}</em>
+                                        </span>
+                                    </div><!--amp-project-chart-wrapper-->
+                                </div><!--project info-->
+
+                                <div class="col-xs-6 amp-project-info">
+                                    <label>总收入</label>
+                                    <em>{{project.income|number:2}}</em>
+                                    <div class="amp-project-chart-wrapper" style="right:10px;">
+                                        <div id="project-{{project.pid}}-complete-chart" pie-chart
+                                             chart-data="project.complete" chart-name="listCtrl.cRate" style="width:78px;height:78px;"></div>
+                                        <span>
+                                            <label>完成率</label>
+                                            <em>{{project.complete| default:"-" | percentFormat}}</em>
+                                        </span>
+                                    </div><!--amp-project-chart-wrapper-->
+                                </div><!--project info-->
+
+                                <div class="col-xs-6 amp-project-info" style="height:54px;">
+                                    <label>平均租金(按GFA)</label>
+                                    <em>{{project.rentGFA| default:"-"|number:2}}</em>
+                                </div><!--project info-->
+
+                                <div class="col-xs-6 amp-project-info" style="height:54px;">
+                                    <label>平均租金(按GLA)</label>
+                                    <em>{{project.rentGLA| default:"-"|number:2}}</em>
+                                </div><!--project info-->
+                            </div><!--amp-section-content-->
+                        </div><!--amp-section-->
+                    </li><!--ng repeat-->
                 </ul>
             </div><!--ys-block-->
 

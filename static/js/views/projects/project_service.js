@@ -20,7 +20,7 @@ angular.module('projects').service('projectService', function($rootScope,$http) 
                         {
                             name: '开业率',
                             type: 'pie',
-                            radius : ['65%','70%'],
+                            radius : ['90%','96%'],
                             center: ['50%', '50%'],
                             selectedOffset:0,
                             data:[

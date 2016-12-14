@@ -5,16 +5,31 @@
     font-style:normal;
 }
 
-.projectListView{background-color:#242d3c;}
+.projectListView{background-color:#0f161e;}
 #project-list{}
-#project-list .amp-section{border-bottom:solid 10px #0f161e;}
-#project-list .amp-section-header{padding:15px 0;height:60px;color:#fff;position: relative;}
+.projectListView .scrollable-content{background-color:#0f161e;}
+#project-list .amp-section{background-color: #242d3c;border-bottom:solid 10px #0f161e;}
+#project-list .amp-section-header{padding:15px 0;height:60px;color:#fff;position: relative;border-bottom:solid 1px #4b5368;}
 #project-list .amp-section-header h3{margin-bottom:0;line-height:30px;font-size:16px;}
 #project-list .amp-section-header h3>em,#project-list .amp-section-header h3>div.amp-project-opt{display:block;float:left;}
 
 #project-list .amp-section-header em.amp-figure{display: block;height:34px;width:34px;float: right;border-radius: 34px;
     background-image:url(../../images/figure_default.png);background-size:cover;background-repeat: no-repeat;background-position: center center;}
-
+#project-list .amp-section-content{padding: 15px 0;}
 .amp-section-header h3>div.amp-project-opt{margin-left:20px;color:#12d6ec;}
 
 .amp-section-header h3>div.amp-project-opt a{display: inline-block;margin-left:10px;margin-right:10px; color:#12d6ec;font-size:14px; }
+
+.amp-project-info{position:relative;height:78px;}
+.amp-project-info>em,.amp-project-info>label{display: block;}
+.amp-project-info>label{height:16px;line-height: 16px;font-size: 12px;color:#9aafc2;}
+.amp-project-info>em{font-family: "impact","Helvetica Neue", Helvetica, Arial, sans-serif;color:#64d47e;font-size: 22px;}
+.amp-project-chart-wrapper{position:absolute;top:0;right:0;width:80px;height:80px;  overflow: hidden;}
+
+.amp-project-chart-wrapper>span{display: block;position:absolute;width:76px;
+    overflow: hidden;top:50%;left:50%;margin-left:-38px;margin-top:-20px;color:#fff;text-align:center;font-size:12px;line-height: 16px;}
+.amp-project-chart-wrapper>span>label{margin-bottom:2px;color:#9aafc2;}
+
+.projectListView .foot-btn-wrapper{height:56px;background-color: #0f161e;}
+.projectListView .amp-footer-btn{display: block;width:100%;height:56px;line-height: 56px;padding:0;background-color: #242d3c;border-radius:0;color:#12d6ec;}
+.projectListView .amp-footer-btn em.

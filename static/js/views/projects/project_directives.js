@@ -14,12 +14,10 @@ angular.module('projects').directive('pieChart', ["projectService",
                 //console.log($element);
                 //var lineChart;
                 var dataSimChart = echarts.init($element[0]);
-                console.log(dataSimChart);
 
-                var chartData=parseFloat($scope.chartData);//project.openRate,
-                console.log(chartData);
+                var chartData=parseFloat($scope.chartData)*100;//project.openRate,
                 var chartData_un=100-chartData;
-                console.log($scope.chartName);
+
                 var chartName=$scope.chartName||"完成率";
                 var data=[
                     {
@@ -38,7 +36,6 @@ angular.module('projects').directive('pieChart', ["projectService",
                 ];
 
                 var opt=projectService.setChartOption(data);
-                console.log(opt)
                 dataSimChart.setOption(opt);
 
                 /*
@@ -54,7 +51,7 @@ angular.module('projects').directive('pieChart', ["projectService",
                 $scope.$watch('chartData', function(newVal, oldVal) {
                     //console.log(newVal);
                     if (newVal) {
-                        var chartData=parseFloat($scope.chartData);//project.openRate,
+                        var chartData=parseFloat($scope.chartData)*100;//project.openRate,
                         var chartData_un=100-chartData;
                         var chartName=$scope.chartName;
                         var data=[
