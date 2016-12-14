@@ -107,7 +107,10 @@ projects.controller("pjUpdateController",["$rootScope","$scope","$location","pid
     $rootScope.showHeader();
     $rootScope.hideBottom();
 
+    console.log(pid);
+    console.log($rootScope.projects)
     self.pid=pid;
+
     self.curState=$rootScope.curState;//判断当前页是update 还是create
     self.index="update";
     self.project=$rootScope.projects[pid];
