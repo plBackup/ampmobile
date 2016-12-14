@@ -3,18 +3,18 @@
         <div class="swiper-container" id="noi-headerInfo-swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <h5>净营运收入NOI(万元)</h5>
-                    <div class="noi-swiper-content">
-                        <div class="col-xs-4">
-                            <span>当月实际</span>
-                            <h3>{{noiCtrl.noiData[0].value | number:2}}</h3>
-                        </div>
+                        <h5>净营运收入NOI(万元)</h5>
+                        <div class="noi-swiper-content">
+                            <div class="col-xs-4">
+                                <span>当月实际</span>
+                                <h3>{{noiCtrl.noiData[0].value | number:2}}</h3>
+                            </div>
 
-                        <div class="col-xs-4">
-                            <span>全年预测</span>
-                            <h3>{{noiCtrl.noiData[1].value | number:2}}</h3>
+                            <div class="col-xs-4">
+                                <span>全年预测</span>
+                                <h3>{{noiCtrl.noiData[1].value | number:2}}</h3>
+                            </div>
                         </div>
-                    </div>
                 </div><!--swiper-slide-->
 
                 <div class="swiper-slide">
@@ -122,17 +122,17 @@
                         <div class="amp-table-wrapper">
                             <table class="table amp-table">
                                 <thead>
-                                <tr >
-                                    <th>实际{{activeTab}}</th>
-                                    <th>预算</th>
-                                    <th>差异额</th>
-                                    <th>差异率</th>
-                                </tr>
+                                    <tr >
+                                        <th>实际{{activeTab}}</th>
+                                        <th>预算</th>
+                                        <th>差异额</th>
+                                        <th>差异率</th>
+                                    </tr>
                                 </thead>
                                 <tbody>
-                                <tr class="tr-main">
-                                    <td ng-repeat="tdData in noiCtrl.incomeData[3].values |take:(1+(noiCtrl.activeTab-1)*4):4">{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
-                                </tr>
+                                    <tr class="tr-main">
+                                        <td ng-repeat="tdData in noiCtrl.incomeData[3].values |take:(1+(noiCtrl.activeTab-1)*4):4">{{tdData.value|default:"-"|numberFormat:$index:2}}</td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -203,7 +203,7 @@
                             </table>
                         </div>
                     </div><!--amp section-->
-                </div>
+            </div>
             </div>
             <div class="amp-block">
                 <div class="amp-block-title clearfix" ng-click="noiCtrl.viewDetail('arrearage')">
@@ -221,9 +221,9 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr class="tr-main">
-                            <td ng-repeat="tdData in noiCtrl.arrearageData[3].values.slice(1)">{{tdData.value|number:2}}</td>
-                        </tr>
+                            <tr class="tr-main">
+                                <td ng-repeat="tdData in noiCtrl.arrearageData[3].values.slice(1)">{{tdData.value|number:2}}</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -262,8 +262,8 @@
                     <h4 class="modal-title">{{noiCtrl.modalTitle}}</h4>
                 </div>
                 <div class="modal-body">
-                    <div class="amp-modal-block">
-                        <div class="amp-tab-pages" id="amp-tab-modal">
+                    <div class="scrollable amp-modal-block">
+                        <div class="scrollable-header">
                             <ui-shared-state id="activeModalTab" default="1"></ui-shared-state>
                             <ul class="nav nav-tabs" ng-if="noiCtrl.noiModal != 'arrearage'">
                                 <li ui-class="{'active': activeModalTab == 1}" >
@@ -281,6 +281,8 @@
                                 </li>
                             </ul>
 
+                        </div><!--scrollable header-->
+                        <div class="scrollable-content">
                             <div class="amp-section clearfix">
                                 <div class="col-xs-4">
                                     <table class="table  amp-table">
@@ -551,22 +553,22 @@
 
                                                     <tbody ng-if="noiCtrl.noiModal == 'arrearage'">
                                                     <tr class="tr-main">
-                                                        <td ng-repeat="tdData in noiCtrl.arrearageData[3].values|skip:1">
+                                                        <td ng-repeat="tdData in noiCtrl.arrearageData[3].values|take:(1+(noiCtrl.activeModalTab-1)*4):4">
                                                             {{tdData.value|default:"-"|numberFormat}}</td>
                                                     </tr>
 
                                                     <tr class="tr-sub">
-                                                        <td ng-repeat="tdData in noiCtrl.arrearageData[0].values|skip:1">
+                                                        <td ng-repeat="tdData in noiCtrl.arrearageData[0].values|take:(1+(noiCtrl.activeModalTab-1)*4):4">
                                                             {{tdData.value|default:"-"|numberFormat}}</td>
 
                                                     </tr>
                                                     <tr class="tr-sub">
-                                                        <td ng-repeat="tdData in noiCtrl.arrearageData[1].values|skip:1">
+                                                        <td ng-repeat="tdData in noiCtrl.arrearageData[1].values|take:(1+(noiCtrl.activeModalTab-1)*4):4">
                                                             {{tdData.value|default:"-"|numberFormat}}</td>
                                                     </tr>
                                                     <!-- start -->
                                                     <tr class="tr-sub">
-                                                        <td ng-repeat="tdData in noiCtrl.arrearageData[2].values|skip:1">
+                                                        <td ng-repeat="tdData in noiCtrl.arrearageData[2].values|take:(1+(noiCtrl.activeModalTab-1)*4):4">
                                                             {{tdData.value|default:"-"|numberFormat}}
                                                         </td>
                                                     </tr>
@@ -581,8 +583,14 @@
 
                                 </div>
                             </div><!--amp section-->
+                        </div><!--scrollable content-->
+                    </div><!--scrollable-->
+                    <!--<div class="amp-modal-block">
+                        <div class="amp-tab-pages" id="amp-tab-modal">
+
+
                         </div>
-                    </div>
+                    </div>-->
                 </div>
 
             </div>
