@@ -37,9 +37,10 @@
 /*projectCreate View*/
 .projectCreateView{background-color:#0f161e;}
 .projectCreateView .input-wrapper{padding-top:30px;padding-bottom:30px;}
-.projectCreateView .input-wrapper .input-group{height:56px;padding:7px 0;line-height: 42px;position: relative;padding-left:90px;}
-.projectCreateView .input-wrapper .input-group>label{position: absolute;height:42px;width:90px;padding-right:15px;left:0;top:50%;margin-top:-21px;color:#8592a3;}
-
+.projectCreateView .input-wrapper .input-group{height:56px;padding:7px 0;line-height: 42px;position: relative;width:100%;}
+.projectCreateView .input-wrapper .input-group>label{position: absolute;z-index:999;margin-bottom:0;height:42px;width:90px;padding-left:15px;padding-right:15px;left:0;top:50%;margin-top:-21px;color:#8592a3;}
+.projectCreateView .input-wrapper .input-group input{display:block;height:42px;width:100%;padding-left:92px;background-color:#242d3c;color:#8592a3;border:0;border-radius:4px;}
+/*
 #ys-amp-create .input-group#open-date-wrapper:after {
     display: block;
     position: absolute;
@@ -53,12 +54,19 @@
     background-image: url(../../images/icon.png);
     background-repeat: no-repeat;
 }
+*/
+.projectCreateView .input-wrapper .input-group input[hidden]{display:none;}
+.projectCreateView  input:focus {
+    outline: solid 3px #8ec1f6;
+    outline-offset: -2px;
+}
 
+.projectCreateView .input-wrapper .dropdown>button{display:block;height:42px;width:100%;padding-left:92px;background-color:#242d3c;color:#8592a3;border:0;border-radius:4px;text-align: left;}
 
-
-
-
-
+.projectCreateView .dropdown-menu{width:100%;border-radius:0;border:0;background-color:#242d3c;color:#8592a3; }
+.projectCreateView .dropdown-menu li>a{padding-left:92px;height:44px;color:#fff;line-height:38px; text-align:left;font-size:14px;}
+.projectCreateView .dropdown-menu li>a:focus{background-color: #4F6079;}
+.projectCreateView  .dropdown-menu > .active > a,.projectCreateView  .dropdown-menu > .active > a:focus{background-color: #4F6079;}
 
 
 
