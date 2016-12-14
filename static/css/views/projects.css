@@ -16,7 +16,7 @@
 #project-list .amp-section-header em.amp-figure{display: block;height:34px;width:34px;float: right;border-radius: 34px;
     background-image:url(../../images/figure_default.png);background-size:cover;background-repeat: no-repeat;background-position: center center;}
 #project-list .amp-section-content{padding: 15px 0;}
-.amp-section-header h3>div.amp-project-opt{margin-left:20px;color:#12d6ec;}
+.amp-section-header h3>div.amp-project-opt{margin-left:6px;color:#12d6ec;}
 
 .amp-section-header h3>div.amp-project-opt a{display: inline-block;margin-left:10px;margin-right:10px; color:#12d6ec;font-size:14px; }
 
@@ -32,4 +32,52 @@
 
 .projectListView .foot-btn-wrapper{height:56px;background-color: #0f161e;}
 .projectListView .amp-footer-btn{display: block;width:100%;height:56px;line-height: 56px;padding:0;background-color: #242d3c;border-radius:0;color:#12d6ec;}
-.projectListView .amp-footer-btn em.
+
+
+/*projectCreate View*/
+.projectCreateView{background-color:#0f161e;}
+.projectCreateView .input-wrapper{padding-top:30px;padding-bottom:30px;}
+.projectCreateView .input-wrapper .input-group{height:56px;padding:7px 0;line-height: 42px;position: relative;padding-left:90px;}
+.projectCreateView .input-wrapper .input-group>label{position: absolute;height:42px;width:90px;padding-right:15px;left:0;top:50%;margin-top:-21px;color:#8592a3;}
+
+#ys-amp-create .input-group#open-date-wrapper:after {
+    display: block;
+    position: absolute;
+    content: " ";
+    width: 16px;
+    height: 16px;
+    background-position: -420px -198px;
+    z-index: 99;
+    bottom: 12px;
+    right: 12px;
+    background-image: url(../../images/icon.png);
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

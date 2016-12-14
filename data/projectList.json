@@ -1,5 +1,6 @@
 {
   "projects":[{
+    "pid":0,
     "name":"模拟项目001",
     "proportion":"50,462.01",
     "proportionType":"套内面积",
@@ -28,6 +29,7 @@
     "position":"上海"
   },
     {
+      "pid":1,
       "name":"七宝宝龙广场",
       "proportion":"75,149.4",
       "proportionType":"建筑面积",
