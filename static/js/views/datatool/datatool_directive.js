@@ -157,3 +157,4 @@ angular.module('dataTool').directive('simChart', ["chartOptService",
             }
         };
     }]);
+

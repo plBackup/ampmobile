@@ -3,17 +3,17 @@
     "name":"模拟项目001",
     "proportion":"50,462.01",
     "proportionType":"套内面积",
-    "openRate":"89.12%",
+    "openRate":89.12,
     "income":435.88,
-    "irr":"6.12%",
-    "complete":"90.32%",
+    "irr":6.12,
+    "complete":90.32,
     "noi":{
         "monthly":216.57,
         "yearly":"2,652.32"
     },
     "asset":{
       "value":"45,569",
-      "rate":"5.82%"
+      "rate":5.82
     },
     "pm":{
       "name":"王总",
@@ -29,9 +29,9 @@
       "name":"七宝宝龙广场",
       "proportion":"75,149.4",
       "proportionType":"建筑面积",
-      "openRate":"85.00%",
+      "openRate":85.00,
       "income":639.51,
-      "irr":"0.50%",
+      "irr":0.50,
       "complete":"74.76%",
       "noi":{
         "monthly":188.64,
@@ -39,7 +39,7 @@
       },
       "asset":{
         "value":"110,957.13",
-        "rate":"0.50%"
+        "rate":0.50
       },
       "pm":{
         "name":"王总",

@@ -18,6 +18,9 @@ projects.controller("pjListController",["$rootScope","$scope","$location","proje
 
     self.projects=$rootScope.projects;
 
+    self.oRate="开业率";
+    self.cRate="完成率";
+
     self.projectUpdate=function(){
         console.log("project update----------------");
         $location.path("projectupdate");

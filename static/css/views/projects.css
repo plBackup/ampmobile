@@ -1,0 +1,20 @@
+@font-face {
+    font-family:"impact";
+    src:url("./font/impact.ttf") format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+.projectListView{background-color:#242d3c;}
+#project-list{}
+#project-list .amp-section{border-bottom:solid 10px #0f161e;}
+#project-list .amp-section-header{padding:15px 0;height:60px;color:#fff;position: relative;}
+#project-list .amp-section-header h3{margin-bottom:0;line-height:30px;font-size:16px;}
+#project-list .amp-section-header h3>em,#project-list .amp-section-header h3>div.amp-project-opt{display:block;float:left;}
+
+#project-list .amp-section-header em.amp-figure{display: block;height:34px;width:34px;float: right;border-radius: 34px;
+    background-image:url(../../images/figure_default.png);background-size:cover;background-repeat: no-repeat;background-position: center center;}
+
+.amp-section-header h3>div.amp-project-opt{margin-left:20px;color:#12d6ec;}
+
+.amp-section-header h3>div.amp-project-opt a{display: inline-block;margin-left:10px;margin-right:10px; color:#12d6ec;font-size:14px; }
