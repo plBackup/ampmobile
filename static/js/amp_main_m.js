@@ -34,6 +34,7 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
             views:{
                 'header': {
                     templateUrl: './views/projects/project_list_header.html'
+
                 },
                 'content': {
                     templateUrl: './views/projects/project_list.html',
@@ -60,7 +61,9 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
             url: '/create',
             views:{
                 'header': {
-                    templateUrl: './views/projects/project_create_header.html'
+                    templateUrl: './views/projects/project_create_header.html',
+                    controller:'pjHeadController',
+                    controllerAs:"hCtrl"
                 },
                 'content': {
                     templateUrl: './views/projects/project_create.html',
@@ -84,7 +87,9 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
             url: '/projectupdate/{pid}',
             views:{
                 'header': {
-                    templateUrl: './views/projects/project_create_header.html'
+                    templateUrl: './views/projects/project_update_header.html',
+                    controller:'pjHeadController',
+                    controllerAs:"hCtrl"
                 },
                 'content': {
                     templateUrl: './views/projects/project_create.html',

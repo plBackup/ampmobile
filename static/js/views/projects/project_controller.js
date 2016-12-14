@@ -5,7 +5,13 @@
 var projects = angular.module('projects', [
     'ui.router',
 ]);
+projects.controller("pjHeadController",["$rootScope","$scope","$location","$state",function($rootScope,$scope,$location,$state){
+    var self=this;
+   self.back=function(){
+     $state.go("projectlist");
+   };
 
+}]);
 projects.controller("pjListController",["$rootScope","$scope","$location","projectsData",function($rootScope,$scope,$location,projectsData){
     var self=this;
     if(!$rootScope.projects){
@@ -35,7 +41,7 @@ projects.controller("pjListController",["$rootScope","$scope","$location","proje
 projects.controller("pjCreateController",["$rootScope","$scope","$location",function($rootScope,$scope,$location){
     //$scope.project=project;
     var self=this;
-    $rootScope.hideHeader();
+    $rootScope.showHeader();
     $rootScope.hideBottom();
     self.project={
         "name":"",
@@ -98,6 +104,9 @@ projects.controller("pjCreateController",["$rootScope","$scope","$location",func
 projects.controller("pjUpdateController",["$rootScope","$scope","$location","pid",function($rootScope,$scope,$location,pid){
     //$scope.project=project;
     var self=this;
+    $rootScope.showHeader();
+    $rootScope.hideBottom();
+
     self.pid=pid;
     self.curState=$rootScope.curState;//判断当前页是update 还是create
     self.index="update";
