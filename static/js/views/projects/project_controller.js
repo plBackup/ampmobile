@@ -1,6 +1,25 @@
 /**
  * Created by limeiting on 16/12/7.
  */
+var project_create=(function($,pc){
+    var project_create=pc;
+
+    project_create.init=function(){
+        $("#open-date").datetimepicker({
+            format: "yyyy-mm-dd",
+            autoclose: true,
+            todayBtn: true,
+            pickerPosition: "bottom-left",
+            startView:3,
+            minView:2,
+            maxView:4,
+            language:"zh-CN"
+        });
+
+    };
+
+    return project_create;
+})(jQuery,project_create||{});
 
 var projects = angular.module('projects', [
     'ui.router',
@@ -96,9 +115,9 @@ projects.controller("pjCreateController",["$rootScope","$scope","$location",func
             self.submit();
         }
     };
-
+    project_create.init();
     $scope.$on("$destroy", function() {
-        //$("#open-date-wrapper input").datetimepicker("remove");
+        $("#open-date-wrapper input").datetimepicker("remove");
     });
 }]);
 projects.controller("pjUpdateController",["$rootScope","$scope","$location","pid",function($rootScope,$scope,$location,pid){
@@ -130,7 +149,7 @@ projects.controller("pjUpdateController",["$rootScope","$scope","$location","pid
 
     self.submit=function(){
         console.log("...........");
-        //$rootScope.projects.push(self.project);
+        $rootScope.projects.push(self.project);
         $location.path("main");
     };
 
@@ -142,10 +161,10 @@ projects.controller("pjUpdateController",["$rootScope","$scope","$location","pid
         }
     };
 
-    //project_create.init();
+    project_create.init();
 
     $scope.$on("$destroy", function() {
-       // $("#open-date-wrapper input").datetimepicker("remove");
+        $("#open-date-wrapper input").datetimepicker("remove");
     });
 }]);
 

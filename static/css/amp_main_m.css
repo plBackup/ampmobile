@@ -4,7 +4,7 @@
 .ampApp .navbar-absolute-top{height:44px;min-height: 44px;}
 .ampApp .navbar-absolute-bottom{height:48px;min-height: 48px;}
 .ampApp .navbar-brand{padding:12px 15px;height:44px;color:#fff;font-weight:normal;}
-.ampApp .navbar-app .btn-navbar, .navbar-app .btn{line-height: 44px;color:#fff;}
+.ampApp .navbar-app .btn-navbar, .navbar-app .btn{height:44px;line-height: 44px;color:#fff;}
 
 .sidebar-right,.sidebar-left{background-color:#fff;}
 /*.ampApp .navbar-absolute-bottom .btn-navbar, .navbar-app .btn{line-height: 44px;}*/
@@ -29,6 +29,8 @@ i.amp-menu-ctrl{background-image:url(../images/menu_ctrl@2x.png);}
 i.amp-menu-data{background-image:url(../images/menu_data@2x.png);}
 .btn.active>span.ampMenu-wrapper>i.amp-menu-data{background-image:url(../images/menu_data_active@2x.png);}
 
+i.amp-icon-back{display:block;width:22px;height:22px;background-repeat:no-repeat;background-size:contain;background-position:center center;background-image:url(../images/icon_logo_back@2x.png);}
+.navbar-absolute-top i.amp-icon-back{position:absolute;top:50%;margin-top:-11px;left:15px;}
 /*navOpt-icon*/
 .ampApp .navOpt-icon{position:relative;display: inline-block;width:22px;height:44px;}
 .ampApp .navOpt-icon:before{position:absolute;display: block;top:50%;margin-top:-11px;left:50%;margin-left:-11px;
@@ -43,6 +45,7 @@ i.amp-menu-data{background-image:url(../images/menu_data@2x.png);}
 .amp-icon-addProject{position: relative;display:inline-block;margin-right:10px;width:22px;height:22px;background-image:url(../images/icon_plus_blue@2x.png);vertical-align: -5px;}
 
 #amp-create-project-note{color:#fff;text-align: center;margin-top:100px;}
+.datetimepicker.dropdown-menu{display:none;}
 
 
 

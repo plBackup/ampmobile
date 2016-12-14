@@ -40,21 +40,23 @@
 .projectCreateView .input-wrapper .input-group{height:56px;padding:7px 0;line-height: 42px;position: relative;width:100%;}
 .projectCreateView .input-wrapper .input-group>label{position: absolute;z-index:999;margin-bottom:0;height:42px;width:90px;padding-left:15px;padding-right:15px;left:0;top:50%;margin-top:-21px;color:#8592a3;}
 .projectCreateView .input-wrapper .input-group input{display:block;height:42px;width:100%;padding-left:92px;background-color:#242d3c;color:#8592a3;border:0;border-radius:4px;}
-/*
-#ys-amp-create .input-group#open-date-wrapper:after {
+
+.projectCreateView #open-date-wrapper:after {
     display: block;
     position: absolute;
     content: " ";
-    width: 16px;
-    height: 16px;
-    background-position: -420px -198px;
+    width: 15px;
+    height: 15px;
+    top:50%;
+    margin-top:-7px;
     z-index: 99;
-    bottom: 12px;
     right: 12px;
-    background-image: url(../../images/icon.png);
+    background-image: url(../../images/icon_calendar_dgrey@2x.png);
+    background-size:contain;
+    background-position: center center;
     background-repeat: no-repeat;
 }
-*/
+
 .projectCreateView .input-wrapper .input-group input[hidden]{display:none;}
 .projectCreateView  input:focus {
     outline: solid 3px #8ec1f6;
@@ -63,12 +65,39 @@
 
 .projectCreateView .input-wrapper .dropdown>button{display:block;height:42px;width:100%;padding-left:92px;background-color:#242d3c;color:#8592a3;border:0;border-radius:4px;text-align: left;}
 
+
+.projectCreateView .input-wrapper .dropdown>button:after {
+    display: block;
+    position: absolute;
+    content: " ";
+    width: 12px;
+    height: 12px;
+    top:50%;
+    margin-top:-6px;
+    z-index: 99;
+    right: 12px;
+    background-image: url(../../images/icon_arrow_down_dgrey@2x.png);
+    background-size:contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
 .projectCreateView .dropdown-menu{width:100%;border-radius:0;border:0;background-color:#242d3c;color:#8592a3; }
 .projectCreateView .dropdown-menu li>a{padding-left:92px;height:44px;color:#fff;line-height:38px; text-align:left;font-size:14px;}
 .projectCreateView .dropdown-menu li>a:focus{background-color: #4F6079;}
 .projectCreateView  .dropdown-menu > .active > a,.projectCreateView  .dropdown-menu > .active > a:focus{background-color: #4F6079;}
 
+/*
 
+ .datetimepicker{width:80%;}
+.datetimepicker table {
+    margin: 0;
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
+}
+.datetimepicker th.switch{width:inherit;}
+.datetimepicker td, .datetimepicker th{width:inherit;height:inherit;}
+*/
 
 
 
