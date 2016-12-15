@@ -42,6 +42,8 @@
     <link rel="stylesheet" href="./static/css/views/investment_analysis/simulation_calculation_list_header.css" />
     <link rel="stylesheet" href="./static/css/views/investment_analysis/simulation_calculation_header.css" />
     <link rel="stylesheet" href="./static/css/views/investment_analysis/simulation_calculation.css" />
+    <link rel="stylesheet" href="./static/css/views/investment_analysis/income_expenses_simulation_header.css" />
+    <link rel="stylesheet" href="./static/css/views/investment_analysis/income_expenses_simulation.css" />
 
     <!-- 管理分析 -->
     <link rel="stylesheet" href="./static/css/views/mgt_analysis/mgt_analysis_index.css" />
@@ -51,9 +53,17 @@
     <link rel="stylesheet" href="./static/css/views/mgt_analysis/income_analysis/income_analysis_index.css"/>
     <link rel="stylesheet" href="./static/css/views/mgt_analysis/income_analysis/contract_list.css"/>
     <link rel="stylesheet" href="./static/css/views/mgt_analysis/income_analysis/business_main.css"/>
+    <link rel="stylesheet" href="./static/css/views/mgt_analysis/income_analysis/contract_detail_header.css"/>
+    <link rel="stylesheet" href="./static/css/views/mgt_analysis/income_analysis/contract_detail.css"/>
 
     <!-- 管理分析 - 支出分析  -->
     <link rel="stylesheet" href="./static/css/views/mgt_analysis/cost_analysis/cost_main.css"/>
+    <link rel="stylesheet" href="./static/css/views/mgt_analysis/cost_analysis/cost_enrolment_header.css"/>
+    <link rel="stylesheet" href="./static/css/views/mgt_analysis/cost_analysis/cost_enrolment.css"/>
+    <link rel="stylesheet" href="./static/css/views/mgt_analysis/cost_analysis/cost_manual_header.css"/>
+    <link rel="stylesheet" href="./static/css/views/mgt_analysis/cost_analysis/cost_manual.css"/>
+    <link rel="stylesheet" href="./static/css/views/mgt_analysis/cost_analysis/cost_manual_enrolment_header.css"/>
+    <link rel="stylesheet" href="./static/css/views/mgt_analysis/cost_analysis/cost_manual_enrolment.css"/>
 
     <!-- 管理分析 - 租赁分析  -->
     <link rel="stylesheet" href="./static/css/views/mgt_analysis/rent_analysis/arrears_main.css"/>
@@ -65,6 +75,8 @@
     <link rel="stylesheet" href="./static/css/views/mgt_analysis/rent_analysis/arrears_merchant_detail_header.css"/>
     <link rel="stylesheet" href="./static/css/views/mgt_analysis/rent_analysis/arrears_merchant_detail.css"/>
     <link rel="stylesheet" href="./static/css/views/mgt_analysis/rent_analysis/rent_main.css"/>
+    <link rel="stylesheet" href="./static/css/views/mgt_analysis/rent_analysis/arrears_detail_enrolment_header.css"/>
+    <link rel="stylesheet" href="./static/css/views/mgt_analysis/rent_analysis/arrears_detail_enrolment.css"/>
 
     <!-- 管理分析 - 运营分析  -->
     <link rel="stylesheet" href="./static/css/views/mgt_analysis/business_analysis/passenger_flow_main.css"/>
@@ -121,6 +133,7 @@
     <!-- 模拟测算 -->
     <script src="static/js/views/investment_analysis/controller/simulation_calculation_list_controller.js"></script>
     <script src="static/js/views/investment_analysis/controller/simulation_calculation_controller.js"></script>
+    <script src="static/js/views/investment_analysis/controller/income_expenses_simulation_controller.js"></script>
 
     <!-- 管理分析 - 头部 -->
     <script src="static/js/views/mgt_analysis/controller/mgt_analysis_index_header_controller.js"></script>
@@ -130,18 +143,25 @@
     <script src="static/js/views/mgt_analysis/income_analysis/controller/income_analysis_index_controller.js"></script>
     <script src="static/js/views/mgt_analysis/income_analysis/controller/contract_list_controller.js"></script>
     <script src="static/js/views/mgt_analysis/income_analysis/controller/business_main_controller.js"></script>
+    <script src="static/js/views/mgt_analysis/income_analysis/controller/contract_detail_header_controller.js"></script>
+    <script src="static/js/views/mgt_analysis/income_analysis/controller/contract_detail_controller.js"></script>
 
     <!-- 管理分析 - 支出分析  -->
     <script src="static/js/views/mgt_analysis/cost_analysis/controller/cost_main_controller.js"></script>
+    <script src="static/js/views/mgt_analysis/cost_analysis/controller/cost_enrolment_controller.js"></script>
+    <script src="static/js/views/mgt_analysis/cost_analysis/controller/cost_manual_controller.js"></script>
+    <script src="static/js/views/mgt_analysis/cost_analysis/controller/cost_manual_enrolment_controller.js"></script>
 
     <!-- 管理分析 - 租赁分析  -->
     <script src="static/js/views/mgt_analysis/rent_analysis/controller/arrears_main_controller.js"></script>
     <script src="static/js/views/mgt_analysis/rent_analysis/controller/merchant_sale_main_controller.js"></script>
     <script src="static/js/views/mgt_analysis/rent_analysis/controller/arrears_detail_list.js"></script>
     <script src="static/js/views/mgt_analysis/rent_analysis/controller/merchant_sale_type_list.js"></script>
+    <script src="static/js/views/mgt_analysis/rent_analysis/controller/merchant_sale_type_list_header_controller.js"></script>
     <script src="static/js/views/mgt_analysis/rent_analysis/controller/arrears_merchant_detail_controller.js"></script>
     <script src="static/js/views/mgt_analysis/rent_analysis/controller/arrears_merchant_detail_header_controller.js"></script>
     <script src="static/js/views/mgt_analysis/rent_analysis/controller/rent_main_controller.js"></script>
+    <script src="static/js/views/mgt_analysis/rent_analysis/controller/arrears_detail_enrolment_controller.js"></script>
 
     <!-- 管理分析 - 运营分析  -->
     <script src="static/js/views/mgt_analysis/business_analysis/controller/passenger_flow_main_controller.js"></script>
@@ -202,6 +222,9 @@
 <div id="mgt-analysis-menu-list-wrapper" ui-yield-to="mgt-analysis-menu-list-wrapper"></div>
 
 <div id="mgt-analysis-statistics-panel-wrapper" ui-yield-to="mgt-analysis-statistics-panel-wrapper"></div>
+
+<!-- 模拟测算 参数弹出框 -->
+<div ui-yield-to="simulation-calculation-parameter-dialog-wrapper"></div>
 
 <!-- Modals and Overlays -->
 <div ui-yield-to="modals"></div>

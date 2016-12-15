@@ -82,7 +82,7 @@
 #noi .modal-overlay .modal-content,#noi .modal-overlay .modal-dialog{margin:0;height:100%;}
 #noi .modal-overlay .modal-content{padding-top:44px;position: relative;}
 #noi  .modal-header{position:absolute;top:0;left:0;width:100%;padding:0 40px;height:44px;background-color: #1a202c;overflow:hidden;}
-#noi  .modal-header button.close{display: block;height:44px;width:40px;position: absolute;z-index:199;top:0;left:0;}
+#noi  .modal-header button.close{display: block;height:44px;width:40px;position: absolute;z-index:199;top:0;left:0;opacity:1;}
 #noi .modal-title{height:44px;line-height: 44px;color:#fff;text-align: center;width:100%;}
 
 #noi .modal-body{padding:0;height:100%;}

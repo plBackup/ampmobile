@@ -418,10 +418,28 @@ var irr_plan=(function($,irr_plan){
 })(jQuery,irr_plan||{});
 
 var dataTool=angular.module("dataTool",[]);
+dataTool.controller("datatoolController",['$rootScope', '$scope',"$timeout","$location","$state",
+    function($rootScope,$scope,$timeout,$location,$state){
+        var self=this;
+        $rootScope.showHeader();
+        $rootScope.showBottom();
+
+        $rootScope.dFooterShow=true;
+        $rootScope.pageId="datatool";
+
+        $state.go("datatool.rpgindex");
+}]);
 dataTool.controller("dataIndexController",['$rootScope', '$scope',"dataIndexData","paginatorService","$timeout","$location","$state","$filter",
     function($rootScope, $scope,dataIndexData,paginatorService,$timeout,$location,$state,$filter) {
         var self=this;
         var shopData=dataIndexData.slice(1);
+
+        $rootScope.showHeader();
+        $rootScope.showBottom();
+
+        $rootScope.dFooterShow=true;
+        $rootScope.pageId="datatool.rpgindex";
+
         $rootScope.indexData=shopData;
         console.log($rootScope.indexData);
         self.indexData=$rootScope.indexData;

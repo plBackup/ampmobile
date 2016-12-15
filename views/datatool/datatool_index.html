@@ -52,4 +52,11 @@
 
         </div>
     </div><!--scrollable content-->
+    <div class="scrollable-footer"  ng-if="dFooterShow==true">
+        <div ui-yield-to="datatool-footer">
+            <div class="amp-pagination clearfix" ui-content-for="datatool-footer">
+
+            </div>
+        </div>
+    </div>
 </div><!--scrollable-->

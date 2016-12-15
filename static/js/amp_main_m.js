@@ -151,7 +151,9 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
                     templateUrl: './views/datatool/datatool_index_header.html'
                 },
                 'content': {
-                    templateUrl: './views/datatool/datatool_index.html'
+                    templateUrl: './views/datatool/datatool_index.html',
+                    controller:"datatoolController",
+                    controllerAs:"dCtrl",
                 },
                 "sidebarLeft":{
                     templateUrl:"./views/blank_left.html"
@@ -337,7 +339,7 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
         }
     });
 
-    // 模拟测算 方案列表页
+    // 模拟测算 方案
     $stateProvider.state({
         name:"simulation_calculation",
         url: "/simulation_calculation",
@@ -348,6 +350,21 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
             "content": {
                 templateUrl: "./views/investment_analysis/simulation_calculation.html",
                 controller:"simulation-calculation-controller"
+            }
+        }
+    });
+
+    // 模拟测算 方案
+    $stateProvider.state({
+        name:"income_expenses_simulation",
+        url: "/income_expenses_simulation",
+        views:{
+            "header":{
+                templateUrl:"./views/investment_analysis/income_expenses_simulation_header.html"
+            },
+            "content": {
+                templateUrl: "./views/investment_analysis/income_expenses_simulation.html",
+                controller:"income-expenses-simulation-controller"
             }
         }
     });
@@ -388,6 +405,22 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
             "income-analysis-view": {
                 controller:"contract-list-controller",
                 templateUrl: "./views/mgt_analysis/income_analysis/contract_list.html"
+            }
+        }
+    });
+
+    // 管理分析 - 收入分析 - 合同详情
+    $stateProvider.state({
+        name:"contract_detail",
+        url: "/contract_detail",
+        views:{
+            "header":{
+                templateUrl:"./views/mgt_analysis/income_analysis/contract_detail_header.html",
+                controller:"contract-detail-header-controller"
+            },
+            "content": {
+                templateUrl: "./views/mgt_analysis/income_analysis/contract_detail.html",
+                controller:"contract-detail-controller"
             }
         }
     });
@@ -443,6 +476,51 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
         }
     });
 
+    // 管理分析 - 支出分析 - 录入
+    $stateProvider.state({
+        name:"cost_enrolment",
+        url: "/cost_enrolment",
+        views:{
+            "header":{
+                templateUrl:"./views/mgt_analysis/cost_analysis/cost_enrolment_header.html"
+            },
+            "content": {
+                templateUrl: "./views/mgt_analysis/cost_analysis/cost_enrolment.html",
+                controller:"cost-enrolment-controller"
+            }
+        }
+    });
+
+    // 管理分析 - 支出分析 - 人工
+    $stateProvider.state({
+        name:"cost_manual",
+        url: "/cost_manual",
+        views:{
+            "header":{
+                templateUrl:"./views/mgt_analysis/cost_analysis/cost_manual_header.html"
+            },
+            "content": {
+                templateUrl: "./views/mgt_analysis/cost_analysis/cost_manual.html",
+                controller:"cost-manual-controller"
+            }
+        }
+    });
+
+    // 管理分析 - 支出分析 - 人工录入
+    $stateProvider.state({
+        name:"cost_manual_enrolment",
+        url: "/cost_manual_enrolment",
+        views:{
+            "header":{
+                templateUrl:"./views/mgt_analysis/cost_analysis/cost_manual_enrolment_header.html"
+            },
+            "content": {
+                templateUrl: "./views/mgt_analysis/cost_analysis/cost_manual_enrolment.html",
+                controller:"cost-manual-enrolment-controller"
+            }
+        }
+    });
+
     // 管理分析 - 租赁分析 - 欠费
     $stateProvider.state({
         name:"mgt_analysis.arrears_main",
@@ -455,7 +533,7 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
         }
     });
 
-    // 管理分析 - 租赁分析 - 欠费
+    // 管理分析 - 租赁分析 - 租赁
     $stateProvider.state({
         name:"mgt_analysis.rent_main",
         url: "/rent_main",
@@ -478,6 +556,21 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
             "content": {
                 templateUrl: "./views/mgt_analysis/rent_analysis/arrears_detail_list.html",
                 controller:"arrears-detail-list-controller"
+            }
+        }
+    });
+
+    // 管理分析 - 租赁分析 - 欠费明细 - 录入
+    $stateProvider.state({
+        name:"arrears_detail_enrolment",
+        url: "/arrears_detail_enrolment",
+        views:{
+            "header":{
+                templateUrl:"./views/mgt_analysis/rent_analysis/arrears_detail_enrolment_header.html"
+            },
+            "content": {
+                templateUrl: "./views/mgt_analysis/rent_analysis/arrears_detail_enrolment.html",
+                controller:"arrears-detail-enrolment-controller"
             }
         }
     });
@@ -516,7 +609,8 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
         url: "/merchant_sale_type_list",
         views:{
             "header":{
-                templateUrl:"./views/mgt_analysis/rent_analysis/merchant_sale_type_list_header.html"
+                templateUrl:"./views/mgt_analysis/rent_analysis/merchant_sale_type_list_header.html",
+                controller:"merchant-sale-type-list-header-controller"
             },
             "content": {
                 templateUrl: "./views/mgt_analysis/rent_analysis/merchant_sale_type_list.html",
