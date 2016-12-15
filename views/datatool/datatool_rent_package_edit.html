@@ -22,22 +22,22 @@
 <div class="amp-content-panel" id="rent-package-edit">
     <form name="shopInfoForm" novalidate>
     <div class="amp-block">
-            <ul class="rpg-set-info rpg-shop-edit" >
+            <ul class="rpg-set-info rpg-shop-edit clearfix" >
                 <li class="col-xs-6">
                     <label>铺位号</label>
-                    <div class="input-wrapper">
+                    <div class="td-input-wrapper">
                         <input type="text" value="" ng-model="rCtrl.shopInfo.shopIndex" required/>
                     </div>
                 </li>
                 <li class="col-xs-6">
                     <label>楼层</label>
-                    <div class="input-wrapper">
+                    <div class="td-input-wrapper">
                         <input type="text" value="" ng-model="rCtrl.shopInfo.floor"/>
                     </div>
                 </li>
                 <li class="col-xs-6">
                     <label>位置</label>
-                    <div class="input-wrapper input-wrapper-select">
+                    <div class="td-input-wrapper input-wrapper-select">
                         <input type="text" value="" hidden ng-model="rCtrl.shopInfo.position"/>
                         <button class="btn btn-select" type="button" ng-Click="rCtrl.setSelect('position')">
                             <em>{{rCtrl.shopInfo.position | default:"请选择"}}</em>
@@ -47,7 +47,7 @@
                 </li>
                 <li class="col-xs-6">
                     <label>物业类型</label>
-                    <div class="input-wrapper input-wrapper-select">
+                    <div class="td-input-wrapper input-wrapper-select">
                         <input type="text" value="" hidden ng-model="rCtrl.shopInfo.type"/>
                         <button class="btn btn-select" type="button" ng-Click="rCtrl.setSelect('type')">
                             <em>{{rCtrl.shopInfo.type | default:"请选择"}}</em>
@@ -57,19 +57,21 @@
                 </li>
                 <li class="col-xs-6">
                     <label>建筑面积</label>
-                    <div class="input-wrapper">
+                    <div class="td-input-wrapper number-input">
                         <input type="number" value="" ng-model="rCtrl.shopInfo.floorArea"/>
+                        <span class="number-format">{{rCtrl.shopInfo.floorArea|number:2}}</span><i class="unit-addon">m&sup2</i>
                     </div>
                 </li>
                 <li class="col-xs-6">
                     <label>套内面积</label>
-                    <div class="input-wrapper">
+                    <div class="td-input-wrapper number-input">
                         <input type="number" value="" ng-model="rCtrl.shopInfo.indoorArea"/>
+                        <span class="number-format">{{rCtrl.shopInfo.indoorArea|number:2}}</span><i class="unit-addon">m&sup2</i>
                     </div>
                 </li>
                 <li class="col-xs-6">
                     <label>产权性质</label>
-                    <div class="input-wrapper input-wrapper-select">
+                    <div class="td-input-wrapper input-wrapper-select">
                         <input type="text" value="" hidden ng-model="rCtrl.shopInfo.property"/>
                         <button class="btn btn-select" type="button" ng-Click="rCtrl.setSelect('property')">
                             <em>{{rCtrl.shopInfo.property | default:"请选择"}}</em>
@@ -80,7 +82,7 @@
 
                 <li class="col-xs-6">
                         <label>业态</label>
-                        <div class="input-wrapper input-wrapper-select">
+                        <div class="td-input-wrapper input-wrapper-select">
                             <input type="text" value="" hidden ng-model="rCtrl.shopInfo.form"/>
                             <button class="btn btn-select" type="button" ng-Click="rCtrl.setSelect('form')">
                                 <em>{{rCtrl.shopInfo.form | default:"请选择"}}</em>
@@ -98,8 +100,9 @@
         <ul class="rpg-set-info rpg-shop-edit clearfix">
             <li class="col-xs-6" ng-repeat="rs in rCtrl.shopInfo.rentStandard track by $index">
                 <label>第{{$index+1}}年</label>
-                <div class="input-wrapper">
+                <div class="td-input-wrapper number-input">
                     <input type="text" value="" ng-model="rs" required/>
+                    <span class="number-format">{{rs|number:2}}</span>
                 </div>
             </li>
            <li class="col-xs-6">
@@ -118,8 +121,9 @@
             <ul class="rpg-set-info rpg-shop-edit clearfix">
                 <li class="col-xs-6" ng-repeat="wy in rCtrl.shopInfo.wyStandard track by $index">
                     <label>第{{$index+1}}年</label>
-                    <div class="input-wrapper">
+                    <div class="td-input-wrapper number-input">
                         <input type="text" value="" ng-model="wy" required/>
+                        <span class="number-format">{{wy|number:2}}</span>
                     </div>
                 </li>
                 <li class="col-xs-6">
