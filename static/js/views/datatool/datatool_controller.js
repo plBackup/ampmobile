@@ -661,6 +661,7 @@ dataTool.controller("dataEditController",['$rootScope', '$scope','$state','Share
             console.log("shop edit---------");
             console.log(editData.shopData);
             self.shopInfo=editData.shopData;
+
         });
         //rCtrl.setSelect('position')
 
@@ -817,9 +818,16 @@ dataTool.controller("dataSetIndexController",['$rootScope', '$scope','$timeout',
 
     }]);
 
-dataTool.controller("dataSetController",['$rootScope', '$scope',"$location","$timeout","rpgSetData",
-    function($rootScope, $scope,$location,$timeout,rpgSetData) {
+dataTool.controller("dataSetController",['$rootScope', '$scope',"$location","$timeout","$state","rpgSetData",
+    function($rootScope, $scope,$location,$timeout,$state,rpgSetData) {
         var self=this;
+
+        $rootScope.showHeader();
+        $rootScope.hideBottom();
+
+        $rootScope.dFooterShow=false;
+        $rootScope.pageId="datatool-rpgpin";
+
         self.rpgSetData=rpgSetData[0];
         //self.setData=rpgSetData[0].values;
 
@@ -837,7 +845,7 @@ dataTool.controller("dataSetController",['$rootScope', '$scope',"$location","$ti
                 setTimeout(function(){
                     amp_main.loading_hide();
                 },1000);
-                $location.path("rpgresult");
+                $state.go("datatool.rpgresult");
                 /*ui-sref="rpgresult"  ui-sref-active="active" href="#/rpgresult"*/
             }
         };
@@ -1117,6 +1125,12 @@ dataTool.controller("dataSetController",['$rootScope', '$scope',"$location","$ti
 dataTool.controller("irrPlanController",['$rootScope', '$scope',"irrPlanData","$timeout","$location",
     function($rootScope, $scope,irrPlanData,$timeout,$location) {
         var self=this;
+        $rootScope.showHeader();
+        $rootScope.showBottom();
+
+        $rootScope.dFooterShow=false;
+        $rootScope.pageId="datatool-irrplan";
+
         self.irrData=irrPlanData;
 
         self.save=function(){
@@ -1824,6 +1838,12 @@ dataTool.controller("dataFeeController",['$rootScope','$scope','$timeout','manag
 dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simChartData","$location","$timeout","$state",
     function($rootScope, $scope,simData,simChartData,$location,$timeout,$state) {
         var self=this;
+        $rootScope.showHeader();
+        $rootScope.showBottom();
+
+        $rootScope.dFooterShow=false;
+        $rootScope.pageId="datatool-datasim";
+
         if(typeof simChartData==="undefined"){
             self.shops=[];
         }else{
