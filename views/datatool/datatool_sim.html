@@ -3,12 +3,12 @@
         数据工具
     </div>
     <div class="btn-group pull-left">
-        <div class="btn btn-opt" ng-click="dCtrl.back()">
-            <i class="navOpt-icon navOpt-icon-back"></i>
+        <div ui-toggle="uiSidebarLeft" class="btn sidebar-toggle" ng-click="dCtrl.goHome()">
+            <i class="navOpt-icon navOpt-icon-home"></i>
         </div>
     </div>
 
-    <div class="btn-group pull-left">
+    <div class="btn-group pull-right">
         <div class="btn btn-opt" ng-click="sCtrl.dismiss()">
             解约
         </div>
