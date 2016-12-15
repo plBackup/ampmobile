@@ -825,7 +825,7 @@ dataTool.controller("dataSetController",['$rootScope', '$scope',"$location","$ti
         $rootScope.showHeader();
         $rootScope.hideBottom();
 
-        $rootScope.dFooterShow=false;
+        $rootScope.dFooterShow=true;
         $rootScope.pageId="datatool-rpgpin";
 
         self.rpgSetData=rpgSetData[0];
@@ -1126,7 +1126,7 @@ dataTool.controller("irrPlanController",['$rootScope', '$scope',"irrPlanData","$
     function($rootScope, $scope,irrPlanData,$timeout,$location) {
         var self=this;
         $rootScope.showHeader();
-        $rootScope.showBottom();
+        $rootScope.hideBottom();
 
         $rootScope.dFooterShow=true;
         $rootScope.pageId="datatool-irrplan";

@@ -17,7 +17,7 @@
                                 <div class="info-segment">
                                     <div class="label-group">
                                         <em>当月客流</em>
-                                        <div>3,282,344</div>
+                                        <div>{{info.currentMonthCount|numberFormatDefault:"-":0}}</div>
                                     </div><!-- label-group -->
                                 </div><!-- info-segment -->
 
@@ -25,19 +25,27 @@
                                     <ul class="label-item-list clearfix">
                                         <li>
                                             <em>同比</em>
-                                            <div><span>9</span><em>%</em><em class="amp-arrow-up"></em></div>
+                                            <div>
+                                                <span>{{info.yearToYear}}</span><em>%</em>
+                                                <em ng-if="info.yearToYear<0" class="amp-arrow-down"></em>
+                                                <em ng-if="info.yearToYear>0" class="amp-arrow-up"></em>
+                                            </div>
                                         </li>
                                         <li>
                                             <em>环比</em>
-                                            <div><span>-2</span><em>%</em><em class="amp-arrow-down"></em></div>
+                                            <div>
+                                                <span>{{info.linkRelative}}</span><em>%</em>
+                                                <em ng-if="info.linkRelative<0" class="amp-arrow-down"></em>
+                                                <em ng-if="info.linkRelative>0" class="amp-arrow-up"></em>
+                                            </div>
                                         </li>
                                         <li>
                                             <em>达成率</em>
-                                            <div><span>46</span><em>%</em></div>
+                                            <div><span>{{info.targetRate}}</span><em>%</em></div>
                                         </li>
                                         <li>
                                             <em>渗透率</em>
-                                            <div><span>9</span></div>
+                                            <div><span>{{info.penetranceRate}}</span></div>
                                         </li>
                                     </ul>
                                 </div><!-- info-segment -->
@@ -48,7 +56,7 @@
                                             <div class="chart-content"></div>
                                             <div class="chart-footer">
                                                 <em>本月天数</em>
-                                                <div>12/30</div>
+                                                <div>{{info.currentMonthDayTooltip}}</div>
                                             </div><!-- chart-footer -->
                                         </div><!-- chart-item -->
 
@@ -56,7 +64,7 @@
                                             <div class="chart-content"></div>
                                             <div class="chart-footer">
                                                 <em>本月指标</em>
-                                                <div>654,856</div>
+                                                <div>{{info.currentMonthIndexTooltip|numberFormatDefault:"-":0}}</div>
                                             </div><!-- chart-footer -->
                                         </div><!-- chart-item -->
 
@@ -70,14 +78,14 @@
                                 <div class="info-segment">
                                     <div class="label-group">
                                         <em>全年累计(实际+预算)</em>
-                                        <div>3,282,344</div>
+                                        <div>{{info.fullYearCount|numberFormatDefault:"-":0}}</div>
                                     </div><!-- label-group -->
                                 </div><!-- info-segment -->
 
                                 <div class="info-segment">
                                     <div class="label-group">
                                         <em>全年</em>
-                                        <div>3,282,344</div>
+                                        <div>{{info.fullYearTotalCount|numberFormatDefault:"-":0}}</div>
                                     </div><!-- label-group -->
                                 </div><!-- info-segment -->
 
@@ -87,7 +95,7 @@
                                             <div class="chart-content"></div>
                                             <div class="chart-footer">
                                                 <em>本年天数</em>
-                                                <div>316/356</div>
+                                                <div>{{info.currentYearDayTooltip}}</div>
                                             </div><!-- chart-footer -->
                                         </div><!-- chart-item -->
 
@@ -95,7 +103,7 @@
                                             <div class="chart-content"></div>
                                             <div class="chart-footer">
                                                 <em>本年指标</em>
-                                                <div>6,006,050</div>
+                                                <div>{{info.currentYearIndexTooltip|numberFormatDefault:"-":0}}</div>
                                             </div><!-- chart-footer -->
                                         </div><!-- chart-item -->
                                     </div><!-- chart-group -->

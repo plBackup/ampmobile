@@ -4,7 +4,7 @@
     table-layout: fixed;
     margin-bottom:0;
 }
-.amp-table-wrapper .table{margin-bottom:20px;}
+.amp-table-wrapper .table{margin-bottom:0;}
 .ys-table-fixed-top .table{margin-bottom:0;}
 .amp-table-wrapper-swiper .ys-table-main .table, .amp-table-wrapper-swiper .ys-table-main .table{
     margin-bottom:20px;

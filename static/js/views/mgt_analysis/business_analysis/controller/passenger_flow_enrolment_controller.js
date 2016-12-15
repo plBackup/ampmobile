@@ -1,5 +1,6 @@
 ampApp.controller("passenger-flow-enrolment-controller",["$scope","$http","$rootScope",function($scope,$http,$rootScope){
 
+    $rootScope.hideBottom();
 
     /* ======================================== 监听广播事件 ======================================== */
     $scope.$on("$destroy",function(){destroy();});
@@ -10,7 +11,7 @@ ampApp.controller("passenger-flow-enrolment-controller",["$scope","$http","$root
 
     function initPageView(){
         container = $("#passenger-flow-enrolment");
-        var windowHeight = $(window).height()-44-48;
+        var windowHeight = $(window).height()-44;
         container.css("height",windowHeight+"px");
 
     }

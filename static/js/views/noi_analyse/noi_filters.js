@@ -81,6 +81,9 @@ angular.module('noi').filter('checkmark', function() {
     }
 }).filter("default",function(){
     return function(data,str){
+        if(typeof data==NaN){
+            return "-";
+        }
         if(typeof str==="undefined"){
             return data;
         }else{

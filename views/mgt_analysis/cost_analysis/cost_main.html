@@ -25,9 +25,7 @@
                 <div class="table-left">
                     <table>
                         <tr><th>月份</th></tr>
-                        <tr><td>8月</td></tr>
-                        <tr><td>9月</td></tr>
-                        <tr><td>10月</td></tr>
+                        <tr ng-repeat="item in records"><td>{{item.month}}月</td></tr>
                     </table>
                 </div><!-- table-left -->
                 <div class="table-right">
@@ -45,27 +43,28 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
-                                        <td><div>44.18/19.2</div><em>230%</em></td>
-                                        <td><div>44.18/19.2</div><em>230%</em></td>
-                                        <td><div>44.18/19.2</div><em>230%</em></td>
-                                        <td><div>44.18/19.2</div><em>230%</em></td>
-                                        <td><div>44.18/19.2</div><em>230%</em></td>
-                                    </tr>
-                                    <tr>
-                                        <td><div>44.18/19.2</div><em>230%</em></td>
-                                        <td><div>44.18/19.2</div><em>230%</em></td>
-                                        <td><div>44.18/19.2</div><em>230%</em></td>
-                                        <td><div>44.18/19.2</div><em>230%</em></td>
-                                        <td><div>44.18/19.2</div><em>230%</em></td>
-                                    </tr>
-                                    <tr>
-                                        <td><div>44.18/19.2</div><em>230%</em></td>
-                                        <td><div>44.18/19.2</div><em>230%</em></td>
-                                        <td><div>44.18/19.2</div><em>230%</em></td>
-                                        <td><div>44.18/19.2</div><em>230%</em></td>
-                                        <td><div>44.18/19.2</div><em>230%</em></td>
-                                    </tr>
+                                        <tr ng-repeat="item in records" ng-click="goToManualPage()">
+                                            <td>
+                                                <div>{{item.businessReal}}/{{item.businessBudget}}</div>
+                                                <em>{{item.businessPercent}}</em>
+                                            </td>
+                                            <td>
+                                                <div>{{item.manualWorkReal}}/{{item.manualWorkBudget}}</div>
+                                                <em>{{item.manualWorkPercent}}</em>
+                                            </td>
+                                            <td>
+                                                <div>{{item.mgtFeeReal}}/{{item.mgtFeeBudget}}</div>
+                                                <em>{{item.mgtFeePercent}}</em>
+                                            </td>
+                                            <td>
+                                                <div>{{item.projectReal}}/{{item.projectBudget}}</div>
+                                                <em>{{item.projectPercent}}</em>
+                                            </td>
+                                            <td>
+                                                <div>{{item.totalReal}}/{{item.totalBudget}}</div>
+                                                <em>{{item.totalPercent}}</em>
+                                            </td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div><!-- swiper-slide -->
@@ -100,8 +99,8 @@
 
     <div ui-content-for="mgt-analysis-menu-list-wrapper">
         <ul class="menu-item-list">
-            <li><a class="enrolment-btn" >录入</a></li>
-            <li><a class="filter-btn"  ui-toggle="uiSidebarRight">筛选</a></li>
+            <li><a class="enrolment-btn" ng-click="goToEnrolmentPage()">录入</a></li>
+            <li><a class="filter-btn"  ui-toggle="uiSidebarRight" ng-click="closeMenuList()">筛选</a></li>
         </ul>
     </div>
 

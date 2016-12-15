@@ -1,9 +1,31 @@
-ampApp.controller("cost-main-controller",["$scope","$http","$rootScope","$timeout",function($scope,$http,$rootScope,$timeout){
+ampApp.controller("cost-main-controller",["$scope","$http","$rootScope","$timeout","$location",function($scope,$http,$rootScope,$timeout,$location){
 
     $rootScope.showBottom();
 
+    $scope.records = [];
+
     /* ======================================== 监听广播事件 ======================================== */
     $scope.$on("$destroy",function(){destroy();});
+
+    function initializeData(data){
+        $scope.records = data.slice(7,10);
+    }
+
+    /* ======================================== angular 注册事件 ======================================== */
+    /* 跳转到人工页面 */
+    $scope.goToManualPage = function(){
+        $location.path("/cost_manual");
+    };
+
+    /* 关闭菜单 */
+    $scope.closeMenuList = function(){
+        hideMgtAnalysisMenuList();
+    };
+
+    $scope.goToEnrolmentPage = function(){
+        hideMgtAnalysisMenuList();
+        $location.path("/cost_enrolment");
+    };
 
 
     /* ======================================== 初始化页面 ======================================== */
@@ -16,38 +38,30 @@ ampApp.controller("cost-main-controller",["$scope","$http","$rootScope","$timeou
         var windowHeight = $(window).height()-44-48-40;
         container.css("height",windowHeight+"px");
 
-        costStackBarChart = createCostStackBarChart();
-
-        tableSwiper = new Swiper(".table-group .swiper-container", {
-            slidesPerView:"auto",
-            freeMode: true,
-            resistanceRatio : 0
+        var labels = [];
+        var data1= [];
+        var data2= [];
+        var data3= [];
+        var data4= [];
+        $scope.records.forEach(function(item){
+            labels.push(item.month+"月");
+            data1.push(item.businessReal);
+            data2.push(item.manualWorkReal);
+            data3.push(item.mgtFeeReal);
+            data4.push(item.projecteal);
         });
+        costStackBarChart = createCostStackBarChart(labels,data1,data2,data3,data4);
+
+        $timeout(function(){
+            tableSwiper = new Swiper(".table-group .swiper-container", {
+                slidesPerView:"auto",
+                freeMode: true,
+                resistanceRatio : 0
+            });
+        },300);
     }
 
-    /* ======================================== 绑定事件 ======================================== */
-    function bindPageEvents(){
-        container.on("click",".table-right tr",function(e){
-            e.stopPropagation();
-            e.preventDefault();
-            window.location = "#/cost_manual";
-        });
 
-
-        var mgtAnalysisMenuListWrapper = $("#mgt-analysis-menu-list-wrapper");
-        $(mgtAnalysisMenuListWrapper).find(".menu-item-list a.filter-btn").on("click",function(e){
-            e.stopPropagation();
-            e.preventDefault();
-            hideMgtAnalysisMenuList();
-        });
-
-        $(mgtAnalysisMenuListWrapper).find(".menu-item-list a.enrolment-btn").on("click",function(e){
-            e.stopPropagation();
-            e.preventDefault();
-            hideMgtAnalysisMenuList();
-            window.location = "#/cost_enrolment";
-        });
-    }
 
     /* ======================================== common methods ======================================== */
     function destroy(){
@@ -55,17 +69,9 @@ ampApp.controller("cost-main-controller",["$scope","$http","$rootScope","$timeou
         tableSwiper.destroy(true,true);
     }
 
-    function createCostStackBarChart(){
+    function createCostStackBarChart(labels,data1,data2,data3,data4){
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init($(container).find(".cost-bar-chart .chart-content")[0]);
-
-        var labels = ["8月","9月","10月"];
-        var data1= [10,30,60];
-        var data2= [50,30,60];
-        var data3= [40,30,60];
-        var data4= [30,20,60];
-
-        console.log(labels);
 
         // 指定图表的配置项和数据
         var option = {
@@ -149,12 +155,11 @@ ampApp.controller("cost-main-controller",["$scope","$http","$rootScope","$timeou
 
     // 初始化
     function init(){
-        initPageView();
-
-        $timeout(function(){
-            bindPageEvents();
-        },300);
-
+        var url = "data/data_1/mgt_analysis/cost_analysis/cost_main_data.json";
+        $http.get(url).success(function(result){
+            initializeData(result);
+            initPageView();
+        });
     }
     init();
 }]);

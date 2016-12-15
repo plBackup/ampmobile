@@ -50,9 +50,9 @@
 
 .amp-block .table{margin-bottom: 0;}
 #noiPage .amp-block div.amp-table-wrapper{padding-right:6px;}
-#noiPage .amp-block .table > thead > tr > th{border-bottom:0;padding:0;padding-top:5px; height: 16px; line-height: 16px; font-size: 13px;color:#8592a3;}
+#noiPage .amp-block .table > thead > tr > th{border-bottom:0;padding:0;padding-top:5px; height: 16px; line-height: 16px; font-size: 13px;color:#8592a3;text-align: left;background-color:transparent;}
 
-#noiPage .amp-block .table > tbody > tr > td{border-top:0;padding:0;padding-bottom:5px;font-size: 14px;color:#373c42;}
+#noiPage .amp-block .table > tbody > tr > td{height:inherit;border-bottom:0;border-top:0;padding:0;padding-bottom:5px;font-size: 14px;color:#373c42;}
 
 #noiPage #noi-chart-wrapper{padding:15px 0;}
 
@@ -122,6 +122,7 @@
     border-bottom: 0;
     font-weight: normal;
     border-bottom: 1px solid #d9dde0;
+    background-color:#fff;
 }
 #noi .modal-overlay .col-xs-4>table{width:100%;border-right:solid 1px #d9dde0;}
 #noi .modal-overlay table>thead>tr>th span,

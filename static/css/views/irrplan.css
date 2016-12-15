@@ -95,4 +95,114 @@
 #datatool-irrplan  .swiper-wrapper .amp-table tr>th{text-align: right;}
 
 
+/*rpg set*/
+/*rgp-set*/
 
+#datatool-rpgpin .amp-content-header{height:120px;margin-bottom:0;}
+#datatool-rpgpin .amp-content-header>.amp-header-breadcrumb{position:relative;padding-left:55px;padding-right:25px;height:44px;overflow: hidden;line-height: 44px;}
+
+#datatool-rpgpin .amp-content-header>.amp-header-filter{height:76px;padding:20px 25px;background-color:#fff;overflow: hidden;}
+#datatool-rpgpin .amp-content-header .amp-date-wrapper{}
+#datatool-rpgpin .amp-content-header  .amp-date-wrapper>label{float:left;margin-right:10px;}
+#datatool-rpgpin .amp-content-header  .amp-date-wrapper>div{float:left;width:160px;}
+
+
+#datatool-rpgpin{padding-bottom:0;padding-top:0;}
+#datatool-rpgpin .amp-content-header{height:76px;}
+#datatool-rpgpin .amp-content-header>.amp-header-breadcrumb{position: fixed;top:44px;z-index:1999;width: 100%;background-color:#f3f4f8;}
+
+
+#datatool-rpgpin .amp-block-pd{margin-bottom:40px;}
+#datatool-rpgpin .bottom-block{margin-bottom:0;padding-bottom:0;border-top:0;background-color:#f3f4f8;}
+#datatool-rpgpin .amp-table-wrapper-swiper{padding-bottom:0;}
+#datatool-rpgpin .amp-table{margin-bottom:0;}
+#datatool-rpgpin .amp-table-wrapper .table tr>th,
+#datatool-rpgpin .amp-table-wrapper .table tr>td,
+#datatool-rpgpin .amp-table-wrapper-swiper .table tr>th,
+#datatool-rpgpin .amp-table-wrapper-swiper .table tr>td{ padding:6px 15px; line-height: 26px;height:40px;overflow: hidden;position: relative;}
+#datatool-rpgpin .amp-table-wrapper-swiper .table tr>th>span,
+#datatool-rpgpin .amp-table-wrapper-swiper .table tr>td>span{display: block;width:100%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;font-weight:normal;font-size: 13px;color:#8592a3;
+    text-align: center;}
+#datatool-rpgpin .amp-table-wrapper-swiper .table tr>th>span{text-align: center;}
+#datatool-rpgpin .amp-table-wrapper-swiper .swiper-container{margin-left:-1px;}
+#datatool-rpgpin .ys-table-main .swiper-container{padding-bottom:15px;}
+#datatool-rpgpin #rpg-set-table-wrapper .amp-table{margin-bottom:0;border:solid 1px #dfe5e9;}
+#datatool-rpgpin .amp-table-wrapper-swiper .ys-table-static{border-right:0;}
+#datatool-rpgpin #rpg-set-table-wrapper .amp-table tr>th.th-fake,#datatool-rpgpin #rpg-set-table-wrapper .amp-table tr>th.td-fake{width:0px;}
+
+
+#rpg-set-table-wrapper .td-input-wrapper{position: absolute;width:100%;height:100%;left:0;top:0;}
+
+#rpg-set-table-wrapper .td-input-wrapper input{height:100%;border:0;padding:6px;line-height: 24px;width:100%;color:#3a4153;background-color:transparent;}
+#rpg-set-table-wrapper .td-input-wrapper .number-format{display: none;}
+#rpg-set-table-wrapper .td-input-wrapper input:focus{outline:solid 3px #8ec1f6;outline-offset: -2px;}
+#rgp-set #rent-update-table-wrapper .ys-table-static{border-right:solid 1px #dfe5e9;margin-bottom: 0;}
+#rgp-set #rent-update-table-wrapper .ys-table-static tr>th{padding-left:12px;color:#8592a3;font-size: 13px;border-bottom: 0;}
+#rgp-set #rent-update-table-wrapper thead{background-color:transparent}
+
+#rpg-set-table-wrapper td .td-input-wrapper.num-input{}
+#rpg-set-table-wrapper td .td-input-wrapper.num-input input{display: none;}
+#rpg-set-table-wrapper td.active .td-input-wrapper.num-input input{display: block;}
+#rpg-set-table-wrapper td .td-input-wrapper.num-input span.number-format{display: block;height:100%;background-color:transparent;border:0;line-height: 26px;color:#3a4153;}
+#rpg-set-table-wrapper td.active .td-input-wrapper.num-input span.number-format{display: none;}
+
+#datatool-rpgpin #rent-first-year-set{}
+#datatool-rpgpin #rent-first-year-set .amp-table{margin-bottom:0;}
+#datatool-rpgpin #rent-first-year-set .amp-table tr>th{color:#8592a3;font-size: 13px;}
+
+#datatool-rpgpin #rent-affect-table-wrapper .amp-table{margin-top:12px;margin-bottom:20px;}
+#datatool-rpgpin #rent-affect-table-wrapper .amp-sub-title{font-size: 15px;color:#8592a3;height:22px;line-height: 22px;}
+
+#datatool-rpgpin #rent-affect-table-wrapper .amp-table tr>th{color:#8592a3;font-size: 13px;}
+#datatool-rpgpin #rent-affect-table-wrapper .ys-table-static-left .amp-table tr>th{padding-left:0;}
+/*rpg-set update*/
+#datatool-rpgpin #rent-first-year-set tr>td{position: relative;}
+#datatool-rpgpin #rent-first-year-set tr>td .td-input-wrapper{position: absolute;top:0;left:0;width:100%;height:100%;background-color:transparent;border:0;}
+#datatool-rpgpin #rent-first-year-set tr>td .td-input-wrapper input{border:0;background-color: #fff;height:38px;}
+#datatool-rpgpin #rent-first-year-set tr>td .td-input-wrapper span.number-format{padding: 6px 10px;  width: 100%;height:38px;color:#3a4153;
+    line-height: 26px;border:0;background-color: #fff;}
+#rent-update-main-table tr>td{position: relative}
+#datatool-rpgpin #rent-update-main-table tr>td .td-input-wrapper{position: absolute;width:177px;height:28px;top:50%;margin-top:-14px;left:13px;padding-left:0;padding-right:13px;}
+#datatool-rpgpin #rent-update-main-table tr>td .td-input-wrapper>input{height:28px;border:solid 1px #dfe5e9;background-color:#fff;padding:3px 8px;}
+#datatool-rpgpin #rent-update-main-table tr>td .td-input-wrapper>span.number-format{display:block;height: 28px;width:100%;color:#3a4153;text-align: left;
+    border: solid 1px #dfe5e9;
+    background-color: #fff;
+    padding: 3px 8px;}
+#datatool-rpgpin #rent-update-main-table tr>td.active .td-input-wrapper>span.number-format{display: none;}
+
+#rent-affect-table-wrapper tr>td{position: relative}
+#rent-affect-table-wrapper tr>td .td-input-wrapper{position: absolute;height:28px;top:50%;margin-top:-14px;left:13px;padding-left:0;padding-right:13px;}
+#rent-affect-table-wrapper tr>td .td-input-wrapper>input{height:28px;border:solid 1px #dfe5e9;background-color:#fff;padding:3px 8px;width:96px;}
+#rent-affect-table-wrapper #rent-affect-floors tr>td .td-input-wrapper{left:inherit;right:0;width:inherit;text-align: right;}
+#rent-affect-table-wrapper tr>td .td-input-wrapper>span.number-format{ height: 28px;width:96px;padding: 3px 8px;text-align:right;color:#3a4153;
+    border: solid 1px #dfe5e9;
+    background-color: #fff;}
+
+
+#rent-affect-floors tr>td .td-input-wrapper input{text-align: right;width:96px;}
+/*end rpg-set update*/
+#rent-package-result {
+    padding-bottom: 38px;
+    padding-top: 0;
+}
+#rent-package-result .amp-content-header{margin-bottom:0;height:76px;background-color:#fff;overflow: visible;}
+#rent-package-result .amp-content-header .amp-header-filter{padding:20px 28px;}
+#rent-package-result .amp-content-header .amp-header-filter>.amp-btn{height:32px;width:100px;line-height: 32px;}
+#rent-package-result .amp-content-header>.amp-header-breadcrumb {
+    position: fixed;
+    top: 44px;
+    z-index: 1999;
+    width: 100%;
+    background-color: #f3f4f8;
+}
+
+#rpg-result-table-wrapper .amp-table>thead>tr>th{text-align: left;}
+#rpg-result-table-wrapper .amp-table>thead>tr>th.text-right{text-align: right;}
+
+
+/*block btn-wrapper*/
+#datatool-rpgpin .bottom-block{position: relative;padding-right:0; bottom: 0; width: 100%; left: 0;background-color:#f3f4f8;border-top:0;}
+#datatool-rpgpin .bottom-block .btn-wrapper{height:64px;overflow: hidden;padding:10px 15px;}
+#datatool-rpgpin .bottom-block .btn-wrapper .amp-btn{height:44px;width:100%;line-height:32px;text-align: center;border-radius:0;border:0;font-size:14px;}
+#datatool-rpgpin .bottom-block .btn-wrapper .amp-btn.amp-btn-reverse{background-color:#fff;color: #5ab46e;}
+/*#datatool-rpgpin .swiper-wrapper .amp-table tr>th{text-align: right;}*/
