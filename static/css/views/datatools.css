@@ -84,3 +84,10 @@
 #datatool-irrplan .amp-tab-menu{height:40px;border-bottom:0;}
 #datatool-irrplan #irr-plan-table-wrapper{padding-top:40px;position:relative;}
 #datatool-irrplan .pin-wrapper{    position: fixed;height: 40px;  top: 126px;z-index:1999;}
+
+/*datasim*/
+#datatool-sim .amp-svg-opt{background-color:transparent;padding:10px 15px;}
+#datatool-sim .svg-floor-select li{float:left;margin-right:5px;margin-left:5px;}
+
+#datatool-sim .btn-floor-select{display:block;    padding: 0;width:26px;height:26px;line-height: 24px;border-radius: 26px;background-color:#dae1e7;color:#fff;font-size: 13px;  text-align: center;}
+#datatool-sim .btn-floor-select.active{background-color: #59b46f;}

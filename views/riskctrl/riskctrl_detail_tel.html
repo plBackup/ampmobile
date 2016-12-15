@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ampApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../static/css/amp_common.css"/>
+ 	 <link rel="stylesheet" href="../../static/dist/css/bootstrap.min.css">
+    <link href="../../static/dist/css/bootstrap-datetimepicker.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../static/css/amp_common.css">
+	<link rel="stylesheet" type="text/css" href="../../static/css/views/riskctrl/riskctrl-detail_tel.css"/>
+</head>
+<body ng-controller="ctrl-detail_tel">
+	<div id="riskctrl-detail" class="amp-main-panel">
+		<div class="amp-content-header">       
+	        <ul class="amp-status-item-list">
+	            <li class="amp-status-item"><span style="margin-right: 10px;">开业日期</span><span>111</span></li>	            
+	        </ul>
+   	 	</div>
+   	 	<div class="risk-detail-content-panel">
+   	 		<div class="return-rate-detail">  	 		
+	   			<div class="return-rate-detail-data clearfix">
+	   				<ul class="clearfix">
+						<li ng-repeat="item in records" class="label-group pull-left"> <div><em>{{item.title}}</em><div>{{item.data|number}}</div></div></li>
+                  </ul>
+	   			</div>
+   	 		</div>
+   	 		<div class="return-rate-table-tel">
+   	 			<div class="riskctrl-title-tel" id= "cost">
+   	 				<div class="return-rate-table-title-tel clearfix">
+	   	 				<span class="pull-left">收入&经营费用</span>
+	   	 				<em class="pull-right">显示所有月份 <i>&gt;</i></em>
+   	 				</div>
+	   	 			<div class="riskctrl-btn">
+	   	 				<em class="pull-left onyearbasis" ng-click="setType('onYearBasis','cost')" ng-class="{'btn-active':costType=='onYearBasis'}"><span>同比</span></em>
+	   	 				<em class="pull-left linkrelativeratio"  ng-click="setType('LinkRelativeRatio','cost')" ng-class="{'btn-active':costType=='LinkRelativeRatio'}"><span>环比</span></em>
+	   	 				<em class="pull-left budget btn-active" ng-click="setType('Budget','cost')" ng-class="{'btn-active':costType=='Budget'}"><span>预算</span></em>
+	 				</div>
+	 				<div class="table-title">
+	 					<ul class="clearfix">
+	 						<li class="monthly title-active"><2016-08（万元）</li>
+	 						<li  class="yearly">全年累计（万元）</li>
+	 					</ul>	
+	 				</div>
+	 				<div class="risk-table-tel">
+	 				<div class="amp-table-wrapper-swiper">
+	           		<div  style="padding-left:115px;">
+			                <div class="table-blank amp-table-left" style="padding-left:115px;">
+			                    <table style="width:100%; ">
+			                        <thead>
+			                        <tr style="">
+			                            <th class="fake-th"></th>
+			                        </tr>
+			                        </thead>
+			                    </table>
+			                </div>
+			                <div class="swiper-container">
+			                    <div class="swiper-wrapper ">
+			                        <div class="swiper-slide " style="padding-right: 15px; border-bottom: solid 1px #dae1e7;">
+			                            <table class="table-top">	
+			                                <tr  >
+			                                    <td>实际</td>
+			                                    <td>预算</td>
+			                                    <td>差异额</td>
+			                                </tr>
+			                            </table>
+			                        </div>
+			                    </div>         
+			                </div>
+			            </div>
+		            <div class="ys-table-main" style="padding-left:115px;">
+		                <div class="amp-table-left" style="padding-left:115px;padding-left: 12px;">
+		                    <table class="amp-table" style="width:100%;">
+		                        <tbody>
+		                        <tr class="tr-main">
+		                            <th>租金收入<!--<em class="ys-icon icon-menu-down"></em>--></th>
+		                        </tr>
+		                        <tr class="tr-sub">
+		                            <td>主力店</td>
+		                        </tr>
+		                        <tr class="tr-sub">
+		                            <td>非主力店</td>
+		                        </tr>
+		                        <tr class="tr-sub">
+		                            <td>其中扣点收入</td>
+		                        </tr>
+		
+		                        <tr class="tr-main tr-init-collapse">
+		                            <th>物业管理费</th>
+		                        </tr>
+		                        <tr class="tr-main tr-init-collapse">
+		                            <th>多经</th>
+		                        </tr>
+		                       
+		                        <tr class="tr-main tr-init-collapse">
+		                            <th>经营费用</th>
+		                        </tr>
+		                        <!-- end -->
+		                        </tbody>
+		                        
+		                    </table>
+		                </div>		
+		                <div class="swiper-container" style="width:100%; padding-right: 15px;">
+		                    <div class="swiper-wrapper">
+		                        <div class="swiper-slide">
+		                            <table   class="amp-table amp-table-data amp-table-td3">
+		                                <tbody>
+		                                	<tr ng-repeat="item in cost[costType]" >
+				  								<td ng-class='setStyleIcon(item.ActualMonth,item.ReferMonth)'>
+													<div ng-if="!allyear_cost">{{item.ActualMonth|number:2}} <i></i></div>
+													<div ng-if="allyear_cost">{{item.ActualYear|number:2}} <i></i></div>
+												</td>
+				  								<td >
+				  									<div ng-if="!allyear_cost">{{item.ReferMonth|number:2}}</div>
+													<div ng-if="allyear_cost">{{item.ReferYear|number:2}}</div>
+				  								</td> 
+				  								<td class=" padright"  ng-class='setStyleText(item.ActualYear-item.ReferYear)'>
+				  									<div ng-if="!allyear_cost">{{(item.ActualMonth-item.ReferMonth)|number:2}}</div>
+													<div ng-if="allyear_cost">{{(item.ActualYear-item.ReferYear)|number:2}}</div>
+				  								</td>
+		                                	</tr>
+		                              
+		                                </tbody>
+		                            </table>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+        	</div>
+	 				</div>
+   	 			</div>
+   	 			<div class="riskctrl-title-tel" id="collectionrate">
+   	 				<div class="return-rate-table-title-tel clearfix">
+	   	 				<span class="pull-left">收缴率</span>
+	   	 				<em class="pull-right">显示所有月份 <i>&gt;</i></em>
+   	 				</div>
+	   	 			<div class="riskctrl-btn">
+	   	 				<em class="pull-left onyearbasis" ng-click="setType('onYearBasis','collectionrate')" ng-class="{'btn-active':collectType=='onYearBasis'}"><span>同比</span></em>
+	   	 				<em class="pull-left linkrelativeratio"  ng-click="setType('LinkRelativeRatio','collectionrate')" ng-class="{'btn-active':collectType=='LinkRelativeRatio'}"><span>环比</span></em>
+	   	 				<em class="pull-left budget btn-active" ng-click="setType('Budget','collectionrate')" ng-class="{'btn-active':collectType=='Budget'}"><span>预算</span></em>
+	 				</div>
+	 				<div class="table-title">
+	 					<ul class="clearfix">
+	 						<li class="monthly title-active"><2016-08（万元）</li>
+	 						<li  class="yearly">全年累计（万元）</li>
+	 					</ul>	
+	 				</div>
+	 				<div class="risk-table-tel">
+	 				<div class="amp-table-wrapper-swiper">
+	           		<div  style="padding-left:115px;">
+			                <div class="table-blank amp-table-left" style="padding-left:115px;;">
+			                    <table style="width:100%; ">
+			                        <thead>
+			                        <tr style="">
+			                            <th class="fake-th"></th>
+			                        </tr>
+			                        </thead>
+			                    </table>
+			                </div>
+			                <div class="swiper-container">
+			                    <div class="swiper-wrapper ">
+			                        <div class="swiper-slide " style="padding-right: 15px; border-bottom: solid 1px #dae1e7;">
+			                            <table class="table-top">	
+			                                <tr  >
+			                                    <td>实际</td>
+			                                    <td>预算</td>
+			                                </tr>
+			                            </table>
+			                        </div>
+			                    </div>         
+			                </div>
+			            </div>
+		            <div class="ys-table-main" style="padding-left:115px;">
+		                <div class="amp-table-left" style="padding-left:115px;padding-left: 12px;">
+		                    <table class="amp-table" style="width:100%;">
+		                        <tbody>
+		                      		<tr ng-repeat="item in collectionrate[collectType]">
+		                      			<td class=" text-left">{{item.name}}</td>
+		                      		</tr>
+		                        </tbody>
+		                        
+		                    </table>
+		                </div>
+		                <div style="width:100%; padding-right: 15px;" id="noi-main-table">
+		                    <div >
+		                        <div>
+		                            <table  class="amp-table-data amp-table-td2">
+		                                <tbody>
+		                                	<tr ng-repeat="item in collectionrate[collectType]" >
+				  								<td  ng-class='setStyleIcon(item.ActualMonth,item.ReferMonth)'>
+													<div ng-if="!allyear_collectionrate">{{item.ActualMonth}} <i></i></div>
+													<div ng-if="allyear_collectionrate">{{item.ActualYear}} <i></i></div>
+												</td>
+	  											<td  >{{item.ReferMonth}}</td> 
+		                                	</tr>		    
+		                                </tbody>
+		                            </table>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+        			</div>
+	 				</div>
+   	 			</div>
+   	 			<div class="riskctrl-title-tel" id="salesvolume">
+   	 				<div class="return-rate-table-title-tel clearfix">
+	   	 				<span class="pull-left">销售额</span>
+	   	 				<em class="pull-right">显示所有月份 <i>&gt;</i></em>
+   	 				</div>
+	   	 			<div class="riskctrl-btn">
+	   	 				<em class="pull-left" ng-click="setType('onYearBasis','salesvolume')" ng-class="{'btn-active':saleType=='onYearBasis'}"><span>同比</span></em>
+	   	 				<em class="pull-left"  ng-click="setType('LinkRelativeRatio','salesvolume')" ng-class="{'btn-active':saleType=='LinkRelativeRatio'}"><span>环比</span></em>
+	   	 				<em class="pull-left btn-active" ng-click="setType('Budget','salesvolume')" ng-class="{'btn-active':saleType=='Budget'}"><span>预算</span></em>
+	 				</div>
+	 				<div class="table-title">
+	 					<ul class="clearfix">
+	 						<li class="monthly title-active"><2016-08（万元）</li>
+	 						<li  class="yearly">全年累计（万元）</li>
+	 					</ul>	
+	 				</div>
+	 				<div class="risk-table-tel">
+	 				<div class="amp-table-wrapper-swiper">
+	           			 <div  style="padding-left:115px;">
+			                <div class="table-blank amp-table-left" style="padding-left:115px;;">
+			                    <table style="width:100%; ">
+			                        <thead>
+			                        <tr style="">
+			                            <th class="fake-th"></th>
+			                        </tr>
+			                        </thead>
+			                    </table>
+			                </div>
+			                <div class="swiper-container">
+			                    <div class="swiper-wrapper ">
+			                        <div class="swiper-slide " style="padding-right: 15px; border-bottom: solid 1px #dae1e7;">
+			                            <table class="table-top">	
+			                                <tr  >
+			                                    <td>实际</td>
+			                                    <td>预算</td>
+			                                </tr>
+			                            </table>
+			                        </div>
+			                    </div>         
+			                </div>
+			            </div>
+		            <div class="ys-table-main" style="padding-left:115px;">
+		                <div class="amp-table-left" style="padding-left:115px;padding-left: 12px;">
+		                    <table class="amp-table" style="width:100%;">
+		                        <tbody>
+		                        <tr class="tr-main">
+		                            <th>销售额<!--<em class="ys-icon icon-menu-down"></em>--></th>
+		                        </tr>
+		                        <tr class="tr-sub">
+		                            <td>主力店</td>
+		                        </tr>
+		                        <tr class="tr-sub">
+		                            <td>非主力店</td>
+		                        </tr>
+		                        <tr class="tr-sub">
+		                            <td>其中扣点商户</td>
+		                        </tr>
+		                        </tbody>
+		                    </table>
+		                </div>
+		
+		                <div class="swiper-container" style="width:100%; padding-right: 15px;" id="noi-main-table">
+		                    <div class="swiper-wrapper">
+		                        <div class="swiper-slide">
+		                            <table   class="amp-table amp-table-data amp-table-td2">
+		                          
+		                                <tbody>
+		                                	<tr ng-repeat="item in salesvolume[saleType]" >
+				  								<td  ng-class='setStyleIcon(item.ActualMonth,item.ReferMonth)'>
+													<div ng-if="!allyear_salesvolume">{{item.ActualMonth}} <i></i></div>
+													<div ng-if="allyear_salesvolume">{{item.ActualYear}} <i></i></div>
+												</td>
+	  											<td  >
+	  												<div ng-if="!allyear_salesvolume">{{item.ReferMonth}}</div>
+													<div ng-if="allyear_salesvolume">{{item.ReferYear}}</div>	  
+	  											</td> 
+											</tr>	
+											
+		                                </tbody>
+		                            </table>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+        	</div>
+	 				</div>
+   	 			</div>
+   	 			<div class="riskctrl-title-tel" id="efficient">
+   	 				<div class="return-rate-table-title-tel clearfix">
+	   	 				<span class="pull-left">坪效&租售比</span>
+	   	 				<em class="pull-right">显示所有月份 <i>&gt;</i></em>
+   	 				</div>
+	   	 			<div class="riskctrl-btn">
+	   	 				<em class="pull-left" ng-click="setType('onYearBasis','efficient')" ng-class="{'btn-active':efficientType=='onYearBasis'}"><span>同比</span></em>
+	   	 				<em class="pull-left"  ng-click="setType('LinkRelativeRatio','efficient')" ng-class="{'btn-active':efficientType=='LinkRelativeRatio'}"><span>环比</span></em>
+	   	 				<em class="pull-left btn-active" ng-click="setType('Budget','efficient')" ng-class="{'btn-active':efficientType=='Budget'}"><span>预算</span></em>
+	 				</div>
+	 				<div class="table-title">
+	 					<ul class="clearfix">
+	 						<li class="monthly title-active"><2016-08（万元）</li>
+	 						<li  class="yearly">全年累计（万元）</li>
+	 					</ul>	
+	 				</div>
+	 				<div class="risk-table-tel">
+	 				<div class="amp-table-wrapper-swiper">
+	           		<div  style="padding-left:115px;">
+			                <div class="table-blank amp-table-left" style="padding-left:115px;;">
+			                    <table style="width:100%; ">
+			                        <thead>
+			                        <tr style="">
+			                            <th class="fake-th"></th>
+			                        </tr>
+			                        </thead>
+			                    </table>
+			                </div>
+			                <div class="swiper-container">
+			                    <div class="swiper-wrapper ">
+			                        <div class="swiper-slide " style="padding-right: 15px; border-bottom: solid 1px #dae1e7;">
+			                            <table class="table-top">	
+			                                <tr  >
+			                                    <td>实际</td>
+			                                    <td>预算</td>
+			                                </tr>
+			                            </table>
+			                        </div>
+			                    </div>         
+			                </div>
+			            </div>
+		            <div class="ys-table-main" style="padding-left:115px;">
+		                <div class="amp-table-left" style="padding-left:115px;padding-left: 12px;">
+		                    <table class="amp-table" style="width:100%;">
+		                        <tbody>
+		                      		<tr ng-repeat="item in efficient[efficientType]">
+									<td class=" text-left">{{item.name}}</td>
+	  								
+								</tr>
+		                        </tbody>
+		                        
+		                    </table>
+		                </div>
+		                <div style="width:100%; padding-right: 15px;" id="noi-main-table">
+		                    <div >
+		                        <div>
+		                            <table  class="amp-table-data amp-table-td2">
+		                                <tbody>
+		                                	<tr ng-repeat="item in efficient[efficientType]" >
+	  											<td  ng-class='setStyleIcon(item.ActualMonth,item.ReferMonth)'>
+													<div ng-if="!allyear_efficient">{{item.ActualMonth}} <i></i></div>
+													<div ng-if="allyear_efficient">{{item.ActualYear}} <i></i></div>
+												</td>
+	  											<td>
+	  												<div ng-if="!allyear_efficient">{{item.ReferMonth}}</div>
+													<div ng-if="allyear_efficient">{{item.ReferYear}}</div>	
+	  											</td>
+											</tr>
+		                                </tbody>
+		                            </table>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+        			</div>
+	 				</div>
+   	 			</div>
+   	 			<div class="riskctrl-title-tel" id="investment">
+   	 				<div class="return-rate-table-title-tel clearfix">
+	   	 				<span class="pull-left">招商</span>
+	   	 				<em class="pull-right">显示所有月份 <i>&gt;</i></em>
+   	 				</div>
+	   	 			<div class="riskctrl-btn">
+	   	 				<em class="pull-left onyearbasis" ng-click="setType('onYearBasis','investment')" ng-class="{'btn-active':investmentType=='onYearBasis'}"><span>同比</span></em>
+	   	 				<em class="pull-left linkrelativeratio"  ng-click="setType('LinkRelativeRatio','investment')" ng-class="{'btn-active':investmentType=='LinkRelativeRatio'}"><span>环比</span></em>
+	   	 				<em class="pull-left budget btn-active" ng-click="setType('Budget','investment')" ng-class="{'btn-active':investmentType=='Budget'}"><span>预算</span></em>
+	 				</div>
+	 				<div class="table-title">
+	 					<ul class="clearfix">
+	 						<li class="monthly title-active"><2016-08（万元）</li>
+	 						<li  class="yearly">全年累计（万元）</li>
+	 					</ul>	
+	 				</div>
+	 				<div class="risk-table-tel">
+	 				<div class="amp-table-wrapper-swiper">
+	           		<div  style="padding-left:115px;">
+			                <div class="table-blank amp-table-left" style="padding-left:115px;;">
+			                    <table style="width:100%; ">
+			                        <thead>
+			                        <tr style="">
+			                            <th class="fake-th"></th>
+			                        </tr>
+			                        </thead>
+			                    </table>
+			                </div>
+			                <div class="swiper-container">
+			                    <div class="swiper-wrapper ">
+			                        <div class="swiper-slide " style="padding-right: 15px; border-bottom: solid 1px #dae1e7;">
+			                            <table class="table-top">	
+			                                <tr  >
+			                                    <td>实际</td>
+			                                    <td>预算</td>
+			                                </tr>
+			                            </table>
+			                        </div>
+			                    </div>         
+			                </div>
+			            </div>
+		            <div class="ys-table-main" style="padding-left:115px;">
+		                <div class="amp-table-left" style="padding-left:115px;padding-left: 12px;">
+		                    <table class="amp-table" style="width:100%;">
+		                        <tbody>
+		                      		 <tr ng-repeat="item in investment[investmentType]" >
+									<td class=" text-left">{{item.name}}</td>
+	  								
+								</tr>
+		                        </tbody>
+		                        
+		                    </table>
+		                </div>
+		                <div style="width:100%; padding-right: 15px;" id="noi-main-table">
+		                    <div >
+		                        <div>
+		                            <table  class="amp-table-data amp-table-td2">
+		                                <tbody>
+		                                	 <tr ng-repeat="item in investment[investmentType]" >
+				  								<td  ng-class='setStyleIcon(item.ActualMonth,item.ReferMonth)'>
+													<div ng-if="!allyear_investment">{{item.ActualMonth}} <i></i></div>
+													<div ng-if="allyear_investment">{{item.ActualYear}} <i></i></div>
+												</td>
+	  											<td  >
+	  												<div ng-if="!allyear_investment">{{item.ReferMonth}}</div>
+													<div ng-if="allyear_investment">{{item.ReferYear}}</div>	 
+	  											</td> 
+				  								
+											</tr>
+											
+		                                </tbody>
+		                            </table>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+        			</div>
+	 				</div>
+   	 			</div>
+   	 			<div class="riskctrl-title-tel" id="passenger">
+   	 				<div class="return-rate-table-title-tel clearfix">
+	   	 				<span class="pull-left">客流</span>
+	   	 				<em class="pull-right">显示所有月份 <i>&gt;</i></em>
+   	 				</div>
+   	 				<div class="riskctrl-btn">
+	   	 				<em class="pull-left onyearbasis" ng-click="setType('onYearBasis','passenger')" ng-class="{'btn-active':passengerType=='onYearBasis'}"><span>同比</span></em>
+	   	 				<em class="pull-left linkrelativeratio"  ng-click="setType('LinkRelativeRatio','passenger')" ng-class="{'btn-active':passengerType=='LinkRelativeRatio'}"><span>环比</span></em>
+	   	 				<em class="pull-left budget btn-active" ng-click="setType('Budget','passenger')" ng-class="{'btn-active':passengerType=='Budget'}"><span>预算</span></em>
+	 				</div>
+
+	 				<div class="table-title">
+	 					<ul class="clearfix">
+	 						<li class="monthly title-active"><2016-08（万元）</li>
+	 						<li  class="yearly">全年累计（万元）</li>
+	 					</ul>	
+	 				</div>
+	 				<div class="risk-table-tel">
+	 				<div class="amp-table-wrapper-swiper">
+	           		<div  style="padding-left:115px;">
+			                <div class="table-blank amp-table-left" style="padding-left:115px;;">
+			                    <table style="width:100%; ">
+			                        <thead>
+			                        <tr style="">
+			                            <th class="fake-th"></th>
+			                        </tr>
+			                        </thead>
+			                    </table>
+			                </div>
+			                <div class="swiper-container">
+			                    <div class="swiper-wrapper ">
+			                        <div class="swiper-slide " style="padding-right: 15px; border-bottom: solid 1px #dae1e7;">
+			                            <table class="table-top">	
+			                                <tr  >
+			                                    <td>实际</td>
+			                                    <td>预算</td>
+			                                </tr>
+			                            </table>
+			                        </div>
+			                    </div>         
+			                </div>
+			            </div>
+		            <div class="ys-table-main" style="padding-left:115px;">
+		                <div class="amp-table-left" style="padding-left:115px;padding-left: 12px;">
+		                    <table class="amp-table" style="width:100%;">
+		                        <tbody>
+		                      		<tr ng-repeat="item in passenger[passengerType]">
+									<td class=" text-left">{{item.name}}</td>
+	  								
+								</tr>
+		                        </tbody>
+		                        
+		                    </table>
+		                </div>
+		                <div style="width:100%; padding-right: 15px;" id="noi-main-table">
+		                    <div >
+		                        <div>
+		                            <table  class="amp-table-data amp-table-td2">
+		                                <tbody>
+		                                	<tr ng-repeat="item in passenger[passengerType]" >
+	  											<td  ng-class='setStyleIcon(item.ActualMonth,item.ReferMonth)'>
+													<div ng-if="!allyear_passenger">{{item.ActualMonth}} <i></i></div>
+													<div ng-if="allyear_passenger">{{item.ActualYear}} <i></i></div>
+												</td>
+	  											<td  >
+	  												<div ng-if="!allyear_passenger">{{item.ReferMonth}} </div>
+													<div ng-if="allyear_passenger">{{item.ReferYear}}</div>	  												
+	  											</td> 
+											</tr>
+		                                </tbody>
+		                            </table>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+        			</div>
+	 				</div>
+   	 			</div>
+   	 		</div>
+	    </div>
+	</div>
+	
+</body>
+<script src="../../static/dist/js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../static/dist/js/angular.min.js"></script>
+<script src="../../static/js/views/riskctrl/controller/riskctrl_detail_controller_tel.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+ 
+</script>
+</html>

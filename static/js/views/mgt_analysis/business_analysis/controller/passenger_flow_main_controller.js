@@ -1,4 +1,4 @@
-ampApp.controller("passenger-flow-main-controller",["$scope","$http","$rootScope","$timeout","$filter",function($scope,$http,$rootScope,$timeout,$filter){
+ampApp.controller("passenger-flow-main-controller",["$scope","$http","$rootScope","$timeout","$filter","$location",function($scope,$http,$rootScope,$timeout,$filter,$location){
 
 
     $rootScope.showBottom();
@@ -122,6 +122,13 @@ ampApp.controller("passenger-flow-main-controller",["$scope","$http","$rootScope
 
     }
 
+    /* ======================================== angular 注册事件 ======================================== */
+    $scope.goToEnrolment = function(){
+        hideMgtAnalysisMenuList();
+        $location.path("/passenger_flow_enrolment");
+    };
+
+
     /* ======================================== 监听广播事件 ======================================== */
     $scope.$on("$destroy",function(){destroy();});
 
@@ -157,20 +164,6 @@ ampApp.controller("passenger-flow-main-controller",["$scope","$http","$rootScope
         var data3 = $scope.chart.lastYear;
 
         chartInsArr.push(createPassengerFlowChart(labels,data1,data2,data3));
-    }
-
-    /* ======================================== 绑定事件 ======================================== */
-    function bindPageEvents(){
-        var mgtAnalysisMenuListWrapper = $("#mgt-analysis-menu-list-wrapper");
-        $(mgtAnalysisMenuListWrapper).find(".menu-item-list a.enrolment-btn").on("click",function(e){
-            e.stopPropagation();
-            e.preventDefault();
-
-            hideMgtAnalysisMenuList();
-
-            window.location = "#/passenger_flow_enrolment";
-
-        });
     }
 
     /* ======================================== common methods ======================================== */
@@ -271,7 +264,6 @@ ampApp.controller("passenger-flow-main-controller",["$scope","$http","$rootScope
         $http.get(url).success(function(result){
             initializeData(result);
             initPageView();
-            bindPageEvents();
         });
     }
     init();

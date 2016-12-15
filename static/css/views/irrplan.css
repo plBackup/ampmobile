@@ -200,9 +200,60 @@
 #rpg-result-table-wrapper .amp-table>thead>tr>th.text-right{text-align: right;}
 
 
+/*datatool-sim*/
+#datatool-sim{padding-bottom:0;}
+#datatool-sim .amp-content-header{margin-bottom:0;}
+#datatool-sim #datatool-sim-main-table{position: relative;border-left: solid 1px #dfe5e9;overflow:hidden;}
+#datatool-sim #datatool-sim-main-table .table-wrapper{padding-top:20px;padding-bottom:20px;border-bottom: solid 1px #dfe5e9;}
+#datatool-sim #datatool-sim-main-table .amp-table{margin-bottom:0;}
+
+#datatool-sim #datatool-sim-main-table .amp-table thead{background-color:transparent;}
+#datatool-sim #datatool-sim-main-table .amp-table thead>tr>th{text-align: left;}
+#datatool-sim #datatool-sim-main-table .amp-table tr>th:nth-child(1),
+#datatool-sim #datatool-sim-main-table .amp-table tbody>tr>th{width:135px;}
+#datatool-sim #datatool-sim-main-table .amp-table tr>th,
+#datatool-sim #datatool-sim-main-table .amp-table tr>td{padding-left:0px;padding-right:15px;}
+#datatool-sim #datatool-sim-main-table .amp-table tr>th{padding-left:20px;font-size: 14px;color:#8592a3;}
+#datatool-sim #datatool-sim-main-table .amp-table thead>tr>th{padding-left:0;border-bottom:0;}
+
+#datatool-sim-main-table .amp-table>tbody>tr>th,
+#datatool-sim-main-table .amp-table>tbody>tr>td,
+#datatool-sim-main-table .amp-table>tfoot>tr>th,
+#datatool-sim-main-table .amp-table>tfoot>tr>td{overflow: visible;}
+
+#datatool-sim-floor-table{}
+#datatool-sim .col-xs-6{height:100%;padding-left:0;padding-right:0;}
+#datatool-sim .amp-svg-opt{position: absolute;z-index:100;width:100%;left:0;bottom:0;padding:20px;padding-left:30px;padding-bottom:78px;
+    background-color: rgba(33,33,33,0.75);color:#fff;}
+#datatool-sim .amp-svg-opt h5{font-size:14px;height:22px;line-height: 22px;}
+#datatool-sim .amp-svg-opt .btn-wrapper{position:absolute;bottom:0;/*width:100%;*/height:72px;overflow: hidden;padding-top:20px;padding-bottom:20px;text-align: center;right:30px;}
+#datatool-sim .amp-svg-opt .btn-wrapper .amp-btn{height:32px;padding:3px 15px;text-align: center;font-size:14px;line-height: 24px;
+    border: solid 1px #5ab46e;min-width: 72px;border-radius: 2px;float:right;margin-left:12px;width:72px;}
+#datatool-sim .amp-svg-opt .btn-wrapper .amp-btn.amp-btn-reverse{background-color:#fff;color: #5ab46e;}
+#datatool-sim .amp-svg-opt .btn-wrapper .amp-btn.amp-btn-grey{background-color:#a0aab4;border-color:#a0aab4;}
+
+#datatool-sim .amp-svg-opt span.opt-item{float:left;display: block;margin-right:15px;padding:3px 0px;padding-right:25px;height:28px;line-height: 22px;text-align: left;position: relative;
+    font-size: 14px;}
+
+#datatool-sim .amp-svg-opt span.opt-item>em{display: inline-block;margin-right:12px;}
+#datatool-sim .amp-svg-opt span.opt-item>em.ys-icon-cancel{display: block;position: absolute;height:16px;width:16px;right:0;top:6px;
+    background-color:#b0b0b0;color:#fff;font-size: 14px;line-height: 14px;text-align: center;}
+/*block btn-wrapper*/
+#datatool-sim .bottom-block{/*position: fixed; */position:relative;padding-right:28px;bottom: 0; width: 100%; left: 0;border-top:0;background-color:#f3f4f8;z-index:99;}
+#datatool-sim .btn-wrapper{height:72px;overflow: hidden;padding-top:20px;padding-bottom:20px;text-align: center;}
+#datatool-sim .btn-wrapper .amp-btn{height:32px;padding:3px 15px;text-align: center;font-size:14px;line-height: 24px;float:right;margin-left:15px;
+    border: solid 1px #5ab46e;min-width: 110px;border-radius: 2px;}
+#datatool-sim .btn-wrapper .amp-btn.amp-btn-reverse{background-color:#fff;color: #5ab46e;}
+
 /*block btn-wrapper*/
 #datatool-rpgpin .bottom-block{position: relative;padding-right:0; bottom: 0; width: 100%; left: 0;background-color:#f3f4f8;border-top:0;}
 #datatool-rpgpin .bottom-block .btn-wrapper{height:64px;overflow: hidden;padding:10px 15px;}
 #datatool-rpgpin .bottom-block .btn-wrapper .amp-btn{height:44px;line-height:32px;text-align: center;border-radius:0;border:0;font-size:14px;}
 #datatool-rpgpin .bottom-block .btn-wrapper .amp-btn.amp-btn-reverse{background-color:#fff;color: #5ab46e;}
 /*#datatool-rpgpin .swiper-wrapper .amp-table tr>th{text-align: right;}*/
+/*block btn-wrapper*/
+
+#datatool-sim .bottom-block{position: relative;padding-right:0; bottom: 0; width: 100%; left: 0;background-color:#f3f4f8;border-top:0;}
+#datatool-sim .bottom-block .btn-wrapper{height:64px;overflow: hidden;padding:10px 15px;}
+#datatool-sim .bottom-block .btn-wrapper .amp-btn{height:44px;width:100%;line-height:32px;text-align: center;border-radius:0;border:0;font-size:14px;}
+#datatool-sim .bottom-block .btn-wrapper .amp-btn.amp-btn-reverse{background-color:#fff;color: #5ab46e;}

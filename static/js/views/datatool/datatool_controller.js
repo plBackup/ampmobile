@@ -534,6 +534,10 @@ dataTool.controller("rpgResultController",['$rootScope', '$scope',"dataIndexData
         $rootScope.dFooterShow=true;
         $rootScope.pageId="datatool-rpgresult";
 
+        self.back=function(){
+          $state.go("datatool.rpgpin");
+        };
+
         var shopData=dataIndexData.slice(1);
         $rootScope.indexData=shopData;
         //console.log($rootScope.indexData);
@@ -842,9 +846,9 @@ dataTool.controller("dataSetController",['$rootScope', '$scope',"$location","$ti
                 alert("请输入正确的数据");
                 return false;
             }else{
-                amp_main.loading_show();
-                setTimeout(function(){
-                    amp_main.loading_hide();
+                $rootScope.loading_show();
+                $timeout(function(){
+                    $rootScope.loading_hide();
                 },1000);
                 $state.go("datatool.rpgresult");
                 /*ui-sref="rpgresult"  ui-sref-active="active" href="#/rpgresult"*/
@@ -1842,8 +1846,8 @@ dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simCh
         $rootScope.showHeader();
         $rootScope.showBottom();
 
-        $rootScope.dFooterShow=false;
-        $rootScope.pageId="datatool-datasim";
+        $rootScope.dFooterShow=true;
+        $rootScope.pageId="datatool-sim";
 
         if(typeof simChartData==="undefined"){
             self.shops=[];
@@ -1898,9 +1902,9 @@ dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simCh
                  alert("请输入有效的数据");
                  return false;
              }else{
-                 amp_main.loading_show();
+                 $rootScope.loading_show();
                  $timeout(function(){
-                     amp_main.loading_hide();
+                     $rootScope.loading_hide();
                      $state.go("datatool.rpgresult")
                  },1000);
              }
@@ -1936,9 +1940,6 @@ dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simCh
             _checkErrot($(e.target));
         });
 
-
-        //amp_datePicker.daterangeSelector();
-        //amp_datePicker.dateSelector();
         var iscroll_init=function(){
             var h=parseInt($(window).height());
 
@@ -2005,12 +2006,40 @@ dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simCh
         var add_svg=function(floor){
 
             self.clearShopInfo();
-
-            if(floor=="B2"){
-                var file="svg.svg"
-            }else{
-                file="floors.svg"
+            switch(floor){
+                case "B2":
+                    var file="svg_1.svg";
+                    self.floor="B2";
+                    break;
+                case "B1":
+                    var file="svg_2.svg";
+                    self.floor="B1";
+                    break;
+                case "1F":
+                    var file="svg_3.svg";
+                    self.floor="1F";
+                    break;
+                case "2F":
+                    var file="svg_4.svg";
+                    self.floor="2F";
+                    break;
+                case "3F":
+                    var file="svg_1.svg";
+                    self.floor="3F";
+                    break;
+                case "4F":
+                    var file="svg_2.svg";
+                    self.floor="4F";
+                    break;
+                case "5F":
+                    var file="svg_3.svg";
+                    self.floor="5F";
+                    break;
+                default:
+                    var file="svg_1.svg";
+                    self.floor="B2";
             }
+
             $.get(file,function(data,status){
                 var importedSVGRootElement = document.importNode(data.documentElement,true);
                 $("#ys-svg").append(importedSVGRootElement);
@@ -2019,7 +2048,8 @@ dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simCh
 
             });
         };
-        iscroll_init();
+        //移动版不用iscroll
+        //iscroll_init();
         add_svg(self.floor);
 
         self.setFloor=function(floor){

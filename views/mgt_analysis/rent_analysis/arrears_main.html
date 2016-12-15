@@ -14,10 +14,7 @@
                 <div class="table-left">
                     <table>
                         <tr><th>项目</th></tr>
-                        <tr><td>租金</td></tr>
-                        <tr><td>物管费</td></tr>
-                        <tr><td>其他</td></tr>
-                        <tr><td>合计</td></tr>
+                        <tr ng-repeat="item in records"><td>{{item.itemName}}</td></tr>
                     </table>
                 </div><!-- table-left -->
                 <div class="table-right">
@@ -25,51 +22,27 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <table>
-                        <thead>
-                            <tr>
-                                <th>总额(万元)</th>
-                                <th>≤30天</th>
-                                <th>31-60天</th>
-                                <th>61-90天</th>
-                                <th>&gt;90天</th>
-                                <th>占80%押金的商家数</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>258.47</td>
-                                <td>258.47</td>
-                                <td>258.47</td>
-                                <td>258.47</td>
-                                <td>258.47</td>
-                                <td>258.47</td>
-                            </tr>
-                            <tr>
-                                <td>258.47</td>
-                                <td>258.47</td>
-                                <td>258.47</td>
-                                <td>258.47</td>
-                                <td>258.47</td>
-                                <td>258.47</td>
-                            </tr>
-                            <tr>
-                                <td>258.47</td>
-                                <td>258.47</td>
-                                <td>258.47</td>
-                                <td>258.47</td>
-                                <td>258.47</td>
-                                <td>258.47</td>
-                            </tr>
-                            <tr>
-                                <td>258.47</td>
-                                <td>258.47</td>
-                                <td>258.47</td>
-                                <td>258.47</td>
-                                <td>258.47</td>
-                                <td>258.47</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                    <thead>
+                                        <tr>
+                                            <th>总额(万元)</th>
+                                            <th>≤30天</th>
+                                            <th>31-60天</th>
+                                            <th>61-90天</th>
+                                            <th>&gt;90天</th>
+                                            <th>占80%押金的商家数</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr ng-repeat="item in records">
+                                            <td>{{item.totalAccount|numberFormatDefault:"-":2}}</td>
+                                            <td>{{item.dateItem1|numberFormatDefault:"-":2}}</td>
+                                            <td>{{item.dateItem2|numberFormatDefault:"-":2}}</td>
+                                            <td>{{item.dateItem3|numberFormatDefault:"-":2}}</td>
+                                            <td>{{item.dateItem4|numberFormatDefault:"-":2}}</td>
+                                            <td>{{item.merchantCount}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
 
                             </div><!-- swiper-slide -->
                         </div><!-- swiper-wrapper -->
@@ -117,7 +90,7 @@
 
     <div ui-content-for="mgt-analysis-menu-list-wrapper">
         <ul class="menu-item-list">
-            <li><a class="filter-btn"  ui-toggle="uiSidebarRight">筛选</a></li>
+            <li><a class="filter-btn"  ui-toggle="uiSidebarRight" ng-click="closeMenuList()">筛选</a></li>
         </ul>
     </div>
 
