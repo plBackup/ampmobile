@@ -1,0 +1,97 @@
+#datatool-irrplan{padding-bottom:0;}
+#datatool-irrplan .amp-block{}
+#datatool-irrplan .table td.active {
+    background-color: #dfe5e9;
+}
+#datatool-irrplan .amp-block>thead{background-color:#f3f4f8;border-bottom:solid 1px #dfe5e9;}
+#datatool-irrplan  .ys-table-static .table{}
+#datatool-irrplan  .table>tbody>tr>th{padding-left:15px;padding-right:20px;color:#373c42;padding:0 10px;vertical-align: middle;height: 40px;overflow: hidden;}
+
+#datatool-irrplan .table tbody>tr>td {
+    padding: 3px 10px;
+    text-align: right;
+    cursor: pointer;
+    height: 38px;
+    line-height: 28px;
+    font-size:13px;
+    color:#373c42;
+    overflow: hidden;
+}
+#datatool-irrplan .table tbody>tr>td,
+#datatool-irrplan .amp-table>tbody>tr.tr-main.tr-head{/*background-color:#f3f4f8;height:28px;*/}
+#datatool-irrplan .amp-table>tbody>tr.tr-main.tr-head>th,
+#datatool-irrplan .amp-table>tbody>tr.tr-main.tr-head>td{padding:3px 10px;padding-left:25px;height:32px;line-height: 20px;background-color: #f3f4f8;}
+
+#datatool-irrplan .amp-table>tbody>tr.tr-main.tr-head>th>span,
+#datatool-irrplan .amp-table>tbody>tr.tr-main.tr-head>td>span{overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+
+#datatool-irrplan .td-input-wrapper i.unit-addon{float:right;margin-left:5px;line-height: 22px;}
+#datatool-irrplan .ys-table-static .table  tbody>tr>td{text-align:left;}
+#datatool-irrplan .table  tbody>tr>td>span{display: block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+
+#datatool-irrplan .table td input {
+    display: none;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    text-align: right;
+    height: 28px;
+    line-height: 20px;
+    font-size: 14px;
+}
+#datatool-irrplan .table td.active{background-color:#eaeaea; }
+#datatool-irrplan .table td.active input{display: block; padding-right: 5px;background-color: #fff;border:solid 1px #dfe5e9;}
+#datatool-irrplan .table td.active span.number-format,.ys-amp .table td.active span.td-format{display: none;border:solid 1px #dfe5e9;background-color:#f3f4f8;}
+.ys-amp .table td.active i.unit-addon{display:none;}
+
+#datatool-irrplan  .ys-table-static .table tr.tr-main>th{padding-left:15px;color:#373c42;font-size:14px;font-weight:bold;}
+#datatool-irrplan  .ys-table-static .table tr.tr-main>td,#datatool-irrplan .amp-table tr.tr-main>td{font-size: 14px;color:#373c42;font-size:14px;font-weight:bold;}
+#datatool-irrplan .amp-table tr.tr-note>tr,#datatool-irrplan .amp-table tr.tr-note>td,
+#datatool-irrplan  .ys-table-static .table tr.tr-note>th,#datatool-irrplan  .ys-table-static .table tr.tr-note>td{font-size: 14px;/*color:#8592a3;*/font-weight:bold;}
+
+
+#datatool-irrplan .table>tbody>tr>th, #datatool-irrplan .table>tbody>tr>td{padding:3px 10px;padding-left:15px;
+    height:38px;line-height:28px;overflow:visible;}/*这里修改改变整体表格单元高度*/
+
+#datatool-irrplan  .ys-table-static .table tr.tr-sub>th{color:#8592a3;font-size:13px;}
+#datatool-irrplan  .ys-table-static .table tr.tr-sub>th span{display:block;font-size:13px;line-height: 18px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+#datatool-irrplan  .ys-table-static .table tr.tr-sub>th.th-note span{color:#373c32;font-weight:bold;}
+#datatool-irrplan  .ys-table-static .table tr.tr-sub>th.th-note span:nth-last-child(1){color:#8592a3;}
+#datatool-irrplan .amp-table-wrapper{position: relative;padding-left:375px;}
+#datatool-irrplan .amp-table-wrapper .ys-table-static{position: absolute;top:0;left:0;}
+#datatool-irrplan .ys-table-static .table>thead>tr>th{text-align: left;padding-left:15px;}
+
+#datatool-irrplan .amp-table-wrapper .amp-table tr>th,#amp-tookit-sim .amp-table-wrapper .amp-table tr>td{height:44px;overflow: hidden;}
+#datatool-irrplan .amp-table-wrapper .table-scroll>thead>tr>th{text-align: right;}
+#datatool-irrplan .ys-footer-block .input-wrapper{height:34px;line-height: 34px;width:295px;}
+#datatool-irrplan .ys-footer-block .input-wrapper input{border:solid 1px #ddd;margin-left:6px;height:34px;width:200px;float:right;}
+
+#datatool-irrplan .amp-table tr.tr-split{padding-top:16px;padding-bottom:16px;height:76px;border-top:solid 1px #dfe5e9;border-bottom:solid 1px #dfe5e9;}
+#datatool-irrplan .amp-table tr.tr-split-top{height:58px;/*padding-top:16px;*/border-top:solid 1px #dfe5e9; }
+#datatool-irrplan .amp-table tr.tr-split-top>th,#datatool-irrplan .amp-table tr.tr-split-top>td{padding-top:18px;height:58px;}
+#datatool-irrplan .amp-table tr.tr-split-bottom{height:58px;/*padding-bottom:16px;*/border-bottom:solid 1px #dfe5e9; }
+#datatool-irrplan .amp-table tr.tr-split-bottom>th,#datatool-irrplan .amp-table tr.tr-split-bottom>td{padding-bottom:18px;height:58px;}
+#datatool-irrplan .amp-table tr.tr-split-bottom>th{}
+
+#datatool-irrplan .amp-table tr.tr-split-bottom+tr.tr-split{border-top:0;}
+#datatool-irrplan .amp-table tr.tr-split+tr{border-top:0;}
+
+/*#amp-tookit-sim  .table-scroll>tbody>tr>td{padding:0;}*/
+#datatool-irrplan .table .td-input-wrapper {
+    position: relative;
+    width: 100%;
+    height: 28px;
+    background-color:#f3f4f8;
+}
+#datatool-irrplan  .table .td-input-wrapper span{padding: 3px 6px; height: 28px; line-height: 22px;}
+#datatool-irrplan  .table .td-input-wrapper.padding-r-15 .number-format{padding:3px 6px;overflow: hidden;
+    text-overflow: ellipsis;white-space: nowrap;background-color: transparent;height:28px;line-height: 22px;}
+
+/*block btn-wrapper*/
+#datatool-irrplan .bottom-block{position: absolute;padding-right:30px; bottom: 0; width: 100%; left: 0;background-color:#f3f4f8;border-top:0;}
+#datatool-irrplan .btn-wrapper{height:72px;overflow: hidden;padding-top:20px;padding-bottom:20px;}
+#datatool-irrplan .btn-wrapper .amp-btn{height:32px;padding:3px 15px;text-align: center;border-radius:0;font-size:14px;line-height: 24px;border: solid 1px #5ab46e;min-width: 110px;border-radius: 2px;}
+#datatool-irrplan .btn-wrapper .amp-btn.amp-btn-reverse{background-color:#fff;color: #5ab46e;}
+#datatool-irrplan .btn-wrapper .amp-btn { float: right; margin-left: 20px; }
+#datatool-irrplan  .swiper-wrapper .amp-table tr>th{text-align: right;}
+
