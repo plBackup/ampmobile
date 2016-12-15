@@ -426,6 +426,7 @@ dataTool.controller("datatoolController",['$rootScope', '$scope',"$timeout","$lo
 
         $rootScope.dFooterShow=true;
         $rootScope.pageId="datatool";
+
         self.goHome=function(){
             $state.go("projectlist");
         }
@@ -441,7 +442,7 @@ dataTool.controller("dataIndexController",['$rootScope', '$scope',"dataIndexData
 
         $rootScope.dFooterShow=true;
         $rootScope.pageId="datatool.rpgindex";
-
+        console.log($rootScope.dFooterShow)
         $rootScope.indexData=shopData;
         console.log($rootScope.indexData);
 
@@ -607,6 +608,14 @@ dataTool.controller("rpgResultController",['$rootScope', '$scope',"dataIndexData
 dataTool.controller("dataEditController",['$rootScope', '$scope','$state','SharedState','shopData',
     function($rootScope, $scope,$state,SharedState,shopData) {
         var self=this;
+
+        $rootScope.showHeader();
+        $rootScope.hideBottom();
+
+        $rootScope.dFooterShow=false;
+        $rootScope.pageId="datatool.shopedit";
+
+
         self.form_menu={
             projects:["商业公司A","商业公司B","商业公司C","商业公司D"],
             floor:["B1","F1","F2","F3","F4","F5","F6"],
@@ -615,7 +624,8 @@ dataTool.controller("dataEditController",['$rootScope', '$scope','$state','Share
             property:["自持","销售","销售返租"],
             type:["MAll","商业街"]
         };
-        self.index="add";
+
+        self.index="add"; //改成了shopData.type= edit || create;
         self.shopInfo={};
 
         if(typeof shopData!=="undefined" &&shopData!=null){
@@ -793,6 +803,11 @@ dataTool.controller("dataSetIndexController",['$rootScope', '$scope','$timeout',
     function($rootScope, $scope,$timeout,rpgSetData) {
         var self=this;
         self.setData=rpgSetData[0].values;
+        $rootScope.showHeader();
+        $rootScope.showBottom();
+
+        $rootScope.dFooterShow=false;
+        $rootScope.pageId="datatool.rpgset";
 
     }]);
 

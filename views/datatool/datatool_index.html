@@ -1,5 +1,5 @@
 <div class="scrollable datatool" id="datatool">
-    <div class="scrollable-header">
+    <div class="scrollable-header" ng-hide="pageId=='datatool.shopedit' || pageId=='datatool.shopcreate'">
         <div class="amp-tab-nav">
             <ui-shared-state id="activeTab" default="1"></ui-shared-state>
             <ul class="nav nav-tabs">
@@ -52,11 +52,8 @@
 
         </div>
     </div><!--scrollable content-->
-    <div class="scrollable-footer"  ng-if="dFooterShow==true">
+    <div class="scrollable-footer"  ng-show="dFooterShow==true">
         <div ui-yield-to="datatool-footer">
-            <div class="amp-pagination clearfix" ui-content-for="datatool-footer">
-
-            </div>
         </div>
     </div>
 </div><!--scrollable-->

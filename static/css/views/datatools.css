@@ -1,5 +1,4 @@
 /*tabs*/
-/*
 #datatool .nav { margin-bottom: 0; padding-left: 0; list-style: none; background-color:#1a202c;}
 #datatool .nav-tabs { border-bottom: 1px solid #edeef3; }
 #datatool .nav > li { position: relative; display: block; }
@@ -20,4 +19,35 @@
 }
 
 #datatool .nav-tabs > li.active:after{display:block;content:" ";width:12px;height:6px;position: absolute;bottom:0;left:50%;margin-left:-6px;
-    background-image:url(../../images/icon_tri_up@2x.png);background-repeat:no-repeat;background-position: center center; background-size:contain;}*/
+    background-image:url(../../images/icon_tri_up@2x.png);background-repeat:no-repeat;background-position: center center; background-size:contain;}
+
+#datatool .amp-tab-menu{height:50px;background-color:#fff;border-bottom:solid 10px #f3f4f8;}
+
+#datatool .amp-tab-menu>li{text-align: center;}
+#datatool .amp-tab-menu>li a{display: inline-block;height:40px;line-height:38px;border-bottom:solid 2px transparent;color:#717d8d;}
+#datatool .amp-tab-menu>li a.active{border-bottom:solid 2px #59b46f;color:#59b46f;}
+
+#datatool .amp-pagination{height:50px;line-height:40px;text-align:center;border-bottom:solid 5px #1a202c;border-top:solid 5px #edeef3;}
+#datatool .amp-pagination .btn-wrapper{}
+#datatool .amp-pagination .btn-wrapper span{color:#8592a3;}
+
+#datatool .amp-pagination .btn-wrapper .btn{display: block;width:56px;height:40px;border:0;border-radius:0;background-color:#59b46f;color:#fff;}
+
+/*amp-rpg-list*/
+#datatool .amp-rpg-list{}
+#datatool .amp-rpg-list .amp-rpg-item{padding:8px 15px;border-bottom:solid 10px #f3f4f8;}
+
+#datatool .amp-rpg-list .amp-rpg-item .amp-panel-title{position:relative;height:32px;padding-bottom:8px;line-height: 24px;border-bottom:solid 1px #edeef3;}
+#datatool .amp-rpg-list .amp-rpg-item .amp-panel-content{padding-top:8px;}
+#datatool .amp-rpg-list .amp-rpg-item .amp-panel-content .col-xs-3,
+#datatool .amp-rpg-list .amp-rpg-item .amp-panel-content .col-xs-4,
+#datatool .amp-rpg-list .amp-rpg-item .amp-panel-content .col-xs-5{padding-left:0;padding-right:0;font-size: 13px;
+    overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+
+#datatool .amp-rpg-list .amp-rpg-item .amp-panel-content .col-xs-3{padding-right:6px;}
+#datatool .amp-rpg-list .amp-rpg-item .amp-panel-content .col-xs-5{padding-left:6px;}
+
+#datatool .amp-panel-title .amp-icon-arrow-right{right:0;}
+
+
+

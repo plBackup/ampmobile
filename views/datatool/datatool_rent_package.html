@@ -19,10 +19,8 @@
                 role="menu"
                 ui-show="rpgDropdown"
                 ui-turn-off="rpgDropdown">
-
             <li><a class="btn amp-header-btn" ui-sref="datatool.shopcreate">新增</a></li>
             <li><a ui-toggle="uiSidebarRight" class="btn amp-header-btn sidebar-right-toggle"><i class="navOpt-icon navOpt-icon-filter"></i>过滤</a></li>
-
         </ul>
     </div>
 
@@ -36,16 +34,17 @@
                 <div class="amp-panel">
                     <div class="amp-panel-title" ng-click="dCtrl.shopEdit($index,shop)">
                         <span title="{{shop.shopIndex}}">{{shop.shopIndex}}</span>
-                        <i>租金<em class="amp-icon amp-icon-arrow-right"></em></i>
+                        <i>租金</i>
+                        <em class="amp-icon amp-icon-arrow-right"></em>
                     </div>
                     <div class="amp-panel-content">
                         <div class="justify clearfix">
-                            <span class="col-xs-4">{{shop.floor}}</span>
-                            <span class="col-xs-4">建筑面积 {{shop.floorArea | number:2}}</span>
-                            <span class="col-xs-4">{{shop.property}}</span>
+                            <span class="col-xs-3">{{shop.floor}}</span>
+                            <span class="col-xs-5">建筑面积 {{shop.floorArea | number:2}}m&sup2</span>
+                            <span class="col-xs-4 text-right">{{shop.property}}</span>
 
-                            <span class="col-xs-4">{{shop.form}}</span>
-                            <span class="col-xs-4">套内面积 {{shop.indoorArea | number:2}}</span>
+                            <span class="col-xs-3">{{shop.form}}</span>
+                            <span class="col-xs-5">套内面积 {{shop.indoorArea | number:2}}m&sup2</span>
                             <span class="col-xs-4 text-right">{{shop.rentStandard[0] | number:2}}</i>元/m&sup2/月</span>
                         </div>
                     </div>
@@ -70,15 +69,12 @@
 </div><!-- contentpanel -->
 <div ui-content-for="datatool-footer">
     <div class="amp-pagination clearfix" >
-        <div class="btn-wrapper pull-right" >
-            <span style="margin-right:10px;"><em class="page-index-bottom">共<i>{{dCtrl.recordsNum}}</i>条记录，当前第<i>{{dCtrl.paginator.curPageIndex}}</i>/<i>{{dCtrl.pageNum}}</i>页</em></span>
-            <div class="btn-group" role="group" aria-label="">
-                <button type="button" class="btn btn-default" id="btn-pre-bottom" ng-click="dCtrl.paginator.prev()"  ng-class="{'btn-disabled':!dCtrl.paginator.hasPrevious()}" ng-disabled="!dCtrl.paginator.hasPrevious()">&lt;</button>
-                <button type="button" class="btn btn-default" id="btn-next-bottom" ng-click="dCtrl.paginator.next()" ng-class="{'btn-disabled':!dCtrl.paginator.hasNext() }" ng-disabled="!dCtrl.paginator.hasNext()" >&gt;</button>
-                <input type="text" value="1" class="page-num-input" ng-model="dCtrl.paginator.pageTarget">
-            </div>
+        <div class="btn-wrapper" >
+            <button type="button" class="btn btn-default pull-left" id="btn-pre-bottom" ng-click="dCtrl.paginator.prev()"  ng-class="{'btn-disabled':!dCtrl.paginator.hasPrevious()}" ng-disabled="!dCtrl.paginator.hasPrevious()">&lt;</button>
 
-            <button type="button" class="btn btn-default amp-btn" id="btn-go" ng-click="dCtrl.loadPage(dCtrl.paginator.pageTarget)">确定</button>
+            <span style="margin-right:10px;"><em class="page-index-bottom">共<i>{{dCtrl.recordsNum}}</i>条记录，当前第<i>{{dCtrl.paginator.curPageIndex}}</i>/<i>{{dCtrl.pageNum}}</i>页</em></span>
+
+            <button type="button" class="btn btn-default pull-right" id="btn-next-bottom" ng-click="dCtrl.paginator.next()" ng-class="{'btn-disabled':!dCtrl.paginator.hasNext() }" ng-disabled="!dCtrl.paginator.hasNext()" >&gt;</button>
         </div>
     </div>
 </div>
