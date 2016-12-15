@@ -1,0 +1,23 @@
+/*tabs*/
+/*
+#datatool .nav { margin-bottom: 0; padding-left: 0; list-style: none; background-color:#1a202c;}
+#datatool .nav-tabs { border-bottom: 1px solid #edeef3; }
+#datatool .nav > li { position: relative; display: block; }
+#datatool .nav-tabs > li { float: left; margin-bottom: -1px;width:33.333333%;overflow:hidden;text-overflow: ellipsis;white-space: nowrap;position: relative; }
+
+#datatool .nav > li > a { position: relative; display: block; padding: 10px 6px;border-radius:0;line-height: 24px;text-align: center;font-size: 13px;}
+#datatool .nav-tabs > li > a {
+    margin-right: 2px;
+    line-height: 22px;
+    border: 0;
+    border-bottom:0;
+    color: #8592a3;
+}
+
+#datatool .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus {
+    color:#fff;
+    background-color: transparent;
+}
+
+#datatool .nav-tabs > li.active:after{display:block;content:" ";width:12px;height:6px;position: absolute;bottom:0;left:50%;margin-left:-6px;
+    background-image:url(../../images/icon_tri_up@2x.png);background-repeat:no-repeat;background-position: center center; background-size:contain;}*/

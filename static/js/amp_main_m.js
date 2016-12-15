@@ -164,7 +164,7 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
             },
             reloadOnSearch: false,
             resolve: {
-                data: ['$q','$timeout', _timeDefer]
+                //data: ['$q','$timeout', _timeDefer]
             }
         },
         {

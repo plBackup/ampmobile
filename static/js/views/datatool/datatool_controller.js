@@ -426,7 +426,9 @@ dataTool.controller("datatoolController",['$rootScope', '$scope',"$timeout","$lo
 
         $rootScope.dFooterShow=true;
         $rootScope.pageId="datatool";
-
+        self.goHome=function(){
+            $state.go("projectlist");
+        }
         $state.go("datatool.rpgindex");
 }]);
 dataTool.controller("dataIndexController",['$rootScope', '$scope',"dataIndexData","paginatorService","$timeout","$location","$state","$filter",
@@ -442,6 +444,11 @@ dataTool.controller("dataIndexController",['$rootScope', '$scope',"dataIndexData
 
         $rootScope.indexData=shopData;
         console.log($rootScope.indexData);
+
+        self.goHome=function(){
+            $state.go("projectlist");
+        }
+
         self.indexData=$rootScope.indexData;
         self.recordsNum=self.indexData.length;
         self.pageLimit=10;
