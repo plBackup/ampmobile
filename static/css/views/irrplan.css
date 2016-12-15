@@ -88,10 +88,11 @@
     text-overflow: ellipsis;white-space: nowrap;background-color: transparent;height:28px;line-height: 22px;}
 
 /*block btn-wrapper*/
-#datatool-irrplan .bottom-block{position: absolute;padding-right:30px; bottom: 0; width: 100%; left: 0;background-color:#f3f4f8;border-top:0;}
-#datatool-irrplan .btn-wrapper{height:72px;overflow: hidden;padding-top:20px;padding-bottom:20px;}
-#datatool-irrplan .btn-wrapper .amp-btn{height:32px;padding:3px 15px;text-align: center;border-radius:0;font-size:14px;line-height: 24px;border: solid 1px #5ab46e;min-width: 110px;border-radius: 2px;}
-#datatool-irrplan .btn-wrapper .amp-btn.amp-btn-reverse{background-color:#fff;color: #5ab46e;}
-#datatool-irrplan .btn-wrapper .amp-btn { float: right; margin-left: 20px; }
+#datatool-irrplan .bottom-block{position: relative;padding-right:0; bottom: 0; width: 100%; left: 0;background-color:#f3f4f8;border-top:0;}
+#datatool-irrplan .bottom-block .btn-wrapper{height:64px;overflow: hidden;padding:10px 15px;}
+#datatool-irrplan .bottom-block .btn-wrapper .amp-btn{height:44px;width:100%;line-height:32px;text-align: center;border-radius:0;border:0;font-size:14px;}
+#datatool-irrplan .bottom-block .btn-wrapper .amp-btn.amp-btn-reverse{background-color:#fff;color: #5ab46e;}
 #datatool-irrplan  .swiper-wrapper .amp-table tr>th{text-align: right;}
+
+
 

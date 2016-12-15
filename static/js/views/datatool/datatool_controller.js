@@ -1128,7 +1128,7 @@ dataTool.controller("irrPlanController",['$rootScope', '$scope',"irrPlanData","$
         $rootScope.showHeader();
         $rootScope.showBottom();
 
-        $rootScope.dFooterShow=false;
+        $rootScope.dFooterShow=true;
         $rootScope.pageId="datatool-irrplan";
 
         self.irrData=irrPlanData;

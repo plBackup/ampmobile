@@ -27,13 +27,14 @@
 .amp-table>thead>tr>th{
     padding:0;
     padding-left:15px;padding-right:15px;
-    height:28px;
+    height:40px;
     color: #8592a3;
     font-size: 13px;
     text-align: center;
     vertical-align: middle;
     border-bottom:0;
     font-weight:normal;
+    background-color:#f3f4f8;
     border-bottom: 1px solid #d9dde0 ;
 
 }

@@ -630,10 +630,15 @@
                 </div>
             </div>
         </div><!--ys-block-->
-        <div class="block bottom-block clearfix">
-            <div class="btn-wrapper pull-right">
-                <a href="javascript:void(0)" class="btn btn-default amp-btn amp-btn-reverse ys-tips" id="btn-count" ng-click="pCtrl.count()" ng-disabled="irrForm.$invalid">计算</a>
-            </div>
-        </div>
+
     </form>
 </div><!-- contentpanel -->
+<div ui-content-for="datatool-footer">
+    <div class="block bottom-block clearfix">
+        <div class="btn-wrapper">
+            <a class="btn amp-btn" id="btn-count" ng-click="pCtrl.count()" ng-disabled="irrForm.$invalid">计算</a>
+        </div>
+    </div>
+</div>
+
+
