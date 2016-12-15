@@ -649,6 +649,11 @@ ampApp.controller('MainController', function($rootScope, $scope,$location,$timeo
         self.headerShow=false;
     };
 
+    $rootScope.logout=function(){
+        //logout
+        location.href="login.html";
+    };
+
     $rootScope.homePageIsShown = true;
     $scope.state = {};
     $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState) {
