@@ -635,6 +635,16 @@ ampApp.controller('MainController', function($rootScope, $scope,$location,$timeo
     self.bottomShow=true;
     self.headerShow=true;
 
+    $rootScope.loadingShow=false;
+
+    $rootScope.loading_show=function(){
+        $rootScope.loadingShow=true;
+    };
+    $rootScope.loading_hide=function(){
+        $rootScope.loadingShow=false;
+    };
+
+
     $rootScope.showBottom=function(){
         self.bottomShow=true;
     };

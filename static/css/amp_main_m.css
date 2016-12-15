@@ -161,8 +161,14 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill { bac
 }
 
 
+/*amp-loading*/
+.amp-loading{/*display:none;*/position:fixed;top:0;left:0;right:0;bottom:0;background-color:transparent;z-index:3999;}
+.amp-loading>.loading-wrapper{width:180px;height:120px;
+    padding-top:80px;position: absolute;top:50%;left:50%;margin-left:-90px;margin-top:-100px;
+    border-radius:12px;background-color:rgba(62,70,88,0.62);}
 
-
+.amp-loading>.loading-wrapper>.loading-ani{width:60px;height:60px;position: absolute;top:20px;left:50%;margin-left:-30px;}
+.amp-loading>.loading-wrapper>span{display: block;color:#fff;font-size:16px;text-align: center;height:44px;line-height: 44px;}
 
 
 

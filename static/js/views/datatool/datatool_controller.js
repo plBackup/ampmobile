@@ -442,7 +442,8 @@ dataTool.controller("dataIndexController",['$rootScope', '$scope',"dataIndexData
 
         $rootScope.dFooterShow=true;
         $rootScope.pageId="datatool-rpgindex";
-        console.log($rootScope.dFooterShow)
+
+        console.log($rootScope.dFooterShow);
         $rootScope.indexData=shopData;
         console.log($rootScope.indexData);
 
