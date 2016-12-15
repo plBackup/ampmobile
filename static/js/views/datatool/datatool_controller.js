@@ -441,7 +441,7 @@ dataTool.controller("dataIndexController",['$rootScope', '$scope',"dataIndexData
         $rootScope.showBottom();
 
         $rootScope.dFooterShow=true;
-        $rootScope.pageId="datatool.rpgindex";
+        $rootScope.pageId="datatool-rpgindex";
         console.log($rootScope.dFooterShow)
         $rootScope.indexData=shopData;
         console.log($rootScope.indexData);
@@ -527,6 +527,12 @@ dataTool.controller("dataIndexController",['$rootScope', '$scope',"dataIndexData
 dataTool.controller("rpgResultController",['$rootScope', '$scope',"dataIndexData","paginatorService","$timeout","$location","$state","$filter","SharedState",
     function($rootScope, $scope,dataIndexData,paginatorService,$timeout,$location,$state,$filter,SharedState) {
         var self=this;
+        $rootScope.showHeader();
+        $rootScope.hideBottom();
+
+        $rootScope.dFooterShow=true;
+        $rootScope.pageId="datatool-rpgresult";
+
         var shopData=dataIndexData.slice(1);
         $rootScope.indexData=shopData;
         //console.log($rootScope.indexData);
@@ -613,7 +619,7 @@ dataTool.controller("dataEditController",['$rootScope', '$scope','$state','Share
         $rootScope.hideBottom();
 
         $rootScope.dFooterShow=false;
-        $rootScope.pageId="datatool.shopedit";
+        $rootScope.pageId="datatool-shopedit";
 
 
         self.form_menu={
@@ -807,7 +813,7 @@ dataTool.controller("dataSetIndexController",['$rootScope', '$scope','$timeout',
         $rootScope.showBottom();
 
         $rootScope.dFooterShow=false;
-        $rootScope.pageId="datatool.rpgset";
+        $rootScope.pageId="datatool-rpgset";
 
     }]);
 

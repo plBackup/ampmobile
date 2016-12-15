@@ -49,5 +49,12 @@
 
 #datatool .amp-panel-title .amp-icon-arrow-right{right:0;}
 
+#datatool-rpgresult #datatool .amp-pagination{height:40px;border-bottom: 0;}
 
+/*rightpanel*/
+#datatool-rpgresult .amp-right-panel{padding:15px;}
+#datatool-rpgresult .amp-right-panel h3.amp-panel-title{margin-bottom:0;height:44px;line-height: 44px;font-size:14px;font-weight:normal;
+    overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+
+#datatool-rpgresult .amp-right-panel .table > thead > tr > th{border-bottom-width:1px;background-color:#f3f4f8;color:#8592a3;}
 
