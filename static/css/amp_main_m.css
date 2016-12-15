@@ -5,11 +5,22 @@ i,label,span,em,b{font-weight:normal;font-style: normal;}
 .ampApp .navbar-absolute-top{height:44px;min-height: 44px;z-index:1999;}
 .ampApp .navbar-absolute-bottom{height:48px;min-height: 48px;}
 .ampApp .navbar-brand{padding:12px 15px;height:44px;color:#fff;font-weight:normal;}
-.ampApp .navbar-app .btn-navbar,.ampApp .navbar-app .btn{height:44px;line-height: 44px;color:#fff;}
+.ampApp .navbar-app .btn-navbar,.ampApp .navbar-app .btn{height:44px;line-height: 44px;color:#fff;border-radius:0;}
+.ampApp .navbar-app .btn-navbar:hover, .ampApp .navbar-app .btn:hover,
 .ampApp .navbar-app .btn-navbar:active,.ampApp .navbar-app .btn:active{opacity: 1;}
+
 .sidebar-right,.sidebar-left{background-color:#fff;}
+/*头部nav 选择*/
+.ampApp .navbar-absolute-top .dropdown-menu{min-width:128px;background-color:#1a202c;border:0;}
+.ampApp .navbar-absolute-top .dropdown-menu .btn{height:38px;line-height: 38px;color:#fff;text-align: right;}
+.ampApp .navbar-absolute-top .dropdown-menu .navOpt-icon{height:38px;float:left;}
+
+.ampApp .navbar-absolute-top .dropdown-menu > li > a:hover,
+.ampApp .navbar-absolute-top .dropdown-menu > li > a:active,
+.ampApp .navbar-absolute-top .dropdown-menu > li > a:focus{background-color:#4F6079;}
 /*.ampApp .navbar-absolute-bottom .btn-navbar, .navbar-app .btn{line-height: 44px;}*/
 .ampApp .navbar-app .btn-navbar:hover, .ampApp .navbar-app .btn:hover{color:#fff;}
+
 /*main*/
 .ampApp span.ampMenu-wrapper{position:relative;display:block;height:44px;padding-top:30px;line-height: 14px;text-align: center;font-size: 12px;color:#727e8e;}
 .ampApp span.ampMenu-wrapper i.amp-menu{display: block;top:3px;left:50%;margin-left:-11.5px;position: absolute;width:23px;height:23px;background-position: center center;background-repeat:no-repeat;background-size:contain;}
@@ -33,10 +44,11 @@ i.amp-menu-data{background-image:url(../images/menu_data@2x.png);}
     width:22px;height:22px;content:" ";background-repeat: no-repeat;background-position: center center;background-size:contain;content:" ";}
 
 .navOpt-icon-filter:before{background-image:url(../images/icon_filter@2x.png);}
+.navOpt-icon-doc:before{background-image:url(../images/icon_doc_create@2x.png);}
 /*回退按钮*/
 .navOpt-icon-back:before{background-image:url(../images/icon_logo_back@2x.png);}
 .navOpt-icon-home:before{background-image:url(../images/icon_projects@2x.png);}
-
+.navOpt-icon-plus:before{background-image:url(../images/icon_more@2x.png);}
 /*amp icon*/
 .ampApp .amp-icon{background-size:contain;background-position: center center;background-repeat: no-repeat;}
 
