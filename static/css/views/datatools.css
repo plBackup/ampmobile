@@ -48,7 +48,7 @@
 #datatool .amp-rpg-list .amp-rpg-item .amp-panel-content .col-xs-3{padding-right:6px;}
 #datatool .amp-rpg-list .amp-rpg-item .amp-panel-content .col-xs-5{padding-left:6px;}
 
-#datatool .amp-panel-title .amp-icon-arrow-right{right:0;}
+#datatool .amp-panel-title .amp-icon-arrow-right{right:0;margin-top:-10px;}
 
 #datatool-rpgresult #datatool .amp-pagination{height:40px;border-bottom: 0;}
 
