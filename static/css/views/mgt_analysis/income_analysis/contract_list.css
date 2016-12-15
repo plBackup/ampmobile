@@ -1,5 +1,33 @@
 #contract-list{position:relative;}
 
+/* ======================================== income-analysis-nav-bar ======================================== */
+#contract-list .income-analysis-nav-bar{padding:0 50px;border-bottom:1px solid #dae2e7;}
+#contract-list .income-analysis-nav-bar li{
+    width:50%;
+    float: left;
+}
+#contract-list .income-analysis-nav-bar li a{
+    display:block;
+    width:50px;
+    height:40px;
+    line-height:38px;
+    text-align: center;
+    color:#737f8c;
+    font-size:12px;
+    border-bottom:2px solid transparent;
+    margin:auto;
+}
+#contract-list .income-analysis-nav-bar li a.active{
+    color:#5ab46d;
+    border-bottom:2px solid #5ab46d;
+}
+#contract-list .grey-bar{
+    height:10px;
+    background-color:#f2f5f7;
+}
+
+
+#contract-list .scrollable{top:51px;}
 #contract-list .scrollable-content{padding:0;}
 
 /* ======================================== contract-item-list ======================================== */

@@ -1,0 +1,92 @@
+#income-expenses-simulation{position:relative;}
+#income-expenses-simulation .scrollable{top:41px;bottom:0;height:auto;}
+#income-expenses-simulation .scrollable-content{padding:0;}
+
+#income-expenses-simulation table{width:100%;}
+#income-expenses-simulation .swiper-slide{width:auto;}
+
+
+
+/* ======================================== income-expenses-simulation ======================================== */
+#income-expenses-simulation .table-group{
+    position:relative;
+    padding-left:125px;
+    z-index: 999;
+}
+
+#income-expenses-simulation  .table-group .record-list{
+    float:left;
+    padding-right:20px;
+}
+
+#income-expenses-simulation  .table-group .record-list li{
+    position:relative;
+    width:105px;
+    height:40px;
+    line-height: 40px;
+    text-align: right;
+    padding:0 0 0 15px;
+    color:#333;
+    font-size:12px;
+}
+
+#income-expenses-simulation  .table-group .record-list li input{
+    display:block;
+    width:100%;
+    height:34px;
+    border:1px solid #d7dfdf;
+    background-color:#f2f5f7;
+    border-radius: 0;
+}
+#income-expenses-simulation  .table-group .record-list li.record-list-title{
+    color: #8592a3;
+}
+
+
+#income-expenses-simulation  .table-group .record-list li.record-list-operation{
+    position:relative;
+}
+
+#income-expenses-simulation  .table-group .record-list li.record-list-operation a{
+    display:block;
+    width:50%;
+    height:100%;
+    background:no-repeat center center;
+    background-size:22px 22px;
+}
+
+#income-expenses-simulation  .table-group .record-list li.record-list-operation .record-list-add-btn{
+    float:left;
+    background-image:url(../../../images/icon_plus@2x.png);
+}
+
+#income-expenses-simulation .table-group .record-list li.record-list-operation .record-list-remove-btn{
+    float:right;
+    background-image:url(../../../images/icon_minus@2x.png);
+}
+
+
+/*table-group-left*/
+#income-expenses-simulation  .table-group .table-group-left{
+    position:absolute;
+    left:0;
+    top:0;
+    width:125px;
+    z-index: 999;
+}
+#income-expenses-simulation  .table-group .table-group-left ul{padding-right:0;float: none;}
+#income-expenses-simulation  .table-group .table-group-left .record-list li{
+    width: 100%;
+    text-align: left;
+    padding-left:15px;
+    border-right:1px solid #ebebeb;
+}
+#income-expenses-simulation .table-group.table-group-header{border-bottom:1px solid #ebebeb;}
+
+
+
+
+#income-expenses-simulation  .table-group-right{position: relative;z-index: 999;}
+#income-expenses-simulation  .table-group-content{padding-bottom:20px;}
+
+

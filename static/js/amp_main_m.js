@@ -385,24 +385,12 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
         }
     });
 
-    // 管理分析 - 收入分析
-    $stateProvider.state({
-        name:"mgt_analysis.income_analysis",
-        url: "/income_analysis",
-        views:{
-            "mgt-analysis-view": {
-                controller:"income-analysis-index-controller",
-                templateUrl: "./views/mgt_analysis/income_analysis/income_analysis_index.html"
-            }
-        }
-    });
-
     // 管理分析 - 收入分析 - 合同
     $stateProvider.state({
-        name:"mgt_analysis.income_analysis.contract_list",
+        name:"mgt_analysis.contract_list",
         url: "/contract_list",
         views:{
-            "income-analysis-view": {
+            "mgt-analysis-view": {
                 controller:"contract-list-controller",
                 templateUrl: "./views/mgt_analysis/income_analysis/contract_list.html"
             }
@@ -427,10 +415,10 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
 
     // 管理分析 - 收入分析 - 营收
     $stateProvider.state({
-        name:"mgt_analysis.income_analysis.business_main",
+        name:"mgt_analysis.business_main",
         url: "/business_main",
         views:{
-            "income-analysis-view": {
+            "mgt-analysis-view": {
                 controller:"business-main-controller",
                 templateUrl: "./views/mgt_analysis/income_analysis/business_main.html"
             }

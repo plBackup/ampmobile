@@ -59,7 +59,7 @@
     height:45px;
     float:left;
 }
-#mgt-analysis-statistics-panel-wrapper .contract-statistics-panel .panel-content .info-group .info-item:first-child{border-right:1px solid #dae2e7;}
+#mgt-analysis-statistics-panel-wrapper .contract-statistics-panel .panel-content .info-group .info-item:last-child{border-left:1px solid #dae2e7;}
 #mgt-analysis-statistics-panel-wrapper .contract-statistics-panel .panel-content .info-group .info-item em{
     display: block;
     height:20px;

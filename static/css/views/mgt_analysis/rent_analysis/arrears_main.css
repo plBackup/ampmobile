@@ -34,7 +34,8 @@
 /* ======================================== table-group ======================================== */
 #arrears-main .table-group{position:relative;padding-left:99px;}
 #arrears-main .table-group .table-left{position:absolute;left:0;top:0;width:99px;}
-#arrears-main .table-group .table-right{width:100%;overflow: auto;}
+#arrears-main .table-group .table-right{width:100%;}
+#arrears-main .table-group .swiper-slide{width:auto;}
 
 #arrears-main .table-group th{
     height:41px;
@@ -80,4 +81,90 @@
     font-size:16px;
     color:#fff;
     text-align: center;
+}
+
+/* ======================================== arrears-main-query-panel ======================================== */
+.amp-right-panel .arrears-main-query-panel{
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+}
+
+.amp-right-panel .arrears-main-query-panel .btn-group{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    height:48px;
+}
+
+.amp-right-panel .arrears-main-query-panel .btn-group>a{
+    display:block;
+    width:50%;
+    height:48px;
+    line-height: 48px;
+    float:left;
+    text-align: center;
+}
+
+.amp-right-panel .arrears-main-query-panel .btn-group>a.reset-btn{
+    background-color:#f2f5f7;
+    color:#333;
+}
+
+.amp-right-panel .arrears-main-query-panel .btn-group>a.query-btn{
+    background-color:#5ab46d;
+    color:#fff;
+}
+
+.amp-right-panel .arrears-main-query-panel .query-section{
+    padding:25px 15px 0 15px;
+}
+
+.amp-right-panel .arrears-main-query-panel .query-section .query-section-title{
+    height:24px;
+    line-height: 24px;
+    font-size:14px;
+}
+
+
+.amp-right-panel .arrears-main-query-panel .query-section .query-section-content{
+    padding-top:10px;
+}
+.amp-right-panel .arrears-main-query-panel .query-section .query-section-content>ul>li{
+
+    float:left;
+    padding-top:10px;
+    padding-right:10px;
+}
+
+.amp-right-panel .arrears-main-query-panel .query-section .query-section-content>ul>li>a{
+    display:block;
+    width:100%;
+    height:32px;
+    line-height: 32px;
+    border-radius: 4px;
+    color:#333;
+    background-color:#f2f5f7;
+    text-align: center;
+}
+.amp-right-panel .arrears-main-query-panel .query-section  .query-section-content>ul>li>a.active{
+    color:#fff;
+    background-color:#5ab46d;
+}
+/*date-selector-section*/
+.amp-right-panel .arrears-main-query-panel .query-section.date-selector-section .query-section-content{
+    position:relative;
+    height:32px;
+    line-height: 32px;
+    text-align: center;
+}
+
+/*floor-section*/
+.amp-right-panel .arrears-main-query-panel .query-section.floor-section .query-section-content{padding-top:0;}
+.amp-right-panel .arrears-main-query-panel .query-section.floor-section{padding-right:5px;}
+.amp-right-panel .arrears-main-query-panel .query-section.floor-section li{
+    width:33.3333%;
 }

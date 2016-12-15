@@ -3,11 +3,11 @@ function bindMgtAnalysisPageEvent(){
 
     /* mgt-analysis-statistics-panel-wrapper */
     contractStatisticsPanelWrapper.on("webkitAnimationEnd animationend",".contract-statistics-panel .panel-content",function(){
-        if($(this).hasClass("amp-slide-down-out")){
+        if($(this).hasClass("amp-slide-up-out")){
             $(contractStatisticsPanelWrapper).find(".contract-statistics-panel").addClass("amp-display-none");
         }
         $(this).removeClass("amp-slide-up-in");
-        $(this).removeClass("amp-slide-down-out");
+        $(this).removeClass("amp-slide-up-out");
     });
 
     contractStatisticsPanelWrapper.on("click",".contract-statistics-panel .panel-content",function(e){
@@ -18,7 +18,8 @@ function bindMgtAnalysisPageEvent(){
     contractStatisticsPanelWrapper.on("click",".contract-statistics-panel",function(e){
         e.stopPropagation();
         e.preventDefault();
-        $(contractStatisticsPanelWrapper).find(".contract-statistics-panel .panel-content").addClass("amp-slide-down-out");
+        console.log(1);
+        $(contractStatisticsPanelWrapper).find(".contract-statistics-panel .panel-content").addClass("amp-slide-up-out");
     });
 }
 

@@ -173,3 +173,131 @@
 #simulation-calculation .initial-analysis .amp-form-group .amp-form-content .input-wrapper-2{
     padding:0 18px 0 28px;
 }
+
+
+/* ======================================== simulation-calculation-parameter-dialog ======================================== */
+#simulation-calculation-parameter-dialog{
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    background-color:rgba(0,0,0,0.4);
+    z-index:999;
+    overflow: hidden;
+    font-size:12px;
+}
+
+#simulation-calculation-parameter-dialog .simulation-calculation-parameter-dialog-content{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    padding-bottom:48px;
+    background-color:#fff;
+}
+
+/*dialog-title*/
+#simulation-calculation-parameter-dialog .dialog-title{
+    height:49px;
+    line-height: 48px;
+    margin-left:15px;
+    font-size:16px;
+    border-bottom:1px solid #e6e6e6;
+}
+#simulation-calculation-parameter-dialog .dialog-title em{font-size:12px;color:#8592a3;}
+
+/*save-btn*/
+#simulation-calculation-parameter-dialog .save-btn{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background-color: #5ab46d;
+}
+
+/*close-btn*/
+#simulation-calculation-parameter-dialog .close-btn{
+    position: absolute;
+    top: -70px;
+    right: 0;
+    display: block;
+    width:70px;
+    height: 70px;
+    background:url(../../../images/icon_close@2x.png) no-repeat center center;
+    background-size:40px 40px;
+}
+
+
+/*dialog-body*/
+#simulation-calculation-parameter-dialog .dialog-body{padding:0 18px 15px 15px;}
+#simulation-calculation-parameter-dialog .dialog-body .amp-form-group{
+    position:relative;
+    height:34px;
+    line-height: 34px;
+    margin-top:15px;
+    padding-left:120px;
+}
+
+#simulation-calculation-parameter-dialog .dialog-body .amp-form-group:after{
+    content:"%";
+    position:absolute;
+    right:-15px;
+    top:0;
+    bottom:0;
+}
+#simulation-calculation-parameter-dialog .dialog-body .amp-form-group .amp-form-label{
+    position:absolute;
+    top:0;
+    left:0;
+    font-size:14px;
+    font-weight: normal;
+}
+
+#simulation-calculation-parameter-dialog .dialog-body .amp-form-group .amp-form-content input{
+    display:block;
+    width:100%;
+    height:34px;
+    border:1px solid #d9dedf;
+    background-color:#f2f5f7;
+    padding:0 10px;
+    text-align: right;
+    border-radius: 0;
+}
+
+/*sale-form-content*/
+#simulation-calculation-parameter-dialog .dialog-body .amp-form-group .amp-form-content.sale-form-content .sale-input{
+    width:40%;
+    float:left;
+}
+
+#simulation-calculation-parameter-dialog .dialog-body .amp-form-group .amp-form-content.sale-form-content .sale-cost-input-wrapper{
+    position:relative;
+    width:60%;
+    float:right;
+    padding-left:55px;
+}
+#simulation-calculation-parameter-dialog .dialog-body .amp-form-group .amp-form-content.sale-form-content .sale-cost-input-wrapper em{
+    position:absolute;
+    left:4px;
+    top:0;
+}
+#simulation-calculation-parameter-dialog .dialog-body .amp-form-group .amp-form-content.output-rate-content{
+    position:relative;
+    padding-left:90px;
+}
+#simulation-calculation-parameter-dialog .dialog-body .amp-form-group .amp-form-content.output-rate-content em{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    width:90px;
+    text-align: right;
+    padding-right:10px;
+}

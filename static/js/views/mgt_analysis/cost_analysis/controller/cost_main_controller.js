@@ -1,4 +1,6 @@
-ampApp.controller("cost-main-controller",["$scope","$http","$rootScope",function($scope,$http,$rootScope){
+ampApp.controller("cost-main-controller",["$scope","$http","$rootScope","$timeout",function($scope,$http,$rootScope,$timeout){
+
+    $rootScope.showBottom();
 
     /* ======================================== 监听广播事件 ======================================== */
     $scope.$on("$destroy",function(){destroy();});
@@ -7,22 +9,50 @@ ampApp.controller("cost-main-controller",["$scope","$http","$rootScope",function
     /* ======================================== 初始化页面 ======================================== */
     var container = null;
     var costStackBarChart = null;
+
+    var tableSwiper = null;
     function initPageView(){
         container = $("#cost-main");
         var windowHeight = $(window).height()-44-48-40;
         container.css("height",windowHeight+"px");
 
         costStackBarChart = createCostStackBarChart();
+
+        tableSwiper = new Swiper(".table-group .swiper-container", {
+            slidesPerView:"auto",
+            freeMode: true,
+            resistanceRatio : 0
+        });
     }
 
     /* ======================================== 绑定事件 ======================================== */
     function bindPageEvents(){
+        container.on("click",".table-right tr",function(e){
+            e.stopPropagation();
+            e.preventDefault();
+            window.location = "#/cost_manual";
+        });
 
+
+        var mgtAnalysisMenuListWrapper = $("#mgt-analysis-menu-list-wrapper");
+        $(mgtAnalysisMenuListWrapper).find(".menu-item-list a.filter-btn").on("click",function(e){
+            e.stopPropagation();
+            e.preventDefault();
+            hideMgtAnalysisMenuList();
+        });
+
+        $(mgtAnalysisMenuListWrapper).find(".menu-item-list a.enrolment-btn").on("click",function(e){
+            e.stopPropagation();
+            e.preventDefault();
+            hideMgtAnalysisMenuList();
+            window.location = "#/cost_enrolment";
+        });
     }
 
     /* ======================================== common methods ======================================== */
     function destroy(){
         costStackBarChart.dispose();
+        tableSwiper.destroy(true,true);
     }
 
     function createCostStackBarChart(){
@@ -120,7 +150,11 @@ ampApp.controller("cost-main-controller",["$scope","$http","$rootScope",function
     // 初始化
     function init(){
         initPageView();
-        bindPageEvents();
+
+        $timeout(function(){
+            bindPageEvents();
+        },300);
+
     }
     init();
 }]);

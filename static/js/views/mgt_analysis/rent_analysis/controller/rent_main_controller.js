@@ -1,4 +1,4 @@
-ampApp.controller("rent-main-controller",["$scope","$http","$rootScope",function($scope,$http,$rootScope){
+ampApp.controller("rent-main-controller",["$scope","$http","$rootScope","$timeout",function($scope,$http,$rootScope,$timeout){
 
     /* ======================================== 监听广播事件 ======================================== */
     $scope.$on("$destroy",function(){destroy();});
@@ -8,6 +8,11 @@ ampApp.controller("rent-main-controller",["$scope","$http","$rootScope",function
     var container = null;
     var chartArr = [];
     var pieSwiper = null;
+
+    var commercialTableGroupSwiper = null;
+    var rentTableGroupSwiper = null;
+    var investmentTableGroupSwiper = null;
+    var barChartSwiper = null;
 
 
     $scope.saleRatePie = [63.62,2.95,4.21,3.13,23.01,30.8];
@@ -28,16 +33,60 @@ ampApp.controller("rent-main-controller",["$scope","$http","$rootScope",function
             pagination : '.pie-group .swiper-pagination'
         });
 
+        commercialTableGroupSwiper = new Swiper(".commercial-table-group .swiper-container", {
+            slidesPerView:"auto",
+            freeMode: true,
+            resistanceRatio : 0
+        });
+
+        rentTableGroupSwiper = new Swiper(".rent-table-group .swiper-container", {
+            slidesPerView:"auto",
+            freeMode: true,
+            resistanceRatio : 0
+        });
+
+        investmentTableGroupSwiper = new Swiper(".investment-table-group .swiper-container", {
+            slidesPerView:"auto",
+            freeMode: true,
+            resistanceRatio : 0
+        });
+
+        barChartSwiper = new Swiper(".amp-chart-content-wrapper .swiper-container", {
+            slidesPerView:"auto",
+            freeMode: true,
+            resistanceRatio : 0
+        });
     }
 
     /* ======================================== 绑定事件 ======================================== */
     function bindPageEvents(){
+        var mgtAnalysisMenuListWrapper = $("#mgt-analysis-menu-list-wrapper");console.log(22);
+        $(mgtAnalysisMenuListWrapper).find(".menu-item-list a.statistic-btn").on("click",function(e){
+            e.stopPropagation();
+            e.preventDefault();
+            console.log(2);
+            hideMgtAnalysisMenuList();
+
+            showMgtAnalysisPanel();
+
+        });
+
+        $(mgtAnalysisMenuListWrapper).find(".menu-item-list a.filter-btn").on("click",function(e){
+            e.stopPropagation();
+            e.preventDefault();
+            hideMgtAnalysisMenuList();
+        });
 
     }
 
     /* ======================================== common methods ======================================== */
     function destroy(){
         pieSwiper.destroy(true,true);
+        barChartSwiper.destroy(true,true);
+        commercialTableGroupSwiper.destroy(true,true);
+        rentTableGroupSwiper.destroy(true,true);
+        investmentTableGroupSwiper.destroy(true,true);
+
         chartArr.forEach(function(item){
            item.dispose();
         });
@@ -293,7 +342,10 @@ ampApp.controller("rent-main-controller",["$scope","$http","$rootScope",function
     // 初始化
     function init(){
         initPageView();
-        bindPageEvents();
+        $timeout(function(){
+            bindPageEvents();
+        },300);
+
     }
     init();
 }]);

@@ -23,9 +23,9 @@
                     </table>
                 </div><!-- table-group-left -->
                 <div class="table-group-right">
-                    <div class="swiper-container swiper-container-horizontal swiper-container-free-mode">
+                    <div class="swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide clearfix swiper-slide-active">
+                            <div class="swiper-slide clearfix ">
                                 <table>
                                     <tbody>
                                         <tr>
@@ -145,9 +145,9 @@
                     </table>
                 </div><!-- table-group-left -->
                 <div class="table-group-right">
-                    <div class="swiper-container swiper-container-horizontal swiper-container-free-mode">
+                    <div class="swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide clearfix swiper-slide-active">
+                            <div class="swiper-slide clearfix ">
                                 <table>
                                     <tbody>
                                         <tr>
@@ -186,9 +186,9 @@
                     </table>
                 </div><!-- table-group-left -->
                 <div class="table-group-right">
-                    <div class="swiper-container swiper-container-horizontal swiper-container-free-mode">
+                    <div class="swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide clearfix swiper-slide-active">
+                            <div class="swiper-slide clearfix ">
                                 <table>
                                     <tbody>
                                     <tr>
@@ -251,9 +251,9 @@
                     </table>
                 </div><!-- table-group-left -->
                 <div class="table-group-right">
-                    <div class="swiper-container swiper-container-horizontal swiper-container-free-mode">
+                    <div class="swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide clearfix swiper-slide-active">
+                            <div class="swiper-slide clearfix ">
                                 <table>
                                     <tbody>
                                     <tr>
@@ -315,9 +315,9 @@
                     </table>
                 </div><!-- table-group-left -->
                 <div class="table-group-right">
-                    <div class="swiper-container swiper-container-horizontal swiper-container-free-mode">
+                    <div class="swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide clearfix swiper-slide-active">
+                            <div class="swiper-slide clearfix ">
                                 <table>
                                     <tbody>
                                         <tr>
@@ -355,5 +355,58 @@
 
          </div><!-- scrollable-content -->
     </div><!-- scrollable -->
+
+
+    <div ui-content-for="simulation-calculation-parameter-dialog-wrapper">
+        <div id="simulation-calculation-parameter-dialog" class=" amp-display-none">
+            <div class="simulation-calculation-parameter-dialog-content">
+                <div class="dialog-title">
+                    <span>参数</span>
+                    <em>(手动输入)</em>
+                </div>
+
+                <div class="dialog-body">
+                    <div class="amp-form-group">
+                        <label class="amp-form-label">业主要求的收益率</label>
+                        <div class="amp-form-content">
+                            <input type="number"/>
+                        </div>
+                    </div><!-- amp-form-group -->
+
+                    <div class="amp-form-group">
+                        <label class="amp-form-label">销售成本</label>
+                        <div class="amp-form-content sale-form-content clearfix">
+                            <input type="number" class="sale-input"/>
+                            <div class="sale-cost-input-wrapper">
+                                <em>销售成本</em>
+                                <input type="number"/>
+                            </div>
+                        </div>
+                    </div><!-- amp-form-group -->
+
+                    <div class="amp-form-group">
+                        <label class="amp-form-label">输出资本化率</label>
+                        <div class="amp-form-content output-rate-content">
+                            <em>第2年,比率</em>
+                            <input type="number"/>
+                        </div>
+                    </div><!-- amp-form-group -->
+                    <div class="amp-form-group">
+                        <label class="amp-form-label"></label>
+                        <div class="amp-form-content output-rate-content">
+                            <em>第3年,比率</em>
+                            <input type="number"/>
+                        </div>
+                    </div><!-- amp-form-group -->
+
+                </div><!-- dialog-body -->
+
+                <a class="close-btn"></a>
+
+                <a class="save-btn">保存</a>
+
+            </div><!-- simulation-calculation-parameter-dialog-content -->
+        </div><!-- simulation-calculation-parameter-dialog -->
+    </div><!-- simulation-calculation-parameter-dialog -->
 
 </div><!-- simulation-calculation-list -->

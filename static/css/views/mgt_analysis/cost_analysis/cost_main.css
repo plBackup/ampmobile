@@ -73,7 +73,8 @@
 /* ======================================== table-group ======================================== */
 #cost-main .table-group{position:relative;padding-left:58px;margin-top:20px;}
 #cost-main .table-group .table-left{position:absolute;left:0;top:0;width:58px;}
-#cost-main .table-group .table-right{width:100%;overflow: auto;}
+#cost-main .table-group .table-right{width:100%;}
+#cost-main .table-group .swiper-slide{width:auto;}
 
 #cost-main .table-group th{
     height:41px;
@@ -102,3 +103,61 @@
 
 #cost-main .table-group .table-right td:last-child div{font-weight: bold;}
 #cost-main .table-group .table-right td em{display:block;color:#8592a3;}
+
+/* ======================================== cost-query-panel ======================================== */
+.amp-right-panel .cost-query-panel{
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+}
+
+.amp-right-panel .cost-query-panel .btn-group{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    height:48px;
+}
+
+.amp-right-panel .cost-query-panel .btn-group>a{
+    display:block;
+    width:50%;
+    height:48px;
+    line-height: 48px;
+    float:left;
+    text-align: center;
+}
+
+.amp-right-panel .cost-query-panel .btn-group>a.reset-btn{
+    background-color:#f2f5f7;
+    color:#333;
+}
+
+.amp-right-panel .cost-query-panel .btn-group>a.query-btn{
+    background-color:#5ab46d;
+    color:#fff;
+}
+
+.amp-right-panel .cost-query-panel .query-section{
+    padding:25px 15px 0 15px;
+}
+
+.amp-right-panel .cost-query-panel .query-section .query-section-title{
+    height:24px;
+    line-height: 24px;
+    font-size:14px;
+}
+
+.amp-right-panel .cost-query-panel .query-section .query-section-content{
+    padding-top:10px;
+}
+
+/*date-selector-section*/
+.amp-right-panel .cost-query-panel .query-section.date-selector-section .query-section-content{
+    position:relative;
+    height:42px;
+    line-height: 32px;
+    text-align: center;
+}

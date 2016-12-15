@@ -1,0 +1,69 @@
+#cost-manual-enrolment{position:relative;}
+#cost-manual-enrolment .scrollable{top:46px;bottom:0;height:auto;}
+#cost-manual-enrolment .scrollable-content{
+    padding:0;
+}
+#cost-manual-enrolment table{width:100%;}
+#cost-manual-enrolment .swiper-slide{width:auto;}
+/* ======================================== table-group-header ======================================== */
+#cost-manual-enrolment .table-group-header{position:relative;padding-left:145px;}
+#cost-manual-enrolment .table-group-header .table-group-left{position:absolute;top:0;left:0;width:145px;}
+
+#cost-manual-enrolment .table-group-header th{
+    height:45px;
+    border-bottom:1px solid #dae2e7;
+    background-color:#f2f5f7;
+    font-size:12px;
+    text-align: right;
+    color:#8592a3;
+}
+
+#cost-manual-enrolment .table-group-header .table-group-left th{padding-left:15px;text-align: left;}
+#cost-manual-enrolment .table-group-header .table-group-right th{width:85px;padding-right:10px;}
+
+/* ======================================== table-group-content ======================================== */
+#cost-manual-enrolment .table-group-content{position:relative;padding-left:145px;}
+#cost-manual-enrolment .table-group-content .table-group-left{position:absolute;top:0;left:0;width:145px;padding-left:15px;}
+
+#cost-manual-enrolment .table-group-content td{
+    height:44px;
+    font-size:12px;
+    text-align: right;
+}
+
+#cost-manual-enrolment .table-group-content .table-group-left td{text-align: left;padding-left:10px;}
+#cost-manual-enrolment .table-group-content .table-group-left tr.td-group td{padding-left:0;}
+#cost-manual-enrolment .table-group-content .table-group-left tr:first-child td{padding-left:0;}
+#cost-manual-enrolment .table-group-content .table-group-left tr.bottom-record td{padding-left:0;}
+#cost-manual-enrolment .table-group-content .table-group-left tr.bottom-record td em{display:block;color:#8592a3;}
+
+
+#cost-manual-enrolment .table-group-content .table-group-right td{width:85px;padding-right:10px;}
+
+/*amp-collapse*/
+#cost-manual-enrolment .table-group-content tr.amp-collapse td{position:relative;}
+#cost-manual-enrolment .table-group-content tr.amp-collapse td:after{
+    content:"";
+    display:inline-block;
+    width:18px;
+    height:18px;
+    background:url(../../../../images/icon_chevron_down@2x.png) no-repeat;
+    background-size:contain;
+    vertical-align: middle;
+    margin-left:6px;
+}
+
+#cost-manual-enrolment .table-group-content tr.amp-collapse.amp-collapsed td:after{
+    background-image:url(../../../../images/icon_chevron_up@2x.png);
+}
+
+#cost-manual-enrolment .table-group-content tr td input{
+    display:block;
+    width:100%;
+    height:34px;
+    background-color:#f2f5f7;
+    border:1px solid #dae2e7;
+    padding:0 10px;
+    border-radius: 0;
+    text-align: right;
+}

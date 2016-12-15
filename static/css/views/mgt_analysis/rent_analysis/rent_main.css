@@ -36,6 +36,11 @@
     background-color: #58b56f;
 }
 
+#rent-main .amp-chart-content-wrapper .swiper-slide,
+#rent-main .commercial-table-group .swiper-slide,
+#rent-main .rent-table-group .swiper-slide,
+#rent-main .investment-table-group .swiper-slide{width:auto;min-width: 100%;}
+
 /* ======================================== amp-chart ======================================== */
 #rent-main .amp-chart{padding-top:30px;padding-bottom:20px;}
 #rent-main .amp-chart .amp-chart-content{
@@ -57,8 +62,8 @@
     padding-top:55px;
 }
 
-#rent-main .amp-chart .amp-chart-content>div.pie-text em{height:20px;line-height:20px;font-size:12px;color:#8592a3;}
-#rent-main .amp-chart .amp-chart-content>div.pie-text div{height:20px;line-height:20px;font-size:12px;color:#8592a3;}
+#rent-main .amp-chart .amp-chart-content>div.pie-text em{height:20px;line-height:20px;font-size:16px;color:#8592a3;}
+#rent-main .amp-chart .amp-chart-content>div.pie-text div{height:20px;line-height:20px;font-size:16px;color:#8592a3;}
 
 
 #rent-main .amp-chart .amp-chart-foot{
@@ -209,6 +214,64 @@
     margin:0 auto 10px auto;
     background:url(../../../../images/avg-line.png) no-repeat left center;
     background-size:53px 3px;
+}
+
+/* ======================================== rent-query-panel ======================================== */
+.amp-right-panel .rent-query-panel{
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+}
+
+.amp-right-panel .rent-query-panel .btn-group{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    height:48px;
+}
+
+.amp-right-panel .rent-query-panel .btn-group>a{
+    display:block;
+    width:50%;
+    height:48px;
+    line-height: 48px;
+    float:left;
+    text-align: center;
+}
+
+.amp-right-panel .rent-query-panel .btn-group>a.reset-btn{
+    background-color:#f2f5f7;
+    color:#333;
+}
+
+.amp-right-panel .rent-query-panel .btn-group>a.query-btn{
+    background-color:#5ab46d;
+    color:#fff;
+}
+
+.amp-right-panel .rent-query-panel .query-section{
+    padding:25px 15px 0 15px;
+}
+
+.amp-right-panel .rent-query-panel .query-section .query-section-title{
+    height:24px;
+    line-height: 24px;
+    font-size:14px;
+}
+
+.amp-right-panel .rent-query-panel .query-section .query-section-content{
+    padding-top:10px;
+}
+
+/*date-selector-section*/
+.amp-right-panel .rent-query-panel .query-section.date-selector-section .query-section-content{
+    position:relative;
+    height:42px;
+    line-height: 32px;
+    text-align: center;
 }
 
 

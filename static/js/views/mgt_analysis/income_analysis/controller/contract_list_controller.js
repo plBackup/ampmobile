@@ -1,9 +1,30 @@
-ampApp.controller("contract-list-controller",["$scope","$http","$rootScope",function($scope,$http,$rootScope){
+ampApp.controller("contract-list-controller",["$scope","$http","$rootScope","$location",function($scope,$http,$rootScope,$location){
+    $rootScope.showBottom();
     $scope.records = [];
 
     function initializeData(data){
         $scope.records = data;
     }
+
+    /* ======================================== angular 注册事件 ======================================== */
+    /* 跳转到合同详情 */
+    $scope.goToContractDetail = function(){
+        $location.path("contract_detail");
+    };
+
+    /* 关闭列表菜单 */
+    $scope.closeMenuList = function(){
+        hideMgtAnalysisMenuList();
+    };
+
+    $scope.showMgtAnalysisPanel = function(){
+        hideMgtAnalysisMenuList();
+        showMgtAnalysisPanel();
+    };
+
+
+
+
     /* ======================================== 监听广播事件 ======================================== */
     $scope.$on("$destroy",function(){destroy();});
 
@@ -16,35 +37,6 @@ ampApp.controller("contract-list-controller",["$scope","$http","$rootScope",func
 
     }
 
-    /* ======================================== 绑定事件 ======================================== */
-    function bindPageEvents(){
-
-        var mgtAnalysisMenuListWrapper = $("#mgt-analysis-menu-list-wrapper");
-        $(mgtAnalysisMenuListWrapper).find(".menu-item-list a.enrolment-btn").on("click",function(e){
-            e.stopPropagation();
-            e.preventDefault();
-            hideMgtAnalysisMenuList();
-
-        });
-
-        $(mgtAnalysisMenuListWrapper).find(".menu-item-list a.statistic-btn").on("click",function(e){
-            e.stopPropagation();
-            e.preventDefault();
-            hideMgtAnalysisMenuList();
-
-            showMgtAnalysisPanel();
-
-        });
-
-        $(mgtAnalysisMenuListWrapper).find(".menu-item-list a.filter-btn").on("click",function(e){
-            e.stopPropagation();
-            e.preventDefault();
-            hideMgtAnalysisMenuList();
-        });
-
-
-
-    }
 
     /* ======================================== common methods ======================================== */
     function destroy(){}
@@ -56,7 +48,6 @@ ampApp.controller("contract-list-controller",["$scope","$http","$rootScope",func
         $http.get(url).success(function(result){
             initializeData(result);
             initPageView();
-            bindPageEvents();
         });
     }
     init();

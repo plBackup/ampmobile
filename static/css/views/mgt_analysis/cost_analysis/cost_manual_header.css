@@ -1,0 +1,27 @@
+#cost-manual-header{
+    position:relative;
+    height:44px;
+    line-height: 44px;
+    text-align: center;
+    color:#fff;
+    font-size:18px;
+}
+#cost-manual-header>a{
+    position:absolute;
+    top:0;
+    bottom:0;
+    height:100%;
+}
+#cost-manual-header>a.amp-nav-back{
+    left:0;
+    width:52px;
+    background:url(../../../../images/icon_nav_back@2x.png) no-repeat center center;
+    background-size:22px 22px;
+}
+
+#cost-manual-header>a.amp-filter-btn {
+    right: 0;
+    width: 52px;
+    background: url(../../../../images/icon_filter@2x.png) no-repeat center center;
+    background-size: 22px 22px;
+}

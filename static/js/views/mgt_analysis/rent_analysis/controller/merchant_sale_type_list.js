@@ -34,6 +34,19 @@ ampApp.controller("merchant-sale-type-list-controller",["$scope","$http","$rootS
     /* ======================================== 绑定事件 ======================================== */
     function bindPageEvents(){
 
+        var mgtAnalysisMenuListWrapper = $("#mgt-analysis-menu-list-wrapper");
+
+
+        $(mgtAnalysisMenuListWrapper).find(".menu-item-list a.statistic-btn").on("click",function(e){
+            e.stopPropagation();
+            e.preventDefault();
+            hideMgtAnalysisMenuList();
+
+            showMgtAnalysisPanel();
+
+        });
+
+
     }
 
     /* ======================================== common methods ======================================== */

@@ -38,6 +38,12 @@ ampApp.controller("arrears-detail-list-controller",["$scope","$http","$rootScope
             e.preventDefault();
             window.location = "#/arrears_merchant_detail";
         });
+
+        container.on("click","a.enrolment-btn",function(e){
+            e.stopPropagation();
+            e.preventDefault();
+            window.location = "#/arrears_detail_enrolment";
+        });
     }
 
     /* ======================================== common methods ======================================== */

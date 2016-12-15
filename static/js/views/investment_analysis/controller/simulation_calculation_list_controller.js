@@ -18,7 +18,11 @@ ampApp.controller("simulation-calculation-list-controller",["$scope","$http","$r
 
     /* ======================================== 绑定事件 ======================================== */
     function bindPageEvents(){
-
+        container.on("click",".amp-case-item",function(e){
+            e.stopPropagation();
+            e.preventDefault();
+            window.location="#/simulation_calculation";
+        });
     }
 
     /* ======================================== common methods ======================================== */

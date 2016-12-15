@@ -1,35 +1,32 @@
-ampApp.controller("income-analysis-index-controller",["$scope","$http","$rootScope",function($scope,$http,$rootScope){
+ampApp.controller("merchant-sale-type-list-header-controller",["$scope","$http","$rootScope",function($scope,$http,$rootScope){
+
 
 
     /* ======================================== 监听广播事件 ======================================== */
     $scope.$on("$destroy",function(){destroy();});
 
+    $scope.$on("$stateChangeSuccess",function(evt,toState,toParams,fromState,formParams){
+    });
+
     /* ======================================== 初始化页面 ======================================== */
     var container = null;
     function initPageView(){
-        container = $("#income-analysis-index");
-
+        container = $("#merchant-sale-type-list-header");
     }
 
-    $scope.contract_tab_active = true;
-    $scope.business_tab_active = false;
     /* ======================================== 绑定事件 ======================================== */
     function bindPageEvents(){
-
-        container.on("click",".income-analysis-nav-bar a",function(e){
+        container.on("click","a.amp-add-btn",function(e){
             e.stopPropagation();
             e.preventDefault();
-            $(this).closest(".income-analysis-nav-bar").find("a").removeClass("active");
-            $(this).addClass("active");
 
-            var that = this;
-            setTimeout(function(){
-                $(that).addClass("active");
-            },300);
-
-            var dataHref = $(this).attr("data-href");
-            window.location = dataHref;
+            toggleMgtAnalysisMenuList();
         });
+
+
+
+
+
     }
 
     /* ======================================== common methods ======================================== */

@@ -1,9 +1,16 @@
 <div id="contract-list">
 
+    <ul class="income-analysis-nav-bar clearfix">
+        <li><a class="active" href="javascript:void(0)">合同</a></li>
+        <li><a href="#/mgt_analysis/business_main">营收</a></li>
+    </ul>
+
+    <div class="grey-bar"></div>
+
     <div class="scrollable">
          <div class="scrollable-content section" >
             <ul class="contract-item-list">
-                <li class="contract-item" ng-repeat="item in records">
+                <li class="contract-item" ng-repeat="item in records" ng-click="goToContractDetail()">
                     <div class="contract-item-left">
                         <div class="merchant-name" ng-bind="item.brandName"></div>
                         <div class="contract-no" ng-bind="item.contractId"></div>
@@ -78,9 +85,9 @@
 
     <div ui-content-for="mgt-analysis-menu-list-wrapper">
         <ul class="menu-item-list">
-            <li><a class="enrolment-btn">录入</a></li>
-            <li><a class="statistic-btn">统计</a></li>
-            <li><a class="filter-btn"  ui-toggle="uiSidebarRight">筛选</a></li>
+            <li><a class="enrolment-btn" ng-click="closeMenuList()">录入</a></li>
+            <li><a class="statistic-btn" ng-click="showMgtAnalysisPanel()">统计</a></li>
+            <li><a class="filter-btn"  ui-toggle="uiSidebarRight" ng-click="closeMenuList()">筛选</a></li>
         </ul>
     </div>
 

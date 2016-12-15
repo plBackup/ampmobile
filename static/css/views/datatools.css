@@ -59,3 +59,20 @@
 
 #datatool-rpgresult .amp-right-panel .table > thead > tr > th{border-bottom-width:1px;background-color:#f3f4f8;color:#8592a3;}
 
+
+/*rpg set*/
+
+#datatool-rpgset{}
+#datatool-rpgset .scrollable-content>div[ui-view]{position:relative;height:100%;padding-bottom:64px;}
+#datatool-rpgset .amp-block-fixed-bottom{position: absolute;width:100%;height:64px;bottom:0;left:0;padding:10px;}
+#datatool-rpgset .amp-block-fixed-bottom .amp-btn{width:100%;height:44px;border:0;border-radius: 0;line-height: 30px;}
+
+#rgp-set-index>.amp-block{padding:20px;}
+
+#rgp-set-index>.amp-block .col-xs-6{padding-left:0;padding-right:0;margin-bottom:25px;}
+#rgp-set-index>.amp-block .col-xs-6:nth-child(even){padding-left:20px;}
+#rgp-set-index>.amp-block .col-xs-6:nth-child(odd){border-right:solid 1px #edeef3;}
+#rgp-set-index>.amp-block .col-xs-6:nth-last-child(1){border-right:0;}
+
+#rgp-set-index>.amp-block .col-xs-6>label{display: block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;color:#747d8c;font-size: 13px;}
+#rgp-set-index>.amp-block .col-xs-6>h3{margin-bottom: 0;color:#59b46f;font-size: 18px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}

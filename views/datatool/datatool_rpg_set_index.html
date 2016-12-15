@@ -13,7 +13,7 @@
 
 <div class="amp-content-panel" id="rgp-set-index">
     <div class="amp-block">
-        <ul class="rpg-set-info" id="rpg-set-info">
+        <ul class="rpg-set-info clearfix" id="rpg-set-info">
             <li class="col-xs-6">
                 <label>建筑面积(m&sup2)</label>
                 <h3>{{sCtrl.setData[0].value | number:2}}</h3>
@@ -36,9 +36,10 @@
             </li>
         </ul>
     </div><!--ys-block-->
-    <div class="amp-block-pd amp-block-fixed amp-block-fixed-bottom">
-          <div class="btn-wrapper">
-            <a ui-sref="datatool.rpgpin" class="btn btn-default amp-btn">推算</a>
-        </div>
-    </div>
+
 </div><!-- contentpanel -->
+<div class="amp-block-pd amp-block-fixed amp-block-fixed-bottom">
+    <div class="btn-wrapper">
+        <a ui-sref="datatool.rpgpin" class="btn amp-btn">推算</a>
+    </div>
+</div>

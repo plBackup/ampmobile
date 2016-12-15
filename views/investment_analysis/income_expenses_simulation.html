@@ -1,0 +1,129 @@
+
+<div id="income-expenses-simulation">
+
+    <div class="table-group table-group-header">
+        <div class="table-group-left">
+            <ul class="record-list">
+                <li class="record-list-title">业态</li>
+            </ul>
+        </div><!-- table-group-left -->
+        <div class="table-group-right">
+            <div class="swiper-container" >
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide clearfix">
+                        <ul class="record-list year-record-list"><li class="record-list-title">年增长率</li></ul>
+
+                        <ul class="record-list" ng-repeat="item in incomeExpense.headers">
+                            <li class="record-list-title">第{{item}}年</li>
+                        </ul>
+
+                        <ul class="record-list empty-record-list">
+                            <li class="record-list-operation clearfix">
+                                <a class="record-list-add-btn"></a>
+                                <a class="record-list-remove-btn"></a>
+                            </li>
+                        </ul>
+                    </div><!-- swiper-slide -->
+                </div><!-- swiper-wrapper -->
+            </div><!-- swiper-container -->
+        </div><!-- table-group-right -->
+    </div><!-- table-group -->
+
+    <div class="scrollable">
+        <div class="scrollable-content section" >
+            <div class="table-group table-group-content">
+                <div class="table-group-left">
+                    <ul class="record-list">
+                        <li class="amp-font-weight-bold">收入<a></a></li>
+                        <li >租金</li>
+                        <li >物业管理费</li>
+                        <li >其他收入</li>
+                        <li  class="amp-font-weight-bold">费用<a></a></li>
+                        <li >地租</li>
+                        <li >公共事业费（能耗）</li>
+                        <li >维护/维保</li>
+                        <li >总部管理费</li>
+                        <li >营销费用</li>
+                        <li >工资及相关费用</li>
+                        <li >管理费用</li>
+                        <li >计租/核销</li>
+                        <li >折旧</li>
+                        <li >其他</li>
+                        <li  class=" amp-font-weight-bold">税<a></a></li>
+                        <li >房产税</li>
+                        <li >营业税</li>
+                        <li class=" amp-font-weight-bold">NOI</li>
+                        <li>资本输出</li>
+                    </ul>
+                </div><!-- table-group-left -->
+                <div class="table-group-right">
+                    <div class="swiper-container" >
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide clearfix">
+                                <ul class="record-list year-record-list">
+                                    <li class=" amp-font-weight-bold ">-</li>
+                                    <li><input type="number"/></li>
+                                    <li ><input type="number"/></li>
+                                    <li ><input type="number"/></li>
+                                    <li class=" amp-font-weight-bold ">-</li>
+                                    <li ><input type="number"/></li>
+                                    <li ><input type="number"/></li>
+                                    <li ><input type="number"/></li>
+                                    <li ><input type="number"/></li>
+                                    <li ><input type="number"/></li>
+                                    <li ><input type="number"/></li>
+                                    <li ><input type="number"/></li>
+                                    <li ><input type="number"/></li>
+                                    <li ><input type="number"/></li>
+                                    <li ><input type="number"/></li>
+                                    <li  class=" amp-font-weight-bold ">-</li>
+                                    <li ><input type="number"/></li>
+                                    <li ><input type="number"/></li>
+                                    <li class=" amp-font-weight-bold amp-font-style-italic"></li>
+                                    <li></li>
+                                </ul><!-- record-list -->
+
+
+
+                                <ul class="record-list" ng-repeat="item in incomeExpense.contents">
+                                    <li  class=" amp-font-color-grey">自动生成</li>
+                                    <li ><input type="number"/></li>
+                                    <li ><input type="number"/></li>
+                                    <li ><input type="number"/></li>
+                                    <li  class=" amp-font-color-grey ">自动生成</li>
+                                    <li ><input type="number"/></li>
+                                    <li  ><input type="number"/></li>
+                                    <li  ><input type="number"/></li>
+                                    <li ><input type="number"/></li>
+                                    <li ><input type="number"/></li>
+                                    <li ><input type="number"/></li>
+                                    <li ><input type="number"/></li>
+                                    <li ><input type="number"/></li>
+                                    <li ><input type="number"/></li>
+                                    <li ><input type="number"/></li>
+                                    <li  class=" amp-font-color-grey ">自动生成</li>
+                                    <li ><input type="number"/> </li>
+                                    <li ><input type="number"/></li>
+                                    <li class=" amp-font-color-grey">自动生成</li>
+                                    <li><input type="number"/></li>
+                                </ul><!-- record-list -->
+
+                                <ul class="record-list empty-record-list"><li></li></ul>
+
+                            </div><!--div swiper-slide-->
+                        </div><!--swiper-wrapper-->
+                        <!-- Add Scroll Bar -->
+                    </div><!--swiper container-->
+
+                </div><!-- table-group-left -->
+            </div><!-- table-group -->
+
+         </div><!-- scrollable-content -->
+
+
+
+
+
+    </div><!-- scrollable -->
+
+</div><!-- simulation-calculation-list -->

@@ -1,0 +1,29 @@
+#income-expenses-simulation-header{
+    position:relative;
+    height:44px;
+    line-height: 44px;
+    text-align: center;
+    color:#fff;
+    font-size:18px;
+}
+#income-expenses-simulation-header>a{
+    position:absolute;
+    top:0;
+    bottom:0;
+    height:100%;
+}
+#income-expenses-simulation-header>a.amp-nav-back{
+    left:0;
+    width:52px;
+    background:url(../../../images/icon_nav_back@2x.png) no-repeat center center;
+    background-size:22px 22px;
+}
+
+#income-expenses-simulation-header>a.amp-save-btn{
+    right:0;
+    font-size:16px;
+    color:#fff;
+    text-align: left;
+    padding:0 15px;
+}
+

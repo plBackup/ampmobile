@@ -226,12 +226,12 @@
 }
 
 /* amp-slide-down-out */
-.amp-slide-down-out{
-    animation-name:amp-slide-down-out;
-    -webkit-animation-name:amp-slide-down-out;
+.amp-slide-up-out{
+    animation-name:amp-slide-up-out;
+    -webkit-animation-name:amp-slide-up-out;
 }
 
-@keyframes amp-slide-down-out {
+@keyframes amp-slide-up-out {
     from{
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
@@ -241,7 +241,7 @@
         transform: translate3d(0,  -100%, 0);
     }
 }
-@-webkit-keyframes amp-slide-down-out {
+@-webkit-keyframes amp-slide-up-out {
     from{
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);

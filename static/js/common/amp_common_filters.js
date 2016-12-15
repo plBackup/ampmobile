@@ -8,6 +8,7 @@
     ampFilters.filter("numberFormatDefault", ["$filter", function ($filter) {
         return function (number,placeholder,fractionSize) {
 
+
             if (number==null||isNaN(number)) {
                 return placeholder;
             }
