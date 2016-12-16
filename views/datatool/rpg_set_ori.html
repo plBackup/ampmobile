@@ -29,7 +29,7 @@
                         <tr style="">
                             <th class="th-fake"></th>
                             <th colspan="2" rowspan="2"><span>分析因素</span></th>
-                           <!-- <th rowspan="2"><span>因素权重</span></th>-->
+                            <th rowspan="2"><span>因素权重</span></th>
                         </tr>
                         <tr>
                             <th class="th-fake"></th>
@@ -43,7 +43,6 @@
                         <div class="swiper-slide">
                             <table class="table table-bordered amp-table table-hover table-header-fixed" style="width:1500px;" >
                                 <colgroup>
-                                    <col width="60px">
                                     <col width="100px">
                                     <col width="">
                                     <col width="100px">
@@ -55,7 +54,6 @@
                                 <thead>
 
                                 <tr>
-                                    <th rowspan="2"><span>因素权重</span></th>
                                     <td colspan="2"><span>项目A</span></td><!--七宝万科购物广场-->
                                     <td colspan="2"><span>项目B</span></td><!-- 来福士-->
                                     <td colspan="2"><span>本项目</span></td><!--七宝宝龙购物广场-->
@@ -86,85 +84,169 @@
                             <th class="td-fake"></th>
                             <td rowspan="4"><span>地段条件</span></td>
                             <td><span>区域属性</span></td>
+                            <td>
+                                <div class="td-input-wrapper num-input" >
+                                    <input type="number" placeholder="/" value="" ng-model="sCtrl.rpgSetData.rentCount.affect_position[0].weight" ng-change="sCtrl.updateWeight()">
+                                    <span class="number-format">{{sCtrl.rpgSetData.rentCount.affect_position[0].weight*100|number:2}}<i class="unit-addon">%</i></span>
+                                </div>
 
+                            </td>
                         </tr>
                         <tr>
                             <th class="td-fake"></th>
                             <td><span>交通通达性</span></td>
 
-
+                            <td>
+                                <div class="td-input-wrapper num-input">
+                                    <input type="number" placeholder="/" value="" ng-model="sCtrl.rpgSetData.rentCount.affect_position[1].weight" ng-change="sCtrl.updateWeight()">
+                                    <span class="number-format">{{sCtrl.rpgSetData.rentCount.affect_position[1].weight*100|number:2}}<i class="unit-addon">%</i></span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <th class="td-fake"></th>
                             <td><span>配套完善度</span></td>
 
-
+                            <td>
+                                <div class="td-input-wrapper num-input">
+                                    <input type="number" placeholder="/" value="" ng-model="sCtrl.rpgSetData.rentCount.affect_position[2].weight" ng-change="sCtrl.updateWeight()">
+                                    <span class="number-format">{{sCtrl.rpgSetData.rentCount.affect_position[2].weight*100|number:2}}<i class="unit-addon">%</i></span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <th class="td-fake"></th>
                             <td><span>人口条件</span></td>
 
-
+                            <td>
+                                <div class="td-input-wrapper num-input">
+                                    <input type="number" placeholder="/" value="" ng-model="sCtrl.rpgSetData.rentCount.affect_position[3].weight" ng-change="sCtrl.updateWeight()">
+                                    <span class="number-format">{{sCtrl.rpgSetData.rentCount.affect_position[3].weight*100|number:2}}<i class="unit-addon">%</i></span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <th class="td-fake"></th>
                             <td rowspan="4"><span>产品条件</span></td>
                             <td><span>店型优势</span></td>
 
-
+                            <td>
+                                <div class="td-input-wrapper num-input">
+                                    <input type="number" placeholder="/" value="" ng-model="sCtrl.rpgSetData.rentCount.affect_product[0].weight" ng-change="sCtrl.updateWeight()">
+                                    <span class="number-format">{{sCtrl.rpgSetData.rentCount.affect_product[0].weight*100|number:2}}<i class="unit-addon">%</i></span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <th class="td-fake"></th>
                             <td><span>动线规划</span></td>
 
-
+                            <td>
+                                <div class="td-input-wrapper num-input">
+                                    <input type="number" placeholder="/" value="" ng-model="sCtrl.rpgSetData.rentCount.affect_product[1].weight" ng-change="sCtrl.updateWeight()">
+                                    <span class="number-format">{{sCtrl.rpgSetData.rentCount.affect_product[1].weight*100|number:2}}<i class="unit-addon">%</i></span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <th class="td-fake"></th>
                             <td><span>硬件档次</span></td>
 
-
+                            <td>
+                                <div class="td-input-wrapper num-input">
+                                    <input type="number" placeholder="/" value="" ng-model="sCtrl.rpgSetData.rentCount.affect_product[2].weight" ng-change="sCtrl.updateWeight()">
+                                    <span class="number-format">{{sCtrl.rpgSetData.rentCount.affect_product[2].weight*100|number:2}}<i class="unit-addon">%</i></span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <th class="td-fake"></th>
                             <td><span>停车位数量</span></td>
 
-
+                            <td>
+                                <div class="td-input-wrapper num-input">
+                                    <input type="number" placeholder="/" value="" ng-model="sCtrl.rpgSetData.rentCount.affect_product[3].weight" ng-change="sCtrl.updateWeight()">
+                                    <span class="number-format">{{sCtrl.rpgSetData.rentCount.affect_product[3].weight*100|number:2}}<i class="unit-addon">%</i></span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <th class="td-fake"></th>
                             <td rowspan="3"><span>其他条件</span></td>
                             <td><span>租户品质</span></td>
 
-
+                            <td>
+                                <div class="td-input-wrapper num-input">
+                                    <input type="number" placeholder="/" value="" ng-model="sCtrl.rpgSetData.rentCount.affect_others[0].weight" ng-change="sCtrl.updateWeight()">
+                                    <span class="number-format">{{sCtrl.rpgSetData.rentCount.affect_others[0].weight*100|number:2}}<i class="unit-addon">%</i></span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <th class="td-fake"></th>
                             <td><span><span>企业品牌度</span></span></td>
 
-
+                            <td>
+                                <div class="td-input-wrapper num-input">
+                                    <input type="number" placeholder="/" value="" ng-model="sCtrl.rpgSetData.rentCount.affect_others[1].weight" ng-change="sCtrl.updateWeight()">
+                                    <span class="number-format">{{sCtrl.rpgSetData.rentCount.affect_others[1].weight*100|number:2}}<i class="unit-addon">%</i></span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <th class="td-fake"></th>
                             <td><span>免租期</span></td>
 
-
+                            <td>
+                                <div class="td-input-wrapper num-input">
+                                    <input type="number" placeholder="/" value="" ng-model="sCtrl.rpgSetData.rentCount.affect_others[2].weight" ng-change="sCtrl.updateWeight()">
+                                    <span class="number-format">{{sCtrl.rpgSetData.rentCount.affect_others[2].weight*100|number:2}}<i class="unit-addon">%</i></span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <th class="td-fake"></th>
                             <td colspan="2"><span>因素权重打分小计</span></td>
+
+                            <td>
+                                <div class="td-input-wrapper num-input">
+                                    <input type="number" placeholder="/" value="" ng-model="sCtrl.rpgSetData.rentCount.affect_count[0].value" ng-change="sCtrl.updateWeight()">
+                                    <span class="number-format">100<i class="unit-addon">%</i></span>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <th class="td-fake"></th>
                             <td colspan="2"><span>参考租金（元/平米/月，GLA）</span></td>
+
+                            <td>
+                                <!--<div class="td-input-wrapper num-input">
+                                    <input type="text" placeholder="/" value="" ng-model="sCtrl.rpgSetData.rentCount.affect_count[1].value">
+                                    <span class="number-format">{{sCtrl.rpgSetData.rentCount.affect_count[1].value|number:2}}</span>
+                                </div>-->
+                            </td>
                         </tr>
                         <tr>
                             <th class="td-fake"></th>
                             <td colspan="2"><span>加权租金（元/平米/月，GLA）</span></td>
+
+                            <td>
+                               <!-- <div class="td-input-wrapper num-input">
+                                    <input type="text" placeholder="/" value="" ng-model="sCtrl.rpgSetData.rentCount.affect_count[2].value">
+                                    <span class="number-format">{{sCtrl.rpgSetData.rentCount.affect_count[2].value|number:2}}</span>
+                                </div>-->
+                            </td>
                         </tr>
                         <tr>
                             <th class="td-fake"></th>
                             <td colspan="2"><span>参考权重（近似的比重高）</span></td>
+
+                            <td>
+                               <!-- <div class="td-input-wrapper num-input">
+                                    <input type="text" placeholder="/" value="" ng-model="sCtrl.rpgSetData.rentCount.affect_count[3].weight">
+                                    <span class="number-format">{{sCtrl.rpgSetData.rentCount.affect_count[3].weight*100|number:2}}</span>
+                                </div>-->
+                            </td>
                         </tr>
                         </tbody>
                     </table>
@@ -175,7 +257,6 @@
                         <div class="swiper-slide">
                             <table class="table table-bordered amp-table table-hover"  style="width:1500px;">
                                 <colgroup>
-                                    <col width="60px">
                                     <col width="100px">
                                     <col width="">
                                     <col width="100px">
@@ -186,13 +267,6 @@
                                 </colgroup>
                                 <tbody>
                                 <tr>
-                                    <td>
-                                        <div class="td-input-wrapper num-input" >
-                                            <input type="number" placeholder="/" value="" ng-model="sCtrl.rpgSetData.rentCount.affect_position[0].weight" ng-change="sCtrl.updateWeight()">
-                                            <span class="number-format">{{sCtrl.rpgSetData.rentCount.affect_position[0].weight*100|number:2}}<i class="unit-addon">%</i></span>
-                                        </div>
-
-                                    </td>
                                     <td ng-repeat-start="project in sCtrl.rpgSetData.rentCount.affect_position[0].projects">
                                         <div class="td-input-wrapper num-input" >
                                             <input type="number" placeholder="/" value="" ng-model="project.value" ng-change="sCtrl.updateWeight()">
@@ -207,12 +281,6 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                     <td>
-                                       <div class="td-input-wrapper num-input">
-                                           <input type="number" placeholder="/" value="" ng-model="sCtrl.rpgSetData.rentCount.affect_position[1].weight" ng-change="sCtrl.updateWeight()">
-                                           <span class="number-format">{{sCtrl.rpgSetData.rentCount.affect_position[1].weight*100|number:2}}<i class="unit-addon">%</i></span>
-                                       </div>
-                                    </td>
                                     <td ng-repeat-start="project in sCtrl.rpgSetData.rentCount.affect_position[1].projects">
                                         <div class="td-input-wrapper num-input" >
                                             <input type="number" placeholder="/" value="" ng-model="project.value" ng-change="sCtrl.updateWeight()">
@@ -227,12 +295,6 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                       <div class="td-input-wrapper num-input">
-                                           <input type="number" placeholder="/" value="" ng-model="sCtrl.rpgSetData.rentCount.affect_position[2].weight" ng-change="sCtrl.updateWeight()">
-                                           <span class="number-format">{{sCtrl.rpgSetData.rentCount.affect_position[2].weight*100|number:2}}<i class="unit-addon">%</i></span>
-                                       </div>
-                                    </td>
                                     <td ng-repeat-start="project in sCtrl.rpgSetData.rentCount.affect_position[2].projects">
                                         <div class="td-input-wrapper num-input" >
                                             <input type="number" placeholder="/" value="" ng-model="project.value" ng-change="sCtrl.updateWeight()">
@@ -247,12 +309,6 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                     <td>
-                                         <div class="td-input-wrapper num-input">
-                                              <input type="number" placeholder="/" value="" ng-model="sCtrl.rpgSetData.rentCount.affect_position[3].weight" ng-change="sCtrl.updateWeight()">
-                                              <span class="number-format">{{sCtrl.rpgSetData.rentCount.affect_position[3].weight*100|number:2}}<i class="unit-addon">%</i></span>
-                                          </div>
-                                     </td>
                                     <td ng-repeat-start="project in sCtrl.rpgSetData.rentCount.affect_position[3].projects">
                                         <div class="td-input-wrapper num-input" >
                                             <input type="number" placeholder="/" value="" ng-model="project.value" ng-change="sCtrl.updateWeight()">
@@ -268,12 +324,6 @@
                                 </tr>
 
                                 <tr>
-                                     <td>
-                                       <div class="td-input-wrapper num-input">
-                                           <input type="number" placeholder="/" value="" ng-model="sCtrl.rpgSetData.rentCount.affect_product[0].weight" ng-change="sCtrl.updateWeight()">
-                                           <span class="number-format">{{sCtrl.rpgSetData.rentCount.affect_product[0].weight*100|number:2}}<i class="unit-addon">%</i></span>
-                                       </div>
-                                     </td>
                                     <td ng-repeat-start="project in sCtrl.rpgSetData.rentCount.affect_product[0].projects">
                                         <div class="td-input-wrapper num-input" >
                                             <input type="number" placeholder="/" value="" ng-model="project.value" ng-change="sCtrl.updateWeight()">
@@ -289,12 +339,6 @@
                                 </tr>
 
                                 <tr>
-                                     <td>
-                                        <div class="td-input-wrapper num-input">
-                                            <input type="number" placeholder="/" value="" ng-model="sCtrl.rpgSetData.rentCount.affect_product[1].weight" ng-change="sCtrl.updateWeight()">
-                                            <span class="number-format">{{sCtrl.rpgSetData.rentCount.affect_product[1].weight*100|number:2}}<i class="unit-addon">%</i></span>
-                                        </div>
-                                    </td>
                                     <td ng-repeat-start="project in sCtrl.rpgSetData.rentCount.affect_product[1].projects">
                                         <div class="td-input-wrapper num-input" >
                                             <input type="number" placeholder="/" value="" ng-model="project.value" ng-change="sCtrl.updateWeight()">
@@ -310,12 +354,6 @@
                                 </tr>
 
                                 <tr>
-                                    <td>
-                                        <div class="td-input-wrapper num-input">
-                                            <input type="number" placeholder="/" value="" ng-model="sCtrl.rpgSetData.rentCount.affect_product[2].weight" ng-change="sCtrl.updateWeight()">
-                                            <span class="number-format">{{sCtrl.rpgSetData.rentCount.affect_product[2].weight*100|number:2}}<i class="unit-addon">%</i></span>
-                                        </div>
-                                     </td>
                                     <td ng-repeat-start="project in sCtrl.rpgSetData.rentCount.affect_product[2].projects">
                                         <div class="td-input-wrapper num-input" >
                                             <input type="number" placeholder="/" value="" ng-model="project.value" ng-change="sCtrl.updateWeight()">
@@ -330,12 +368,6 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <div class="td-input-wrapper num-input">
-                                            <input type="number" placeholder="/" value="" ng-model="sCtrl.rpgSetData.rentCount.affect_product[3].weight" ng-change="sCtrl.updateWeight()">
-                                            <span class="number-format">{{sCtrl.rpgSetData.rentCount.affect_product[3].weight*100|number:2}}<i class="unit-addon">%</i></span>
-                                        </div>
-                                    </td>
                                     <td ng-repeat-start="project in sCtrl.rpgSetData.rentCount.affect_product[3].projects">
                                         <div class="td-input-wrapper num-input" >
                                             <input type="number" placeholder="/" value="" ng-model="project.value" ng-change="sCtrl.updateWeight()">
@@ -351,12 +383,6 @@
                                 </tr>
 
                                 <tr>
-                                    <td>
-                                        <div class="td-input-wrapper num-input">
-                                            <input type="number" placeholder="/" value="" ng-model="sCtrl.rpgSetData.rentCount.affect_others[0].weight" ng-change="sCtrl.updateWeight()">
-                                            <span class="number-format">{{sCtrl.rpgSetData.rentCount.affect_others[0].weight*100|number:2}}<i class="unit-addon">%</i></span>
-                                        </div>
-                                    </td>
                                     <td ng-repeat-start="project in sCtrl.rpgSetData.rentCount.affect_others[0].projects">
                                         <div class="td-input-wrapper num-input" >
                                             <input type="number" placeholder="/" value="" ng-model="project.value" ng-change="sCtrl.updateWeight()">
@@ -371,12 +397,6 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <div class="td-input-wrapper num-input">
-                                            <input type="number" placeholder="/" value="" ng-model="sCtrl.rpgSetData.rentCount.affect_others[1].weight" ng-change="sCtrl.updateWeight()">
-                                            <span class="number-format">{{sCtrl.rpgSetData.rentCount.affect_others[1].weight*100|number:2}}<i class="unit-addon">%</i></span>
-                                        </div>
-                                    </td>
                                     <td ng-repeat-start="project in sCtrl.rpgSetData.rentCount.affect_others[1].projects">
                                         <div class="td-input-wrapper num-input" >
                                             <input type="number" placeholder="/" value="" ng-model="project.value" ng-change="sCtrl.updateWeight()">
@@ -392,12 +412,6 @@
                                 </tr>
 
                                 <tr>
-                                    <td>
-                                        <div class="td-input-wrapper num-input">
-                                            <input type="number" placeholder="/" value="" ng-model="sCtrl.rpgSetData.rentCount.affect_others[2].weight" ng-change="sCtrl.updateWeight()">
-                                            <span class="number-format">{{sCtrl.rpgSetData.rentCount.affect_others[2].weight*100|number:2}}<i class="unit-addon">%</i></span>
-                                        </div>
-                                    </td>
                                     <td ng-repeat-start="project in sCtrl.rpgSetData.rentCount.affect_others[2].projects">
                                         <div class="td-input-wrapper num-input" >
                                             <input type="number" placeholder="/" value="" ng-model="project.value" ng-change="sCtrl.updateWeight()">
@@ -413,12 +427,6 @@
                                 </tr>
 
                                 <tr>
-                                    <td>
-                                        <div class="td-input-wrapper num-input">
-                                            <input type="number" placeholder="/" value="" ng-model="sCtrl.rpgSetData.rentCount.affect_count[0].value" ng-change="sCtrl.updateWeight()">
-                                            <span class="number-format">100<i class="unit-addon">%</i></span>
-                                        </div>
-                                    </td>
                                     <td ng-repeat-start="project in sCtrl.affect_count[0].projects">
                                         <div class="td-input-wrapper num-input" >
                                             <input type="number" placeholder="/" value="" ng-model="project.value" disabled >
@@ -433,12 +441,6 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                     <td>
-                                        <!--<div class="td-input-wrapper num-input">
-                                            <input type="text" placeholder="/" value="" ng-model="sCtrl.rpgSetData.rentCount.affect_count[1].value">
-                                            <span class="number-format">{{sCtrl.rpgSetData.rentCount.affect_count[1].value|number:2}}</span>
-                                        </div>-->
-                                    </td>
                                     <td ng-repeat-start="project in sCtrl.affect_count[1].projects">
                                         <div class="td-input-wrapper num-input" ng-if="$index<2">
                                             <input type="number" placeholder="/" value="" ng-model="project.value" ng-change="sCtrl.updateWeight()">
@@ -453,12 +455,6 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                     <td>
-                                       <!-- <div class="td-input-wrapper num-input">
-                                            <input type="text" placeholder="/" value="" ng-model="sCtrl.rpgSetData.rentCount.affect_count[2].value">
-                                            <span class="number-format">{{sCtrl.rpgSetData.rentCount.affect_count[2].value|number:2}}</span>
-                                        </div>-->
-                                    </td>
                                     <td ng-repeat-start="project in sCtrl.affect_count[2].projects">
                                         <div class="td-input-wrapper num-input" ng-if="$index<2">
                                             <input type="number" placeholder="/" value="" ng-model="project.value" disabled>
@@ -473,12 +469,6 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                     <td>
-                                       <!-- <div class="td-input-wrapper num-input">
-                                            <input type="text" placeholder="/" value="" ng-model="sCtrl.rpgSetData.rentCount.affect_count[3].weight">
-                                            <span class="number-format">{{sCtrl.rpgSetData.rentCount.affect_count[3].weight*100|number:2}}</span>
-                                        </div>-->
-                                    </td>
                                     <td ng-repeat-start="project in sCtrl.affect_count[3].projects" >
                                         <div class="td-input-wrapper num-input" >
                                             <input type="number" placeholder="/" value="" ng-model="project.value" ng-disabled="$index==2" ng-change="sCtrl.updateWeight()">
@@ -611,20 +601,12 @@
                     <label>Mall选择:</label>
                     <input type="text" value="" hidden ng-model="sCtrl.shopInfo.mallProportionType"/>
                     <div class="dropdown">
-                        <button class="btn" type="button" ui-turn-on="propTypeDropDwon">
-                            <em>{{sCtrl.proportionType[sCtrl.shopInfo.mallProportionType] | default:"请选择"}}</em><span class="amp-icon amp-icon-dropdown"></span>
+                        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                            <em>{{sCtrl.proportionType[sCtrl.shopInfo.mallProportionType] | default:"请选择"}}</em><span class="ys-icon ys-icon-dropdown"></span>
                         </button>
-                        <ul class="dropdown-menu" role="menu"
-                            ui-shared-state="propTypeDropDwon"
-                            ui-outer-click="Ui.turnOff('propTypeDropDwon')"
-                            ui-outer-click-if="Ui.active('propTypeDropDwon')"
-                            ui-show="propTypeDropDwon"
-                            ui-turn-off="propTypeDropDwon">
-
-
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
                             <li ng-class="{'active':sCtrl.isActive(k,sCtrl.shopInfo.mallProportionType)}" role="presentation"
                                 ng-repeat="(k,v) in sCtrl.proportionType"><a role="menuitem" ng-click="sCtrl.setModel('mallProportionType',k)">{{v}}</a></li>
-
                         </ul>
                     </div>
                 </div>
@@ -632,17 +614,11 @@
                     <label>商业街选择:</label>
                     <input type="text" value="" hidden ng-model="sCtrl.shopInfo.streetProportionType"/>
                     <div class="dropdown">
-                        <button class="btn" type="button" ui-turn-on="streetProTypeDropDwon">
+                        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
                             <em>{{sCtrl.proportionType[sCtrl.shopInfo.streetProportionType] | default:"请选择"}}</em><span class="ys-icon ys-icon-dropdown"></span>
                         </button>
-                        <ul class="dropdown-menu" role="menu"
-                            ui-shared-state="streetProTypeDropDwon"
-                            ui-outer-click="Ui.turnOff('streetProTypeDropDwon')"
-                            ui-outer-click-if="Ui.active('streetProTypeDropDwon')"
-                            ui-show="streetProTypeDropDwon"
-                            ui-turn-off="streetProTypeDropDwon">
-
-                        <li ng-class="{'active':sCtrl.isActive(k,sCtrl.shopInfo.streetProportionType)}" role="presentation"
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                            <li ng-class="{'active':sCtrl.isActive(k,sCtrl.shopInfo.streetProportionType)}" role="presentation"
                                     ng-repeat="(k,v) in sCtrl.proportionType"><a role="menuitem" ng-click="sCtrl.setModel('streetProportionType',k)">{{v}}</a></li>
                         </ul>
                      </div>

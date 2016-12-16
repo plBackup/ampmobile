@@ -1,0 +1,19 @@
+<div class="input-group input-select">
+    <label>面积</label>
+    <input ng-model="ctrl.project.proportionType" type="text" placeholder=" " value="" hidden>
+    <div class="dropdown">
+        <button ui-turn-on="ptDropdown" class="btn">
+            <em>{{ctrl.project.proportionType| default:"请选择"}}</em><span class="ys-icon ys-icon-dropdown"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu"
+            ui-shared-state="ptDropdown"
+            ui-outer-click="Ui.turnOff('ptDropdown')"
+            ui-outer-click-if="Ui.active('ptDropdown')"
+            ui-show="ptDropdown"
+            ui-turn-off="ptDropdown">
+
+            <li ng-class="{'active':ctrl.isActive(menu,ctrl.project.proportionType)}" role="presentation" ng-repeat="menu in ctrl.form_menu.proportionType">
+                <a role="menuitem" ng-click="ctrl.setModel('proportionType',menu)">{{menu}}</a></li>
+        </ul>
+    </div>
+</div>

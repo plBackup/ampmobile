@@ -36,7 +36,7 @@
 #riskctrl .scrollable {height:auto;top:40px;}
 #riskctrl .scrollable-content{padding:0;}
 
-#riskctrl  .amp-table>tbody>tr>th, .amp-table>tbody>tr>td, .amp-table>tfoot>tr>th, .amp-table>tfoot>tr>td{border: 0;}
+#riskctrl  .amp-table>tbody>tr>th,#riskctrl .amp-table>tbody>tr>td,#riskctrl .amp-table>tfoot>tr>th,#riskctrl .amp-table>tfoot>tr>td{border: 0;}
 #riskctrl .scrollable-content{background:#f2f4f9 ; font-size: 13px;position:relative;}
 #riskctrl .amp-content-header .amp-status-item-list{ background: #fff; padding-left: 20px; height: 34px; border-bottom: 1px solid #dae1e7; margin-bottom: 10px;}
 #riskctrl .amp-content-header .amp-status-item span{color: #5ab46d; line-height: 34px;font-size: 12px; }
@@ -67,7 +67,7 @@
 #riskctrl .amp-table-left{ position: absolute;top: 0;left: 0;}
 #riskctrl .table{margin-bottom: 0;}
 #riskctrl .amp-table-td3 td{width: 33.33%;}
-#riskctrl .table-blank{border-bottom: solid 1px #dae1e7;top: 0;    top: 0;height: 35px;}}
+#riskctrl .table-blank{border-bottom: solid 1px #dae1e7;top: 0; height: 35px;}
 #riskctrl .swiper-slide .table-top td{color: #737e8c;}
 #riskctrl table>tbody>tr.tr-collapsed { display: none;}
 .amp-table-td2 td{width: 50%;}
@@ -88,7 +88,7 @@
     background-size: contain;
 }
 	 
-#riskctrl .allyear td{33.33%;text-align: right; line-height: 40px;}
+#riskctrl .allyear td{width:33.33%;text-align: right; line-height: 40px;}
 #riskctrl .allyear{display: none; }
 #riskctrl .amp-status-item-list div{font-size: 14px;color: #5ab46d; line-height: 34px; font-weight: 700; position: relative;}
 #riskctrl 	.amp-status-item-list div:after{content: "";display: block;width: 60px; height: 2px;background: #5ab46d;position: absolute;bottom: 0;}
