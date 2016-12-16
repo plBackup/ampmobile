@@ -1,4 +1,19 @@
 ampApp.controller("rent-main-controller",["$scope","$http","$rootScope","$timeout",function($scope,$http,$rootScope,$timeout){
+    $scope.records = [];
+    $scope.saleRatePie = [];
+    $scope.squareRatePie = [];
+    $scope.rentList = [];
+    $scope.investmentList = [];
+    $scope.collapseTable=[];
+
+    function initializeData(data){
+        $scope.records = data.records;
+        $scope.saleRatePie = data.saleRatePie;
+        $scope.squareRatePie = data.squareRatePie;
+        $scope.rentList = data.rentList;
+        $scope.investmentList = data.investmentList;
+        $scope.collapseTable=data.collapseTable;
+    }
 
     /* ======================================== 监听广播事件 ======================================== */
     $scope.$on("$destroy",function(){destroy();});
@@ -13,10 +28,6 @@ ampApp.controller("rent-main-controller",["$scope","$http","$rootScope","$timeou
     var rentTableGroupSwiper = null;
     var investmentTableGroupSwiper = null;
     var barChartSwiper = null;
-
-
-    $scope.saleRatePie = [63.62,2.95,4.21,3.13,23.01,30.8];
-    $scope.squareRatePie = [63.62,2.95,4.21,3.13,23.01,30.8];
 
     function initPageView(){
         container = $("#rent-main");
@@ -341,10 +352,15 @@ ampApp.controller("rent-main-controller",["$scope","$http","$rootScope","$timeou
 
     // 初始化
     function init(){
-        initPageView();
-        $timeout(function(){
-            bindPageEvents();
-        },300);
+
+        var url = "data/data_1/mgt_analysis/rent_analysis/rent_main_data.json";
+        $http.get(url).success(function(result){
+            initializeData(result);
+            initPageView();
+            $timeout(function(){
+                bindPageEvents();
+            },300);
+        });
 
     }
     init();

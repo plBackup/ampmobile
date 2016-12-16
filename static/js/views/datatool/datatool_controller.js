@@ -429,7 +429,7 @@ dataTool.controller("datatoolController",['$rootScope', '$scope',"$timeout","$lo
 
         self.goHome=function(){
             $state.go("projectlist");
-        }
+        };
         $state.go("datatool.rpgindex");
 }]);
 dataTool.controller("dataIndexController",['$rootScope', '$scope',"dataIndexData","paginatorService","$timeout","$location","$state","$filter",
@@ -676,7 +676,7 @@ dataTool.controller("dataEditController",['$rootScope', '$scope','$state','Share
         self.shopInfoCopy=angular.copy(self.shopInfo);
         self.setSelect=function(type){
 
-            console.log("---------------**")
+            console.log("---------------**");
             console.log(self.shopInfo);
             console.log(self.shopInfoCopy);
             switch(type){
@@ -1840,8 +1840,8 @@ dataTool.controller("dataFeeController",['$rootScope','$scope','$timeout','manag
 }]);
 
 
-dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simChartData","$location","$timeout","$state",
-    function($rootScope, $scope,simData,simChartData,$location,$timeout,$state) {
+dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simChartData","$location","$timeout","$state","SharedState",
+    function($rootScope, $scope,simData,simChartData,$location,$timeout,$state,SharedState) {
         var self=this;
         $rootScope.showHeader();
         $rootScope.showBottom();
@@ -1866,8 +1866,16 @@ dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simCh
             property:["自持","销售","销售返租"],
             payRange:["月付","季付"]
         };
+        console.log(self.shops);
         self.shopInfo=self.shops[self.index];
+        console.log(self.shopInfo);
+        self.selectType=null;
+        self.selectTypeName=null;
+        self.shopInfoCopy=null;
 
+        //self.shopEditorShow=false;
+       /* self.shopInfoCopy=null;
+        self.shopInfoCopy=angular.copy(self.shopInfo);*/
 
 
         self.setShopInfo=function(shopId){
@@ -1875,6 +1883,8 @@ dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simCh
             $scope.$apply(function(){
                 self.index+=1;
                 self.shopInfo=self.shops[self.index];
+                self.shopInfoCopy=null;
+                self.shopInfoCopy=angular.copy(self.shopInfo);
             });
 
         };
@@ -1882,15 +1892,60 @@ dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simCh
           /*  $scope.$apply(function(){
 
             });*/
-            self.shopInfo={}
+            self.shopInfo={};
+            self.shopInfoCopy=null;
+        };
+
+        self.setSelect=function(type){
+            if(typeof self.shopInfo.shopIndex=="undefined"){
+                return;
+            }
+            console.log("---------------**");
+            console.log(self.shopInfo);
+            console.log(self.shopInfoCopy);
+            switch(type){
+                case 'position':
+                    self.selectType="position";
+                    self.selectTypeName="位置";
+                    break;
+                case 'form':
+                    self.selectType='form';
+                    self.selectTypeName="业态";
+                    break;
+                case 'property':
+                    self.selectType='property';
+                    self.selectTypeName="租金方式";
+                    break;
+                case 'payRange':
+                    self.selectType="payRange";
+                    self.selectTypeName="付款时间";
+                    break;
+                default:
+                    return
+            }
+            SharedState.turnOn("uiSidebarRight");
         };
 
         self.setModel=function(type,menu){
-            self.shopInfo[type]=menu;
+            self.shopInfoCopy[type]=menu;
         };
 
         self.isActive=function(menu,model){
             return menu==model;
+        };
+
+        self.reset=function(type){
+            self.shopInfoCopy[type]=angular.copy(self.shopInfo[type]);
+        };
+
+        self.saveSelect=function(disabled){
+            if(disabled){
+                alert("请输入有效数据");
+                return;
+            }
+            self.shopInfo =angular.copy(self.shopInfoCopy);
+            //self.shopInfoCopy=null;
+            SharedState.turnOff("uiSidebarRight");
         };
 
         self.dismiss=function(){

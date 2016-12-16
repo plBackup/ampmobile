@@ -21,12 +21,7 @@
 
                                 <div class="amp-chart-legend">
                                     <ul class="clearfix">
-                                        <li><em>餐饮</em><div><span>63.62</span><em>%</em></div></li>
-                                        <li><em>超市</em><div><span>2.95</span><em>%</em></div></li>
-                                        <li><em>儿童</em><div><span>4.21</span><em>%</em></div></li>
-                                        <li><em>服装</em><div><span>3.13</span><em>%</em></div></li>
-                                        <li><em>配套</em><div><span>23.01</span><em>%</em></div></li>
-                                        <li><em>影院</em><div><span>3.08</span><em>%</em></div></li>
+                                        <li ng-repeat="item in saleRatePie"><em>{{item.name}}</em><div><span>{{item.value}}</span><em>%</em></div></li>
                                     </ul>
                                 </div>
                             </div><!-- amp-chart -->
@@ -41,12 +36,7 @@
                                 <div class="amp-chart-foot">各业态面积占比</div>
                                 <div class="amp-chart-legend">
                                     <ul class="clearfix">
-                                        <li><em>餐饮</em><div><span>63.62</span><em>%</em></div></li>
-                                        <li><em>超市</em><div><span>2.95</span><em>%</em></div></li>
-                                        <li><em>儿童</em><div><span>4.21</span><em>%</em></div></li>
-                                        <li><em>服装</em><div><span>3.13</span><em>%</em></div></li>
-                                        <li><em>配套</em><div><span>23.01</span><em>%</em></div></li>
-                                        <li><em>影院</em><div><span>3.08</span><em>%</em></div></li>
+                                        <li ng-repeat="item in squareRatePie"><em>{{item.name}}</em><div><span>{{item.value}}</span><em>%</em></div></li>
                                     </ul>
                                 </div>
                             </div><!-- amp-chart -->

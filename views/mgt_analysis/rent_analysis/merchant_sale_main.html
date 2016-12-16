@@ -36,8 +36,8 @@
 
 
             <ul class="btn-group clearfix">
-                <li class="btn-group-item"><a class="active">当月实际</a></li>
-                <li class="btn-group-item"><a>全年累计</a></li>
+                <li class="btn-group-item"><a ng-class="{'active':!fullYear}" ng-click="switchTable(false)">当月实际</a></li>
+                <li class="btn-group-item"><a ng-class="{'active':fullYear}" ng-click="switchTable(true)">全年累计</a></li>
             </ul><!-- btn-group -->
 
             <div class="table-block">
@@ -57,60 +57,23 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr class="record-group collapsed">
-                        <td>主力店</td>
-                        <td>9.80</td>
-                        <td>9.80</td>
-                        <td>9.80</td>
-                    </tr>
-                    <tr class="record-group-sub">
-                        <td>影院</td>
-                        <td>9.80</td>
-                        <td>9.80</td>
-                        <td>9.80</td>
-                    </tr>
-                    <tr class="record-group-sub">
-                        <td>超市</td>
-                        <td>9.80</td>
-                        <td>9.80</td>
-                        <td>9.80</td>
-                    </tr>
-                    <tr class="record-group collapsed">
-                        <td>非主力店</td>
-                        <td>9.80</td>
-                        <td>9.80</td>
-                        <td>9.80</td>
-                    </tr>
-                    <tr class="record-group-sub">
-                        <td>餐饮</td>
-                        <td>9.80</td>
-                        <td>9.80</td>
-                        <td>9.80</td>
-                    </tr>
-                    <tr class="record-group-sub">
-                        <td>儿童</td>
-                        <td>9.80</td>
-                        <td>9.80</td>
-                        <td>9.80</td>
-                    </tr>
-                    <tr class="record-group-sub">
-                        <td>服装</td>
-                        <td>9.80</td>
-                        <td>9.80</td>
-                        <td>9.80</td>
-                    </tr>
-                    <tr class="record-group-sub">
-                        <td>配套</td>
-                        <td>9.80</td>
-                        <td>9.80</td>
-                        <td>9.80</td>
-                    </tr>
-                    <tr>
-                        <td>合计</td>
-                        <td>9.80</td>
-                        <td>9.80</td>
-                        <td>9.80</td>
-                    </tr>
+
+                        <tr ng-click="collapseTable(item)" ng-class="{'record-group':item.hasCollapseBtn,'amp-display-none':item.hide,'record-group-sub':item.subRecord,'collapsed':item.collapsed}" data-group="{{item.dataGroup}}" ng-repeat="item in records">
+                            <td ng-click="goToMerchantSaleTypeList(item)" data-type="{{item.commercialTypeName}}">{{item.commercialTypeName}}<a ng-if="item.hasCollapseBtn" class="collapse-btn"  data-group="{{item.dataGroup}}"></a></td>
+                            <td>
+                                <span ng-if="!fullYear">{{item.curSaleCount|numberFormatDefault:"-":0}}</span>
+                                <span ng-if="fullYear">{{item.calSaleCount|numberFormatDefault:"-":0}}</span>
+                            </td>
+                            <td>
+                                <span ng-if="!fullYear">{{item.curPerformance|numberFormatDefault:"-":0}}</span>
+                                <span ng-if="fullYear">{{item.calPerformance|numberFormatDefault:"-":0}}</span>
+                            </td>
+                            <td>
+                                <span ng-if="!fullYear">{{item.curRentSaleRate}}</span>
+                                <span ng-if="fullYear">{{item.calRentSaleRate}}</span>
+                            </td>
+                        </tr>
+
                     </tbody>
                 </table>
             </div><!-- table-block -->

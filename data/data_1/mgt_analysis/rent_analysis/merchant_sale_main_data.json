@@ -1,0 +1,107 @@
+[
+  {
+    "dataGroup": 1,
+    "hasCollapseBtn": true,
+    "calPerformance": "69",
+    "calSaleCount": "454728",
+    "commercialTypeName": "主力店",
+    "curPerformance": "138",
+    "curRentSaleRate": "11%",
+    "calRentSaleRate": "11%",
+    "curSaleCount": "454728"
+  },
+  {
+
+    "hide": true,
+    "subRecord":true,
+    "dataGroup": 1,
+    "calPerformance": "-",
+    "calSaleCount": "-",
+    "commercialTypeName": "超市",
+    "curPerformance": "-",
+    "curRentSaleRate": "-",
+    "calRentSaleRate": "-",
+    "curSaleCount": "-"
+  },
+  {
+    "hide": true,
+    "subRecord":true,
+    "dataGroup": 1,
+    "calPerformance": "69",
+    "calSaleCount": "454728",
+    "commercialTypeName": "影院",
+    "curPerformance": "138",
+    "curRentSaleRate": "11%",
+    "calRentSaleRate": "11%",
+    "curSaleCount": "454728"
+  },
+  {
+    "dataGroup": 2,
+    "hasCollapseBtn": true,
+    "calPerformance": "460",
+    "calSaleCount": "57957020",
+    "commercialTypeName": "非主力店",
+    "curPerformance": "626",
+    "curRentSaleRate": "5%",
+    "calRentSaleRate": "4%",
+    "curSaleCount": "33492944"
+  },
+  {
+    "hide": true,
+    "subRecord":true,
+    "dataGroup": 2,
+    "calPerformance": "526",
+    "calSaleCount": "31637211",
+    "commercialTypeName": "餐饮",
+    "curPerformance": "724",
+    "curRentSaleRate": "6%",
+    "calRentSaleRate": "5%",
+    "curSaleCount": "18378250"
+  },
+  {
+    "hide": true,
+    "subRecord":true,
+    "dataGroup": 2,
+    "calPerformance": "260",
+    "calSaleCount": "4240098",
+    "commercialTypeName": "儿童",
+    "curPerformance": "320",
+    "curRentSaleRate": "3%",
+    "calRentSaleRate": "2%",
+    "curSaleCount": "2484129"
+  },
+  {
+    "hide": true,
+    "subRecord":true,
+    "dataGroup": 2,
+    "calPerformance": "446",
+    "calSaleCount": "10673573",
+    "commercialTypeName": "服装",
+    "curPerformance": "644",
+    "curRentSaleRate": " -   ",
+    "calRentSaleRate": " -   ",
+    "curSaleCount": "6022101"
+  },
+  {
+    "hide": true,
+    "subRecord":true,
+    "dataGroup": 2,
+    "calPerformance": "443",
+    "calSaleCount": "11406138",
+    "commercialTypeName": "配套",
+    "curPerformance": "600",
+    "curRentSaleRate": "6%",
+    "calRentSaleRate": "6%",
+    "curSaleCount": "6608464"
+  },
+  {
+    "dataGroup": 3,
+    "calPerformance": "440",
+    "calSaleCount": "58411748",
+    "commercialTypeName": "合计",
+    "curPerformance": "597",
+    "curRentSaleRate": "5%",
+    "calRentSaleRate": "4%",
+    "curSaleCount": "33947672"
+  }
+]

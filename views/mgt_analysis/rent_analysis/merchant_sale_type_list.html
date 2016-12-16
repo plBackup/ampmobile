@@ -33,24 +33,7 @@
                 <div class="table-group-left">
                     <table>
                         <tbody>
-                            <tr><td>DBar</td></tr>
-                            <tr><td>DBar</td></tr>
-                            <tr><td>DBar</td></tr>
-                            <tr><td>DBar</td></tr>
-                            <tr><td>DBar</td></tr>
-                            <tr><td>DBar</td></tr>
-                            <tr><td>DBar</td></tr>
-                            <tr><td>DBar</td></tr>
-                            <tr><td>DBar</td></tr>
-                            <tr><td>DBar</td></tr>
-                            <tr><td>DBar</td></tr>
-                            <tr><td>DBar</td></tr>
-                            <tr><td>DBar</td></tr>
-                            <tr><td>DBar</td></tr>
-                            <tr><td>DBar</td></tr>
-                            <tr><td>DBar</td></tr>
-                            <tr><td>DBar</td></tr>
-                            <tr><td>DBar</td></tr>
+                            <tr ng-repeat="item in records"><td>{{item.brandName}}</td></tr>
                         </tbody>
                     </table>
                 </div><!-- table-group-left -->
@@ -60,99 +43,10 @@
                             <div class="swiper-slide clearfix">
                                 <table>
                                     <tbody>
-                                        <tr>
-                                            <td>12,443.57</td>
-                                            <td>140,539.2</td>
-                                            <td>8.85%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>12,443.57</td>
-                                            <td>140,539.2</td>
-                                            <td>8.85%</td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>12,443.57</td>
-                                            <td>140,539.2</td>
-                                            <td>8.85%</td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>12,443.57</td>
-                                            <td>140,539.2</td>
-                                            <td>8.85%</td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>12,443.57</td>
-                                            <td>140,539.2</td>
-                                            <td>8.85%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>12,443.57</td>
-                                            <td>140,539.2</td>
-                                            <td>8.85%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>12,443.57</td>
-                                            <td>140,539.2</td>
-                                            <td>8.85%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>12,443.57</td>
-                                            <td>140,539.2</td>
-                                            <td>8.85%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>12,443.57</td>
-                                            <td>140,539.2</td>
-                                            <td>8.85%</td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>12,443.57</td>
-                                            <td>140,539.2</td>
-                                            <td>8.85%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>12,443.57</td>
-                                            <td>140,539.2</td>
-                                            <td>8.85%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>12,443.57</td>
-                                            <td>140,539.2</td>
-                                            <td>8.85%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>12,443.57</td>
-                                            <td>140,539.2</td>
-                                            <td>8.85%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>12,443.57</td>
-                                            <td>140,539.2</td>
-                                            <td>8.85%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>12,443.57</td>
-                                            <td>140,539.2</td>
-                                            <td>8.85%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>12,443.57</td>
-                                            <td>140,539.2</td>
-                                            <td>8.85%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>12,443.57</td>
-                                            <td>140,539.2</td>
-                                            <td>8.85%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>12,443.57</td>
-                                            <td>140,539.2</td>
-                                            <td>8.85%</td>
+                                        <tr ng-repeat="item in records">
+                                            <td>{{item.saleAmount|number}}</td>
+                                            <td>{{item.performanceValue|number:0}}</td>
+                                            <td>{{item.rentSaleRate}}</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -169,7 +63,7 @@
 
     <div ui-content-for="mgt-analysis-menu-list-wrapper">
         <ul class="menu-item-list">
-            <li><a class="statistic-btn">统计</a></li>
+            <li><a class="statistic-btn" ng-click="showMgtAnalysisPanel()">统计</a></li>
         </ul>
     </div>
 

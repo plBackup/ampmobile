@@ -25,7 +25,7 @@
                                     <th>61-90天</th>
                                     <th>&gt;90天</th>
                                     <th>租金</th>
-                                    <th>合同剩余（月）</th>
+                                    <th>合同剩余(月)</th>
                                 </tr>
                             </tbody>
                         </table>
@@ -42,19 +42,7 @@
                 <div class="table-group-left">
                     <table>
                         <tbody>
-                            <tr><td>DBar</td></tr>
-                            <tr><td>DBar</td></tr>
-                            <tr><td>DBar</td></tr>
-                            <tr><td>DBar</td></tr>
-                            <tr><td>DBar</td></tr>
-                            <tr><td>DBar</td></tr>
-                            <tr><td>DBar</td></tr>
-                            <tr><td>DBar</td></tr>
-                            <tr><td>DBar</td></tr>
-                            <tr><td>DBar</td></tr>
-                            <tr><td>DBar</td></tr>
-                            <tr><td>DBar</td></tr>
-                            <tr><td>DBar</td></tr>
+                            <tr ng-repeat="item in records" ng-click="goToArrearsMerchantDetail(item)"><td>{{item.merchantName}}</td></tr>
                         </tbody>
                     </table>
                 </div><!-- table-group-left -->
@@ -64,161 +52,17 @@
                             <div class="swiper-slide clearfix">
                                 <table>
                                     <tbody>
-                                        <tr>
-                                            <td>12,443.57</td>
-                                            <td>140,539.2</td>
-                                            <td>8.85%</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                        </tr>
-                                        <tr>
-                                            <td>12,443.57</td>
-                                            <td>140,539.2</td>
-                                            <td>8.85%</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                        </tr>
-                                        <tr>
-                                            <td>12,443.57</td>
-                                            <td>140,539.2</td>
-                                            <td>8.85%</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                        </tr>
-                                        <tr>
-                                            <td>12,443.57</td>
-                                            <td>140,539.2</td>
-                                            <td>8.85%</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                        </tr>
-                                        <tr>
-                                            <td>12,443.57</td>
-                                            <td>140,539.2</td>
-                                            <td>8.85%</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                        </tr>
-                                        <tr>
-                                            <td>12,443.57</td>
-                                            <td>140,539.2</td>
-                                            <td>8.85%</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                        </tr>
-                                        <tr>
-                                            <td>12,443.57</td>
-                                            <td>140,539.2</td>
-                                            <td>8.85%</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                        </tr>
-                                        <tr>
-                                            <td>12,443.57</td>
-                                            <td>140,539.2</td>
-                                            <td>8.85%</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                        </tr>
-                                        <tr>
-                                            <td>12,443.57</td>
-                                            <td>140,539.2</td>
-                                            <td>8.85%</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                        </tr>
-                                        <tr>
-                                            <td>12,443.57</td>
-                                            <td>140,539.2</td>
-                                            <td>8.85%</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                        </tr>
-                                        <tr>
-                                            <td>12,443.57</td>
-                                            <td>140,539.2</td>
-                                            <td>8.85%</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                        </tr>
-                                        <tr>
-                                            <td>12,443.57</td>
-                                            <td>140,539.2</td>
-                                            <td>8.85%</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                        </tr>
-                                        <tr>
-                                            <td>12,443.57</td>
-                                            <td>140,539.2</td>
-                                            <td>8.85%</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
-                                            <td>0</td>
+                                        <tr ng-repeat="item in records">
+                                            <td>{{item.arrearsTotalAmount|numberFormatDefault}}</td>
+                                            <td>{{item.deposit|numberFormatDefault}}</td>
+                                            <td>{{item.depositRate}}</td>
+                                            <td>{{item.crashStoreRate|numberFormatDefault}}</td>
+                                            <td>{{item.dateItem1|numberFormatDefault}}</td>
+                                            <td>{{item.dateItem2|numberFormatDefault}}</td>
+                                            <td>{{item.dateItem3|numberFormatDefault}}</td>
+                                            <td>{{item.dateItem4|numberFormatDefault}}</td>
+                                            <td>{{item.rentAmount|numberFormatDefault}}</td>
+                                            <td>{{item.contractLeaveMonth|numberFormatDefault}}</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -231,6 +75,6 @@
         </div><!-- scrollable-content -->
     </div><!-- scrollable -->
 
-    <a class="enrolment-btn">录入</a>
+    <a class="enrolment-btn" href="#/arrears_detail_enrolment">录入</a>
 
 </div><!-- simulation-calculation-list-header -->

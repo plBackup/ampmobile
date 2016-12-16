@@ -1,5 +1,41 @@
+
+#riskctrl-detail .mgt-analysis-nav-bar{
+    background-color:#1a212c;
+}
+
+#riskctrl-detail .mgt-analysis-nav-bar li{
+    width:50%;
+    float:left;
+}
+#riskctrl-detail .mgt-analysis-nav-bar li a{
+    position:relative;
+    display:block;
+    width:100%;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    font-size:13px;
+    color:#747f8c;
+}
+#riskctrl-detail .mgt-analysis-nav-bar li a.riskctrl_active{
+    color:#fff;
+}
+#riskctrl-detail .mgt-analysis-nav-bar li a.riskctrl_active:after{
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:50%;
+    margin-left:-6px;
+    border-left:6px solid transparent;
+    border-right:6px solid transparent;
+    border-bottom:6px solid #fff;
+    z-index: 9;
+}
+
+
+
 #riskctrl-detail .amp-table>tbody>tr>td{ padding: 0;}  
-#riskctrl-detail .scrollable {height:auto;}
+#riskctrl-detail .scrollable {height:auto;top:40px;}
 #riskctrl-detail .scrollable-content{padding:0;}
 #riskctrl-detail .swiper-slide{width: 100%;}
 #riskctrl-detail .scrollable-content{background:#f2f4f9 ; font-size: 13px;}
@@ -70,4 +106,4 @@
 #riskctrl-detail #investment .amp-table tr:nth-child(3) td:first-child::after{ content: "（m²）"; display: inline-block;  line-height: 14px; bottom: 0 font-size: 12px; color: #737e8c;}
 
 #riskctrl-detail  .amp-table>tfoot>tr>td{border: 0;}
-#riskctrl-detail  .amp-table>tbody>tr>th, .amp-table>tbody>tr>td, .amp-table>tfoot>tr>th, .amp-table>tfoot>tr>td{border: 0;padding: 0; height: 40px;}
+#riskctrl-detail  .amp-table>tbody>tr>th, .amp-table>tbody>tr>td, .amp-table>tfoot>tr>th, .amp-table>tfoot>tr>td{border: 0;padding: 0; height: 40px;font-size: 13px;}

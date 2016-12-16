@@ -1,0 +1,437 @@
+{
+  "records": [
+    {
+      "totalReal": "0.0",
+      "manualWorkBudget": "0.0",
+      "projectReal": "0.0",
+      "businessReal": "0.0",
+      "totalPercent": "-",
+      "projectPercent": "-",
+      "manualWorkPercent": "-",
+      "mgtFeeBudget": "0.0",
+      "totalBudget": "0.0",
+      "manualWorkReal": "0.0",
+      "projectBudget": "0.0",
+      "mgtFeeReal": "0.0",
+      "mgtFeePercent": "-",
+      "month": "1",
+      "businessBudget": "0.0",
+      "businessPercent": "-"
+    },
+    {
+      "totalReal": "0.0",
+      "manualWorkBudget": "0.0",
+      "projectReal": "0.0",
+      "businessReal": "0.0",
+      "totalPercent": "-",
+      "projectPercent": "-",
+      "manualWorkPercent": "-",
+      "mgtFeeBudget": "0.0",
+      "totalBudget": "0.0",
+      "manualWorkReal": "0.0",
+      "projectBudget": "0.0",
+      "mgtFeeReal": "0.0",
+      "mgtFeePercent": "-",
+      "month": "2",
+      "businessBudget": "0.0",
+      "businessPercent": "-"
+    },
+    {
+      "totalReal": "0.0",
+      "manualWorkBudget": "0.0",
+      "projectReal": "0.0",
+      "businessReal": "0.0",
+      "totalPercent": "0%",
+      "projectPercent": "-",
+      "manualWorkPercent": "-",
+      "mgtFeeBudget": "0.0",
+      "totalBudget": "168.82",
+      "manualWorkReal": "0.0",
+      "projectBudget": "0.0",
+      "mgtFeeReal": "0.0",
+      "mgtFeePercent": "-",
+      "month": "3",
+      "businessBudget": "168.82",
+      "businessPercent": "0%"
+    },
+    {
+      "totalReal": "0.0",
+      "manualWorkBudget": "0.0",
+      "projectReal": "0.0",
+      "businessReal": "0.0",
+      "totalPercent": "0%",
+      "projectPercent": "-",
+      "manualWorkPercent": "-",
+      "mgtFeeBudget": "0.0",
+      "totalBudget": "122.96",
+      "manualWorkReal": "0.0",
+      "projectBudget": "0.0",
+      "mgtFeeReal": "0.0",
+      "mgtFeePercent": "-",
+      "month": "4",
+      "businessBudget": "122.96",
+      "businessPercent": "0%"
+    },
+    {
+      "totalReal": "0.0",
+      "manualWorkBudget": "0.0",
+      "projectReal": "0.0",
+      "businessReal": "0.0",
+      "totalPercent": "0%",
+      "projectPercent": "-",
+      "manualWorkPercent": "-",
+      "mgtFeeBudget": "0.0",
+      "totalBudget": "58.49",
+      "manualWorkReal": "0.0",
+      "projectBudget": "0.0",
+      "mgtFeeReal": "0.0",
+      "mgtFeePercent": "-",
+      "month": "5",
+      "businessBudget": "58.49",
+      "businessPercent": "0%"
+    },
+    {
+      "totalReal": "0.0",
+      "manualWorkBudget": "0.0",
+      "projectReal": "0.0",
+      "businessReal": "0.0",
+      "totalPercent": "0%",
+      "projectPercent": "-",
+      "manualWorkPercent": "-",
+      "mgtFeeBudget": "0.0",
+      "totalBudget": "8.0",
+      "manualWorkReal": "0.0",
+      "projectBudget": "0.0",
+      "mgtFeeReal": "0.0",
+      "mgtFeePercent": "-",
+      "month": "6",
+      "businessBudget": "8.0",
+      "businessPercent": "0%"
+    },
+    {
+      "totalReal": "0.0",
+      "manualWorkBudget": "0.0",
+      "projectReal": "0.0",
+      "businessReal": "0.0",
+      "totalPercent": "-",
+      "projectPercent": "-",
+      "manualWorkPercent": "-",
+      "mgtFeeBudget": "0.0",
+      "totalBudget": "0.0",
+      "manualWorkReal": "0.0",
+      "projectBudget": "0.0",
+      "mgtFeeReal": "0.0",
+      "mgtFeePercent": "-",
+      "month": "7",
+      "businessBudget": "0.0",
+      "businessPercent": "-"
+    },
+    {
+      "totalReal": "44.18",
+      "manualWorkBudget": "0.0",
+      "projectReal": "0.0",
+      "businessReal": "44.18",
+      "totalPercent": "230%",
+      "projectPercent": "-",
+      "manualWorkPercent": "-",
+      "mgtFeeBudget": "0.0",
+      "totalBudget": "19.2",
+      "manualWorkReal": "0.0",
+      "projectBudget": "0.0",
+      "mgtFeeReal": "0.0",
+      "mgtFeePercent": "-",
+      "month": "8",
+      "businessBudget": "19.2",
+      "businessPercent": "230%"
+    },
+    {
+      "totalReal": "194.27",
+      "manualWorkBudget": "0.27",
+      "projectReal": "0.87",
+      "businessReal": "116.98",
+      "totalPercent": "61%",
+      "projectPercent": "100%",
+      "manualWorkPercent": "100%",
+      "mgtFeeBudget": "76.15",
+      "totalBudget": "317.13",
+      "manualWorkReal": "0.27",
+      "projectBudget": "0.87",
+      "mgtFeeReal": "76.15",
+      "mgtFeePercent": "100%",
+      "month": "9",
+      "businessBudget": "239.84",
+      "businessPercent": "49%"
+    },
+    {
+      "totalReal": "86.39",
+      "manualWorkBudget": "12.63",
+      "projectReal": "0.0",
+      "businessReal": "71.94",
+      "totalPercent": "47%",
+      "projectPercent": "-",
+      "manualWorkPercent": "100%",
+      "mgtFeeBudget": "1.82",
+      "totalBudget": "183.01",
+      "manualWorkReal": "12.63",
+      "projectBudget": "0.0",
+      "mgtFeeReal": "1.82",
+      "mgtFeePercent": "100%",
+      "month": "10",
+      "businessBudget": "168.56",
+      "businessPercent": "43%"
+    },
+    {
+      "totalReal": "22.32",
+      "manualWorkBudget": "7.68",
+      "projectReal": "0.0",
+      "businessReal": "14.64",
+      "totalPercent": "25%",
+      "projectPercent": "-",
+      "manualWorkPercent": "100%",
+      "mgtFeeBudget": "0.0",
+      "totalBudget": "90.68",
+      "manualWorkReal": "7.68",
+      "projectBudget": "0.0",
+      "mgtFeeReal": "0.0",
+      "mgtFeePercent": "-",
+      "month": "11",
+      "businessBudget": "83.0",
+      "businessPercent": "18%"
+    },
+    {
+      "totalReal": "0.0",
+      "manualWorkBudget": "20.5",
+      "projectReal": "0.0",
+      "businessReal": "0.0",
+      "totalPercent": "0%",
+      "projectPercent": "0%",
+      "manualWorkPercent": "0%",
+      "mgtFeeBudget": "418.66",
+      "totalBudget": "591.3",
+      "manualWorkReal": "0.0",
+      "projectBudget": "47.2",
+      "mgtFeeReal": "0.0",
+      "mgtFeePercent": "0%",
+      "month": "12",
+      "businessBudget": "104.94",
+      "businessPercent": "0%"
+    }
+  ],
+  "saleRatePie": [
+    {
+      "name": "餐饮",
+      "value": "65.59"
+    },
+    {
+      "name": "超市",
+      "value": "0"
+    },
+    {
+      "name": "儿童",
+      "value": "4.29 "
+    },
+    {
+      "name": "服装",
+      "value": "0"
+    },
+    {
+      "name": "配套",
+      "value": "26.98"
+    },
+    {
+      "name": "影院",
+      "value": "3.14 "
+    }
+  ],
+  "squareRatePie": [
+    {
+      "name": "餐饮",
+      "value": "42.95"
+    },
+    {
+      "name": "超市",
+      "value": "0"
+    },
+    {
+      "name": "儿童",
+      "value": "12.76"
+    },
+    {
+      "name": "服装",
+      "value": "17.09"
+    },
+    {
+      "name": "配套",
+      "value": "22.13"
+    },
+    {
+      "name": "影院",
+      "value": "5.07 "
+    }
+  ],
+  "rentList": [
+    {
+      "rentIncomeAvg": "",
+      "rentCountRate": "0%",
+      "rentCount": "0",
+      "dateItem": "1个月内",
+      "squareRate": "0%",
+      "rentIncomeRate": "0%",
+      "rentIncome": "0",
+      "square": "0"
+    },
+    {
+      "rentIncomeAvg": "",
+      "rentCountRate": "0%",
+      "rentCount": "0",
+      "dateItem": "3个月内",
+      "squareRate": "0%",
+      "rentIncomeRate": "0%",
+      "rentIncome": "0",
+      "square": "0"
+    },
+    {
+      "rentIncomeAvg": "",
+      "rentCountRate": "0%",
+      "rentCount": "0",
+      "dateItem": "6个月内",
+      "squareRate": "0%",
+      "rentIncomeRate": "0%",
+      "rentIncome": "0",
+      "square": "0"
+    },
+    {
+      "rentIncomeAvg": "360",
+      "rentCountRate": "0.88%",
+      "rentCount": "2",
+      "dateItem": "12个月内",
+      "squareRate": "0.06%",
+      "rentIncomeRate": "0.25%",
+      "rentIncome": "195789",
+      "square": "47"
+    }
+  ],
+  "investmentList": [
+    {
+      "itemLabel": "当月签约面积",
+      "budget": "23412",
+      "real": "19894",
+      "finishRate": "85%"
+    },
+    {
+      "itemLabel": "年度累计",
+      "budget": "75149",
+      "real": "67840",
+      "finishRate": "90%"
+    },
+    {
+      "itemLabel": "蓄水",
+      "budget": "6312",
+      "real": "4721",
+      "finishRate": "75%"
+    },
+    {
+      "itemLabel": "商务",
+      "budget": "7023",
+      "real": "5292",
+      "finishRate": "75%"
+    },
+    {
+      "itemLabel": "合同",
+      "budget": "6891",
+      "real": "5233",
+      "finishRate": "76%"
+    }
+  ],
+  "collapseTable": [
+    {
+      "hasCollapseBtn": true,
+      "dataGroup": 1,
+      "rentSquare": "3305.53",
+      "rentCount": "1",
+      "rentPriceAvg": "0",
+      "rentRate": "50%",
+      "totalRentSquare": "6611.06",
+      "projectName": "主力店"
+    },
+    {
+      "hide": true,
+      "dataGroup": 1,
+      "rentSquare": "-",
+      "rentCount": "-",
+      "rentPriceAvg": "-",
+      "rentRate": "-",
+      "totalRentSquare": "0",
+      "projectName": "超市"
+    },
+    {
+      "hide": true,
+      "dataGroup": 1,
+      "rentSquare": "3305.53",
+      "rentCount": "1",
+      "rentPriceAvg": "0",
+      "rentRate": "50%",
+      "totalRentSquare": "6611.06",
+      "projectName": "影院"
+    },
+    {
+      "hasCollapseBtn": true,
+      "dataGroup": 2,
+      "rentSquare": "55330.380000000005",
+      "rentCount": "242",
+      "rentPriceAvg": "179.88",
+      "rentRate": "79%",
+      "totalRentSquare": "70046.69",
+      "projectName": "非主力店"
+    },
+    {
+      "hide": true,
+      "dataGroup": 2,
+      "rentSquare": "25382.43",
+      "rentCount": "134",
+      "rentPriceAvg": "207.86",
+      "rentRate": "73%",
+      "totalRentSquare": "34812.339999999997",
+      "projectName": "餐饮"
+    },
+    {
+      "hide": true,
+      "dataGroup": 2,
+      "rentSquare": "7771",
+      "rentCount": "18",
+      "rentPriceAvg": "169.51",
+      "rentRate": "93%",
+      "totalRentSquare": "8328.35",
+      "projectName": "儿童"
+    },
+    {
+      "hide": true,
+      "dataGroup": 2,
+      "rentSquare": "11154.95",
+      "rentCount": "20",
+      "rentPriceAvg": "132.21",
+      "rentRate": "80%",
+      "totalRentSquare": "13906",
+      "projectName": "服装"
+    },
+    {
+      "hide": true,
+      "dataGroup": 2,
+      "rentSquare": "11022",
+      "rentCount": "70",
+      "rentPriceAvg": "209.94",
+      "rentRate": "85%",
+      "totalRentSquare": "13000",
+      "projectName": "配套"
+    },
+    {
+      "dataGroup": 3,
+      "rentSquare": "58636",
+      "rentCount": "242",
+      "rentPriceAvg": "180",
+      "rentRate": "76%",
+      "totalRentSquare": "76658",
+      "projectName": "合计"
+    }
+  ]
+}

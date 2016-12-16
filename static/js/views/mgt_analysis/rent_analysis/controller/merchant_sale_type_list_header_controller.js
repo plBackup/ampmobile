@@ -1,6 +1,9 @@
 ampApp.controller("merchant-sale-type-list-header-controller",["$scope","$http","$rootScope",function($scope,$http,$rootScope){
 
+    var SELECT_COMMERCIAL_TYPE_NAME_FOR_SALE = "select_commercial_type_name_for_sale";
+    var commercialTypeName = globalStorage.getSessionData(SELECT_COMMERCIAL_TYPE_NAME_FOR_SALE);
 
+    $scope.commercialTypeName = commercialTypeName;
 
     /* ======================================== 监听广播事件 ======================================== */
     $scope.$on("$destroy",function(){destroy();});

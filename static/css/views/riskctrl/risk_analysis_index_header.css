@@ -1,0 +1,76 @@
+#risk-analysis-index-header{
+    position:relative;
+    height:44px;
+    line-height: 44px;
+    text-align: center;
+    color:#fff;
+    font-size:18px;
+}
+#risk-analysis-index-header>a{
+    position:absolute;
+    top:0;
+    bottom:0;
+    height:100%;
+}
+#risk-analysis-index-header>a.amp-project-btn{
+    left:0;
+    width:52px;
+    background:url(../../../images/icon_projects@2x.png) no-repeat center center;
+    background-size:22px 22px;
+}
+
+#risk-analysis-index-header>a.amp-add-btn{
+    right:0;
+    width:52px;
+    background:url(../../../images/icon_more@2x.png) no-repeat center center;
+    background-size:22px 22px;
+}
+
+/*mgt-analysis-menu-list-wrapper*/
+#mgt-analysis-menu-list-wrapper .menu-item-list {
+    position: absolute;
+    top: 44px;
+    right: 5px;
+    display:none;
+    width:120px;
+    padding:0 15px;
+    z-index: 999;
+    background-color:rgba(0,0,0,0.8);
+    border-radius: 4px;
+}
+
+#mgt-analysis-menu-list-wrapper .show-menu .menu-item-list{
+    display:block;
+}
+
+#mgt-analysis-menu-list-wrapper  .menu-item-list:after{
+    content:"";
+    position:absolute;
+    top:-5px;
+    right:16px;
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
+    border-bottom:5px solid rgba(0,0,0,0.8);
+
+}
+
+#mgt-analysis-menu-list-wrapper .menu-item-list li{
+    border-bottom:1px solid #666;
+}
+#mgt-analysis-menu-list-wrapper .menu-item-list li:last-child{border-bottom:none;}
+
+#mgt-analysis-menu-list-wrapper .menu-item-list li a{
+    display:block;
+    height:44px;
+    line-height: 44px;
+    color:#fff;
+    font-size:14px;
+    text-align: left;
+    background:no-repeat left center;
+    background-size:22px 22px;
+    padding-left:32px;
+}
+
+#mgt-analysis-menu-list-wrapper .menu-item-list li a.enrolment-btn{background-image:url(../../../images/icon_input@2x.png);}
+#mgt-analysis-menu-list-wrapper .menu-item-list li a.statistic-btn{background-image:url(../../../images/icon_pie@2x.png);}
+#mgt-analysis-menu-list-wrapper .menu-item-list li a.filter-btn{background-image:url(../../../images/icon_filter@2x.png);}

@@ -1,5 +1,8 @@
 ampApp.controller("arrears-merchant-detail-header-controller",["$scope","$http","$rootScope",function($scope,$http,$rootScope){
 
+    var SELECTED_ARREARS_MERCHANT_NAME = "selected_arrears_merchant_name";
+    var merchantName = globalStorage.getSessionData(SELECTED_ARREARS_MERCHANT_NAME);
+    $scope.merchantName = merchantName;
 
 
     /* ======================================== 监听广播事件 ======================================== */

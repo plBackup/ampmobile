@@ -32,7 +32,7 @@ var menu_list={
             name:"风控",
             index:"main-3",
             icon:"amp-menu-ctrl",
-            links:"blank",
+            links:"risk_investment",
             target:"#page-frame",
             show_sub_menu:false,
             relocate:false//点击一级目录直接跳转

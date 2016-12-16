@@ -15,24 +15,11 @@
                         <col width="33.33333%"/>
                     </colgroup>
                     <tbody>
-                        <tr class="checked"><td>租金</td><td>5,477.85</td><td>62</td></tr>
-                        <tr><td>物管</td><td>5,477.85</td><td>62</td></tr>
-                        <tr><td>其他</td><td>5,477.85</td><td>62</td></tr>
-                        <tr><td>其他</td><td>5,477.85</td><td>62</td></tr>
-                        <tr><td>其他</td><td>5,477.85</td><td>62</td></tr>
-                        <tr><td>其他</td><td>5,477.85</td><td>62</td></tr>
-                        <tr><td>其他</td><td>5,477.85</td><td>62</td></tr>
-                        <tr><td>其他</td><td>5,477.85</td><td>62</td></tr>
-                        <tr><td>其他</td><td>5,477.85</td><td>62</td></tr>
-                        <tr><td>其他</td><td>5,477.85</td><td>62</td></tr>
-                        <tr><td>其他</td><td>5,477.85</td><td>62</td></tr>
-                        <tr><td>其他</td><td>5,477.85</td><td>62</td></tr>
-                        <tr><td>其他</td><td>5,477.85</td><td>62</td></tr>
-                        <tr><td>其他</td><td>5,477.85</td><td>62</td></tr>
-                        <tr><td>其他</td><td>5,477.85</td><td>62</td></tr>
-                        <tr><td>其他</td><td>5,477.85</td><td>62</td></tr>
-                        <tr><td>其他</td><td>5,477.85</td><td>62</td></tr>
-                        <tr><td>其他</td><td>5,477.85</td><td>62</td></tr>
+                        <tr ng-repeat="item in records" ng-class="{'checked':item.checked}" ng-click="toggleCheckRecord(item)">
+                            <td>{{item.arrearsType}}</td>
+                            <td>{{item.arrearsAmount|number}}</td>
+                            <td>{{item.arrearsDayCount|number}}</td>
+                        </tr>
                     </tbody>
                 </table>
 
@@ -44,7 +31,7 @@
 
     <div ui-content-for="amp-right-panel">
         <div id="arrears-receive-panel">
-            <div class="merchant-name">爱学习</div>
+            <div class="merchant-name">{{merchantName}}</div>
             <div class="store-no">铺位号 B1-101</div>
             <ul class="table-header clearfix">
                 <li>欠费类型</li>
@@ -56,15 +43,6 @@
                     <div class="table-content">
                         <ul class="table-row"><li>租金</li><li>5,477.85</li></ul><!-- table-row -->
                         <ul class="table-row"><li>物管</li><li>1,983.15</li></ul><!-- table-row -->
-                        <ul class="table-row"><li>其他</li><li>0</li></ul><!-- table-row -->
-                        <ul class="table-row"><li>其他</li><li>0</li></ul><!-- table-row -->
-                        <ul class="table-row"><li>其他</li><li>0</li></ul><!-- table-row -->
-                        <ul class="table-row"><li>其他</li><li>0</li></ul><!-- table-row -->
-                        <ul class="table-row"><li>其他</li><li>0</li></ul><!-- table-row -->
-                        <ul class="table-row"><li>其他</li><li>0</li></ul><!-- table-row -->
-                        <ul class="table-row"><li>其他</li><li>0</li></ul><!-- table-row -->
-                        <ul class="table-row"><li>其他</li><li>0</li></ul><!-- table-row -->
-                        <ul class="table-row"><li>其他</li><li>0</li></ul><!-- table-row -->
                         <ul class="table-row"><li>合计</li><li>7,461.00</li></ul><!-- table-row -->
                     </div><!-- table-content -->
                 </div><!-- scrollable-content -->
@@ -77,7 +55,7 @@
 
     <div ui-content-for="mgt-analysis-menu-list-wrapper">
         <ul class="menu-item-list">
-            <li><a class="statistic-btn">统计</a></li>
+            <li><a class="statistic-btn" ng-click="showMgtAnalysisPanel()">统计</a></li>
         </ul>
     </div>
 

@@ -1,4 +1,56 @@
-ampApp.controller("merchant-sale-main-controller",["$scope","$http","$rootScope",function($scope,$http,$rootScope){
+ampApp.controller("merchant-sale-main-controller",["$scope","$http","$rootScope","$location",function($scope,$http,$rootScope,$location){
+
+    $rootScope.showBottom();
+
+    $scope.records = [];
+
+    function initializeData(result){
+        $scope.records = result;
+    }
+
+    /* ======================================== angular 注册事件 ======================================== */
+    $scope.switchTable = function(isFullYear){
+        $scope.fullYear = isFullYear;
+    };
+
+    /* table 内容收起/展开 */
+    $scope.collapseTable = function(item){
+        if(item.hasCollapseBtn){
+            item.collapsed = !item.collapsed;
+            var groupId = item.dataGroup;
+
+            $scope.records.forEach(function(itemRecord){
+                if(groupId==itemRecord.dataGroup&&!itemRecord.hasCollapseBtn){
+                    itemRecord.hide=!itemRecord.hide;
+                }
+            });
+        }
+    };
+
+    $scope.goToMerchantSaleTypeList = function(item){
+        if(item.subRecord){
+            var type = item.commercialTypeName;
+            if(type=="餐饮"){
+                type = "catering";
+            }else if(type=="配套"){
+                type = "mating";
+            }else if(type=="服装"){
+                type = "clothing";
+            }else if(type=="儿童"){
+                type = "children";
+            }else if(type=="影院"){
+                type = "cinema";
+            }else{
+                return;
+            }
+
+            var SELECT_COMMERCIAL_TYPE_FOR_SALE = "select_commercial_type_for_sale";
+            var SELECT_COMMERCIAL_TYPE_NAME_FOR_SALE = "select_commercial_type_name_for_sale";
+            globalStorage.setSessionData(SELECT_COMMERCIAL_TYPE_FOR_SALE,type);
+            globalStorage.setSessionData(SELECT_COMMERCIAL_TYPE_NAME_FOR_SALE,item.commercialTypeName);
+            $location.path("/merchant_sale_type_list");
+        }
+    };
 
     /* ======================================== 监听广播事件 ======================================== */
     $scope.$on("$destroy",function(){destroy();});
@@ -13,22 +65,15 @@ ampApp.controller("merchant-sale-main-controller",["$scope","$http","$rootScope"
         var windowHeight = $(window).height()-44-48-40;
         container.css("height",windowHeight+"px");
 
-        chartArr.push(createPieChart($(container).find(".amp-chart-1 .amp-chart-content"),[47,53],"销售占比","47.00%"));
-        chartArr.push(createPieChart($(container).find(".amp-chart-2 .amp-chart-content"),[47,53],"销售占比","47.00%"));
+        var saleRate = (16251462.38/(16251462.38+17696209.62)*100).toFixed(2);
+        var squareRate = (93/(93+117)*100).toFixed(2);
+        chartArr.push(createPieChart($(container).find(".amp-chart-1 .amp-chart-content"),[16251462.38,17696209.62],"销售占比",saleRate+"%"));
+        chartArr.push(createPieChart($(container).find(".amp-chart-2 .amp-chart-content"),[93,117],"销售占比",squareRate+"%"));
 
         pieSwiper = new Swiper(".pie-group .swiper-container", {
             pagination : '.pie-group .swiper-pagination'
         });
 
-    }
-
-    /* ======================================== 绑定事件 ======================================== */
-    function bindPageEvents(){
-        container.on("click",".record-group-sub td:first-child",function(e){
-            e.stopPropagation();
-            e.preventDefault();
-            window.location = "#/merchant_sale_type_list";
-        });
     }
 
     /* ======================================== common methods ======================================== */
@@ -79,8 +124,11 @@ ampApp.controller("merchant-sale-main-controller",["$scope","$http","$rootScope"
 
     // 初始化
     function init(){
-        initPageView();
-        bindPageEvents();
+        var url = "data/data_1/mgt_analysis/rent_analysis/merchant_sale_main_data.json";
+        $http.get(url).success(function(result){
+            initializeData(result);
+            initPageView();
+        });
     }
     init();
 }]);

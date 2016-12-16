@@ -615,12 +615,12 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
         url: "/risk_investment",
         views:{
             "header":{
-//              templateUrl:"./views/mgt_analysis/rent_analysis/merchant_sale_type_list_header.html",
+                templateUrl:"./views/riskctrl/risk_analysis_index_header.html"
 //              controller:"merchant-sale-type-list-header-controller"
             },
             "content": {
-                templateUrl: "./views/riskctrl/riskctrl_tel.html",
-                controller:"riskctrl_controller_tel"
+                templateUrl: "./views/riskctrl/risk_investment.html",
+                controller:"risk_investment_controller"
             }
         }
     });
@@ -630,12 +630,12 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
         url: "/risk_administration",
         views:{
             "header":{
-//              templateUrl:"./views/mgt_analysis/rent_analysis/merchant_sale_type_list_header.html",
+                templateUrl:"./views/riskctrl/risk_analysis_index_header.html",
 //              controller:"merchant-sale-type-list-header-controller"
             },
             "content": {
-                templateUrl: "./views/riskctrl/riskctrl_detail_tel.html",
-                controller:"ctrl-detail_tel"
+                templateUrl: "./views/riskctrl/risk_administration.html",
+                controller:"risk_administration_controller"
             }
         }
     });
