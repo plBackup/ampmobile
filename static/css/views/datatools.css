@@ -63,7 +63,6 @@
 
 
 /*rpg set*/
-
 #datatool-rpgset{}
 #datatool-rpgset .scrollable-content>div[ui-view]{position:relative;height:100%;padding-bottom:64px;}
 #datatool-rpgset .amp-block-fixed-bottom{position: absolute;width:100%;height:64px;bottom:0;left:0;padding:10px;}
@@ -83,7 +82,7 @@
 /*irrplan*/
 #datatool-irrplan .amp-tab-menu{height:40px;border-bottom:0;}
 #datatool-irrplan #irr-plan-table-wrapper{padding-top:40px;position:relative;}
-#datatool-irrplan .pin-wrapper{    position: fixed;height: 40px;  top: 126px;z-index:1999;}
+#datatool-irrplan .pin-wrapper{ position: fixed;height: 40px;  top: 126px;z-index:1999;}
 
 /*datasim*/
 #datatool-sim .amp-svg-opt{background-color:transparent;padding:10px 15px;}
@@ -113,7 +112,7 @@
 
 #datatool-shopedit .rpg-shop-edit>li label{display: block;height:20px;line-height: 20px;font-size: 12px;color:#8592a3;}
 #datatool-shopedit .rpg-shop-edit>li .input-wrapper{}
-#datatool-shopedit .td-opt{height:100%;width:100%;position: relative;line-height: 69px;  padding-top: 5px;}
+#datatool-shopedit .td-opt{height:100%;width:100%;position: relative;line-height: 69px;  padding-top: 8px;}
 
 #datatool-shopedit .td-input-wrapper input {
     width: 100%;
@@ -130,6 +129,7 @@
     text-align: left;
     padding-left: 5px;
     font-size: 14px;
+    background-color: transparent;
 }
 
 #datatool-shopedit .td-input-wrapper.number-input input{display: none;}
@@ -144,10 +144,13 @@
 
 #datatool-shopedit .td-opt>button {
     display: inline-block;
-    width: 32px;
-    height: 32px;
-    background-color: #f3f3f3;
+    position:relative;
+    width: 38px;
+    height: 38px;
+    background-color:transparent;
     border: 0;
 }
+#datatool-shopedit .td-opt>button>em{display: block;position: absolute;width:22px;height:22px;top:50%;margin-top:-11px;left:50%;margin-left:-11px;}
 #datatool-shopedit .td-input-wrapper.active input{display: block;}
 #datatool-shopedit .td-input-wrapper.active span{display: none;}
+#datatool-shopedit .amp-icon-dropdown{margin-top:-12px;}

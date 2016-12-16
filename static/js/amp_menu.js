@@ -9,23 +9,23 @@ var menu_list={
             icon:"amp-menu-noi",
             links:"noi",
             target:"#",
-            relocate:false,//点击一级目录直接跳转
+            relocate:false//点击一级目录直接跳转
         },
         {
             name:"投资",
             index:"main-1",
             icon:"amp-menu-invest",
-            links:"blank",
+            links:"simulation_calculation_list",
             target:"#",
-            relocate:false,//点击一级目录直接跳转
+            relocate:false//点击一级目录直接跳转
         },
         {
             name:"管理",
             index:"main-2",
             icon:"amp-menu-manage",
-            links:"contract_main",
-            target:"#page-frame",
-            relocate:false,//点击一级目录直接跳转
+            links:"mgt_analysis.contract_list",
+            target:"#",
+            relocate:false//点击一级目录直接跳转
 
         },
         {
@@ -35,7 +35,7 @@ var menu_list={
             links:"blank",
             target:"#page-frame",
             show_sub_menu:false,
-            relocate:false,//点击一级目录直接跳转
+            relocate:false//点击一级目录直接跳转
 
         },
         {
@@ -44,7 +44,7 @@ var menu_list={
             icon:"amp-menu-data",
             links:"datatool",
             target:"#page-frame",
-            relocate:false,//点击一级目录直接跳转
+            relocate:false//点击一级目录直接跳转
         }
     ]
 };
