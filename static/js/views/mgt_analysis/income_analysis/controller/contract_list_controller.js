@@ -32,7 +32,7 @@ ampApp.controller("contract-list-controller",["$scope","$http","$rootScope","$lo
     var container = null;
     function initPageView(){
         container = $("#contract-list");
-        var windowHeight = $(window).height()-44-48-41-10-40;
+        var windowHeight = $(window).height()-44-48-41;
         container.css("height",windowHeight+"px");
 
     }

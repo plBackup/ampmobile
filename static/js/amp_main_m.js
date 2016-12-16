@@ -606,7 +606,39 @@ ampApp.config(function($stateProvider,$urlRouterProvider) {
             }
         }
     });
-
+    
+    
+    
+    // 风控分析 - 投资
+    $stateProvider.state({
+        name:"risk_investment",
+        url: "/risk_investment",
+        views:{
+            "header":{
+//              templateUrl:"./views/mgt_analysis/rent_analysis/merchant_sale_type_list_header.html",
+//              controller:"merchant-sale-type-list-header-controller"
+            },
+            "content": {
+                templateUrl: "./views/riskctrl/riskctrl_tel.html",
+                controller:"riskctrl_controller_tel"
+            }
+        }
+    });
+      // 风控分析 - 管理
+	$stateProvider.state({
+        name:"risk_administration",
+        url: "/risk_administration",
+        views:{
+            "header":{
+//              templateUrl:"./views/mgt_analysis/rent_analysis/merchant_sale_type_list_header.html",
+//              controller:"merchant-sale-type-list-header-controller"
+            },
+            "content": {
+                templateUrl: "./views/riskctrl/riskctrl_detail_tel.html",
+                controller:"ctrl-detail_tel"
+            }
+        }
+    });
     // Loop over the state definitions and register them
     states.forEach(function(state) {
         $stateProvider.state(state);

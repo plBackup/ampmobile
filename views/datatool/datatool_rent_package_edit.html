@@ -142,7 +142,7 @@
     <div class="amp-panel-content">
         <div class="amp-select-section">
             <h5>{{rCtrl.selectTypeName}}</h5>
-            <ul class="select-menu" role="menu" >
+            <ul class="select-menu clearfix" role="menu" >
                 <li ng-class="{'active':rCtrl.isActive(menu,rCtrl.shopInfoCopy[rCtrl.selectType])}" role="presentation" class="col-xs-4"
                     ng-repeat="menu in rCtrl.form_menu[rCtrl.selectType]"><a role="menuitem" ng-click="rCtrl.setModel(rCtrl.selectType,menu)">{{menu}}</a></li>
             </ul>
@@ -150,8 +150,8 @@
     </div>
     <div class="amp-panel-footer">
         <div class="amp-panel-btn-group">
-            <a class="btn btn-grey" ng-click="rCtrl.reset(rCtrl.selectType)">重置</a>
-            <a class="btn btn-green" ng-click="rCtrl.saveSelect(rpgSelectForm.$invalid)" ng-disabled="rpgSelectForm.$invalid">确定</a>
+            <a class="btn amp-btn amp-btn-reverse btn-grey" ng-click="rCtrl.reset(rCtrl.selectType)">重置</a>
+            <a class="btn amp-btn btn-green" ng-click="rCtrl.saveSelect(rpgSelectForm.$invalid)" ng-disabled="rpgSelectForm.$invalid">确定</a>
         </div>
     </div>
     </form>

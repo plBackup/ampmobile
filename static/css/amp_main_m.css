@@ -1,5 +1,6 @@
 /*reset*/
 i,label,span,em,b{font-weight:normal;font-style: normal;}
+button,button:active,button:focus,button:hover{outline:transparent;}
 .ampApp{background-color:#fff;}
 .ampApp .navbar-app{background-color:#1a202c;border-color:#1a202c;color:#fff;}
 .ampApp .navbar-absolute-top{height:44px;min-height: 44px;z-index:1999;}
@@ -11,6 +12,8 @@ i,label,span,em,b{font-weight:normal;font-style: normal;}
 .ampApp .navbar-app .btn-navbar:active,.ampApp .navbar-app .btn:active{opacity: 1;}
 
 .sidebar-right,.sidebar-left{background-color:#fff;}
+/*right panel*/
+.amp-right-panel{position: relative;}
 /*头部nav 选择*/
 .ampApp .navbar-absolute-top .dropdown-menu{min-width:128px;background-color:#1a202c;border:0;}
 .ampApp .navbar-absolute-top .dropdown-menu .btn{height:38px;line-height: 38px;color:#fff;text-align: right;}

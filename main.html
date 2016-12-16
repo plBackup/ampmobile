@@ -83,7 +83,11 @@
     <link rel="stylesheet" href="./static/css/views/mgt_analysis/business_analysis/passenger_flow_main.css"/>
     <link rel="stylesheet" href="./static/css/views/mgt_analysis/business_analysis/passenger_flow_enrolment_header.css"/>
     <link rel="stylesheet" href="./static/css/views/mgt_analysis/business_analysis/passenger_flow_enrolment.css"/>
-
+        
+    <!-- 风控分析 -->
+    <link rel="stylesheet" href="./static/css/views/riskctrl/riskctrl_tel.css"/>
+    <link rel="stylesheet" type="text/css" href="static/css/views/riskctrl/riskctrl-detail_tel.css"/>
+    
     <script src="./static/dist/js/jquery-1.11.3.min.js"></script>
     <script src="./static/dist/js/angular.min.js"></script>
     <script src="./static/dist/js/angular-animate.min.js"></script>
@@ -166,7 +170,10 @@
     <!-- 管理分析 - 运营分析  -->
     <script src="static/js/views/mgt_analysis/business_analysis/controller/passenger_flow_main_controller.js"></script>
     <script src="static/js/views/mgt_analysis/business_analysis/controller/passenger_flow_enrolment_controller.js"></script>
-
+	
+	<!-- 风控分析 -->
+	<script src="static/js/views/riskctrl/controller/riskctrl_controller_tel.js"></script>
+	<script src="static/js/views/riskctrl/controller/riskctrl_detail_controller_tel.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body ng-app="amp" ng-controller="MainController as mCtrl" id="{{pageId||'amp'}}">
 

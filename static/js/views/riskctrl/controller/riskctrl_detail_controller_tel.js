@@ -1,5 +1,4 @@
 
-var ampApp = angular.module("ampApp", []);
 ampApp.controller("ctrl-detail_tel", ["$scope", "$http", "$rootScope", function($scope, $http, $rootScope) {
 	var  ctrl_detail_tel_module=(function($,cm){
 	var ctrl_detail_tel_module=cm;
@@ -166,7 +165,7 @@ $("#passenger .table-title li.monthly").each(function() {
 	/* ======================================== common methods ======================================== */
 
 	// 初始化
-	var url = "../../static/js/views/riskctrl/data/riskctrl_detail_data.json";
+	var url = "./static/js/views/riskctrl/data/riskctrl_detail_data.json";
 
 	function init() {
 
