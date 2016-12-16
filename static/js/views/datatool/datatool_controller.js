@@ -791,6 +791,20 @@ dataTool.controller("dataEditController",['$rootScope', '$scope','$state','Share
 
 
         /*dom */
+        //页面事件
+        $("#rent-package-edit").on("click",function(e){
+            if(!$(e.target).hasClass("number-format")){
+                $(".table td").removeClass("active");
+            }
+        });
+
+        $("#rent-package-edit").on("click","li",function(e){
+            //e.stopPropagation();
+            $("#rent-package-edit li").removeClass("active");
+            $(this).addClass("active");
+            $(this).find("input").focus();
+        });
+
         function _checkErrot($e){
             var $this=$e;
             var errorInfo="请输入正确的数据格式";
@@ -798,13 +812,13 @@ dataTool.controller("dataEditController",['$rootScope', '$scope','$state','Share
                 if(($this).hasClass("ng-invalid-number")){
                     errorInfo="请输入有效数字";
                 }
-                $this.parent(".input-wrapper").addClass("error").append("<em class='error-msg'>"+errorInfo+"</em>");
+                $this.parent(".td-input-wrapper").addClass("error").append("<em class='error-msg'>"+errorInfo+"</em>");
             }else{
                 $this.parent().removeClass("error").find("em.error-msg").remove();
             }
         };
 
-        $("#rent-package-rpanel").on("change","input",function(e){
+        $("#rent-package-edit").on("change","input",function(e){
             _checkErrot($(e.target));
         });
 

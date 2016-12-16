@@ -53,7 +53,7 @@
                 <form name="dataSimForm" novalidate>
                 <div class="" style="width:100%;">
 
-                            <div class="table-wrapper">
+                            <div class="table-wrapper" style="padding-bottom:0;">
                                 <table class="table table-no-bordered amp-table">
                                     <tbody>
                                     <tr>
@@ -66,7 +66,7 @@
                                         </td>
                                         <td>
                                             <label>套内面积:</label>
-                                            <div class="td-input-wrapper padding-r-15 text-input" >
+                                            <div class="td-input-wrapper number-input padding-r-15 text-input" >
                                                 <input type="number" placeholder="" value="" ng-model="sCtrl.shopInfo.indoorArea" readonly>
                                                 <span class="number-format">{{sCtrl.shopInfo.indoorArea|number:2}}m&sup2</span>
                                             </div>
@@ -79,7 +79,7 @@
                                                 <input type="text" value="" hidden ng-model="sCtrl.shopInfo.form"/>
 
                                                     <button class="btn btn-select" type="button" ng-Click="sCtrl.setSelect('form')">
-                                                        <em>{{sCtrl.shopInfo.form | default:"请选择"}}</em><span class="ys-icon ys-icon-dropdown"></span>
+                                                        <em>{{sCtrl.shopInfo.form | default:"请选择"}}</em><span class="amp-icon amp-icon-dropdown"></span>
                                                     </button>
 
                                             </div>
@@ -94,7 +94,7 @@
                                 <table class="table table-no-bordered amp-table">
                                     <thead>
                                     <th><span></span></th>
-                                    <th><span>租金包(元/m&sup2)/月</span></th>
+                                    <th><span>租金包（元/m&sup2/月）</span></th>
                                     <th><span>物业管理费</span></th>
                                     </thead>
                                     <tbody>
@@ -269,7 +269,7 @@
                                                 <input type="text" value="" hidden ng-model="sCtrl.shopInfo.property"/>
 
                                                     <button class="btn btn-select" type="button" ng-click="sCtrl.setSelect('property')">
-                                                        <em>{{sCtrl.shopInfo.property | default:"请选择"}}</em><span class="ys-icon ys-icon-dropdown"></span>
+                                                        <em>{{sCtrl.shopInfo.property | default:"请选择"}}</em><span class="amp-icon amp-icon-dropdown"></span>
                                                     </button>
 
                                             </div>
@@ -282,7 +282,7 @@
                                             <div class="td-input-wrapper padding-r-15 select-input" >
                                                 <input type="text" value="" hidden ng-model="sCtrl.shopInfo.payRange"/>
                                                     <button class="btn btn-select" type="button" ng-click="sCtrl.setSelect('payRange')">
-                                                        <em>{{sCtrl.shopInfo.payRange | default:"请选择"}}</em><span class="ys-icon ys-icon-dropdown"></span>
+                                                        <em>{{sCtrl.shopInfo.payRange | default:"请选择"}}</em><span class="amp-icon amp-icon-dropdown"></span>
                                                     </button>
                                             </div>
                                         </td>

@@ -1,5 +1,6 @@
 /*amp table*/
 .amp-table-wrapper-swiper{overflow: hidden;position: relative;}
+.table{table-layout: fixed;}
 .ys-amp .table, .amp-table-wrapper .table, .amp-table-wrapper-swiper .table {
     table-layout: fixed;
     margin-bottom:0;
@@ -151,12 +152,13 @@
 
 /*inputs*/
 .td-input-wrapper{position: relative;}
-.td-input-wrapper:after{display: none;width:16px;height:16px;position: absolute;top:50%;right:12px;margin-top:-8px;background-image: url(../../images/icon.png);
+.td-input-wrapper:after{display: none;width:16px;height:16px;position: absolute;top:50%;right:12px;margin-top:-8px;background-size: contain;background-position: center center;
     background-repeat:no-repeat;content:" ";}
 .td-input-wrapper.date-input input{padding-right:25px;}
-.td-input-wrapper.date-input:after{display: block;position:absolute;width:16px;height:16px;background-position:-480px -198px; }
+.td-input-wrapper.date-input:after{display: block;position:absolute;width:16px;height:16px;background-image:url(../../images/icon_calendar@2x.png); }
 
-.td-input-wrapper.select-input .dropdown-menu{margin-top: 0;background-color:#fff;border:solid 1px #dae1e7;color:#373c42;font-size:14px;    border-radius: 0;
+.td-input-wrapper.select-input .dropdown-menu,.td-input-wrapper.select-input .btn-select{
+    margin-top: 0;background-color:#fff;border:solid 1px #dae1e7;color:#373c42;font-size:14px;border-radius: 0;
 }
 
 .td-input-wrapper.select-input  .dropdown-menu>li>a{line-height: 24px;}
@@ -166,10 +168,10 @@
 
 .amp-table .td-input-wrapper input{width:100%;padding:6px 10px;line-height:20px;height:34px;border:solid 1px #dae1e7;background-color:#f3f4f8;}
 
-.amp-table .num-input input{display: none;}
-.amp-table  tr>td.active .num-input input{display: block;}
-.num-input span.number-format{display: block;width: 100%; padding: 6px 10px; line-height: 20px; height: 34px; border: solid 1px #dae1e7; background-color: #f3f4f8;}
-tr>td.active .num-input span.number-format{display: none;}
+.amp-table .number-input input,.amp-table .num-input input{display: none;}
+.amp-table  tr>td.active .number-input input,.amp-table  tr>td.active .num-input input{display: block;}
+.number-input span.number-format,.num-input span.number-format{display: block;width: 100%; padding: 6px 10px; line-height: 20px; height: 34px; border: solid 1px #dae1e7; background-color: #f3f4f8;}
+tr>td.active .number-input span.number-format,tr>td.active .num-input span.number-format{display: none;}
 
 .amp-table .dropdown-menu{right:0;left:inherit;min-width:100%;border:solid 1px #dfe5e9;}
 
@@ -228,3 +230,5 @@ tr>td span.number-format{display: block;width:100%;}
 #irr-plan .table td input.ng-invalid~span.number-format{border:solid 2px #ff3030;}
 #irr-plan .table td input.ng-invalid~span.number-format:before{display: block;position: absolute;width:24px;height:24px;top:0;right:0;content:" ";
     background-image: url(../../images/icon.png);background-repeat: no-repeat;background-position:-331px -198px;}
+
+
