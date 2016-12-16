@@ -723,7 +723,7 @@ dataTool.controller("dataEditController",['$rootScope', '$scope','$state','Share
                 return;
             }
             self.shopInfo =angular.copy(self.shopInfoCopy);
-            self.shopInfoCopy=null;
+            //self.shopInfoCopy=null;
             SharedState.turnOff("uiSidebarRight");
         };
 

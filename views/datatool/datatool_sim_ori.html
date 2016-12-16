@@ -78,13 +78,13 @@
                                             <div class="td-input-wrapper padding-r-15 select-input" >
                                                 <input type="text" value="" hidden ng-model="sCtrl.shopInfo.form"/>
                                                 <div class="dropdown">
-                                                    <button class="btn btn-select" type="button" ng-Click="sCtrl.setSelect('form')">
+                                                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
                                                         <em>{{sCtrl.shopInfo.form | default:"请选择"}}</em><span class="ys-icon ys-icon-dropdown"></span>
                                                     </button>
-                                                  <!--  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
                                                         <li ng-class="{'active':sCtrl.isActive(menu,sCtrl.shopInfo.form)}" role="presentation"
                                                             ng-repeat="menu in sCtrl.form_menu.form"><a role="menuitem" ng-click="sCtrl.setModel('form',menu)">{{menu}}</a></li>
-                                                    </ul>-->
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </td>
@@ -272,12 +272,12 @@
                                             <div class="td-input-wrapper padding-r-15 select-input" >
                                                 <input type="text" value="" hidden ng-model="sCtrl.shopInfo.property"/>
                                                 <div class="dropdown">
-                                                    <button class="btn btn-select" type="button" ng-click="sCtrl.setSelect('property')">
+                                                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
                                                         <em>{{sCtrl.shopInfo.property | default:"请选择"}}</em><span class="ys-icon ys-icon-dropdown"></span>
                                                     </button>
-                                                   <!-- <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
                                                         <li ng-class="{'active':sCtrl.isActive(menu,sCtrl.shopInfo.property)}" role="presentation" ng-repeat="menu in sCtrl.form_menu.property"><a role="menuitem" ng-click="sCtrl.setModel('property',menu)">{{menu}}</a></li>
-                                                    </ul>-->
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </td>
@@ -289,12 +289,12 @@
                                             <div class="td-input-wrapper padding-r-15 select-input" >
                                                 <input type="text" value="" hidden ng-model="sCtrl.shopInfo.payRange"/>
                                                 <div class="dropdown">
-                                                    <button class="btn btn-select" type="button" ng-click="sCtrl.setSelect('property')">
+                                                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
                                                         <em>{{sCtrl.shopInfo.payRange | default:"请选择"}}</em><span class="ys-icon ys-icon-dropdown"></span>
                                                     </button>
-                                                   <!-- <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
                                                         <li ng-class="{'active':sCtrl.isActive(menu,sCtrl.shopInfo.payRange)}" role="presentation" ng-repeat="menu in sCtrl.form_menu.payRange"><a role="menuitem" ng-click="sCtrl.setModel('payRange',menu)">{{menu}}</a></li>
-                                                    </ul>-->
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </td>
