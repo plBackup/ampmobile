@@ -149,7 +149,6 @@
 .amp-table tr>td.required{border-left:solid 2px #ff3030;}
 .amp-table tr>td.edit{}
 
-
 /*inputs*/
 .td-input-wrapper{position: relative;}
 .td-input-wrapper:after{display: none;width:16px;height:16px;position: absolute;top:50%;right:12px;margin-top:-8px;background-image: url(../../images/icon.png);

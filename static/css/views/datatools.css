@@ -86,7 +86,8 @@
 
 /*datasim*/
 #datatool-sim .amp-svg-opt{background-color:transparent;padding:10px 15px;}
-#datatool-sim .svg-floor-select li{float:left;margin-right:5px;margin-left:5px;}
+#datatool-sim .amp-svg-opt ul.svg-floor-select{text-align: center;}
+#datatool-sim .svg-floor-select li{display: inline-block;margin-right:5px;margin-left:5px;}
 
 #datatool-sim .btn-floor-select{display:block;    padding: 0;width:26px;height:26px;line-height: 24px;border-radius: 26px;background-color:#dae1e7;color:#fff;font-size: 13px;  text-align: center;}
 #datatool-sim .btn-floor-select.active{background-color: #59b46f;}
@@ -172,3 +173,4 @@
 #datatool-shopedit .amp-right-panel .amp-panel-btn-group{}
 #datatool-shopedit .amp-right-panel .amp-panel-btn-group>.btn{float:left;padding:0;margin:0;overflow:hidden;width:50%;height:48px;line-height: 48px;font-size:15px;border-radius:0;text-align: center;}
 #datatool-shopedit .amp-right-panel .amp-panel-btn-group>.btn.amp-btn-reverse{color:#373c42;background-color:#f3f4f8;}
+
