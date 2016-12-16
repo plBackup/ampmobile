@@ -1,17 +1,3 @@
-.amp-display-none {
-    display: none!important;
-}
-.ys-icon{
-	    display: inline-block;
-    position: relative;
-    top: 3.5px;
-    width: 22px;
-    height: 22px;
-    background: url(../../../images/icon_chevron_down@2x.png) no-repeat center center;
-}
-.amp-table-wrapper-swiper  .ys-table-main{padding-left: 0;}
-.amp-table-wrapper-swiper  .ys-table-main .ys-table-main table td{width: 23.33%;}
-.amp-table-wrapper-swiper  .ys-table-main .ys-table-main table td:first-child{width: 30%;}
 
 #riskctrl-detail .mgt-analysis-nav-bar{
     background-color:#1a212c;
@@ -76,20 +62,21 @@
 #riskctrl-detail .return-rate-table-tel table tr{height: 40px;}
 #riskctrl-detail .amp-table-wrapper-swiper{background: #fff;    position: relative;width: 100%;}
 #riskctrl-detail  .ys-table-fixed-top{z-index: 99; width: 100%;}
-#riskctrl-detail   .amp-table-wrapper-swiper .swiper-slide{font-size: 13px;padding-left: 12px;}
+#riskctrl-detail   .amp-table-wrapper-swiper .swiper-slide{font-size: 13px;}
 #riskctrl-detail .ys-table-fixed-top .table{table-layout: fixed;}
 #riskctrl-detail .thead-tr-sub td{font-size: 12px;}
 #riskctrl-detail  .amp-table-left{position: absolute;top: 0;left: 0;  }
 #riskctrl-detail .table{margin-bottom: 0;}
 #riskctrl-detail .amp-table-td2 td{width: 50%;}
-
-#riskctrl-detail .table-blank{top: 0;}
+#riskctrl-detail .amp-table-td3  td{width: 26%;}
+#riskctrl-detail .amp-table-td3  td:first-child{width: 48%;}
+#riskctrl-detail .table-blank{border-bottom: solid 1px #dae1e7;top: 0;}
+#riskctrl-detail .swiper-slide .table-top td{color: #737e8c;    width: 27.5%;}
+#riskctrl-detail #cost .swiper-slide .table-top td:first-child{width: 45%;}
 #riskctrl-detail table>tbody>tr.tr-collapsed {display: none;}
-#riskctrl-detail .table-top,.amp-table-data {width: 100%;}
+#riskctrl-detail .table-top,.amp-table-data {width: 100%;border-left: solid 1px #dae1e7;}
 #riskctrl-detail .tr-sub td{text-indent: 1em;}
 #riskctrl-detail .amp-table-data td{text-align: right;}
-#riskctrl-detail .amp-table-data .text-left{text-align: left;}
-#riskctrl-detail #investment  .amp-table-data .text-left{font-weight: 700;}
 #riskctrl-detail .table-top td{text-align: right;}
 #riskctrl-detail .arrow-down i {
     display: inline-block;
@@ -105,50 +92,18 @@
     background: url(../../../images/arrow_up.png) no-repeat center center;
     background-size: contain;
 }
-#riskctrl-detail #cost .amp-table tr td:first-child{text-align: left;}
-#riskctrl-detail #cost .amp-table tr:nth-child(2)  td:first-child,#riskctrl-detail #cost .amp-table tr:nth-child(3)  td:first-child,#riskctrl-detail #cost .amp-table tr:nth-child(4)  td:first-child{text-indent: 1em;}
-#riskctrl-detail #cost .amp-table tr:last-child td:nth-child(4),#riskctrl-detail #cost .amp-table tr:last-child td:nth-child(3){padding-bottom: 14px;}
+#riskctrl-detail #cost .amp-table tr:last-child td:nth-child(2),#riskctrl-detail #cost .amp-table tr:last-child td:nth-child(3){padding-bottom: 14px;}
 #riskctrl-detail #efficient .allyear td{width:33.33%;text-align: right; line-height: 40px;}
 #riskctrl-detail #efficient .amp-table tr td:first-child{text-indent: 1em;}
 #riskctrl-detail #efficient .amp-table tr:nth-child(1) td,#efficient  .amp-table-data tr:first-child td,#efficient .amp-table tr:nth-child(9) td:first-child,#investment .amp-table tr td,#passenger .amp-table tr td,#riskctrl-detail #efficient .amp-table tr:nth-child(9) td,#riskctrl-detail #salesvolume .amp-table tr:first-child th{font-weight: 700; text-indent: 0;}
 #riskctrl-detail #cost .amp-table tr:nth-child(6) td,#cost .amp-table tr:nth-child(6) th{padding-bottom: 43px;}
 #riskctrl-detail #cost .amp-table tr:first-child th,#riskctrl-detail #cost .amp-table tr:nth-child(5) th,#riskctrl-detail #cost .amp-table tr:nth-child(6) th,#riskctrl-detail #cost .amp-table tr:nth-child(7) th,#riskctrl-detail #cost .amp-table tr:first-child td,#riskctrl-detail #cost .amp-table tr:nth-child(5) td,#riskctrl-detail #cost .amp-table tr:nth-child(6) td,#riskctrl-detail #cost .amp-table tr:nth-child(7) td{font-weight: 700;}
-#riskctrl-detail #salesvolume .amp-table-data tr td:first-child{text-align: left;text-indent: 1em;}
-#riskctrl-detail #salesvolume .amp-table-data tr:first-child td:first-child{text-indent: 0;}
-#riskctrl-detail #collectionrate .amp-table-left tr td:first-child,#collectionrate .amp-table-data tr:first-child td,#salesvolume .amp-table-data tr:first-child td,#collectionrate .amp-table-data tr:last-child td:first-child{font-weight: 700;}
+
+#riskctrl-detail #collectionrate .amp-table-left tr td:first-child,#collectionrate .amp-table-data tr:first-child td,#salesvolume .amp-table-data tr:first-child td{font-weight: 700;}
 #riskctrl-detail #cost .risk-table-tel .amp-table-wrapper-swiper{padding-bottom: 20px;}
-<<<<<<< .mine
 #riskctrl-detail #cost .amp-table tr:last-child td:first-child:after{ content: "（每月每平方）"; display: block;  line-height: 14px; bottom: 0; font-size: 12px; color: #737e8c;}
 #riskctrl-detail #investment .amp-table tr:first-child td:first-child::after{ content: "（m²）"; display: inline-block;  line-height: 14px; bottom: 0; font-size: 12px; color: #737e8c;}
 #riskctrl-detail #investment .amp-table tr:nth-child(3) td:first-child::after{ content: "（m²）"; display: inline-block;  line-height: 14px; bottom: 0; font-size: 12px; color: #737e8c;}
 
-=======
-#riskctrl-detail #cost .amp-table tr:last-child td:nth-child(2):after{ content: "（每月每平方）"; display: block;  line-height: 14px; bottom: 0; font-size: 12px; color: #737e8c;}
-#riskctrl-detail #investment .amp-table-data  tr:first-child td:first-child::after{ content: "（m²）"; display: inline-block;  line-height: 14px; bottom: 0; font-size: 12px; color: #737e8c;}
-#riskctrl-detail #investment .amp-table-data  tr:nth-child(3) td:first-child::after{ content: "（m²）"; display: inline-block;  line-height: 14px; bottom: 0 font-size: 12px; color: #737e8c;}
-#efficient .amp-table-data  td:first-child {text-align: left;}
-#efficient .amp-table-data tr td{text-indent: 1em;}
-#efficient .amp-table-data tr:nth-child(9) td:first-child, #efficient .amp-table-data tr:nth-child(1) td:first-child{font-weight: 700; text-indent: 0;}
->>>>>>> .r4224
 #riskctrl-detail  .amp-table>tfoot>tr>td{border: 0;}
-<<<<<<< .mine
 #riskctrl-detail  .amp-table>tbody>tr>th,#riskctrl-detail .amp-table>tbody>tr>td,#riskctrl-detail .amp-table>tfoot>tr>th,#riskctrl-detail .amp-table>tfoot>tr>td{border: 0;padding: 0; height: 40px;font-size: 13px;}
-=======
-#riskctrl-detail  .amp-table>tbody>tr>th, .amp-table>tbody>tr>td, .amp-table>tfoot>tr>th, #riskctrl-detail .amp-table>tfoot>tr>td{border: 0;padding: 0; height: 40px;font-size: 13px;}
-#riskctrl-detail #cost .amp-table tr:first-child td:first-child:after,#salesvolume .amp-table-data tr:first-child td:first-child:after,#riskctrl-detail #efficient .amp-table-data  tr:first-child td:first-child:after,#riskctrl-detail #efficient .amp-table-data  tr:nth-child(9) td:first-child:after{
-	
-	content: "";
-	display: inline-block;
-	    width: 18px;
-    height: 18px;
-	background: url(../../../images/icon_chevron_down@2x.png) no-repeat center center;
-	    background-size: contain;
-    margin-left: 8px;
-    vertical-align: -5px;
-}
-#riskctrl-detail .table-top-wrapper{padding-right: 15px;border-bottom: solid 1px #dae1e7;   width: 100%; } 
-#riskctrl-detail #salesvolume .amp-table-data td{width: 33.33%;}
-#riskctrl-detail #passenger .amp-table-data  tr td:first-child{font-weight: 700; text-align: left;}
-#riskctrl-detail .table-top td {font-size: 12px ; color: #737e8c;}
-#riskctrl-detail .amp-table-data td:first-child{border-right: solid 1px #dae1e7;;}
->>>>>>> .r4224

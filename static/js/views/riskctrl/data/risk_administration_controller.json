@@ -37,24 +37,32 @@
 		"onYearBasis": [
 			{
 				"name": "租金收入",
+				"dataGroup": 1,
+				"hasCollapseBtn": true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}, {
 				"name": "主力店",
+				"dataGroup": 1,
+				"hide": true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}, {
 				"name": "非主力店",
+				"hide": true,
+				"dataGroup": 1,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}, {
 				"name": "其中扣点收入",
+				"hide": true,
+				"dataGroup": 1,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -85,24 +93,32 @@
 		"LinkRelativeRatio": [
 			{
 				"name": "租金收入",
-				"ActualMonth": "222",
+				"dataGroup": 1,
+				"hasCollapseBtn": true,
+				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}, {
 				"name": "主力店",
+				"dataGroup": 1,
+				"hide": true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}, {
 				"name": "非主力店",
+				"hide": true,
+				"dataGroup": 1,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}, {
 				"name": "其中扣点收入",
+				"hide": true,
+				"dataGroup": 1,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -133,24 +149,32 @@
 		"Budget": [
 			{
 				"name": "租金收入",
-				"ActualMonth": "333",
-				"ReferMonth": "333",
+				"dataGroup": 1,
+				"hasCollapseBtn": true,
+				"ActualMonth": "111",
+				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}, {
 				"name": "主力店",
+				"dataGroup": 1,
+				"hide": true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}, {
 				"name": "非主力店",
+				"hide": true,
+				"dataGroup": 1,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}, {
 				"name": "其中扣点收入",
+				"hide": true,
+				"dataGroup": 1,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -172,7 +196,7 @@
 			}
 			, {
 				"name": "经营费用",
-				"ActualMonth": "111",
+				"ActualMonth": "2",
 				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
@@ -230,24 +254,32 @@
 		"onYearBasis": [
 			{
 				"name": "销售额",
+				"dataGroup": 1,
+				"hasCollapseBtn": true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}, {
 				"name": "主力店",
+				"dataGroup": 1,
+				"hide": true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}, {
 				"name": "非主力店",
+				"dataGroup": 1,
+				"hide": true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}, {
 				"name": "其中扣点商户",
+				"dataGroup": 1,
+				"hide": true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -257,24 +289,32 @@
 		"LinkRelativeRatio": [
 			{
 				"name": "销售额",
+				"dataGroup": 1,
+				"hasCollapseBtn": true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}, {
 				"name": "主力店",
+				"dataGroup": 1,
+				"hide": true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}, {
 				"name": "非主力店",
+				"dataGroup": 1,
+				"hide": true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}, {
 				"name": "其中扣点商户",
+				"dataGroup": 1,
+				"hide": true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -284,24 +324,32 @@
 		"Budget": [
 			{
 				"name": "销售额",
+				"dataGroup": 1,
+				"hasCollapseBtn": true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}, {
 				"name": "主力店",
+				"dataGroup": 1,
+				"hide": true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}, {
 				"name": "非主力店",
+				"dataGroup": 1,
+				"hide": true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}, {
 				"name": "其中扣点商户",
+				"dataGroup": 1,
+				"hide": true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -309,28 +357,36 @@
 			}
 		]
 	},
-"efficient": {
+	"efficient": {
 		"onYearBasis": [
 			{
 				"name": "平效",
+				"dataGroup": 1,
+				"hasCollapseBtn": true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}, {
 				"name": "主力店",
+				"hide": true,
+				"dataGroup": 1,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}, {
 				"name": "非主力店",
+				"hide": true,
+				"dataGroup": 1,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}, {
 				"name": "超市",
+				"hide": true,
+				"dataGroup": 1,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -338,6 +394,8 @@
 			}
 			, {
 				"name": "影院",
+				"hide": true,
+				"dataGroup": 1,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -345,6 +403,8 @@
 			}
 			, {
 				"name": "儿童",
+				"hide": true,
+				"dataGroup": 1,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -352,6 +412,8 @@
 			}
 			, {
 				"name": "餐饮",
+				"hide": true,
+				"dataGroup": 1,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -359,6 +421,8 @@
 			}
 			, {
 				"name": "配套",
+				"hide": true,
+				"dataGroup": 1,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -366,6 +430,8 @@
 			}
 			, {
 				"name": "租售比",
+				"dataGroup": 2,
+				"hasCollapseBtn": true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -373,18 +439,24 @@
 			}
 			, {
 				"name": "主力店",
+				"hide": true,
+				"dataGroup": 2,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}, {
 				"name": "非主力店",
+				"hide": true,
+				"dataGroup": 2,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}, {
 				"name": "超市",
+				"hide": true,
+				"dataGroup": 2,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -392,6 +464,8 @@
 			}
 			, {
 				"name": "影院",
+				"hide": true,
+				"dataGroup": 2,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -399,6 +473,8 @@
 			}
 			, {
 				"name": "儿童",
+				"hide": true,
+				"dataGroup": 2,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -406,6 +482,8 @@
 			}
 			, {
 				"name": "餐饮",
+				"hide": true,
+				"dataGroup": 2,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -413,33 +491,43 @@
 			}
 			, {
 				"name": "配套",
+				"hide": true,
+				"dataGroup": 2,
 				"ActualMonth": "1",
 				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}
 		],
-		"LinkRelativeRatio":[
+		"LinkRelativeRatio": [
 			{
 				"name": "平效",
+				"dataGroup": 1,
+				"hasCollapseBtn": true,
 				"ActualMonth": "111",
-				"ReferMonth": "111",
+				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}, {
 				"name": "主力店",
+				"hide": true,
+				"dataGroup": 1,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}, {
 				"name": "非主力店",
+				"hide": true,
+				"dataGroup": 1,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}, {
 				"name": "超市",
+				"hide": true,
+				"dataGroup": 1,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -447,6 +535,8 @@
 			}
 			, {
 				"name": "影院",
+				"hide": true,
+				"dataGroup": 1,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -454,6 +544,8 @@
 			}
 			, {
 				"name": "儿童",
+				"hide": true,
+				"dataGroup": 1,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -461,6 +553,8 @@
 			}
 			, {
 				"name": "餐饮",
+				"hide": true,
+				"dataGroup": 1,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -468,6 +562,8 @@
 			}
 			, {
 				"name": "配套",
+				"hide": true,
+				"dataGroup": 1,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -475,6 +571,8 @@
 			}
 			, {
 				"name": "租售比",
+				"dataGroup": 2,
+				"hasCollapseBtn": true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -482,18 +580,24 @@
 			}
 			, {
 				"name": "主力店",
+				"hide": true,
+				"dataGroup": 2,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}, {
 				"name": "非主力店",
+				"hide": true,
+				"dataGroup": 2,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}, {
 				"name": "超市",
+				"hide": true,
+				"dataGroup": 2,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -501,6 +605,8 @@
 			}
 			, {
 				"name": "影院",
+				"hide": true,
+				"dataGroup": 2,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -508,6 +614,8 @@
 			}
 			, {
 				"name": "儿童",
+				"hide": true,
+				"dataGroup": 2,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -515,6 +623,8 @@
 			}
 			, {
 				"name": "餐饮",
+				"hide": true,
+				"dataGroup": 2,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -522,7 +632,9 @@
 			}
 			, {
 				"name": "配套",
-				"ActualMonth": "111",
+				"hide": true,
+				"dataGroup": 2,
+				"ActualMonth": "1",
 				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
@@ -531,24 +643,32 @@
 		"Budget": [
 			{
 				"name": "平效",
+				"dataGroup": 1,
+				"hasCollapseBtn": true,
 				"ActualMonth": "111",
-				"ReferMonth": "111",
+				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}, {
 				"name": "主力店",
+				"hide": true,
+				"dataGroup": 1,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}, {
 				"name": "非主力店",
+				"hide": true,
+				"dataGroup": 1,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}, {
 				"name": "超市",
+				"hide": true,
+				"dataGroup": 1,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -556,6 +676,8 @@
 			}
 			, {
 				"name": "影院",
+				"hide": true,
+				"dataGroup": 1,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -563,6 +685,8 @@
 			}
 			, {
 				"name": "儿童",
+				"hide": true,
+				"dataGroup": 1,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -570,6 +694,8 @@
 			}
 			, {
 				"name": "餐饮",
+				"hide": true,
+				"dataGroup": 1,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -577,6 +703,8 @@
 			}
 			, {
 				"name": "配套",
+				"hide": true,
+				"dataGroup": 1,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -584,6 +712,8 @@
 			}
 			, {
 				"name": "租售比",
+				"dataGroup": 2,
+				"hasCollapseBtn": true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -591,18 +721,24 @@
 			}
 			, {
 				"name": "主力店",
+				"hide": true,
+				"dataGroup": 2,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}, {
 				"name": "非主力店",
+				"hide": true,
+				"dataGroup": 2,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}, {
 				"name": "超市",
+				"hide": true,
+				"dataGroup": 2,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -610,6 +746,8 @@
 			}
 			, {
 				"name": "影院",
+				"hide": true,
+				"dataGroup": 2,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -617,6 +755,8 @@
 			}
 			, {
 				"name": "儿童",
+				"hide": true,
+				"dataGroup": 2,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -624,6 +764,8 @@
 			}
 			, {
 				"name": "餐饮",
+				"hide": true,
+				"dataGroup": 2,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -631,14 +773,16 @@
 			}
 			, {
 				"name": "配套",
-				"ActualMonth": "111",
+				"hide": true,
+				"dataGroup": 2,
+				"ActualMonth": "1",
 				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}
 		]
 	},
-		"investment": {
+	"investment": {
 		"onYearBasis": [
 			{
 				"name": "面积",
@@ -660,7 +804,7 @@
 				"ReferYear": "343"
 			}
 		],
-		"LinkRelativeRatio":  [
+		"LinkRelativeRatio": [
 			{
 				"name": "面积",
 				"ActualMonth": "111",
@@ -681,7 +825,7 @@
 				"ReferYear": "343"
 			}
 		],
-		"Budget":  [
+		"Budget": [
 			{
 				"name": "面积",
 				"ActualMonth": "111",
@@ -703,7 +847,7 @@
 			}
 		]
 	},
-		"passenger": {
+	"passenger": {
 		"onYearBasis": [
 			{
 				"name": "客流",

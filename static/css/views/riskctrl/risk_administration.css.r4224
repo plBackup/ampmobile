@@ -108,7 +108,7 @@
 #riskctrl-detail #cost .amp-table tr td:first-child{text-align: left;}
 #riskctrl-detail #cost .amp-table tr:nth-child(2)  td:first-child,#riskctrl-detail #cost .amp-table tr:nth-child(3)  td:first-child,#riskctrl-detail #cost .amp-table tr:nth-child(4)  td:first-child{text-indent: 1em;}
 #riskctrl-detail #cost .amp-table tr:last-child td:nth-child(4),#riskctrl-detail #cost .amp-table tr:last-child td:nth-child(3){padding-bottom: 14px;}
-#riskctrl-detail #efficient .allyear td{width:33.33%;text-align: right; line-height: 40px;}
+#riskctrl-detail #efficient .allyear td{33.33%;text-align: right; line-height: 40px;}
 #riskctrl-detail #efficient .amp-table tr td:first-child{text-indent: 1em;}
 #riskctrl-detail #efficient .amp-table tr:nth-child(1) td,#efficient  .amp-table-data tr:first-child td,#efficient .amp-table tr:nth-child(9) td:first-child,#investment .amp-table tr td,#passenger .amp-table tr td,#riskctrl-detail #efficient .amp-table tr:nth-child(9) td,#riskctrl-detail #salesvolume .amp-table tr:first-child th{font-weight: 700; text-indent: 0;}
 #riskctrl-detail #cost .amp-table tr:nth-child(6) td,#cost .amp-table tr:nth-child(6) th{padding-bottom: 43px;}
@@ -117,23 +117,13 @@
 #riskctrl-detail #salesvolume .amp-table-data tr:first-child td:first-child{text-indent: 0;}
 #riskctrl-detail #collectionrate .amp-table-left tr td:first-child,#collectionrate .amp-table-data tr:first-child td,#salesvolume .amp-table-data tr:first-child td,#collectionrate .amp-table-data tr:last-child td:first-child{font-weight: 700;}
 #riskctrl-detail #cost .risk-table-tel .amp-table-wrapper-swiper{padding-bottom: 20px;}
-<<<<<<< .mine
-#riskctrl-detail #cost .amp-table tr:last-child td:first-child:after{ content: "（每月每平方）"; display: block;  line-height: 14px; bottom: 0; font-size: 12px; color: #737e8c;}
-#riskctrl-detail #investment .amp-table tr:first-child td:first-child::after{ content: "（m²）"; display: inline-block;  line-height: 14px; bottom: 0; font-size: 12px; color: #737e8c;}
-#riskctrl-detail #investment .amp-table tr:nth-child(3) td:first-child::after{ content: "（m²）"; display: inline-block;  line-height: 14px; bottom: 0; font-size: 12px; color: #737e8c;}
-
-=======
 #riskctrl-detail #cost .amp-table tr:last-child td:nth-child(2):after{ content: "（每月每平方）"; display: block;  line-height: 14px; bottom: 0; font-size: 12px; color: #737e8c;}
 #riskctrl-detail #investment .amp-table-data  tr:first-child td:first-child::after{ content: "（m²）"; display: inline-block;  line-height: 14px; bottom: 0; font-size: 12px; color: #737e8c;}
 #riskctrl-detail #investment .amp-table-data  tr:nth-child(3) td:first-child::after{ content: "（m²）"; display: inline-block;  line-height: 14px; bottom: 0 font-size: 12px; color: #737e8c;}
 #efficient .amp-table-data  td:first-child {text-align: left;}
 #efficient .amp-table-data tr td{text-indent: 1em;}
 #efficient .amp-table-data tr:nth-child(9) td:first-child, #efficient .amp-table-data tr:nth-child(1) td:first-child{font-weight: 700; text-indent: 0;}
->>>>>>> .r4224
 #riskctrl-detail  .amp-table>tfoot>tr>td{border: 0;}
-<<<<<<< .mine
-#riskctrl-detail  .amp-table>tbody>tr>th,#riskctrl-detail .amp-table>tbody>tr>td,#riskctrl-detail .amp-table>tfoot>tr>th,#riskctrl-detail .amp-table>tfoot>tr>td{border: 0;padding: 0; height: 40px;font-size: 13px;}
-=======
 #riskctrl-detail  .amp-table>tbody>tr>th, .amp-table>tbody>tr>td, .amp-table>tfoot>tr>th, #riskctrl-detail .amp-table>tfoot>tr>td{border: 0;padding: 0; height: 40px;font-size: 13px;}
 #riskctrl-detail #cost .amp-table tr:first-child td:first-child:after,#salesvolume .amp-table-data tr:first-child td:first-child:after,#riskctrl-detail #efficient .amp-table-data  tr:first-child td:first-child:after,#riskctrl-detail #efficient .amp-table-data  tr:nth-child(9) td:first-child:after{
 	
@@ -151,4 +141,3 @@
 #riskctrl-detail #passenger .amp-table-data  tr td:first-child{font-weight: 700; text-align: left;}
 #riskctrl-detail .table-top td {font-size: 12px ; color: #737e8c;}
 #riskctrl-detail .amp-table-data td:first-child{border-right: solid 1px #dae1e7;;}
->>>>>>> .r4224

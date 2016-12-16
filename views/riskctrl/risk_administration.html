@@ -2,8 +2,7 @@
     <ul class="mgt-analysis-nav-bar clearfix">
         <li><a   href="#/risk_investment">投资</a></li>
         <li><a class="riskctrl_active"  href="javascript:void(0)">管理</a></li>
-    </ul>
-    
+    </ul>  
 	<div class="scrollable">
 		<div class="scrollable-content section">
 		<div class="amp-content-header">       
@@ -38,8 +37,8 @@
 	 				</div>
 	 				<div class="risk-table-tel">
 	 				<div class="amp-table-wrapper-swiper">
-	           		<div  style="padding-left:125px;">
-			                <div class="table-blank amp-table-left" style="padding-left:125px;">
+	           		<div>
+			                <div class="table-blank amp-table-left" style="">
 			                    <table style="width:100%; ">
 			                        <thead>
 			                        <tr style="">
@@ -50,11 +49,18 @@
 			                </div>
 			                <div class="swiper-container">
 			                    <div class="swiper-wrapper ">
-			                        <div class="swiper-slide " style="padding-right: 15px;    width: 100%; border-bottom: solid 1px #dae1e7;">
+			                        <div class="swiper-slide table-top-wrapper" >
 			                            <table class="table-top">	
+				                            	<colgroup>
+					                            <col width="32%">
+					                            <col width="32%">
+					                            <col width="18%">
+					                            <col width="18%">
+					                       	 </colgroup>
 			                                <tr  >
+			                                	<td></td>
 			                                    <td>实际</td>
-			                                    <td>预算</td>
+			                                    <td>参考</td>
 			                                    <td>差异额</td>
 			                                </tr>
 			                            </table>
@@ -62,44 +68,20 @@
 			                    </div>         
 			                </div>
 			            </div>
-		            <div class="ys-table-main" style="padding-left:125px;">
-		                <div class="amp-table-left" style="padding-left:125px;padding-left: 12px;">
-		                    <table class="amp-table" style="width:100%;">
-		                        <tbody>
-		                        <tr class="tr-main">
-		                            <th>租金收入<!--<em class="ys-icon icon-menu-down"></em>--></th>
-		                        </tr>
-		                        <tr class="tr-sub">
-		                            <td>主力店</td>
-		                        </tr>
-		                        <tr class="tr-sub">
-		                            <td>非主力店</td>
-		                        </tr>
-		                        <tr class="tr-sub">
-		                            <td>其中扣点收入</td>
-		                        </tr>
-		
-		                        <tr class="tr-main tr-init-collapse">
-		                            <th>物业管理费</th>
-		                        </tr>
-		                        <tr class="tr-main tr-init-collapse">
-		                            <th>多经</th>
-		                        </tr>
-		                       
-		                        <tr class="tr-main tr-init-collapse">
-		                            <th>经营费用</th>
-		                        </tr>
-		                        <!-- end -->
-		                        </tbody>
-		                        
-		                    </table>
-		                </div>		
-		                <div class="swiper-container" style="width:100%; padding-right: 15px;">
+		            <div class="ys-table-main" style="">	
+		                <div class="swiper-container" style="width:100%; padding-right: 15px;" >
 		                    <div class="swiper-wrapper">
 		                        <div class="swiper-slide">
-		                            <table   class="amp-table amp-table-data amp-table-td3">
+		                            <table   class="amp-table amp-table-data">
+		                            	<colgroup>
+				                            <col width="32%">
+				                            <col width="32%">
+				                            <col width="18%">
+				                            <col width="18%">
+				                       	 </colgroup>
 		                                <tbody>
-		                                	<tr ng-repeat="item in cost[costType]" >
+		                                	<tr  ng-click="collapseTable(item)"  ng-class="{'record-group':item.hasCollapseBtn,'amp-display-none':item.hide,'collapsed':item.collapsed}" data-group="{{item.dataGroup}}"    ng-repeat="item in cost[costType]" >
+				  								<td >{{item.name}}</td>
 				  								<td ng-class='setStyleIcon(item.ActualMonth,item.ReferMonth)'>
 													<div ng-if="!allyear_cost">{{item.ActualMonth|number:2}} <i></i></div>
 													<div ng-if="allyear_cost">{{item.ActualYear|number:2}} <i></i></div>
@@ -113,7 +95,6 @@
 													<div ng-if="allyear_cost">{{(item.ActualYear-item.ReferYear)|number:2}}</div>
 				  								</td>
 		                                	</tr>
-		                              
 		                                </tbody>
 		                            </table>
 		                        </div>
@@ -141,8 +122,8 @@
 	 				</div>
 	 				<div class="risk-table-tel">
 	 				<div class="amp-table-wrapper-swiper">
-	           		<div  style="padding-left:125px;">
-			                <div class="table-blank amp-table-left" style="padding-left:125px;;">
+	           		<div >
+			                <div class="table-blank amp-table-left">
 			                    <table style="width:100%; ">
 			                        <thead>
 			                        <tr style="">
@@ -153,34 +134,37 @@
 			                </div>
 			                <div class="swiper-container">
 			                    <div class="swiper-wrapper ">
-			                        <div class="swiper-slide " style="padding-right: 15px;    width: 100%; border-bottom: solid 1px #dae1e7;">
+			                        <div class="swiper-slide  table-top-wrapper" >
 			                            <table class="table-top">	
+			                            	<colgroup>
+				                            <col width="33.33%">
+				                            <col width="33.33%">
+				                             <col width="33.33%">
+				                       	 </colgroup>
 			                                <tr  >
+			                                	<td></td>
 			                                    <td>实际</td>
-			                                    <td>预算</td>
+			                                    <td>参考</td>
 			                                </tr>
 			                            </table>
 			                        </div>
 			                    </div>         
 			                </div>
 			            </div>
-		            <div class="ys-table-main" style="padding-left:125px;">
-		                <div class="amp-table-left" style="padding-left:125px;padding-left: 12px;">
-		                    <table class="amp-table" style="width:100%;">
-		                        <tbody>
-		                      		<tr ng-repeat="item in collectionrate[collectType]">
-		                      			<td class=" text-left">{{item.name}}</td>
-		                      		</tr>
-		                        </tbody>
-		                        
-		                    </table>
-		                </div>
-		                <div style="width:100%; padding-right: 15px;" id="noi-main-table">
+		            <div class="ys-table-main" style="padding-left:">
+		           
+		                <div style="width:100%; padding-right: 15px; padding-left: 12px;" >
 		                    <div >
 		                        <div>
-		                            <table  class="amp-table-data amp-table-td2">
+		                            <table  class="amp-table-data ">
+		                            	<colgroup>
+				                            <col width="33.33%">
+				                            <col width="33.33%">
+				                             <col width="33.33%">
+				                       	 </colgroup>
 		                                <tbody>
 		                                	<tr ng-repeat="item in collectionrate[collectType]" >
+		                                		<td class=" text-left">{{item.name}}</td>
 				  								<td  ng-class='setStyleIcon(item.ActualMonth,item.ReferMonth)'>
 													<div ng-if="!allyear_collectionrate">{{item.ActualMonth}} <i></i></div>
 													<div ng-if="allyear_collectionrate">{{item.ActualYear}} <i></i></div>
@@ -214,8 +198,8 @@
 	 				</div>
 	 				<div class="risk-table-tel">
 	 				<div class="amp-table-wrapper-swiper">
-	           			 <div  style="padding-left:125px;">
-			                <div class="table-blank amp-table-left" style="padding-left:125px;;">
+	           			 <div>
+			                <div class="table-blank amp-table-left">
 			                    <table style="width:100%; ">
 			                        <thead>
 			                        <tr style="">
@@ -226,44 +210,38 @@
 			                </div>
 			                <div class="swiper-container">
 			                    <div class="swiper-wrapper ">
-			                        <div class="swiper-slide " style="padding-right: 15px;    width: 100%; border-bottom: solid 1px #dae1e7;">
-			                            <table class="table-top">	
+			                        <div class="swiper-slide table-top-wrapper" >
+			                            <table class="table-top">
+			                            	<colgroup>
+				                            <col width="33.33%">
+				                            <col width="33.33%">
+				                             <col width="33.33%">
+				                       	 </colgroup>
+			                            	
 			                                <tr  >
-			                                    <td>实际</td>
-			                                    <td>预算</td>
+			                                	<td></td>
+			                                    <td ">实际</td>
+			                                    <td>参考</td>
 			                                </tr>
 			                            </table>
 			                        </div>
 			                    </div>         
 			                </div>
 			            </div>
-		            <div class="ys-table-main" style="padding-left:125px;">
-		                <div class="amp-table-left" style="padding-left:125px;padding-left: 12px;">
-		                    <table class="amp-table" style="width:100%;">
-		                        <tbody>
-		                        <tr class="tr-main">
-		                            <th>销售额<!--<em class="ys-icon icon-menu-down"></em>--></th>
-		                        </tr>
-		                        <tr class="tr-sub">
-		                            <td>主力店</td>
-		                        </tr>
-		                        <tr class="tr-sub">
-		                            <td>非主力店</td>
-		                        </tr>
-		                        <tr class="tr-sub">
-		                            <td>其中扣点商户</td>
-		                        </tr>
-		                        </tbody>
-		                    </table>
-		                </div>
-		
-		                <div class="swiper-container" style="width:100%; padding-right: 15px;" id="noi-main-table">
+		            <div class="ys-table-main" >
+		            
+		                <div class="swiper-container" style="width:100%;  " >
 		                    <div class="swiper-wrapper">
-		                        <div class="swiper-slide">
-		                            <table   class="amp-table amp-table-data amp-table-td2">
-		                          
+		                        <div class="swiper-slide table-top-wrapper">
+		                            <table   class="amp-table amp-table-data">
+		                         		 <colgroup>
+				                            <col width="33.33%">
+				                            <col width="33.33%">
+				                             <col width="33.33%">
+				                       	 </colgroup>
 		                                <tbody>
-		                                	<tr ng-repeat="item in salesvolume[saleType]" >
+		                                	<tr  ng-click="collapseTable(item)"  ng-class="{'record-group':item.hasCollapseBtn,'amp-display-none':item.hide,'collapsed':item.collapsed}" data-group="{{item.dataGroup}}"  ng-repeat="item in salesvolume[saleType]" >
+				  								<td>{{item.name}}</td>
 				  								<td  ng-class='setStyleIcon(item.ActualMonth,item.ReferMonth)'>
 													<div ng-if="!allyear_salesvolume">{{item.ActualMonth}} <i></i></div>
 													<div ng-if="allyear_salesvolume">{{item.ActualYear}} <i></i></div>
@@ -301,8 +279,8 @@
 	 				</div>
 	 				<div class="risk-table-tel">
 	 				<div class="amp-table-wrapper-swiper">
-	           		<div  style="padding-left:125px;">
-			                <div class="table-blank amp-table-left" style="padding-left:125px;;">
+	           		<div  style="">
+			                <div class="table-blank amp-table-left" >
 			                    <table style="width:100%; ">
 			                        <thead>
 			                        <tr style="">
@@ -313,35 +291,37 @@
 			                </div>
 			                <div class="swiper-container">
 			                    <div class="swiper-wrapper ">
-			                        <div class="swiper-slide " style="padding-right: 15px;    width: 100%; border-bottom: solid 1px #dae1e7;">
+			                        <div class="swiper-slide table-top-wrapper">
 			                            <table class="table-top">	
+			                            	<colgroup>
+				                            <col width="33.33%">
+				                            <col width="33.33%">
+				                             <col width="33.33%">
+				                       	 </colgroup>
 			                                <tr  >
+			                                	<td></td>
 			                                    <td>实际</td>
-			                                    <td>预算</td>
+			                                    <td>参考</td>
 			                                </tr>
 			                            </table>
 			                        </div>
 			                    </div>         
 			                </div>
 			            </div>
-		            <div class="ys-table-main" style="padding-left:125px;">
-		                <div class="amp-table-left" style="padding-left:125px;padding-left: 12px;">
-		                    <table class="amp-table" style="width:100%;">
-		                        <tbody>
-		                      		<tr ng-repeat="item in efficient[efficientType]">
-									<td class=" text-left">{{item.name}}</td>
-	  								
-								</tr>
-		                        </tbody>
-		                        
-		                    </table>
-		                </div>
-		                <div style="width:100%; padding-right: 15px;" id="noi-main-table">
+		            <div class="ys-table-main" >
+		                <div style="width:100%; padding-right: 15px; padding-left: 12px;" >
 		                    <div >
 		                        <div>
-		                            <table  class="amp-table-data amp-table-td2">
+		                            <table  class="amp-table-data ">
+		                            	<colgroup>
+				                            <col width="33.33%">
+				                            <col width="33.33%">
+				                             <col width="33.33%">
+				                       	 </colgroup>
 		                                <tbody>
-		                                	<tr ng-repeat="item in efficient[efficientType]" >
+		                                	<tr  ng-click="collapseTable(item)"  ng-class="{'record-group':item.hasCollapseBtn,'amp-display-none':item.hide,'collapsed':item.collapsed}" data-group="{{item.dataGroup}}"      ng-repeat="item in efficient[efficientType]" >
+		                                		<td class=" text-left">{{item.name}}</td>
+		                                		
 	  											<td  ng-class='setStyleIcon(item.ActualMonth,item.ReferMonth)'>
 													<div ng-if="!allyear_efficient">{{item.ActualMonth}} <i></i></div>
 													<div ng-if="allyear_efficient">{{item.ActualYear}} <i></i></div>
@@ -378,8 +358,8 @@
 	 				</div>
 	 				<div class="risk-table-tel">
 	 				<div class="amp-table-wrapper-swiper">
-	           		<div  style="padding-left:125px;">
-			                <div class="table-blank amp-table-left" style="padding-left:125px;;">
+	           		<div >
+			                <div class="table-blank amp-table-left" style="padding-left: ;">
 			                    <table style="width:100%; ">
 			                        <thead>
 			                        <tr style="">
@@ -389,36 +369,39 @@
 			                    </table>
 			                </div>
 			                <div class="swiper-container">
-			                    <div class="swiper-wrapper ">
-			                        <div class="swiper-slide " style="padding-right: 15px;    width: 100%; border-bottom: solid 1px #dae1e7;">
-			                            <table class="table-top">	
+			                    <div class="swiper-wrapper">
+			                        <div class="swiper-slide table-top-wrapper">
+			                            <table class="table-top">
+			                            	<colgroup>
+				                            <col width="33.33%">
+				                            <col width="33.33%">
+				                             <col width="33.33%">
+				                       	 </colgroup>
 			                                <tr  >
+			                                	<td></td>
 			                                    <td>实际</td>
-			                                    <td>预算</td>
+			                                    <td>参考</td>
 			                                </tr>
 			                            </table>
 			                        </div>
 			                    </div>         
 			                </div>
 			            </div>
-		            <div class="ys-table-main" style="padding-left:125px;">
-		                <div class="amp-table-left" style="padding-left:125px;padding-left: 12px;">
-		                    <table class="amp-table" style="width:100%;">
-		                        <tbody>
-		                      		 <tr ng-repeat="item in investment[investmentType]" >
-									<td class=" text-left">{{item.name}}</td>
-	  								
-								</tr>
-		                        </tbody>
-		                        
-		                    </table>
-		                </div>
-		                <div style="width:100%; padding-right: 15px;" id="noi-main-table">
-		                    <div >
+		            <div class="ys-table-main" >
+		            
+		                <div >
+		                    <div style="padding-left: 12px ; padding-right: 15px;">
 		                        <div>
-		                            <table  class="amp-table-data amp-table-td2">
+		                        	
+		                            <table  class="amp-table-data ">
+		                            	<colgroup>
+		                            <col width="33.33%">
+		                            <col width="33.33%">
+		                             <col width="33.33%">
+		                       		 </colgroup>
 		                                <tbody>
 		                                	 <tr ng-repeat="item in investment[investmentType]" >
+		                                	 	<td class=" text-left">{{item.name}}</td>
 				  								<td  ng-class='setStyleIcon(item.ActualMonth,item.ReferMonth)'>
 													<div ng-if="!allyear_investment">{{item.ActualMonth}} <i></i></div>
 													<div ng-if="allyear_investment">{{item.ActualYear}} <i></i></div>
@@ -458,8 +441,8 @@
 	 				</div>
 	 				<div class="risk-table-tel">
 	 				<div class="amp-table-wrapper-swiper">
-	           		<div  style="padding-left:125px;">
-			                <div class="table-blank amp-table-left" style="padding-left:125px;;">
+	           		<div >
+			                <div class="table-blank amp-table-left" >
 			                    <table style="width:100%; ">
 			                        <thead>
 			                        <tr style="">
@@ -470,35 +453,38 @@
 			                </div>
 			                <div class="swiper-container">
 			                    <div class="swiper-wrapper ">
-			                        <div class="swiper-slide " style="padding-right: 15px;    width: 100%; border-bottom: solid 1px #dae1e7;">
+			                        <div class="swiper-slide table-top-wrapper" >
 			                            <table class="table-top">	
+			                            	<colgroup>
+				                            <col width="33.33%">
+				                            <col width="33.33%">
+				                             <col width="33.33%">
+				                       	 </colgroup>
 			                                <tr  >
+			                                	<td></td>
 			                                    <td>实际</td>
-			                                    <td>预算</td>
+			                                    <td>参考</td>
 			                                </tr>
 			                            </table>
 			                        </div>
 			                    </div>         
 			                </div>
 			            </div>
-		            <div class="ys-table-main" style="padding-left:125px;">
-		                <div class="amp-table-left" style="padding-left:125px;padding-left: 12px;">
-		                    <table class="amp-table" style="width:100%;">
-		                        <tbody>
-		                      		<tr ng-repeat="item in passenger[passengerType]">
-									<td class=" text-left">{{item.name}}</td>
-	  								
-								</tr>
-		                        </tbody>
-		                        
-		                    </table>
-		                </div>
-		                <div style="width:100%; padding-right: 15px;" id="noi-main-table">
+		            <div class="ys-table-main" >
+		            
+		                <div style="width:100%; padding-right: 15px; padding-left: 12px;" >
 		                    <div >
 		                        <div>
-		                            <table  class="amp-table-data amp-table-td2">
+		                            <table  class="amp-table-data ">
+		                            	<colgroup>
+				                            <col width="33.33%">
+				                            <col width="33.33%">
+				                             <col width="33.33%">
+				                       	 </colgroup>
 		                                <tbody>
+		                                	
 		                                	<tr ng-repeat="item in passenger[passengerType]" >
+		                                		<td class=" text-left">{{item.name}}</td>
 	  											<td  ng-class='setStyleIcon(item.ActualMonth,item.ReferMonth)'>
 													<div ng-if="!allyear_passenger">{{item.ActualMonth}} <i></i></div>
 													<div ng-if="allyear_passenger">{{item.ActualYear}} <i></i></div>

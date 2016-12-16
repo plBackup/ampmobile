@@ -45,10 +45,6 @@ ampApp.controller("risk_investment_controller", ["$scope", "$http", "$rootScope"
 
 	/* ======================================== 监听广播事件 ======================================== */
 
-	$scope.$on("$destroy", function() {
-		destroy();
-	});
-
 	/* ======================================== 初始化页面 ======================================== */
 	var container = null;
 

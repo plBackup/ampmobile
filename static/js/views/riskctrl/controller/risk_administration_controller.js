@@ -1,141 +1,158 @@
-
 ampApp.controller("risk_administration_controller", ["$scope", "$http", "$rootScope", function($scope, $http, $rootScope) {
-	var  ctrl_detail_tel_module=(function($,cm){
-	var ctrl_detail_tel_module=cm;
-	
-	ctrl_detail_tel_module.init=function(){
+	var ctrl_detail_tel_module = (function($, cm) {
+		var ctrl_detail_tel_module = cm;
 
-		
-		
-$("#cost .table-title li.monthly").each(function() {
-		$(this).on("click", function() {
-			$("#cost .table-title li").each(function() {
-				$(this).removeClass("title-active");
-			});
-			$(this).addClass("title-active");
-			$scope.allyear_cost = false;
-			$scope.$apply();
-		});
-	});
-	$("#cost .table-title li.yearly").each(function() {
-		$(this).on("click", function() {
-			$("#cost .table-title li").each(function() {
-				$(this).removeClass("title-active");
-			});
-			$(this).addClass("title-active");
-			$scope.allyear_cost = true;
-			$scope.$apply();
-		});
-	});
-	
-	$("#collectionrate .table-title li.monthly").each(function() {
-		$(this).on("click", function() {
-			$("#collectionrate .table-title li").each(function() {
-				$(this).removeClass("title-active");
-			});
-			$(this).addClass("title-active");
-			$scope.allyear_collectionrate = false;
-			$scope.$apply();
-		});
-	});
-	$("#collectionrate .table-title li.yearly").each(function() {
-		$(this).on("click", function() {
-			$("#collectionrate .table-title li").each(function() {
-				$(this).removeClass("title-active");
-			});
-			$(this).addClass("title-active");
-			$scope.allyear_collectionrate = true;
-			$scope.$apply();
-		});
-	});
-	
-$("#salesvolume .table-title li.monthly").each(function() {
-		$(this).on("click", function() {
-			$("#salesvolume .table-title li").each(function() {
-				$(this).removeClass("title-active");
-			});
-			$(this).addClass("title-active");
-			$scope.allyear_salesvolume = false;
-			$scope.$apply();
-		});
-	});
-	$("#salesvolume .table-title li.yearly").each(function() {
-		$(this).on("click", function() {
-			$("#salesvolume .table-title li").each(function() {
-				$(this).removeClass("title-active");
-			});
-			$(this).addClass("title-active");
-			$scope.allyear_salesvolume = true;
-			$scope.$apply();
-		});
-	});
+		ctrl_detail_tel_module.init = function() {
 
-			
-$("#efficient .table-title li.monthly").each(function() {
-		$(this).on("click", function() {
-			$("#efficient .table-title li").each(function() {
-				$(this).removeClass("title-active");
+			$("#cost .table-title li.monthly").each(function() {
+				$(this).on("click", function() {
+					$("#cost .table-title li").each(function() {
+						$(this).removeClass("title-active");
+					});
+					$(this).addClass("title-active");
+					$scope.allyear_cost = false;
+					$scope.$apply();
+				});
 			});
-			$(this).addClass("title-active");
-			$scope.allyear_efficient = false;
-			$scope.$apply();
-		});
-	});
-	$("#efficient .table-title li.yearly").each(function() {
-		$(this).on("click", function() {
-			$("#efficient .table-title li").each(function() {
-				$(this).removeClass("title-active");
+			$("#cost .table-title li.yearly").each(function() {
+				$(this).on("click", function() {
+					$("#cost .table-title li").each(function() {
+						$(this).removeClass("title-active");
+					});
+					$(this).addClass("title-active");
+					$scope.allyear_cost = true;
+					$scope.$apply();
+				});
 			});
-			$(this).addClass("title-active");
-			$scope.allyear_efficient = true;
-			$scope.$apply();
-		});
-	});	
-$("#investment .table-title li.monthly").each(function() {
-		$(this).on("click", function() {
-			$("#investment .table-title li").each(function() {
-				$(this).removeClass("title-active");
+
+			$("#collectionrate .table-title li.monthly").each(function() {
+				$(this).on("click", function() {
+					$("#collectionrate .table-title li").each(function() {
+						$(this).removeClass("title-active");
+					});
+					$(this).addClass("title-active");
+					$scope.allyear_collectionrate = false;
+					$scope.$apply();
+				});
 			});
-			$(this).addClass("title-active");
-			$scope.allyear_investment = false;
-			$scope.$apply();
-		});
-	});;
-	$("#investment .table-title li.yearly").each(function() {
-		$(this).on("click", function() {
-			$("#investment .table-title li").each(function() {
-				$(this).removeClass("title-active");
+			$("#collectionrate .table-title li.yearly").each(function() {
+				$(this).on("click", function() {
+					$("#collectionrate .table-title li").each(function() {
+						$(this).removeClass("title-active");
+					});
+					$(this).addClass("title-active");
+					$scope.allyear_collectionrate = true;
+					$scope.$apply();
+				});
+			});
+
+			$("#salesvolume .table-title li.monthly").each(function() {
+				$(this).on("click", function() {
+					$("#salesvolume .table-title li").each(function() {
+						$(this).removeClass("title-active");
+					});
+					$(this).addClass("title-active");
+					$scope.allyear_salesvolume = false;
+					$scope.$apply();
+				});
+			});
+			$("#salesvolume .table-title li.yearly").each(function() {
+				$(this).on("click", function() {
+					$("#salesvolume .table-title li").each(function() {
+						$(this).removeClass("title-active");
+					});
+					$(this).addClass("title-active");
+					$scope.allyear_salesvolume = true;
+					$scope.$apply();
+				});
+			});
+
+			$("#efficient .table-title li.monthly").each(function() {
+				$(this).on("click", function() {
+					$("#efficient .table-title li").each(function() {
+						$(this).removeClass("title-active");
+					});
+					$(this).addClass("title-active");
+					$scope.allyear_efficient = false;
+					$scope.$apply();
+				});
+			});
+			$("#efficient .table-title li.yearly").each(function() {
+				$(this).on("click", function() {
+					$("#efficient .table-title li").each(function() {
+						$(this).removeClass("title-active");
+					});
+					$(this).addClass("title-active");
+					$scope.allyear_efficient = true;
+					$scope.$apply();
+				});
+			});
+			$("#investment .table-title li.monthly").each(function() {
+				$(this).on("click", function() {
+					$("#investment .table-title li").each(function() {
+						$(this).removeClass("title-active");
+					});
+					$(this).addClass("title-active");
+					$scope.allyear_investment = false;
+					$scope.$apply();
+				});
 			});;
-			$(this).addClass("title-active");
-			$scope.allyear_investment = true;
-			$scope.$apply();
-		});
-	});
-			
-$("#passenger .table-title li.monthly").each(function() {
-		$(this).on("click", function() {
-			$("#passenger .table-title li").each(function() {
-				$(this).removeClass("title-active");
+			$("#investment .table-title li.yearly").each(function() {
+				$(this).on("click", function() {
+					$("#investment .table-title li").each(function() {
+						$(this).removeClass("title-active");
+					});;
+					$(this).addClass("title-active");
+					$scope.allyear_investment = true;
+					$scope.$apply();
+				});
 			});
-			$(this).addClass("title-active");
-			$scope.allyear_passenger = false;
-			$scope.$apply();
-		});
-	});
-	$("#passenger .table-title li.yearly").each(function() {
-		$(this).on("click", function() {
-			$("#passenger .table-title li").each(function() {
-				$(this).removeClass("title-active");
-			});;
-			$(this).addClass("title-active");
-			$scope.allyear_passenger = true;
-			$scope.$apply();
-		});
-	});    
-	}
-	return  ctrl_detail_tel_module;
-})(jQuery, ctrl_detail_tel_module||{})
 
+			$("#passenger .table-title li.monthly").each(function() {
+				$(this).on("click", function() {
+					$("#passenger .table-title li").each(function() {
+						$(this).removeClass("title-active");
+					});
+					$(this).addClass("title-active");
+					$scope.allyear_passenger = false;
+					$scope.$apply();
+				});
+			});
+			$("#passenger .table-title li.yearly").each(function() {
+				$(this).on("click", function() {
+					$("#passenger .table-title li").each(function() {
+						$(this).removeClass("title-active");
+					});;
+					$(this).addClass("title-active");
+					$scope.allyear_passenger = true;
+					$scope.$apply();
+				});
+			});
+		}
+		return ctrl_detail_tel_module;
+	})(jQuery, ctrl_detail_tel_module || {})
+	$scope.collapseTable = function(item) {
+		if(item.hasCollapseBtn) {
+			item.collapsed = !item.collapsed;
+			var groupId = item.dataGroup;
+
+			$scope.cost[$scope.costType].forEach(function(itemRecord) {
+				if(groupId == itemRecord.dataGroup && !itemRecord.hasCollapseBtn) {
+					itemRecord.hide = !itemRecord.hide;
+				}
+			});
+			$scope.salesvolume[$scope.saleType].forEach(function(itemRecord) {
+				if(groupId == itemRecord.dataGroup && !itemRecord.hasCollapseBtn) {
+					itemRecord.hide = !itemRecord.hide;
+				}
+			});
+			$scope.efficient[$scope.efficientType].forEach(function(itemRecord) {
+				if(groupId == itemRecord.dataGroup && !itemRecord.hasCollapseBtn) {
+					itemRecord.hide = !itemRecord.hide;
+				}
+			});
+		}
+	};
 	$scope.collectionrate = [];
 	$scope.cost = [];
 	$scope.efficient = [];
@@ -150,9 +167,6 @@ $("#passenger .table-title li.monthly").each(function() {
 
 	/* ======================================== 监听广播事件 ======================================== */
 
-	$scope.$on("$destroy", function() {
-		destroy();
-	});;
 
 	/* ======================================== 初始化页面 ======================================== */
 	var container = null;
@@ -191,7 +205,7 @@ $("#passenger .table-title li.monthly").each(function() {
 	$scope.passengerType = "Budget";
 	$scope.investmentType = "Budget";
 	$scope.setType = function(type, model) {
-		switch (model) {
+		switch(model) {
 			case "collectionrate":
 				$scope.collectType = type;
 				break;
@@ -216,7 +230,7 @@ $("#passenger .table-title li.monthly").each(function() {
 		}
 	}
 	$scope.setStyleText = function(a) {
-		if (a >= 0) {
+		if(a >= 0) {
 			return 'text-red'
 		} else {
 			return 'text-green'
@@ -224,14 +238,14 @@ $("#passenger .table-title li.monthly").each(function() {
 
 	};
 	$scope.setStyleIcon = function(a, b) {
-		if (a > b) {
+		if(a > b) {
 			return 'arrow-up'
-		} else if(a<b){ 
+		} else if(a < b) {
 			return 'arrow-down'
 		}
 
 	};
-	
+
 	ctrl_detail_tel_module.init();
-	
+
 }]);

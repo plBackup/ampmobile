@@ -70,8 +70,8 @@
 #riskctrl .table-blank{border-bottom: solid 1px #dae1e7;top: 0; height: 35px;}
 #riskctrl .swiper-slide .table-top td{color: #737e8c;}
 #riskctrl table>tbody>tr.tr-collapsed { display: none;}
-.amp-table-td2 td{width: 50%;}
-#riskctrl .table-top,.amp-table-data {width: 100%;border-left: solid 1px #dae1e7;}
+#riskctrl .amp-table-td2 td{width: 50%;}
+#riskctrl .table-top,#riskctrl .amp-table-data {width: 100%;border-left: solid 1px #dae1e7;}
 #riskctrl .tr-sub td{text-indent: 1em;}.amp-table-data td{text-align: right;}.table-top td{text-align: right;}
 #riskctrl .arrow-down i {
     display: inline-block;
