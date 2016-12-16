@@ -59,8 +59,10 @@ ul{margin: 0; padding: 0;}
 #riskctrl-detail #cost .amp-table tr:last-child td:nth-child(2),#riskctrl-detail #cost .amp-table tr:last-child td:nth-child(3){padding-bottom: 14px;}
 #riskctrl-detail #efficient .allyear td{33.33%;text-align: right; line-height: 38px;}
 #riskctrl-detail #efficient .amp-table tr td:first-child{text-indent: 1em;}
-#riskctrl-detail #efficient .amp-table tr:nth-child(1) td,#efficient  .amp-table-data tr:first-child td,#efficient .amp-table tr:nth-child(9) td:first-child,#investment .amp-table tr td,#passenger .amp-table tr td{font-weight: 700; text-indent: 0;}
+#riskctrl-detail #efficient .amp-table tr:nth-child(1) td,#efficient  .amp-table-data tr:first-child td,#efficient .amp-table tr:nth-child(9) td:first-child,#investment .amp-table tr td,#passenger .amp-table tr td,#riskctrl-detail #efficient .amp-table tr:nth-child(9) td,#riskctrl-detail #salesvolume .amp-table tr:first-child th{font-weight: 700; text-indent: 0;}
 #riskctrl-detail #cost .amp-table tr:nth-child(6) td,#cost .amp-table tr:nth-child(6) th{padding-bottom: 43px;}
+#riskctrl-detail #cost .amp-table tr:first-child th,#riskctrl-detail #cost .amp-table tr:nth-child(5) th,#riskctrl-detail #cost .amp-table tr:nth-child(6) th,#riskctrl-detail #cost .amp-table tr:nth-child(7) th,#riskctrl-detail #cost .amp-table tr:first-child td,#riskctrl-detail #cost .amp-table tr:nth-child(5) td,#riskctrl-detail #cost .amp-table tr:nth-child(6) td,#riskctrl-detail #cost .amp-table tr:nth-child(7) td{font-weight: 700;}
+
 #riskctrl-detail #collectionrate .amp-table-left tr td:first-child,#collectionrate .amp-table-data tr:first-child td,#salesvolume .amp-table-data tr:first-child td{font-weight: 700;}
 #riskctrl-detail #cost .risk-table-tel .amp-table-wrapper-swiper{padding-bottom: 20px;}
 #riskctrl-detail #cost .amp-table tr:last-child td:first-child:after{ content: "（每月每平方）"; display: block;  line-height: 14px; bottom: 0; font-size: 12px; color: #737e8c;}
