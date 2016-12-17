@@ -537,9 +537,9 @@
             <h3 class="col-xs-4">租金递增率</h3>
         </div>
         <div class="amp-table-wrapper-swiper" id="rent-update-table-wrapper">
-            <div class="ys-table-main" style="padding-left:160px;">
-                <div class="ys-table-static ys-table-static-left" style="width:160px;">
-                    <table class="table table-no-bordered amp-table table-hover" style="width:160px;">
+            <div class="ys-table-main" style="padding-left:90px;">
+                <div class="ys-table-static ys-table-static-left" style="width:90px;">
+                    <table class="table table-no-bordered amp-table table-hover" style="width:90px;">
                         <thead>
                         <tr><th class="text-left">开业年份</th></tr>
                         </thead>
@@ -554,7 +554,7 @@
                 <div class="swiper-container" style="width:100%;" id="rent-update-main-table">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <table class="table table-right-bordered amp-table table-hover"  style="width:1200px">
+                            <table class="table table-right-bordered amp-table table-hover"  style="width:650px">
                                 <thead>
                                 <tr>
                                     <th>2016</th>
@@ -613,12 +613,12 @@
         <div class="amp-table-wrapper-swiper" id="rent-affect-area">
             <div class="amp-proportion-select clearfix">
                 <h5 class="amp-sub-title">面积分解系数</h5>
-                <div class="td-input-wrapper padding-r-15 select-input" >
+                <div class="td-input-wrapper padding-r-15 select-input col-xs-6" >
                     <label>Mall选择:</label>
                     <input type="text" value="" hidden ng-model="sCtrl.shopInfo.mallProportionType"/>
                     <div class="dropdown">
                         <button class="btn" type="button" ui-turn-on="propTypeDropDwon">
-                            <em>{{sCtrl.proportionType[sCtrl.shopInfo.mallProportionType] | default:"请选择"}}</em><span class="amp-icon amp-icon-dropdown"></span>
+                            <em>{{sCtrl.proportionType[sCtrl.shopInfo.mallProportionType] | default:"请选择"}}</em><em class="amp-icon amp-icon-dropdown"></em>
                         </button>
                         <ul class="dropdown-menu" role="menu"
                             ui-shared-state="propTypeDropDwon"
@@ -634,12 +634,12 @@
                         </ul>
                     </div>
                 </div>
-                <div class="td-input-wrapper padding-r-15 select-input" >
+                <div class="td-input-wrapper padding-r-15 select-input col-xs-6" >
                     <label>商业街选择:</label>
                     <input type="text" value="" hidden ng-model="sCtrl.shopInfo.streetProportionType"/>
                     <div class="dropdown">
                         <button class="btn" type="button" ui-turn-on="streetProTypeDropDwon">
-                            <em>{{sCtrl.proportionType[sCtrl.shopInfo.streetProportionType] | default:"请选择"}}</em><span class="ys-icon ys-icon-dropdown"></span>
+                            <em>{{sCtrl.proportionType[sCtrl.shopInfo.streetProportionType] | default:"请选择"}}</em><em class="amp-icon amp-icon-dropdown"></em>
                         </button>
                         <ul class="dropdown-menu" role="menu"
                             ui-shared-state="streetProTypeDropDwon"
@@ -655,10 +655,10 @@
                 </div>
             </div>
 
-            <div class="ys-table-main" style="padding-left:120px;">
+            <div class="ys-table-main" style="padding-left:90px;">
 
-                <div class="ys-table-static ys-table-static-left" style="width:120px;">
-                    <table class="table table-right-bordered amp-table table-hover" style="width:120px;">
+                <div class="ys-table-static ys-table-static-left" style="width:90px;">
+                    <table class="table table-right-bordered amp-table table-hover" style="width:90px;">
                         <tbody>
                         <tr><th class="text-left">面积范围</th></tr>
                         <tr><th class="text-left">面积系数</th></tr>
