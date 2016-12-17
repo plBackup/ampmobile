@@ -137,5 +137,6 @@
 }
 #noi .modal-overlay .col-xs-4>table > tbody > tr.tr-main > th,
 #noi .modal-overlay table > tbody > tr.tr-main>td{font-weight:bold;}
+#noi .modal-overlay .col-xs-4>table > tbody > tr > th span{display:block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
 /*modal里折叠按钮隐藏*/
 #noi .modal-overlay  table  .icon-menu-down{display: none;}

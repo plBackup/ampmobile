@@ -159,7 +159,7 @@ noi.controller('noiController', ['$rootScope', '$scope',"$timeout","noiAllData",
                             });
                         }
                     });
-                    pin.refresh();
+                    //pin.refresh();
                 }
 
                 if($(this).hasClass("tr-sub-main")){

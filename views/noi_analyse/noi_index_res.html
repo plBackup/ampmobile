@@ -262,8 +262,8 @@
                     <h4 class="modal-title">{{noiCtrl.modalTitle}}</h4>
                 </div>
                 <div class="modal-body">
-                    <div class="scrollable amp-modal-block">
-                        <div class="scrollable-header">
+                    <div class="amp-modal-block">
+                        <div class="amp-tab-pages" id="amp-tab-modal">
                             <ui-shared-state id="activeModalTab" default="1"></ui-shared-state>
                             <ul class="nav nav-tabs" ng-if="noiCtrl.noiModal != 'arrearage'">
                                 <li ui-class="{'active': activeModalTab == 1}" >
@@ -281,8 +281,6 @@
                                 </li>
                             </ul>
 
-                        </div><!--scrollable header-->
-                        <div class="scrollable-content">
                             <div class="amp-section clearfix">
                                 <div class="col-xs-4">
                                     <table class="table  amp-table">
@@ -352,11 +350,11 @@
                                         </tr>
 
                                         <tr class="tr-sub">
-                                            <th>工资及相关费用</th>
+                                            <th><span>工资及相关费用</span></th>
                                         </tr>
 
                                         <tr class="tr-sub">
-                                            <th>行政管理费用</th>
+                                            <th><span>行政管理费用</span></th>
                                         </tr>
 
                                         <tr class="tr-sub">
@@ -583,14 +581,8 @@
 
                                 </div>
                             </div><!--amp section-->
-                        </div><!--scrollable content-->
-                    </div><!--scrollable-->
-                    <!--<div class="amp-modal-block">
-                        <div class="amp-tab-pages" id="amp-tab-modal">
-
-
                         </div>
-                    </div>-->
+                    </div>
                 </div>
 
             </div>
