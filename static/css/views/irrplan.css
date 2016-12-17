@@ -164,13 +164,13 @@
 
 #datatool-rpgpin .amp-block .select-input .btn{    width: 100%; border: 0; border-radius: 0; background-color: #f3f4f8;text-align: left;}
 
-#datatool-rpgpin #rent-affect-table-wrapper .amp-table{margin-top:12px;margin-bottom:20px;}
+#datatool-rpgpin #rent-affect-table-wrapper .amp-table{margin-top:12px;margin-bottom:0;}
 #datatool-rpgpin #rent-affect-table-wrapper .amp-sub-title{margin-top:10px;margin-bottom:3px;padding-left:15px;font-size: 14px;color:#8592a3;height:28px;line-height: 28px;}
 
 #datatool-rpgpin #rent-affect-table-wrapper .amp-table tr>th{color:#8592a3;font-size: 13px;}
 #datatool-rpgpin #rent-affect-table-wrapper .ys-table-static-left .amp-table tr>th{padding-left:15px;}
 #datatool-rpgpin #rent-affect-table-wrapper .ys-table-static-left .amp-table tr:nth-child(1)>th,
-#datatool-rpgpin #rent-affect-table-wrapper .amp-table tr:nth-child(1)>td{border-right:0;background-color:#f3f4f8;}
+#datatool-rpgpin #rent-affect-area .amp-table tr:nth-child(1)>td{border-right:0;background-color:#f3f4f8;}
 /*rpg-set update*/
 #datatool-rpgpin .amp-block .amp-block-title{border-bottom:solid 1px #edeef3;}
 #datatool-rpgpin .amp-block .amp-block-title h3{border-bottom:0;}
