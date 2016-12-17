@@ -123,11 +123,23 @@
 #datatool-rpgpin .amp-table-wrapper-swiper .table tr>th>span,
 #datatool-rpgpin .amp-table-wrapper-swiper .table tr>td>span{display: block;width:100%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;font-weight:normal;font-size: 13px;color:#8592a3;
     text-align: center;}
+#datatool-rpgpin .amp-table-wrapper-swiper .table tr>th.td-vertical>span,
+#datatool-rpgpin .amp-table-wrapper-swiper .table tr>td.td-vertical>span{
+    overflow: visible;;white-space:inherit;text-overflow:inherit;line-height: 20px;
+}
+#datatool-rpgpin .amp-table-wrapper-swiper .table tr>td.td-tight{padding:0 15px;}
+#datatool-rpgpin .amp-table-wrapper-swiper .table tr>td.td-tight>span{line-height:18px;}
+#datatool-rpgpin .amp-table-wrapper-swiper .table tr>td.td-tight em.em-unit{display:block;font-size:12px;line-height: 15px;}
+
+
 #datatool-rpgpin .amp-table-wrapper-swiper .table tr>th>span{text-align: center;}
 #datatool-rpgpin .amp-table-wrapper-swiper .swiper-container{margin-left:-1px;}
 #datatool-rpgpin .ys-table-main .swiper-container{padding-bottom:15px;}
 #datatool-rpgpin #rpg-set-table-wrapper .amp-table{margin-bottom:0;border:solid 1px #dfe5e9;}
 #datatool-rpgpin .amp-table-wrapper-swiper .ys-table-static{border-right:0;}
+
+#datatool-rpgpin #rpg-set-table-wrapper .amp-table tr>th{background-color:#fff;}
+
 #datatool-rpgpin #rpg-set-table-wrapper .amp-table tr>th.th-fake,#datatool-rpgpin #rpg-set-table-wrapper .amp-table tr>th.td-fake{width:0px;}
 
 
