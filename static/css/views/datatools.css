@@ -60,6 +60,8 @@
 
 /*rightpanel*/
 #datatool-rpgresult .amp-right-panel{padding:15px;}
+#datatool-rpgresult .amp-right-panel .amp-panel-content{padding:0;}
+
 #datatool-rpgresult .amp-right-panel h3.amp-panel-title{margin-bottom:0;height:44px;line-height: 44px;font-size:14px;font-weight:normal;
     overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
 
