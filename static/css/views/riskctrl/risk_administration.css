@@ -134,8 +134,9 @@
 
 #riskctrl-detail  .amp-table>tbody>tr>th,#riskctrl-detail .amp-table>tbody>tr>td,#riskctrl-detail .amp-table>tfoot>tr>th,#riskctrl-detail .amp-table>tfoot>tr>td{border: 0;padding: 0; height: 40px;font-size: 13px;}
 
-#riskctrl-detail  .amp-table>tbody>tr>th, .amp-table>tbody>tr>td, .amp-table>tfoot>tr>th, #riskctrl-detail .amp-table>tfoot>tr>td{border: 0;padding: 0; height: 40px;font-size: 13px;}
-#riskctrl-detail #cost .amp-table tr:first-child td:first-child:after,#salesvolume .amp-table-data tr:first-child td:first-child:after,#riskctrl-detail #efficient .amp-table-data  tr:first-child td:first-child:after,#riskctrl-detail #efficient .amp-table-data  tr:nth-child(9) td:first-child:after{
+#riskctrl-detail  .amp-table>tbody>tr>th,#riskctrl-detail .amp-table>tbody>tr>td,#riskctrl-detail .amp-table>tfoot>tr>th, #riskctrl-detail .amp-table>tfoot>tr>td{border: 0;padding: 0; height: 40px;font-size: 13px;}
+#riskctrl-detail #cost .amp-table tr:first-child td:first-child:after,#salesvolume .amp-table-data tr:first-child td:first-child:after,
+#riskctrl-detail #efficient .amp-table-data  tr:first-child td:first-child:after,#riskctrl-detail #efficient .amp-table-data  tr:nth-child(9) td:first-child:after{
 	
 	content: "";
 	display: inline-block;
