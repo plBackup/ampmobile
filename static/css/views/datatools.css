@@ -156,7 +156,9 @@
 
 #datatool-shopedit .td-opt>button {
     display: inline-block;
+    float:left;
     position:relative;
+    margin-right:28px;
     width: 38px;
     height: 38px;
     background-color:transparent;
