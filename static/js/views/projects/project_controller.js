@@ -57,7 +57,7 @@ projects.controller("pjListController",["$rootScope","$scope","$location","proje
 
 }]);
 
-projects.controller("pjCreateController",["$rootScope","$scope","$location",function($rootScope,$scope,$location){
+projects.controller("pjCreateController",["$rootScope","$scope","$location","$state",function($rootScope,$scope,$location,$state){
     //$scope.project=project;
     var self=this;
     $rootScope.showHeader();
@@ -106,7 +106,8 @@ projects.controller("pjCreateController",["$rootScope","$scope","$location",func
 
     self.submit=function(){
         $rootScope.projects.push(self.project);
-        $location.path("/main");
+       // $location.path("/main");
+        $state.go("projectlist");
     };
     self.saveCheck=function(){
         if($scope.projectForm.$invalid) {
@@ -120,7 +121,7 @@ projects.controller("pjCreateController",["$rootScope","$scope","$location",func
         $("#open-date-wrapper input").datetimepicker("remove");
     });
 }]);
-projects.controller("pjUpdateController",["$rootScope","$scope","$location","pid",function($rootScope,$scope,$location,pid){
+projects.controller("pjUpdateController",["$rootScope","$scope","$location","$state","pid",function($rootScope,$scope,$location,$state,pid){
     //$scope.project=project;
     var self=this;
     $rootScope.showHeader();
@@ -148,9 +149,8 @@ projects.controller("pjUpdateController",["$rootScope","$scope","$location","pid
     };
 
     self.submit=function(){
-        console.log("...........");
-        $rootScope.projects.push(self.project);
-        $location.path("main");
+        //console.log("...........");
+        $state.go("projectlist");
     };
 
     self.saveCheck=function(){
