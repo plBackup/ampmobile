@@ -1,0 +1,24 @@
+<div class="toolbar-block">
+    <div class="toolbar-item item-select-filter">
+    <label for="select-id-project">项目</label>
+    <input type="text" placeholder="" id="select-id-project" name="select-id-project" hidden value="">
+    <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown">
+            <em>请选择</em><span class="ys-icon ys-icon-dropdown"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">商业公司A</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">商业公司B</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">商业公司C</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">商业公司D</a></li>
+        </ul>
+    </div>
+</div><!--div toolbar-item-->
+</div>
+<script src="../components/toolbar/noi_filter.js"></script>
+<script>
+    $(document).ready(function(){
+        filters.init();
+        filters.dropdownSelector();
+    })
+</script>

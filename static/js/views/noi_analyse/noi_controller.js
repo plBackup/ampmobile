@@ -6,8 +6,7 @@
 
 /* Controllers */
 
-var noi = angular.module('noi', ['mobile-angular-ui',
-]);
+var noi = angular.module('noi', ['mobile-angular-ui','ampFilter']);
 noi.controller('noiHeadController', ['$rootScope', '$scope',"$timeout","$state","SharedState",
     function($rootScope, $scope,$timeout,$state,SharedState){
         var self=this;
@@ -42,6 +41,8 @@ noi.controller('noiController', ['$rootScope', '$scope',"$timeout","noiAllData",
         };
 
         self.noiModal="";
+
+        self.curMonth="2016-11";
 
         self.allData=noiAllData;
         self.noiData=noiAllData.noi[0].values;
@@ -118,70 +119,10 @@ noi.controller('noiController', ['$rootScope', '$scope',"$timeout","noiAllData",
             noi_headerInfo_swiper=new Swiper('#noi-headerInfo-swiper', {
                 pagination: '.swiper-pagination',
             });
-            /*noi_modal_swiper = new Swiper('#amp-tab-modal-swiper', {
-                scrollbar: '.swiper-scrollbar',
-                direction: 'horizontal',
-                slidesPerView: 'auto',
-                //mousewheelControl: true,
-                freeMode: true,
-                scrollbarHide:false,
-                //watchSlidesProgress:true,
-                 watchSlidesProgress:true,
-                 observer:true,
-                 observeParents:true,
-            });*/
-        };
-
-        var table_init=function(){
-
-            $(".ys-table-main").on("click","tbody>tr",function(e){
-                if($(this).hasClass("tr-main")){
-                    var index=$(this).index();
-                    $(this).closest(".ys-table-main").find(".amp-table").each(function(i,e){
-                        var $trMain=$(this).find("tr").eq(index);
-                        $trMain.toggleClass("tr-collapse");
-                        if($trMain.hasClass("tr-collapse")){
-                            $trMain.nextUntil(".tr-main","tr").addClass("tr-collapsed");
-
-                        }else{
-                            //展开时，要判断 tr-sub-main的状态，来更改tr-tri的折叠状态
-                            $trMain.nextUntil(".tr-main","tr.tr-sub").removeClass("tr-collapsed");
-                            var sub_main_collapse= false;
-                            $trMain.nextUntil(".tr-main","tr.tr-tri").each(function(i,e){
-                                if(i==0){
-
-                                    sub_main_collapse=$(this).prev(".tr-sub-main").hasClass("tr-collapse");
-                                }
-
-                                if(!sub_main_collapse){
-                                    $(this).removeClass("tr-collapsed");
-                                }
-                            });
-                        }
-                    });
-                    //pin.refresh();
-                }
-
-                if($(this).hasClass("tr-sub-main")){
-                    var index=$(this).index();
-                    $(this).closest(".ys-table-main").find(".amp-table").each(function(i,e){
-                        $(this).find("tr").eq(index).toggleClass("tr-collapse").nextUntil(".tr-sub").toggleClass("tr-collapsed");
-                    });
-                }
-            });
-
-            $("#noi-arrearage").on("click","tr.tr-main",function(e){
-                $(this).toggleClass("tr-collapse").nextAll("tr.tr-sub").toggle();
-            });
-
-            //初始化折叠项目
-            $(".tr-init-collapse").trigger("click");
         };
 
         $timeout(function(){
             swiper_init();
-            table_init();
-
         },200);
 
 
@@ -194,10 +135,21 @@ noi.controller('noiController', ['$rootScope', '$scope',"$timeout","noiAllData",
             }
         });
 
-        $scope.$on("noiMonthUpdate",function(e,data){
-           /* console.log("-----------------------noiMonthUpdate");
-            console.log(data);*/
-        })
+
+        self.selectedMonth=function(data){
+            /*    console.log("----------selected month----------------");
+             console.log(self.curMonth);
+             console.log(data);*/
+            console.log("...............");
+            console.log(data);
+            //$rootScope.$broadcast("noiMonthUpdate",data);
+        };
+
+        /*
+                $scope.$on("noiMonthUpdate",function(e,data){
+                    console.log("-----------------------noiMonthUpdate");
+                    console.log(data);
+                })*/
 
     }]);
 
