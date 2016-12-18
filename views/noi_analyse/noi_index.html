@@ -251,6 +251,23 @@
     </div><!--scrollable content-->
 </div><!--scrollable-->
 
+<!--amp right panel-->
+<div ui-content-for="amp-right-panel">
+
+    <form name="noiFilterForm" novalidate>
+        <div class="amp-panel-content">
+            <div class="amp-filter-list">
+
+            </div>
+        </div>
+        <div class="amp-panel-footer">
+            <div class="amp-panel-btn-group">
+                <a class="btn amp-btn amp-btn-reverse btn-grey" ng-click="noiCtrl.reset(noiCtrl.filters)">重置</a>
+                <a class="btn amp-btn btn-green" ng-click="noiCtrl.filterData(noiFilterForm.$invalid)" ng-disabled="noiFilterForm.$invalid">确定</a>
+            </div>
+        </div>
+    </form>
+</div>
 
 <div ui-content-for="subpage" id="noi-subpage">
     <div class="modal modal-overlay" ui-if='subpageModal' ui-shared-state='subpageModal'>
@@ -587,8 +604,6 @@
                     </div><!--scrollable-->
                     <!--<div class="amp-modal-block">
                         <div class="amp-tab-pages" id="amp-tab-modal">
-
-
                         </div>
                     </div>-->
                 </div>
