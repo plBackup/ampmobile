@@ -1,0 +1,100 @@
+<div class="toolbar-block">
+    <div class="toolbar-item item-btn-wrapper" style="padding:0;">
+        <a href="javascript:void(0)" class="btn btn-default amp-btn" id="toolbar-create">录入</a>
+    </div><!--div toolbar-item-->
+    <div class="toolbar-item item-select-filter">
+        <label for="select-id-project">项目</label>
+        <input type="text" placeholder="" id="select-id-project" name="select-id-project" hidden value="">
+        <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" disabled>
+                <em>请选择</em><span class="ys-icon ys-icon-dropdown"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">商业公司A</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">商业公司B</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">商业公司C</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">商业公司D</a></li>
+            </ul>
+        </div>
+    </div><!--div toolbar-item-->
+
+    <div class="toolbar-item item-select-filter">
+        <label for="select-id-floor">楼层</label>
+        <input type="text" placeholder="" id="select-id-floor" name="select-id-floor" hidden value="">
+        <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                <em>请选择</em><span class="ys-icon ys-icon-dropdown"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">B1</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">F1</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">F2</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">F3</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">F4</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">F5</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">F6</a></li>
+            </ul>
+        </div>
+    </div><!--div toolbar-item-->
+
+    <div class="toolbar-item item-select-filter">
+        <label for="select-id-form">业态</label>
+        <input type="text" placeholder="" id="select-id-form" name="select-id-form" hidden value="">
+        <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                <em>请选择</em><span class="ys-icon ys-icon-dropdown"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                <li role="presentation"><a role="menuitem" tabindex="-1" >超市</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" >影院</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" >时装</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" >餐饮</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" >娱乐</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" >配套</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" >儿童</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" >其他</a></li>
+            </ul>
+        </div>
+    </div><!--div toolbar-item-->
+
+    <div class="toolbar-item item-select-filter">
+        <label for="select-id-property">产权</label>
+        <input type="text" placeholder="" id="select-id-property" name="select-id-property" hidden value="">
+        <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                <em>请选择</em><span class="ys-icon ys-icon-dropdown"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">自持</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">销售</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">销售返租</a></li>
+
+            </ul>
+        </div>
+    </div><!--div toolbar-item-->
+
+
+    <div class="toolbar-item item-input-filter">
+        <label for="input-id-shop">铺位号</label>
+        <div class="input-group">
+            <input type="text" placeholder="" id="input-id-shop" name="input-id-shop">
+        </div>
+    </div><!--div toolbar-item-->
+
+    <div class="toolbar-item item-btn-wrapper toolbar-item-btns clearfix" style="padding:0;">
+        <a href="javascript:void(0)" class="btn btn-default amp-btn amp-btn-reverse" id="toolbar-reset">重置</a>
+        <a href="javascript:void(0)" class="btn btn-default amp-btn amp-btn-reverse" id="toolbar-search">查询</a>
+    </div><!--div toolbar-item-->
+</div>
+<script src="../components/toolbar/noi_filter.js"></script>
+<script>
+    $(document).ready(function(){
+        filters.init();
+        filters.dropdownSelector();
+        $("#toolbar-create").on("click",function(e){
+            e.preventDefault();
+            amp_main.rightPanel_open();
+
+        });
+    })
+</script>
