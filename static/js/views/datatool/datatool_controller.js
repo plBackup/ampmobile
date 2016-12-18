@@ -507,7 +507,7 @@ dataTool.controller("dataIndexController",['$rootScope', '$scope',"dataIndexData
 
 
         self.filters={};
-        $scope.$on("datatool_filter",function(e,data){
+        $scope.$on("data_filter",function(e,data){
            var curFilter={};
            $.each(data.filters,function(k,v){
                if(k!=="project" && v!=="" ){
@@ -522,6 +522,57 @@ dataTool.controller("dataIndexController",['$rootScope', '$scope',"dataIndexData
            self.paginator=paginatorService(self.pageLimit,self.pageNum,self.indexData);
        });
 
+
+        /*filters*/
+        self.filters={
+            project:$rootScope.projectName,
+            floor:"",
+            form:"",
+            property:"",
+            shopIndex:""
+
+        }
+        self.form_menu={
+            projects:["商业公司A","商业公司B","商业公司C","商业公司D"],
+            floors:["B1","F1","F2","F3","F4","F5","F6"],
+            form:["超市","影院","服装","餐饮","娱乐","配套","儿童","其他"],
+            property:["自持","销售","销售返租"],
+        }
+
+        self.addNew=function(){
+            $scope.$emit("right_open",{"right_open":true});
+        };
+        self.setModel=function(type,menu){
+            self.filters[type]=menu;
+        };
+
+        self.isActive=function(menu,model){
+            return menu==model;
+        };
+
+        self.reset=function(){
+            self.filters={
+                project:$rootScope.projectName,
+                floor:"",
+                form:"",
+                property:"",
+                shopIndex:""
+
+            };
+            $scope.$emit("data_filter",{
+                name:"data_tool",
+                filters:self.filters
+            });
+
+        };
+        self.search=function(){
+            console.dir(self.filters);
+            $scope.$emit("data_filter",{
+                name:"data_tool",
+                filters:self.filters
+            });
+            console.log(self.filters);
+        };
 
     }]);
 
