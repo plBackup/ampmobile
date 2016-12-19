@@ -2,8 +2,15 @@ ampApp.controller("contract-list-controller",["$scope","$http","$rootScope","$lo
     $rootScope.showBottom();
     $scope.records = [];
 
+    $scope.totalValue = 0;
     function initializeData(data){
         $scope.records = data;
+
+        $scope.records.forEach(function(item){
+            if(item.rentTotal!=""&&!isNaN(item.rentTotal)){
+                $scope.totalValue+=parseFloat(item.rentTotal)
+            }
+        });
     }
 
     $scope.queryStartTime = "2016-08-01";

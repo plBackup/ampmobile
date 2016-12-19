@@ -5,12 +5,20 @@ ampApp.controller("arrears-merchant-detail-controller",["$scope","$http","$rootS
 
     var SELECTED_ARREARS_MERCHANT_NAME = "selected_arrears_merchant_name";
     var merchantName = globalStorage.getSessionData(SELECTED_ARREARS_MERCHANT_NAME);
+    var SELECTED_ARREARS_MERCHANT_AMOUNT = "selected_arrears_merchant_amount";
+    var SELECTED_ARREARS_MERCHANT_DEPOSIT = "selected_arrears_merchant_deposit";
+
+    var arrearsTotalAmount =globalStorage.getSessionData(SELECTED_ARREARS_MERCHANT_AMOUNT);
+    var deposit = globalStorage.getSessionData(SELECTED_ARREARS_MERCHANT_DEPOSIT);
 
     $scope.records = [];
     $scope.merchantName = merchantName;
+    $scope.arrearsTotalAmount = arrearsTotalAmount;
+    $scope.deposit = deposit;
 
     function initializeData(result){
         $scope.records = $filter("filter")(result,{merchantName:merchantName});
+        $scope.arrearsCount = $scope.records.length;
     }
 
     /* ======================================== angular 注册事件 ======================================== */

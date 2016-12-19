@@ -44,6 +44,8 @@
     </div>
 <script src="./static/dist/js/jquery-1.11.3.min.js"></script>
 <script>
+	var amp_Path = "http://www.21amp.com/amp_web";
+
     $(document).ready(function(){
         $('#preloader').delay(350).fadeOut(function(){
             //start
@@ -56,28 +58,28 @@
                     e.preventDefault();
                     if(typeof timeCount ==="undefined"){
                         var phone=verify.phone_verfiy();
-                        console.log(phone);
                         if(phone){
                              //ajax getcode
-                            $.get("getcode.html?phone="+phone,function(result){
-                                var obj = eval(result)
-                                if (obj.success == "0"){
-                                     alert (obj.code)
+                            $.get(amp_Path + "/sendCode.htm?mobile="+phone, function(result){
+                            	var obj = JSON.parse(result);
+                                if (obj.code == "1"){
+                                     alert (obj.msg)
+                                }else{
+		                            time=30;
+		                            timeCount=setInterval(function(){
+		                                if(time==1){
+		                                    clearInterval(timeCount);
+		                                    timeCount=undefined;
+		                                    $("#btn-veri").text("获取验证码");
+		                                    time=30;
+		                                }else{
+		                                    time-=1;
+		                                    $("#btn-veri").text(time.toString()+"秒后重新发送");
+		                                }
+		                            },1000);
                                 }
                             });
 
-                            time=30;
-                            timeCount=setInterval(function(){
-                                if(time==1){
-                                    clearInterval(timeCount);
-                                    timeCount=undefined;
-                                    $("#btn-veri").text("获取验证码");
-                                    time=30;
-                                }else{
-                                    time-=1;
-                                    $("#btn-veri").text(time.toString()+"秒后重新发送");
-                                }
-                            },1000);
                         }else{
                             alert("请输入有效的手机号码");
                         }
@@ -99,7 +101,7 @@
                     return false;
                 }
                 //ajax double 验证 phone+code
-                 $.get("logon.html?phone="+phone + "&verification="+code,function(result){
+                 /* $.get("logon.html?phone="+phone + "&verification="+code,function(result){
                     var obj = eval(result);
                     if (obj.success == "1"){
                         window.location.href = "/main/main.html"
@@ -109,7 +111,8 @@
                        }
                      });
                 var isSuccess = true; // TODO need modification ...
-                return isSuccess;
+                return isSuccess; */
+                return true;
             },
 
                 
@@ -132,15 +135,25 @@
                 window.location.href=url
             },
             init:function(){
-                this.getVeriCodeInit();
+            	this.getVeriCodeInit();
                 $("#btn-login").on("click",function(){
-                    var verified=verify.code_verify();
+                	var params = "mobile="+$("input[name='phone']").val()+"&code="+$("input[name='verification']").val();
+                	$.get(amp_Path + "/login_submit.htm?"+params, function(result){
+                        var obj = JSON.parse(result);
+                        if (obj.code == "0"){
+                        	 verify.login("main.html#/projectlist"); // TODO
+                        }else{
+                        	alert(obj.msg);
+                        }
+                    });
+                	
+                    /* var verified=verify.code_verify();
                     console.log(verified);
                     if(verified){
                         verify.login("main.html#/projectlist"); // TODO
                     }else{
                         return false;
-                    }
+                    } */
                 });
             }
         };

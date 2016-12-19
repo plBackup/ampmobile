@@ -245,11 +245,11 @@
         <div class="contract-statistics-panel amp-display-none">
             <div class="panel-content">
                 <div class="info-group clearfix">
-                    <div class="info-item"><em>已出租面积</em><div>200m²</div></div>
-                    <div class="info-item"><em>未出租面积</em><div>100m²</div></div>
+                    <div class="info-item"><em>已出租面积</em><div>{{hasRentedSquare|number:0}}m²</div></div>
+                    <div class="info-item"><em>未出租面积</em><div>{{notRentedSquare|number:0}}m²</div></div>
                 </div><!-- info-group -->
                 <div class="info-group clearfix">
-                    <div class="info-item"><em>租约数</em><div>50</div></div>
+                    <div class="info-item"><em>租约数</em><div>{{rentContractCount|number:0}}</div></div>
                 </div><!-- info-group -->
             </div><!-- panel-content -->
         </div><!-- contract-statistics-panel -->

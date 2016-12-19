@@ -63,12 +63,12 @@
         <div class="contract-statistics-panel amp-display-none">
             <div class="panel-content">
                 <div class="info-group clearfix">
-                    <div class="info-item"><em>欠费总额</em><div>3,282,344</div></div>
-                    <div class="info-item"><em>押金</em><div>20,000</div></div>
+                    <div class="info-item"><em>欠费总额</em><div>{{arrearsTotalAmount|number:0}}</div></div>
+                    <div class="info-item"><em>押金</em><div>{{deposit|number:0}}</div></div>
                 </div><!-- info-group -->
                 <div class="info-group clearfix">
-                    <div class="info-item"><em>欠费笔数</em><div>3</div></div>
-                    <div class="info-item"><em>累计欠费次数</em><div>4</div></div>
+                    <div class="info-item"><em>欠费笔数</em><div>{{arrearsCount|number:0}}</div></div>
+                    <div class="info-item"><em>累计欠费次数</em><div>{{arrearsCount|number:0}}</div></div>
                 </div><!-- info-group -->
             </div><!-- panel-content -->
         </div><!-- contract-statistics-panel -->

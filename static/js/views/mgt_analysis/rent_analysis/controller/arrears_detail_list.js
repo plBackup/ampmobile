@@ -10,8 +10,14 @@ ampApp.controller("arrears-detail-list-controller",["$scope","$http","$rootScope
     $scope.goToArrearsMerchantDetail = function(item){
         $location.path("arrears_merchant_detail");
 
+
         var SELECTED_ARREARS_MERCHANT_NAME = "selected_arrears_merchant_name";
+        var SELECTED_ARREARS_MERCHANT_AMOUNT = "selected_arrears_merchant_amount";
+        var SELECTED_ARREARS_MERCHANT_DEPOSIT = "selected_arrears_merchant_deposit";
+
         globalStorage.setSessionData(SELECTED_ARREARS_MERCHANT_NAME,item.merchantName);
+        globalStorage.setSessionData(SELECTED_ARREARS_MERCHANT_AMOUNT,item.arrearsTotalAmount);
+        globalStorage.setSessionData(SELECTED_ARREARS_MERCHANT_DEPOSIT,item.deposit);
     };
 
     /* ======================================== 监听广播事件 ======================================== */

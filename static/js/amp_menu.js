@@ -23,7 +23,7 @@ var menu_list={
             name:"管理",
             index:"main-2",
             icon:"amp-menu-manage",
-            links:"mgt_analysis.contract_list",
+            links:"mgt_analysis",
             target:"#",
             relocate:false//点击一级目录直接跳转
 

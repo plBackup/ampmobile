@@ -13,6 +13,10 @@ ampApp.controller("rent-main-controller",["$scope","$http","$rootScope","$timeou
         $scope.rentList = data.rentList;
         $scope.investmentList = data.investmentList;
         $scope.collapseTableList=data.collapseTable;
+
+        $scope.hasRentedSquare = parseFloat($scope.collapseTableList[$scope.collapseTableList.length-1].rentSquare);
+        $scope.notRentedSquare = parseFloat($scope.collapseTableList[$scope.collapseTableList.length-1].totalRentSquare)-parseFloat($scope.collapseTableList[$scope.collapseTableList.length-1].rentSquare);
+        $scope.rentContractCount = parseFloat($scope.collapseTableList[$scope.collapseTableList.length-1].rentCount);
     }
 
     /* ======================================== angular 注册事件 ======================================== */

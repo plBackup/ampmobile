@@ -172,7 +172,7 @@ ampApp.config(function($stateProvider,$urlRouterProvider,$httpProvider) {
                 'content': {
                     templateUrl: './views/datatool/datatool_index.html',
                     controller:"datatoolController",
-                    controllerAs:"dCtrl",
+                    controllerAs:"dCtrl"
                 },
                 "sidebarLeft":{
                     templateUrl:"./views/blank_left.html"
@@ -194,7 +194,7 @@ ampApp.config(function($stateProvider,$urlRouterProvider,$httpProvider) {
                     templateUrl: './views/datatool/datatool_rent_package.html',
                     controller:"dataIndexController",
                     controllerAs:"dCtrl"
-                },
+                }
             },
             reloadOnSearch: false,
             resolve: {
@@ -212,7 +212,7 @@ ampApp.config(function($stateProvider,$urlRouterProvider,$httpProvider) {
                     templateUrl: './views/datatool/datatool_rpg_result.html',
                     controller:"rpgResultController",
                     controllerAs:"dCtrl"
-                },
+                }
             },
             reloadOnSearch: false,
             resolve: {
@@ -231,7 +231,7 @@ ampApp.config(function($stateProvider,$urlRouterProvider,$httpProvider) {
                     templateUrl: './views/datatool/datatool_rent_package_edit.html',
                     controller:"dataEditController",
                     controllerAs:"rCtrl"
-                },
+                }
             },
             reloadOnSearch: false,
             resolve: {
@@ -252,13 +252,13 @@ ampApp.config(function($stateProvider,$urlRouterProvider,$httpProvider) {
                     templateUrl: './views/datatool/datatool_rent_package_edit.html',
                     controller:"dataEditController",
                     controllerAs:"rCtrl"
-                },
+                }
             },
             reloadOnSearch: false,
             resolve: {
                 shopData:function($stateParams){
                     return {
-                        type:"create",
+                        type:"create"
                         //shopId:$stateParams.shopId
                     };
                 },
@@ -273,7 +273,7 @@ ampApp.config(function($stateProvider,$urlRouterProvider,$httpProvider) {
                     templateUrl: './views/datatool/datatool_rpg_set_index.html',
                     controller:'dataSetIndexController',
                     controllerAs:"sCtrl"
-                },
+                }
             },
             reloadOnSearch: false,
             resolve: {
@@ -291,7 +291,7 @@ ampApp.config(function($stateProvider,$urlRouterProvider,$httpProvider) {
                     templateUrl: './views/datatool/rpg_set.html',
                     controller:"dataSetController",
                     controllerAs:"sCtrl"
-                },
+                }
             },
             reloadOnSearch: false,
             resolve: {
@@ -309,7 +309,7 @@ ampApp.config(function($stateProvider,$urlRouterProvider,$httpProvider) {
                     templateUrl: './views/datatool/datatool_sim.html',
                     controller:"dataSimController",
                     controllerAs:"sCtrl"
-                },
+                }
             },
             resolve: {
                 simData:function(dataIndexService){
@@ -329,7 +329,7 @@ ampApp.config(function($stateProvider,$urlRouterProvider,$httpProvider) {
                     templateUrl: './views/datatool/datatool_irr_plan.html',
                     controller:"irrPlanController",
                     controllerAs:"pCtrl"
-                },
+                }
             },
             reloadOnSearch: false,
             resolve: {
@@ -664,6 +664,7 @@ ampApp.config(function($stateProvider,$urlRouterProvider,$httpProvider) {
     });
 
     $urlRouterProvider.when('', '/projectlist');
+
     //$urlRouterProvider.when('/rpgindex', '/rpgindex/1');
    /* $urlRouterProvider.otherwise(
         function($injector, $location) {

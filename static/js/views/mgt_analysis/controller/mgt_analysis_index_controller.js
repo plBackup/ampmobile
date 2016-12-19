@@ -36,6 +36,12 @@ ampApp.controller("mgt-analysis-index-controller",["$scope","$http","$rootScope"
 
     $scope.$on("$viewContentLoading",function(event,viewConfig){
         var path = $location.path();
+        if(path=="/mgt_analysis"){
+
+            $location.path("/mgt_analysis/contract_list");
+
+            return;
+        }
 
         var index = getIndexWithSpecialPath(path);
         $scope.tabList[index].active=true;

@@ -10,6 +10,7 @@ ampApp.controller("merchant-sale-type-list-controller",["$scope","$http","$rootS
 
     function initializeData(result){
         $scope.records = result.allData[commercialType];
+        $scope.commercialTypeSummary = result.allCommercialTypeSummary[commercialType];
     }
 
     /* ======================================== angular 注册事件 ======================================== */

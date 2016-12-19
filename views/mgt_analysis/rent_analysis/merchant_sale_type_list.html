@@ -71,11 +71,11 @@
         <div class="contract-statistics-panel amp-display-none">
             <div class="panel-content">
                 <div class="info-group clearfix">
-                    <div class="info-item"><em>销售额</em><div>2,656</div></div>
-                    <div class="info-item"><em>平效</em><div>1202.12</div></div>
+                    <div class="info-item"><em>销售额</em><div>{{commercialTypeSummary.saleAmount|number:0}}</div></div>
+                    <div class="info-item"><em>平效</em><div>{{commercialTypeSummary.performanceValue|number:0}}</div></div>
                 </div><!-- info-group -->
                 <div class="info-group clearfix">
-                    <div class="info-item"><em>租售比</em><div>58.12%</div></div>
+                    <div class="info-item"><em>租售比</em><div>{{commercialTypeSummary.rentSaleRate}}</div></div>
                 </div><!-- info-group -->
             </div><!-- panel-content -->
         </div><!-- contract-statistics-panel -->
