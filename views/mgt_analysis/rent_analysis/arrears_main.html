@@ -10,19 +10,20 @@
     <div class="scrollable">
         <div class="scrollable-content section" >
 
-            <div class="table-group">
-                <div class="table-left">
-                    <table>
-                        <tr><th>项目</th></tr>
-                        <tr ng-repeat="item in records"><td>{{item.itemName}}</td></tr>
-                    </table>
-                </div><!-- table-left -->
-                <div class="table-right">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <table>
-                                    <thead>
+            <div class="arrears-main-content">
+                <div class="table-group">
+                    <div class="table-left">
+                        <table>
+                            <tr><th>项目</th></tr>
+                            <tr ng-repeat="item in records"><td>{{item.itemName}}</td></tr>
+                        </table>
+                    </div><!-- table-left -->
+                    <div class="table-right">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <table>
+                                        <thead>
                                         <tr>
                                             <th>总额(万元)</th>
                                             <th>≤30天</th>
@@ -31,8 +32,8 @@
                                             <th>&gt;90天</th>
                                             <th>占80%押金的商家数</th>
                                         </tr>
-                                    </thead>
-                                    <tbody>
+                                        </thead>
+                                        <tbody>
                                         <tr ng-repeat="item in records">
                                             <td>{{item.totalAccount|numberFormatDefault:"-":2}}</td>
                                             <td>{{item.dateItem1|numberFormatDefault:"-":2}}</td>
@@ -41,18 +42,17 @@
                                             <td>{{item.dateItem4|numberFormatDefault:"-":2}}</td>
                                             <td>{{item.merchantCount}}</td>
                                         </tr>
-                                    </tbody>
-                                </table>
+                                        </tbody>
+                                    </table>
 
-                            </div><!-- swiper-slide -->
-                        </div><!-- swiper-wrapper -->
-                    </div><!-- swiper-container -->
-                </div><!-- table-right -->
-            </div><!-- table-group -->
+                                </div><!-- swiper-slide -->
+                            </div><!-- swiper-wrapper -->
+                        </div><!-- swiper-container -->
+                    </div><!-- table-right -->
+                </div><!-- table-group -->
 
-
-            <a class="arrears-detail-btn" href="#/arrears_detail_list">欠费明细</a>
-
+                <a class="arrears-detail-btn" href="#/arrears_detail_list">欠费明细</a>
+            </div><!-- arrears-main-content -->
         </div><!-- scrollable-content -->
     </div><!-- scrollable -->
 

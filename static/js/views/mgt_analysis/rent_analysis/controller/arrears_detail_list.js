@@ -3,7 +3,7 @@ ampApp.controller("arrears-detail-list-controller",["$scope","$http","$rootScope
 
     $scope.records = [];
     function initializeData(result){
-        $scope.records = result;
+        $scope.records = result.slice(0,40);
     }
 
     /* ======================================== angular 注册事件 ======================================== */
@@ -44,6 +44,8 @@ ampApp.controller("arrears-detail-list-controller",["$scope","$http","$rootScope
             tableHeaderSwiper.params.control = tableContentSwiper;//需要在Swiper2初始化后，Swiper1控制Swiper2
             tableContentSwiper.params.control = tableHeaderSwiper;//需要在Swiper1初始化后，Swiper2控制Swiper1
         },500);
+
+        container.find("a.enrolment-btn").css("display","block");
     }
 
     /* ======================================== common methods ======================================== */

@@ -17,7 +17,26 @@ ampApp.run(function($transform) {
 });
 
 
-ampApp.config(function($stateProvider,$urlRouterProvider) {
+ampApp.factory("myHttpInterceptor", function($q) {
+    return {
+        // optional method
+        "responseError": function(rejection) {
+            var userAgent = navigator.userAgent.toLowerCase();
+            if (/iphone|ipad|ipod/.test(userAgent)) {
+                handleAjaxError({code:-1,msg:"请求失败"});
+            } else if (/android/.test(userAgent)) {
+                window.android.handleAjaxError({code:-1,msg:"请求失败"});
+            }
+            return $q.reject(rejection);
+        }
+
+    };
+});
+
+
+ampApp.config(function($stateProvider,$urlRouterProvider,$httpProvider) {
+    $httpProvider.interceptors.push('myHttpInterceptor');
+
     // An array of state definitions
     function _timeDefer($q,$timeout){
         var defer = $q.defer();

@@ -1,8 +1,9 @@
-#arrears-main{position:relative}
+#arrears-main{position:relative;}
 
 #arrears-main .scrollable{top:41px;height:auto;}
-#arrears-main .scrollable-content{padding:0;background-color:#f2f5f7;}
+#arrears-main .scrollable-content{padding:0 0 0 0;background-color:#f2f5f7;}
 
+#arrears-main .scrollable-content .arrears-main-content{position:relative;padding-bottom:74px;min-height: 100%;}
 
 #arrears-main .page-navigation-bar{border-bottom:1px solid #dae2e7;}
 #arrears-main .page-navigation-bar li{
@@ -77,6 +78,7 @@
     right:15px;
     height:44px;
     line-height: 44px;
+    display:none;
     background-color:#5ab46d;
     font-size:16px;
     color:#fff;

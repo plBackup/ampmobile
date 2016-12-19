@@ -1,0 +1,164 @@
+.ys-datetime-selector{
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    background-color:rgba(0,0,0,0.3);
+    z-index: 999;
+}
+
+.ys-datetime-selector.display-hide{
+    transform: translate3d(100%,0,0);
+    -webkit-transform: translate3d(100%,0,0);
+    visibility: hidden;
+}
+
+.ys-datetime-selector .ys-datetime-selector-content{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#fff;
+}
+
+/* ======================================== ys-datetime-operation-bar ======================================== */
+.ys-datetime-selector .ys-datetime-selector-content .ys-datetime-operation-bar{
+    height:45px;
+    line-height: 44px;
+    border-bottom:1px solid #e0e0e0;
+    text-align: center;
+}
+
+.ys-datetime-selector .ys-datetime-selector-content .ys-datetime-operation-bar span{
+    color:#333;
+    font-size:16px;
+}
+.ys-datetime-selector .ys-datetime-selector-content .ys-datetime-operation-bar a{
+    position:absolute;
+    top:0;
+    bottom:0;
+    padding:0 15px;
+    font-size:16px;
+    color:#5ab46d;
+}
+.ys-datetime-selector .ys-datetime-selector-content .ys-datetime-operation-bar a.ys-datetime-cancel-btn{left:0;}
+.ys-datetime-selector .ys-datetime-selector-content .ys-datetime-operation-bar a.ys-datetime-ok-btn{right:0;}
+
+/* ======================================== ys-datetime-blocks ======================================== */
+.ys-datetime-selector .ys-datetime-selector-content .ys-datetime-blocks{
+    position:relative;
+    height:170px;
+    -webkit-mask-box-image: -webkit-linear-gradient(top, rgba(0,0,0,0.2), rgba(0,0,0,0.4) 20%,rgba(0,0,0,0.6) 39%,white 40%, white 60%,rgba(0,0,0,0.6) 41%, rgba(0,0,0,0.4) 80%,rgba(0,0,0,0.2));
+    -webkit-mask-box-image: linear-gradient(to top, rgba(0,0,0,0.2), rgba(0,0,0,0.2), rgba(0,0,0,0.4) 20%,rgba(0,0,0,0.6) 39%,white 40%, white 60%,rgba(0,0,0,0.6) 41%, rgba(0,0,0,0.4) 80%,rgba(0,0,0,0.2));
+}
+
+.ys-datetime-selector .ys-datetime-selector-content .ys-datetime-blocks:before{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    height:1px;
+    background-color:#cdcdcd;
+    top:68px;
+}
+
+.ys-datetime-selector .ys-datetime-selector-content .ys-datetime-blocks:after{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    height:1px;
+    background-color:#cdcdcd;
+    bottom:68px;
+}
+
+
+.ys-datetime-selector .ys-datetime-selector-content .ys-datetime-blocks>div{
+    width:33.333%;
+    float:left;
+}
+
+.ys-datetime-selector .ys-datetime-selector-content .ys-datetime-blocks>div.block-hide{
+    display:none;
+}
+
+.ys-datetime-selector .ys-datetime-selector-content .ys-datetime-blocks>div.width-50{
+    width:50%;
+}
+
+.ys-datetime-selector .ys-datetime-selector-content .ys-datetime-blocks>div.width-100{
+    width:100%;
+}
+
+
+.ys-datetime-selector .ys-datetime-selector-content .ys-datetime-blocks .swiper-container{
+    height:170px;
+}
+.ys-datetime-selector .ys-datetime-selector-content .ys-datetime-blocks .swiper-container .swiper-slide{
+    height:34px;
+    line-height: 34px;
+    text-align: center;
+}
+
+/* ================================================== page animation start ================================================== */
+.ys-datetime-selector .datetime-selector-animated{
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+/* datetime-selector-slide-down-in */
+.ys-datetime-selector .datetime-selector-slide-down-in{
+    animation-name:datetime-selector-slide-down-in;
+    -webkit-animation-name:datetime-selector-slide-down-in;
+}
+
+@keyframes datetime-selector-slide-down-in {
+    from{
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    to{
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+@-webkit-keyframes datetime-selector-slide-down-in {
+    from{
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    to{
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* datetime-selector-slide-down-out */
+.datetime-selector-slide-down-out{
+    animation-name:datetime-selector-slide-down-out;
+    -webkit-animation-name:datetime-selector-slide-down-out;
+}
+
+@keyframes datetime-selector-slide-down-out {
+    from{
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    to{
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+}
+@-webkit-keyframes datetime-selector-slide-down-out {
+    from{
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    to{
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+}

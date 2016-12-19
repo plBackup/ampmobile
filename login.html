@@ -64,8 +64,6 @@
                                 if (obj.success == "0"){
                                      alert (obj.code)
                                 }
-                               
-                                
                             });
 
                             time=30;
@@ -102,7 +100,7 @@
                 }
                 //ajax double 验证 phone+code
                  $.get("logon.html?phone="+phone + "&verification="+code,function(result){
-                    var obj = eval(result)
+                    var obj = eval(result);
                     if (obj.success == "1"){
                         window.location.href = "/main/main.html"
                       }else{
@@ -110,7 +108,8 @@
                         isSuccess = false
                        }
                      });
-                    return isSuccess;
+                var isSuccess = true; // TODO need modification ...
+                return isSuccess;
             },
 
                 
@@ -138,7 +137,7 @@
                     var verified=verify.code_verify();
                     console.log(verified);
                     if(verified){
-                        verify.login("/main/main.html");
+                        verify.login("main.html#/projectlist"); // TODO
                     }else{
                         return false;
                     }

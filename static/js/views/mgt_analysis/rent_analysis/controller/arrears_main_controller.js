@@ -29,6 +29,8 @@ ampApp.controller("arrears-main-controller",["$scope","$http","$rootScope","$tim
             resistanceRatio : 0
         });
 
+        container.find("a.arrears-detail-btn").show();
+
     }
 
     /* ======================================== common methods ======================================== */

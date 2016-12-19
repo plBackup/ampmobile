@@ -29,6 +29,7 @@
 
     <link href="./static/css/amp_common.css" rel="stylesheet">
     <link href="./static/css/common/component.css" rel="stylesheet">
+    <link href="./static/css/common/ys_datetime_selector.css" rel="stylesheet">
     <link href="./static/css/common/amp_animation.css" rel="stylesheet">
 
     <link href="./static/css/views/projects.css" rel="stylesheet">
@@ -117,6 +118,8 @@
     <script src="./static/js/amp_menu.js"></script>
     <script src="./static/js/amp_main_m.js"></script>
 
+    <script src="./static/js/common/ys_datetime_selector.js"></script>
+
 
     <script src="./static/js/common/global_storage.js"></script>
 
@@ -181,6 +184,9 @@
 	<!-- 风控分析 -->
 	<script src="static/js/views/riskctrl/controller/risk_investment_controller.js"></script>
 	<script src="static/js/views/riskctrl/controller/risk_administration_controller.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        function handleAjaxError(params){}
+    </script>
 </head>
 <body ng-app="amp" ng-controller="MainController as mCtrl" id="{{pageId||'amp'}}">
 

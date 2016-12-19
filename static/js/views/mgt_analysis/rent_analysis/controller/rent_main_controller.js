@@ -4,7 +4,7 @@ ampApp.controller("rent-main-controller",["$scope","$http","$rootScope","$timeou
     $scope.squareRatePie = [];
     $scope.rentList = [];
     $scope.investmentList = [];
-    $scope.collapseTable=[];
+    $scope.collapseTableList=[];
 
     function initializeData(data){
         $scope.records = data.records;
@@ -12,8 +12,32 @@ ampApp.controller("rent-main-controller",["$scope","$http","$rootScope","$timeou
         $scope.squareRatePie = data.squareRatePie;
         $scope.rentList = data.rentList;
         $scope.investmentList = data.investmentList;
-        $scope.collapseTable=data.collapseTable;
+        $scope.collapseTableList=data.collapseTable;
     }
+
+    /* ======================================== angular 注册事件 ======================================== */
+    /* table 内容收起/展开 */
+    $scope.collapseTable = function(item){
+        if(item.hasCollapseBtn){
+            item.collapsed = !item.collapsed;
+            var groupId = item.dataGroup;
+
+            $scope.collapseTableList.forEach(function(itemRecord){
+                if(groupId==itemRecord.dataGroup&&!itemRecord.hasCollapseBtn){
+                    itemRecord.hide=!itemRecord.hide;
+                }
+            });
+        }
+    };
+
+    $scope.showMgtAnalysisPanel = function(){
+        hideMgtAnalysisMenuList();
+        showMgtAnalysisPanel();
+    };
+    $scope.closeMenuList = function(){
+        hideMgtAnalysisMenuList();
+    };
+
 
     /* ======================================== 监听广播事件 ======================================== */
     $scope.$on("$destroy",function(){destroy();});
@@ -67,27 +91,6 @@ ampApp.controller("rent-main-controller",["$scope","$http","$rootScope","$timeou
             freeMode: true,
             resistanceRatio : 0
         });
-    }
-
-    /* ======================================== 绑定事件 ======================================== */
-    function bindPageEvents(){
-        var mgtAnalysisMenuListWrapper = $("#mgt-analysis-menu-list-wrapper");console.log(22);
-        $(mgtAnalysisMenuListWrapper).find(".menu-item-list a.statistic-btn").on("click",function(e){
-            e.stopPropagation();
-            e.preventDefault();
-            console.log(2);
-            hideMgtAnalysisMenuList();
-
-            showMgtAnalysisPanel();
-
-        });
-
-        $(mgtAnalysisMenuListWrapper).find(".menu-item-list a.filter-btn").on("click",function(e){
-            e.stopPropagation();
-            e.preventDefault();
-            hideMgtAnalysisMenuList();
-        });
-
     }
 
     /* ======================================== common methods ======================================== */
@@ -145,7 +148,7 @@ ampApp.controller("rent-main-controller",["$scope","$http","$rootScope","$timeou
         var option = {
             color:["#5cd4f4","#5ab46d"],
             grid: {
-                top:"0",
+                top:"20",
                 left: "0",
                 right: "0",
                 bottom: "30",
@@ -177,7 +180,7 @@ ampApp.controller("rent-main-controller",["$scope","$http","$rootScope","$timeou
                     name:"租金",
                     type:"bar",
                     barWidth:10,
-                    data:[650,801,1003,1248,1738,2038]
+                    data:[parseInt(1777/10000),parseInt(157771/10000),parseInt(5248804/10000),parseInt(18017489/10000),parseInt(38174069/10000),parseInt(17235143/10000)]
                 },
                 {
                     barGap:"150%",
@@ -185,7 +188,7 @@ ampApp.controller("rent-main-controller",["$scope","$http","$rootScope","$timeou
                     name:"面积",
                     type:"bar",
                     barWidth:10,
-                    data:[ 380,401,520,514,704,945 ]
+                    data:[ 2029,47,2343,9149,24203,17467 ]
                 }
             ]
         };
@@ -357,9 +360,6 @@ ampApp.controller("rent-main-controller",["$scope","$http","$rootScope","$timeou
         $http.get(url).success(function(result){
             initializeData(result);
             initPageView();
-            $timeout(function(){
-                bindPageEvents();
-            },300);
         });
 
     }

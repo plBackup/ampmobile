@@ -1,4 +1,8 @@
 ampApp.controller("simulation-calculation-list-controller",["$scope","$http","$rootScope",function($scope,$http,$rootScope){
+
+
+    $rootScope.showBottom();
+
     $scope.records = [];
 
     function initializeData(data){

@@ -82,5 +82,29 @@
         </div><!-- scrollable-content -->
     </div><!-- scrollable -->
 
+    <div ui-content-for="amp-right-panel">
+        <div class="rent-query-panel">
+            <div class="query-section date-selector-section">
+                <div class="query-section-title">月份</div>
+                <div class="query-section-content">
+                    <div class="amp-date-input ">
+                        <input type="text" readonly value="2016-12"/>
+                    </div><!-- amp-date-input -->
+                </div><!-- query-section-content -->
+            </div><!--query-section -->
+
+            <div class="btn-group clearfix">
+                <a class="reset-btn" href="javascript:void(0)">重置</a>
+                <a class="query-btn" href="javascript:void(0)" ui-turn-off="uiSidebarRight">查询</a>
+            </div>
+        </div><!-- query-panel -->
+    </div><!-- amp-right-panel -->
+
+    <div ui-content-for="mgt-analysis-menu-list-wrapper">
+        <ul class="menu-item-list">
+            <li><a class="filter-btn"  ui-toggle="uiSidebarRight" ng-click="closeMenuList()">筛选</a></li>
+        </ul>
+    </div>
+
 </div><!-- contract-main -->
 

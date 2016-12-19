@@ -27,6 +27,10 @@ ampApp.controller("merchant-sale-main-controller",["$scope","$http","$rootScope"
         }
     };
 
+    $scope.closeMenuList = function(){
+        hideMgtAnalysisMenuList();
+    };
+
     $scope.goToMerchantSaleTypeList = function(item){
         if(item.subRecord){
             var type = item.commercialTypeName;

@@ -29,7 +29,8 @@
 
 /* ======================================== passenger-flow-info ======================================== */
 #passenger-flow-main .passenger-flow-info{border-bottom:10px solid #f2f5f7;}
-#passenger-flow-main .passenger-flow-info .swiper-pagination-bullet-active{background-color:#58b56f;}
+#passenger-flow-main .passenger-flow-info .swiper-pagination-bullet{background-color:#ccc;opacity:1;}
+#passenger-flow-main .passenger-flow-info .swiper-pagination-bullet.swiper-pagination-bullet-active{background-color:#58b56f;}
 #passenger-flow-main .info-segment-list{padding-bottom:40px;}
 #passenger-flow-main .info-segment-list .info-segment{
     border-bottom:1px solid #dae2e7;

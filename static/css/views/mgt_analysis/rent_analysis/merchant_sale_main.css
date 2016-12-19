@@ -57,7 +57,8 @@
 
 /* ======================================== pie-group ======================================== */
 #merchant-sale-main .pie-group{border-bottom:10px solid #f2f5f7;}
-#merchant-sale-main .pie-group .swiper-pagination-bullet-active {
+#merchant-sale-main .pie-group .swiper-pagination-bullet{background-color:#ccc;opacity:1;}
+#merchant-sale-main .pie-group .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background-color: #58b56f;
 }
 

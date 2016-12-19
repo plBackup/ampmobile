@@ -61,7 +61,9 @@ ampApp.controller("cost-manual-controller",["$scope","$http","$rootScope","$time
 
             tableHeaderSwiper.params.control = tableContentSwiper;//需要在Swiper2初始化后，Swiper1控制Swiper2
             tableContentSwiper.params.control = tableHeaderSwiper;//需要在Swiper1初始化后，Swiper2控制Swiper1
-        },300)
+        },300);
+
+        container.find("a.enrolment-btn").show();
     }
 
     /* ======================================== common methods ======================================== */

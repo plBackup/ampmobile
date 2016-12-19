@@ -19,6 +19,13 @@
     background-size:22px 22px;
 }
 
+#simulation-calculation-list-header>a.amp-project-btn{
+    left:0;
+    width:52px;
+    background:url(../../../images/icon_projects@2x.png) no-repeat center center;
+    background-size:22px 22px;
+}
+
 #simulation-calculation-list-header>a.amp-menu{
     right:0;
     width:52px;

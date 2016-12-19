@@ -48,6 +48,7 @@ ampApp.controller("merchant-sale-type-list-controller",["$scope","$http","$rootS
             tableContentSwiper.params.control = tableHeaderSwiper;//需要在Swiper1初始化后，Swiper2控制Swiper1
         },300);
 
+        container.find("a.enrolment-btn").css("display","block");
     }
 
     /* ======================================== common methods ======================================== */

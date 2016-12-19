@@ -32,7 +32,8 @@
 
 
 /* ======================================== pie-group ======================================== */
-#rent-main .pie-group .swiper-pagination-bullet-active {
+#rent-main .pie-group .swiper-pagination-bullet{background-color:#ccc;opacity:1;}
+#rent-main .pie-group .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background-color: #58b56f;
 }
 
@@ -169,7 +170,7 @@
 
 /* ======================================== amp-bar-chart ======================================== */
 #rent-main .amp-bar-chart .amp-chart-content-wrapper{overflow: auto;padding:10px 15px 0 15px;margin-right:15px;}
-#rent-main .amp-bar-chart .amp-chart-content{width:100%;min-width:500px;height:140px;}
+#rent-main .amp-bar-chart .amp-chart-content{width:100%;min-width:500px;height:160px;}
 #rent-main .amp-bar-chart .amp-chart-legend{
     width:160px;
     padding-bottom:10px;

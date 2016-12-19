@@ -6,6 +6,9 @@ ampApp.controller("contract-list-controller",["$scope","$http","$rootScope","$lo
         $scope.records = data;
     }
 
+    $scope.queryStartTime = "2016-08-01";
+    $scope.queryEndTime = "2016-10-01";
+
     /* ======================================== angular 注册事件 ======================================== */
     /* 跳转到合同详情 */
     $scope.goToContractDetail = function(){
@@ -20,6 +23,28 @@ ampApp.controller("contract-list-controller",["$scope","$http","$rootScope","$lo
     $scope.showMgtAnalysisPanel = function(){
         hideMgtAnalysisMenuList();
         showMgtAnalysisPanel();
+    };
+
+    $scope.showDateTimePicker = function(key,value){
+        var arr = value.split("-");
+        console.log(arr);
+        DateTimeWidget.show({
+            year:arr[0],
+            month:parseInt(arr[1]),
+            date:parseInt(arr[2]),
+            callback:function(year,month,date){
+
+                $scope.$apply(function(){
+                    if(month<10){
+                        month = "0"+month;
+                    }
+                    if(date<10){
+                        date = "0"+date;
+                    }
+                    $scope[key] = year+"-"+month+"-"+date;
+                });
+            }
+        });
     };
 
 

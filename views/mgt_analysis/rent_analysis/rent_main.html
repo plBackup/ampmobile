@@ -52,15 +52,9 @@
                     <table>
                         <tbody>
                             <tr><th>项目</th></tr>
-                            <tr class="record-group collapsed"><td>主力店</td></tr>
-                            <tr class="record-group-sub"><td>超市</td></tr>
-                            <tr class="record-group-sub"><td>影院</td></tr>
-                            <tr class="record-group collapsed"><td>非主力店</td></tr>
-                            <tr class="record-group-sub"><td>餐饮</td></tr>
-                            <tr class="record-group-sub"><td>儿童</td></tr>
-                            <tr class="record-group-sub"><td>服装</td></tr>
-                            <tr class="record-group-sub"><td>配套</td></tr>
-                            <tr><td>合计</td></tr>
+                            <tr ng-click="collapseTable(item)" ng-class="{'record-group':item.hasCollapseBtn,'amp-display-none':item.hide,'collapsed':item.collapsed}" data-group="{{item.dataGroup}}"  ng-repeat="item in collapseTableList">
+                                <td data-type="{{item.commercialType}}">{{item.projectName}}</a></td>
+                            </tr>
                         </tbody>
                     </table>
                 </div><!-- table-left -->
@@ -80,70 +74,13 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr class="record-group">
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                    </tr>
-                                    <tr>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                    </tr>
-                                    <tr class="record-group ">
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                    </tr>
-                                    <tr>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                    </tr>
-                                    <tr>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                    </tr>
-                                    <tr>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                    </tr>
-                                    <tr>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                    </tr>
-                                    <tr>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                    </tr>
+                                        <tr ng-click="collapseTable(item)" ng-class="{'record-group':item.hasCollapseBtn,'amp-display-none':item.hide,'collapsed':item.collapsed}" data-group="{{item.dataGroup}}"  ng-repeat="item in collapseTableList">
+                                            <td>{{item.totalRentSquare|numberFormatDefault:"-":0}}</td>
+                                            <td>{{item.rentSquare|numberFormatDefault:"-":0}}</td>
+                                            <td>{{item.rentRate}}</td>
+                                            <td>{{item.rentCount|numberFormatDefault:"-":0}}</td>
+                                            <td>{{item.rentPriceAvg|numberFormatDefault:"-":0}}</td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div><!-- swiper-slide -->
@@ -182,10 +119,7 @@
                     <table>
                         <tbody>
                             <tr><th>时间</th></tr>
-                            <tr><td>1个月内</td></tr>
-                            <tr><td>3个月内</td></tr>
-                            <tr><td>6个月内</td></tr>
-                            <tr><td>12个月内</td></tr>
+                            <tr ng-repeat="item in rentList"><td>{{item.dateItem}}</td></tr>
                         </tbody>
                     </table>
                 </div><!-- table-left -->
@@ -206,42 +140,16 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                    </tr>
-                                    <tr>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                    </tr>
-                                    <tr>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                    </tr>
-                                    <tr>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                    </tr>
+                                        <tr ng-repeat="item in rentList">
+                                            <td>{{item.rentIncome|numberFormatDefault}}</td>
+                                            <td>{{item.rentIncomeRate}}</td>
+                                            <td>{{item.rentIncomeAvg|numberFormatDefault}}</td>
+                                            <td>{{item.square|numberFormatDefault}}</td>
+                                            <td>{{item.squareRate}}</td>
+                                            <td>{{item.rentCount}}</td>
+                                            <td>{{item.rentCountRate}}</td>
+                                        </tr>
+
                                     </tbody>
                                 </table>
                             </div><!-- swiper-slide -->
@@ -270,12 +178,10 @@
                 <div class="table-left">
                     <table>
                         <tbody>
-                        <tr><th></th></tr>
-                        <tr><td>当月签约面积</td></tr>
-                        <tr><td>年度累计</td></tr>
-                        <tr><td>蓄水</td></tr>
-                        <tr><td>商务</td></tr>
-                        <tr><td>合同</td></tr>
+                            <tr><th></th></tr>
+                                <tr ng-repeat="item in investmentList">
+                                    <td>{{item.itemLabel}}</td>
+                                </tr>
                         </tbody>
                     </table>
                 </div><!-- table-left -->
@@ -285,39 +191,18 @@
                             <div class="swiper-slide">
                                 <table>
                                     <thead>
-                                    <tr>
-                                        <th>预算(㎡)</th>
-                                        <th>实际(㎡)</th>
-                                        <th>完成率(%)</th>
-                                    </tr>
+                                        <tr>
+                                            <th>预算(㎡)</th>
+                                            <th>实际(㎡)</th>
+                                            <th>完成率(%)</th>
+                                        </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                    </tr>
-                                    <tr>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                    </tr>
-                                    <tr>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                    </tr>
-                                    <tr>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                    </tr>
-                                    <tr>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                        <td>258.47</td>
-                                    </tr>
-
+                                        <tr ng-repeat="item in investmentList">
+                                            <td>{{item.budget|number}}</td>
+                                            <td>{{item.real|number}}</td>
+                                            <td>{{item.finishRate}}</td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div><!-- swiper-slide -->
@@ -351,8 +236,8 @@
 
     <div ui-content-for="mgt-analysis-menu-list-wrapper">
         <ul class="menu-item-list">
-            <li><a class="statistic-btn">统计</a></li>
-            <li><a class="filter-btn"  ui-toggle="uiSidebarRight">筛选</a></li>
+            <li><a class="statistic-btn" ng-click="showMgtAnalysisPanel()">统计</a></li>
+            <li><a class="filter-btn"  ui-toggle="uiSidebarRight" ng-click="closeMenuList()">筛选</a></li>
         </ul>
     </div>
 

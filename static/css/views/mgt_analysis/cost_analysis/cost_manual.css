@@ -70,7 +70,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    display: block;
+    display: none;
     height: 48px;
     line-height: 48px;
     text-align: center;
