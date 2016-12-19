@@ -68,7 +68,7 @@ a,button,.btn{ -moz-user-select: none; -webkit-user-select: none; -ms-user-selec
 
 .login-wrapper .form-wrapper a.ys-btn:hover,.login-wrapper .form-wrapper a.ys-btn:focus,.login-wrapper .form-wrapper a.ys-btn:active{background-color: rgba(0, 191, 112, 0.9);color:#fff;text-decoration: none;}
 .input-group-veri{/*padding-right:150px;*/position: relative;}
-.login-wrapper .form-wrapper .input-group-veri  a.ys-btn{position: absolute;height:24px;line-height:24px;width:80px;top:2px;right:0;font-weight:normal;font-size:12px;}
+.login-wrapper .form-wrapper .input-group-veri  a.ys-btn{position: absolute;height:24px;line-height:24px;width:98px;top:2px;right:0;font-weight:normal;font-size:12px;}
 
 
 /* btn effect */

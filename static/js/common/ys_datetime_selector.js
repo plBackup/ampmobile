@@ -73,11 +73,11 @@
             }
         });
         var yearSlides = [];
-        for(var i=currentYear-2;i<=currentYear+102;i++){
+        for(var i=currentYear-2;i<=currentYear+22;i++){
             yearSlides.push("<div class='swiper-slide' data-year='"+i+"'>"+i+"年</div>");
         }
         var prevYears = [];
-        for(var i=currentYear-3;i>currentYear-100;i--){
+        for(var i=currentYear-3;i>currentYear-20;i--){
             prevYears.push("<div class='swiper-slide' data-year='"+i+"'>"+i+"年</div>");
         }
         yearSwiper.appendSlide(yearSlides);
@@ -261,9 +261,9 @@
         monthSwiper.slideTo(currentMonth+9);
         dateSwiper.slideTo(currentDayCount-3+currentDate);
 
-
         container.removeClass("display-hide");
         container.find(".ys-datetime-selector-content").addClass("datetime-selector-animated").addClass("datetime-selector-slide-down-in");
+
     }
 
     var DateTimeWidget = {

@@ -33,6 +33,7 @@
     color:#333;
     text-align: left;
 }
+.amp-date-input a:focus,.amp-date-input a:active{color:#333;}
 
 
 .amp-date-input:after{
