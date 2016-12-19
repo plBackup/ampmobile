@@ -166,6 +166,7 @@
 }
 #datatool-shopedit .td-opt>button>em{display: block;position: absolute;width:22px;height:22px;top:50%;margin-top:-11px;left:50%;margin-left:-11px;}
 #datatool-shopedit .active .td-input-wrapper input{display: block;}
+#datatool-shopedit .active .td-input-wrapper input[hidden]{display: none;}
 #datatool-shopedit .active .td-input-wrapper span{display: none;}
 #datatool-shopedit .amp-icon-dropdown{margin-top:-12px;}
 
