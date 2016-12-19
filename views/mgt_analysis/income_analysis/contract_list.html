@@ -35,8 +35,8 @@
                 <div class="query-section-title">时间</div>
                 <div class="query-section-content">
                     <div class="calendar-left">
-                        <div class="amp-date-input " ng-click="showDateTimePicker('queryStartTime',queryStartTime)">
-                            <input type="text" readonly="true" value="{{queryStartTime}}"/>
+                        <div class="amp-date-input ">
+                            <a ng-bind="queryStartTime" ng-click="showDateTimePicker('queryStartTime',queryStartTime)"></a>
                         </div><!-- amp-date-input -->
                     </div><!-- calendar-left -->
 
@@ -44,7 +44,7 @@
 
                     <div class="calendar-right">
                         <div class="amp-date-input">
-                            <input type="text" readonly="true"  value="{{queryEndTime}}" ng-click="showDateTimePicker('queryEndTime',queryEndTime)"/>
+                            <a ng-bind="queryEndTime" ng-click="showDateTimePicker('queryEndTime',queryEndTime)"></a>
                         </div><!-- amp-date-input -->
                     </div><!-- calendar-right -->
 
