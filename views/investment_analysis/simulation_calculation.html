@@ -60,14 +60,14 @@
 
             <div class="grey-bar"></div>
 
-            <div class="section-title amp-collapse amp-collapsed">
+            <div class="section-title amp-collapse" ng-class="{'amp-collapsed':sectionGroup.initialAnalysisCollapsed}">
                 <div>
                     <span>期初分析</span>
-                    <a></a>
+                    <a ng-click="collapseSection('initialAnalysisCollapsed')"></a>
                 </div>
             </div><!-- section-title -->
 
-            <div class="initial-analysis">
+            <div class="initial-analysis" ng-class="{'amp-display-none':!sectionGroup.initialAnalysisCollapsed}">
                 <div class="amp-form-group">
                     <label class="amp-form-label">收购价</label>
                     <div class="amp-form-content">
@@ -166,14 +166,14 @@
 
             <div class="grey-bar"></div>
 
-            <div class="section-title amp-collapse amp-collapsed">
+            <div class="section-title amp-collapse" ng-class="{'amp-collapsed':sectionGroup.preTaxCashFlowCollapsed}">
                 <div>
                     <span>税前现金流</span>
-                    <a></a>
+                    <a ng-click="collapseSection('preTaxCashFlowCollapsed')"></a>
                 </div>
             </div><!-- section-title -->
 
-            <div class="table-group pre-tax-cash-flow">
+            <div class="table-group pre-tax-cash-flow" ng-class="{'amp-display-none':!sectionGroup.preTaxCashFlowCollapsed}">
                 <div class="table-group-left">
                     <table>
                         <tbody>
@@ -231,14 +231,14 @@
 
             <div class="grey-bar"></div>
 
-            <div class="section-title amp-collapse amp-collapsed">
+            <div class="section-title amp-collapse" ng-class="{'amp-collapsed':sectionGroup.saleIncomeAnalysisCollapsed}">
                 <div>
                     <span>销售所得分析</span>
-                    <a></a>
+                    <a ng-click="collapseSection('saleIncomeAnalysisCollapsed')"></a>
                 </div>
             </div><!-- section-title -->
 
-            <div class="table-group sale-income-analysis">
+            <div class="table-group sale-income-analysis" ng-class="{'amp-display-none':!sectionGroup.saleIncomeAnalysisCollapsed}">
                 <div class="table-group-left">
                     <table>
                         <tbody>
@@ -296,14 +296,14 @@
 
             <div class="grey-bar"></div>
 
-            <div class="section-title amp-collapse amp-collapsed">
+            <div class="section-title amp-collapse" ng-class="{'amp-collapsed':sectionGroup.loanRepaymentAnalysisCollapsed}">
                 <div>
                     <span>贷款分期还款</span>
-                    <a></a>
+                    <a ng-click="collapseSection('loanRepaymentAnalysisCollapsed')"></a>
                 </div>
             </div><!-- section-title -->
 
-            <div class="table-group loan-repayment-analysis">
+            <div class="table-group loan-repayment-analysis" ng-class="{'amp-display-none':!sectionGroup.loanRepaymentAnalysisCollapsed}">
                 <div class="table-group-left">
                     <table>
                         <tbody>

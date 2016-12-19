@@ -1,11 +1,28 @@
 ampApp.controller("simulation-calculation-controller",["$scope","$http","$rootScope",function($scope,$http,$rootScope){
-    $scope.records = [];
+    $scope.result = [];
 
     $rootScope.hideBottom();
 
     function initializeData(data){
-        $scope.records = data;
+        var result = data.case1;
+        $scope.result = result;
+
     }
+
+    // 控制折叠展开
+    $scope.sectionGroup = {
+        initialAnalysisCollapsed:true,
+        preTaxCashFlowCollapsed:true,
+        saleIncomeAnalysisCollapsed:true,
+        loanRepaymentAnalysisCollapsed:true
+    };
+
+    /* ======================================== angular 注册事件 ======================================== */
+    $scope.collapseSection = function(section){
+        $scope.sectionGroup[section]=!$scope.sectionGroup[section];
+    };
+
+
     /* ======================================== 监听广播事件 ======================================== */
     $scope.$on("$destroy",function(){destroy();});
 
@@ -117,7 +134,7 @@ ampApp.controller("simulation-calculation-controller",["$scope","$http","$rootSc
     // 初始化
     function init(){
 
-        var url = "data/data_1/investment_analysis/simulation_calculation_main_data.json";
+        var url = "data/data_1/investment_analysis/simulation_calculation_data.json";
         $http.get(url).success(function(result){
             initializeData(result);
             initPageView();
