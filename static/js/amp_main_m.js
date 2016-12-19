@@ -680,14 +680,20 @@ ampApp.controller('MainController', function($rootScope, $scope,$location,$timeo
      $rootScope.curProject=curProject;
     $rootScope.projectName="商业公司A";
 
-    $rootScope.bottomPanelShow=false;
-
     var self=this;
     self.title="悦商AMP";
     self.menu=menu_list["amp_menu"];
 
     self.bottomShow=true;
     self.headerShow=true;
+
+    $rootScope.bottomPanelShow=false;
+    $rootScope.showBottomPanel=function(){
+        $rootScope.bottomPanelShow=true;
+    };
+    $rootScope.hideBottomPanel=function(){
+        $rootScope.bottomPanelShow=false;
+    };
 
     $rootScope.loadingShow=false;
 
