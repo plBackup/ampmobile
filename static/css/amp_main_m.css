@@ -54,7 +54,7 @@ i.amp-menu-data{background-image:url(../images/menu_data@2x.png);}
 .navOpt-icon-home:before{background-image:url(../images/icon_projects@2x.png);}
 .navOpt-icon-plus:before{background-image:url(../images/icon_more@2x.png);}
 /*amp icon*/
-.ampApp .amp-icon{background-size:contain;background-position: center center;background-repeat: no-repeat;}
+.amp-icon,.ampApp .amp-icon{background-size:contain;background-position: center center;background-repeat: no-repeat;}
 
 .amp-icon-arrow-right{display: block;position:absolute;right:15px;top:50%;margin-top:-6px;background-image:url(../images/icon_arrow_right@2x.png);width:12px; height:12px;}
 .amp-icon-back{position:absolute;display: block;top:50%;margin-top:-11px;left:50%;margin-left:-11px;background-image:url(../images/icon_logo_back@2x.png);
