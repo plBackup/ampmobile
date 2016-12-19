@@ -27,7 +27,7 @@
                                     <em>{{project.proportion|default:"-"}}</em>
                                     <div class="amp-project-chart-wrapper">
                                         <div id="project-{{project.pid}}-openrate-chart" pie-chart
-                                             chart-data="project.openRate" chart-name="listCtrl.oRate" style="width:78px;height:78px;"></div>
+                                             chart-data="project.openRate||0" chart-name="listCtrl.oRate" style="width:78px;height:78px;"></div>
                                         <span>
                                             <label>开业率</label>
                                             <em>{{project.openRate| default:"-" | percentFormat}}</em>
@@ -40,7 +40,7 @@
                                     <em>{{project.income|number:2}}</em>
                                     <div class="amp-project-chart-wrapper" style="right:10px;">
                                         <div id="project-{{project.pid}}-complete-chart" pie-chart
-                                             chart-data="project.complete" chart-name="listCtrl.cRate" style="width:78px;height:78px;"></div>
+                                             chart-data="project.complete||0" chart-name="listCtrl.cRate" style="width:78px;height:78px;"></div>
                                         <span>
                                             <label>完成率</label>
                                             <em>{{project.complete| default:"-" | percentFormat}}</em>

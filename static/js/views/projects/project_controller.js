@@ -66,10 +66,10 @@ projects.controller("pjCreateController",["$rootScope","$scope","$location","$st
         "name":"",
         "proportion":"",
         "proportionType":"",
-        "openRate":"%",
+        "openRate":0,
         "income":0,
         "irr":"%",
-        "complete":"",
+        "complete":0,
         "noi":{
             "monthly":0,
             "yearly":"0"
