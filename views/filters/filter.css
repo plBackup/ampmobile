@@ -20,20 +20,20 @@
 .amp-right-panel .toolbar-blank{padding-top:0;padding-bottom:0;display: none;}
 .leftpanel-collapsed .amp-right-panel{display: none;}
 
-.amp-right-panel .toolbar-block{padding-left:12px;padding-right:12px;border-bottom: solid 1px #394152;background-color: rgba(255,255,255,0.05);}
+.amp-right-panel .toolbar-block{padding-left:0;padding-right:15px;}
 .amp-right-panel .toolbar-item{margin-bottom:16px;}
 .amp-right-panel .toolbar-item:nth-last-child(1){margin-bottom: 0;}
-.amp-right-panel .toolbar-item label{display: block;margin-bottom:3px;height:18px;line-height: 18px;color:#8592a3;font-size: 12px;}
+.amp-right-panel .toolbar-item label{display: block;margin-bottom:12px;height:18px;line-height: 18px;color:#373c42;font-size: 12px;}
 
 .datetimepicker{padding:5px 3px;width:200px;}
 .datetimepicker table{width:100%;font-size: 13px;}
-.icon-arrow-right:before { content: "\e092"; }
-.icon-arrow-left:before { content: "\e091"; }
+/*.icon-arrow-right:before { content: "\e092"; }
+.icon-arrow-left:before { content: "\e091"; }*/
 /*input group  */
-.amp-right-panel .toolbar-item .input-group{position:relative;width:100%;height:26px;line-height: 20px;background-color:#3a4153;color:#fff;overflow: hidden; }
-.amp-right-panel .toolbar-item .input-group .btn{padding: 3px 8px;width:29px;height:26px; line-height: 20px;border-radius:0;border:0;background: none;overflow: hidden;}
+.amp-right-panel .toolbar-item .input-group{position:relative;width:100%;height:32px;line-height: 26px;background-color:#f3f4f8;color:#373c42;overflow: hidden; }
+.amp-right-panel .toolbar-item .input-group .btn{padding: 3px 8px;width:38px;height:32px; line-height: 20px;border-radius:0;border:0;background-color: #59b46f; color:#fff;overflow: hidden;position:relative;}
 .amp-right-panel .toolbar-item .input-group .btn:hover{background-color: #59b46f; color:#fff;}
-.toolbar-item .input-group input{background:none;border:0;color:#fff;text-align:left; padding:3px 10px;width:100%;font-size: 12px;}
+.toolbar-item .input-group input{background:none;border:0;color:#373c42;text-align:left; padding:3px 10px;width:100%;font-size: 12px;}
 .toolbar-item .glyphicon{color:#4b5366;}
 .toolbar-item .btn:hover .glyphicon{color:#fff;cursor:pointer;}
 
@@ -121,6 +121,9 @@
     outline-offset: -2px;
 
 }
+
+
+
 
 
 

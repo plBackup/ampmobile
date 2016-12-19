@@ -829,7 +829,7 @@ dataTool.controller("dataEditController",['$rootScope', '$scope','$state','Share
                     }
                     break;
                 case "rent":
-                    if(self.shopInfo.wyStandard.length>1){
+                    if(self.shopInfo.rentStandard.length>1){
                         self.shopInfo.rentStandard.pop();
                     }else{
                         self.shopInfo.rentStandard[0]=0;

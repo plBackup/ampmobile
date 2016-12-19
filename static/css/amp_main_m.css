@@ -178,6 +178,29 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill { bac
 .amp-loading>.loading-wrapper>.loading-ani{width:60px;height:60px;position: absolute;top:20px;left:50%;margin-left:-30px;}
 .amp-loading>.loading-wrapper>span{display: block;color:#fff;font-size:16px;text-align: center;height:44px;line-height: 44px;}
 
+/*patch on*/
+.glyphicon{
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-arrow-left:before{
+    content: "\f053";
+}
+.icon-arrow-right:before{
+    content: "\f054";
+}
+
+.datetimepicker .table-condensed > thead > tr > th,
+.datetimepicker .table-condensed > tbody > tr > th,
+.datetimepicker .table-condensed > tfoot > tr > th,
+.datetimepicker .table-condensed > thead > tr > td,
+.datetimepicker .table-condensed > tbody > tr > td,
+.datetimepicker .table-condensed > tfoot > tr > td{padding:0;}
+
 
 
 
