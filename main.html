@@ -187,7 +187,7 @@
         function handleAjaxError(params){}
     </script>
 </head>
-<body ng-app="amp" ng-controller="MainController as mCtrl" id="{{pageId||'amp'}}">
+<body ng-app="amp" ng-controller="MainController as mCtrl" id="{{pageId||'amp'}}" ng-class="{'in':bottomPanelShow==true}">
 
 <div class="app ampApp">
     <div class="navbar navbar-app navbar-absolute-top" ng-if="mCtrl.headerShow">
@@ -250,7 +250,7 @@
 
 <div ui-yield-to="subpage"></div>
 
-<div ui-yield-to="bottomPanel"></div>
+<div ui-yield-to="bottomPanel" class="amp-bottom-panel"></div>
 
 <div class="amp-loading" ng-show="loadingShow">
     <div class="loading-wrapper">

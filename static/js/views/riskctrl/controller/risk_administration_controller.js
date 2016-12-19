@@ -1,8 +1,15 @@
-ampApp.controller("risk_administration_controller", ["$scope", "$http", "$rootScope", function($scope, $http, $rootScope) {
+ampApp.controller("risk_administration_controller", ["$scope", "$http", "$rootScope","$timeout", function($scope, $http, $rootScope,$timeout) {
 	var ctrl_detail_tel_module = (function($, cm) {
 		var ctrl_detail_tel_module = cm;
 
 		ctrl_detail_tel_module.init = function() {
+
+			// 手动激活 风控 菜单
+			$timeout(function(){
+				$(".navbar-app .amp-menu.amp-menu-ctrl").closest("a").addClass("active");
+			},300);
+
+
 
 			$("#cost .table-title li.monthly").each(function() {
 				$(this).on("click", function() {
@@ -236,5 +243,7 @@ ampApp.controller("risk_administration_controller", ["$scope", "$http", "$rootSc
 	};
 
 	ctrl_detail_tel_module.init();
+
+
 
 }]);
