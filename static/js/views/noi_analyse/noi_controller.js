@@ -151,6 +151,21 @@ noi.controller('noiController', ['$rootScope', '$scope',"$timeout","noiAllData",
                     console.log(data);
                 })*/
 
+        self.reset=function(){
+
+            self.curMonth="2016-11";
+            SharedState.turnOff("uiSidebarRight");
+        };
+        self.filterData=function(formValia){
+            SharedState.turnOff("uiSidebarRight");
+            /*if(formValia){
+                alert("请输入正确数据");
+            }else{
+                //select month
+                SharedState.turnOff("uiSidebarRight");
+            }*/
+        }
+
     }]);
 
 noi.controller('noiToolController', ['$rootScope','$scope',

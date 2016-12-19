@@ -27,7 +27,6 @@ ampApp.controller("contract-list-controller",["$scope","$http","$rootScope","$lo
 
     $scope.showDateTimePicker = function(key,value){
         var arr = value.split("-");
-        console.log(arr);
         DateTimeWidget.show({
             year:arr[0],
             month:parseInt(arr[1]),
