@@ -209,10 +209,11 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill { bac
 
 .bottom-in .amp-bottom-panel{display: block;}
 
-
-
-
-
+.amp-bottom-panel .bottom-panel-wrapper{
+    position: absolute;width:100%;height:280px;bottom:0;left:0;background-color:#fff;
+    animation-duration:0.3s;animation-delay:0s;
+    -webkit-animation-duration:0.3s;-webkit-animation-delay:0s;
+}
 
 
 

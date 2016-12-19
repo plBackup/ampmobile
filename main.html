@@ -246,11 +246,11 @@
 <div ui-yield-to="simulation-calculation-parameter-dialog-wrapper"></div>
 
 <!-- Modals and Overlays -->
-<div ui-yield-to="modals"></div>
+<div ui-yield-to="modals" ></div>
 
 <div ui-yield-to="subpage"></div>
 
-<div ui-yield-to="bottomPanel" class="amp-bottom-panel"></div>
+<div ui-yield-to="bottomPanel" class="amp-bottom-panel animated" ng-click="mCtrl.hideBottomPanel($event)" ng-class="{'fadeOut':bottomPanelShow==false}"></div>
 
 <div class="amp-loading" ng-show="loadingShow">
     <div class="loading-wrapper">

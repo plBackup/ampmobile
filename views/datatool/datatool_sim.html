@@ -246,7 +246,7 @@
                                     <tr>
                                         <td >
                                             <label>租金起记日期</label>
-                                            <div class="td-input-wrapper padding-r-15 date-input" id="datepicker">
+                                            <div class="td-input-wrapper padding-r-15 date-input" id="datepicker" ng-click="sCtrl.showBottomPanel()">
                                                 <input type="text" placeholder="" value="" id="date-rent" readonly ng-model="sCtrl.shopInfo.rentDate">
                                                 <!--<span class="number-format"></span>%-->
                                             </div>
@@ -347,8 +347,8 @@
 </div>
 
 <!--content for amp-bottom-panel-->
-<div ui-content-for="bottomPanel">
-    <div class="bottom-panel-wrapper animated">
+<div ui-content-for="bottomPanel" >
+    <div class="bottom-panel-wrapper animated" ng-class="{'fadeInUp':bottomPanelShow==true,'fadeOutDown':bottomPanelShow==false}" >
         <div class="bottom-panel-header">
             <h5>bottom header</h5>
         </div>

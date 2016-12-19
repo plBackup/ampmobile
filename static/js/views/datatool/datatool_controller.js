@@ -2034,6 +2034,19 @@ dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simCh
                  },1000);
              }
          };
+
+        /* self.hideBottomPanel=function($event){
+             $event.preventDefault();
+             $event.stopPropagation();
+             if($($event.target).hasClass("bottom-panel-wrapper")){
+                 $rootScope.bottomPanelShow=false;
+             }
+         };*/
+
+         self.showBottomPanel=function(){
+             $rootScope.bottomPanelShow=true;
+         };
+
         //页面事件
         $("#datatool-sim").on("click",function(e){
             if(!$(e.target).hasClass("number-format")){

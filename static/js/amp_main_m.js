@@ -695,6 +695,14 @@ ampApp.controller('MainController', function($rootScope, $scope,$location,$timeo
         $rootScope.bottomPanelShow=false;
     };
 
+    self.hideBottomPanel=function($event){
+        $event.preventDefault();
+        $event.stopPropagation();
+        if($($event.target).hasClass("amp-bottom-panel")){
+            $rootScope.bottomPanelShow=false;
+        }
+    };
+
     $rootScope.loadingShow=false;
 
     $rootScope.loading_show=function(){
