@@ -7,7 +7,7 @@
 #riskctrl .scrollable-content{padding:0;}
 #riskctrl  .amp-table>tbody>tr>th,#riskctrl .amp-table>tbody>tr>td,#riskctrl .amp-table>tfoot>tr>th,#riskctrl .amp-table>tfoot>tr>td{border: 0;}
 #riskctrl .scrollable-content{background:#f2f4f9 ; font-size: 13px;position:relative;}
-#riskctrl .amp-content-header .amp-status-item-list{ background: #fff; padding-left: 20px; height: 34px; border-bottom: 1px solid #dae1e7; margin-bottom: 10px;}
+#riskctrl .amp-content-header .amp-status-item-list{ background: #fff; padding-left: 15px; height: 40px; border-bottom: 1px solid #dae1e7; margin-bottom: 10px;}
 #riskctrl .amp-content-header .amp-status-item span{color: #5ab46d; line-height: 34px;font-size: 12px; }
 #riskctrl .return-rate-detail-data{background: #fff;}
 #riskctrl .return-rate-detail-data li{width: 50%; float:left;padding-left: 20px;border-bottom: 1px solid #dae1e7;    height: 60px;  }
@@ -15,19 +15,19 @@
 #riskctrl .return-rate-detail-data li:nth-child(odd)>div{border-right: 1px solid #dae1e7;}
 #riskctrl .return-rate-detail-data li>div em{font-size: 12px; color:#737e8c ;}
 #riskctrl .return-rate-detail-data li>div div{font-size: 13px;line-height: 20px; }
-#riskctrl .return-rate-table-title-tel{ margin-top:10px;height: 40px; border-left: 4px solid #5ab46d; background: #fff;}
+#riskctrl .return-rate-table-title-tel{ margin-top:10px;height: 48px;line-height: 48px; border-left: 4px solid #5ab46d; background: #fff;}
 #riskctrl .return-rate-table-title-tel span#riskctrl .return-rate-table-title-tel em{line-height: 40px;}
 #riskctrl .return-rate-table-title-tel span{font-size: 14px; color:#5ab46d ; padding-left: 10px;}
 #riskctrl .return-rate-table-title-tel em{color:#737e8c ; padding-right: 15px;}
 #riskctrl .return-rate-table-title-tel em i{color:  #5ab46d;}
-#riskctrl .riskctrl-btn {background: #fff; height: 33px; border-bottom:1px solid #dae1e7; border-top: 1px solid #dae1e7; }
-#riskctrl .riskctrl-btn em{width: 33.33%; text-align: center;  line-height: 32px; color: #737e8c;}
-#riskctrl .riskctrl-btn em span{display: inline-block;  height: 32px;  padding:0 10px;}
+#riskctrl .riskctrl-btn {background: #fff; height: 40px; border-bottom:1px solid #dae1e7; border-top: 1px solid #dae1e7; }
+#riskctrl .riskctrl-btn em{width: 33.33%; text-align: center;  line-height: 40px; color: #737e8c;}
+#riskctrl .riskctrl-btn em span{display: inline-block;  height: 39px;  padding:0 10px;}
 #riskctrl .btn-active span{border-bottom: 1px solid #5ab46d;}
-#riskctrl .table-title{ height: 35px;background: #f8f8f8;}
-#riskctrl .table-title li{ width: 50%; text-align: center; float: left;line-height: 35px;border-bottom:1px solid #dae1e7;color:#737e8c ;}
+#riskctrl .table-title{ height: 40px;background: #f8f8f8;}
+#riskctrl .table-title li{ width: 50%; text-align: center; float: left;line-height: 40px;border-bottom:1px solid #dae1e7;color:#737e8c ;}
 #riskctrl .table-title li.title-active{color:  #5ab46d;}
-#riskctrl .return-rate-table-tel table tr{height: 40px;}
+#riskctrl  table tr{height: 40px;}
 #riskctrl .amp-table-wrapper-swiper{background: #fff;    position: relative;width: 100%;}
 #riskctrl  .ys-table-fixed-top{z-index: 99; width: 100%;}
 #riskctrl  .amp-table-wrapper-swiper .swiper-slide{font-size: 13px;}
@@ -36,7 +36,8 @@
 #riskctrl .amp-table-left{ position: absolute;top: 0;left: 0;}
 #riskctrl .table{margin-bottom: 0;}
 #riskctrl .amp-table-td3 td{width: 33.33%;}
-#riskctrl .table-blank{border-bottom: solid 1px #dae1e7;top: 0; height: 35px;}
+#riskctrl .table-blank{border-bottom: solid 1px #dae1e7;top: 0; height: 40px;}
+#riskctrl #noi .table-blank{border-bottom:0}
 #riskctrl .swiper-slide .table-top td{color: #737e8c;}
 #riskctrl table>tbody>tr.tr-collapsed { display: none;}
 #riskctrl .amp-table-td2 td{width: 50%;}
@@ -46,10 +47,23 @@
 #riskctrl .arrow-up i {display: inline-block; width: 8px; height: 12px; background: url(../../../images/arrow_up.png) no-repeat center center; background-size: contain;}	 
 #riskctrl .allyear td{width:33.33%;text-align: right; line-height: 40px;}
 #riskctrl .allyear{display: none; }
-#riskctrl .amp-status-item-list div{font-size: 14px;color: #5ab46d; line-height: 34px; font-weight: 700; position: relative;}
+#riskctrl .amp-status-item-list div{font-size: 14px;color: #5ab46d; line-height: 40px; font-weight: 700; position: relative;}
 #riskctrl 	.amp-status-item-list div:after{content: "";display: block;width: 60px; height: 2px;background: #5ab46d;position: absolute;bottom: 0;}
 #riskctrl 	.return-rate-bar{height: 12px;width: 85px;border-radius: 0;margin-top: 5px;margin-bottom: initial;}
 #riskctrl   .rate-chart{position: relative;}
 #riskctrl   .amp-progress-text{position: absolute;left: 90px; top: -4px;}
 #riskctrl   .btn-active span {border-bottom: 1px solid #5ab46d;}
-#riskctrl .amp-table>tbody>tr>td{ padding: 0;}  	
+#riskctrl .amp-table>tbody>tr>td{ padding: 0;}  
+#riskctrl .amp-table-wrapper-swiper	{padding-bottom: 0;}
+#riskctrl .amp-table-data{background: #fff;}
+#riskctrl .amp-table-data td{line-height: 40px;}
+#riskctrl  .amp-table-data td:first-child{border-right: 1px solid #dae1e7;text-align: center; }
+#riskctrl  .amp-table-data td:last-child{padding-right: 15px;}
+#riskctrl  .amp-table-data thead td{font-size: 12px ; color: #737e8c;}
+#riskctrl  .amp-table-data thead {background: #f8f8f8;border-top: 1px solid #dae1e7;border-bottom: 1px solid #dae1e7;}
+#riskctrl #noi .amp-table-data thead {background: #fff; border: 0;}
+#riskctrl  .amp-table-data thead td:nth-child(2){padding-right: 11px;}
+#riskctrl  .amp-table-data tbody tr:last-child td{padding-bottom: 20px;}
+#riskctrl #forecast .amp-table-data tbody tr:last-child td{padding-bottom: 0;}
+#riskctrl #forecast .amp-table-data{margin-bottom: 10px;}
+#riskctrl .return-rate-detail-data li:nth-child(3) div div:after,#riskctrl .return-rate-detail-data li:nth-child(5) div div:after{content: "（万元）"; font-size: 12px; color: #737e8c;}

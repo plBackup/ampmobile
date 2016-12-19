@@ -6,10 +6,6 @@ ampApp.controller("risk_administration_controller", ["$scope", "$http", "$rootSc
 
 			$("#cost .table-title li.monthly").each(function() {
 				$(this).on("click", function() {
-					$("#cost .table-title li").each(function() {
-						$(this).removeClass("title-active");
-					});
-					$(this).addClass("title-active");
 					$scope.allyear_cost = false;
 					$scope.$apply();
 				});
@@ -19,39 +15,33 @@ ampApp.controller("risk_administration_controller", ["$scope", "$http", "$rootSc
 					$("#cost .table-title li").each(function() {
 						$(this).removeClass("title-active");
 					});
-					$(this).addClass("title-active");
 					$scope.allyear_cost = true;
 					$scope.$apply();
 				});
 			});
 
+
+
 			$("#collectionrate .table-title li.monthly").each(function() {
-				$(this).on("click", function() {
-					$("#collectionrate .table-title li").each(function() {
-						$(this).removeClass("title-active");
-					});
-					$(this).addClass("title-active");
+				$(this).on("click", function() {					
 					$scope.allyear_collectionrate = false;
 					$scope.$apply();
 				});
 			});
+			
+			
 			$("#collectionrate .table-title li.yearly").each(function() {
 				$(this).on("click", function() {
 					$("#collectionrate .table-title li").each(function() {
 						$(this).removeClass("title-active");
 					});
-					$(this).addClass("title-active");
 					$scope.allyear_collectionrate = true;
 					$scope.$apply();
 				});
 			});
 
 			$("#salesvolume .table-title li.monthly").each(function() {
-				$(this).on("click", function() {
-					$("#salesvolume .table-title li").each(function() {
-						$(this).removeClass("title-active");
-					});
-					$(this).addClass("title-active");
+				$(this).on("click", function() {					
 					$scope.allyear_salesvolume = false;
 					$scope.$apply();
 				});
@@ -61,73 +51,72 @@ ampApp.controller("risk_administration_controller", ["$scope", "$http", "$rootSc
 					$("#salesvolume .table-title li").each(function() {
 						$(this).removeClass("title-active");
 					});
-					$(this).addClass("title-active");
 					$scope.allyear_salesvolume = true;
 					$scope.$apply();
 				});
 			});
 
+
+
 			$("#efficient .table-title li.monthly").each(function() {
 				$(this).on("click", function() {
-					$("#efficient .table-title li").each(function() {
-						$(this).removeClass("title-active");
-					});
-					$(this).addClass("title-active");
 					$scope.allyear_efficient = false;
 					$scope.$apply();
 				});
 			});
+			
+			
 			$("#efficient .table-title li.yearly").each(function() {
 				$(this).on("click", function() {
 					$("#efficient .table-title li").each(function() {
 						$(this).removeClass("title-active");
 					});
-					$(this).addClass("title-active");
 					$scope.allyear_efficient = true;
 					$scope.$apply();
 				});
 			});
+			
+			
 			$("#investment .table-title li.monthly").each(function() {
 				$(this).on("click", function() {
-					$("#investment .table-title li").each(function() {
-						$(this).removeClass("title-active");
-					});
-					$(this).addClass("title-active");
+				
 					$scope.allyear_investment = false;
 					$scope.$apply();
 				});
-			});;
+			});
 			$("#investment .table-title li.yearly").each(function() {
 				$(this).on("click", function() {
 					$("#investment .table-title li").each(function() {
 						$(this).removeClass("title-active");
 					});;
-					$(this).addClass("title-active");
+					
 					$scope.allyear_investment = true;
 					$scope.$apply();
 				});
 			});
 
+
 			$("#passenger .table-title li.monthly").each(function() {
 				$(this).on("click", function() {
-					$("#passenger .table-title li").each(function() {
-						$(this).removeClass("title-active");
-					});
-					$(this).addClass("title-active");
+					
 					$scope.allyear_passenger = false;
 					$scope.$apply();
 				});
 			});
+			
+			
 			$("#passenger .table-title li.yearly").each(function() {
 				$(this).on("click", function() {
 					$("#passenger .table-title li").each(function() {
 						$(this).removeClass("title-active");
-					});;
-					$(this).addClass("title-active");
+					});
+
 					$scope.allyear_passenger = true;
 					$scope.$apply();
 				});
 			});
+			
+			
 		}
 		return ctrl_detail_tel_module;
 	})(jQuery, ctrl_detail_tel_module || {})

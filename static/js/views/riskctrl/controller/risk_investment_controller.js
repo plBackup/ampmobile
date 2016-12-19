@@ -5,10 +5,6 @@ ampApp.controller("risk_investment_controller", ["$scope", "$http", "$rootScope"
 		ctrl_tel_module.init = function() {
 			$("#noi .table-title li.monthly").each(function() {
 				$(this).on("click", function() {
-					$("#noi  .table-title li").each(function() {
-						$(this).removeClass("title-active");
-					});
-					$(this).addClass("title-active");
 					$scope.allyear = false;
 					$scope.$apply();
 				});
@@ -18,7 +14,6 @@ ampApp.controller("risk_investment_controller", ["$scope", "$http", "$rootScope"
 					$("#noi  .table-title li").each(function() {
 						$(this).removeClass("title-active");
 					});
-					$(this).addClass("title-active");
 					$scope.allyear = true;
 					$scope.$apply();
 				});

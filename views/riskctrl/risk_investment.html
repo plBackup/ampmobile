@@ -1,317 +1,189 @@
 <div id="riskctrl" class="amp-main-panel">
 
-    	<ul class="mgt-analysis-nav-bar clearfix">
-        <li><a class="riskctrl_active"  href="javascript:void(0)">投资</a></li>
-        <li><a  href="#/risk_administration">管理</a></li>
-    </ul>
-    
+	<ul class="mgt-analysis-nav-bar clearfix">
+		<li>
+			<a class="riskctrl_active" href="javascript:void(0)">投资</a>
+		</li>
+		<li>
+			<a href="#/risk_administration">管理</a>
+		</li>
+	</ul>
+
 	<div class="scrollable">
 		<div class="scrollable-content section">
-
 			<div class="amp-content-header">
 				<div class="amp-status-item-list">
 					<div>投资分析方案</div>
 				</div>
 			</div>
 			<div>
-				<div>
-					<div class="return-rate-detail-data clearfix">
-						<ul class="clearfix">
-							<li>
-								<div class="label-group"><em>业主要求的收益率</em>
-									<div>111</div>
-								</div>
-							</li>
-							<li>
-								<div>
-									<em>退出率</em>
-									<div class="rate-chart">
-										<div ng-class="{progress: true, 'progress-striped': vm.striped}" class="return-rate-bar">
-											<div ng-class="['progress-bar', vm.style]" ng-style="{width: vm.value + '%'}">
-												<div ng-if="vm.showLabel">{{vm.value}}%</div>
-												<em class="amp-progress-text">{{vm.value}}%</em>
-											</div>
+				<div class="return-rate-detail-data clearfix">
+					<ul class="clearfix">
+						<li>
+							<div class="label-group"><em>业主要求的收益率</em>
+								<div>111</div>
+							</div>
+						</li>
+						<li>
+							<div>
+								<em>退出率</em>
+								<div class="rate-chart">
+									<div ng-class="{progress: true, 'progress-striped': vm.striped}" class="return-rate-bar">
+										<div ng-class="['progress-bar', vm.style]" ng-style="{width: vm.value + '%'}">
+											<div ng-if="vm.showLabel">{{vm.value}}%</div>
+											<em class="amp-progress-text">{{vm.value}}%</em>
 										</div>
 									</div>
 								</div>
-							</li>
-							<li ng-repeat="item in records" class="label-group">
-								<div><em>{{item.title}}</em>
-									<div>{{item.data|number:2}}</div>
-								</div>
-							</li>
-						</ul>
-					</div>
+							</div>
+						</li>
+						<li ng-repeat="item in records" class="label-group">
+							<div>
+								<em>{{item.title}}</em>
+								<div>{{item.data|number:2}}</div>
+							</div>
+						</li>
+					</ul>
 				</div>
 				<div class="risk-detail-content-panel">
-					<div class="return-rate-detail">
-						<div class="return-rate-detail-data clearfix">
+					
+					<div class="riskctrl-table-main" id="noi">
+						<div class="return-rate-table-title-tel clearfix">
+							<span class="pull-left">NOI</span>
+							<em class="pull-right">显示所有月份 <i>&gt;</i></em>
+						</div>
+						<div class="riskctrl-btn">
+							<em class="pull-left" ng-click="setType('NoionYearBasis','noi')" ng-class="{'btn-active':noiType=='NoionYearBasis'}"><span>同比</span></em>
+							<em class="pull-left" ng-click="setType('NoiLinkRelativeRatio','noi')" ng-class="{'btn-active':noiType=='NoiLinkRelativeRatio'}"><span>环比</span></em>
+							<em class="pull-left btn-active" ng-click="setType('NoiBudget','noi')" ng-class="{'btn-active':noiType=='NoiBudget'}"><span>预算</span></em>
+						</div>
+						<div class="table-title">
 							<ul class="clearfix">
-								<li ng-repeat="item in records" class="label-group pull-left">
-									<div><em>{{item.title}}</em>
-										<div>{{item.data|number}}</div>
-									</div>
-								</li>
+								<li class="title-active monthly" ng-class="{'title-active':allyear==false}"><2016-08（万元）</li>
+								<li class="yearly" ng-class="{'title-active':allyear==true}">全年累计（万元）</li>
 							</ul>
 						</div>
-					</div>
-					<div class="return-rate-table-tel">
-
-						<div class="riskctrl-title-tel" id="noi">
-							<div class="return-rate-table-title-tel clearfix">
-								<span class="pull-left">NOI</span>
-								<em class="pull-right">显示所有月份 <i>&gt;</i></em>
-							</div>
-							<div class="riskctrl-btn">
-								<em class="pull-left" ng-click="setType('NoionYearBasis','noi')" ng-class="{'btn-active':noiType=='NoionYearBasis'}"><span>同比</span></em>
-								<em class="pull-left" ng-click="setType('NoiLinkRelativeRatio','noi')" ng-class="{'btn-active':noiType=='NoiLinkRelativeRatio'}"><span>环比</span></em>
-								<em class="pull-left btn-active" ng-click="setType('NoiBudget','noi')" ng-class="{'btn-active':noiType=='NoiBudget'}"><span>预算</span></em>
-							</div>
-							<div class="table-title">
-								<ul class="clearfix">
-									<li class="title-active monthly">
-										<2016-08（万元）</li>
-											<li class="yearly">全年累计（万元）</li>
-								</ul>
-							</div>
-							<div class="risk-table-tel">
-								<div class="amp-table-wrapper-swiper">
-									<div style="padding-left:55px;">
-										<div class="table-blank amp-table-left" style="padding-left:55px;">
-											<table style="width:100%; ">
-												<thead>
-													<tr style="">
-														<th class="fake-th"></th>
-													</tr>
-												</thead>
-											</table>
-										</div>
-										<div class="swiper-container">
-											<div class="swiper-wrapper ">
-												<div class="swiper-slide " style="padding-right: 15px;  width: 100%;  height: 35px; border-bottom: solid 1px #dae1e7;">
-													<table class="table-top">
-														<tr class="">
-															<td>实际</td>
-															<td>预算</td>
-														</tr>
-													</table>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="ys-table-main" style="padding-left:55px;">
-										<div class="amp-table-left" style="padding-left:55px;padding-left: 12px;">
-											<table class="amp-table" style="width:100%;">
-												<tbody>
-													<tr ng-repeat="item in noi[noiType]">
-														<td class="border-right text-left">{{item.name}}</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-										<div style="width:100%; padding-right: 15px;" id="noi-main-table">
-											<div>
-												<div>
-													<table class="amp-table-data amp-table-td2">
-														<tbody>
-															<tr ng-repeat="item in noi[noiType]">
-																<td ng-class='setStyleIcon(item.noiActualMonth,item.noiReferMonth)'>
-																	<div ng-if="!allyear">{{item.noiActualMonth|number:2}} <i></i></div>
-																	<div ng-if="allyear">{{item.noiActualYear|number:2}} <i></i></div>
-																</td>
-																<td>
-																	<div ng-if="!allyear">{{item.noiReferMonth|number:2}}</div>
-																	<div ng-if="allyear">{{item.noiReferYear|number:2}} </div>
-																</td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="riskctrl-title-tel">
-							<div class="return-rate-table-title-tel clearfix">
-								<span class="pull-left">ROI</span>
-								<em class="pull-right">显示所有月份 <i>&gt;</i></em>
-							</div>
-							<div class="risk-table-tel">
-								<div class="amp-table-wrapper-swiper">
-									<div style="padding-left:55px;">
-										<div class="table-blank amp-table-left table-title" style="padding-left:55px;">
-											<table style="width:100%; ">
-												<thead>
-													<tr style="">
-														<th class="fake-th"></th>
-													</tr>
-												</thead>
-											</table>
-										</div>
-										<div class="swiper-container">
-											<div class="swiper-wrapper ">
-												<div class="swiper-slide table-title" style="padding-right: 15px;width: 100%; border-bottom: solid 1px #dae1e7;">
-													<table class="table-top ">
-														<tr class="">
-															<td>实际</td>
-															<td>预算</td>
-														</tr>
-													</table>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="ys-table-main" style="padding-left:55px;">
-										<div class="amp-table-left" style="padding-left:55px;padding-left: 12px;">
-											<table class="amp-table" style="width:100%;">
-												<tbody>
-													<tr ng-repeat="item in roi">
-														<td class="border-right text-left">{{item.name}}</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-										<div style="width:100%; padding-right: 15px;" id="noi-main-table">
-											<div>
-												<div>
-													<table class="amp-table-data amp-table-td2">
-														<tbody>
-															<tr ng-repeat="item in roi">
-																<td ng-class='setStyleIcon(item.roiActual,item.roiRefer)'>{{item.roiActual|number:1}} <i></i></td>
-																<td>{{item.roiRefer|number:1}}</td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="riskctrl-title-tel">
-							<div class="return-rate-table-title-tel clearfix">
-								<span class="pull-left">ROE</span>
-								<em class="pull-right">显示所有月份 <i>&gt;</i></em>
-							</div>
-							<div class="risk-table-tel">
-								<div class="amp-table-wrapper-swiper">
-									<div style="padding-left:55px;">
-										<div class="table-blank amp-table-left table-title" style="padding-left:55px;">
-											<table style="width:100%; ">
-												<thead>
-													<tr style="">
-														<th class="fake-th"></th>
-													</tr>
-												</thead>
-											</table>
-										</div>
-										<div class="swiper-container">
-											<div class="swiper-wrapper ">
-												<div class="swiper-slide table-title" style="padding-right: 15px;width: 100%; border-bottom: solid 1px #dae1e7;">
-													<table class="table-top ">
-														<tr class="">
-															<td>实际</td>
-															<td>预算</td>
-														</tr>
-													</table>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="ys-table-main" style="padding-left:55px;">
-										<div class="amp-table-left" style="padding-left:55px;padding-left: 12px;">
-											<table class="amp-table" style="width:100%;">
-												<tbody>
-													<tr ng-repeat="item in roe">
-														<td class="border-right text-left">{{item.name}}</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-										<div style="width:100%; padding-right: 15px;" id="noi-main-table">
-											<div>
-												<div>
-													<table class="amp-table-data amp-table-td2">
-														<tbody>
-															<tr ng-repeat="item in roe">
-																<td ng-class='setStyleIcon(item.roeActual,item.roeRefer)'>{{item.roeActual|number:1}} <i></i></td>
-																<td>{{item.roeRefer|number:1}}</td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="riskctrl-title-tel">
-							<div class="return-rate-table-title-tel clearfix">
-								<span class="pull-left">累计税前现金流预测</span>
-								<em class="pull-right">显示所有月份 <i>&gt;</i></em>
-							</div>
-
-							<div class="risk-table-tel">
-								<div class="amp-table-wrapper-swiper">
-									<div style="padding-left:85px;">
-										<div class="table-blank amp-table-left table-title" style="padding-left:85px;">
-											<table style="width:100%; ">
-												<thead>
-													<tr style="">
-														<th class="fake-th"></th>
-													</tr>
-												</thead>
-											</table>
-										</div>
-										<div class="swiper-container">
-											<div class="swiper-wrapper ">
-												<div class="swiper-slide table-title" style="padding-right: 15px;width: 100%; border-bottom: solid 1px #dae1e7;">
-													<table class="table-top ">
-														<tr class="">
-															<td>实际</td>
-															<td>预算</td>
-														</tr>
-													</table>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="ys-table-main" style="padding-left:85px;">
-										<div class="amp-table-left" style="padding-left:85px;padding-left: 12px;">
-											<table class="amp-table" style="width:100%;">
-												<tbody>
-													<tr ng-repeat="item in forecast">
-														<td class="border-right text-left">{{item.name}}</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-										<div style="width:100%; padding-right: 15px;" id="noi-main-table">
-											<div>
-												<div>
-													<table class="amp-table-data amp-table-td2">
-														<tbody>
-															<tr ng-repeat="item in forecast">
-																<td ng-class='setStyleIcon(item.forecastActual,item.forecastRefer)'>{{item.forecastActual|number:2}} <i></i></td>
-																<td>{{item.forecastRefer|number:2}}</td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
+						<div>
+							<table class="amp-table-data">
+								<colgroup>
+									<col width="18%">
+									<col width="41%">
+									<col width="41%">
+								</colgroup>
+								<thead>
+									<tr class="">
+										<td></td>
+										<td>实际</td>
+										<td>参考</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr ng-repeat="item in noi[noiType]">
+										<td class="">{{item.name}}</td>
+										<td ng-class='setStyleIcon(item.noiActualMonth,item.noiReferMonth)'>
+											<div ng-if="!allyear">{{item.noiActualMonth|number:2}} <i></i></div>
+											<div ng-if="allyear">{{item.noiActualYear|number:2}} <i></i></div>
+										</td>
+										<td>
+											<div ng-if="!allyear">{{item.noiReferMonth|number:2}}</div>
+											<div ng-if="allyear">{{item.noiReferYear|number:2}} </div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
 					</div>
-				</div>
+					<div class="riskctrl-table-main" >
+						<div class="return-rate-table-title-tel clearfix">
+							<span class="pull-left">ROI</span>
+							<em class="pull-right">显示所有年份 <i>&gt;</i></em>
+						</div>
+						<div>
+							<table class="amp-table-data">
+								<colgroup>
+									<col width="18%">
+									<col width="41%">
+									<col width="41%">
+								</colgroup>
+								<thead>
+									<tr class="">
+										<td></td>
+										<td>实际</td>
+										<td>参考</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr ng-repeat="item in roi">
+										<td class=" text-left">{{item.name}}</td>
+										<td ng-class='setStyleIcon(item.roiActual,item.roiRefer)'>{{item.roiActual|number:1}} <i></i></td>
+										<td>{{item.roiRefer|number:1}}</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="riskctrl-table-main" >
+						<div class="return-rate-table-title-tel clearfix">
+							<span class="pull-left">ROE</span>
+							<em class="pull-right">显示所有年份 <i>&gt;</i></em>
+						</div>
+						<div>
+							<table class="amp-table-data">
+								<colgroup>
+									<col width="18%">
+									<col width="41%">
+									<col width="41%">
+								</colgroup>
+								<thead>
+									<tr class="">
+										<td></td>
+										<td>实际</td>
+										<td>参考</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr ng-repeat="item in roe">
+										<td class=" text-left">{{item.name}}</td>
+										<td ng-class='setStyleIcon(item.roeActual,item.roeRefer)'>{{item.roeActual|number:1}} <i></i></td>
+										<td>{{item.roeRefer|number:1}}</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="riskctrl-table-main"  id="forecast">
+						<div class="return-rate-table-title-tel clearfix">
+							<span class="pull-left">累计税前现金流预测</span>
+						</div>
+						<div>
+							<table class="amp-table-data">
+								<colgroup>
+									<col width="24%">
+									<col width="38%">
+									<col width="38%">
+								</colgroup>
+								<thead>
+									<tr class="">
+										<td></td>
+										<td>实际</td>
+										<td>参考</td>
+									</tr>
+								</thead>
+								<tbody>
+								<tr ng-repeat="item in forecast">
+									<td class=" text-left">{{item.name}}</td>
+									<td ng-class='setStyleIcon(item.forecastActual,item.forecastRefer)'>{{item.forecastActual|number:2}} <i></i></td>
+									<td>{{item.forecastRefer|number:2}}</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>	
 			</div>
+		</div>
 
-		</div><!-- scrollable-content -->
-	</div><!-- scrollable -->
+	</div>
+	<!-- scrollable-content -->
 </div>
+<!-- scrollable -->

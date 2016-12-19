@@ -84,7 +84,7 @@
 .projectCreateView .dropdown-menu{width:100%;border-radius:0;border:0;background-color:#242d3c;color:#8592a3; }
 .projectCreateView .dropdown-menu li>a{padding-left:92px;height:44px;color:#fff;line-height:38px; text-align:left;font-size:14px;}
 .projectCreateView .dropdown-menu li>a:focus,.projectCreateView .dropdown-menu li>a:active,.projectCreateView .dropdown-menu li>a:hover{background-color: #4F6079;}
-.projectCreateView  .dropdown-menu > .active > a,.projectCreateView  .dropdown-menu > .active > a:focus{background-color: #4F6079;}
+.projectCreateView  .dropdown-menu > .active > a,.projectCreateView  .dropdown-menu > .active > a:focus{background-color: #4F6079;color:#fff;}
 
 /*
 
