@@ -9,6 +9,7 @@ ampApp.controller("contract-list-controller",["$scope","$http","$rootScope","$lo
     $scope.queryStartTime = "2016-08-01";
     $scope.queryEndTime = "2016-10-01";
 
+
     /* ======================================== angular 注册事件 ======================================== */
     /* 跳转到合同详情 */
     $scope.goToContractDetail = function(){
@@ -26,7 +27,9 @@ ampApp.controller("contract-list-controller",["$scope","$http","$rootScope","$lo
     };
 
     $scope.showDateTimePicker = function(key,value){
+
         var arr = value.split("-");
+
         DateTimeWidget.show({
             year:arr[0],
             month:parseInt(arr[1]),

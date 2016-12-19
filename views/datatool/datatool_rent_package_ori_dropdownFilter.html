@@ -88,53 +88,71 @@
             <div class="amp-filter-list">
                 　　<div class="toolbar-block">
                     <div class="toolbar-item item-select-filter">
-                        <div class="amp-select-section">
-                            <h5>楼层</h5>
-                            <input type="text" placeholder="" id="select-id-floor" name="select-id-floor" hidden value="" ng-modal="dCtrl.filters.floor">
-
-                            <ul class="select-menu clearfix" role="menu" >
-                                <li ng-class="{'active':dCtrl.isActive(menu,dCtrl.filters.floor)}" role="presentation" class="col-xs-4"
-                                    ng-repeat="menu in dCtrl.form_menu.floors">
-                                    <a role="menuitem" ng-click="dCtrl.setModel('floor',menu)">{{menu}}</a></li>
+                        <label for="select-id-floor">楼层</label>
+                        <input type="text" placeholder="" id="select-id-floor" name="select-id-floor" hidden value="" ng-modal="dCtrl.filters.floor">
+                        <div class="dropdown">
+                            <button class="btn amp-btn" type="button" ui-turn-on="floorDropdown">
+                                <em>{{dCtrl.filters.floor | default:"请选择"}}</em><em class="amp-icon amp-icon-dropdown"></em>
+                            </button>
+                            <ul ui-shared-state="floorDropdown" class="dropdown-menu"
+                                ui-outer-click="Ui.turnOff('floorDropdown')"
+                                ui-outer-click-if="Ui.active('floorDropdown')"
+                                role="menu"
+                                ui-show="floorDropdown"
+                                ui-turn-off="floorDropdown">
+                                <li ng-class="{'active':dCtrl.isActive(menu,dCtrl.filters.floor)}" role="presentation" ng-repeat="menu in dCtrl.form_menu.floors">
+                                    <a role="menuitem" ng-click="dCtrl.setModel('floor',menu)">{{menu}}</a>
+                                </li>
                             </ul>
                         </div>
                     </div><!--div toolbar-item-->
 
                     <div class="toolbar-item item-select-filter">
-                        <div class="amp-select-section">
-                            <h5>业态</h5>
-                            <input type="text" placeholder="" id="select-id-form" name="select-id-form" hidden value="" ng-model="dCtrl.filters.form">
+                        <label for="select-id-form">业态</label>
+                        <input type="text" placeholder="" id="select-id-form" name="select-id-form" hidden value="" ng-model="dCtrl.filters.form">
+                        <div class="dropdown">
+                            <button class="btn amp-btn" type="button" ui-turn-on="formDropdown">
+                                <em>{{dCtrl.filters.form | default:"请选择"}}</em><em class="amp-icon amp-icon-dropdown"></em>
+                            </button>
 
-                            <ul class="select-menu clearfix" role="menu" >
-                                <li ng-class="{'active':dCtrl.isActive(menu,dCtrl.filters.form)}" role="presentation" class="col-xs-4"
-                                    ng-repeat="menu in dCtrl.form_menu.form"><a role="menuitem" ng-click="dCtrl.setModel('form',menu)">{{menu}}</a></li>
+                            <ul ui-shared-state="formDropdown" class="dropdown-menu"
+                                ui-outer-click="Ui.turnOff('formDropdown')"
+                                ui-outer-click-if="Ui.active('formDropdown')"
+                                role="menu"
+                                ui-show="formDropdown"
+                                ui-turn-off="formDropdown">
+
+                                <li ng-class="{'active':dCtrl.isActive(menu,dCtrl.filters.form)}" role="presentation" ng-repeat="menu in dCtrl.form_menu.form"><a role="menuitem" ng-click="dCtrl.setModel('form',menu)">{{menu}}</a></li>
                             </ul>
                         </div>
-
                     </div><!--div toolbar-item-->
 
                     <div class="toolbar-item item-select-filter">
-                        <div class="amp-select-section">
-                            <h5>产权</h5>
-                            <input type="text" placeholder="" id="select-id-property" name="select-id-property" hidden value="" ng-model="dCtrl.filters.property">
+                        <label for="select-id-property">产权</label>
+                        <input type="text" placeholder="" id="select-id-property" name="select-id-property" hidden value="" ng-model="dCtrl.filters.property">
+                        <div class="dropdown">
+                            <button class="btn amp-btn" type="button" ui-turn-on="propertyDropdown">
+                                <em>{{dCtrl.filters.property | default:"请选择"}}</em><span class="ys-icon ys-icon-dropdown"></span>
+                            </button>
 
-                            <ul class="select-menu clearfix" role="menu" >
-                                <li ng-class="{'active':dCtrl.isActive(menu,dCtrl.filters.property)}" role="presentation" class="col-xs-4"
-                                    ng-repeat="menu in dCtrl.form_menu.property">
-                                    <a role="menuitem" ng-click="dCtrl.setModel('property',menu)">{{menu}}</a></li>
+                            <ul ui-shared-state="propertyDropdown" class="dropdown-menu"
+                                ui-outer-click="Ui.turnOff('propertyDropdown')"
+                                ui-outer-click-if="Ui.active('propertyDropdown')"
+                                role="menu"
+                                ui-show="propertyDropdown"
+                                ui-turn-off="propertyDropdown">
+
+                                <li ng-class="{'active':dCtrl.isActive(menu,dCtrl.filters.property)}" role="presentation" ng-repeat="menu in dCtrl.form_menu.property"><a role="menuitem" ng-click="dCtrl.setModel('property',menu)">{{menu}}</a></li>
                             </ul>
                         </div>
                     </div><!--div toolbar-item-->
 
 
                     <div class="toolbar-item item-input-filter">
-                        <div class="amp-select-section">
-                            <h5>铺位号</h5>
-
-                            <div class="input-group">
-                                <input type="text" placeholder="" id="input-id-shop" name="input-id-shop" ng-model="dCtrl.filters.shopIndex" ng-blur="dCtrl.removeFocus($event)" ng-focus="dCtrl.addFocus($event)">
-                            </div>
-                         </div>
+                        <label for="input-id-shop">铺位号</label>
+                        <div class="input-group">
+                            <input type="text" placeholder="" id="input-id-shop" name="input-id-shop" ng-model="dCtrl.filters.shopIndex" ng-blur="dCtrl.removeFocus($event)" ng-focus="dCtrl.addFocus($event)">
+                        </div>
                     </div><!--div toolbar-item-->
 
 

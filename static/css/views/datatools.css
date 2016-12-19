@@ -175,7 +175,7 @@
 .amp-right-panel .amp-panel-content .amp-panel-section{padding-right:5px;}
 .amp-right-panel .amp-panel-content .amp-select-section{}
 .amp-right-panel .amp-panel-content .col-xs-3,.amp-right-panel .amp-panel-content .col-xs-4{padding-left:0;padding-right:10px;}
-.amp-right-panel .amp-select-section{height:26px;line-height: 26px;font-size: 13px;}
+.amp-right-panel .amp-select-section{/*height:26px;*/line-height: 26px;font-size: 13px;}
 .amp-right-panel .amp-panel-footer{position: absolute;bottom:0;right:0;width:100%;height:58px;border-top:solid 10px #fff;background-color:#f3f4f8;}
 
 .amp-right-panel .amp-panel-content .select-menu{}

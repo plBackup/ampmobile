@@ -432,8 +432,8 @@ dataTool.controller("datatoolController",['$rootScope', '$scope',"$timeout","$lo
         };
         $state.go("datatool.rpgindex");
 }]);
-dataTool.controller("dataIndexController",['$rootScope', '$scope',"dataIndexData","paginatorService","$timeout","$location","$state","$filter",
-    function($rootScope, $scope,dataIndexData,paginatorService,$timeout,$location,$state,$filter) {
+dataTool.controller("dataIndexController",['$rootScope', '$scope',"dataIndexData","paginatorService","$timeout","$location","$state","$filter","SharedState",
+    function($rootScope, $scope,dataIndexData,paginatorService,$timeout,$location,$state,$filter,SharedState) {
         var self=this;
         var shopData=dataIndexData.slice(1);
 
@@ -564,6 +564,8 @@ dataTool.controller("dataIndexController",['$rootScope', '$scope',"dataIndexData
                 filters:self.filters
             });
 
+            SharedState.turnOff("uiSidebarRight");
+
         };
         self.search=function(){
             console.dir(self.filters);
@@ -572,6 +574,9 @@ dataTool.controller("dataIndexController",['$rootScope', '$scope',"dataIndexData
                 filters:self.filters
             });
             console.log(self.filters);
+
+            SharedState.turnOff("uiSidebarRight");
+
         };
 
     }]);
