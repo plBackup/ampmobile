@@ -8,6 +8,7 @@ var ampApp = angular.module('amp', [
     "projects",
     'noi',
     'dataTool',
+    "amp-investment-analysis",
     "amp-common-filters"
 ]);
 
@@ -649,7 +650,7 @@ ampApp.config(function($stateProvider,$urlRouterProvider,$httpProvider) {
         url: "/risk_administration",
         views:{
             "header":{
-                templateUrl:"./views/riskctrl/risk_analysis_index_header.html",
+                templateUrl:"./views/riskctrl/risk_analysis_index_header.html"
 //              controller:"merchant-sale-type-list-header-controller"
             },
             "content": {

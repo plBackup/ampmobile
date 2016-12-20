@@ -50,7 +50,7 @@
 
 .amp-block .table{margin-bottom: 0;}
 #noiPage .amp-block div.amp-table-wrapper{padding-right:6px;}
-#noiPage .amp-block .table > thead > tr > th{border-bottom:0;padding:0;padding-top:5px; height: 16px; line-height: 16px; font-size: 13px;color:#8592a3;text-align: left;background-color:transparent;}
+#noiPage .amp-block .table > thead > tr > th{border-top:0;border-bottom:0;padding:0;padding-top:5px; height: 16px; line-height: 16px; font-size: 13px;color:#8592a3;text-align: left;background-color:transparent;}
 
 #noiPage .amp-block .table > tbody > tr > td{height:inherit;border-bottom:0;border-top:0;padding:0;padding-bottom:5px;font-size: 14px;color:#373c42;}
 
@@ -58,7 +58,7 @@
 
 /*noi-chart-wrapper*/
 .chart-wrapper{position: relative;padding-top:20px;padding-bottom:38px;}
-.chart-wrapper em.chart-axis-info{position: absolute;display: block;top:15px;left:35px;font-size: 15px;font-size: 13px;}
+.chart-wrapper em.chart-axis-info{position: absolute;display: block;top:15px;left:35px;font-size: 13px;}
 
 .chart-wrapper .chart-legend{text-align: center;padding:0px 15px;}
 .chart-wrapper .chart-legend>span{display: inline-block;height:30px;line-height: 30px;margin-right:10px;margin-left:10px;font-size: 14px;color:#8992a3;}

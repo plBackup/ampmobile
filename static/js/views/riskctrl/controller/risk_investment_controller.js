@@ -100,7 +100,9 @@ ampApp.controller("risk_investment_controller", ["$scope", "$http", "$rootScope"
 			return 'arrow-up';
 		} else if(a < b) {
 			return 'arrow-down';
-		}
+		}else{
+            	return 'padding-right'
+            }
 	}
 	ctrl_tel_module.init();
 

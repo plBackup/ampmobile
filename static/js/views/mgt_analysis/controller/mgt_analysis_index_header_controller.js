@@ -1,12 +1,15 @@
 ampApp.controller("mgt-analysis-index-header-controller",["$scope","$http","$rootScope",function($scope,$http,$rootScope){
 
 
-    var currentState = null;
 
     /* ======================================== 监听广播事件 ======================================== */
     $scope.$on("$destroy",function(){destroy();});
 
     $scope.$on("$stateChangeSuccess",function(evt,toState,toParams,fromState,formParams){
+    });
+
+    $scope.$on("$stateChangeStart",function(evt,toState,toParams,fromState,formParams){
+        hideMgtAnalysisMenuList();
     });
 
     /* ======================================== 初始化页面 ======================================== */
@@ -23,6 +26,7 @@ ampApp.controller("mgt-analysis-index-header-controller",["$scope","$http","$roo
 
             toggleMgtAnalysisMenuList();
         });
+
 
 
 

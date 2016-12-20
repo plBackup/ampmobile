@@ -7,7 +7,7 @@ ampApp.controller("risk_administration_controller", ["$scope", "$http", "$rootSc
 			// 手动激活 风控 菜单
 			$timeout(function(){
 				$(".navbar-app .amp-menu.amp-menu-ctrl").closest("a").addClass("active");
-			},300);
+			},200);
 
 
 
@@ -238,7 +238,9 @@ ampApp.controller("risk_administration_controller", ["$scope", "$http", "$rootSc
 			return 'arrow-up'
 		} else if(a < b) {
 			return 'arrow-down'
-		}
+		}else{
+            	return 'padding-right'
+            }
 
 	};
 

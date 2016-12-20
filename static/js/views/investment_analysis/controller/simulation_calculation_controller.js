@@ -1,13 +1,28 @@
-ampApp.controller("simulation-calculation-controller",["$scope","$http","$rootScope",function($scope,$http,$rootScope){
-    $scope.result = [];
+ampApp.controller("simulation-calculation-controller",["$scope","$http","$rootScope","$timeout","simulationCalculationService",function($scope,$http,$rootScope,$timeout,simulationCalculationService){
+    $scope.result = {};
 
     $rootScope.hideBottom();
 
     function initializeData(data){
-        var result = data.case1;
-        $scope.result = result;
+        $scope.result = data;
 
+
+        var invokeCount = 0;
+        $scope.$watch("result",function(newVal, oldVal,scope){
+            console.log(++invokeCount);
+            simulationCalculationService.resetInitialAnalysis($scope.result); // 重新设置 期初分析
+            simulationCalculationService.recalculateIncomeExpense($scope.result); // 重新设置 收支模拟
+            simulationCalculationService.resetLoanRepaymentAnalysis($scope.result); // 重新设置 贷款分期还款
+            simulationCalculationService.resetPreTaxCashFlowInfo($scope.result); // 重新设置 税前现金流
+            simulationCalculationService.resetSaleIncomeAnalysisRecords($scope.result); // 重新设置 销售所得分析
+            simulationCalculationService.resetTestIndexRecords($scope.result); // 重新设置 模拟测算
+
+
+            console.log($scope.result.preTaxCashFlowRecords);
+        },true);
     }
+
+
 
     // 控制折叠展开
     $scope.sectionGroup = {
@@ -38,35 +53,38 @@ ampApp.controller("simulation-calculation-controller",["$scope","$http","$rootSc
         var windowHeight = $(window).height()-44;
         container.css("height",windowHeight+"px");
 
-        testIndexSwiper = new Swiper(".test-index-container .swiper-container", {
-            slidesPerView:"auto",
-            freeMode: true,
-            resistanceRatio : 0
-        });
+        $timeout(function(){
+            testIndexSwiper = new Swiper(".test-index-container .swiper-container", {
+                slidesPerView:"auto",
+                freeMode: true,
+                resistanceRatio : 0
+            });
 
-        saleIncomeAnalysisSwiper = new Swiper(".sale-income-analysis .swiper-container", {
-            slidesPerView:"auto",
-            freeMode: true,
-            resistanceRatio : 0
-        });
+            saleIncomeAnalysisSwiper = new Swiper(".sale-income-analysis .swiper-container", {
+                slidesPerView:"auto",
+                freeMode: true,
+                resistanceRatio : 0
+            });
 
-        loanRepaymentAnalysisSwiper = new Swiper(".loan-repayment-analysis .swiper-container", {
-            slidesPerView:"auto",
-            freeMode: true,
-            resistanceRatio : 0
-        });
+            loanRepaymentAnalysisSwiper = new Swiper(".loan-repayment-analysis .swiper-container", {
+                slidesPerView:"auto",
+                freeMode: true,
+                resistanceRatio : 0
+            });
 
-        preTaxCashFlowAnalysisSwiper = new Swiper(".pre-tax-cash-flow .swiper-container", {
-            slidesPerView:"auto",
-            freeMode: true,
-            resistanceRatio : 0
-        });
+            preTaxCashFlowAnalysisSwiper = new Swiper(".pre-tax-cash-flow .swiper-container", {
+                slidesPerView:"auto",
+                freeMode: true,
+                resistanceRatio : 0
+            });
 
-        incomeExpensesSimulationSwiper = new Swiper(".income-expenses-simulation .swiper-container", {
-            slidesPerView:"auto",
-            freeMode: true,
-            resistanceRatio : 0
-        });
+            incomeExpensesSimulationSwiper = new Swiper(".income-expenses-simulation .swiper-container", {
+                slidesPerView:"auto",
+                freeMode: true,
+                resistanceRatio : 0
+            });
+        },500);
+
 
     }
 
@@ -83,8 +101,6 @@ ampApp.controller("simulation-calculation-controller",["$scope","$http","$rootSc
         /* ------------------------------ simulation-calculation-parameter-dialog ------------------------------ */
 
         var parameterDialog = $("#simulation-calculation-parameter-dialog");
-
-        console.log(container);
 
         container.on("click",".parameter-btn a",function(e){
             e.stopPropagation();
@@ -136,7 +152,7 @@ ampApp.controller("simulation-calculation-controller",["$scope","$http","$rootSc
 
         var url = "data/data_1/investment_analysis/simulation_calculation_data.json";
         $http.get(url).success(function(result){
-            initializeData(result);
+            initializeData(result.case1);
             initPageView();
             bindPageEvents();
         });

@@ -17,8 +17,9 @@
                     <table>
                         <tbody>
                             <tr><td></td></tr>
-                            <tr><td>第2年</td></tr>
-                            <tr><td>第3年</td></tr>
+                            <tr ng-repeat="item in result.testIndexRecords">
+                                <td>第{{item.yearIndex}}年</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div><!-- table-group-left -->
@@ -34,17 +35,11 @@
                                             <td>IRR</td>
                                             <td>税前现金流/权益</td>
                                         </tr>
-                                        <tr>
-                                            <td>12,443.57</td>
-                                            <td>140,539.2</td>
-                                            <td>8.85%</td>
-                                            <td>8.85%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>12,443.57</td>
-                                            <td>140,539.2</td>
-                                            <td>8.85%</td>
-                                            <td>8.85%</td>
+                                        <tr ng-repeat="item in result.testIndexRecords">
+                                            <td>{{item.appreciation|numberFormatDefault:"-":0}}</td>
+                                            <td>{{item.netPresentValue|numberFormatDefault:"-":0}}</td>
+                                            <td>{{item.irrPercent}}</td>
+                                            <td>{{item.rate}}</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -71,33 +66,33 @@
                 <div class="amp-form-group">
                     <label class="amp-form-label">收购价</label>
                     <div class="amp-form-content">
-                        <input type="number"/>
+                        <input type="number" ng-model="result.initialAnalysis.purchasingPrice"/>
                     </div>
                 </div><!-- amp-form-group -->
 
                 <div class="amp-form-group">
                     <label class="amp-form-label">加:收购费用</label>
                     <div class="amp-form-content">
-                        <input type="number"/>
+                        <input type="number" ng-model="result.initialAnalysis.purchasingFee"/>
                     </div>
                 </div><!-- amp-form-group -->
 
                 <div class="amp-form-group">
                     <label class="amp-form-label">加:贷款费用</label>
                     <div class="amp-form-content">
-                        <input type="number"/>
+                        <input type="number" ng-model="result.initialAnalysis.loanFee"/>
                     </div>
                 </div><!-- amp-form-group -->
 
                 <div class="amp-form-group">
                     <label class="amp-form-label amp-font-weight-bold amp-font-style-italic">原始基数</label>
-                    <div class="amp-form-content amp-text-align-right amp-font-color-grey">自动生成</div>
+                    <div class="amp-form-content amp-text-align-right amp-font-color-grey" ng-bind="result.initialAnalysis.originBase">自动生成</div>
                 </div><!-- amp-form-group -->
 
                 <div class="amp-form-group">
                     <label class="amp-form-label" style="padding-left:30px;">减:贷款金额</label>
                     <div class="amp-form-content">
-                        <input type="number"/>
+                        <input type="number" ng-model="result.initialAnalysis.loan"/>
                     </div>
                 </div><!-- amp-form-group -->
 
@@ -105,7 +100,7 @@
                     <div class="amp-form-content clearfix">
                         <div class="input-wrapper input-wrapper-1">
                             <span>贷款利率</span>
-                            <input type="number"/>
+                            <input type="number" ng-model="result.initialAnalysis.loanRate"/>
                             <em>%</em>
                         </div>
                     </div>
@@ -115,7 +110,7 @@
                     <div class="amp-form-content clearfix">
                         <div class="input-wrapper input-wrapper-2">
                             <span>期限</span>
-                            <input type="number"/>
+                            <input type="number" ng-model="result.initialAnalysis.loanYear"/>
                             <em>年</em>
                         </div>
                     </div>
@@ -123,7 +118,7 @@
 
                 <div class="amp-form-group">
                     <label class="amp-form-label  amp-font-weight-bold amp-font-style-italic" style="padding-left:30px;">初始权益</label>
-                    <div class="amp-form-content amp-text-align-right amp-font-color-grey">自动生成</div>
+                    <div class="amp-form-content amp-text-align-right amp-font-color-grey" ng-bind="result.initialAnalysis.initialBenefit">自动生成</div>
                 </div><!-- amp-form-group -->
 
             </div><!-- initial-analysis -->
@@ -151,10 +146,8 @@
                                 <table>
                                     <tbody>
                                         <tr>
-                                            <td><em>增值</em><div>13%</div></td>
-                                            <td><em>第1年</em><div>188.64</div></td>
-                                            <td><em>第2年</em><div>188.64</div></td>
-                                            <td><em>第3年</em><div>188.64</div></td>
+                                            <!--<td><em>增值</em><div>13%</div></td>-->
+                                            <td ng-repeat="item in result.incomeExpense.contents"><em>第{{$index+1}}年</em><div>{{item.noi|numberFormatDefault:"-":0}}</div></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -174,55 +167,28 @@
             </div><!-- section-title -->
 
             <div class="table-group pre-tax-cash-flow" ng-class="{'amp-display-none':!sectionGroup.preTaxCashFlowCollapsed}">
-                <div class="table-group-left">
-                    <table>
-                        <tbody>
-                        <tr><td></td></tr>
-                        <tr><td>销售价格</td></tr>
-                        <tr><td><span>减:</span>销售成本</td></tr>
-                        <tr><td><span>减:</span>贷款余额</td></tr>
-                        <tr><td>净销售所得</td></tr>
-                        </tbody>
-                    </table>
+                <div class="table-group-left clearfix">
+                    <ul ng-if="result.preTaxCashFlowRecords.length>0">
+                        <li></li>
+                        <li>净营业收入</li>
+                        <li><span>减:</span>贷款本金</li>
+                        <li><span>减:</span>贷款利息</li>
+                        <li><span>减:</span>资本支出</li>
+                        <li>税前现金流</li>
+                    </ul>
                 </div><!-- table-group-left -->
                 <div class="table-group-right">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide clearfix ">
-                                <table>
-                                    <tbody>
-                                    <tr>
-                                        <td>第1年</td>
-                                        <td>第2年</td>
-                                        <td>第3年</td>
-                                        <td>第4年</td>
-                                    </tr>
-                                    <tr>
-                                        <td>自动生成</td>
-                                        <td>自动生成</td>
-                                        <td>自动生成</td>
-                                        <td>自动生成</td>
-                                    </tr>
-                                    <tr>
-                                        <td>自动生成</td>
-                                        <td>自动生成</td>
-                                        <td>自动生成</td>
-                                        <td>自动生成</td>
-                                    </tr>
-                                    <tr>
-                                        <td>自动生成</td>
-                                        <td>自动生成</td>
-                                        <td>自动生成</td>
-                                        <td>自动生成</td>
-                                    </tr>
-                                    <tr>
-                                        <td>自动生成</td>
-                                        <td>自动生成</td>
-                                        <td>自动生成</td>
-                                        <td>自动生成</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
+                                <ul ng-repeat="item in result.preTaxCashFlowRecords">
+                                    <li>第{{item.year}}年</li>
+                                    <li>{{item.income|numberFormatDefault:"-":0}}</li>
+                                    <li>{{item.loanAmount|numberFormatDefault:"-":0}}</li>
+                                    <li>{{item.loanInterest|numberFormatDefault:"-":0}}</li>
+                                    <li>{{item.charges|numberFormatDefault:"-":0}}</li>
+                                    <li>{{item.preTaxCashFlow|numberFormatDefault:"-":0}}</li>
+                                </ul>
                             </div><!-- swiper-slide -->
                         </div><!-- swiper-wrapper -->
                     </div><!-- swiper-container -->
@@ -240,54 +206,25 @@
 
             <div class="table-group sale-income-analysis" ng-class="{'amp-display-none':!sectionGroup.saleIncomeAnalysisCollapsed}">
                 <div class="table-group-left">
-                    <table>
-                        <tbody>
-                        <tr><td></td></tr>
-                        <tr><td>销售价格</td></tr>
-                        <tr><td><span>减:</span>销售成本</td></tr>
-                        <tr><td><span>减:</span>贷款余额</td></tr>
-                        <tr><td>净销售所得</td></tr>
-                        </tbody>
-                    </table>
+                    <ul ng-if="result.saleIncomeAnalysisRecords.length>0">
+                        <li></li>
+                        <li>销售价格</li>
+                        <li><span>减:</span>销售成本</li>
+                        <li><span>减:</span>贷款余额</li>
+                        <li>净销售所得</li>
+                    </ul>
                 </div><!-- table-group-left -->
                 <div class="table-group-right">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide clearfix ">
-                                <table>
-                                    <tbody>
-                                    <tr>
-                                        <td>第1年</td>
-                                        <td>第2年</td>
-                                        <td>第3年</td>
-                                        <td>第4年</td>
-                                    </tr>
-                                    <tr>
-                                        <td>自动生成</td>
-                                        <td>自动生成</td>
-                                        <td>自动生成</td>
-                                        <td>自动生成</td>
-                                    </tr>
-                                    <tr>
-                                        <td>自动生成</td>
-                                        <td>自动生成</td>
-                                        <td>自动生成</td>
-                                        <td>自动生成</td>
-                                    </tr>
-                                    <tr>
-                                        <td>自动生成</td>
-                                        <td>自动生成</td>
-                                        <td>自动生成</td>
-                                        <td>自动生成</td>
-                                    </tr>
-                                    <tr>
-                                        <td>自动生成</td>
-                                        <td>自动生成</td>
-                                        <td>自动生成</td>
-                                        <td>自动生成</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
+                                <ul ng-repeat="item in result.saleIncomeAnalysisRecords">
+                                    <li>第{{item.year}}年</li>
+                                    <li>{{item.salePrice|numberFormatDefault:"-":0}}</li>
+                                    <li>{{item.saleCost|numberFormatDefault:"-":0}}</li>
+                                    <li>{{item.loanBalance|numberFormatDefault:"-":0}}</li>
+                                    <li>{{item.netSalesIncome|numberFormatDefault:"-":0}}</li>
+                                </ul>
                             </div><!-- swiper-slide -->
                         </div><!-- swiper-wrapper -->
                     </div><!-- swiper-container -->
@@ -307,10 +244,8 @@
                 <div class="table-group-left">
                     <table>
                         <tbody>
-                        <tr><td></td></tr>
-                        <tr><td>第1年</td></tr>
-                        <tr><td>第2年</td></tr>
-                        <tr><td>第3年</td></tr>
+                            <tr><td></td></tr>
+                            <tr ng-repeat="item in result.loanRepaymentAnalysis"><td>第{{item.year}}年</td></tr>
                         </tbody>
                     </table>
                 </div><!-- table-group-left -->
@@ -326,23 +261,11 @@
                                             <td>利息</td>
                                             <td>剩余贷款本金</td>
                                         </tr>
-                                        <tr>
-                                            <td>35,965</td>
-                                            <td>31,685</td>
-                                            <td>4,280</td>
-                                            <td>68,315</td>
-                                        </tr>
-                                        <tr>
-                                            <td>35,965</td>
-                                            <td>31,685</td>
-                                            <td>4,280</td>
-                                            <td>68,315</td>
-                                        </tr>
-                                        <tr>
-                                            <td>35,965</td>
-                                            <td>31,685</td>
-                                            <td>4,280</td>
-                                            <td>68,315</td>
+                                        <tr ng-repeat="item in result.loanRepaymentAnalysis">
+                                            <td>{{item.pmt|number:0}}</td>
+                                            <td>{{item.ppmt|number:0}}</td>
+                                            <td>{{item.ipmt|number:0}}</td>
+                                            <td>{{item.leavePpmt|number:0}}</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -369,7 +292,7 @@
                     <div class="amp-form-group">
                         <label class="amp-form-label">业主要求的收益率</label>
                         <div class="amp-form-content">
-                            <input type="number"/>
+                            <input type="number" ng-model="result.parameterInfo.benefitRate"/>
                         </div>
                     </div><!-- amp-form-group -->
 
@@ -386,18 +309,21 @@
 
                     <div class="amp-form-group">
                         <label class="amp-form-label">输出资本化率</label>
-                        <div class="amp-form-content output-rate-content">
-                            <em>第2年,比率</em>
-                            <input type="number"/>
-                        </div>
+                        <div class="output-rate-content-wrapper">
+                            <div class="amp-form-content output-rate-content" ng-repeat="item in result.parameterInfo.outputCapitalizationRateList">
+                                <em>第{{item.year}}年,比率</em>
+                                <input type="number" ng-model="item.rate"/>
+                            </div>
+                        </div><!-- output-rate-content-wrapper -->
                     </div><!-- amp-form-group -->
-                    <div class="amp-form-group">
-                        <label class="amp-form-label"></label>
-                        <div class="amp-form-content output-rate-content">
-                            <em>第3年,比率</em>
-                            <input type="number"/>
-                        </div>
-                    </div><!-- amp-form-group -->
+
+                    <!--<div class="amp-form-group">-->
+                        <!--<label class="amp-form-label"></label>-->
+                        <!--<div class="amp-form-content output-rate-content">-->
+                            <!--<em>第3年,比率</em>-->
+                            <!--<input type="number"/>-->
+                        <!--</div>-->
+                    <!--</div><!-- amp-form-group -->-->
 
                 </div><!-- dialog-body -->
 

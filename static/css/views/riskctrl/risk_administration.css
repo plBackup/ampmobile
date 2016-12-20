@@ -66,7 +66,7 @@
 #riskctrl-detail #cost .amp-table-data tbody tr:last-child td:nth-child(2):after{ content: "（每月每平方）"; display: block;  line-height: 14px; bottom: 0; font-size: 12px; color: #737e8c; font-weight: 400;position: absolute; top: 30px;right: 0;}
 #riskctrl-detail #investment .amp-table-data tbody td:first-child{font-weight: 700;position: relative;}
 #riskctrl-detail #investment .amp-table-data tbody tr:first-child td:first-child:after{ content: "（m²）"; display: inline-block;  line-height: 40px; bottom: 0; font-size: 12px; color: #737e8c;font-weight: 400;position: absolute;left: 35px;top: 0;}
-#riskctrl-detail #investment .amp-table-data  tr:nth-child(3) td:first-child:after{ content: "（m²）"; display: inline-block;  line-height: 40px; bottom: 0; font-size: 12px; color: #737e8c;font-weight: 400;position: absolute;left: 74px;top: 0;}
+#riskctrl-detail #investment .amp-table-data  tr:nth-child(3) td:first-child:after{ content: "（m²）"; display: inline-block;  line-height: 40px; bottom: 0; font-size: 12px; color: #737e8c;font-weight: 400;position: absolute;left: 75px;top: 0;}
 #riskctrl-detail #efficient .amp-table-data  td:first-child {text-align: left;}
 #riskctrl-detail #efficient .amp-table-data tr td{text-indent: 1em;}
 #riskctrl-detail #efficient .amp-table-data tr:nth-child(9) td:first-child,#riskctrl-detail  #efficient .amp-table-data tr:nth-child(1) td:first-child{font-weight: 700; text-indent: 0;}
@@ -89,4 +89,5 @@
 #riskctrl-detail  .amp-table-data thead td:nth-child(2){padding-right: 11px;}
 #riskctrl-detail  .amp-table-data tbody tr:last-child td{padding-bottom: 20px;}
 #riskctrl-detail  .amp-table-data tbody td:first-child{padding-left: 12px;}
+#riskctrl-detail  table  td.padding-right{padding-right: 12px;}
 

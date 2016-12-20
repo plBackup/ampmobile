@@ -130,6 +130,7 @@
       "loanFee": 0,
       "loan": 61328.49,
       "loanRate": 7.74,
+      "loanYear":5,
       "originBase": "-",
       "initialBenefit": "-"
     },

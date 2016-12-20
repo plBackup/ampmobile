@@ -59,8 +59,6 @@ noi.controller('noiController', ['$rootScope', '$scope',"$timeout","noiAllData",
 
         self.viewDetail=function(dataType){
 
-
-
           switch(dataType){
               case "income":
                   self.modalTitle="收入";

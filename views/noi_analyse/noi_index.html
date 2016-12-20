@@ -122,11 +122,17 @@
                         <div class="amp-table-wrapper">
                             <table class="table amp-table">
                                 <thead>
-                                <tr >
-                                    <th>实际{{activeTab}}</th>
+                                <tr  ng-hide="noiCtrl.activeTab==4">
+                                    <th>实际</th>
                                     <th>预算</th>
                                     <th>差异额</th>
                                     <th>差异率</th>
+                                </tr>
+                                <tr  ng-show="noiCtrl.activeTab==4">
+                                    <th>达成率</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -145,11 +151,17 @@
                         <div class="amp-table-wrapper">
                             <table class="table  amp-table">
                                 <thead>
-                                <tr >
-                                    <th>实际 </th>
+                                <tr  ng-hide="noiCtrl.activeTab==4">
+                                    <th>实际</th>
                                     <th>预算</th>
                                     <th>差异额</th>
                                     <th>差异率</th>
+                                </tr>
+                                <tr  ng-show="noiCtrl.activeTab==4">
+                                    <th>达成率</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -167,11 +179,17 @@
                         <div class="amp-table-wrapper">
                             <table class="table  amp-table">
                                 <thead>
-                                <tr >
+                                <tr  ng-hide="noiCtrl.activeTab==4">
                                     <th>实际</th>
                                     <th>预算</th>
                                     <th>差异额</th>
                                     <th>差异率</th>
+                                </tr>
+                                <tr  ng-show="noiCtrl.activeTab==4">
+                                    <th>达成率</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -189,11 +207,17 @@
                         <div class="amp-table-wrapper">
                             <table class="table  amp-table">
                                 <thead>
-                                <tr >
+                                <tr  ng-hide="noiCtrl.activeTab==4">
                                     <th>实际</th>
                                     <th>预算</th>
                                     <th>差异额</th>
                                     <th>差异率</th>
+                                </tr>
+                                <tr  ng-show="noiCtrl.activeTab==4">
+                                    <th>达成率</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -425,11 +449,17 @@
                                             <div class="swiper-slide">
                                                 <table class="table amp-table" style="width:380px" >
                                                     <thead ng-if="noiCtrl.noiModal != 'arrearage'">
-                                                    <tr >
+                                                    <tr ng-hide="noiCtrl.activeModalTab==4">
                                                         <th><span>实际</span><em class="em-unit">(万元)</em></th>
                                                         <th><span>预算</span><em class="em-unit">(万元)</em></th>
                                                         <th><span>差异额</span><em class="em-unit">(万元)</em></th>
                                                         <th><span>差异率</span><em class="em-unit">(％)</em></th>
+                                                    </tr>
+                                                    <tr ng-show="noiCtrl.activeModalTab==4">
+                                                        <th><span>达成率</span></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
                                                     </tr>
                                                     </thead>
 
