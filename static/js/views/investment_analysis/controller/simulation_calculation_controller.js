@@ -1,10 +1,14 @@
-ampApp.controller("simulation-calculation-controller",["$scope","$http","$rootScope","$timeout","simulationCalculationService",function($scope,$http,$rootScope,$timeout,simulationCalculationService){
+ampApp.controller("simulation-calculation-controller",["$scope","$http","$rootScope","$timeout","$location","simulationCalculationService",function($scope,$http,$rootScope,$timeout,$location,simulationCalculationService){
     $scope.result = {};
 
     $rootScope.hideBottom();
 
+    /* ======================================== angular 注册事件 ======================================== */
     function initializeData(data){
-        $scope.result = data;
+        var SELECTED_CASE_INFO = "selected_case_info";
+        var caseInfo = globalStorage.getSessionData(SELECTED_CASE_INFO);
+
+        $scope.result = caseInfo||data;
 
 
         var invokeCount = 0;
@@ -16,9 +20,6 @@ ampApp.controller("simulation-calculation-controller",["$scope","$http","$rootSc
             simulationCalculationService.resetPreTaxCashFlowInfo($scope.result); // 重新设置 税前现金流
             simulationCalculationService.resetSaleIncomeAnalysisRecords($scope.result); // 重新设置 销售所得分析
             simulationCalculationService.resetTestIndexRecords($scope.result); // 重新设置 模拟测算
-
-
-            console.log($scope.result.preTaxCashFlowRecords);
         },true);
     }
 
@@ -32,9 +33,16 @@ ampApp.controller("simulation-calculation-controller",["$scope","$http","$rootSc
         loanRepaymentAnalysisCollapsed:true
     };
 
-    /* ======================================== angular 注册事件 ======================================== */
+
+
     $scope.collapseSection = function(section){
         $scope.sectionGroup[section]=!$scope.sectionGroup[section];
+    };
+
+    $scope.goToIncomeExpenseSimulationPage = function(){
+        $location.path("/income_expenses_simulation");
+        var SELECTED_CASE_INFO = "selected_case_info";
+        globalStorage.setSessionData(SELECTED_CASE_INFO,$scope.result);
     };
 
 
@@ -92,11 +100,6 @@ ampApp.controller("simulation-calculation-controller",["$scope","$http","$rootSc
     function bindPageEvents(){
 
 
-        container.on("click",".income-expenses-simulation-btn",function(e){
-            e.stopPropagation();
-            e.preventDefault();
-            window.location = "#/income_expenses_simulation";
-        });
 
         /* ------------------------------ simulation-calculation-parameter-dialog ------------------------------ */
 

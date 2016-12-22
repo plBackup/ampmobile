@@ -24,7 +24,7 @@ angular.module('dataTool').filter("skip",function(){
         if(typeof str==="undefined"){
             return data;
         }else{
-            if(typeof data==="undefined" || data==""){
+            if(typeof data==="undefined" || data===""){
                 return str;
             }
             return data;

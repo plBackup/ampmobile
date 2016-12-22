@@ -9,6 +9,7 @@ var ampApp = angular.module('amp', [
     'noi',
     'dataTool',
     "amp-investment-analysis",
+    "amp-common-directive-collection",
     "amp-common-filters"
 ]);
 
@@ -157,8 +158,12 @@ ampApp.config(function($stateProvider,$urlRouterProvider,$httpProvider) {
             },
             reloadOnSearch: false,
             resolve: {
-                noiAllData: function(noiService) {
-                    return noiService.getAllData();
+                noiAllData: function(noiService,$stateParams) {
+                    var pid=$stateParams.pid;
+                    return noiService.getAllData(pid);
+                },
+                pid:function($stateParams){
+                    return $stateParams.pid;
                 },
                 data: ['$q','$timeout', _timeDefer]
             }
@@ -380,6 +385,7 @@ ampApp.config(function($stateProvider,$urlRouterProvider,$httpProvider) {
         url: "/income_expenses_simulation",
         views:{
             "header":{
+                controller:"income-expenses-simulation-header-controller",
                 templateUrl:"./views/investment_analysis/income_expenses_simulation_header.html"
             },
             "content": {

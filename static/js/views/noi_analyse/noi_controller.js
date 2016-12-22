@@ -15,13 +15,17 @@ noi.controller('noiHeadController', ['$rootScope', '$scope',"$timeout","$state",
         }
 
     }]);
-noi.controller('noiController', ['$rootScope', '$scope',"$timeout","noiAllData","SharedState",
-    function($rootScope, $scope,$timeout,noiAllData,SharedState) {
+noi.controller('noiController', ['$rootScope', '$scope',"$timeout","noiAllData","pid","SharedState",
+    function($rootScope, $scope,$timeout,noiAllData,pid,SharedState) {
         var self=this;
 
         $rootScope.showHeader();
         $rootScope.showBottom();
         $rootScope.pageId="noi";
+
+        $rootScope.curProject=pid;
+
+        console.log("pid---="+pid);
 
         SharedState.initialize($scope, "activeTab");
         //SharedState.initialize($scope, "activeTab");

@@ -1,13 +1,40 @@
-ampApp.controller("income-expenses-simulation-controller",["$scope","$http","$rootScope","$timeout",function($scope,$http,$rootScope,$timeout){
-    $scope.records = [];
+ampApp.controller("income-expenses-simulation-controller",["$scope","$http","$rootScope","$timeout","$location","simulationCalculationService",function($scope,$http,$rootScope,$timeout,$location,simulationCalculationService){
+
+    var SELECTED_CASE_INFO = "selected_case_info";
+    var caseInfo = globalStorage.getSessionData(SELECTED_CASE_INFO);
 
 
     $rootScope.hideBottom();
 
-    $scope.incomeExpense={
-        headers:[1,2,3],
-        contents:[{},{},{}]
+
+    $scope.result = caseInfo;
+
+    /* ======================================== angular 注册事件 ======================================== */
+    $scope.$watch("result",function(newVal, oldVal,scope){
+        simulationCalculationService.recalculateIncomeExpense($scope.result); // 重新设置 收支模拟
+    },true);
+
+    $scope.addListRecord = function(){
+        var len = $scope.result.incomeExpense.headers.length;
+        $scope.result.incomeExpense.headers.push(len+1);
+        $scope.result.incomeExpense.contents.push({});
+        updateSwiper();
     };
+
+    $scope.removeListRecord = function(){
+        $scope.result.incomeExpense.headers.pop();
+        $scope.result.incomeExpense.contents.pop();
+        var translate = tableContentSwiper.getWrapperTranslate();
+        tableContentSwiper.setWrapperTranslate(translate+125);
+        updateSwiper();
+    };
+
+    $scope.$on("income-expenses-simulation.save",function(){
+        var SELECTED_CASE_INFO = "selected_case_info";
+        globalStorage.setSessionData(SELECTED_CASE_INFO,$scope.result);
+
+        $location.path("/simulation_calculation");
+    });
 
     /* ======================================== 监听广播事件 ======================================== */
     $scope.$on("$destroy",function(){destroy();});
@@ -47,20 +74,22 @@ ampApp.controller("income-expenses-simulation-controller",["$scope","$http","$ro
         tableHeaderSwiper.destroy(true,true);
         tableContentSwiper.destroy(true,true);
     }
-
+    var promise = null;
     function updateSwiper(){
-        tableHeaderSwiper.update();
-        tableContentSwiper.update();
+        $timeout.cancel(promise);
+
+        promise = $timeout(function(){
+            tableHeaderSwiper.update();
+            tableContentSwiper.update();
+        },300);
+
     }
 
     // 初始化
     function init(){
         initPageView();
         bindPageEvents();
-
-        $timeout(function(){
-            updateSwiper();
-        },300);
+        updateSwiper();
     }
     init();
 }]);

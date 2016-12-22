@@ -30,16 +30,24 @@
     font-size:12px;
 }
 
-#income-expenses-simulation  .table-group .record-list li input{
+#income-expenses-simulation  .table-group .record-list li.amp-text-span{padding-right:10px;}
+
+#income-expenses-simulation  .table-group .record-list li>input{
     display:block;
     width:100%;
     height:34px;
+    line-height: 20px;
     border:1px solid #d7dfdf;
     background-color:#f2f5f7;
     border-radius: 0;
+    text-align: right;
+    padding:0 10px;
 }
+
+#income-expenses-simulation  .table-group .record-list li .amp-input input{text-align: right;}
 #income-expenses-simulation  .table-group .record-list li.record-list-title{
     color: #8592a3;
+    padding-right:10px;
 }
 
 

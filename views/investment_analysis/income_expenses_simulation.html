@@ -13,14 +13,14 @@
                     <div class="swiper-slide clearfix">
                         <ul class="record-list year-record-list"><li class="record-list-title">年增长率</li></ul>
 
-                        <ul class="record-list" ng-repeat="item in incomeExpense.headers">
+                        <ul class="record-list" ng-repeat="item in result.incomeExpense.headers">
                             <li class="record-list-title">第{{item}}年</li>
                         </ul>
 
                         <ul class="record-list empty-record-list">
                             <li class="record-list-operation clearfix">
-                                <a class="record-list-add-btn"></a>
-                                <a class="record-list-remove-btn"></a>
+                                <a class="record-list-add-btn" ng-click="addListRecord()"></a>
+                                <a class="record-list-remove-btn" ng-click="removeListRecord()"></a>
                             </li>
                         </ul>
                     </div><!-- swiper-slide -->
@@ -61,51 +61,113 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide clearfix">
                                 <ul class="record-list year-record-list">
-                                    <li class=" amp-font-weight-bold ">-</li>
-                                    <li><input type="number"/></li>
-                                    <li ><input type="number"/></li>
-                                    <li ><input type="number"/></li>
-                                    <li class=" amp-font-weight-bold ">-</li>
-                                    <li ><input type="number"/></li>
-                                    <li ><input type="number"/></li>
-                                    <li ><input type="number"/></li>
-                                    <li ><input type="number"/></li>
-                                    <li ><input type="number"/></li>
-                                    <li ><input type="number"/></li>
-                                    <li ><input type="number"/></li>
-                                    <li ><input type="number"/></li>
-                                    <li ><input type="number"/></li>
-                                    <li ><input type="number"/></li>
-                                    <li  class=" amp-font-weight-bold ">-</li>
-                                    <li ><input type="number"/></li>
-                                    <li ><input type="number"/></li>
+                                    <li class=" amp-font-weight-bold amp-text-span">-</li>
+                                    <li>
+                                        <div amp-input class="amp-input"  input-type="integer" input-model="result.incomeExpenseYearIncreaseRate.rentIncomeRate"></div>
+                                    </li>
+                                    <li>
+                                        <div amp-input class="amp-input"  input-type="integer" input-model="result.incomeExpenseYearIncreaseRate.propertyFeeIncomeRate"></div>
+                                    </li>
+                                    <li>
+                                        <div amp-input class="amp-input" input-type="integer" input-model="result.incomeExpenseYearIncreaseRate.otherIncomeRate"></div>
+                                    </li>
+                                    <li class=" amp-font-weight-bold amp-text-span">-</li>
+                                    <li>
+                                        <div amp-input class="amp-input" input-type="integer" input-model="result.incomeExpenseYearIncreaseRate.landValueTaxRate"></div>
+                                    </li>
+                                    <li>
+                                        <div amp-input class="amp-input" input-type="integer" input-model="result.incomeExpenseYearIncreaseRate.publicConsumptionFeeRate"></div>
+                                    </li>
+                                    <li>
+                                        <div amp-input class="amp-input" input-type="integer" input-model="result.incomeExpenseYearIncreaseRate.maintenanceFeeRate"></div>
+                                    </li>
+                                    <li>
+                                        <div amp-input class="amp-input" input-type="integer" input-model="result.incomeExpenseYearIncreaseRate.generalMgtFeeRate"></div>
+                                    </li>
+                                    <li>
+                                        <div amp-input class="amp-input" input-type="integer" input-model="result.incomeExpenseYearIncreaseRate.marketingExpenseRate"></div>
+                                    </li>
+                                    <li>
+                                        <div amp-input class="amp-input" input-type="integer" input-model="result.incomeExpenseYearIncreaseRate.wagesRelatedCostRate"></div>
+                                    </li>
+                                    <li>
+                                        <div amp-input class="amp-input" input-type="integer" input-model="result.incomeExpenseYearIncreaseRate.mgtFeeRate"></div>
+                                    </li>
+                                    <li>
+                                        <div amp-input class="amp-input" input-type="integer" input-model="result.incomeExpenseYearIncreaseRate.chargeOffRate"></div>
+                                    </li>
+                                    <li>
+                                        <div amp-input class="amp-input" input-type="integer" input-model="result.incomeExpenseYearIncreaseRate.depreciationRate"></div>
+                                    </li>
+                                    <li>
+                                        <div amp-input class="amp-input" input-type="integer" input-model="result.incomeExpenseYearIncreaseRate.otherFeeRate"></div>
+                                    </li>
+                                    <li class=" amp-font-weight-bold amp-text-span">-</li>
+                                    <li>
+                                        <div amp-input class="amp-input" input-type="integer" input-model="result.incomeExpenseYearIncreaseRate.housePropertyTaxRate"></div>
+                                    </li>
+                                    <li>
+                                        <div amp-input class="amp-input" input-type="integer" input-model="result.incomeExpenseYearIncreaseRate.businessTaxRate"></div>
+                                    </li>
                                     <li class=" amp-font-weight-bold amp-font-style-italic"></li>
                                     <li></li>
                                 </ul><!-- record-list -->
 
 
 
-                                <ul class="record-list" ng-repeat="item in incomeExpense.contents">
-                                    <li  class=" amp-font-color-grey">自动生成</li>
-                                    <li ><input type="number"/></li>
-                                    <li ><input type="number"/></li>
-                                    <li ><input type="number"/></li>
-                                    <li  class=" amp-font-color-grey ">自动生成</li>
-                                    <li ><input type="number"/></li>
-                                    <li  ><input type="number"/></li>
-                                    <li  ><input type="number"/></li>
-                                    <li ><input type="number"/></li>
-                                    <li ><input type="number"/></li>
-                                    <li ><input type="number"/></li>
-                                    <li ><input type="number"/></li>
-                                    <li ><input type="number"/></li>
-                                    <li ><input type="number"/></li>
-                                    <li ><input type="number"/></li>
-                                    <li  class=" amp-font-color-grey ">自动生成</li>
-                                    <li ><input type="number"/> </li>
-                                    <li ><input type="number"/></li>
-                                    <li class=" amp-font-color-grey">自动生成</li>
-                                    <li><input type="number"/></li>
+                                <ul class="record-list" ng-repeat="item in result.incomeExpense.contents">
+                                    <li class=" amp-font-color-grey amp-text-span">{{item.totalIncome|numberFormatDefault:"-":0}}</li>
+                                    <li>
+                                        <div amp-input class="amp-input" input-type="integer" input-model="item.rentIncome"></div>
+                                    </li>
+                                    <li>
+                                        <div amp-input class="amp-input" input-type="integer" input-model="item.propertyFeeIncome"></div>
+                                    </li>
+                                    <li>
+                                        <div amp-input class="amp-input" input-type="integer" input-model="item.otherIncome"></div>
+                                    </li>
+                                    <li class=" amp-font-color-grey amp-text-span">{{item.totalFee|numberFormatDefault:"-":0}}</li>
+                                    <li>
+                                        <div amp-input class="amp-input" input-type="integer" input-model="item.landValueTax"></div>
+                                    </li>
+                                    <li>
+                                        <div amp-input class="amp-input" input-type="integer" input-model="item.publicConsumptionFee"></div>
+                                    </li>
+                                    <li>
+                                        <div amp-input class="amp-input" input-type="integer" input-model="item.maintenanceFee"></div>
+                                    </li>
+                                    <li>
+                                        <div amp-input class="amp-input" input-type="integer" input-model="item.generalMgtFee"></div>
+                                    </li>
+                                    <li>
+                                        <div amp-input class="amp-input" input-type="integer" input-model="item.marketingExpense"></div>
+                                    </li>
+                                    <li>
+                                        <div amp-input class="amp-input" input-type="integer" input-model="item.wagesRelatedCost"></div>
+                                    </li>
+                                    <li>
+                                        <div amp-input class="amp-input" input-type="integer" input-model="item.mgtFee"></div>
+                                    </li>
+                                    <li>
+                                        <div amp-input class="amp-input" input-type="integer" input-model="item.chargeOff"></div>
+                                    </li>
+                                    <li>
+                                        <div amp-input class="amp-input" input-type="integer" input-model="item.depreciation"></div>
+                                    </li>
+                                    <li>
+                                        <div amp-input class="amp-input" input-type="integer" input-model="item.otherFee"></div>
+                                    </li>
+                                    <li class=" amp-font-color-grey amp-text-span">{{item.totalTax|numberFormatDefault:"-":0}}</li>
+                                    <li>
+                                        <div amp-input class="amp-input" input-type="integer" input-model="item.housePropertyTax"></div>
+                                    </li>
+                                    <li>
+                                        <div amp-input class="amp-input" input-type="integer" input-model="item.businessTax"></div>
+                                    </li>
+                                    <li class=" amp-font-color-grey amp-text-span">{{item.noi|numberFormatDefault:"-":0}}</li>
+                                    <li>
+                                        <div amp-input class="amp-input" input-type="integer" input-model="item.capitalExport"></div>
+                                    </li>
                                 </ul><!-- record-list -->
 
                                 <ul class="record-list empty-record-list"><li></li></ul>
