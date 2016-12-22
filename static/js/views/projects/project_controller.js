@@ -120,6 +120,14 @@ projects.controller("pjCreateController",["$rootScope","$scope","$location","$st
     $scope.$on("$destroy", function() {
         $("#open-date-wrapper input").datetimepicker("remove");
     });
+
+    $('#demo_date').mobiscroll().date({
+        theme: theme,     // Specify theme like: theme: 'ios' or omit setting to use default
+        mode: mode,       // Specify scroller mode like: mode: 'mixed' or omit setting to use default
+        display: display, // Specify display mode like: display: 'bottom' or omit setting to use default
+        lang: 'zh'        // Specify language like: lang: 'pl' or omit setting to use default
+    });
+
 }]);
 projects.controller("pjUpdateController",["$rootScope","$scope","$location","$state","pid",function($rootScope,$scope,$location,$state,pid){
     //$scope.project=project;

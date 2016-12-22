@@ -104,8 +104,7 @@ ampApp.controller("risk_administration_controller", ["$scope", "$http", "$rootSc
 
 
 			$("#passenger .table-title li.monthly").each(function() {
-				$(this).on("click", function() {
-					
+				$(this).on("click", function() {					
 					$scope.allyear_passenger = false;
 					$scope.$apply();
 				});
@@ -122,8 +121,7 @@ ampApp.controller("risk_administration_controller", ["$scope", "$http", "$rootSc
 					$scope.$apply();
 				});
 			});
-			
-			
+
 		}
 		return ctrl_detail_tel_module;
 	})(jQuery, ctrl_detail_tel_module || {})
@@ -135,16 +133,36 @@ ampApp.controller("risk_administration_controller", ["$scope", "$http", "$rootSc
 			$scope.cost[$scope.costType].forEach(function(itemRecord) {
 				if(groupId == itemRecord.dataGroup && !itemRecord.hasCollapseBtn) {
 					itemRecord.hide = !itemRecord.hide;
+					if(!itemRecord.hide){
+						$("#riskctrl-detail #cost .amp-table-data tbody tr:nth-child(1) td:first-child").addClass("btn-up");
+					}else{
+						$("#riskctrl-detail #cost .amp-table-data tbody tr:nth-child(1) td:first-child").removeClass("btn-up");
+					}
 				}
 			});
 			$scope.salesvolume[$scope.saleType].forEach(function(itemRecord) {
 				if(groupId == itemRecord.dataGroup && !itemRecord.hasCollapseBtn) {
 					itemRecord.hide = !itemRecord.hide;
+					if(!itemRecord.hide){
+						$("#riskctrl-detail #salesvolume .amp-table-data tbody tr:nth-child(1) td:first-child").addClass("btn-up");
+					}else{
+						$("#riskctrl-detail #salesvolume .amp-table-data tbody tr:nth-child(1) td:first-child").removeClass("btn-up");
+					}
 				}
 			});
 			$scope.efficient[$scope.efficientType].forEach(function(itemRecord) {
 				if(groupId == itemRecord.dataGroup && !itemRecord.hasCollapseBtn) {
 					itemRecord.hide = !itemRecord.hide;
+					if(!itemRecord.hide && groupId==1){
+						$("#riskctrl-detail #efficient .amp-table-data tbody tr:nth-child(1) td:first-child").addClass("btn-up");
+					}else if(itemRecord.hide && groupId==1){
+						$("#riskctrl-detail #efficient .amp-table-data tbody tr:nth-child(1) td:first-child").removeClass("btn-up");
+					};
+					if(!itemRecord.hide && groupId==2){
+						$("#riskctrl-detail #efficient .amp-table-data tbody tr:nth-child(9) td:first-child").addClass("btn-up");
+					}else if(itemRecord.hide && groupId==2){
+						$("#riskctrl-detail #efficient .amp-table-data tbody tr:nth-child(9) td:first-child").removeClass("btn-up");
+					};
 				}
 			});
 		}

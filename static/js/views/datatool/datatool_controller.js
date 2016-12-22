@@ -1209,11 +1209,11 @@ dataTool.controller("irrPlanController",['$rootScope', '$scope',"irrPlanData","$
         self.irrData=irrPlanData;
 
         self.save=function(){
-            amp_main.loading_show();
+         /*   amp_main.loading_show();
             $timeout(function(){
                 amp_main.loading_hide();
                 $location.path("noi");
-            },1000);
+            },1000);*/
         };
         var skip=2;
         //这里出于性能考虑 不采用$watch 直接在触发元素上绑定change事件，触发

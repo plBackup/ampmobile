@@ -58,12 +58,12 @@
 #riskctrl-detail #efficient .amp-table tr td:first-child{text-indent: 1em;}
 #riskctrl-detail #cost .amp-table-data tr:nth-child(2) td:first-child,#riskctrl-detail #cost .amp-table-data tr:nth-child(3) td:first-child,#riskctrl-detail #cost .amp-table-data tr:nth-child(4) td:first-child{text-indent: 1em;}
 #riskctrl-detail #efficient .amp-table tr:nth-child(1) td,#riskctrl-detail #efficient  .amp-table-data tr:first-child td,#riskctrl-detail #cost .amp-table-data tbody tr:nth-child(1) td,#riskctrl-detail #cost .amp-table-data tr:nth-child(5) td,#riskctrl-detail #cost .amp-table-data tr:nth-child(6) td,#riskctrl-detail #cost .amp-table-data tr:nth-child(7) td,#riskctrl-detail #salesvolume .amp-table-data tbody tr:first-child td{font-weight: 700; text-indent: 0;}
-#riskctrl-detail #cost .amp-table-data tbody tr:nth-last-child(2) td{padding-bottom: 40px;}
-#riskctrl-detail #cost .amp-table-data tbody tr:last-child td{padding-bottom: 16px;position: relative;}
+/*#riskctrl-detail #cost .amp-table-data tbody tr:nth-last-child(2) td{padding-bottom: 40px;}*/
+#riskctrl-detail #cost .amp-table-data tbody tr:last-child td{position: relative;}
 #riskctrl-detail #salesvolume .amp-table-data tr td:first-child{text-align: left;text-indent: 1em;}
 #riskctrl-detail #salesvolume .amp-table-data tr:first-child td:first-child{text-indent: 0;}
 #riskctrl-detail #collectionrate .amp-table-data tbody  tr:first-child td,#riskctrl-detail #salesvolume .amp-table-data tbody tr:first-child td,#riskctrl-detail #collectionrate .amp-table-data tr:last-child td:first-child{font-weight: 700;}
-#riskctrl-detail #cost .amp-table-data tbody tr:last-child td:nth-child(2):after{ content: "（每月每平方）"; display: block;  line-height: 14px; bottom: 0; font-size: 12px; color: #737e8c; font-weight: 400;position: absolute; top: 30px;right: 0;}
+#riskctrl-detail #cost .amp-table-data tbody tr:last-child td:nth-child(1):after{ content: "（每月每平方）"; display: block;  line-height: 14px; bottom: 0; font-size: 12px; color: #737e8c; font-weight: 400;position: absolute; top: 30px;left: 0;}
 #riskctrl-detail #investment .amp-table-data tbody td:first-child{font-weight: 700;position: relative;}
 #riskctrl-detail #investment .amp-table-data tbody tr:first-child td:first-child:after{ content: "（m²）"; display: inline-block;  line-height: 40px; bottom: 0; font-size: 12px; color: #737e8c;font-weight: 400;position: absolute;left: 35px;top: 0;}
 #riskctrl-detail #investment .amp-table-data  tr:nth-child(3) td:first-child:after{ content: "（m²）"; display: inline-block;  line-height: 40px; bottom: 0; font-size: 12px; color: #737e8c;font-weight: 400;position: absolute;left: 75px;top: 0;}
@@ -90,4 +90,17 @@
 #riskctrl-detail  .amp-table-data tbody tr:last-child td{padding-bottom: 20px;}
 #riskctrl-detail  .amp-table-data tbody td:first-child{padding-left: 12px;}
 #riskctrl-detail  table  td.padding-right{padding-right: 12px;}
-
+#riskctrl-detail #cost .amp-table-data tbody tr:nth-child(1) td.btn-up:after,
+#riskctrl-detail #salesvolume .amp-table-data tbody tr:nth-child(1) td.btn-up:after,
+#riskctrl-detail #efficient .amp-table-data tbody tr:nth-child(1) td.btn-up:after,
+#riskctrl-detail #efficient .amp-table-data tbody tr:nth-child(9) td.btn-up:after
+ {
+	content: "";
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: url(../../../images/icon_chevron_up@2x.png) no-repeat center center;
+	background-size: contain;
+	margin-left: 8px;
+	vertical-align: -5px;
+}
