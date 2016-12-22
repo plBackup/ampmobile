@@ -7,8 +7,8 @@ angular.module('ampFilter').directive('monthPicker', [
         return {
             restrict: 'A',
             scope: {
-                monthSelect:"&",
-                curMonth:"@curMonth"
+               monthSelect:"&",
+               curMonth:"@curMonth"
 
             },
             require:"ngModel",
@@ -86,43 +86,42 @@ angular.module('ampFilter').directive('monthPicker', [
                 };
 
                 var updateModel=function(dateText){
-
                     $scope.$apply(function(){
-
                         ngModelCtrl.$setViewValue(dateText);
                     });
                 };
 
-
-
                 ngModelCtrl.$render=function(){
                     $element.find("input").val(ngModelCtrl.$viewValue);
-                }
+                };
 
                 //month Selector
                 var mpicker;
                 var monthSelector=function(){
-                    /*var curDate=new Date();
-                     var start_date=curDate.getFullYear()+"-"+(curDate.getMonth()+1);
-                     */
-                    mpicker=$element.find("input").datetimepicker({
-                        format:"yyyy-mm",
-                        todayBtn:"linked",
-                        startView:3,
-                        minView:3,
-                        autoclose: true,
-                        language:"zh-CN",
-                    }).on('changeDate', function(e){
 
-                        var dateStr=$element.find("input").val();
-                        updateModel(dateStr);
-                        if($scope.monthSelect){
-                            //如果作用域有处理函数，
-                            $scope.$apply(function(){
-                                $scope.monthSelect({date:dateStr});
-                            });
+                    var now = $scope.curMonth||new Date(),
+                        minDate = new Date(new Date().getFullYear() - 30, 0, 1);
+                    mpicker=$element.find("input").mobiscroll().date({
+                        theme: 'android-holo-light',
+                        mode: 'scroller',
+                        display: 'bottom',
+                        lang: 'zh',
+                        startYear: (new Date()).getFullYear(),
+                        endYear: (new Date()).getFullYear() + 30,
+                        dateFormat: 'yyyy-mm',
+                        dateOrder: 'yymm', //面板中日期排列格式
+                        //min:minDate,
+                        minDate:minDate,
+                        onSelect:function(e){
+                            var dateStr=$element.find("input").val();
+                            updateModel(dateStr);
+                            if($scope.monthSelect){
+                                //如果作用域有处理函数，
+                                $scope.$apply(function(){
+                                    $scope.monthSelect({date:dateStr});
+                                });
+                            }
                         }
-
                     });
 
                     $element.find("button").on("click",function(e){
@@ -163,9 +162,9 @@ angular.module('ampFilter').directive('monthPicker', [
                         }
 
                         //broadcast
-                        /*  $scope.$emit("monthUpdate",{
-                         date:"date 2016"
-                         });*/
+                      /*  $scope.$emit("monthUpdate",{
+                            date:"date 2016"
+                        });*/
 
                     });
 
@@ -175,17 +174,16 @@ angular.module('ampFilter').directive('monthPicker', [
                 monthSelector();
 
                 $element.find("input").on("focus",function(){
-                    $(this).closest(".input-group").addClass("out-ring");
-                });
+                        $(this).closest(".input-group").addClass("out-ring");
+                    });
                 $element.find("input").on("blur",function(){
-                    $(this).closest(".input-group").removeClass("out-ring");
-                });
+                        $(this).closest(".input-group").removeClass("out-ring");
+                    });
 
                 //destroy
                 $scope.$on("$destroy", function() {
                     //清除配置
-                    //console.log("destroy");
-                    $element.find("input").datetimepicker("remove");
+                    //console.log("destroy")
 
                 });
             }//end link

@@ -11,7 +11,7 @@
     // 自动匹配
     ampCommonDirectiveCollection.directive("ampInput",["$timeout","$filter",function($timeout,$filter){
         return {
-            template:"<input type='text' ng-model='inputModel'/><div class='amp-input-display-span'>{{inputModel|number:inputFractionSize}}</div>",
+            template:"<input type='text' ng-model='inputModel'/><div class='amp-input-display-span'>{{inputModel|numberFormatDefault:'':inputFractionSize}}</div>",
             scope:{
                 inputModel:"=",
                 inputFractionSize:"@", // 小数点精确位数
@@ -23,6 +23,24 @@
                 var inputType=scope.inputType||"text";
 
                 scope.$watch("inputModel",function(newVal,oldVal,scope){
+
+                    if(newVal!=null&&newVal!=""&&inputType=="integer"){// 验证整数
+                        var integerPattern = new RegExp("-?\\d+$","g");
+                        if(!integerPattern.test(newVal)){
+                            $(ele).addClass("amp-input-error");
+                            return;
+                        }
+                    }
+
+                    if(newVal!=null&&newVal!=""&&inputType=="integer"){// 验证浮点数
+                        var floatPattern = new RegExp("^(-?\\d+)(\\.\\d+)?$","g");
+                        if(!floatPattern.test(newVal)){
+                            $(ele).addClass("amp-input-error");
+                            return;
+                        }
+                    }
+
+
                     var pattern = new RegExp(scope.inputPattern,"g");
                     if(pattern.test(newVal)){
                         $(ele).removeClass("amp-input-error");

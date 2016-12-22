@@ -19,8 +19,10 @@
 				<div class="return-rate-detail-data clearfix">
 					<ul class="clearfix">
 						<li ng-repeat="item in records" class="label-group pull-left">
-							<div><em>{{item.title}}</em>
-								<div>{{item.data|number}}</div>
+							<div>
+								<em>{{item.title}}</em>
+								<div><span  ng-if="$index==0||$index==2||$index==4||$index==5||$index==6||$index==7">{{item.data|number:2}}</span>
+							<span ng-if="$index==3||$index==1">{{item.data|number:0}}</span></div>
 							</div>
 						</li>
 					</ul>
@@ -114,10 +116,14 @@
 							<tr ng-repeat="item in collectionrate[collectType]">
 								<td class=" text-left">{{item.name}}</td>
 								<td ng-class='setStyleIcon(item.ActualMonth,item.ReferMonth)'>
-									<div ng-if="!allyear_collectionrate">{{item.ActualMonth}} <i></i></div>
-									<div ng-if="allyear_collectionrate">{{item.ActualYear}} <i></i></div>
+									<div ng-if="!allyear_collectionrate">{{item.ActualMonth|number:2}} <i></i></div>
+									<div ng-if="allyear_collectionrate">{{item.ActualYear|number:2}} <i></i></div>
 								</td>
-								<td>{{item.ReferMonth}}</td>
+								<td>
+									<div ng-if="!allyear_collectionrate">{{item.ReferMonth|number:2}}</div>
+									<div ng-if="allyear_collectionrate">{{item.ReferMonth|number:2}}</div>
+									
+								</td>
 							</tr>
 						</tbody>
 					</table>
@@ -158,12 +164,12 @@
 							<tr ng-click="collapseTable(item) " ng-class="{ 'record-group':item.hasCollapseBtn, 'amp-display-none':item.hide, 'collapsed':item.collapsed} " data-group="{{item.dataGroup}} " ng-repeat="item in salesvolume[saleType] ">
 								<td>{{item.name}}</td>
 								<td ng-class='setStyleIcon(item.ActualMonth,item.ReferMonth)'>
-									<div ng-if="!allyear_salesvolume ">{{item.ActualMonth}} <i></i></div>
-									<div ng-if="allyear_salesvolume ">{{item.ActualYear}} <i></i></div>
+									<div ng-if="!allyear_salesvolume ">{{item.ActualMonth|number:2}} <i></i></div>
+									<div ng-if="allyear_salesvolume ">{{item.ActualYear|number:2}} <i></i></div>
 								</td>
 								<td>
-									<div ng-if="!allyear_salesvolume ">{{item.ReferMonth}}</div>
-									<div ng-if="allyear_salesvolume ">{{item.ReferYear}}</div>
+									<div ng-if="!allyear_salesvolume ">{{item.ReferMonth|number:2}}</div>
+									<div ng-if="allyear_salesvolume ">{{item.ReferYear|number:2}}</div>
 								</td>
 							</tr>
 						</tbody>
@@ -206,12 +212,12 @@
 								<td class=" text-left ">{{item.name}}</td>
 
 								<td ng-class='setStyleIcon(item.ActualMonth,item.ReferMonth)'>
-									<div ng-if="!allyear_efficient ">{{item.ActualMonth}} <i></i></div>
-									<div ng-if="allyear_efficient ">{{item.ActualYear}} <i></i></div>
+									<div ng-if="!allyear_efficient ">{{item.ActualMonth|number:2}} <i></i></div>
+									<div ng-if="allyear_efficient ">{{item.ActualYear|number:2}} <i></i></div>
 								</td>
 								<td>
-									<div ng-if="!allyear_efficient ">{{item.ReferMonth}}</div>
-									<div ng-if="allyear_efficient ">{{item.ReferYear}}</div>
+									<div ng-if="!allyear_efficient ">{{item.ReferMonth|number:2}}</div>
+									<div ng-if="allyear_efficient ">{{item.ReferYear|number:2}}</div>
 								</td>
 							</tr>
 						</tbody>
@@ -253,12 +259,12 @@
 							<tr ng-repeat="item in investment[investmentType] ">
 								<td class=" text-left ">{{item.name}}</td>
 								<td ng-class='setStyleIcon(item.ActualMonth,item.ReferMonth)'>
-									<div ng-if="!allyear_investment ">{{item.ActualMonth}} <i></i></div>
-									<div ng-if="allyear_investment ">{{item.ActualYear}} <i></i></div>
+									<div ng-if="!allyear_investment ">{{item.ActualMonth|number:2}} <i></i></div>
+									<div ng-if="allyear_investment ">{{item.ActualYear|number:2}} <i></i></div>
 								</td>
 								<td>
-									<div ng-if="!allyear_investment ">{{item.ReferMonth}}</div>
-									<div ng-if="allyear_investment ">{{item.ReferYear}}</div>
+									<div ng-if="!allyear_investment ">{{item.ReferMonth|number:2}}</div>
+									<div ng-if="allyear_investment ">{{item.ReferYear|number:2}}</div>
 								</td>
 
 							</tr>
@@ -302,12 +308,12 @@
 							<tr ng-repeat="item in passenger[passengerType] ">
 								<td class=" text-left ">{{item.name}}</td>
 								<td ng-class='setStyleIcon(item.ActualMonth,item.ReferMonth)'>
-									<div ng-if="!allyear_passenger ">{{item.ActualMonth}} <i></i></div>
-									<div ng-if="allyear_passenger ">{{item.ActualYear}} <i></i></div>
+									<div ng-if="!allyear_passenger ">{{item.ActualMonth|number:2}} <i></i></div>
+									<div ng-if="allyear_passenger ">{{item.ActualYear|number:2}} <i></i></div>
 								</td>
 								<td>
-									<div ng-if="!allyear_passenger ">{{item.ReferMonth}} </div>
-									<div ng-if="allyear_passenger ">{{item.ReferYear}}</div>
+									<div ng-if="!allyear_passenger ">{{item.ReferMonth|number:2}} </div>
+									<div ng-if="allyear_passenger ">{{item.ReferYear|number:2}}</div>
 								</td>
 							</tr>
 						</tbody>
