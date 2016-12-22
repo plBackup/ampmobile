@@ -86,7 +86,9 @@ angular.module('dataTool').directive('datePicker', [
                 };
 
                 ngModelCtrl.$render=function(){
+
                     if(typeof ngModelCtrl.$viewValue !=="undefined"){
+                        //console.log(ngModelCtrl.$viewValue);
                         var date=DateAdd("d",0,ngModelCtrl.$viewValue);
                         $element.find("input").val(date)
                     }else{
