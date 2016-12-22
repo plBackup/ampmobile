@@ -214,11 +214,29 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill { bac
     -webkit-animation-duration:0.3s;-webkit-animation-delay:0s;
 }
 
+/*overwrite mobi scroll*/
+.mbsc-android-holo .dwb {
+    height: 44px;
+    line-height: 44px;
+    font-size: 14px;
+}
+.mbsc-android-holo-light .dwv{height:44px;line-heightP:44px;color: #58b56f;  border-bottom: 2px solid #edeef3;}
+.mbsc-android-holo-light .dwwol {
+    border-top: 2px solid  #58b56f;
+    border-bottom: 2px solid  #58b56f;
+}
+
+.mbsc-android-holo-light .dwbc, .mbsc-android-holo-light .dwbw .dwb {
+    border-color: #edeef3;
+}
 
 
-
-
-
+.mbsc-android-holo-light .dwb-a {
+    background: #58b56f;
+    color: #fff;
+}
+.mbsc-android-holo-light .dwbw .dwb0{
+    background-color: #58b56f; color:#fff;}
 
 
 

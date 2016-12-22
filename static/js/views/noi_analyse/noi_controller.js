@@ -172,6 +172,7 @@ noi.controller('noiController', ['$rootScope', '$scope',"$timeout","noiAllData",
             SharedState.turnOff("uiSidebarRight");
         };
         self.filterData=function(formValia){
+            console.log(formValia);
             SharedState.turnOff("uiSidebarRight");
             /*if(formValia){
                 alert("请输入正确数据");

@@ -5,7 +5,7 @@ var project_create=(function($,pc){
     var project_create=pc;
 
     project_create.init=function(){
-        $("#open-date").datetimepicker({
+        /*$("#open-date").datetimepicker({
             format: "yyyy-mm-dd",
             autoclose: true,
             todayBtn: true,
@@ -15,6 +15,8 @@ var project_create=(function($,pc){
             maxView:4,
             language:"zh-CN"
         });
+*/
+
 
     };
 
@@ -118,14 +120,23 @@ projects.controller("pjCreateController",["$rootScope","$scope","$location","$st
     };
     project_create.init();
     $scope.$on("$destroy", function() {
-        $("#open-date-wrapper input").datetimepicker("remove");
+        //$("#open-date-wrapper input").datetimepicker("remove");
     });
 
-    $('#demo_date').mobiscroll().date({
-        theme: theme,     // Specify theme like: theme: 'ios' or omit setting to use default
-        mode: mode,       // Specify scroller mode like: mode: 'mixed' or omit setting to use default
-        display: display, // Specify display mode like: display: 'bottom' or omit setting to use default
-        lang: 'zh'        // Specify language like: lang: 'pl' or omit setting to use default
+    var now = new Date(),
+        minDate = new Date(now.getFullYear() - 20, 0, 1);
+
+    $('#open-date').mobiscroll().date({
+        theme: 'android-holo-light',
+        mode: 'scroller',
+        display: 'bottom',
+        lang: 'zh',
+        startYear: (new Date()).getFullYear(),
+        endYear: (new Date()).getFullYear() + 30,
+        dateFormat: 'yyyy-mm-dd',
+        dateOrder: 'yymmdd', //面板中日期排列格式
+        //min:minDate,
+        minDate:minDate
     });
 
 }]);
@@ -172,7 +183,23 @@ projects.controller("pjUpdateController",["$rootScope","$scope","$location","$st
     project_create.init();
 
     $scope.$on("$destroy", function() {
-        $("#open-date-wrapper input").datetimepicker("remove");
+       // $("#open-date-wrapper input").datetimepicker("remove");
+    });
+
+    var now = new Date(),
+        minDate = new Date(now.getFullYear() - 20, 0, 1);
+
+    $('#open-date').mobiscroll().date({
+        theme: 'android-holo-light',
+        mode: 'scroller',
+        display: 'bottom',
+        lang: 'zh',
+        startYear: (new Date()).getFullYear(),
+        endYear: (new Date()).getFullYear() + 30,
+        dateFormat: 'yyyy-mm-dd',
+        dateOrder: 'yymmdd', //面板中日期排列格式
+        //min:minDate,
+        minDate:minDate
     });
 }]);
 
