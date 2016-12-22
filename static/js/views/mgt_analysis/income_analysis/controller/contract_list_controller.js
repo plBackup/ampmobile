@@ -13,7 +13,7 @@ ampApp.controller("contract-list-controller",["$scope","$http","$rootScope","$lo
         });
     }
 
-    $scope.queryStartTime = "2016-08-01";
+    $scope.queryStartTime = "2016-04-10";
     $scope.queryEndTime = "2016-10-01";
 
 

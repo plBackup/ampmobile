@@ -35,16 +35,14 @@
                 <div class="query-section-title">时间</div>
                 <div class="query-section-content">
                     <div class="calendar-left">
-                        <div class="amp-date-input ">
-                            <a ng-bind="queryStartTime" ng-click="showDateTimePicker('queryStartTime',queryStartTime)"></a>
-                        </div><!-- amp-date-input -->
+                        <div date-picker ng-model="queryStartTime" cur-date="{{queryStartTime}}" class="amp-date-input-default"></div>
                     </div><!-- calendar-left -->
 
                     <span>-</span>
 
                     <div class="calendar-right">
                         <div class="amp-date-input">
-                            <a ng-bind="queryEndTime" ng-click="showDateTimePicker('queryEndTime',queryEndTime)"></a>
+                            <div date-picker ng-model="queryEndTime" cur-date="{{queryEndTime}}" class="amp-date-input-default"></div>
                         </div><!-- amp-date-input -->
                     </div><!-- calendar-right -->
 

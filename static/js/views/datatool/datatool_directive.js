@@ -16,8 +16,8 @@ angular.module('dataTool').directive('datePicker', [
             require:"ngModel",
 
             template:	'<div class="td-input-wrapper padding-r-15 date-input">'+
-                         '<input type="date" placeholder="" readonly>'+
-                        '</div>',
+            '<input type="date" placeholder="" readonly>'+
+            '</div>',
             link: function($scope, $element,attrs,ngModelCtrl) {
                 function gd(year, month, day) {
                     return new Date(year, month, day).getTime();
@@ -86,9 +86,7 @@ angular.module('dataTool').directive('datePicker', [
                 };
 
                 ngModelCtrl.$render=function(){
-
                     if(typeof ngModelCtrl.$viewValue !=="undefined"){
-                        //console.log(ngModelCtrl.$viewValue);
                         var date=DateAdd("d",0,ngModelCtrl.$viewValue);
                         $element.find("input").val(date)
                     }else{
@@ -103,6 +101,7 @@ angular.module('dataTool').directive('datePicker', [
 
                 var dateSelector=function(){
                     //now="2015-12-24"
+                    console.log(now);
                     $element.find("input").val(now);
                     dpicker=$element.find("input").mobiscroll().date({
                         theme: 'android-holo-light',
