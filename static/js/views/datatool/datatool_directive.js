@@ -11,11 +11,12 @@ angular.module('dataTool').directive('datePicker', [
             restrict: 'A',
             scope: {
                 //dateSelect:"&",
+                curDate:"@curDate"
             },
             require:"ngModel",
 
-            template:	'<div class="td-input-wrapper padding-r-15 date-input" id="datepicker">'+
-                         '<input type="text" placeholder="" id="date-rent" readonly>'+
+            template:	'<div class="td-input-wrapper padding-r-15 date-input">'+
+                         '<input type="text" placeholder="" readonly>'+
                         '</div>',
             link: function($scope, $element,attrs,ngModelCtrl) {
                 function gd(year, month, day) {
@@ -80,47 +81,51 @@ angular.module('dataTool').directive('datePicker', [
                 var updateModel=function(dateText){
                     $scope.$apply(function(){
                         ngModelCtrl.$setViewValue(new Date(dateText).getTime());
-                        console.log(ngModelCtrl.$viewValue);
                     });
                 };
-                console.log("-----------------ngModale")
-                console.log(ngModelCtrl.$viewValue);
+
                 ngModelCtrl.$render=function(){
                     if(typeof ngModelCtrl.$viewValue !=="undefined"){
                         var date=DateAdd("d",0,ngModelCtrl.$viewValue);
                         $element.find("input").val(date)
                     }
-
                 };
 
                 //date Selector
                 var dpicker;
-                var dateSelector=function(){
-                    dpicker=$element.find("input").datetimepicker({
-                        format:"yyyy-mm-dd",
-                        todayBtn:"linked",
-                        startView:2,
-                        minView:2,
-                        autoclose: true,
-                        language:"zh-CN",
-                    }).on('changeDate', function(e){
-                        var dateStr=$element.find("input").val();
-                        updateModel(dateStr);
-                    });
+                var now = $scope.curDate||new Date(),
+                    minDate = new Date(new Date().getFullYear() - 30, 0, 1);
 
+                var dateSelector=function(){
+                    dpicker=$element.find("input").mobiscroll().date({
+                        theme: 'android-holo-light',
+                        mode: 'scroller',
+                        display: 'bottom',
+                        lang: 'zh',
+                        startYear: (new Date()).getFullYear(),
+                        endYear: (new Date()).getFullYear() + 30,
+                        dateFormat: 'yyyy-mm-dd',
+                        dateOrder: 'yymmdd', //面板中日期排列格式
+                        //min:minDate,
+                        minDate:minDate,
+                        onSelect:function(e){
+                            var dateStr=$element.find("input").val();
+                            updateModel(dateStr);
+                            if($scope.monthSelect){
+                                //如果作用域有处理函数，
+                                $scope.$apply(function(){
+                                    $scope.monthSelect({date:dateStr});
+                                });
+                            }
+                        }
+                    });
                 };
 
                 dateSelector();
 
-            /*    var curDate=$scope.curDate;
-                ngModelCtrl.$viewValue=curDate();*/
-
                 //destroy
                 $scope.$on("$destroy", function() {
                     //清除配置
-                    //console.log("destroy");
-                    $element.find("input").datetimepicker("remove");
-
                 });
             }//end link
         };

@@ -198,17 +198,20 @@
                                     <tr class="tr-date-range" id="daterange">
                                         <td>
                                             <label>合同开始</label>
-                                            <div class="td-input-wrapper padding-r-15 date-input" >
-                                                <input type="text" placeholder="" value="" id="date-range-filter-start" readonly ng-model="sCtrl.shopInfo.startDate" id="date-range-filter-start">
-                                                <!--<span class="number-format"></span>%-->
+                                            <div date-picker="" ng-model="sCtrl.shopInfo.startDate" cur-date="{{sCtrl.shopInfo.startDate}}">
                                             </div>
+                                           <!-- <div class="td-input-wrapper padding-r-15 date-input" >
+                                                <input type="text" placeholder="" value="" id="date-range-filter-start" readonly ng-model="sCtrl.shopInfo.startDate" cur-month="{{sCtrl.shopInfo.startDate}} id="date-range-filter-start">
+                                                &lt;!&ndash;<span class="number-format"></span>%&ndash;&gt;
+                                            </div>-->
                                         </td>
                                         <td>
                                             <label>结束时间</label>
-                                            <div class="td-input-wrapper padding-r-15 date-input" >
-                                                <input type="text" placeholder="" value="" id="date-range-filter-end" readonly ng-model="sCtrl.shopInfo.endDate" id="date-range-filter-end">
-                                                <!--<span class="number-format"></span>%-->
+                                            <div date-picker="" ng-model="sCtrl.shopInfo.endDate" cur-date="{{sCtrl.shopInfo.endDate}}">
                                             </div>
+                                            <!--<div class="td-input-wrapper padding-r-15 date-input" >
+                                                <input type="text" placeholder="" value="" id="date-range-filter-end" readonly ng-model="sCtrl.shopInfo.endDate" cur-month="{{sCtrl.shopInfo.endDate}} id="date-range-filter-end">
+                                            </div>-->
                                         </td>
                                     </tr>
                                     <tr>
@@ -246,11 +249,14 @@
                                     <tr>
                                         <td >
                                             <label>租金起记日期</label>
-                                            <div class="td-input-wrapper padding-r-15 date-input" id="datepicker" ng-click="sCtrl.showBottomPanel()">
-                                                <input type="text" placeholder="" value="" id="date-rent" readonly ng-model="sCtrl.shopInfo.rentDate">
-                                                <!--<span class="number-format"></span>%-->
+                                            <div date-picker="" ng-model="sCtrl.shopInfo.rentDate" cur-date="{{sCtrl.shopInfo.rentDate}}">
                                             </div>
+                                            <!--<div class="td-input-wrapper padding-r-15 date-input" id="datepicker" ng-click="sCtrl.showBottomPanel()">
+                                                <input type="text" placeholder="" value="" id="date-rent" readonly ng-model="sCtrl.shopInfo.rentDate">
+                                                &lt;!&ndash;<span class="number-format"></span>%&ndash;&gt;
+                                            </div>-->
                                         </td>
+
                                         <td>
                                             <label>月销售额</label>
                                             <div class="td-input-wrapper padding-r-15 num-input" >
