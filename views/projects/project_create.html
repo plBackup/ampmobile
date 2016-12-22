@@ -15,11 +15,12 @@
                             </div>
                             <div class="input-group">
                                 <label>test</label>
-                                <input ng-model="ctrl.project.name" type="text" placeholder="" value="" required>
+                                <!--<input ng-model="ctrl.project.name" type="text" placeholder="" value="" required>-->
+                                <input type="test" id="test">
                             </div>
-                            <div class="input-group">
+                            <div class="input-group" id="open-date-wrapper">
                                 <label>开业时间</label>
-                                <input type="text" data-toggle='date' id="myInput"/>
+                                <input ng-model="ctrl.project.opendate" type="text" placeholder="" value="" class="datepicker" id="open-date" readonly>
                             </div>
 
                             <div class="input-group">

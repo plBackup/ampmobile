@@ -23,9 +23,9 @@ noi.controller('noiController', ['$rootScope', '$scope',"$timeout","noiAllData",
         $rootScope.showBottom();
         $rootScope.pageId="noi";
 
+       /* //这里逻辑是正式版
         $rootScope.curProject=pid;
-
-        console.log("pid---="+pid);
+        console.log("pid---="+pid);*/
 
         SharedState.initialize($scope, "activeTab");
         //SharedState.initialize($scope, "activeTab");
@@ -96,6 +96,9 @@ noi.controller('noiController', ['$rootScope', '$scope',"$timeout","noiAllData",
 
             SharedState.turnOn("subpageModal");
             $timeout(function(){
+                console.log("noi modal swiper--------");
+                console.log(noi_modal_swiper);
+                console.log(typeof noi_modal_swiper);
                 if(typeof noi_modal_swiper !=="undefined"){
                     noi_modal_swiper.destroy(true,true);
                 }
@@ -113,6 +116,14 @@ noi.controller('noiController', ['$rootScope', '$scope',"$timeout","noiAllData",
 
                 noi_modal_swiper.update();
             },300);
+        };
+
+        self.hideDetail=function(){
+            SharedState.turnOff("subpageModal");
+            if(typeof noi_modal_swiper!=="undefined"){
+                noi_modal_swiper.destroy(true,true);
+                noi_modal_swiper=undefined;
+            }
         };
        /*swiper */
         var pin;
