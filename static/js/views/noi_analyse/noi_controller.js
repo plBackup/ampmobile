@@ -46,7 +46,7 @@ noi.controller('noiController', ['$rootScope', '$scope',"$timeout","noiAllData",
 
         self.noiModal="";
 
-        self.curMonth="2016-11";
+        self.curMonth="2016-07";
 
         self.allData=noiAllData;
         self.noiData=noiAllData.noi[0].values;
