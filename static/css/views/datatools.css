@@ -6,10 +6,10 @@
 #datatool .nav { margin-bottom: 0; padding-left: 0; list-style: none; background-color:#1a202c;}
 #datatool .nav-tabs { border-bottom: 1px solid #edeef3; }
 #datatool .nav > li { position: relative; display: block; }
-#datatool .nav-tabs > li { float: left; margin-bottom: -1px;width:33.333333%;overflow:hidden;text-overflow: ellipsis;white-space: nowrap;position: relative; }
+#datatool .nav-tabs > li { float: left; margin-bottom:-1px;width:33.333333%;overflow:hidden;text-overflow: ellipsis;white-space: nowrap;position: relative; }
 
 #datatool .nav > li > a { position: relative; display: block; padding: 10px 6px;border-radius:0;line-height: 24px;text-align: center;font-size: 13px;}
-#datatool .nav > li > a:focus,#datatool .nav > li > a:hover,#datatool .nav > li > a:active{background-color:#1a202c;}
+#datatool .nav > li > a:focus,#datatool .nav > li > a:hover,#datatool .nav > li > a:active{background-color:transparent;}
 #datatool .nav-tabs > li > a {
     margin-right: 2px;
     line-height: 22px;
