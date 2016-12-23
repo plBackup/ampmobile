@@ -161,19 +161,20 @@
                         <div class="scrollable-content">
                             <div class="amp-section clearfix">
                                 <div class="col-xs-4">
-                                    <table class="table  amp-table">
+                                    <table class="table amp-table">
                                         <thead>
-                                        <tr style="">
-                                            <th class="fake-th"></th>
-                                        </tr>
+                                            <tr style="">
+                                                <th class="fake-th"></th>
+                                            </tr>
                                         </thead>
-                                       <tbody>
-                                            <tr>
-                                                <th></th>
-                                            </tr>
-                                            <tr>
-                                                <th></th>
-                                            </tr>
+                                        <!-- 各楼层总租金-->
+                                       <tbody ng-if="">
+                                           <tr  ng-repeat="floor in sCtrl.rpgResultData.floors" class="data-index data-index-{{$index}}">
+                                               <th><span title="{{floor.floorIndex}}">{{floor.floorIndex}}</span></th>
+                                           </tr>
+                                           <tr>
+                                               <th><span>合计</span></th>
+                                           </tr>
                                        </tbody>
                                     </table>
 
@@ -182,21 +183,33 @@
                                     <div class="swiper-container" style="width:100%;" id="amp-tab-modal-swiper">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
-                                                <table class="table amp-table" style="width:380px" >
+                                                <!-- 各楼层总租金-->
+                                                <table class="table amp-table" style="width:380px" ng-if="">
                                                     <thead>
-                                                        <tr></tr>
+                                                        <tr>
+                                                            <th class="text-right">GLA</th>
+                                                            <th ng-repeat="value in sCtrl.rpgResultData.floors[0].yearly track by $index" class="text-right">
+                                                                第{{$index+1}}年
+                                                            </th>
+                                                        </tr>
                                                     </thead>
                                                     <tbody>
-                                                        <tr>
-
-                                                        </tr>
+                                                    <tr ng-repeat="floor in sCtrl.rpgResultData.floors" class="data-index data-index-{{$index}}">
+                                                        <td class="text-right"><span>{{sCtrl.getAvg(floor)|number:2}}</span></td>
+                                                        <td ng-repeat="value in floor.yearly track by $index" class="text-right">{{value|number:2}}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td-sum  text-right"><span>{{sCtrl.getColAvg("avg","floors") | number:2}}</span></td>
+                                                        <td ng-repeat="value in sCtrl.rpgResultData.floors[0].yearly track by $index" class="td-sum text-right">{{sCtrl.getColAvg($index,"floors") | number:2}}</td>
+                                                    </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
-                                        </div>
+
+                                        </div><!--swiper-wrapper-->
+
                                         <div class="swiper-scrollbar"></div>
                                     </div>
-
                                 </div>
                             </div><!--amp section-->
                         </div><!--scrollable content-->
