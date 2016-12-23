@@ -65,7 +65,7 @@ angular.module('dataTool').service('dataSetService', ["$rootScope","$http",funct
 angular.module('dataTool').service('dataSetResultService', ["$rootScope","$http",function($rootScope,$http) {
     var service = {
         getSetData: function () {
-            return $http.get('../data/'+'rpg_data.json', {cache: true}).then(function (res) {
+            return $http.get('./data/'+'rpg_data.json', {cache: true}).then(function (res) {
                 ////console.log(res);
                 return res.data;
             });

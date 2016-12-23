@@ -10,36 +10,204 @@
     </div>
 
 </div>
+<div class="scrollable">
+    <div class="scrollable-content">
+        <div class="amp-content-panel" id="rgp-set-index">
+            <div class="amp-block">
+                <ul class="rpg-set-info clearfix" id="rpg-set-info">
+                    <li class="col-xs-6">
+                        <label>建筑面积(m&sup2)</label>
+                        <h3>{{sCtrl.setData[0].value | number:2}}</h3>
+                    </li>
+                    <li class="col-xs-6">
+                        <label>总租金(万)</label>
+                        <h3>{{sCtrl.setData[1].value | number:2}}</h3>
+                    </li>
+                    <li class="col-xs-6">
+                        <label>平均租金(元/m&sup2/月)</label>
+                        <h3>{{sCtrl.setData[2].value | number:2}}</h3>
+                    </li>
+                    <li class="col-xs-6">
+                        <label>开业时间</label>
+                        <h3>{{sCtrl.setData[3].value}}</h3>
+                    </li>
+                    <li class="col-xs-6">
+                        <label>套内面积(m&sup2)</label>
+                        <h3>{{sCtrl.setData[4].value | number:2}}</h3>
+                    </li>
+                </ul>
+                <div class="btn-wrapper">
+                    <a ui-sref="datatool.rpgpin" class="btn amp-btn">推算</a>
+                </div>
+            </div><!--ys-block-->
+            <div class="amp-block">
+                <div class="amp-section">
+                    <div class="amp-section-title clearfix" ng-click="sCtrl.viewDetail('floorSumRent')">
+                        <h3 class="col-xs-12">各楼层总租金<em class="em-unit">(万元)</em> <i class="amp-icon amp-icon-arrow-right"></i></h3>
+                    </div>
+                    <div class="amp-table-wrapper">
+                        <table class="table  amp-table">
+                            <thead>
+                            <tr>
+                                <th ng-repeat="floor in sCtrl.rpgResultData.floors|limitTo:3 track by $index">
+                                    <span>{{floor.floorIndex}}</span>
+                                </th>
+                                <th><span>合计(GLA)</span></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="tr-main">
+                                <td ng-repeat="floor in sCtrl.rpgResultData.floors|limitTo:3 track by $index">
+                                    <span>{{sCtrl.getAvg(floor)|number:2}}</span>
+                                </td>
+                                <td><span>{{sCtrl.getColAvg("avg","floors")|number:2}}</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div><!--amp section-->
 
-<div class="amp-content-panel" id="rgp-set-index">
-    <div class="amp-block">
-        <ul class="rpg-set-info clearfix" id="rpg-set-info">
-            <li class="col-xs-6">
-                <label>建筑面积(m&sup2)</label>
-                <h3>{{sCtrl.setData[0].value | number:2}}</h3>
-            </li>
-            <li class="col-xs-6">
-                <label>总租金(万)</label>
-                <h3>{{sCtrl.setData[1].value | number:2}}</h3>
-            </li>
-            <li class="col-xs-6">
-                <label>平均租金(元/m&sup2/月)</label>
-                <h3>{{sCtrl.setData[2].value | number:2}}</h3>
-            </li>
-            <li class="col-xs-6">
-                <label>开业时间</label>
-                <h3>{{sCtrl.setData[3].value}}</h3>
-            </li>
-            <li class="col-xs-6">
-                <label>套内面积(m&sup2)</label>
-                <h3>{{sCtrl.setData[4].value | number:2}}</h3>
-            </li>
-        </ul>
-    </div><!--ys-block-->
+                <div class="amp-section">
+                    <div class="amp-section-title clearfix" ng-click="sCtrl.viewDetail('floorAvgRent')">
+                        <h3 class="col-xs-12">各楼层平均租金<em class="em-unit">(万元)</em> <i class="amp-icon amp-icon-arrow-right"></i></h3>
+                    </div>
+                    <div class="amp-table-wrapper">
+                        <table class="table  amp-table">
+                            <thead>
+                            <tr>
+                                <th ng-repeat="floor in sCtrl.rpgResultData.floorsAvg|limitTo:3 track by $index">
+                                    <span>{{floor.floorIndex}}</span>
+                                </th>
+                                <th><span>合计(GLA)</span></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="tr-main">
+                                <td ng-repeat="floor in sCtrl.rpgResultData.floorsAvg|limitTo:3 track by $index">
+                                    <span>{{sCtrl.getAvg(floor)|number:2}}</span>
+                                </td>
+                                <td><span>{{sCtrl.getColAvg("avg","floorsAvg")|number:2}}</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div><!--amp section-->
 
-</div><!-- contentpanel -->
-<div class="amp-block-pd amp-block-fixed amp-block-fixed-bottom">
-    <div class="btn-wrapper">
-        <a ui-sref="datatool.rpgpin" class="btn amp-btn">推算</a>
+                <div class="amp-section">
+                    <div class="amp-section-title clearfix" ng-click="sCtrl.viewDetail('floorAvgRent')">
+                        <h3 class="col-xs-12">各业态总租金<em class="em-unit">(万元)</em> <i class="amp-icon amp-icon-arrow-right"></i></h3>
+                    </div>
+                    <div class="amp-table-wrapper">
+                        <table class="table  amp-table">
+                            <thead>
+                            <tr>
+                                <th ng-repeat="form in sCtrl.rpgResultData.form|limitTo:3 track by $index">
+                                    <span>{{form.formName}}</span>
+                                </th>
+                                <th><span>合计(GLA)</span></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="tr-main">
+                                <td ng-repeat="form in sCtrl.rpgResultData.form|limitTo:3 track by $index">
+                                    <span>{{sCtrl.getAvg(form)|number:2}}</span>
+                                </td>
+                                <td><span>{{sCtrl.getColAvg("avg","form")|number:2}}</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div><!--amp section-->
+
+                <div class="amp-section">
+                    <div class="amp-section-title clearfix" ng-click="sCtrl.viewDetail('floorAvgRent')">
+                        <h3 class="col-xs-12">各业态总租金<em class="em-unit">(万元)</em> <i class="amp-icon amp-icon-arrow-right"></i></h3>
+                    </div>
+                    <div class="amp-table-wrapper">
+                        <table class="table  amp-table">
+                            <thead>
+                            <tr>
+                                <th ng-repeat="form in sCtrl.rpgResultData.formAvg|limitTo:3 track by $index">
+                                    <span>{{form.formName}}</span>
+                                </th>
+                                <th><span>合计(GLA)</span></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="tr-main">
+                                <td ng-repeat="form in sCtrl.rpgResultData.formAvg|limitTo:3 track by $index">
+                                    <span>{{sCtrl.getAvg(form)|number:2}}</span>
+                                </td>
+                                <td><span>{{sCtrl.getColAvg("avg","formAvg")|number:2}}</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div><!--amp section-->
+            </div>
+        </div><!-- contentpanel -->
+    </div><!--scrollable content-->
+</div><!--scrollable-->
+
+
+<!--subpage-->
+<div ui-content-for="subpage" id="noi-subpage">
+    <div class="modal modal-overlay" ui-if='subpageModal' ui-shared-state='subpageModal'>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close pull-left" ng-click="sCtrl.hideDetail()"><em class="amp-icon amp-icon-back"></em></button>
+                    <h4 class="modal-title">{{sCtrl.modalTitle}}</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="scrollable amp-modal-block">
+
+                        <div class="scrollable-content">
+                            <div class="amp-section clearfix">
+                                <div class="col-xs-4">
+                                    <table class="table  amp-table">
+                                        <thead>
+                                        <tr style="">
+                                            <th class="fake-th"></th>
+                                        </tr>
+                                        </thead>
+                                       <tbody>
+                                            <tr>
+                                                <th></th>
+                                            </tr>
+                                            <tr>
+                                                <th></th>
+                                            </tr>
+                                       </tbody>
+                                    </table>
+
+                                </div>
+                                <div class="amp-table-wrapper col-xs-8">
+                                    <div class="swiper-container" style="width:100%;" id="amp-tab-modal-swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <table class="table amp-table" style="width:380px" >
+                                                    <thead>
+                                                        <tr></tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-scrollbar"></div>
+                                    </div>
+
+                                </div>
+                            </div><!--amp section-->
+                        </div><!--scrollable content-->
+                    </div><!--scrollable-->
+                    <!--<div class="amp-modal-block">
+                        <div class="amp-tab-pages" id="amp-tab-modal">
+                        </div>
+                    </div>-->
+                </div>
+
+            </div>
+        </div>
     </div>
 </div>

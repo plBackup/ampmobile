@@ -881,16 +881,122 @@ dataTool.controller("dataEditController",['$rootScope', '$scope','$state','Share
 
     }]);
 
-dataTool.controller("dataSetIndexController",['$rootScope', '$scope','$timeout',"rpgSetData",
-    function($rootScope, $scope,$timeout,rpgSetData) {
+dataTool.controller("dataSetIndexController",['$rootScope', '$scope','$timeout',"rpgSetData","rpgresultData",
+    function($rootScope, $scope,$timeout,rpgSetData,rpgresultData) {
         var self=this;
         self.setData=rpgSetData[0].values;
+        self.rpgResultData=rpgresultData.rpgResultData;
         $rootScope.showHeader();
         $rootScope.showBottom();
 
         $rootScope.dFooterShow=false;
         $rootScope.pageId="datatool-rpgset";
 
+        self.getAvg=function(data){
+            var sum=0;
+            var len=data.yearly.length;
+            if(len>=1){
+                $.each(data.yearly,function(i,e){
+                    sum+=e;
+                });
+                data.gla=sum/len;
+                return data.gla;
+            }else{
+                data.gla=0;
+                return 0;
+            }
+
+        };
+        self.getColAvg=function(index,name){
+            var sum=0;
+            var data=self.rpgResultData[name];
+
+            if(typeof data!=="undefined"&&data.length>=1){
+                if(index=="avg"){
+                    $.each(data,function(k,v){
+                        var picked=v.gla;
+                        sum+=picked;
+                    });
+                }else{
+                    $.each(data,function(k,v){
+                        var picked=v.yearly[index];
+                        sum+=picked;
+                    });
+                }
+
+            }
+            return sum;
+        };
+
+
+        self.modalTitle="";
+
+        self.viewDetail=function(dataType){
+
+            switch(dataType){
+                case "income":
+                    self.modalTitle="收入";
+                    self.rpgDataModal="income";
+                    break;
+
+                case "fee":
+                    self.modalTitle="费用";
+                    self.rpgDataModal="fee";
+                    break;
+
+                case "noi":
+                    self.modalTitle="NOI";
+                    self.rpgDataModal="noi";
+                    break;
+
+                case "profits":
+                    self.modalTitle="利润率";
+                    self.rpgDataModal="profits";
+                    break;
+
+                case "arrearage":
+                    self.modalTitle="欠费";
+                    self.rpgDataModal="arrearage";
+                    break;
+                default:
+                    self.modalTitle="收入";
+                    self.rpgDataModal="income";
+                    return;
+            }
+
+            SharedState.turnOn("subpageModal");
+            $timeout(function(){
+
+                console.log("rpgDataModal swiper--------");
+                console.log(rpgset_modal_swiper);
+                console.log(typeof rpgset_modal_swiper);
+
+                if(typeof rpgset_modal_swiper !=="undefined"){
+                    rpgset_modal_swiper.destroy(true,true);
+                }
+                rpgset_modal_swiper = new Swiper('#amp-tab-modal-swiper', {
+                    scrollbar: '.swiper-scrollbar',
+                    direction: 'horizontal',
+                    slidesPerView: 'auto',
+                    //mousewheelControl: true,
+                    freeMode: true,
+                    scrollbarHide:true,
+                    watchSlidesProgress:true,
+                    observer:true,
+                    observeParents:true,
+                });
+
+                rpgset_modal_swiper.update();
+            },300);
+        };
+
+        self.hideDetail=function(){
+            SharedState.turnOff("subpageModal");
+            if(typeof rpgset_modal_swiper!=="undefined"){
+                rpgset_modal_swiper.destroy(true,true);
+                rpgset_modal_swiper=undefined;
+            }
+        };
     }]);
 
 dataTool.controller("dataSetController",['$rootScope', '$scope',"$location","$timeout","$state","rpgSetData",

@@ -1,0 +1,46 @@
+<div ui-content-for="dataToolNav">
+    <div class="navbar-brand navbar-brand-center">
+        租金包设定
+    </div>
+
+    <div class="btn-group pull-left">
+        <div class="btn " ui-sref="datatool.rpgindex">
+            <i class="navOpt-icon navOpt-icon-home"></i>
+        </div>
+    </div>
+
+</div>
+
+<div class="amp-content-panel" id="rgp-set-index">
+    <div class="amp-block">
+        <ul class="rpg-set-info clearfix" id="rpg-set-info">
+            <li class="col-xs-6">
+                <label>建筑面积(m&sup2)</label>
+                <h3>{{sCtrl.setData[0].value | number:2}}</h3>
+            </li>
+            <li class="col-xs-6">
+                <label>总租金(万)</label>
+                <h3>{{sCtrl.setData[1].value | number:2}}</h3>
+            </li>
+            <li class="col-xs-6">
+                <label>平均租金(元/m&sup2/月)</label>
+                <h3>{{sCtrl.setData[2].value | number:2}}</h3>
+            </li>
+            <li class="col-xs-6">
+                <label>开业时间</label>
+                <h3>{{sCtrl.setData[3].value}}</h3>
+            </li>
+            <li class="col-xs-6">
+                <label>套内面积(m&sup2)</label>
+                <h3>{{sCtrl.setData[4].value | number:2}}</h3>
+            </li>
+        </ul>
+    </div><!--ys-block-->
+    
+</div><!-- contentpanel -->
+<div class="amp-block-pd amp-block-fixed amp-block-fixed-bottom">
+    <div class="btn-wrapper">
+        <a ui-sref="datatool.rpgpin" class="btn amp-btn">推算</a>
+    </div>
+</div>
+

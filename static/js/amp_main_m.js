@@ -283,6 +283,9 @@ ampApp.config(function($stateProvider,$urlRouterProvider,$httpProvider) {
             },
             reloadOnSearch: false,
             resolve: {
+                rpgresultData: function(dataSetResultService) {
+                    return dataSetResultService.getSetData();
+                },
                 rpgSetData: function(dataSetIndexService) {
                     return dataSetIndexService.getSetData();
                 },
