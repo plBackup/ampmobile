@@ -261,6 +261,12 @@ ampApp.controller("risk_administration_controller", ["$scope", "$http", "$rootSc
             }
 
 	};
+	$scope.setFont = function(td){
+    	if(td){
+    		return "text-bold"
+    	}
+    	
+    }
 
 	ctrl_detail_tel_module.init();
 

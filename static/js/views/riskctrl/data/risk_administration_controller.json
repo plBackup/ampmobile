@@ -5,29 +5,31 @@
 			"title": "GIA(m²)",
 			"data": "33333"
 		}, {
-			"title": "铺位数",
-			"data": "33333"
-		},
-		 {
 			"title": "出租率",
 			"data": "33333"
-		}, 
-		 {
+		}, {
+			"title": "自持+销售返租(m²)",
+			"data": "33333"
+		}, {
+			"title": "主力店(m²)",
+			"data": "33333"
+		}, {
+			"title": "非主力店(m²)",
+			"data": "33333"
+		}, {
+			"title": "铺位数",
+			"data": "33333"
+		}, {
 			"title": "合约数",
 			"data": "33333"
-		},{
-			"title": "自持+销售返租(m²)",
-			"data": "33333"
-		}, 
-		 {
+		}, {
 			"title": "合约总金额(万元)",
 			"data": "33333"
-		},
-		{
-			"title": "自持+销售返租(m²)",
+		}, {
+			"title": "扣点商户数",
 			"data": "33333"
-		},{
-			"title": "合约总金额(万元)",
+		}, {
+			"title": "多经点位数",
 			"data": "33333"
 		}
 	],
@@ -37,6 +39,7 @@
 				"name": "租金收入",
 				"dataGroup": 1,
 				"hasCollapseBtn": true,
+				"textbold":true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -68,6 +71,7 @@
 			}
 			, {
 				"name": "物业管理费",
+				"textbold":true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -75,6 +79,7 @@
 			}
 			, {
 				"name": "多经",
+				"textbold":true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -82,6 +87,7 @@
 			}
 			, {
 				"name": "经营费用",
+				"textbold":true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -93,6 +99,7 @@
 				"name": "租金收入",
 				"dataGroup": 1,
 				"hasCollapseBtn": true,
+				"textbold":true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -124,6 +131,7 @@
 			}
 			, {
 				"name": "物业管理费",
+				"textbold":true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -131,6 +139,7 @@
 			}
 			, {
 				"name": "多经",
+				"textbold":true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -138,6 +147,7 @@
 			}
 			, {
 				"name": "经营费用",
+				"textbold":true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -149,8 +159,9 @@
 				"name": "租金收入",
 				"dataGroup": 1,
 				"hasCollapseBtn": true,
+				"textbold":true,
 				"ActualMonth": "111",
-				"ReferMonth": "111",
+				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
 			}, {
@@ -180,6 +191,7 @@
 			}
 			, {
 				"name": "物业管理费",
+				"textbold":true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -187,6 +199,7 @@
 			}
 			, {
 				"name": "多经",
+				"textbold":true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -194,7 +207,8 @@
 			}
 			, {
 				"name": "经营费用",
-				"ActualMonth": "2",
+				"textbold":true,
+				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
 				"ReferYear": "343"
@@ -205,6 +219,7 @@
 		"onYearBasis": [
 			{
 				"name": "租金",
+				"textbold":true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -220,6 +235,7 @@
 		"LinkRelativeRatio": [
 			{
 				"name": "租金",
+				"textbold":true,
 				"ActualMonth": "222",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -235,6 +251,7 @@
 		"Budget": [
 			{
 				"name": "租金",
+				"textbold":true,
 				"ActualMonth": "333",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -254,6 +271,7 @@
 				"name": "销售额",
 				"dataGroup": 1,
 				"hasCollapseBtn": true,
+				"textbold":true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -289,6 +307,7 @@
 				"name": "销售额",
 				"dataGroup": 1,
 				"hasCollapseBtn": true,
+				"textbold":true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -324,6 +343,7 @@
 				"name": "销售额",
 				"dataGroup": 1,
 				"hasCollapseBtn": true,
+				"textbold":true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -361,6 +381,7 @@
 				"name": "平效",
 				"dataGroup": 1,
 				"hasCollapseBtn": true,
+				"textbold":true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -430,6 +451,7 @@
 				"name": "租售比",
 				"dataGroup": 2,
 				"hasCollapseBtn": true,
+				"textbold":true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -502,6 +524,7 @@
 				"name": "平效",
 				"dataGroup": 1,
 				"hasCollapseBtn": true,
+				"textbold":true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -571,6 +594,7 @@
 				"name": "租售比",
 				"dataGroup": 2,
 				"hasCollapseBtn": true,
+				"textbold":true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -643,6 +667,7 @@
 				"name": "平效",
 				"dataGroup": 1,
 				"hasCollapseBtn": true,
+				"textbold":true,
 				"ActualMonth": "111",
 				"ReferMonth": "123",
 				"ActualYear": "434",
@@ -710,6 +735,7 @@
 			}
 			, {
 				"name": "租售比",
+				"textbold":true,
 				"dataGroup": 2,
 				"hasCollapseBtn": true,
 				"ActualMonth": "111",
