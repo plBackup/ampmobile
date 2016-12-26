@@ -97,10 +97,6 @@ noi.controller('noiController', ['$rootScope', '$scope',"$timeout","noiAllData",
             SharedState.turnOn("subpageModal");
             $timeout(function(){
 
-                console.log("noi modal swiper--------");
-                console.log(noi_modal_swiper);
-                console.log(typeof noi_modal_swiper);
-
                 if(typeof noi_modal_swiper !=="undefined"){
                     noi_modal_swiper.destroy(true,true);
                 }

@@ -42,7 +42,7 @@
             </div><!--ys-block-->
             <div class="amp-block">
                 <div class="amp-section">
-                    <div class="amp-section-title clearfix" ng-click="sCtrl.viewDetail('floorSumRent')">
+                    <div class="amp-section-title clearfix" ng-click="sCtrl.viewDetail('floors')">
                         <h3 class="col-xs-12">各楼层总租金<em class="em-unit">(万元)</em> <i class="amp-icon amp-icon-arrow-right"></i></h3>
                     </div>
                     <div class="amp-table-wrapper">
@@ -67,7 +67,7 @@
                 </div><!--amp section-->
 
                 <div class="amp-section">
-                    <div class="amp-section-title clearfix" ng-click="sCtrl.viewDetail('floorAvgRent')">
+                    <div class="amp-section-title clearfix" ng-click="sCtrl.viewDetail('floorsAvg')">
                         <h3 class="col-xs-12">各楼层平均租金<em class="em-unit">(万元)</em> <i class="amp-icon amp-icon-arrow-right"></i></h3>
                     </div>
                     <div class="amp-table-wrapper">
@@ -92,7 +92,7 @@
                 </div><!--amp section-->
 
                 <div class="amp-section">
-                    <div class="amp-section-title clearfix" ng-click="sCtrl.viewDetail('formSumRent')">
+                    <div class="amp-section-title clearfix" ng-click="sCtrl.viewDetail('form')">
                         <h3 class="col-xs-12">各业态总租金<em class="em-unit">(万元)</em> <i class="amp-icon amp-icon-arrow-right"></i></h3>
                     </div>
                     <div class="amp-table-wrapper">
@@ -117,7 +117,7 @@
                 </div><!--amp section-->
 
                 <div class="amp-section">
-                    <div class="amp-section-title clearfix" ng-click="sCtrl.viewDetail('formAvgRent')">
+                    <div class="amp-section-title clearfix" ng-click="sCtrl.viewDetail('formAvg')">
                         <h3 class="col-xs-12">各业态平均租金<em class="em-unit">(万元)</em> <i class="amp-icon amp-icon-arrow-right"></i></h3>
                     </div>
                     <div class="amp-table-wrapper">
@@ -168,7 +168,7 @@
                                             </tr>
                                         </thead>
                                         <!-- 各楼层总租金-->
-                                       <tbody ng-if="floors">
+                                       <tbody ng-if="sCtrl.rpgDataModal=='floors'">
                                            <tr  ng-repeat="floor in sCtrl.rpgResultData.floors" class="data-index data-index-{{$index}}">
                                                <th><span title="{{floor.floorIndex}}">{{floor.floorIndex}}</span></th>
                                            </tr>
@@ -177,7 +177,7 @@
                                            </tr>
                                        </tbody>
                                         <!-- 各楼层平均租金-->
-                                        <tbody ng-if="floorsAvg">
+                                        <tbody ng-if="sCtrl.rpgDataModal=='floorsAvg'">
                                         <tr  ng-repeat="floor in sCtrl.rpgResultData.floorsAvg" class="data-index data-index-{{$index}}">
                                             <th><span title="{{floor.floorIndex}}">{{floor.floorIndex}}</span></th>
 
@@ -188,7 +188,7 @@
                                         </tbody>
 
                                         <!-- 各业态总租金-->
-                                        <tbody ng-if="form">
+                                        <tbody ng-if="sCtrl.rpgDataModal=='form'">
                                         <tr  ng-repeat="form in sCtrl.rpgResultData.form" class="data-index data-index-{{$index}}">
                                             <th><span title="{{form.formName}}">{{form.formName}}</span></th>
 
@@ -199,7 +199,7 @@
                                         </tbody>
 
                                         <!-- 各业态平均租金-->
-                                        <tbody ng-if="formAvg">
+                                        <tbody ng-if="sCtrl.rpgDataModal=='formAvg'">
                                         <tr  ng-repeat="form in sCtrl.rpgResultData.formAvg" class="data-index data-index-{{$index}}">
                                             <th><span title="{{form.formName}}">{{form.formName}}</span></th>
 
@@ -216,7 +216,7 @@
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                                 <!-- 各楼层总租金-->
-                                                <table class="table amp-table" style="width:380px" ng-if="">
+                                                <table class="table amp-table" style="width:580px" ng-if="sCtrl.rpgDataModal=='floors'">
                                                     <thead>
                                                         <tr>
                                                             <th class="text-right">GLA</th>
@@ -237,7 +237,71 @@
                                                     </tbody>
                                                 </table>
 
+                                                <!-- 各楼层平均租金-->
+                                                <table class="table amp-table" style="width:580px" ng-if="sCtrl.rpgDataModal=='floorsAvg'">
+                                                    <thead>
+                                                    <tr>
+                                                        <th class="text-right">GLA</th>
+                                                        <th ng-repeat="value in sCtrl.rpgResultData.floorsAvg[0].yearly track by $index" class="text-right">
+                                                            第{{$index+1}}年
+                                                        </th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr ng-repeat="floor in sCtrl.rpgResultData.floorsAvg" class="data-index data-index-{{$index}}">
+                                                        <td class="text-right"><span>{{sCtrl.getAvg(floor)|number:2}}</span></td>
+                                                        <td ng-repeat="value in floor.yearly track by $index" class="text-right">{{value|number:2}}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td-sum text-right"><span>{{sCtrl.getColAvg("avg","floorsAvg") | number:2}}</span></td>
+                                                        <td ng-repeat="value in sCtrl.rpgResultData.floors[0].yearly track by $index" class="td-sum text-right">{{sCtrl.getColAvg($index,"floorsAvg") | number:2}}</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
 
+                                                <!-- 各业态总租金-->
+                                                <table class="table amp-table" style="width:580px" ng-if="sCtrl.rpgDataModal=='form'">
+                                                    <thead>
+                                                    <tr>
+                                                        <th class="text-right">GLA</th>
+                                                        <th ng-repeat="value in sCtrl.rpgResultData.form[0].yearly track by $index" class="text-right">
+                                                            第{{$index+1}}年
+                                                        </th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr ng-repeat="form in sCtrl.rpgResultData.form" class="data-index data-index-{{$index}}">
+                                                        <td class="text-right"><span>{{sCtrl.getAvg(form)|number:2}}</span></td>
+                                                        <td ng-repeat="value in form.yearly track by $index" class="text-right">{{value|number:2}}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td-sum text-right"><span>{{sCtrl.getColAvg("avg","form") | number:2}}</span></td>
+                                                        <td ng-repeat="value in sCtrl.rpgResultData.form[0].yearly track by $index" class="td-sum text-right">{{sCtrl.getColAvg($index,"form") | number:2}}</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <!-- 各业态平均租金-->
+                                                <table class="table amp-table" style="width:580px" ng-if="sCtrl.rpgDataModal=='formAvg'">
+                                                    <thead>
+                                                    <tr>
+                                                        <th class="text-right">GLA</th>
+                                                        <th ng-repeat="value in sCtrl.rpgResultData.formAvg[0].yearly track by $index" class="text-right">
+                                                            第{{$index+1}}年
+                                                        </th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr ng-repeat="form in sCtrl.rpgResultData.formAvg" class="data-index data-index-{{$index}}">
+                                                        <td class="text-right"><span>{{sCtrl.getAvg(form)|number:2}}</span></td>
+                                                        <td ng-repeat="value in form.yearly track by $index" class="text-right">{{value|number:2}}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="td-sum text-right"><span>{{sCtrl.getColAvg("avg","formAvg") | number:2}}</span></td>
+                                                        <td ng-repeat="value in sCtrl.rpgResultData.form[0].yearly track by $index" class="td-sum text-right">{{sCtrl.getColAvg($index,"formAvg") | number:2}}</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
                                         </div><!--swiper-wrapper-->
 

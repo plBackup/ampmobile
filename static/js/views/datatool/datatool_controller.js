@@ -886,6 +886,9 @@ dataTool.controller("dataSetIndexController",['$rootScope', '$scope','$timeout',
         var self=this;
         self.setData=rpgSetData[0].values;
         self.rpgResultData=rpgresultData.rpgResultData;
+        console.log("rpgresultData---------------");
+        console.log(rpgresultData);
+
         $rootScope.showHeader();
         $rootScope.showBottom();
 
@@ -934,38 +937,34 @@ dataTool.controller("dataSetIndexController",['$rootScope', '$scope','$timeout',
         self.viewDetail=function(dataType){
 
             switch(dataType){
-                case "floorSumRent":
+                case "floors":
                     self.modalTitle="各楼层总租金";
-                    self.rpgDataModal="floorSumRent";
+                    self.rpgDataModal="floors";
                     break;
 
-                case "floorAvgRent":
+                case "floorsAvg":
                     self.modalTitle="各楼层平均租金";
-                    self.rpgDataModal="floorAvgRent";
+                    self.rpgDataModal="floorsAvg";
                     break;
 
-                case "formSumRent":
+                case "form":
                     self.modalTitle="各业态总租金";
-                    self.rpgDataModal="formSumRent";
+                    self.rpgDataModal="form";
                     break;
 
-                case "formAvgRent":
+                case "formAvg":
                     self.modalTitle="各业态平均租金";
-                    self.rpgDataModal="formAvgRent";
+                    self.rpgDataModal="formAvg";
                     break;
 
                 default:
                     self.modalTitle="各楼层总租金";
-                    self.rpgDataModal="floorSumRent";
+                    self.rpgDataModal="floors";
                     return;
             }
 
             SharedState.turnOn("subpageModal");
             $timeout(function(){
-
-                console.log("rpgDataModal swiper--------");
-                console.log(rpgset_modal_swiper);
-                console.log(typeof rpgset_modal_swiper);
 
                 if(typeof rpgset_modal_swiper !=="undefined"){
                     rpgset_modal_swiper.destroy(true,true);
