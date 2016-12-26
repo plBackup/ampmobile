@@ -205,6 +205,7 @@ var svg_editor = (function (sv){
         if ([root, container].indexOf(mouse_target) >= 0) {
             return root;
         }
+
         var $target = $(mouse_target);
         // 如果在ai作图时，分过图层或者自行做过群组，取mouseTarget时，以curRootGroup作为搜索终点
         if ($target.closest('.rootGroup').length) {
@@ -308,12 +309,15 @@ var svg_editor = (function (sv){
         var shopData=getTargetData(mouseTarget);
 
         //正式版view 需要判断这里的shopid 情况
+
         if(typeof shopData["shop_id"]==="undefined" || shopData["shop_id"]===""){
+
             sv.callback();
             return;
         }else{
             if (targetId == "svgRoot" || targetId == "svgRoot") {
                 //$(".cur-select-mask").popover("destroy").remove();
+
                 sv.callback();
                 return;
             } else {
@@ -325,47 +329,20 @@ var svg_editor = (function (sv){
                     this.classList.add("cur-select");
                 });
                 //mouseTarget.classList.add("cur-select");
-/*
-                var offsetX=evt.pageX-$("#ys-svg").offset().left;
-                var offsetY=evt.pageY-$("#ys-svg").offset().top;
-                $(".cur-select-mask").popover("destroy").remove();*/
 
                 var data=shopData;
+
                 var data_str="";
                 var shop_NS={
                     "shop_id":"商铺ID",
                     "shop_pos":"商铺位置",
                     "shop_name":"商铺名称"
                 };
+
                 if(sv.callback){
                     sv.callback(data);
                 }
-                /*  $.each(data,function(k,v){
-                 data_str+= ['<tr>',
-                 '<th>',
-                 shop_NS[k],
-                 '</th>',
-                 '<td>',
-                 v!=undefined?v:"暂无信息",
-                 '</td>',
-                 '</tr>'].join("");
-                 });
 
-                 console.log("offset-----------------------------"+offsetX+"----------y"+offsetY);
-                 $("<div class='cur-select-mask'><em class='glyphicon glyphicon-map-marker'></em></div>").css({
-                 top: parseInt(offsetY - 22) + "px",
-                 left: parseInt(offsetX - 11) + "px"
-                 }).appendTo(".ys-mainpanel-inner").popover({
-                 container: "body",
-                 title: "商铺信息",
-                 content: svg_editor.view_template,
-                 placement: "auto",
-                 html: true,
-                 trigger: "manual",
-                 });
-                 $(".cur-select-mask").popover("show");
-                 var $view_temp=$("#svg-data-view tbody");
-                 $view_temp.append(data_str);*/
             }
         }
 
@@ -561,10 +538,12 @@ var svg_editor = (function (sv){
             return true;
         }
     }
+
     // Converts a string to base64
     encodeUTF8=sv.encodeUTF8=function(input){
         return unescape(encodeURIComponent(input));
-    }
+    };
+
     encode64=sv.encode64 = function(input) {
         // base64 strings are 4/3 larger than the original string
         input = encodeUTF8(input); // convert non-ASCII characters
@@ -601,6 +580,7 @@ var svg_editor = (function (sv){
         } while (i < input.length);
 
         return output.join('');
+
     };
 
     sv.saveSVG=function(data) {
@@ -613,6 +593,12 @@ var svg_editor = (function (sv){
             alert("浏览器不支持本地下载");
         }
     }//end savSVG
+
+    /*destory*/
+    sv.destroy=function(){
+        //$("#ys-svg").unbind();
+        $(document).off("click","#ys-svg");
+    };
 
     //商铺状态定义
     sv.shopStatusSet={
@@ -674,8 +660,10 @@ var handler=svg_editor.handler= (function(){
     hd.importHandler=function(){
 
     };
+
     hd.viewHandler=function(e){
         if(sv.curMode=="view"){
+
             $(".cur-select").each(function(i,e){
                 this.classList.remove("cur-select");
             });
@@ -687,9 +675,11 @@ var handler=svg_editor.handler= (function(){
             }else{
                 $("#split-button").hide();
             }
+
             svg_editor.popView(e,mouseTarget);
         }
     };
+
     hd.editHandler=function(e){
         if(sv.curMode=="edit"){
             $(".cur-select").each(function(i,e){

@@ -2071,9 +2071,7 @@ dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simCh
             if(typeof self.shopInfo.shopIndex=="undefined"){
                 return;
             }
-            console.log("---------------**");
-            console.log(self.shopInfo);
-            console.log(self.shopInfoCopy);
+
             switch(type){
                 case 'position':
                     self.selectType="position";
@@ -2225,6 +2223,7 @@ dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simCh
         };
 
         function _svgCallback(shopData){
+
             if(typeof shopData !=="undefined" && shopData["shop_id"]!==""){
                 $scope.$apply(function() {
                     $scope.dataSimForm.$setPristine();
@@ -2243,7 +2242,7 @@ dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simCh
         };
 
         var add_svg=function(floor){
-
+            svg_editor.destroy();
             self.clearShopInfo();
             switch(floor){
                 case "B2":
@@ -2282,6 +2281,7 @@ dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simCh
             $.get(file,function(data,status){
                 var importedSVGRootElement = document.importNode(data.documentElement,true);
                 $("#ys-svg").append(importedSVGRootElement);
+
                 svg_editor.refresh();
                 svg_editor.init(_svgCallback);
 
@@ -2292,6 +2292,9 @@ dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simCh
         add_svg(self.floor);
 
         self.setFloor=function(floor){
+            //清除绑定在#ys-svg上click事件
+            svg_editor.destroy();
+
             $("#ys-svg").find("svg").remove();
 
             console.log(floor);
