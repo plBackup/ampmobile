@@ -331,6 +331,9 @@ var svg_editor = (function (sv){
                 //mouseTarget.classList.add("cur-select");
 
                 var data=shopData;
+                console.log("data----------");
+                console.log(data);
+
 
                 var data_str="";
                 var shop_NS={

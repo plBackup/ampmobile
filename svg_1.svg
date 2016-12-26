@@ -62,17 +62,17 @@
 <rect id="XMLID_213_" x="660.8" y="93.9" fill="#B4E1F9" width="18.6" height="49.4"/>
 <rect id="XMLID_212_" x="641.2" y="93.9" fill="#B4E1F9" width="18.6" height="49.4"/>
 <polygon id="XMLID_211_" fill="#93E2D5" points="634.5,140.4 640.3,140.4 640.3,93.9 617.8,93.9 617.8,143.4 634.5,143.4 "/>
-<polygon id="XMLID_210_" fill="#D7DFE2" points="595,120.9 595,93.9 562.9,93.9 562.9,143.4 598.7,143.4 598.7,120.9 "/>
-<rect id="XMLID_209_" x="543.4" y="93.9" fill="#D7DFE2" width="18.6" height="49.4"/>
-<rect id="XMLID_208_" x="523.8" y="93.9" fill="#D7DFE2" width="18.6" height="49.4"/>
-<rect id="XMLID_207_" x="493.9" y="106.9" fill="#D7DFE2" width="28.9" height="36.3"/>
-<rect id="XMLID_206_" x="465.1" y="93.9" fill="#D7DFE2" width="18.6" height="49.4"/>
-<polygon id="XMLID_205_" fill="#D7DFE2" points="464.1,93.9 449.2,93.9 449.2,120.4 445.5,120.4 445.5,143.4 455.3,143.4 
+<polygon id="XMLID_210_" data-shopid="34" fill="#D7DFE2" points="595,120.9 595,93.9 562.9,93.9 562.9,143.4 598.7,143.4 598.7,120.9 "/>
+<rect id="XMLID_209_" data-shopid="33" x="543.4" y="93.9" fill="#D7DFE2" width="18.6" height="49.4"/>
+<rect id="XMLID_208_" data-shopid="31" x="523.8" y="93.9" fill="#D7DFE2" width="18.6" height="49.4"/>
+<rect id="XMLID_207_" data-shopid="30" x="493.9" y="106.9" fill="#D7DFE2" width="28.9" height="36.3"/>
+<rect id="XMLID_206_" data-shopid="29" x="465.1" y="93.9" fill="#D7DFE2" width="18.6" height="49.4"/>
+<polygon id="XMLID_205_" data-shopid="28" fill="#D7DFE2" points="464.1,93.9 449.2,93.9 449.2,120.4 445.5,120.4 445.5,143.4 455.3,143.4
 	455.3,143.4 464.1,143.4 "/>
-<rect id="XMLID_204_" x="425.8" y="93.9" fill="#D7DFE2" width="18.6" height="49.4"/>
-<rect id="XMLID_203_" x="406.3" y="93.9" fill="#D7DFE2" width="18.6" height="49.4"/>
-<rect id="XMLID_202_" x="386.7" y="93.9" fill="#D7DFE2" width="18.6" height="49.4"/>
-<polygon id="XMLID_201_" fill="#D7DFE2" points="385.7,93.9 372.7,93.9 372.7,127.3 368.1,127.3 368.1,143.4 379.1,143.4 
+<rect id="XMLID_204_" data-shopid="27" x="425.8" y="93.9" fill="#D7DFE2" width="18.6" height="49.4"/>
+<rect id="XMLID_203_" data-shopid="26" x="406.3" y="93.9" fill="#D7DFE2" width="18.6" height="49.4"/>
+<rect id="XMLID_202_" data-shopid="25" x="386.7" y="93.9" fill="#D7DFE2" width="18.6" height="49.4"/>
+<polygon id="XMLID_201_" data-shopid="24" fill="#D7DFE2" points="385.7,93.9 372.7,93.9 372.7,127.3 368.1,127.3 368.1,143.4 379.1,143.4
 	379.1,143.4 385.7,143.4 "/>
 <path id="XMLID_200_" fill="#D7DFE2" d="M351.3,93.9h-18.2v4.7h-6v52l5.3,7.6c6.3-7,18.5-16.9,18.5-16.9v-0.2h0.3V93.9L351.3,93.9
 	L351.3,93.9z"/>

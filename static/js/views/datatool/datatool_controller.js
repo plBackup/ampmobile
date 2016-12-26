@@ -2229,6 +2229,7 @@ dataTool.controller("dataSimController",['$rootScope', '$scope',"simData","simCh
                     $scope.dataSimForm.$setPristine();
                     $scope.dataSimForm.$setUntouched();
                 });
+
                 self.setShopInfo(shopData["shop_id"]);
 
             }else{
