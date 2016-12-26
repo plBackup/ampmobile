@@ -72,10 +72,10 @@
 #datatool-rpgset{}
 #datatool-rpgset .scrollable-content>div[ui-view]{position:relative;height:100%;padding-bottom:64px;}
 #datatool-rpgset .amp-block-fixed-bottom{position: absolute;width:100%;height:64px;bottom:0;left:0;padding:10px;}
-#datatool-rpgset .amp-block-fixed-bottom .amp-btn{width:100%;height:44px;border:0;border-radius: 0;line-height: 30px;}
+#datatool-rpgset .amp-btn{width:100%;height:44px;border:0;border-radius: 0;line-height: 30px;}
 
-#rgp-set-index>.amp-block{padding:20px;}
-
+#rgp-set-index>.amp-block{padding:0;}
+#rgp-set-index>.amp-block-pd{padding:20px;border-bottom:solid 10px #edeef3;}
 #rgp-set-index>.amp-block .col-xs-6{padding-left:0;padding-right:0;margin-bottom:25px;}
 #rgp-set-index>.amp-block .col-xs-6:nth-child(even){padding-left:20px;}
 #rgp-set-index>.amp-block .col-xs-6:nth-child(odd){border-right:solid 1px #edeef3;}
@@ -84,6 +84,27 @@
 #rgp-set-index>.amp-block .col-xs-6>label{display: block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;color:#747d8c;font-size: 13px;}
 #rgp-set-index>.amp-block .col-xs-6>h3{margin-bottom: 0;color:#59b46f;font-size: 18px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
 
+#datatool-rpgset .amp-block .table > thead > tr > th {
+    border-top: 0;
+    border-bottom: 0;
+    padding: 0;
+    padding-top: 5px;
+    height: 16px;
+    line-height: 16px;
+    font-size: 13px;
+    color: #8592a3;
+    text-align: left;
+    background-color: transparent;
+}
+#datatool-rpgset .amp-block .table > tbody > tr > td {
+    height: inherit;
+    border-bottom: 0;
+    border-top: 0;
+    padding: 0;
+    padding-bottom: 5px;
+    font-size: 14px;
+    color: #373c42;
+}
 
 /*irrplan*/
 #datatool-irrplan .amp-tab-menu{height:40px;border-bottom:0;}
