@@ -881,8 +881,8 @@ dataTool.controller("dataEditController",['$rootScope', '$scope','$state','Share
 
     }]);
 
-dataTool.controller("dataSetIndexController",['$rootScope', '$scope','$timeout',"rpgSetData","rpgresultData",
-    function($rootScope, $scope,$timeout,rpgSetData,rpgresultData) {
+dataTool.controller("dataSetIndexController",['$rootScope', '$scope','$timeout',"SharedState","rpgSetData","rpgresultData",
+    function($rootScope, $scope,$timeout,SharedState,rpgSetData,rpgresultData) {
         var self=this;
         self.setData=rpgSetData[0].values;
         self.rpgResultData=rpgresultData.rpgResultData;
@@ -934,33 +934,29 @@ dataTool.controller("dataSetIndexController",['$rootScope', '$scope','$timeout',
         self.viewDetail=function(dataType){
 
             switch(dataType){
-                case "income":
-                    self.modalTitle="收入";
-                    self.rpgDataModal="income";
+                case "floorSumRent":
+                    self.modalTitle="各楼层总租金";
+                    self.rpgDataModal="floorSumRent";
                     break;
 
-                case "fee":
-                    self.modalTitle="费用";
-                    self.rpgDataModal="fee";
+                case "floorAvgRent":
+                    self.modalTitle="各楼层平均租金";
+                    self.rpgDataModal="floorAvgRent";
                     break;
 
-                case "noi":
-                    self.modalTitle="NOI";
-                    self.rpgDataModal="noi";
+                case "formSumRent":
+                    self.modalTitle="各业态总租金";
+                    self.rpgDataModal="formSumRent";
                     break;
 
-                case "profits":
-                    self.modalTitle="利润率";
-                    self.rpgDataModal="profits";
+                case "formAvgRent":
+                    self.modalTitle="各业态平均租金";
+                    self.rpgDataModal="formAvgRent";
                     break;
 
-                case "arrearage":
-                    self.modalTitle="欠费";
-                    self.rpgDataModal="arrearage";
-                    break;
                 default:
-                    self.modalTitle="收入";
-                    self.rpgDataModal="income";
+                    self.modalTitle="各楼层总租金";
+                    self.rpgDataModal="floorSumRent";
                     return;
             }
 

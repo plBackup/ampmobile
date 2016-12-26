@@ -74,7 +74,7 @@
 #datatool-rpgset .amp-block-fixed-bottom{position: absolute;width:100%;height:64px;bottom:0;left:0;padding:10px;}
 #datatool-rpgset .amp-btn{width:100%;height:44px;border:0;border-radius: 0;line-height: 30px;}
 
-#rgp-set-index>.amp-block{padding:0;}
+#rgp-set-index>.amp-block{padding:0;border-bottom:solid 10px #edeef3;}
 #rgp-set-index>.amp-block-pd{padding:20px;border-bottom:solid 10px #edeef3;}
 #rgp-set-index>.amp-block .col-xs-6{padding-left:0;padding-right:0;margin-bottom:25px;}
 #rgp-set-index>.amp-block .col-xs-6:nth-child(even){padding-left:20px;}
@@ -105,6 +105,74 @@
     font-size: 14px;
     color: #373c42;
 }
+
+/*#rpgset-subpage*/
+#rpgset-subpage{background-color:#edeef3;}
+
+#datatool-rpgset .modal-overlay{background-color: #edeef3;}
+#datatool-rpgset .modal-overlay .modal-content,#datatool-rpgset .modal-overlay .modal-dialog{margin:0;height:100%;}
+#datatool-rpgset .modal-overlay .modal-content{padding-top:44px;position: relative;}
+#datatool-rpgset .modal-header{position:absolute;top:0;left:0;width:100%;padding:0 40px;height:44px;background-color: #1a202c;overflow:hidden;}
+#datatool-rpgset .modal-header button.close{display: block;height:44px;width:40px;position: absolute;z-index:199;top:0;left:0;opacity:1;}
+#datatool-rpgset .modal-title{height:44px;line-height: 44px;color:#fff;text-align: center;width:100%;}
+
+#datatool-rpgset .modal-body{padding:0;height:100%;}
+/*#noi- modal tabs*/
+#datatool-rpgset .modal-overlay .nav { margin-bottom: 0; padding-left: 0; list-style: none; }
+#datatool-rpgset .modal-overlay .nav-tabs { border-bottom: 10px solid #edeef3; background-color: #fff;}
+#datatool-rpgset .modal-overlay .nav > li { position: relative; display: block; }
+#datatool-rpgset .modal-overlay .nav-tabs > li { float: left; margin-bottom: 0;width:25%;overflow:hidden;text-overflow: ellipsis;white-space: nowrap; }
+
+#datatool-rpgset .modal-overlay .nav > li > a { position: relative; display: block; padding: 10px 6px;line-height: 24px;text-align: center;font-size: 13px;}
+#datatool-rpgset .modal-overlay .nav-tabs > li > a {
+    margin-right: 2px;
+    line-height: 22px;
+    border: 0;
+    color:#373c42;
+}
+
+#datatool-rpgset .modal-overlay .nav-tabs > li.active > a,#datatool-rpgset .modal-overlay .nav-tabs > li.active > a:focus {
+    color: #5ab46e;
+    background-color: #fff;
+}
+#datatool-rpgset .modal-overlay .amp-section{background-color: #fff;}
+#datatool-rpgset .modal-overlay .table{margin-bottom:0;}
+#datatool-rpgset .modal-overlay .col-xs-4, #datatool-rpgset .modal-overlay .col-xs-8{padding-left:0;padding-right:0;}
+
+#datatool-rpgset .modal-overlay .swiper-slide{width:auto;}
+
+#datatool-rpgset .modal-overlay table>thead>tr>th {
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 46px;
+    color: #8592a3;
+    font-size: 12px;
+    text-align: right;
+    vertical-align: middle;
+    border-bottom: 0;
+    font-weight: normal;
+    border-bottom: 1px solid #d9dde0;
+    background-color:#fff;
+}
+#datatool-rpgset .modal-overlay .col-xs-4>table{width:100%;border-right:solid 1px #d9dde0;}
+#datatool-rpgset .modal-overlay table>thead>tr>th span,
+#datatool-rpgset .modal-overlay table>thead>tr>th em.em-unit{display: block;height:16px;line-height: 16px;margin:0;}
+#datatool-rpgset .modal-overlay table>thead>tr>th span{color:#373c42;font-size:13px;}
+#datatool-rpgset .modal-overlay table > tbody > tr > td{font-size:14px;color:#373c42;text-align: right;}
+
+#datatool-rpgset .modal-overlay .col-xs-4>table > tbody > tr > th {
+    padding-left:15px;
+    font-size: 14px;
+    color: #373c42;
+    text-align: left;
+}
+#datatool-rpgset .modal-overlay .col-xs-4>table > tbody > tr.tr-main > th,
+#datatool-rpgset .modal-overlay table > tbody > tr.tr-main>td{font-weight:bold;}
+#datatool-rpgset .modal-overlay .col-xs-4>table > tbody > tr > th span{display:block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+/*modal里折叠按钮隐藏*/
+#datatool-rpgset .modal-overlay  table  .icon-menu-down{display: none;}
+
 
 /*irrplan*/
 #datatool-irrplan .amp-tab-menu{height:40px;border-bottom:0;}
