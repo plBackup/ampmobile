@@ -228,7 +228,38 @@ tr>td span.number-format{display: block;width:100%;}
 #irr-plan .table td.active input:focus{ outline:solid 3px #8ec1f6;outline-offset: -2px;}
 #irr-plan .table td input.ng-invalid{border:solid 2px #ff3030;}
 #irr-plan .table td input.ng-invalid~span.number-format{border:solid 2px #ff3030;}
+/*
 #irr-plan .table td input.ng-invalid~span.number-format:before{display: block;position: absolute;width:24px;height:24px;top:0;right:0;content:" ";
     background-image: url(../../images/icon.png);background-repeat: no-repeat;background-position:-331px -198px;}
+*/
+/*input reset*/
+.ys-amp .table input.ng-dirty,.ys-amp .table td.active input.ng-dirty,
+.ys-amp .table input.ng-dirty+span {
+    background-color: #d8e8db;
+}
+.table td.active input:focus{ outline:solid 3px #8ec1f6;outline-offset: -2px;}
+.table td input.ng-invalid {
+    border: solid 2px #ff3030;
+}
+.table td input.ng-invalid~span.number-format{
+    border: solid 2px #ff3030;
+}
+
+.table td input.ng-invalid~span.number-format:before {
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    right: 0;
+    content: " ";
+    background-image: url(../../images/error_note.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:contain;
+}
+
+
+
 
 

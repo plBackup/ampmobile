@@ -290,33 +290,6 @@
 */
 
 
-/*input reset*/
-.ys-amp .table input.ng-dirty,.ys-amp .table td.active input.ng-dirty,
-.ys-amp .table input.ng-dirty+span {
-    background-color: #d8e8db;
-}
-.table td input.ng-invalid {
-    border: solid 2px #ff3030;
-}
-.table td input.ng-invalid~span.number-format{
-    border: solid 2px #ff3030;
-}
-
-.table td input.ng-invalid~span.number-format:before {
-    display: block;
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    top: 0;
-    right: 0;
-    content: " ";
-    background-image: url(../../images/icon.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size:contain;
-}
-
-
 
 
 
