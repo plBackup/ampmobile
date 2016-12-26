@@ -4,7 +4,7 @@
 var menu_list={
     amp_menu:[
         {
-            name:"存量",
+            name:"综合分析",
             index:"main-0",
             icon:"amp-menu-noi",
             links:"noi",
@@ -12,7 +12,7 @@ var menu_list={
             relocate:false//点击一级目录直接跳转
         },
         {
-            name:"投资",
+            name:"回报模型",
             index:"main-1",
             icon:"amp-menu-invest",
             links:"simulation_calculation_list",
@@ -20,7 +20,7 @@ var menu_list={
             relocate:false//点击一级目录直接跳转
         },
         {
-            name:"管理",
+            name:"经营分析",
             index:"main-2",
             icon:"amp-menu-manage",
             links:"mgt_analysis",
@@ -29,7 +29,7 @@ var menu_list={
 
         },
         {
-            name:"风控",
+            name:"风控工具",
             index:"main-3",
             icon:"amp-menu-ctrl",
             links:"risk_investment",
@@ -39,7 +39,7 @@ var menu_list={
 
         },
         {
-            name:"数据",
+            name:"管理工具",
             index:"main-4",
             icon:"amp-menu-data",
             links:"datatool",

@@ -3,14 +3,14 @@
         <div class="amp-tab-nav">
             <ui-shared-state id="activeTab" default="1"></ui-shared-state>
             <ul class="nav nav-tabs">
+                <li ui-class="{'active': activeTab == 3}">
+                    <a ui-set="{'activeTab': 3}" ui-sref="datatool.irrplan" ui-sref-active="active">投资测算</a>
+                </li>
                 <li ui-class="{'active': activeTab == 1}">
-                    <a ui-set="{'activeTab': 1}" ui-sref="datatool.rpgindex" ui-sref-active="active">租金包</a>
+                    <a ui-set="{'activeTab': 1}" ui-sref="datatool.rpgindex" ui-sref-active="active">租金包管理</a>
                 </li>
                 <li ui-class="{'active': activeTab == 2}">
                     <a ui-set="{'activeTab': 2}" ui-sref="datatool.datasim" ui-sref-active="active">沙盒模型</a>
-                </li>
-                <li ui-class="{'active': activeTab == 3}">
-                    <a ui-set="{'activeTab': 3}" ui-sref="datatool.irrplan" ui-sref-active="active">回报计划</a>
                 </li>
             </ul>
 
