@@ -26,7 +26,6 @@ var menu_list={
             links:"mgt_analysis",
             target:"#",
             relocate:false//点击一级目录直接跳转
-
         },
         {
             name:"风控工具",
