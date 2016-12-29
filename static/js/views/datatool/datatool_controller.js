@@ -430,12 +430,17 @@ dataTool.controller("datatoolController",['$rootScope', '$scope',"$timeout","$lo
         self.goHome=function(){
             $state.go("projectlist");
         };
+        console.log("----");
         $state.go("datatool.rpgindex");
 }]);
 dataTool.controller("dataIndexController",['$rootScope', '$scope',"dataIndexData","paginatorService","$timeout","$location","$state","$filter","SharedState",
     function($rootScope, $scope,dataIndexData,paginatorService,$timeout,$location,$state,$filter,SharedState) {
         var self=this;
         var shopData=dataIndexData.slice(1);
+
+       /* if(typeof $rootScope.prev==="undefined" || $rootScope.prev===""){
+            $state.go("datatool");
+        }*/
 
         $rootScope.showHeader();
         $rootScope.showBottom();

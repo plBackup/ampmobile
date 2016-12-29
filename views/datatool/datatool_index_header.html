@@ -5,12 +5,22 @@
         </div>
     </div>
     <div class="navbar-brand navbar-brand-center">
-        管理工具
+        数据工具
     </div>
-    <div class="btn-group pull-right" ui-yield-to="navbarAction">
-        <div ui-toggle="uiSidebarRight" class="btn sidebar-right-toggle">
-            <i class="navOpt-icon navOpt-icon-filter"></i>
-        </div>
+    <div class="btn-group pull-right">
+        <a ui-turn-on="rpgDropdown" class="btn">
+            <i class="navOpt-icon navOpt-icon-doc"></i>
+        </a>
+        <ul ui-shared-state="rpgDropdown"
+            class="dropdown-menu"
+            ui-outer-click="Ui.turnOff('rpgDropdown')"
+            ui-outer-click-if="Ui.active('rpgDropdown')"
+            role="menu"
+            ui-show="rpgDropdown"
+            ui-turn-off="rpgDropdown">
+            <li><a class="btn amp-header-btn" ui-sref="datatool.shopcreate"><i class="navOpt-icon navOpt-icon-plus"></i>新增</a></li>
+            <li><a ui-toggle="uiSidebarRight" class="btn amp-header-btn sidebar-right-toggle"><i class="navOpt-icon navOpt-icon-filter"></i>过滤</a></li>
+        </ul>
     </div>
 </div>
 
