@@ -4,34 +4,34 @@
         <div class="scrollable-content section" >
             <div class="amp-input-group-list">
                 <ul class="amp-input-group clearfix">
-                    <li><div><em>品牌</em><input type="text" value="星巴克"/></div></li>
+                    <li class="first-item"><div><em>品牌</em><input type="text" value="星巴克"/></div></li>
                     <li><div><em>合同编号</em><input type="text"/></div></li>
                 </ul>
                 <ul class="amp-input-group clearfix">
-                    <li class="more-info"><div><em>合同起始</em><input type="text" value="2016-09-10"/></div></li>
-                    <li class="more-info"><div><em>合同结束</em><input type="text" value="2026-09-09"/></div></li>
+                    <li class="more-info first-item"><div><em>合同起始</em><div date-picker ng-model="contractStartTime" cur-date="2016-09-09" class="amp-date-input-default"></div></div></li>
+                    <li class="more-info"><div><em>合同结束</em><div date-picker ng-model="contractEndTime" cur-date="2016-09-09" class="amp-date-input-default"></div></div></li>
                 </ul>
                 <ul class="amp-input-group clearfix">
-                    <li><div><em>免租期期限</em><input type="text" value=""/></div></li>
-                    <li class="more-info" ui-toggle="uiSidebarRight"><div><em>楼层</em><input type="text" value="2F,1F"/></div></li>
+                    <li class="first-item"><div><em>免租期期限</em><input type="text" value=""/></div></li>
+                    <li class="more-info" ng-click="switchRightSection('floor')" ui-toggle="uiSidebarRight"><div><em>楼层</em><input readonly type="text" value="2F,1F"/></div></li>
                 </ul>
                 <ul class="amp-input-group clearfix">
-                    <li class="whole-column"><div><em>铺位号</em><input type="text" value=""/></div></li>
+                    <li class="whole-column first-item"><div><em>铺位号</em><input type="text" value=""/></div></li>
                 </ul>
                 <ul class="amp-input-group clearfix">
-                    <li class="whole-column more-info"><div><em>业态</em><input type="text" value=""/></div></li>
+                    <li class="whole-column more-info first-item" ui-toggle="uiSidebarRight" ng-click="switchRightSection('commercial')"><div><em>业态</em><input type="text" value="" readonly/></div></li>
                 </ul>
                 <ul class="amp-input-group clearfix">
-                    <li><div><em>面积(㎡)</em><input type="text" value=""/></div></li>
-                    <li class="more-info"><div><em>租金方式</em><input type="text" value="提成租金"/></div></li>
+                    <li class="first-item"><div><em>面积(㎡)</em><input type="text" value=""/></div></li>
+                    <li class="more-info" ng-click="switchRightSection('rent')" ui-toggle="uiSidebarRight"><div><em>租金方式</em><input type="text" readonly value="提成租金"/></div></li>
                 </ul>
                 <ul class="amp-input-group clearfix">
-                    <li><div><em>租金总额(元)</em><input type="text" value=""/></div></li>
+                    <li class="first-item"><div><em>租金总额(元)</em><input type="text" value=""/></div></li>
                     <li><div><em>提成百分比</em><input type="text" value="9%"/></div></li>
                 </ul>
                 <ul class="amp-input-group clearfix">
-                    <li><div><em>物管费总额(元)</em><input type="text" value=""/></div></li>
-                    <li class="more-info"><div><em>付款方式</em><input type="text" value="月付"/></div></li>
+                    <li class="first-item"><div><em>物管费总额(元)</em><input type="text" value=""/></div></li>
+                    <li class="more-info" ng-click="switchRightSection('payment')" ui-toggle="uiSidebarRight"><div><em>付款方式</em><input readonly type="text" value="月付"/></div></li>
                 </ul>
             </div><!-- amp-input-group-list -->
 
@@ -40,9 +40,8 @@
     </div><!-- scrollable -->
 
     <div ui-content-for="amp-right-panel">
-        <div class="contract-detail-floor-panel">
-
-            <div class="query-section floor-section">
+        <div class="contract-detail-right-panel">
+            <div class="query-section floor-section" ng-class="{'amp-display-none':rightSection.floor}">
                 <div class="query-section-title">楼层</div>
                 <div class="query-section-content">
                     <ul class="clearfix">
@@ -57,6 +56,41 @@
                     </ul>
                 </div><!-- query-section-content -->
             </div><!-- query-section -->
+
+            <div class="query-section rent-type-section" ng-class="{'amp-display-none':rightSection.rent}">
+                <div class="query-section-title">租金方式</div>
+                <div class="query-section-content">
+                    <ul class="clearfix">
+                        <li><a>固定租金</a></li>
+                        <li><a class="active">提成租金</a></li>
+                        <li><a>两者取高</a></li>
+                    </ul>
+                </div><!-- query-section-content -->
+            </div><!-- rent-type-section -->
+
+            <div class="query-section rent-type-section" ng-class="{'amp-display-none':rightSection.payment}">
+                <div class="query-section-title">付款方式</div>
+                <div class="query-section-content">
+                    <ul class="clearfix">
+                        <li><a>月付</a></li>
+                        <li><a>季付</a></li>
+                    </ul>
+                </div><!-- query-section-content -->
+            </div><!-- rent-type-section -->
+
+            <div class="query-section commercial-type-section" ng-class="{'amp-display-none':rightSection.commercial}">
+                <div class="query-section-title">业态</div>
+                <div class="query-section-content">
+                    <ul class="clearfix">
+                        <li><a>超市</a></li>
+                        <li><a class="active">影院</a></li>
+                        <li><a>餐饮</a></li>
+                        <li><a>儿童</a></li>
+                        <li><a>服装</a></li>
+                        <li><a>配套</a></li>
+                    </ul>
+                </div><!-- query-section-content -->
+            </div><!-- rent-type-section -->
 
             <div class="btn-group clearfix">
                 <a class="ok-btn" href="javascript:void(0)" ui-turn-off="uiSidebarRight">确定</a>

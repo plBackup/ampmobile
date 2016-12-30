@@ -1,3 +1,4 @@
+<!--
 <div ui-yield-to="dataToolNav">
     <div class="btn-group pull-left">
         <div class="btn" ng-click="dCtrl.goHome()">
@@ -5,7 +6,7 @@
         </div>
     </div>
     <div class="navbar-brand navbar-brand-center">
-        数据工具
+        管理工具
     </div>
     <div class="btn-group pull-right">
         <a ui-turn-on="rpgDropdown" class="btn">
@@ -23,4 +24,36 @@
         </ul>
     </div>
 </div>
+-->
+<div ui-yield-to="dataToolNav">
+    <div class="btn-group pull-left">
+        <div class="btn" ng-click="dCtrl.goHome()">
+            <i class="navOpt-icon navOpt-icon-home"></i>
+        </div>
+    </div>
 
+    <div class="navbar-brand navbar-brand-center">
+        管理工具
+    </div>
+
+    <!--<div class="btn-group pull-right">
+        <div class="btn btn-opt" ng-click="pCtrl.save()">
+            保存
+        </div>
+    </div>-->
+    <div class="btn-group pull-right">
+        <a ui-turn-on="irrDropdown" class="btn">
+            <i class="navOpt-icon navOpt-icon-doc"></i>
+        </a>
+        <ul ui-shared-state="irrDropdown"
+            class="dropdown-menu"
+            ui-outer-click="Ui.turnOff('irrDropdown')"
+            ui-outer-click-if="Ui.active('irrDropdown')"
+            role="menu"
+            ui-show="irrDropdown"
+            ui-turn-off="irrDropdown">
+            <li><a class="btn amp-header-btn" ng-click="pCtrl.save()"><i class="navOpt-icon navOpt-icon-save"></i>保存</a></li>
+            <li><a class="btn amp-header-btn" ng-click="pCtrl.count()" ng-disabled="irrForm.$invalid"><i class="navOpt-icon navOpt-icon-count"></i>计算</a></li>
+        </ul>
+    </div>
+</div>

@@ -4,7 +4,7 @@
     padding:0;
 }
 #cost-manual table{width:100%;}
-#cost-manual .swiper-slide{width:auto;}
+#cost-manual .swiper-slide{width:auto;min-width:100%;}
 /* ======================================== table-group-header ======================================== */
 #cost-manual .table-group-header{position:relative;padding-left:145px;}
 #cost-manual .table-group-header .table-group-left{position:absolute;top:0;left:0;width:145px;}

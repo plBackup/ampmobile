@@ -133,7 +133,7 @@
 }
 
 .amp-right-panel .contract-query-panel .query-section{
-    padding:25px 15px 0 15px;
+    padding:25px 10px 0 10px;
 }
 
 .amp-right-panel .contract-query-panel .query-section .query-section-title{
@@ -169,6 +169,7 @@
     width:50%;
     padding-left:5px;
 }
+
 
 /*rent-type-section*/
 .amp-right-panel .contract-query-panel .query-section.rent-type-section .query-section-content{padding-top:0;}

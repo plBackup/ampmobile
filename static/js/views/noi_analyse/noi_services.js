@@ -161,7 +161,7 @@ angular.module('noi').service('noiService', function($rootScope,$http) {
                          fontSize:14
                          },*/
                         min:0,
-                        max:"auto",
+                        //max:"auto",
                         //splitNumber:7,
                         axisLine:{
                             show:false,

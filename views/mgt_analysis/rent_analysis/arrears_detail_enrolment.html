@@ -5,12 +5,17 @@
             <div class="amp-input-group-list">
 
                 <ul class="amp-input-group clearfix">
-                    <li><div><em>商家</em><input type="text" value=""/></div></li>
-                    <li class="more-info"><div><em>欠费明细</em><input type="text" /></div></li>
+                    <li class="first-item"><div><em>商家</em><input type="text" value=""/></div></li>
+                    <li class="more-info" ui-toggle="uiSidebarRight" ng-click="showArrearsItemPanel()"><div><em>欠费明细</em><input type="text" ng-model="selectedArrearsItem.name" readonly/></div></li>
                 </ul>
 
                 <ul class="amp-input-group clearfix">
-                    <li class="more-info"><div><em>应收日期</em><input type="text" value=""/></div></li>
+                    <li class="more-info first-item">
+                        <div>
+                            <em>应收日期</em>
+                            <div date-picker ng-model="receivableDatetime" cur-date="2016-09-09" class="amp-date-input-default"></div>
+                        </div>
+                    </li>
                     <li><div><em>金额</em><input type="text" value=""/></div></li>
                 </ul>
 
@@ -22,26 +27,19 @@
     </div><!-- scrollable -->
 
     <div ui-content-for="amp-right-panel">
-        <div class="arrears-detail-enrolment-floor-panel">
+        <div class="arrears-detail-enrolment-right-panel">
 
-            <div class="query-section floor-section">
-                <div class="query-section-title">楼层</div>
+            <div class="query-section arrears-section">
+                <div class="query-section-title">欠费类型</div>
                 <div class="query-section-content">
                     <ul class="clearfix">
-                        <li><a>B2</a></li>
-                        <li><a class="active">B1</a></li>
-                        <li><a>1F</a></li>
-                        <li><a class="active">2F</a></li>
-                        <li><a>3F</a></li>
-                        <li><a>4F</a></li>
-                        <li><a>5F</a></li>
-                        <li><a>6F</a></li>
+                        <li ng-repeat="item in arrearsItems"><a ng-click="selectArrearsItem(item)" ng-class="{'active':item.active}">{{item.name}}</a></li>
                     </ul>
                 </div><!-- query-section-content -->
             </div><!-- query-section -->
 
             <div class="btn-group clearfix">
-                <a class="ok-btn" href="javascript:void(0)" ui-turn-off="uiSidebarRight">确定</a>
+                <a class="ok-btn" href="javascript:void(0)" ui-turn-off="uiSidebarRight" ng-click="saveArrearsItem()">确定</a>
             </div>
         </div><!-- query-panel -->
     </div><!-- amp-right-panel -->

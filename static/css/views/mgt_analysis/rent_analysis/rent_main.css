@@ -124,8 +124,7 @@
     background-color:#fff;
 }
 
-#rent-main .table-group tr.record-group td{font-weight: bold;}
-#rent-main .table-group .table-left table tr.record-group td:first-child:after{
+#rent-main .table-group .table-left table tr.collapsed-record td:first-child:after{
     content:"";
     display:inline-block;
     width:18px;
@@ -136,7 +135,7 @@
     vertical-align: -5px;
 }
 
-#rent-main .table-group .table-left table tr.record-group.collapsed td:first-child:after{
+#rent-main .table-group .table-left table tr.collapsed-record.collapsed td:first-child:after{
     background-image:url(../../../../images/icon_chevron_up@2x.png);
 }
 
@@ -156,7 +155,7 @@
 
 
 #rent-main .table-group-multiple .table-left tr:last-child td{font-weight: bold;font-style: italic;}
-#rent-main .table-group-multiple .table-right tr:last-child td{font-weight: bold;font-style: italic;color:#53bde7;}
+#rent-main .table-group-multiple .table-right tr:last-child td{font-weight: bold;font-style: italic;}
 
 /* ======================================== section-title ======================================== */
 #rent-main .section-title {
@@ -216,6 +215,36 @@
     background:url(../../../../images/avg-line.png) no-repeat left center;
     background-size:53px 3px;
 }
+
+/* ======================================== btn-group ======================================== */
+#rent-main .btn-group{
+    width:100%;
+    border-bottom:1px solid #dae2e7;
+}
+#rent-main .btn-group li{
+    width:50%;
+    float:left;
+
+}
+#rent-main .btn-group li a{
+    display:block;
+    width:106px;
+    height:40px;
+    line-height: 38px;
+    border-bottom:2px solid transparent;
+    text-align: center;
+    margin:auto;
+    color:#8592a3;
+    font-size:12px;
+}
+#rent-main .btn-group li a.active{
+    color: #5ab46d;
+    border-bottom: 2px solid #5ab46d;
+}
+
+#rent-main  td.padding-level-1{padding-left:15px!important;}
+#rent-main  td.padding-level-2{padding-left:30px!important;}
+#rent-main  td.padding-level-3{padding-left:45px!important;}
 
 /* ======================================== rent-query-panel ======================================== */
 .amp-right-panel .rent-query-panel{

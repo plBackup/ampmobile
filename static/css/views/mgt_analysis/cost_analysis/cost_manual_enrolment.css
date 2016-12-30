@@ -4,7 +4,7 @@
     padding:0;
 }
 #cost-manual-enrolment table{width:100%;}
-#cost-manual-enrolment .swiper-slide{width:auto;}
+#cost-manual-enrolment .swiper-slide{width:auto;min-width: 100%;}
 /* ======================================== table-group-header ======================================== */
 #cost-manual-enrolment .table-group-header{position:relative;padding-left:145px;}
 #cost-manual-enrolment .table-group-header .table-group-left{position:absolute;top:0;left:0;width:145px;}

@@ -6,7 +6,14 @@ a{text-decoration: none;color:#333;}
 a:active,a:hover{text-decoration: none;}
 th{font-weight: normal;}
 .amp-display-none{display:none!important;}
+
+/* amp-font-color */
 .amp-font-color-grey{color:#8592a3!important;}
+.amp-font-color-white{color:#fff!important;}
+.amp-font-color-green{color:#5ab46e!important;}
+.amp-font-color-blue{color:#55bbe6!important;}
+
+
 .amp-font-weight-bold{font-weight: bold!important;}
 .amp-font-style-italic{font-style: italic!important;}
 .amp-text-align-right{text-align: right!important;}

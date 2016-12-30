@@ -431,7 +431,7 @@ dataTool.controller("datatoolController",['$rootScope', '$scope',"$timeout","$lo
             $state.go("projectlist");
         };
         console.log("----");
-        $state.go("datatool.rpgindex");
+        $state.go("datatool.irrplan");
 }]);
 dataTool.controller("dataIndexController",['$rootScope', '$scope',"dataIndexData","paginatorService","$timeout","$location","$state","$filter","SharedState",
     function($rootScope, $scope,dataIndexData,paginatorService,$timeout,$location,$state,$filter,SharedState) {
@@ -1307,9 +1307,9 @@ dataTool.controller("irrPlanController",['$rootScope', '$scope',"irrPlanData","$
     function($rootScope, $scope,irrPlanData,$timeout,$location) {
         var self=this;
         $rootScope.showHeader();
-        $rootScope.hideBottom();
+        $rootScope.showBottom();
 
-        $rootScope.dFooterShow=true;
+        $rootScope.dFooterShow=false;
         $rootScope.pageId="datatool-irrplan";
 
         self.irrData=irrPlanData;

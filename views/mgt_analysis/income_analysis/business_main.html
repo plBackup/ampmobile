@@ -67,6 +67,69 @@
                  </table>
              </div><!-- business-table -->
 
+             <div class="grey-bar"></div>
+             <div class="section-title">提成租金商户占比</div><!-- section-title -->
+
+
+             <div class="deduct-rent-store-rate-chart ">
+                 <div class="chart-content-wrapper">
+                     <div class="swiper-container">
+                         <div class="swiper-wrapper ">
+                             <div class="swiper-slide">
+                                 <div class="chart-content">f</div>
+                             </div><!-- swiper-slide -->
+                         </div><!-- swiper-wrapper -->
+                     </div><!-- swiper-container -->
+                 </div><!-- amp-chart-content-wrapper -->
+
+                 <div class="amp-chart-legend">
+                     <ul class="clearfix">
+                         <li>保底租金</li>
+                         <li>提成租金</li>
+                     </ul>
+                 </div>
+             </div><!-- deduct-rent-store-rate-chart -->
+
+             <div class="table-group deduct-rent-store-rate-table">
+                 <div class="table-left">
+                     <table>
+                         <tbody>
+                         <tr><th>商家</th></tr>
+                         <tr ng-repeat="item in deductRentStoreRateTable"><td>{{item.type}}</td></tr>
+                         </tbody>
+                     </table>
+                 </div><!-- table-left -->
+                 <div class="table-right">
+                     <div class="swiper-container">
+                         <div class="swiper-wrapper">
+                             <div class="swiper-slide">
+                                 <table>
+                                     <thead>
+                                         <tr>
+                                             <th>商户数</th>
+                                             <th>占比</th>
+                                             <th>租金总额</th>
+                                             <th>占比</th>
+                                         </tr>
+                                     </thead>
+                                     <tbody>
+                                         <tr ng-repeat="item in deductRentStoreRateTable">
+                                             <td>{{item.storeNo|number}}</td>
+                                             <td>{{item.storeRate}}</td>
+                                             <td>{{item.rentTotal|number}}</td>
+                                             <td>{{item.rentRate}}</td>
+                                         </tr>
+                                     </tbody>
+                                 </table>
+                             </div><!-- swiper-slide -->
+                         </div><!-- swiper-wrapper -->
+                     </div><!-- swiper-container -->
+
+
+                 </div><!-- table-right -->
+             </div><!-- table-group -->
+
+
          </div><!-- scrollable-content -->
     </div><!-- scrollable -->
 

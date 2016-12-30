@@ -6,7 +6,7 @@
                 <ul>
                     <li ng-repeat="project in listCtrl.projects" >
                         <div class="amp-section amp-section-projectInfo">
-                            <div class="amp-section-header clearfix">
+                            <div class="amp-section-header clearfix" ng-click="listCtrl.updateProject(project.pid)" >
                                 <div class="col-xs-10">
                                     <h3>
                                         <em>{{project.name}}</em>
@@ -21,7 +21,7 @@
                                     <em class="amp-figure"></em>
                                 </div>
                             </div><!--amp-section-header-->
-                            <div class="amp-section-content clearfix">
+                            <div class="amp-section-content clearfix" ng-click="listCtrl.goProject(project.pid)">
                                 <div class="col-xs-6 amp-project-info">
                                     <label>面积</label>
                                     <em>{{project.proportion|default:"-"}}</em>

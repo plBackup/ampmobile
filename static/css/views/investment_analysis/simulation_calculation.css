@@ -53,7 +53,7 @@
 }
 
 /* ======================================== table-group ======================================== */
-#simulation-calculation .table-group .swiper-slide{width:auto;}
+#simulation-calculation .table-group .swiper-slide{width:auto;min-width: 100%;}
 #simulation-calculation .table-group table{width:100%;}
 #simulation-calculation .table-group{position:relative;padding-left:145px;}
 #simulation-calculation .table-group .table-group-left{position:absolute;top:0;left:0;width:145px;padding-left:15px;}
@@ -171,7 +171,7 @@
     font-weight: normal;
 }
 
-#simulation-calculation .initial-analysis .amp-form-group .amp-form-content input{
+#simulation-calculation .initial-analysis .amp-form-group .amp-form-content>input{
     display:block;
     width:100%;
     height:34px;
@@ -181,6 +181,8 @@
     text-align: right;
     border-radius: 0;
 }
+
+#simulation-calculation .amp-input input{text-align:right;}
 
 #simulation-calculation .initial-analysis .amp-form-group .amp-form-content .input-wrapper{
     position:relative;
@@ -221,6 +223,8 @@
     overflow: hidden;
     font-size:12px;
 }
+
+#simulation-calculation-parameter-dialog .amp-input input{text-align: right;}
 
 #simulation-calculation-parameter-dialog .simulation-calculation-parameter-dialog-content{
     position:absolute;
@@ -301,7 +305,7 @@
     top:0;
     bottom:0;
 }
-#simulation-calculation-parameter-dialog .dialog-body .amp-form-group .amp-form-content input{
+#simulation-calculation-parameter-dialog .dialog-body .amp-form-group .amp-form-content>input{
     display:block;
     width:100%;
     height:34px;

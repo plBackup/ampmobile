@@ -33,7 +33,7 @@ projects.controller("pjHeadController",["$rootScope","$scope","$location","$stat
    };
 
 }]);
-projects.controller("pjListController",["$rootScope","$scope","$location","projectsData",function($rootScope,$scope,$location,projectsData){
+projects.controller("pjListController",["$rootScope","$scope","$location","$state","projectsData",function($rootScope,$scope,$location,$state,projectsData){
     var self=this;
     if(!$rootScope.projects){
         $rootScope.projects=projectsData["projects"];
@@ -48,9 +48,19 @@ projects.controller("pjListController",["$rootScope","$scope","$location","proje
     self.oRate="开业率";
     self.cRate="完成率";
 
-    self.projectUpdate=function(){
+    self.goProject=function(pid){
+        console.log("pid----------------");
+        console.log(pid);
+        $state.go("noi",{pid:pid});
+    };
+
+    self.updateProject=function(pid){
+        $state.go("projectupdate",{pid:pid});
+    };
+
+    self.projectUpdate=function(pid){
         console.log("project update----------------");
-        $location.path("projectupdate");
+        $state.go("projectupdate",{pid:pid});
     };
     self.projectCreate=function(){
         console.log("project create----------------");

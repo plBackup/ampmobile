@@ -5,6 +5,10 @@ ampApp.controller("rent-main-controller",["$scope","$http","$rootScope","$timeou
     $scope.rentList = [];
     $scope.investmentList = [];
     $scope.collapseTableList=[];
+    $scope.collapseTableForCommercial=true;
+
+    var collapseTableCommercialType = []; // 业态列表
+    var collapseTableFloor = []; // 楼层列表
 
     function initializeData(data){
         $scope.records = data.records;
@@ -12,7 +16,10 @@ ampApp.controller("rent-main-controller",["$scope","$http","$rootScope","$timeou
         $scope.squareRatePie = data.squareRatePie;
         $scope.rentList = data.rentList;
         $scope.investmentList = data.investmentList;
-        $scope.collapseTableList=data.collapseTable;
+
+        collapseTableCommercialType = data.collapseTableCommercialType;
+        collapseTableFloor = data.collapseTableFloor;
+        $scope.collapseTableList=collapseTableCommercialType;
 
         $scope.hasRentedSquare = parseFloat($scope.collapseTableList[$scope.collapseTableList.length-1].rentSquare);
         $scope.notRentedSquare = parseFloat($scope.collapseTableList[$scope.collapseTableList.length-1].totalRentSquare)-parseFloat($scope.collapseTableList[$scope.collapseTableList.length-1].rentSquare);
@@ -20,9 +27,23 @@ ampApp.controller("rent-main-controller",["$scope","$http","$rootScope","$timeou
     }
 
     /* ======================================== angular 注册事件 ======================================== */
+
+    $scope.switchCollapseTable = function(flag){
+        if($scope.collapseTableForCommercial==flag){
+            return;
+        }
+        $scope.collapseTableForCommercial = flag;
+
+        if($scope.collapseTableForCommercial){
+            $scope.collapseTableList=collapseTableCommercialType;
+        }else{
+            $scope.collapseTableList=collapseTableFloor;
+        }
+    };
+
     /* table 内容收起/展开 */
     $scope.collapseTable = function(item){
-        if(item.hasCollapseBtn){
+        /*if(item.hasCollapseBtn){
             item.collapsed = !item.collapsed;
             var groupId = item.dataGroup;
 
@@ -31,7 +52,25 @@ ampApp.controller("rent-main-controller",["$scope","$http","$rootScope","$timeou
                     itemRecord.hide=!itemRecord.hide;
                 }
             });
+        }*/
+
+        if(item.hasChildren){
+            item.collapsed = !item.collapsed; // 展开-折叠
+
+            $scope.collapseTableList.forEach(function(ele){
+                if(ele.parentId==item.id){
+                    ele.hide=!ele.hide;
+                    ele.collapsed = false;
+
+                    $scope.collapseTableList.forEach(function(e){
+                        if(e.parentId==ele.id){
+                            e.hide=true;
+                        }
+                    });
+                }
+            });
         }
+
     };
 
     $scope.showMgtAnalysisPanel = function(){

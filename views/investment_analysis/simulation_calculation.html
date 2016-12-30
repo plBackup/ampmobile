@@ -66,33 +66,33 @@
                 <div class="amp-form-group">
                     <label class="amp-form-label">收购价</label>
                     <div class="amp-form-content">
-                        <input type="number" ng-model="result.initialAnalysis.purchasingPrice"/>
+                        <div amp-input class="amp-input" input-type="float" input-fraction-size="2" input-model="result.initialAnalysis.purchasingPrice"></div>
                     </div>
                 </div><!-- amp-form-group -->
 
                 <div class="amp-form-group">
                     <label class="amp-form-label">加:收购费用</label>
                     <div class="amp-form-content">
-                        <input type="number" ng-model="result.initialAnalysis.purchasingFee"/>
+                        <div amp-input class="amp-input" input-type="float" input-fraction-size="2" input-model="result.initialAnalysis.purchasingFee"></div>
                     </div>
                 </div><!-- amp-form-group -->
 
                 <div class="amp-form-group">
                     <label class="amp-form-label">加:贷款费用</label>
                     <div class="amp-form-content">
-                        <input type="number" ng-model="result.initialAnalysis.loanFee"/>
+                        <div amp-input class="amp-input" input-type="float" input-fraction-size="2" input-model="result.initialAnalysis.loanFee"></div>
                     </div>
                 </div><!-- amp-form-group -->
 
                 <div class="amp-form-group">
                     <label class="amp-form-label amp-font-weight-bold amp-font-style-italic">原始基数</label>
-                    <div class="amp-form-content amp-text-align-right amp-font-color-grey" ng-bind="result.initialAnalysis.originBase">自动生成</div>
+                    <div class="amp-form-content amp-text-align-right amp-font-color-grey" ng-bind="result.initialAnalysis.originBase|numberFormatDefault:'-':2">自动生成</div>
                 </div><!-- amp-form-group -->
 
                 <div class="amp-form-group">
                     <label class="amp-form-label" style="padding-left:30px;">减:贷款金额</label>
                     <div class="amp-form-content">
-                        <input type="number" ng-model="result.initialAnalysis.loan"/>
+                        <div amp-input class="amp-input" input-type="float" input-fraction-size="2" input-model="result.initialAnalysis.loan"></div>
                     </div>
                 </div><!-- amp-form-group -->
 
@@ -100,7 +100,7 @@
                     <div class="amp-form-content clearfix">
                         <div class="input-wrapper input-wrapper-1">
                             <span>贷款利率</span>
-                            <input type="number" ng-model="result.initialAnalysis.loanRate"/>
+                            <div amp-input class="amp-input" input-type="float" input-fraction-size="2" input-model="result.initialAnalysis.loanRate"></div>
                             <em>%</em>
                         </div>
                     </div>
@@ -110,7 +110,7 @@
                     <div class="amp-form-content clearfix">
                         <div class="input-wrapper input-wrapper-2">
                             <span>期限</span>
-                            <input type="number" ng-model="result.initialAnalysis.loanYear"/>
+                            <div amp-input class="amp-input" input-type="float" input-fraction-size="2" input-model="result.initialAnalysis.loanYear"></div>
                             <em>年</em>
                         </div>
                     </div>
@@ -292,17 +292,18 @@
                     <div class="amp-form-group">
                         <label class="amp-form-label">业主要求的收益率</label>
                         <div class="amp-form-content">
-                            <input type="number" ng-model="result.parameterInfo.benefitRate"/>
+                            <div amp-input class="amp-input" input-type="float" input-fraction-size="2" input-model="result.parameterInfo.benefitRate"></div>
                         </div>
                     </div><!-- amp-form-group -->
 
                     <div class="amp-form-group">
                         <label class="amp-form-label">销售成本</label>
                         <div class="amp-form-content sale-form-content clearfix">
-                            <input type="number" class="sale-input"/>
+                            <div amp-input class="amp-input sale-input" input-type="float" input-fraction-size="2" input-model="result.parameterInfo.costValue"></div>
+
                             <div class="sale-cost-input-wrapper">
                                 <em>销售成本</em>
-                                <input type="number"/>
+                                <div amp-input class="amp-input" input-type="float" input-fraction-size="2" input-model="result.parameterInfo.costPercent"></div>
                             </div>
                         </div>
                     </div><!-- amp-form-group -->
@@ -312,7 +313,7 @@
                         <div class="output-rate-content-wrapper">
                             <div class="amp-form-content output-rate-content" ng-repeat="item in result.parameterInfo.outputCapitalizationRateList">
                                 <em>第{{item.year}}年,比率</em>
-                                <input type="number" ng-model="item.rate"/>
+                                <div amp-input class="amp-input" input-type="float" input-fraction-size="2" input-model="item.rate"></div>
                             </div>
                         </div><!-- output-rate-content-wrapper -->
                     </div><!-- amp-form-group -->

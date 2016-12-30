@@ -6,13 +6,28 @@
     </div>
 
     <div class="navbar-brand navbar-brand-center">
-        数据工具
+        管理工具
     </div>
 
-    <div class="btn-group pull-right">
+    <!--<div class="btn-group pull-right">
         <div class="btn btn-opt" ng-click="pCtrl.save()">
             保存
         </div>
+    </div>-->
+    <div class="btn-group pull-right">
+        <a ui-turn-on="irrDropdown" class="btn">
+            <i class="navOpt-icon navOpt-icon-doc"></i>
+        </a>
+        <ul ui-shared-state="irrDropdown"
+            class="dropdown-menu"
+            ui-outer-click="Ui.turnOff('irrDropdown')"
+            ui-outer-click-if="Ui.active('irrDropdown')"
+            role="menu"
+            ui-show="irrDropdown"
+            ui-turn-off="irrDropdown">
+            <li><a class="btn amp-header-btn" ng-click="pCtrl.save()"><i class="navOpt-icon navOpt-icon-save"></i>保存</a></li>
+            <li><a class="btn amp-header-btn" ng-click="pCtrl.count()" ng-disabled="irrForm.$invalid"><i class="navOpt-icon navOpt-icon-count"></i>计算</a></li>
+        </ul>
     </div>
 </div>
 
@@ -634,12 +649,12 @@
 
     </form>
 </div><!-- contentpanel -->
-<div ui-content-for="datatool-footer">
+<!--<div ui-content-for="datatool-footer">
     <div class="block bottom-block clearfix">
         <div class="btn-wrapper">
             <a class="btn amp-btn" id="btn-count" ng-click="pCtrl.count()" ng-disabled="irrForm.$invalid">计算</a>
         </div>
     </div>
-</div>
+</div>-->
 
 

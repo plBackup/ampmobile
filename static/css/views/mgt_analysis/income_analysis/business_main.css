@@ -1,5 +1,11 @@
 #business-main{position:relative;}
 
+#business-main .grey-bar{
+    height:10px;
+    background-color:#f2f5f7;
+}
+
+#business-main  .swiper-slide{width:auto;min-width: 100%;}
 
 /* ======================================== income-analysis-nav-bar ======================================== */
 #business-main .income-analysis-nav-bar{padding:0 50px;border-bottom:1px solid #dae2e7;}
@@ -194,6 +200,110 @@
 #business-main table tr:last-child td:first-child{
     color:#333;
 }
+
+
+/* ======================================== deduct-rent-store-rate-chart ======================================== */
+#business-main .deduct-rent-store-rate-chart .chart-content-wrapper{padding:0 15px 10px 15px;}
+#business-main .deduct-rent-store-rate-chart .chart-content{
+    width:100%;
+    min-width:600px ;
+    height:250px;
+}
+
+#business-main .deduct-rent-store-rate-chart .amp-chart-legend{
+    width:160px;
+    padding-bottom:10px;
+    margin:auto;
+}
+#business-main .deduct-rent-store-rate-chart .amp-chart-legend li{
+    position:relative;
+    height:28px;
+    line-height: 28px;
+    font-size:12px;
+    color: #8592a3;
+    float:left;
+    padding-left:15px;
+}
+#business-main .deduct-rent-store-rate-chart .amp-chart-legend li:last-child{float:right;}
+#business-main .deduct-rent-store-rate-chart .amp-chart-legend li:before{
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    width:8px;
+    height:8px;
+    margin:auto;
+}
+#business-main .deduct-rent-store-rate-chart .amp-chart-legend li:nth-child(1):before{background-color:#627d9b;}
+#business-main .deduct-rent-store-rate-chart .amp-chart-legend li:nth-child(2):before{background-color:#00b1f0;}
+
+
+
+
+/* ======================================== table-group ======================================== */
+#business-main .table-group{position:relative;padding-left:99px;}
+#business-main .table-group table{width:100%;}
+#business-main .table-group .table-left{position:absolute;left:0;top:0;width:99px;}
+#business-main .table-group .table-right{width:100%;overflow: auto;}
+
+#business-main .table-group th{
+    height:41px;
+    border-bottom:1px solid #dae2e7;
+    background-color:#f2f5f7;
+    font-size:12px;
+    color:#8592a3;
+    text-align: right;
+    padding:0 15px;
+    white-space: nowrap;
+}
+
+#business-main .table-group td{
+    height:50px;
+    text-align: right;
+    padding:0 15px!important;
+    font-size:12px;
+    white-space: nowrap;
+    background-color:#fff;
+}
+
+#business-main .table-group .table-left table tr.collapsed-record td:first-child:after{
+    content:"";
+    display:inline-block;
+    width:18px;
+    height:18px;
+    background:url(../../../../images/icon_chevron_down@2x.png) no-repeat center center;
+    background-size:contain;
+    margin-left: 8px;
+    vertical-align: -5px;
+}
+
+#business-main .table-group .table-left table tr.collapsed-record.collapsed td:first-child:after{
+    background-image:url(../../../../images/icon_chevron_up@2x.png);
+}
+
+
+
+#business-main .table-group .table-left table{width:100%;}
+#business-main .table-group .table-left th,
+#business-main .table-group .table-left td{
+    text-align: left;
+    padding:0 0 0 15px;
+    border-right:1px solid #dae2e7;
+}
+
+#business-main .table-group .table-left table tr.record-group-sub td{
+    padding-left:20px;
+}
+
+
+#business-main .table-group tr:last-child td{font-weight: normal;font-style: normal;color:#333;}
+#business-main .table-group .table-right tr th,
+#business-main .table-group .table-right tr td{border-right:none;text-align: right;padding:0 15px;}
+
+#business-main .table-group.deduct-rent-store-rate-table .table-right tr th:nth-child(2),
+#business-main .table-group.deduct-rent-store-rate-table .table-right tr td:nth-child(2){border-right:1px solid #dae2e7;}
+
 
 /* ======================================== business-query-panel ======================================== */
 .amp-right-panel .business-query-panel{

@@ -51,6 +51,8 @@ i.amp-menu-data{background-image:url(../images/menu_data@2x.png);}
 
 .navOpt-icon-filter:before{background-image:url(../images/icon_filter@2x.png);}
 .navOpt-icon-doc:before{background-image:url(../images/icon_doc_create@2x.png);}
+.navOpt-icon-count:before{background-image:url(../images/icon_pie@2x.png)}
+.navOpt-icon-save:before{background-image:url(../images/icon_input@2x.png)}
 /*回退按钮*/
 .navOpt-icon-back:before{background-image:url(../images/icon_logo_back@2x.png);}
 .navOpt-icon-home:before{background-image:url(../images/icon_projects@2x.png);}

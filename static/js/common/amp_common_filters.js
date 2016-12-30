@@ -9,7 +9,8 @@
         return function (number,placeholder,fractionSize) {
 
 
-            if (number==null||number==""||new String(number).indexOf(" ")>0||isNaN(number)) {
+
+            if (number==null||number===""||new String(number).indexOf(" ")>0||isNaN(number)) {
                 return placeholder;
             }
 

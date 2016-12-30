@@ -32,7 +32,7 @@
                         }
                     }
 
-                    if(newVal!=null&&newVal!=""&&inputType=="integer"){// 验证浮点数
+                    if(newVal!=null&&newVal!=""&&inputType=="float"){// 验证浮点数
                         var floatPattern = new RegExp("^(-?\\d+)(\\.\\d+)?$","g");
                         if(!floatPattern.test(newVal)){
                             $(ele).addClass("amp-input-error");

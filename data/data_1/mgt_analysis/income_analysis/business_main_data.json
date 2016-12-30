@@ -226,5 +226,28 @@
       "curOfficialReceipts": "124.3312",
       "curReceivable": "217.6840"
     }
+  ],
+  "deductRentStoreRateTable":[
+    {
+      "type":"固定租金",
+      "storeNo":123223333333,
+      "storeRate":"30%",
+      "rentTotal":123223333333,
+      "rentRate":"30%"
+    },
+    {
+      "type":"提成租金",
+      "storeNo":1243,
+      "storeRate":"30%",
+      "rentTotal":12322,
+      "rentRate":"30%"
+    },
+    {
+      "type":"两者取高",
+      "storeNo":1243,
+      "storeRate":"30%",
+      "rentTotal":12322,
+      "rentRate":"30%"
+    }
   ]
 }

@@ -5,7 +5,7 @@
 }
 
 /* ======================================== amp-input-group-list ======================================== */
-#cost-enrolment .amp-input-group-list{padding-left:15px;}
+#cost-enrolment .amp-input-group-list{}
 
 #cost-enrolment .amp-input-group li{
     position:relative;
@@ -15,6 +15,17 @@
     float:left;
     padding-right:30px;
     padding-top:10px;
+}
+
+#cost-enrolment .amp-input-group li.first-item:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 1px;
+    width: 15px;
+    background-color: #fff;
+    z-index: 9;
 }
 
 #cost-enrolment .amp-input-group li.whole-column{width:100%;}
@@ -30,11 +41,10 @@
     background-size:contain;
     margin:auto;
 }
-
+#cost-enrolment .amp-input-group li>div{padding-left:15px;}
 #cost-enrolment .amp-input-group li:nth-child(2)>div{height:54px;}
 #cost-enrolment .amp-input-group li:nth-child(2)>div{
     border-left:1px solid #dae2e7;
-    padding-left:15px;
 }
 
 #cost-enrolment .amp-input-group li em{display:block;height:24px;line-height: 24px;font-size:12px;color:#8592a3;}
@@ -48,6 +58,11 @@
     border: none;
     padding:0;
 }
+
+/*日历控件*/
+#cost-enrolment .amp-date-input-default{background-color:transparent;}
+#cost-enrolment .amp-date-input-default input{padding-left:0!important;}
+#cost-enrolment .td-input-wrapper.date-input:after{display:none;}
 
 /* ======================================== cost-enrolment-floor-panel ======================================== */
 .amp-right-panel .cost-enrolment-floor-panel{

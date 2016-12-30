@@ -21,6 +21,11 @@ function bindMgtAnalysisPageEvent(){
         console.log(1);
         $(contractStatisticsPanelWrapper).find(".contract-statistics-panel .panel-content").addClass("amp-slide-up-out");
     });
+
+    $("body").on("touchstart touchend touchmove click",".dw-persp",function(e){
+        e.stopPropagation();
+        e.preventDefault();
+    });
 }
 
 /* 显示管理分析统计panel */

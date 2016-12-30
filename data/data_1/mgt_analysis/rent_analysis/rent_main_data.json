@@ -343,10 +343,11 @@
       "finishRate": "76%"
     }
   ],
-  "collapseTable": [
+  "collapseTableCommercialType": [
     {
-      "hasCollapseBtn": true,
-      "dataGroup": 1,
+      "parentId":null,
+      "id": 1,
+      "hasChildren":true,
       "rentSquare": "3305.53",
       "rentCount": "1",
       "rentPriceAvg": "0",
@@ -355,7 +356,11 @@
       "projectName": "主力店"
     },
     {
+      "parentId":1,
+      "id": 11,
+      "hasChildren":true,
       "hide": true,
+      "level2":true,
       "dataGroup": 1,
       "rentSquare": "-",
       "rentCount": "-",
@@ -366,7 +371,36 @@
     },
     {
       "hide": true,
-      "dataGroup": 1,
+      "parentId":11,
+      "level3":true,
+      "id": 111,
+      "hasChildren":false,
+      "rentSquare": "-",
+      "rentCount": "-",
+      "rentPriceAvg": "-",
+      "rentRate": "-",
+      "totalRentSquare": "0",
+      "projectName": "5F"
+    },
+    {
+      "hide": true,
+      "parentId":11,
+      "id": 112,
+      "level3":true,
+      "hasChildren":false,
+      "rentSquare": "-",
+      "rentCount": "-",
+      "rentPriceAvg": "-",
+      "rentRate": "-",
+      "totalRentSquare": "0",
+      "projectName": "4F"
+    },
+    {
+      "hide": true,
+      "parentId":1,
+      "id": 12,
+      "hasChildren":true,
+      "level2":true,
       "rentSquare": "3305.53",
       "rentCount": "1",
       "rentPriceAvg": "0",
@@ -375,8 +409,9 @@
       "projectName": "影院"
     },
     {
-      "hasCollapseBtn": true,
-      "dataGroup": 2,
+      "parentId":null,
+      "id": 2,
+      "hasChildren":true,
       "rentSquare": "55330.380000000005",
       "rentCount": "242",
       "rentPriceAvg": "179.88",
@@ -386,7 +421,10 @@
     },
     {
       "hide": true,
-      "dataGroup": 2,
+      "parentId":2,
+      "id": 21,
+      "hasChildren":true,
+      "level2":true,
       "rentSquare": "25382.43",
       "rentCount": "134",
       "rentPriceAvg": "207.86",
@@ -396,7 +434,10 @@
     },
     {
       "hide": true,
-      "dataGroup": 2,
+      "parentId":2,
+      "id": 22,
+      "level2":true,
+      "hasChildren":true,
       "rentSquare": "7771",
       "rentCount": "18",
       "rentPriceAvg": "169.51",
@@ -406,7 +447,10 @@
     },
     {
       "hide": true,
-      "dataGroup": 2,
+      "parentId":2,
+      "id": 23,
+      "hasChildren":true,
+      "level2":true,
       "rentSquare": "11154.95",
       "rentCount": "20",
       "rentPriceAvg": "132.21",
@@ -416,7 +460,10 @@
     },
     {
       "hide": true,
-      "dataGroup": 2,
+      "parentId":2,
+      "id": 24,
+      "hasChildren":true,
+      "level2":true,
       "rentSquare": "11022",
       "rentCount": "70",
       "rentPriceAvg": "209.94",
@@ -425,7 +472,72 @@
       "projectName": "配套"
     },
     {
-      "dataGroup": 3,
+      "parentId":null,
+      "id": 3,
+      "hasChildren":false,
+      "rentSquare": "58636",
+      "rentCount": "242",
+      "rentPriceAvg": "180",
+      "rentRate": "76%",
+      "totalRentSquare": "76658",
+      "projectName": "合计"
+    }
+  ],
+  "collapseTableFloor": [
+    {
+      "parentId":null,
+      "id": 1,
+      "hasChildren":true,
+      "rentSquare": "3305.53",
+      "rentCount": "1",
+      "rentPriceAvg": "0",
+      "rentRate": "50%",
+      "totalRentSquare": "6611.06",
+      "projectName": "1F"
+    },
+    {
+      "parentId":1,
+      "id": 11,
+      "hasChildren":false,
+      "hide": true,
+      "level2":true,
+      "dataGroup": 1,
+      "rentSquare": "-",
+      "rentCount": "-",
+      "rentPriceAvg": "-",
+      "rentRate": "-",
+      "totalRentSquare": "0",
+      "projectName": "超市"
+    },
+    {
+      "parentId":1,
+      "id": 12,
+      "hasChildren":false,
+      "hide": true,
+      "level2":true,
+      "dataGroup": 1,
+      "rentSquare": "-",
+      "rentCount": "-",
+      "rentPriceAvg": "-",
+      "rentRate": "-",
+      "totalRentSquare": "0",
+      "projectName": "配套"
+    },
+    {
+      "parentId":null,
+      "id": 2,
+      "hasChildren":true,
+      "rentSquare": "3305.53",
+      "rentCount": "1",
+      "rentPriceAvg": "0",
+      "rentRate": "50%",
+      "totalRentSquare": "6611.06",
+      "projectName": "2F"
+    },
+    {
+      "parentId":null,
+      "id": 3,
+      "hasChildren":false,
       "rentSquare": "58636",
       "rentCount": "242",
       "rentPriceAvg": "180",

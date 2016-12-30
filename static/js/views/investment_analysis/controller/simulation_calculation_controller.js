@@ -11,9 +11,7 @@ ampApp.controller("simulation-calculation-controller",["$scope","$http","$rootSc
         $scope.result = caseInfo||data;
 
 
-        var invokeCount = 0;
         $scope.$watch("result",function(newVal, oldVal,scope){
-            console.log(++invokeCount);
             simulationCalculationService.resetInitialAnalysis($scope.result); // 重新设置 期初分析
             simulationCalculationService.recalculateIncomeExpense($scope.result); // 重新设置 收支模拟
             simulationCalculationService.resetLoanRepaymentAnalysis($scope.result); // 重新设置 贷款分期还款

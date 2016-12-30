@@ -52,6 +52,9 @@ angular.module('projects').directive('pieChart', ["projectService",
                     //console.log(newVal);
                     if (newVal) {
                         var chartData=parseFloat($scope.chartData)*100;//project.openRate,
+                        if(chartData>=100){
+                            chartData=100;
+                        }
                         var chartData_un=100-chartData;
                         var chartName=$scope.chartName;
                         var data=[

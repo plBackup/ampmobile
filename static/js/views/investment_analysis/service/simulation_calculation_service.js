@@ -146,6 +146,7 @@
 
                 var costValue = data.parameterInfo.costValue;
                 var costPercent = data.parameterInfo.costPercent;
+
                 var saleCost = 0;
                 if(CommonUtil.isNumber(salePrice)&&CommonUtil.isNumber(costPercent)){
                     saleCost = salePrice*costPercent/100;

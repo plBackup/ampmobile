@@ -46,14 +46,20 @@
                 </div><!-- swiper-container -->
             </div><!-- pie-group -->
 
+            <div class="grey-bar"></div>
+
+            <ul class="btn-group clearfix">
+                <li class="btn-group-item"><a ng-class="{'active':collapseTableForCommercial}" ng-click="switchCollapseTable(true)">业态</a></li>
+                <li class="btn-group-item"><a ng-class="{'active':!collapseTableForCommercial}" ng-click="switchCollapseTable(false)">楼层</a></li>
+            </ul>
 
             <div class="table-group table-group-multiple commercial-table-group">
                 <div class="table-left">
                     <table>
                         <tbody>
                             <tr><th>项目</th></tr>
-                            <tr ng-click="collapseTable(item)" ng-class="{'record-group':item.hasCollapseBtn,'amp-display-none':item.hide,'collapsed':item.collapsed}" data-group="{{item.dataGroup}}"  ng-repeat="item in collapseTableList">
-                                <td data-type="{{item.commercialType}}">{{item.projectName}}</a></td>
+                            <tr ng-click="collapseTable(item)" ng-class="{'collapsed-record':item.hasChildren,'amp-display-none':item.hide,'collapsed':item.collapsed}"  ng-repeat="item in collapseTableList">
+                                <td ng-class="{'amp-font-weight-bold':!item.parentId,'amp-font-color-blue':!item.hasChildren&&item.parentId,'padding-level-2':item.level2,'padding-level-3':item.level3}" data-type="{{item.commercialType}}">{{item.projectName}}</a></td>
                             </tr>
                         </tbody>
                     </table>
@@ -74,7 +80,7 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                        <tr ng-click="collapseTable(item)" ng-class="{'record-group':item.hasCollapseBtn,'amp-display-none':item.hide,'collapsed':item.collapsed}" data-group="{{item.dataGroup}}"  ng-repeat="item in collapseTableList">
+                                        <tr ng-click="collapseTable(item)" ng-class="{'collapsed-record':item.hasChildren,'amp-display-none':item.hide,'collapsed':item.collapsed}" ng-repeat="item in collapseTableList">
                                             <td>{{item.totalRentSquare|numberFormatDefault:"-":0}}</td>
                                             <td>{{item.rentSquare|numberFormatDefault:"-":0}}</td>
                                             <td>{{item.rentRate}}</td>
