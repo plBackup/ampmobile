@@ -32,52 +32,48 @@
 </div>
 <!--<span style="display:block;position:fixed;left:0;top:150px;padding-left:15px;padding-right:15px;width:100%;height:40px;line-height:40px;background-color:#f3f4f8;z-index:3999;color:#8592a3;overflow: inherit;">x开业后顺延年NOI</span>-->
 
-<div  ui-content-for="irrplanTableHeader">
-    <div class="ys-table-fixed-top" style="padding-left:150px;position: absolute;width:100%;top: 82px;z-index: 1999;">
-        <div class="ys-table-static ys-table-static-left" style="width:150px;">
-            <table class="table table-no-bordered amp-table table-hover table-header-fixed amp-irr-finacial-table" style="width:150px;position: absolute;left: 0;top: 0;">
-                <thead>
-                <tr>
-                    <th><span>开业后顺延年NOI</span></th>
-                </tr>
-                </thead>
-            </table>
-        </div>
-
-        <div class="swiper-container" style="" id="irr-plan-table-head">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <table class="table table-no-bordered amp-table table-hover table-header-fixed amp-irr-finacial-table" style="width:1500px;" >
-                        <thead>
-                        <tr id="irr-year">
-                            <th class="text-right">备注</th>
-                            <th>第1年</th>
-                            <th>第2年</th>
-                            <th>第3年</th>
-                            <th>第4年</th>
-                            <th>第5年</th>
-
-                            <th>第6年</th>
-                            <th>第7年</th>
-                            <th>第8年</th>
-                            <th>第9年</th>
-                            <th>第10年</th>
-                        </tr>
-                        </thead>
-                    </table>
-                </div><!--swiper-slide-->
-            </div><!--swiper-wrapper-->
-        </div><!--swiper container-->
-    </div>
-</div>
-
 <div class="amp-content-panel" id="irr-plan">
     <form name="irrForm" novalidate>
         <div class="amp-block">
-            <div class="amp-table-wrapper-swiper" id="irr-plan-table-wrapper" style="height:2580px;">
+            <div class="amp-table-wrapper-swiper" id="irr-plan-table-wrapper" style="/*height:2580px;*/overflow: auto;">
+                <div class="ys-table-fixed-top" style="padding-left:150px;position: absolute;top:0;">
+                    <div class="ys-table-static ys-table-static-left" style="width:150px;">
+                        <table class="table table-no-bordered amp-table table-hover table-header-fixed amp-irr-finacial-table" style="width:150px;">
+                            <thead>
+                            <tr>
+                                <th><span>开业后顺延年NOI</span></th>
+                            </tr>
+                            </thead>
+                        </table>
+                    </div>
 
-                <div class="ys-table-main" style="padding-left:150px;">
-                    <div class="ys-table-static ys-table-static-left swiper-container ys-scroller" style="width:150px;">
+                    <div class="swiper-container" style="" id="irr-plan-table-head">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <table class="table table-no-bordered amp-table table-hover table-header-fixed amp-irr-finacial-table" style="width:1500px;" >
+                                    <thead>
+                                    <tr id="irr-year">
+                                        <th class="text-right">备注</th>
+                                        <th>第1年</th>
+                                        <th>第2年</th>
+                                        <th>第3年</th>
+                                        <th>第4年</th>
+                                        <th>第5年</th>
+
+                                        <th>第6年</th>
+                                        <th>第7年</th>
+                                        <th>第8年</th>
+                                        <th>第9年</th>
+                                        <th>第10年</th>
+                                    </tr>
+                                    </thead>
+                                </table>
+                            </div><!--swiper-slide-->
+                        </div><!--swiper-wrapper-->
+                    </div><!--swiper container-->
+                </div>
+                <div class="ys-table-main" style="padding-left:150px;overflow:auto;height:100%;color:#fff;z-index:1999;">
+                    <div class="ys-table-static ys-table-static-left swiper-container ys-scroller" style="width:150px;height:2536px;">
                         <table class="table table-no-bordered amp-table table-hover amp-irr-finacial-table" style="">
                             <tbody>
                             <tr class="tr-main" data-index="1">
@@ -292,7 +288,7 @@
                         </table>
                     </div>
 
-                    <div class="swiper-container ys-scroller" id="irr-plan-main-table">
+                    <div class="swiper-container ys-scroller" id="irr-plan-main-table" style="height:2536px;">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <table class="table table-no-bordered amp-table table-hover amp-irr-finacial-table"  style="width:1500px;">

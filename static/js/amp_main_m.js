@@ -562,6 +562,22 @@ ampApp.config(function($stateProvider,$urlRouterProvider,$httpProvider) {
         }
     });
 
+    // 管理分析 - 租赁分析 - 商户销售 - 排名
+    $stateProvider.state({
+        name:"merchant_sale_rank",
+        url: "/merchant_sale_rank",
+        views:{
+            "header":{
+                templateUrl:"./views/mgt_analysis/rent_analysis/merchant_sale_rank_header.html"
+            },
+            "content": {
+                templateUrl:"./views/mgt_analysis/rent_analysis/merchant_sale_rank.html",
+                controller:"merchant-sale-rank-controller"
+            }
+        }
+    });
+
+
     // 管理分析 - 租赁分析 - 欠费明细
     $stateProvider.state({
         name:"arrears_detail_list",

@@ -13,6 +13,8 @@
 #project-list .amp-section-header h3{margin-bottom:0;line-height:30px;font-size:16px;}
 #project-list .amp-section-header h3>em,#project-list .amp-section-header h3>div.amp-project-opt{display:block;float:left;}
 
+#project-list .amp-section-header h3>em{max-width: 150px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+
 #project-list .amp-section-header em.amp-figure{display: block;height:34px;width:34px;float: right;border-radius: 34px;position: relative;top:-4px;
     background-image:url(../../images/figure_default.png);background-size:cover;background-repeat: no-repeat;background-position: center center;}
 #project-list .amp-section-content{padding: 15px 0;}

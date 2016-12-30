@@ -280,7 +280,7 @@
 
     <form name="noiFilterForm" novalidate>
         <div class="amp-panel-content">
-            <div class="amp-filter-list">
+            <div class="amp-filter-list" ui-outer-click="noiCtrl.hideMonthSelector()">
                 <div class="toolbar-block" month-picker="" month-select="noiCtrl.selectedMonth({date:date})" ng-model="noiCtrl.curMonth" cur-month="{{noiCtrl.curMonth}}">
                 </div>
             </div>

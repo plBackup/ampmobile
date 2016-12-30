@@ -31,6 +31,10 @@ ampApp.controller("merchant-sale-main-controller",["$scope","$http","$rootScope"
         hideMgtAnalysisMenuList();
     };
 
+    $scope.goToRankPage = function(){
+        $location.path("/merchant_sale_rank");
+    };
+
     $scope.goToMerchantSaleTypeList = function(item){
         if(item.subRecord){
             var type = item.commercialTypeName;

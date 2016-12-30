@@ -1,0 +1,54 @@
+<div id="merchant-sale-rank">
+
+    <ul class="page-navigation-bar clearfix">
+        <li><a ng-class="{'active':display.sale}" ng-click="switchData('sale')" href="javascript:void(0)">销售额(元)</a></li>
+        <li><a ng-class="{'active':display.performance}" ng-click="switchData('performance')" href="javascript:void(0)">平效</a></li>
+        <li><a ng-class="{'active':display.rate}" ng-click="switchData('rate')" href="javascript:void(0)">租售比</a></li>
+    </ul>
+
+    <div class="scrollable">
+        <div class="scrollable-content section" >
+            <div class="rank-title">前十</div>
+            <ul class="rank-item-list">
+                <li class="rank-item" ng-repeat="item in selectedResult.top">
+                    <em class="rank-index">{{item.index}}</em>
+                    <span class="merchant-name">{{item.merchantName}}</span>
+                    <em class="rank-value">{{item.rankValue}}</em>
+                </li>
+            </ul><!-- rank-item-list -->
+
+            <div class="rank-title">后十</div>
+            <ul class="rank-item-list">
+                <li class="rank-item" ng-repeat="item in selectedResult.bottom">
+                    <em class="rank-index">{{item.index}}</em>
+                    <span class="merchant-name">{{item.merchantName}}</span>
+                    <em class="rank-value">{{item.rankValue}}</em>
+                </li>
+            </ul><!-- rank-item-list -->
+        </div><!-- scrollable-content -->
+    </div><!-- scrollable -->
+
+    <div ui-content-for="amp-right-panel">
+        <div class="merchant-sale-rank-right-panel">
+
+            <div class="query-section commercial-type-section" >
+                <div class="query-section-title">业态</div>
+                <div class="query-section-content">
+                    <ul class="clearfix">
+                        <li><a>超市</a></li>
+                        <li><a class="active">影院</a></li>
+                        <li><a>餐饮</a></li>
+                        <li><a>儿童</a></li>
+                        <li><a>服装</a></li>
+                        <li><a>配套</a></li>
+                    </ul>
+                </div><!-- query-section-content -->
+            </div><!-- rent-type-section -->
+
+            <div class="btn-group clearfix">
+                <a class="ok-btn" href="javascript:void(0)" ui-turn-off="uiSidebarRight">确定</a>
+            </div>
+        </div><!-- query-panel -->
+    </div><!-- amp-right-panel -->
+
+</div><!-- simulation-calculation-list-header -->

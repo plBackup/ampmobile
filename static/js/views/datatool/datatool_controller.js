@@ -320,16 +320,16 @@ var irr_plan=(function($,irr_plan){
             irr_plan_main_swiper:irr_plan_main_swiper
         };
 
-        pin=$(".ys-table-fixed-top").pin({
+      /*  pin=$(".ys-table-fixed-top").pin({
             containerSelector: "#irr-plan-table-wrapper",
             padding: {top: 44, bottom: 50}
-        });
+        });*/
 
         var defer=null;
         function _swiperUpdate(){
             /* irr_plan_head_swiper.update();
              irr_plan_main_swiper.update();*/
-            pin.refresh();
+            //pin.refresh();
         };
         $(window).resize(function(){
             if(!defer){
@@ -405,6 +405,8 @@ var irr_plan=(function($,irr_plan){
         irr_plan_head_swiper.destroy(true,true);
         irr_plan_main_swiper.destroy(true,true);
     };
+
+
     irr_plan.init=function(){
 
         irr_plan.swiper_init();
@@ -1810,9 +1812,12 @@ dataTool.controller("irrPlanController",['$rootScope', '$scope',"irrPlanData","$
                 }
             );
         });
+        $timeout(function(){
+            irr_plan.init();
+            self.count();
+        },800);
 
-        irr_plan.init();
-        self.count();
+
         $scope.$on("$destroy", function() {
             irr_plan.destroy();
         });
