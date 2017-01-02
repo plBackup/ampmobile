@@ -168,6 +168,7 @@
 
 #noi ul.amp-report{padding-left:10px;}
 #noi ul.amp-report>li{height:44px;line-height: 44px;border-bottom:solid 1px #e4e7ea;color:#8592a3;font-size: 13px;}
+#noi ul.amp-report>li:nth-last-child(1){border-bottom:0;}
 #noi .chart-wrapper{padding:15px 0;}
 
 .chart-legend em.color-label {
