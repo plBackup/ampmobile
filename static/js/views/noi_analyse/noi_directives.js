@@ -151,7 +151,7 @@ angular.module('noi').directive('noiPieChart', ["noiService",
             link: function($scope, $element) {
 
                 var dataSimChart = echarts.init($element[0]);
-
+                console.log("pie chart------------");
                 var chartData=$scope.chartData;//area,
                 var chartName=$scope.chartName||"租赁面积情况";
                 console.log(chartName);

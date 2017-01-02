@@ -5,7 +5,7 @@ angular.module('noi').service('noiService', function($rootScope,$http) {
 
     var service = {
         getAllData: function() {
-            return $http.get('../data/data_'+$rootScope.curProject+'/noi/noi_all.json', { cache: true }).then(function(res) {
+            return $http.get('./data/data_'+$rootScope.curProject+'/noi/noi_all.json', { cache: true }).then(function(res) {
                 return res.data;
             });
         },
@@ -994,7 +994,7 @@ angular.module('noi').service('noiService', function($rootScope,$http) {
                             name: '',
                             type: 'pie',
                             radius : ['60%','86%'],
-                            center: ['70%', '50%'],
+                            center: ['50%', '50%'],
                             selectedOffset:0,
                             data:[
                             ],
