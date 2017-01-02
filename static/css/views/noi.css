@@ -140,3 +140,28 @@
 #noi .modal-overlay .col-xs-4>table > tbody > tr > th span{display:block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
 /*modal里折叠按钮隐藏*/
 #noi .modal-overlay  table  .icon-menu-down{display: none;}
+
+#noi .amp-tab-nav {
+    height: 50px;
+    background-color: #fff;
+    border-bottom: solid 10px #f3f4f8;
+}
+#noi .amp-tab-nav ul{border-bottom:0;}
+#noi .amp-tab-nav ul>li {
+    text-align: center;
+    width:33.3333%;
+}
+#noi .amp-tab-nav ul>li a {
+    display: inline-block;
+    padding:0;
+    border:0;
+    height: 40px;
+    line-height: 38px;
+    border-bottom: solid 2px transparent;
+    color: #717d8d;
+}
+#noi .amp-tab-nav ul>li a:hover,#noi .amp-tab-nav ul>li a:focus,#noi .amp-tab-nav ul>li a:active{background-color:transparent;}
+#noi .amp-tab-nav ul>li a.active {
+    border-bottom: solid 2px #59b46f;
+    color: #59b46f;
+}

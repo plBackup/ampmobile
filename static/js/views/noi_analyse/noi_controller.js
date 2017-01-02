@@ -55,6 +55,8 @@ noi.controller('noiController', ['$rootScope', '$scope',"$timeout","noiAllData",
         self.arrearageData=noiAllData.arrearage;
         self.chartData=noiAllData.chart;
 
+        self.reports=noiAllData.report;
+
         self.isSplit=function(index){
             return (index+1)%4==0;
         };

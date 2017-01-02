@@ -92,36 +92,13 @@
             </div><!--swiper-wrapper-->
             <div class="swiper-pagination"></div>
         </div>
-        <div class="amp-tab-nav" ui-shared-state="activeNav" default="1">
-          <!--  <ui-shared-state id="activeNav" default="1"></ui-shared-state>-->
-            <ul class="nav nav-tabs">
-                <li ui-class="{'active': activeNav ==1}">
-                    <a ui-set="{'activeNav': 1}" ui-class="{'active': activeNav ==1}">关注说明</a>
-                </li>
-                <li ui-class="{'active': activeNav == 2}">
-                    <a ui-set="{'activeNav': 2}" ui-class="{'active': activeNav == 2}">财务细节</a>
-                </li>
-                <li ui-class="{'active': activeNav == 3}">
-                    <a ui-set="{'activeNav': 3}" ui-class="{'active': activeNav == 3}">执行状况</a>
-                </li>
-            </ul>
-        </div>
     </div>
 
-    <div class="scrollable-content" id="noiPage">
-        <div class="amp-content-panel noi-view"  ui-if="activeNav == 1">
+    <div class="scrollable-content">
+        <div class="amp-content-panel noi-view" id="noiPage">
             <div class="amp-block">
-                <ul class="amp-report clearfix">
-                    <li ng-repeat="item in noiCtrl.reports" class="amp-report-item" ng-class="{'amp-report-warn':item.warn==true}">
-                        <span>{{item.info}}</span>
-                    </li>
-                </ul>
-            </div>
-        </div><!---关注说明-->
-        <div class="amp-content-panel noi-view"  ui-if="activeNav == 2">
-            <div class="amp-block">
-                <div class="amp-tab-pages" id="amp-tab-noi" ui-shared-state="activeTab" default="1">
-                   <!-- <ui-shared-state id="activeTab" default="1"></ui-shared-state>-->
+                <div class="amp-tab-pages" id="amp-tab-noi">
+                    <ui-shared-state id="activeTab" default="1"></ui-shared-state>
                     <ul class="nav nav-tabs">
                         <li ui-class="{'active': activeTab == 1}" >
                             <a ui-set="{'activeTab': 1}" ng-click="noiCtrl.setActiveTab(1)"><em><</em>2016-08</a>
@@ -276,7 +253,7 @@
                 </div>
             </div><!--ys-block-->
 
-          <!--  <div class="amp-block clearfix">
+            <div class="amp-block clearfix">
                 <div class="amp-block-title">
                     <h3 class="col-xs-12">NOI实际与方案(一、二、三)对比</h3>
                 </div>
@@ -292,122 +269,9 @@
                         <span><em class="color-label" style="background-color:#feb739;"></em><i class="name">方案3</i></span>
                     </div>
                 </div>
-            </div>-->
+            </div>
 
-        </div><!-- amp-content-panel 财务细节-->
-
-        <div class="amp-content-panel noi-view"  ui-if="activeNav == 3">
-            <div class="amp-block clearfix" style="">
-                <div class="amp-section amp-chart-section clearfix">
-                    <div class="amp-section-title clearfix">
-                        <h3 class="col-xs-4">NOI实际与方案（一、二、三）对比</h3>
-                    </div>
-                    <div class="col-xs-12 chart-wrapper" id="noi-chart-wrapper" >
-
-                        <em class="chart-axis-info chart-axis-y-info">万元</em>
-                        <div id="noi-chart" style="height:310px;" noi-line-chart
-                             chart-data="noiCtrl.chartData.noi" chart-name="NOI实际与方案（一、二、三）对比"></div>
-
-                        <div class="chart-legend pull-right">
-                            <span><em class="color-label" style="background-color:#60cd7a;"></em><i class="name">NOI实际</i></span>
-                            <span><em class="color-label" style="background-color:#5dbaf7;"></em><i class="name">方案1</i></span>
-                            <span><em class="color-label" style="background-color:#fd7170;"></em><i class="name">方案2</i></span>
-                            <span><em class="color-label" style="background-color:#feb739;"></em><i class="name">方案3</i></span>
-                        </div>
-                    </div><!--noi-chart-wrapper-->
-                </div><!--amp-section-->
-
-                <div class="amp-section amp-chart-section clearfix">
-                    <div class="amp-section-title clearfix">
-                        <h3 class="col-xs-4">收入/费用</h3>
-
-                    </div>
-                    <div class="col-xs-12 chart-wrapper" id="noi-chart-wrapper-fee" >
-
-                        <em class="chart-axis-info chart-axis-y-info">万元</em>
-                        <div id="noi-chart-fee" style="height:310px;" income-line-chart
-                             chart-data="noiCtrl.chartData.incomeFee"  ></div>
-                        <div class="chart-legend pull-right">
-
-                            <span><em class="color-label" style="background-color:#58d3f4;"></em><i class="name">收入</i></span>
-                            <span><em class="color-label" style="background-color:#59719d;"></em><i class="name">收入预算</i></span>
-                            <span><em class="color-label" style="background-color:#68cd7f;"></em><i class="name">开支</i></span>
-                            <span><em class="color-label" style="background-color:#bcc5aa;"></em><i class="name">开支预算</i></span>
-                        </div>
-                    </div><!--noi-chart-wrapper-->
-                </div><!--amp-section-->
-
-                <div class="amp-section amp-chart-section clearfix">
-                    <div class="amp-section-title clearfix">
-                        <h3 class="col-xs-4">销售概况</h3>
-
-                    </div>
-                    <div class="col-xs-12 chart-wrapper" id="noi-chart-wrapper-sales" >
-
-                        <em class="chart-axis-info chart-axis-y-info">销售(万元)</em>
-                        <em class="chart-axis-info chart-axis-y-info-2" style="right:35px;left:inherit;">客流/会员</em>
-                        <div id="noi-chart-sales" style="height:310px;" sales-flow-chart
-                             chart-data="noiCtrl.chartData.sales"  chart-name="销售概况"></div>
-                        <div class="chart-legend pull-right">
-
-                            <span><em class="color-label" style="background-color:#00b1ef;"></em><i class="name">销售</i></span>
-                            <span><em class="color-label" style="background-color:#69ce80;"></em><i class="name">客流</i></span>
-                            <span><em class="color-label" style="background-color:#a6ec67;"></em><i class="name">会员</i></span>
-                        </div>
-                    </div><!--noi-chart-wrapper-->
-                </div><!--amp-section-->
-
-                <div class="amp-section amp-chart-section clearfix">
-                    <div class="amp-section-title clearfix">
-                        <h3 class="col-xs-4">平均租金对比</h3>
-                    </div>
-                    <div class="col-xs-12 chart-wrapper" id="noi-chart-wrapper-rent" >
-
-                        <em class="chart-axis-info chart-axis-y-info">万元</em>
-                        <div id="noi-chart-rent" style="height:310px;" rent-line-chart
-                             chart-data="noiCtrl.chartData.rent" ></div>
-
-                    </div><!--noi-chart-wrapper-->
-                </div><!--amp-section-->
-            </div><!--amp-block-pd-->
-
-            <div class="amp-block">
-                <div class="amp-block-title clearfix">
-                    <h3 class="col-xs-4">指数图示</h3>
-                </div>
-                <div class="amp-section">
-                    <div class="amp-section-title">
-                        <h3 class="col-xs-4">租赁面积情况</h3>
-                    </div>
-                    <div class="amp-section-content clearfix">
-                        <div class="col-xs-6 chart-wrapper" id="noi-chart-wrapper-rate" >
-                            <div id="noi-chart-rate" style="height:310px;" noi－pie-chart
-                                 chart-data="noiCtrl.chartData.area" ></div>
-                            <em class="em-pie-title">面积占比</em>
-                        </div><!--noi-chart-wrapper-->
-                        <ul class="chart-legend chart-legend-vertical">
-                            <li>
-                                <span><em class="color-label" style="background-color:#02aff1;"></em><i class="name">{{noiCtrl.chartData.area[0].name}}</i></span>
-                                <i class="legend-percent">{{noiCtrl.chartData.area[0].value}}%</i>
-                            </li>
-                            <li>
-                                <span><em class="color-label" style="background-color:#2cd9df;"></em><i class="name">{{noiCtrl.chartData.area[1].name}}</i></span>
-                                <i class="legend-percent">{{noiCtrl.chartData.area[1].value}}%</i>
-                            </li>
-                            <li>
-                                <span><em class="color-label" style="background-color:#a6ec65;"></em><i class="name">{{noiCtrl.chartData.area[2].name}}</i></span>
-                                <i class="legend-percent">{{noiCtrl.chartData.area[2].value}}%</i>
-                            </li>
-                            <li>
-                                <span><em class="color-label" style="background-color:#455469;"></em><i class="name">{{noiCtrl.chartData.area[3].name}}</i></span>
-                                <i class="legend-percent">{{noiCtrl.chartData.area[3].value}}%</i>
-                            </li>
-                        </ul>
-                    </div><!--section content-->
-                </div><!--amp-section-->
-            </div><!--amp block-pd-->
-
-        </div><!---执行状况-->
+        </div><!-- amp-content-panel -->
     </div><!--scrollable content-->
 </div><!--scrollable-->
 
