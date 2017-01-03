@@ -129,7 +129,7 @@ noi.controller('noiController', ['$rootScope', '$scope',"$timeout","noiAllData",
         self.hideMonthSelector=function(){
             console.log("hide");
             $('#datetimepicker').datetimepicker('hide');
-        }
+        };
        /*swiper */
         var pin;
         var noi_headerInfo_swiper,noi_modal_swiper;
