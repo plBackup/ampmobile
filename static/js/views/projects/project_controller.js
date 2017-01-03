@@ -39,6 +39,7 @@ projects.controller("pjListController",["$rootScope","$scope","$location","$stat
         $rootScope.projects=projectsData["projects"];
     }
     self.id=12;
+    $rootScope.pageId="project-list";
     console.log(projectsData["projects"]);
     $rootScope.showHeader();
     $rootScope.hideBottom();
