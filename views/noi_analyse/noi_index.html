@@ -296,8 +296,8 @@
 
         </div><!-- amp-content-panel 财务细节-->
 
-        <div class="amp-content-panel noi-view"  ui-if="activeNav == 3">
-            <div class="amp-block clearfix" style="">
+        <div class="amp-content-panel noi-view "  ui-if="activeNav == 3">
+            <div class="amp-block clearfix noi-chart-view" style="">
                 <div class="amp-section amp-chart-section clearfix">
                     <div class="amp-section-title clearfix">
                         <h3 class="col-xs-12">NOI实际与方案（一、二、三）对比</h3>
@@ -377,7 +377,7 @@
                 </div>
                 <div class="amp-section">
                     <div class="amp-section-title">
-                        <h3 class="col-xs-12">租赁面积情况</h3>
+                        <h3 class="col-xs-12" style="border-left-color:transparent;color:#59b46f;">租赁面积情况</h3>
                     </div>
                     <div class="amp-section-content clearfix">
                         <div class="col-xs-12 chart-wrapper" id="noi-chart-wrapper-rate" >
@@ -385,7 +385,7 @@
                                  chart-data="noiCtrl.chartData.area" ></div>
                             <em class="em-pie-title">面积占比</em>
                         </div><!--noi-chart-wrapper-->
-                        <ul class="chart-legend chart-legend-vertical">
+                        <ul class="chart-legend chart-legend-vertical clearfix">
                             <li>
                                 <span><em class="color-label" style="background-color:#02aff1;"></em><i class="name">{{noiCtrl.chartData.area[0].name}}</i></span>
                                 <i class="legend-percent">{{noiCtrl.chartData.area[0].value}}%</i>
