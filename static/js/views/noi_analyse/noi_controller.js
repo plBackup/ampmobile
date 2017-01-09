@@ -128,7 +128,8 @@ noi.controller('noiController', ['$rootScope', '$scope',"$timeout","noiAllData",
 
         self.hideMonthSelector=function(){
             console.log("hide");
-            $('#datetimepicker').datetimepicker('hide');
+            //alert("hide");
+            $('#month-filter').datetimepicker('hide');
         };
        /*swiper */
         var pin;

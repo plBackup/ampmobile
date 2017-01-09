@@ -19,7 +19,7 @@ angular.module('ampFilter').directive('monthPicker', [
             '<span class="input-group-btn">' +
             '<button class="btn btn-default" type="button" id="ys-date-pre"><em class="fa fa-chevron-left"></em></button>' +
             '</span>' +
-            '<input size="16" type="text" value="" data-provide="datepicker" id="month-filter" name="month-filter" >' +
+            '<input size="16" type="text" value="" data-provide="datepicker" id="month-filter" name="month-filter"  readonly>' +
             '<span class="input-group-btn">' +
             '<button class="btn btn-default" type="button" id="ys-date-next"><em class="fa fa-chevron-right"></em></button>' +
             '</span>' +
