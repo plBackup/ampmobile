@@ -63,7 +63,7 @@
 						</thead>
 						<tbody>
 							<tr ng-click="collapseTable(item)" ng-class="{'record-group':item.hasCollapseBtn,'amp-display-none':item.hide,'collapsed':item.collapsed}" data-group="{{item.dataGroup}}" ng-repeat="item in cost[costType]">
-								<td  ng-class='setFont(item.textbold)' >{{item.name}}</td>
+								<td  ng-class='setFont(item.textbold)' >{{item.name}}<em>&#40;平方/元&#41;</em></td>
 								<td ng-class='setStyleIcon(item.ActualMonth,item.ReferMonth)'>
 									<div ng-if="!allyear_cost">{{item.ActualMonth|number:2}} <i></i></div>
 									<div ng-if="allyear_cost">{{item.ActualYear|number:2}} <i></i></div>
@@ -257,7 +257,7 @@
 						</thead>
 						<tbody>
 							<tr ng-repeat="item in investment[investmentType] ">
-								<td  ng-class='setFont(item.textbold)'  class=" text-left ">{{item.name}}</td>
+								<td  ng-class='setFont(item.textbold)'  class=" text-left ">{{item.name}} <em>&#40;m&sup2;&#41;</em></td>
 								<td ng-class='setStyleIcon(item.ActualMonth,item.ReferMonth)'>
 									<div ng-if="!allyear_investment ">{{item.ActualMonth|number:2}} <i></i></div>
 									<div ng-if="allyear_investment ">{{item.ActualYear|number:2}} <i></i></div>
