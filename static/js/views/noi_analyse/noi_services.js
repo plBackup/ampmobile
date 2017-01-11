@@ -783,7 +783,7 @@ angular.module('noi').service('noiService', function($rootScope,$http) {
                             lineStyle:{
                                 normal:{
                                     show:true,
-                                    color:"#5cb571",
+                                    color:"#bcc5aa",
                                     width:2,
                                     type:"dashed",
                                 }
@@ -864,7 +864,7 @@ angular.module('noi').service('noiService', function($rootScope,$http) {
                         bottom:50
                     },
 
-                    color:['#5cb571','#5cb571', '#5cb571', '#bcc5aa', '#91c7ae','#749f83',  '#ca8622', '#bda29a','#6e7074', '#546570', '#c4ccd3'],
+                    color:['#5cb571','#bcc5aa', '#5cb571', '#bcc5aa', '#91c7ae','#749f83',  '#ca8622', '#bda29a','#6e7074', '#546570', '#c4ccd3'],
                     backgroundColor:"transparent",
                     tooltip:{
                         show:true,
@@ -873,7 +873,7 @@ angular.module('noi').service('noiService', function($rootScope,$http) {
                         axisPointer: {            // 坐标轴指示器，坐标轴触发有效
                             type: 'line'        // 默认为直线，可选为：'line' | 'shadow'
                         },*/
-                        formatter:"{a}:<br/>{b}-{c}万",
+                        formatter:"{a}:<br/>{b}-{c}",
                         textStyle:{
                             fontSize:12,
                             color:"#fff"
