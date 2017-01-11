@@ -756,7 +756,7 @@ angular.module('noi').service('noiService', function($rootScope,$http) {
                     datasets: [
                         {
                             type:"line",
-                            name:"租金",
+                            name:"实际租金",
                             xAxisIndex:0,
                             yAxisIndex:0,
                             symbol:'emptyCircle',
@@ -774,7 +774,7 @@ angular.module('noi').service('noiService', function($rootScope,$http) {
 
                         },{
                             type:"line",
-                            name:"租金预测",
+                            name:"预算租金",
                             xAxisIndex:0,
                             yAxisIndex:0,
                             symbol:'emptyCircle',
