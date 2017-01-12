@@ -40,7 +40,7 @@
                     <a ui-sref="datatool.rpgpin" class="btn amp-btn">推算</a>
                 </div>
             </div><!--ys-block-->
-            <div class="amp-block" ng-show="">
+            <div class="amp-block">
                 <div class="amp-section">
                     <div class="amp-section-title clearfix" ng-click="sCtrl.viewDetail('floors')">
                         <h3 class="col-xs-12">各楼层总租金<em class="em-unit">(万元)</em> <i class="amp-icon amp-icon-arrow-right"></i></h3>
@@ -58,9 +58,9 @@
                             <tbody>
                             <tr class="tr-main">
                                 <td ng-repeat="floor in sCtrl.rpgResultData.floors|limitTo:3 track by $index">
-                                    <span>{{sCtrl.getAvg(floor)|number:2}}</span>
+                                    <span>{{sCtrl.getAvg(floor)|number:0}}</span>
                                 </td>
-                                <td><span>{{sCtrl.getColAvg("avg","floors")|number:2}}</span></td>
+                                <td><span>{{sCtrl.getColAvg("avg","floors")|number:0}}</span></td>
                             </tr>
                         </table>
                     </div>
@@ -83,9 +83,9 @@
                             <tbody>
                             <tr class="tr-main">
                                 <td ng-repeat="floor in sCtrl.rpgResultData.floorsAvg|limitTo:3 track by $index">
-                                    <span>{{sCtrl.getAvg(floor)|number:2}}</span>
+                                    <span>{{sCtrl.getAvg(floor)|number:0}}</span>
                                 </td>
-                                <td><span>{{sCtrl.getColAvg("avg","floorsAvg")|number:2}}</span></td>
+                                <td><span>{{sCtrl.getColAvg("avg","floorsAvg")/6|number:0}}</span></td>
                             </tr>
                         </table>
                     </div>
@@ -108,9 +108,9 @@
                             <tbody>
                             <tr class="tr-main">
                                 <td ng-repeat="form in sCtrl.rpgResultData.form|limitTo:3 track by $index">
-                                    <span>{{sCtrl.getAvg(form)|number:2}}</span>
+                                    <span>{{sCtrl.getAvg(form)|number:0}}</span>
                                 </td>
-                                <td><span>{{sCtrl.getColAvg("avg","form")|number:2}}</span></td>
+                                <td><span>{{sCtrl.getColAvg("avg","form")|number:0}}</span></td>
                             </tr>
                         </table>
                     </div>
@@ -133,9 +133,9 @@
                             <tbody>
                             <tr class="tr-main">
                                 <td ng-repeat="form in sCtrl.rpgResultData.formAvg|limitTo:3 track by $index">
-                                    <span>{{sCtrl.getAvg(form)|number:2}}</span>
+                                    <span>{{sCtrl.getAvg(form)|number:0}}</span>
                                 </td>
-                                <td><span>{{sCtrl.getColAvg("avg","formAvg")|number:2}}</span></td>
+                                <td><span>{{sCtrl.getColAvg("avg","formAvg")/6|number:0}}</span></td>
                             </tr>
                         </table>
                     </div>
@@ -216,7 +216,7 @@
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                                 <!-- 各楼层总租金-->
-                                                <table class="table amp-table" style="width:580px" ng-if="sCtrl.rpgDataModal=='floors'">
+                                                <table class="table amp-table" style="width:1500px" ng-if="sCtrl.rpgDataModal=='floors'">
                                                     <thead>
                                                         <tr>
                                                             <th class="text-right">GLA</th>
@@ -238,7 +238,7 @@
                                                 </table>
 
                                                 <!-- 各楼层平均租金-->
-                                                <table class="table amp-table" style="width:580px" ng-if="sCtrl.rpgDataModal=='floorsAvg'">
+                                                <table class="table amp-table" style="width:880px" ng-if="sCtrl.rpgDataModal=='floorsAvg'">
                                                     <thead>
                                                     <tr>
                                                         <th class="text-right">GLA</th>
@@ -253,14 +253,14 @@
                                                         <td ng-repeat="value in floor.yearly track by $index" class="text-right">{{value|number:2}}</td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="td-sum text-right"><span>{{sCtrl.getColAvg("avg","floorsAvg") | number:2}}</span></td>
-                                                        <td ng-repeat="value in sCtrl.rpgResultData.floors[0].yearly track by $index" class="td-sum text-right">{{sCtrl.getColAvg($index,"floorsAvg") | number:2}}</td>
+                                                        <td class="td-sum text-right"><span>{{sCtrl.getColAvg("avg","floorsAvg")/6 | number:2}}</span></td>
+                                                        <td ng-repeat="value in sCtrl.rpgResultData.floors[0].yearly track by $index" class="td-sum text-right">{{sCtrl.getColAvg($index,"floorsAvg")/6 | number:2}}</td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
 
                                                 <!-- 各业态总租金-->
-                                                <table class="table amp-table" style="width:580px" ng-if="sCtrl.rpgDataModal=='form'">
+                                                <table class="table amp-table" style="width:1500px" ng-if="sCtrl.rpgDataModal=='form'">
                                                     <thead>
                                                     <tr>
                                                         <th class="text-right">GLA</th>
@@ -282,7 +282,7 @@
                                                 </table>
 
                                                 <!-- 各业态平均租金-->
-                                                <table class="table amp-table" style="width:580px" ng-if="sCtrl.rpgDataModal=='formAvg'">
+                                                <table class="table amp-table" style="width:880px" ng-if="sCtrl.rpgDataModal=='formAvg'">
                                                     <thead>
                                                     <tr>
                                                         <th class="text-right">GLA</th>
@@ -297,8 +297,8 @@
                                                         <td ng-repeat="value in form.yearly track by $index" class="text-right">{{value|number:2}}</td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="td-sum text-right"><span>{{sCtrl.getColAvg("avg","formAvg") | number:2}}</span></td>
-                                                        <td ng-repeat="value in sCtrl.rpgResultData.form[0].yearly track by $index" class="td-sum text-right">{{sCtrl.getColAvg($index,"formAvg") | number:2}}</td>
+                                                        <td class="td-sum text-right"><span>{{sCtrl.getColAvg("avg","formAvg")/6 | number:2}}</span></td>
+                                                        <td ng-repeat="value in sCtrl.rpgResultData.form[0].yearly track by $index" class="td-sum text-right">{{sCtrl.getColAvg($index,"formAvg")/6 | number:2}}</td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
