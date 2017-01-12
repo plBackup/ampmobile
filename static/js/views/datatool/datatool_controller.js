@@ -1833,15 +1833,25 @@ dataTool.controller("dataFeeController",['$rootScope','$scope','$timeout','manag
     self.mall={
         mainShop:{
             feeStandard:{
-                value:0,
+                value:10.00,
             }
         },
         nonMainShop:{
             feeStandard:[
                 {
-                    areaRangeStart:0,
-                    areaRangeEnd:0,
-                    value:0
+                    areaRangeStart:0.00,
+                    areaRangeEnd:1000.00,
+                    value:55.00
+                },
+                {
+                    areaRangeStart:1000.00,
+                    areaRangeEnd:2000.00,
+                    value:28.00
+                },
+                {
+                    areaRangeStart:2000.00,
+                    areaRangeEnd:5000.00,
+                    value:20.00
                 },
             ]
         }
@@ -1850,9 +1860,9 @@ dataTool.controller("dataFeeController",['$rootScope','$scope','$timeout','manag
     self.street={
         feeStandard:[
             {
-                areaRangeStart:0,
-                areaRangeEnd:0,
-                value:0
+                areaRangeStart:0.00,
+                areaRangeEnd:9999.00,
+                value:18.00
             },
         ],
     };
@@ -1864,19 +1874,49 @@ dataTool.controller("dataFeeController",['$rootScope','$scope','$timeout','manag
         {
             name:"主力店",
             value: [
-                { year: curYear,value:0},
+                { year: 2017,value:0},
+                { year: 2018,value:0},
+                { year: 2019,value:0.05},
+
+                { year: 2020,value:0},
+                { year: 2021,value:0},
+                { year: 2022,value:0.05},
+
+                { year: 2023,value:0},
+                { year: 2024,value:0},
+                { year: 2025,value:0.05}
             ]
         },
         {
             name:"非主力店",
             value:[
-                { year: curYear,value:0},
+                { year: 2017,value:0},
+                { year: 2018,value:0},
+                { year: 2019,value:0.05},
+
+                { year: 2020,value:0},
+                { year: 2021,value:0},
+                { year: 2022,value:0.05},
+
+                { year: 2023,value:0},
+                { year: 2024,value:0},
+                { year: 2025,value:0.05}
             ]
         },
         {
             name:"商业街",
             value:[
-                { year: curYear,value:0},
+                { year: 2017,value:0},
+                { year: 2018,value:0},
+                { year: 2019,value:0.05},
+
+                { year: 2020,value:0},
+                { year: 2021,value:0},
+                { year: 2022,value:0.05},
+
+                { year: 2023,value:0},
+                { year: 2024,value:0},
+                { year: 2025,value:0.05}
             ]
         }
     ];
