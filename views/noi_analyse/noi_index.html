@@ -110,12 +110,18 @@
 
     <div class="scrollable-content" id="noiPage">
         <div class="amp-content-panel noi-view"  ui-if="activeNav == 1">
-            <div class="amp-block">
+            <div class="amp-block" ng-show="noiCtrl.reports.length>=1">
                 <ul class="amp-report clearfix">
                     <li ng-repeat="item in noiCtrl.reports" class="amp-report-item" ng-class="{'amp-report-warn':item.warn==true}">
                         <span>{{item.info}}</span>
                     </li>
                 </ul>
+            </div>
+            <div class="amp-block" ng-hide="noiCtrl.reports.length>=1">
+                <div class="noi-report-displace">
+                    <em class="report-displace-img"></em>
+                    <span>暂无数据，请保持关注</span>
+                </div>
             </div>
         </div><!---关注说明-->
         <div class="amp-content-panel noi-view"  ui-if="activeNav == 2">

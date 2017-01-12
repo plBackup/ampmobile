@@ -210,3 +210,8 @@
 #noi .amp-block .amp-section{border-bottom:solid 10px #f3f4f8;}
 #noi .noi-chart-view .amp-section-title{border-left: solid 4px #59b46f;}
 #noi .noi-chart-view .amp-section .amp-section-title h3{color:#373c42;}
+
+#noi em.report-displace-img{margin:0 auto;width:79px;height:91px;background-image:url(../../images/displace_img.png);background-size:contain;background-repeat: no-repeat;background-position: center center;}
+
+#noi .noi-report-displace{width:100%;padding:30px;text-align: center;}
+.noi-report-displace>em,.noi-report-displace>span{display: block;margin-bottom:10px;font-size:14px;color:#8592a3;}
