@@ -28,6 +28,20 @@ ampApp.controller("business-main-controller",["$scope","$http","$rootScope","$ti
         }
     };
 
+    /* 保底租金 内容收起/展开 */
+    $scope.collapseTableDeduct = function(item){
+        if(item.hasCollapseBtn){
+            item.collapsed = !item.collapsed;
+            var groupId = item.dataGroup;
+
+            $scope.deductRentStoreRateTable.forEach(function(itemRecord){
+                if(groupId==itemRecord.dataGroup&&!itemRecord.hasCollapseBtn){
+                    itemRecord.hide=!itemRecord.hide;
+                }
+            });
+        }
+    };
+
     /* 关闭 选项菜单 */
     $scope.closeMenuList = function(){
         hideMgtAnalysisMenuList();
@@ -94,8 +108,8 @@ ampApp.controller("business-main-controller",["$scope","$http","$rootScope","$ti
         var myChart = echarts.init($(container).find(".deduct-rent-store-rate-chart .chart-content")[0]);
 
         var labels = ["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"];
-        var data1 = [300,200,300,200,200,300,220,330,300,300,500,550];
-        var data2 = [350,200,300,200,200,300,220,330,300,300,300,550];
+        var data1 = [0,0,7,0,0,2,2,2,2,3,3,17];
+        var data2 = [19,19,12,19,19,17,17,17,17,16,16,4];
         var data3 = [];
         var minValue = data1[0];
         for(var i=0;i<12;i++){
@@ -109,9 +123,11 @@ ampApp.controller("business-main-controller",["$scope","$http","$rootScope","$ti
             }
         }
 
+        minValue=2;
+
         // 指定图表的配置项和数据
         var option = {
-            color:["#00b1f0","#627d9b","transparent"],
+            color:["#627d9b","#00b1f0","transparent"],
             grid: {
                 top:"0",
                 left: "0",
@@ -154,19 +170,7 @@ ampApp.controller("business-main-controller",["$scope","$http","$rootScope","$ti
                 }
             ],
             series: [
-                {
-                    stack:"租金",
-                    name:"提成租金",
-                    type:"bar",
-                    barWidth:30,
-                    label:{
-                        normal:{
-                            show:true,
-                            position:"insideTop"
-                        }
-                    },
-                    data:data1
-                },
+
                 {
                     stack:"租金",
                     name:"保底租金",
@@ -177,10 +181,23 @@ ampApp.controller("business-main-controller",["$scope","$http","$rootScope","$ti
                             show:true,
                             textStyle:{fontSize:12},
 
-                            position:"insideBottom"
+                            position:"insideTop"
                         }
                     },
                     data:data2
+                },
+                {
+                    stack:"租金",
+                    name:"提成租金",
+                    type:"bar",
+                    barWidth:30,
+                    label:{
+                        normal:{
+                            show:true,
+                            position:"insideBottom"
+                        }
+                    },
+                    data:data1
                 },
                 {
                     stack:"租金",

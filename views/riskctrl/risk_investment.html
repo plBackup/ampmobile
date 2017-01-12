@@ -21,7 +21,7 @@
 					<ul class="clearfix">
 						<li>
 							<div class="label-group"><em>业主要求的收益率</em>
-								<div>111</div>
+								<div>6.00%</div>
 							</div>
 						</li>
 						<li>
@@ -40,7 +40,11 @@
 						<li ng-repeat="item in records" class="label-group">
 							<div>
 								<em>{{item.title}}</em>
-								<div>{{item.data|number:2}}</div>
+								<div>
+								<span  ng-if="$index==0||$index==1">{{item.data|number:2}}</span>
+								<span ng-if="$index==2||$index==3">{{item.data}}</span>
+							
+							</div>
 							</div>
 						</li>
 					</ul>
@@ -53,9 +57,9 @@
 							<!--<em class="pull-right">显示所有月份 <i>&gt;</i></em>-->
 						</div>
 						<div class="riskctrl-btn">
-							<em class="pull-left" ng-click="setType('NoionYearBasis','noi')" ng-class="{'btn-active':noiType=='NoionYearBasis'}"><span>同比</span></em>
-							<em class="pull-left" ng-click="setType('NoiLinkRelativeRatio','noi')" ng-class="{'btn-active':noiType=='NoiLinkRelativeRatio'}"><span>环比</span></em>
-							<em class="pull-left btn-active" ng-click="setType('NoiBudget','noi')" ng-class="{'btn-active':noiType=='NoiBudget'}"><span>预算</span></em>
+							<em class="pull-left" ng-class="{'btn-active':noiType=='NoionYearBasis'}"><span>同比</span></em> <!--ng-click="setType('NoionYearBasis','noi')" -->
+							<em class="pull-left" ng-class="{'btn-active':noiType=='NoiLinkRelativeRatio'}"><span>环比</span></em><!-- ng-click="setType('NoiLinkRelativeRatio','noi')" --> 
+							<em class="pull-left btn-active" ng-class="{'btn-active':noiType=='NoiBudget'}"><span>预算</span></em> <!--ng-click="setType('NoiBudget','noi')" -->
 						</div>
 						<div class="table-title">
 							<ul class="clearfix">

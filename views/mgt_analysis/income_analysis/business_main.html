@@ -85,7 +85,7 @@
                  <div class="amp-chart-legend">
                      <ul class="clearfix">
                          <li>保底租金</li>
-                         <li>提成租金</li>
+                         <li>取到提成的提成租金商家数</li>
                      </ul>
                  </div>
              </div><!-- deduct-rent-store-rate-chart -->
@@ -95,7 +95,7 @@
                      <table>
                          <tbody>
                          <tr><th>商家</th></tr>
-                         <tr ng-repeat="item in deductRentStoreRateTable"><td>{{item.type}}</td></tr>
+                         <tr ng-click="collapseTableDeduct(item)" ng-class="{'record-group':item.hasCollapseBtn,'amp-display-none':item.hide,'collapsed':item.collapsed}" data-group="{{item.dataGroup}}" ng-repeat="item in deductRentStoreRateTable"><td ng-class="{'amp-font-weight-bold':item.mainRecord}">{{item.type}}</td></tr>
                          </tbody>
                      </table>
                  </div><!-- table-left -->
@@ -113,7 +113,7 @@
                                          </tr>
                                      </thead>
                                      <tbody>
-                                         <tr ng-repeat="item in deductRentStoreRateTable">
+                                         <tr  ng-class="{'amp-display-none':item.hide}" data-group="{{item.dataGroup}}" ng-repeat="item in deductRentStoreRateTable">
                                              <td>{{item.storeNo|number}}</td>
                                              <td>{{item.storeRate}}</td>
                                              <td>{{item.rentTotal|number}}</td>

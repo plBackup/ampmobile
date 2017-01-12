@@ -80,7 +80,6 @@
 	color: #737e8c;
 	font-weight: 700;}
 #riskctrl-detail #efficient .amp-table-data  td:first-child {text-align: left;}
-#riskctrl-detail #efficient .amp-table-data tr td{text-indent: 1em;}
 #riskctrl-detail  .amp-table>tfoot>tr>td{border: 0;}
 #riskctrl-detail  .amp-table>tbody>tr>th,#riskctrl-detail .amp-table>tbody>tr>td,#riskctrl-detail .amp-table>tfoot>tr>th,#riskctrl-detail .amp-table>tfoot>tr>td{border: 0;padding: 0; height: 40px;font-size: 13px;}
 #riskctrl-detail  .amp-table>tbody>tr>th,#riskctrl-detail .amp-table>tbody>tr>td,#riskctrl-detail .amp-table>tfoot>tr>th, #riskctrl-detail .amp-table>tfoot>tr>td{border: 0;padding: 0; height: 40px;font-size: 13px;}
@@ -115,3 +114,11 @@
 }
 #riskctrl-detail .text-bold,#riskctrl-detail .text-bold~td,#riskctrl-detail .text-bold~td span,#riskctrl-detail .text-bold span{font-weight: 700;} 
 #riskctrl-detail  #investment table td:first-child,#riskctrl-detail  #passenger table td:first-child{font-weight: 700;}
+#riskctrl-detail #collectionrate td div span:after {
+    content: "%";
+    display: inline-block;
+}
+#riskctrl-detail #efficient table tbody tr:nth-child(8)~tr td span:after {
+    content: "%";
+    display: inline-block;
+}
