@@ -229,7 +229,6 @@
   ],
   "deductRentStoreRateTable":[
     {
-      "mainRecord":true,
       "type":"固定租金",
       "storeNo":123,
       "storeRate":"84.62%",
@@ -237,7 +236,6 @@
       "rentRate":"64.58%"
     },
     {
-      "mainRecord":true,
       "type":"提成租金",
       "storeNo":5,
       "storeRate":"3.21%",
@@ -246,31 +244,11 @@
     },
     {
       "dataGroup":1,
-      "mainRecord":true,
-      "hasCollapseBtn":true,
       "type":"两者取高",
       "storeNo":19,
       "storeRate":"12.18%",
       "rentTotal":1116701.81,
       "rentRate":"30.92%"
-    },
-    {
-      "hide":true,
-      "dataGroup":1,
-      "type":"提成租金",
-      "storeNo":16,
-      "storeRate":"10.26%",
-      "rentTotal":438436.69,
-      "rentRate":"12.14%"
-    },
-    {
-      "hide":true,
-      "dataGroup":1,
-      "type":"保底租金",
-      "storeNo":3,
-      "storeRate":"1.92%",
-      "rentTotal":678265.12,
-      "rentRate":"18.78%"
     }
   ]
 }

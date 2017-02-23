@@ -60,22 +60,22 @@
 		"NoiBudget": [
 			{
 				"name": "NOI",
-				"noiActualMonth": "37.03",
+				"noiActualMonth": "220.52",
 				"noiReferMonth": "10.25",
-				"noiActualYear": "39.44",
-				"noiReferYear": "75.92"
+				"noiActualYear": "1706.86",
+				"noiReferYear": "2404.92"
 			}, {
 				"name": "收入",
-				"noiActualMonth": "499.23",
+				"noiActualMonth": "521.639",
 				"noiReferMonth": "566.38",
-				"noiActualYear": "1407.29",
-				"noiReferYear": "1325.72"
+				"noiActualYear": "4037.48586",
+				"noiReferYear": "4325.72"
 			}, {
 				"name": "支出",
-				"noiActualMonth": "462.2",
+				"noiActualMonth": "301.11451",
 				"noiReferMonth": "556.13",
-				"noiActualYear": "1367.85",
-				"noiReferYear": "1249.8"
+				"noiActualYear": "2330.6263074",
+				"noiReferYear": "1920.8"
 			}
 		]
 	},
@@ -84,14 +84,6 @@
 			"name": "第1年",
 			"roiActual": "0.03",
 			"roiRefer": "0.06"
-		}, {
-			"name": "第2年",
-			"roiActual": "",
-			"roiRefer": ""
-		}, {
-			"name": "第3年",
-			"roiActual": "",
-			"roiRefer": ""
 		}
 	],
 	"roe": [
@@ -99,14 +91,6 @@
 			"name": "第1年",
 			"roeActual": "0",
 			"roeRefer": "0"
-		}, {
-			"name": "第2年",
-			"roeActual": "",
-			"roeRefer": ""
-		}, {
-			"name": "第3年",
-			"roeActual": "",
-			"roeRefer": ""
 		}
 	],
 	"forecast": [
